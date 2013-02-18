@@ -8,20 +8,20 @@ tags : [intro, beginner, jekyll, tutorial]
 This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
 Directly following the intro we'll learn exactly _how_ Jekyll does what it does.
 
-## Overview 
+## 概述 
 
-### What is Jekyll?
+### 什么是Jekyll?
 
 Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as "a simple, blog aware, static site generator".
 
-### Examples
+### 示例
 
 This website is created with Jekyll. [Other Jekyll websites](https://github.com/mojombo/jekyll/wiki/Sites).
 
 
 
-### What does Jekyll Do?
+### Jekyll能做什么？
 
 Jekyll is a ruby gem you install on your local system.
 Once there you can call `jekyll --server` on a directory and provided that directory
@@ -34,7 +34,7 @@ The intention here is that you can serve all contents in this folder statically 
 You can think of Jekyll as a normalish dynamic blog but rather than parsing content, templates, and tags
 on each request, Jekyll does this once _beforehand_ and caches the _entire website_ in a folder for serving statically.
 
-### Jekyll is Not Blogging Software
+### Jekyll不是日志软件
 
 **Jekyll is a parsing engine.**
 
@@ -61,7 +61,7 @@ Therefore if you like to keep things simple and you prefer the command-line over
 - Ability to host freely on GitHub Pages.
 - No database required.
 
-# How Jekyll Works
+# Jekyll 如何工作
 
 The following is a complete but concise outline of exactly how Jekyll works.
 
@@ -73,7 +73,7 @@ Learning these core concepts should help you avoid common frustrations and ultim
 help you better understand the code examples contained throughout Jekyll-Bootstrap.
 
 
-## Initial Setup
+## 初始设置
 
 After [installing jekyll](/index.html#start-now) you'll need to format your website directory in a way jekyll expects.
 Jekyll-bootstrap conveniently provides the base directory format.
@@ -124,7 +124,7 @@ Jekyll expects your website directory to be laid out like so:
 (read more: <https://github.com/mojombo/jekyll/wiki/Usage>)
 
 
-### Jekyll Configuration
+### Jekyll配置
 
 Jekyll supports various configuration options that are fully outlined here:
 <https://github.com/mojombo/jekyll/wiki/Configuration>
@@ -132,39 +132,39 @@ Jekyll supports various configuration options that are fully outlined here:
 
 
 
-## Content in Jekyll
+## Jekyll内容
 
 Content in Jekyll is either a post or a page.
 These content "objects" get inserted into one or more templates to build the final output for its respective static-page.
 
-### Posts and Pages
+### 帖子和页面
 
 Both posts and pages should be written in markdown, textile, or HTML and may also contain Liquid templating syntax.
 Both posts and pages can have meta-data assigned on a per-page basis such as title, url path, as well as arbitrary custom meta-data.
 
-### Working With Posts
+### 发帖
 
-**Creating a Post**   
+**发帖**   
 Posts are created by properly formatting a file and placing it the `_posts` folder.
 
-**Formatting**  
+**格式化**  
 A post must have a valid filename in the form `YEAR-MONTH-DATE-title.MARKUP` and be placed in the `_posts` directory. 
 If the data format is invalid Jekyll will not recognize the file as a post. The date and title are automatically parsed from the filename of the post file.
 Additionally, each file must have [YAML Front-Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) prepended to its content.
 YAML Front-Matter is a valid YAML syntax specifying meta-data for the given file.
 
-**Order**  
+**排序**  
 Ordering is an important part of Jekyll but it is hard to specify a custom ordering strategy.
 Only reverse chronological and chronological ordering is supported in Jekyll.
 
 Since the date is hard-coded into the filename format, to change the order, you must change the dates in the filenames.
 
-**Tags**   
+**标签**   
 Posts can have tags associated with them as part of their meta-data.
 Tags may be placed on posts by providing them in the post's YAML front matter.
 You have access to the post-specific tags in the templates. These tags also get added to the sitewide collection.
 
-**Categories**   
+**分类**   
 Posts may be categorized by providing one or more categories in the YAML front matter.
 Categories offer more significance over tags in that they can be reflected in the URL path to the given post.
 Note categories in Jekyll work in a specific way.
@@ -179,19 +179,19 @@ Example:
 This defines the category hierarchy "lessons/beginner". Note this is _one category_ node in Jekyll.
 You won't find "lessons" and "beginner" as two separate categories unless you define them elsewhere as singular categories.
 
-### Working With Pages
+### 页面
 
-**Creating a Page**  
+**创建页面**  
 Pages are created by properly formatting a file and placing it anywhere in the root directory or subdirectories that do _not_ start with an underscore.
 
-**Formatting**  
+**格式化**  
 In order to register as a Jekyll page the file must contain [YAML Front-Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter).
 Registering a page means 1) that Jekyll will process the page and 2) that the page object will be available in the `site.pages` array for inclusion into your templates.
 
-**Categories and Tags**  
+**分类和标签**  
 Pages do not compute categories nor tags so defining them will have no effect.
 
-**Sub-Directories**  
+**子目录**  
 If pages are defined in sub-directories, the path to the page will be reflected in the url.
 Example:
 
@@ -203,7 +203,7 @@ Example:
 This page will be available at `http://yourdomain.com/people/bob/essay.html`
 
 
-**Recommended Pages**  
+**推荐页面**  
 
 - **index.html**  
   You will always want to define the root index.html page as this will display on your root URL.
@@ -215,17 +215,17 @@ This page will be available at `http://yourdomain.com/people/bob/essay.html`
   A nice about page is easy to do and gives the human perspective to your website.
 
 
-## Templates in Jekyll
+## Jekyll模板
 
 Templates are used to contain a page's or post's content.
 All templates have access to a global site object variable: `site` as well as a page object variable: `page`.
 The site variable holds all accessible content and metadata relative to the site.
 The page variable holds accessible data for the given page or post being rendered at that point.
 
-**Create a Template**  
+**创建模板**  
 Templates are created by properly formatting a file and placing it in the `_layouts` directory.
 
-**Formatting**  
+**格式化**  
 Templates should be coded in HTML and contain YAML Front Matter. 
 All templates can contain Liquid code to work with your site's data.
 
@@ -244,13 +244,13 @@ Render the content variable wherever you want your main content to be injected i
 ...{% endcapture %}
 {% include JB/liquid_raw %}
 
-### Sub-Templates
+### 子模板
 
 Sub-templates are exactly templates with the only difference being they 
 define another "root" layout/template within their YAML Front Matter.
 This essentially means a template will render inside of another template.
 
-### Includes
+### 包含
 In Jekyll you can define include files by placing them in the `_includes` folder.
 Includes are NOT templates, rather they are just code snippets that get included into templates.
 In this way, you can treat the code inside includes as if it was native to the parent template.
@@ -258,12 +258,12 @@ In this way, you can treat the code inside includes as if it was native to the p
 Any valid template code may be used in includes.
 
 
-## Using Liquid for Templating
+## 为模板使用Liquid
 
 Templating is perhaps the most confusing and frustrating part of Jekyll.
 This is mainly due to the fact that Jekyll templates must use the Liquid Templating Language.
 
-### What is Liquid?
+### 什么是Liquid?
 
 [Liquid](https://github.com/Shopify/liquid) is a secure templating language developed by [Shopify](http://shopify.com).
 Liquid is designed for end-users to be able to execute logic within template files 
@@ -272,12 +272,12 @@ without imposing any security risk on the hosting server.
 Jekyll uses Liquid to generate the post content within the final page layout structure and as the primary interface for working with
 your site and post/page data. 
 
-### Why Do We Have to Use Liquid?
+### 为什么我们必须用Liquid?
 
 GitHub uses Jekyll to power [GitHub Pages](http://pages.github.com/). 
 GitHub cannot afford to run arbitrary code on their servers so they lock developers down via Liquid.
 
-### Liquid is Not Programmer-Friendly.
+### Liquid不是程序员友好.
 
 The short story is liquid is not real code and its not intended to execute real code.
 The point being you can't do jackshit in liquid that hasn't been allowed explicitly by the implementation.
@@ -297,7 +297,7 @@ _from a programmer's_ perspective. That is to say if you have the ability to run
 you are better off sticking with ruby. Toward that end I've built [Mustache-with-Jekyll](http://github.com/plusjade/mustache-with-jekyll)
 
 
-## Static Assets
+## 静态资产
 
 Static assets are any file in the root or non-underscored subfolders that are not pages.
 That is they have no valid YAML Front Matter and are thus not treated as Jekyll Pages.
@@ -307,28 +307,28 @@ Static assets should be used for images, css, and javascript files.
 
 
 
-## How Jekyll Parses Files
+## Jekyll如何解析文件
 
 Remember Jekyll is a processing engine. There are two main types of parsing in Jekyll.
 
-- **Content parsing.**   
+- **内容解析.**   
 	This is done with textile or markdown.
-- **Template parsing.**   
+- **模板解析.**   
   This is done with the liquid templating language.
 
 And thus there are two main types of file formats needed for this parsing.
 
-- **Post and Page files.**  
+- **帖子和页面文件.**  
   All content in Jekyll is either a post or a page so valid posts and pages are parsed with markdown or textile.
-- **Template files.**    
+- **模板文件.**    
 	These files go in `_layouts` folder and contain your blogs **templates**. They should be made in HTML with the help of Liquid syntax.
 	Since include files are simply injected into templates they are essentially parsed as if they were native to the template.
 
-**Arbitrary files and folders.**   
+**任意文件和文件夹.**   
 Files that _are not_ valid pages are treated as static content and pass through 
 Jekyll untouched and reside on your blog in the exact structure and format they originally existed in.
 
-### Formatting Files for Parsing.
+### 格式化文件解析.
 
 We've outlined the need for valid formatting using **YAML Front Matter**.
 Templates, posts, and pages all need to provide valid YAML Front Matter even if the Matter is empty.
@@ -350,7 +350,7 @@ The data inside the block must be valid YAML.
 Configuration parameters for YAML Front-Matter is outlined here:
 [A comprehensive explanation of YAML Front Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter)
 
-#### Defining Layouts for Posts and Templates Parsing.
+#### 定义布局的帖子和模板解析.
 
 The `layout` parameter in the YAML Front Matter defines the template file for which the given post or template should be injected into.
 If a template file specifies its own layout, it is effectively being used as a `sub-template.`
@@ -360,7 +360,7 @@ That is to say loading a post file into a template file that refers to another t
 
 
 
-## How Jekyll Generates the Final Static Files.
+## Jekyll如何生成静态文件？
 
 Ultimately, Jekyll's job is to generate a static representation of your website. 
 The following is an outline of how that's done:
@@ -396,7 +396,7 @@ Remember, in Jekyll you are an end-user. Your API has only two components:
 All the data objects available to you in the templates via Liquid are outlined in the **API Section** of Jekyll-Bootstrap.
 You can also read the original documentation here: <https://github.com/mojombo/jekyll/wiki/Template-Data>
 
-## Conclusion
+## 总结
 
 I hope this paints a clearer picture of what Jekyll is doing and why it works the way it does.
 As noted, our main programming constraint is the fact that our API is limited to what is accessible via Liquid and Liquid only.
@@ -405,7 +405,7 @@ Jekyll-bootstrap is intended to provide helper methods and strategies aimed at m
 
 **Thank you** for reading this far.
 
-## Next Steps
+## 下一步
 
 Please take a look at [{{ site.categories.api.first.title }}]({{ BASE_PATH }}{{ site.categories.api.first.url }}) 
 or jump right into [Usage]({{ BASE_PATH }}{{ site.categories.usage.first.url }}) if you'd like.
