@@ -19,27 +19,24 @@ tagline: 大鼻子文档翻译分享
 <div class="span4">
 <h2>RedTheDocs.org</h2>
 <p>
-[django-docs-zh](https://django-docs-zh.readthedocs.org)
-
-[Git 中文手册](https://git-reference.readthedocs.org)
-
-[mongodb-odm-documentation](https://mongodb-odm-documentation.readthedocs.org)
-
-[Python中文文档](https://python-documentation-cn.readthedocs.org)
-
-[python-guide-zh](https://sphinx-doc.readthedocs.org)
-
-[sphinx-doc中文文档](https://sphinx-doc.readthedocs.org)
-
-[Zend Framework 2 中文文档](https://zf2-documentation-zh.readthedocs.org)
+<ul class="posts">
+<li><a href="https://django-docs-zh.readthedocs.org">django-docs-zh</a></li>
+<li><a href="https://git-reference.readthedocs.org">Git 中文手册</a></li>
+<li><a href="https://mongodb-odm-documentation.readthedocs.org">mongodb-odm-documentation</a></li>
+<li><a href="https://python-documentation-cn.readthedocs.org">Python中文文档</a></li>
+<li><a href="https://sphinx-doc.readthedocs.org">python-guide-zh</a></li>
+<li><a href="https://sphinx-doc.readthedocs.org">sphinx-doc中文文档</a></li>
+<li><a href="https://zf2-documentation-zh.readthedocs.org">Zend Framework 2 中文文档</a></li>
+</ul>
 </p>
 </div>
 <div class="span4">
 <h2>开发者帮助</h2>
 <p>
-阅读 [Jekyll快速指南](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
-
-完整使用文档: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+<ul class="posts">
+<li>阅读 <a href="http://jekyllbootstrap.com/usage/jekyll-quick-start.html">Jekyll快速指南</a></li>
+<li>完整使用文档: <a href="http://jekyllbootstrap.com">Jekyll Bootstrap</a></li>
+</ul>
 </p>
 </div>
 
