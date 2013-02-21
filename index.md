@@ -18,8 +18,7 @@ tagline: 大鼻子文档翻译分享
 </div>
 <div class="span4">
 <h2>RedTheDocs.org</h2>
-<p>
-<ul class="posts">
+<p><ul class="posts">
 <li><a href="https://django-docs-zh.readthedocs.org">django-docs-zh</a></li>
 <li><a href="https://git-reference.readthedocs.org">Git 中文手册</a></li>
 <li><a href="https://mongodb-odm-documentation.readthedocs.org">mongodb-odm-documentation</a></li>
@@ -27,8 +26,7 @@ tagline: 大鼻子文档翻译分享
 <li><a href="https://sphinx-doc.readthedocs.org">python-guide-zh</a></li>
 <li><a href="https://sphinx-doc.readthedocs.org">sphinx-doc中文文档</a></li>
 <li><a href="https://zf2-documentation-zh.readthedocs.org">Zend Framework 2 中文文档</a></li>
-</ul>
-</p>
+</ul></p>
 </div>
 <div class="span4">
 <h2>开发者帮助</h2>
