@@ -29,6 +29,6 @@ tagline: 大鼻子文档翻译分享
 </ul></p>
 </div>
 <div class="span4">
-<iframe id="sina_widget_1422986101" style="width:100%; height:500px;" frameborder="0" scrolling="no" src="http://v.t.sina.com.cn/widget/widget_blog.php?uid=1422986101&height=500&skin=wd_01&showpic=1"></iframe>
+<iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=2&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1422986101&verifier=99541cab&dpc=1"></iframe>
 </div>
 
