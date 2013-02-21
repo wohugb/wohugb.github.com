@@ -29,9 +29,6 @@ tagline: 大鼻子文档翻译分享
 </ul></p>
 </div>
 <div class="span4">
-<h2>开发者帮助</h2>
-<p>
 <iframe id="sina_widget_1422986101" style="width:100%; height:500px;" frameborder="0" scrolling="no" src="http://v.t.sina.com.cn/widget/widget_blog.php?uid=1422986101&height=500&skin=wd_01&showpic=1"></iframe>
-</p>
 </div>
 
