@@ -5,9 +5,8 @@ tagline: 大鼻子文档翻译分享
 ---
 {% include JB/setup %}
 
-<div class="marketing">
-    <div class="row-fluid">
-      <div class="span4">
+
+<div class="span4">
 ## 日志列表
 <p>
 <ul class="posts">
@@ -19,7 +18,7 @@ tagline: 大鼻子文档翻译分享
 </div>
 <div class="span4">
 ## RedTheDocs.org
-
+<p>
 [django-docs-zh](https://django-docs-zh.readthedocs.org)
 
 [Git 中文手册](https://git-reference.readthedocs.org)
@@ -33,12 +32,14 @@ tagline: 大鼻子文档翻译分享
 [sphinx-doc中文文档](https://sphinx-doc.readthedocs.org)
 
 [Zend Framework 2 中文文档](https://zf2-documentation-zh.readthedocs.org)
+</p>
 </div>
 <div class="span4">
 ## 开发者帮助
-
+<p>
 阅读 [Jekyll快速指南](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+
 完整使用文档: [Jekyll Bootstrap](http://jekyllbootstrap.com)
-</div>
+</p>
 </div>
 
