@@ -42,22 +42,22 @@
         </div>
       </div>
     </div>
-
-    <div class="container">
-
-      <div class="content">
-        {{ content }}
+    <header class="jumbotron subhead" id="overview">
+      <div class="container">
+        <h1>{{ page.title }} </h1>
+        {% if page.tagline %}<p class="lead">{{ page.tagline }}</p>{% endif %}
       </div>
+    </header>
+    <div class="container">
+        {{ content }}
+    </div>
 
-      <footer>
-        <p>&copy; {{ site.author.name }} {{ site.time | date: '%Y' }}
-          使用 <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          和 <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a> 制作
-        </p>
-      </footer>
-
-    </div> <!-- /container -->
-
+    <footer>
+      <p>&copy; {{ site.author.name }} {{ site.time | date: '%Y' }}
+        使用 <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+         和 <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a> 制作
+      </p>
+    </footer>
     {% include JB/analytics %}
   </body>
 </html>
