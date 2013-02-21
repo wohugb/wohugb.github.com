@@ -43,21 +43,23 @@
         </div>
       </div>
     </div>
-    <div class="page-header" style="position:absolute;padding-top:60px">
-      <div class="container">
-        <h1>{{ page.title }} </h1>
-        <p class="lead">&nbsp;{% if page.tagline %}{{ page.tagline }}{% endif %}</p>
-      </div>
-    </div>
+	<header class="jumbotron subhead" id="overview">
+	  <div class="container">
+	    <h1>{{ page.title }}</h1>
+	    <p class="lead">&nbsp;{% if page.tagline %}{{ page.tagline }}{% endif %}</p>
+	  </div>
+	</header>
     <div class="container">
         {{ content }}
     </div>
 
     <footer class="footer">
+      <div class="container">
       <p>&copy; {{ site.author.name }} {{ site.time | date: '%Y' }}
         使用 <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
          和 <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a> 制作
       </p>
+      </div>
     </footer>
     {% include JB/analytics %}
   </body>
