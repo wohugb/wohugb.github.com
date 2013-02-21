@@ -5,7 +5,15 @@ tagline: 大鼻子文档翻译分享
 ---
 {% include JB/setup %}
 
-## RedTheDocs
+## 日志列表
+
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+## RedTheDocs.org
 
 [django-docs-zh](https://django-docs-zh.readthedocs.org)
 
@@ -20,14 +28,6 @@ tagline: 大鼻子文档翻译分享
 [sphinx-doc中文文档](https://sphinx-doc.readthedocs.org)
 
 [Zend Framework 2 中文文档](https://zf2-documentation-zh.readthedocs.org)
-
-## 日志列表
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
 
 
 ## 开发者帮助
