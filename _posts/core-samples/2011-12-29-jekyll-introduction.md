@@ -19,13 +19,14 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
 ### 示例
 
-This website is created with Jekyll. [Other Jekyll websites](https://github.com/mojombo/jekyll/wiki/Sites).
+使用Jekyll创建的网站. [其他Jekyll网站](https://github.com/mojombo/jekyll/wiki/Sites).
 
 
 
 ### Jekyll能做什么？
 
-Jekyll is a ruby gem you install on your local system.
+Jekyll是安装在本地的ruby gem.
+
 Once there you can call `jekyll --server` on a directory and provided that directory
 is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files, 
 compute categories, tags, permalinks, and construct your pages from layout templates and partials.
@@ -38,30 +39,31 @@ on each request, Jekyll does this once _beforehand_ and caches the _entire websi
 
 ### Jekyll不是日志软件
 
-**Jekyll is a parsing engine.**
+**Jekyll是一个解析引擎.**
 
 Jekyll does not come with any content nor does it have any templates or design elements.
 This is a common source of confusion when getting started.
 Jekyll does not come with anything you actually use or see on your website - you have to make it.
 
-### Why Should I Care?
+### 我为什么要关心?
 
-Jekyll is very minimalistic and very efficient.
+杰基尔是非常简约，非常有效的.
+
 The most important thing to realize about Jekyll is that it creates a static representation of your website requiring only a static web-server.
 Traditional dynamic blogs like Wordpress require a database and server-side code.
 Heavily trafficked dynamic blogs must employ a caching layer that ultimately performs the same job Jekyll sets out to do; serve static content.
 
 Therefore if you like to keep things simple and you prefer the command-line over an admin panel UI then give Jekyll a try.
 
-**Developers like Jekyll because we can write content like we write code:**
+**开发者喜欢Jekyll是因为可以像写代码一样写内容:**
 
-- Ability to write content in markdown or textile in your favorite text-editor.
-- Ability to write and preview your content via localhost.
-- No internet connection required.
-- Ability to publish via git.
-- Ability to host your blog on a static web-server.
-- Ability to host freely on GitHub Pages.
-- No database required.
+- 能在你喜欢的编辑器里用markdonw或者textile写内容.
+- 能在本地书写或者与连内容.
+- 不用联网.
+- 能通过git发布.
+- 可以在静态服务器存放你的日志.
+- 能在GitHub Pages上自由创建网站.
+- 不需要数据库.
 
 # Jekyll 如何工作
 
@@ -77,10 +79,10 @@ help you better understand the code examples contained throughout Jekyll-Bootstr
 
 ## 初始设置
 
-After [installing jekyll](/index.html#start-now) you'll need to format your website directory in a way jekyll expects.
+After [安装 jekyll](/index.html#start-now) you'll need to format your website directory in a way jekyll expects.
 Jekyll-bootstrap conveniently provides the base directory format.
 
-### The Jekyll Application Base Format
+### Jekyll应用基本格式
 
 Jekyll expects your website directory to be laid out like so:
 
@@ -102,28 +104,28 @@ Jekyll expects your website directory to be laid out like so:
 
 
 - **\_config.yml**  
-	Stores configuration data.
+	存放配置未见.
 
 - **\_includes**  
-	This folder is for partial views.
+	局部视图.
 
 - **\_layouts**   
-	This folder is for the main templates your content will be inserted into.
-	You can have different layouts for different pages or page sections.
+	布局模板.
 
 - **\_posts**  
-	This folder contains your dynamic content/posts.
-	the naming format is required to be `@YEAR-MONTH-DATE-title.MARKUP@`.
+	动态内容/帖子.
+	命名格式 `@YEAR-MONTH-DATE-title.MARKUP@`.
 
 - **\_site**  
-	This is where the generated site will be placed once Jekyll is done transforming it. 
+	生成的网站内容. 
 
 - **assets**  
-	This folder is not part of the standard jekyll structure.
+	不是标准框架里的文件夹.
+	
 	The assets folder represents _any generic_ folder you happen to create in your root directory.
 	Directories and files not properly formatted for jekyll will be left untouched for you to serve normally.
 
-(read more: <https://github.com/mojombo/jekyll/wiki/Usage>)
+(更多: <https://github.com/mojombo/jekyll/wiki/Usage>)
 
 
 ### Jekyll配置
@@ -156,19 +158,25 @@ Additionally, each file must have [YAML Front-Matter](https://github.com/mojombo
 YAML Front-Matter is a valid YAML syntax specifying meta-data for the given file.
 
 **排序**  
+
 Ordering is an important part of Jekyll but it is hard to specify a custom ordering strategy.
 Only reverse chronological and chronological ordering is supported in Jekyll.
 
-Since the date is hard-coded into the filename format, to change the order, you must change the dates in the filenames.
+排序是用文件名里的时间，如果想修改排序，只要修改文件名就可以了.
 
 **标签**   
+
 Posts can have tags associated with them as part of their meta-data.
+
 Tags may be placed on posts by providing them in the post's YAML front matter.
+
 You have access to the post-specific tags in the templates. These tags also get added to the sitewide collection.
 
 **分类**   
 Posts may be categorized by providing one or more categories in the YAML front matter.
+
 Categories offer more significance over tags in that they can be reflected in the URL path to the given post.
+
 Note categories in Jekyll work in a specific way.
 If you define more than one category you are defining a category hierarchy "set".
 Example:
@@ -187,13 +195,17 @@ You won't find "lessons" and "beginner" as two separate categories unless you de
 Pages are created by properly formatting a file and placing it anywhere in the root directory or subdirectories that do _not_ start with an underscore.
 
 **格式化**  
+
 In order to register as a Jekyll page the file must contain [YAML Front-Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter).
+
 Registering a page means 1) that Jekyll will process the page and 2) that the page object will be available in the `site.pages` array for inclusion into your templates.
 
 **分类和标签**  
+
 Pages do not compute categories nor tags so defining them will have no effect.
 
 **子目录**  
+
 If pages are defined in sub-directories, the path to the page will be reflected in the url.
 Example:
 
