@@ -7,7 +7,7 @@ tagline: 大鼻子文档翻译分享
 
 
 <div class="span4">
-## 日志列表
+<h2>日志列表</h2>
 <p>
 <ul class="posts">
   {% for post in site.posts %}
@@ -17,7 +17,7 @@ tagline: 大鼻子文档翻译分享
 </p>
 </div>
 <div class="span4">
-## RedTheDocs.org
+<h2>RedTheDocs.org</h2>
 <p>
 [django-docs-zh](https://django-docs-zh.readthedocs.org)
 
@@ -35,7 +35,7 @@ tagline: 大鼻子文档翻译分享
 </p>
 </div>
 <div class="span4">
-## 开发者帮助
+<h2>开发者帮助</h2>
 <p>
 阅读 [Jekyll快速指南](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
 
