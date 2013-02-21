@@ -1,5 +1,6 @@
 ---
 layout: page
+category : 测试
 title: 测试rst
 tagline: Supporting tagline
 ---

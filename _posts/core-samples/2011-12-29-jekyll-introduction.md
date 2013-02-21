@@ -1,6 +1,6 @@
 ---
 layout: post
-category : lessons
+category : 手册
 title: jekyll 介绍
 tagline: 翻译中
 tags : [intro, beginner, jekyll, tutorial]

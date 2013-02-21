@@ -1,6 +1,6 @@
 ---
 layout: post
-category : lessons
+category : 手册
 title: Markdown 语法
 tagline: 翻译中
 tags : [markdown, syntax, tutorial]
