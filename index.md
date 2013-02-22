@@ -7,6 +7,23 @@ tagline: 大鼻子文档翻译分享
 
 
 <div class="span4">
+<h2>如何创建一个GitHub个人博客</h2>
+<p>
+<ol>
+<li>注册账号yourname，创建一个yourname.github.com的Repo.</li>
+<li>
+	$ git clone https://github.com/plusjade/jekyll-bootstrap.git yourname.github.com
+	$ cd yourname.github.com
+	$ git remote set-url origin git@github.com:yourname/yourname.github.com.git
+	$ git push origin master
+</li>
+<li>修改_config.yml内容为你的信息.</li>
+<li>修改模板和每页的内容.</li>
+<li>可以用Egit或者SmartGit/Hg提交发布文件.</li>
+</ol>
+</p>
+</div>
+<div class="span4">
 <h2>日志列表</h2>
 <p>
 <ul class="posts">
@@ -15,8 +32,6 @@ tagline: 大鼻子文档翻译分享
   {% endfor %}
 </ul>
 </p>
-</div>
-<div class="span4">
 <h2>RedTheDocs.org</h2>
 <p><ul class="posts">
 <li><a href="https://django-docs-zh.readthedocs.org">django-docs-zh</a></li>
