@@ -7,19 +7,22 @@ tagline: 大鼻子文档翻译分享
 
 
 <div class="span4">
-<h2>如何创建一个GitHub个人博客</h2>
+<h2>如何搭建这个站点</h2>
 <p>
 <ol>
 <li>注册账号yourname，创建一个yourname.github.com的Repo.</li>
 <li>
-	$ git clone https://github.com/plusjade/jekyll-bootstrap.git yourname.github.com
-	$ cd yourname.github.com
-	$ git remote set-url origin git@github.com:yourname/yourname.github.com.git
-	$ git push origin master
+<ul>
+	<li>$ git clone https://github.com/plusjade/jekyll-bootstrap.git yourname.github.com</li>
+	<li>$ cd yourname.github.com</li>
+	<li>$ git remote set-url origin git@github.com:yourname/yourname.github.com.git</li>
+	<li>$ git push origin master</li>
+</ul>
 </li>
 <li>修改_config.yml内容为你的信息.</li>
 <li>修改模板和每页的内容.</li>
 <li>可以用Egit或者SmartGit/Hg提交发布文件.</li>
+<li>git clone git://github.com/twitter/bootstrap.git 下载最新的bootstrap文件.</li>
 </ol>
 </p>
 </div>
