@@ -81,7 +81,7 @@ tags_path : /tags.html
 comments :
 provider : disqus
 disqus :
-short_name : 大鼻子
+short_name : wohugb
 livefyre :
 site_id : 123
 intensedebate :
