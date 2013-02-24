@@ -13,6 +13,6 @@ tags : [Jekyll,手册]
 
     gem install jekyll
 
-
+Jekyll requires the gems `directory_watcher`, `liquid`, `maruku` and `classifier`. These are automatically installed by the gem install command.
 
 
