@@ -12,7 +12,7 @@ The command-line parameters, the defaults and the `_config.yml` (through `Jekyll
         
 ```ruby
 # 创建Site  
-site = Jekyll::Site.new(options)  
+site = Jekyll::Site.new(options)
 ```
 
 After that, it starts to watch the necessary directories if the `--auto` option was used.
