@@ -57,5 +57,5 @@ Or, in your `_config.yml` file put the following so you don’t have to specify 
 
 ## Pygments 安装
 
-If you want syntax highlighting via the `{% highlight %}`
+If you want syntax highlighting via the 
 
