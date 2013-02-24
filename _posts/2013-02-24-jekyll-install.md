@@ -55,4 +55,28 @@ Or, in your `_config.yml` file put the following so you don’t have to specify 
 
     markdown: rdiscount
 
+## Pygments 安装
+
+If you want syntax highlighting via the `{% highlight %}` tag in your posts, you’ll need to install [Pygments](http://pygments.org/) and then follow the Pygments Usage notes in the section below.
+
+### On OS X Leopard, Snow Leopard:
+
+It already comes preinstalled with Python 2.6
+
+    sudo easy_install Pygments
+
+Alternatively on OS X with MacPorts:
+
+    sudo port install python25 py25-pygments
+
+Alternatively on OS X with Homebrew:
+
+    brew install python
+    # export PATH="/usr/local/share/python:${PATH}"
+    easy_install pip
+    pip install --upgrade distribute
+    pip install pygments
+
+**Note**: Homebrew doesn’t symlink the executables for you. For the Homebrew default Cellar location and Python 2.7, be sure to add `/usr/local/share/python` to your `PATH`.  For, more information, check out [this](https://github.com/mxcl/homebrew/wiki/Homebrew-and-Python).
+
 
