@@ -11,8 +11,4 @@ tags : [Jekyll,手册]
 
 安装Jekyll最佳方法是通过RubyGems:
 
-    gem install jekyll
-
-Jekyll requires the gems `directory_watcher`, `liquid`, `maruku` and `classifier`. These are automatically installed by the gem install command.
-
 
