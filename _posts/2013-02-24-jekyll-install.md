@@ -57,6 +57,5 @@ Or, in your `_config.yml` file put the following so you don’t have to specify 
 
 ## Pygments 安装
 
-If you want syntax highlighting via the `{% highlight %}` tag in your posts, you’ll need to install [Pygments](http://pygments.org/) and then follow the Pygments Usage notes in the section below.
-
+If you want syntax highlighting via the `{% highlight %}`
 
