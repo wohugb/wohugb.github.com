@@ -9,7 +9,7 @@ tags : [Jekyll,手册]
 
 ## 安装
 
-The best way to install Jekyll is via RubyGems:
+安装Jekyll最佳方法是通过RubyGems:
 
     gem install jekyll
 
