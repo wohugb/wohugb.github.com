@@ -11,14 +11,14 @@ tags : [Jekyll,手册]
 
 The command-line parameters, the defaults and the `_config.yml` (through `Jekyll::configuration` method) are used to create an `options` hash and then a new site is instantiated:
 
-```ruby
+{% highlight ruby %}
 # 创建Site
 site = Jekyll::Site.new(options)
-```
+{% endhighlight %}
 
 After that, it starts to watch the necessary directories if the `--auto` option was used.
 
-```ruby
+{% highlight ruby %}
 if options['auto']
   require 'directory_watcher'
   puts "Auto-regenerating enabled: #{source} -> #{destination}"
@@ -27,7 +27,7 @@ else
   puts "Building site: #{source} -> #{destination}"
   # ...
 end
-```
+{% endhighlight %}
 
 The site is built through a call to `site.process`, the main method in the `Jekyll::Site` class. Finally, it runs the local server if `--server` was specified.
 
@@ -35,7 +35,7 @@ The site is built through a call to `site.process`, the main method in the `Jeky
 
 The `site.process` call is responsible for doing all the work necessary to turn the files in the site's source into a site. In `lib/jekyll/site.rb`:
 
-```ruby
+{% highlight ruby %}
 def initialize(config)
   self.config = config.clone
 
@@ -53,7 +53,7 @@ def process
   self.cleanup
   self.write
 end
-```
+{% endhighlight %}
 
 `reset` and `setup` are called during initialization of the site to reset its internal data structures and to load libraries, plugins, generators and converters, respectively. `process` delegates the work to these 6 methods:
 
