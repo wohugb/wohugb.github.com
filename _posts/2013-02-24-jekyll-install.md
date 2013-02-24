@@ -1,7 +1,7 @@
 ---
 layout: post
 category : 手册
-title:  安装Jekyll
+title:  Jekyll安装
 tagline: 翻译中
 tags : [Jekyll,手册]
 ---
@@ -55,7 +55,7 @@ Or, in your `_config.yml` file put the following so you don’t have to specify 
 
     markdown: rdiscount
 
-## Pygments Installation
+## Pygments 安装
 
 If you want syntax highlighting via the `{% highlight %}` tag in your posts, you’ll need to install [Pygments](http://pygments.org/) and then follow the Pygments Usage notes in the section below.
 
