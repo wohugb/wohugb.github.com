@@ -5,6 +5,7 @@ title:  Jekyll是如何工作的
 tagline: 翻译中
 tags : [Jekyll,手册]
 ---
+{% include JB/setup %}
 
 ##  可执行的Jekyll
 
