@@ -6,13 +6,13 @@ tagline: 翻译中
 tags : [Jekyll,手册]
 ---
 
-##  可执行的Jekyll
+## 可执行的Jekyll
 
 The command-line parameters, the defaults and the `_config.yml` (through `Jekyll::configuration` method) are used to create an `options` hash and then a new site is instantiated:
 
 ```ruby
 
-# 创建Site
+## 创建网站
 
 site = Jekyll::Site.new(options)
 ```
