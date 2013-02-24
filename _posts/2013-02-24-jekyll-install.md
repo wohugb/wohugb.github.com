@@ -11,4 +11,8 @@ tags : [Jekyll,手册]
 
 安装Jekyll最佳方法是通过RubyGems:
 
+    gem install jekyll
+
+
+
 
