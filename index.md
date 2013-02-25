@@ -2,6 +2,7 @@
 layout: home
 title: 巴别塔
 tagline: 大鼻子文档翻译分享
+group: navigation
 ---
 {% include JB/setup %}
 
