@@ -45,6 +45,7 @@ group: navigation
 <li><a href="https://sphinx-doc.readthedocs.org">python-guide-zh</a></li>
 <li><a href="https://sphinx-doc.readthedocs.org">sphinx-doc中文文档</a></li>
 <li><a href="https://zf2-documentation-zh.readthedocs.org">Zend Framework 2 中文文档</a></li>
+<li><a href="https://readthedocs.readthedocs.org">Read The Docs 中文文档</a></li>
 </ul></p>
 </div>
 <div class="span4">
