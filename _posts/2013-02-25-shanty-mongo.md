@@ -3,7 +3,7 @@ layout: post
 category : mongo
 title:  Shanty Mongo 指南
 tagline: 翻译中
-tags : [ Shanty-Mongo, 语法,手册]
+tags : [ Shanty-Mongo, 语法, 手册]
 ---
 
 Shanty Mongo
