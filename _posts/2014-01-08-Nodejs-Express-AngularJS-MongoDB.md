@@ -13,28 +13,27 @@ Run the app
 Get the code at JazzHub
 I chose to use JazzHub to manage the source code for my project. Not only does it give me a full version control system for my code, but it also has an online IDE for editing my code in the cloud, and abundant agile features for project management. JazzHub also integrates easily with Eclipse, which has plug-ins to enable one-click deployment to platforms like BlueMix or Cloud Foundry.
 
-##What you'll need to build your app
+##创建应用都需要什么？
 
-0 
-A basic familiarity with Node.js, and a Node.js development environment
-These Node.js modules: Express framework, Jade, Mongoose, and socket.io
-AngularJS JavaScript framework
-MongoDB NoSQL database
-The Eclipse IDE, with the Nodeclipse plug-in installed
-READ:Node.js — beyond the basics
+* 基本熟悉Node.js, 和一个Node.js开发环境
+* Node.js模块: Express框架, Jade, Mongoose, 和 socket.io
+* AngularJS JavaScript 框架
+* MongoDB NoSQL 数据库
+* Eclipse IDE, 并装有Nodeclipse插件
 
-##Step 1. Build a basic Express back-end
+** READ: ** Node.js — 超越基础
 
-0 
+##第一步： 创建一个基础的Express后端
+
 In Eclipse, switch to the Node perspective, and create a new Node Express project. If you create a JazzHub project, as I did, name your Node Express project with the same name. Leave Jade selected as the template engine. Eclipse will automatically download the required npm modules to create a simple Express app.
 
-###Run the Express app
+###运行Express应用
 
 In Project Explorer, find app.js in the root of your project, right-click and choose Run As > Node Application. This will start a Web server and deploy the app to it. Next, open your browser and navigate to http://localhost:3000.
 Figure 1. Starter Express app
 Starter Express app
 
-####Configure the basic front-end
+####配置基础前端
 
 The polls app uses the Bootstrap framework for the general user interface and layout. Let's make some changes to the Express app now to reflect this. First, open routes/index.js, and change the title property to Polls:
 Listing 1. routes/index.js
@@ -64,9 +63,8 @@ Figure 2. Polls app boilerplate
 
 Note: When using Jade templates, take care to indent your code properly, or you will run into trouble. Also, avoid mixing indentation styles, as Jade will give you errors if you try.
 
-##Step 2. Craft the front-end user experience with AngularJS
+##第二步： Craft AngularJS前端用户体验
 
-0 
 To start using Angular, you first need to include it and add some directives within your HTML page. In the views/index.jade template, change the html element to the following:
 html(lang='en', ng-app='polls').
 Within the head block in this file, add the following script elements:
@@ -78,7 +76,7 @@ Next, change the body element in the template, adding an ng-controller attribute
 body(ng-controller='PollListCtrl').
 Finally, change the last div element in the template to include an ng-view attribute: div(ng-view).
 
-###Build the Angular module
+###创建Angular模块
 0 
 
 An impressive feature in Angular is data binding, which automatically updates your views when the back-end models change. This drastically reduces the amount of JavaScript you need to write, as it abstracts away the messy task of manipulating the DOM.
@@ -118,7 +116,7 @@ Listing 5. public/javascript/controllers.js
           $scope.createPoll = function() {};
         }
 
-###Create the partial HTML templates
+###创建局部HTML模板
 
 To render data from the controllers, Angular uses partial HTML templates that allow you to use placeholders and expressions to include data and perform operations such as conditionals and iterators. In the public directory, create a new subdirectory named partials. We will create three partials for our app. The first partial will display the list of polls available, and we will use Angular to easily filter this list by a search field.
 Listing 6. public/partials/list.html
@@ -262,7 +260,7 @@ Listing 9. public/stylesheets/style.css
         }
 At this point, if you run the app, you will see an empty poll list. If you try to create a new poll, you will be able to see the form and add more choices, but you won't be able to save the poll. We'll tie up all of this in the next step.
 
-##Step 3. Store data in MongoDB using Mongoose
+##第三步: 用Mongoose在MongoDB中存储数据
 
 WATCH:An introduction to MongoDB
 To store data, the app uses the MongoDB driver and Mongoose npm modules. These allow the app to communicate with a MongoDB database. To get these modules, open the package.json file in the app's root directory, and in the dependencies section, add these lines:.
@@ -349,7 +347,7 @@ Listing 13. routes/index.js
           });
         };
 
-###Bind data to the front-end with Angular services
+###绑定数据到前端角Angular服务
 
 At this point, the back-end is set up to enable querying and saving of polls to the database, but we need to make some changes in Angular so it knows how to communicate with it. This is easily done using Angular services, which wrap the process of communicating with the server-side into straightforward function calls:
 Listing 14. public/javascripts/services.js
@@ -416,14 +414,14 @@ Listing 17. public/javascripts/controller.js (continued)
           };
         }
 
-###Run the app
+###运行应用程序
 
 You're almost there! At this point, the app should allow users to view and search polls, create new polls, and view the voting options of an individual poll. Before you run the app, make sure that you have MongoDB running locally. This is typically as simple as opening a terminal or command prompt and running the command mongod. Be sure to leave the terminal window open as you run your app:
 Figure 3. Viewing a poll's choices
 Viewing a poll's choices
 After you run the app, navigate to http://localhost:3000 in your browser and create a few polls. If you click on a poll, you will be able to see the choices available, but you won't be able to actually vote on the poll or see the results just yet. We'll cover that in the next and final step.
 
-##Step 4. Real-time voting with Socket.io
+##第四步： 使用Socket.io实时投票
 
 Web Sockets allow the server-side to directly communicate and send messages to the client-side.
 The only feature left to build is the voting functionality. The app will allow users to vote, and as they do, the results will be updated in real-time on any connected clients. This is easily implemented using the socket.io npm module, so let's do that now.
@@ -478,7 +476,7 @@ socket.handshake.address.address;
         };
 Note: If you're wondering why the app looks for the header 'x-forwarded-for' before the regular IP address property, this is to ensure that the correct client IP is used when the app is deployed in a load-balanced environment. If you deploy the app to BlueMix or Cloud Foundry, for example, this is critical for the app to function correctly.
 
-###Add an Angular service for sending data to Web sockets
+###添加一个将数据发送到网络套接字的Angular服务
 
 The back-end functionality for Web Sockets is now complete. All that's left is to tie up the front-end to send and listen for socket events. The best approach to doing this is to add a new Angular service. Replace the contents of the services.js file in the public/javascripts folder with this code:
 Listing 20. public/javascripts/services.js
@@ -542,13 +540,13 @@ Listing 21. public/javascripts/controllers.js
         }
    ...
 
-###View the final product in action
+###查看在行动最终产品
 
 The polls app is now complete. Make sure that mongod is still running, and run the Node application again in Eclipse. Point your browser at http://localhost:3000, and navigate to a poll and vote. You should see the result. To see the real-time updates, find your local IP address and replace localhost with it. Then navigate to it using a different machine or even a smartphone or tablet device on your local network. When you vote on another device, the result will be shown there, and the result will also be pushed out to your main computer's browser automatically:
 Figure 4. Viewing poll results
 Viewing poll results
 
-###下一步: further development and deployment
+###下一步: 进一步开发和部署
 
 The polls app you have just created is a decent starting point, but there is much that can be improved. When planning apps like this, I like to follow an agile methodology of defining user stories and epics, and breaking the project into sprints. I used JazzHub for this project, which makes development really simple by keeping all of your project collateral and source code together in a cloud-hosted repository.
 READ:Project kickoff on JazzHub
