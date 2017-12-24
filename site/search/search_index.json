@@ -1,0 +1,24 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "\u5927\u9f3b\u5b50\u7684\u5df4\u522b\u5854\n\n\n\n\ndjango-docs-zh\n\n\nGit \u4e2d\u6587\u624b\u518c\n\n\nmongodb-odm-documentation\n\n\nPython\u4e2d\u6587\u6587\u6863\n\n\npython-guide-zh\n\n\nsphinx-doc\u4e2d\u6587\u6587\u6863\n\n\nZend Framework 2 \u4e2d\u6587\u6587\u6863\n\n\nRead The Docs \u4e2d\u6587\u6587\u6863\n\n\n\u81ea\u5df1\u52a8\u624b\u505a\u804a\u5929\u673a\u5668\u4eba", 
+            "title": "\u6982\u8ff0"
+        }, 
+        {
+            "location": "/#_1", 
+            "text": "django-docs-zh  Git \u4e2d\u6587\u624b\u518c  mongodb-odm-documentation  Python\u4e2d\u6587\u6587\u6863  python-guide-zh  sphinx-doc\u4e2d\u6587\u6587\u6863  Zend Framework 2 \u4e2d\u6587\u6587\u6863  Read The Docs \u4e2d\u6587\u6587\u6863  \u81ea\u5df1\u52a8\u624b\u505a\u804a\u5929\u673a\u5668\u4eba", 
+            "title": "\u5927\u9f3b\u5b50\u7684\u5df4\u522b\u5854"
+        }, 
+        {
+            "location": "/ai/", 
+            "text": "\u5173\u4e8e\u4eba\u5de5\u667a\u80fd", 
+            "title": "\u4eba\u5de5\u667a\u80fd"
+        }, 
+        {
+            "location": "/ai/#_1", 
+            "text": "", 
+            "title": "\u5173\u4e8e\u4eba\u5de5\u667a\u80fd"
+        }
+    ]
+}

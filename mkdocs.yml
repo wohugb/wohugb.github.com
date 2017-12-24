@@ -2,6 +2,7 @@ site_name: 大鼻子
 copyright: '版权 &copy; 2016 - 2017 wohugb.github.io'
 pages:
   - 概述: index.md
+  - 人工智能: ai/index.md
 theme:
   name: material
   palette:
