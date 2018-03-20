@@ -1,0 +1,2455 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="大鼻子的日常学习记录">
+      
+      
+      
+        <meta name="author" content="Nosy">
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.6.6">
+    
+    
+      
+        <title>Serpent指南 - 大鼻子</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.78aab2dc.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#serpent-" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="大鼻子" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                大鼻子
+              </span>
+              <span class="md-header-nav__topic">
+                Serpent指南
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/wohugb/wangdake" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wohugb/wangdake
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="Ð巴别塔" class="md-tabs__link">
+        Ð巴别塔
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../tools/" title="器" class="md-tabs__link">
+          器
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../ai/" title="智能" class="md-tabs__link">
+          智能
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../" title="无心" class="md-tabs__link md-tabs__link--active">
+          无心
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../iot/InternetOfThings/" title="IOT" class="md-tabs__link">
+          IOT
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../python/python/" title="Py" class="md-tabs__link">
+          Py
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../nodejs/nodejs/" title="Node" class="md-tabs__link">
+          Node
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../angular/" title="Ng" class="md-tabs__link">
+          Ng
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../github/collections/" title="GitHub" class="md-tabs__link">
+          GitHub
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../aliyun/" title="阿里云" class="md-tabs__link">
+          阿里云
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../wechat/" title="微信" class="md-tabs__link">
+          微信
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../pin/group/" title="拼" class="md-tabs__link">
+          拼
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../fresh/platform/" title="生鲜" class="md-tabs__link">
+          生鲜
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    大鼻子
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/wohugb/wangdake" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wohugb/wangdake
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Ð巴别塔" class="md-nav__link">
+      Ð巴别塔
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../awesome/" title="赞表" class="md-nav__link">
+      赞表
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      器
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        器
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tools/" title="利器" class="md-nav__link">
+      利器
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tools/vscode/" title="vscode" class="md-nav__link">
+      vscode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      智能
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        智能
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/" title="AI" class="md-nav__link">
+      AI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/nlp/" title="自然语言处理" class="md-nav__link">
+      自然语言处理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/deeplearning/" title="机器学习" class="md-nav__link">
+      机器学习
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/awesome/" title="赞表" class="md-nav__link">
+      赞表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/2017/" title="2017" class="md-nav__link">
+      2017
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      无心
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        无心
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tree/" title="技术树" class="md-nav__link">
+      技术树
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../term/" title="术语" class="md-nav__link">
+      术语
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../awesome/" title="赞表" class="md-nav__link">
+      赞表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../bitcoin/" title="比特币" class="md-nav__link">
+      比特币
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../altcoins/" title="山寨币" class="md-nav__link">
+      山寨币
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ipfs/" title="IPFS" class="md-nav__link">
+      IPFS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-8" type="checkbox" id="nav-5-8" checked>
+    
+    <label class="md-nav__link" for="nav-5-8">
+      以太坊
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-8">
+        以太坊
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Serpent指南
+      </label>
+    
+    <a href="./" title="Serpent指南" class="md-nav__link md-nav__link--active">
+      Serpent指南
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#serpentpython" title="Serpent与Python的区别" class="md-nav__link">
+    Serpent与Python的区别
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="安装" class="md-nav__link">
+    安装
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="指南" class="md-nav__link">
+    指南
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#name-registry" title="另一个实例：名称注册合约 (Name Registry)" class="md-nav__link">
+    另一个实例：名称注册合约 (Name Registry)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="引用代码和调用其他合约" class="md-nav__link">
+    引用代码和调用其他合约
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="持久化保存结构化数据" class="md-nav__link">
+    持久化保存结构化数据
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="内存中的数组" class="md-nav__link">
+    内存中的数组
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="数组与函数" class="md-nav__link">
+    数组与函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" title="字符串" class="md-nav__link">
+    字符串
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macros" title="Macros (宏)" class="md-nav__link">
+    Macros (宏)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" title="类型" class="md-nav__link">
+    类型
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" title="其他" class="md-nav__link">
+    其他
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" title="小提示" class="md-nav__link">
+    小提示
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../development/" title="开发计划" class="md-nav__link">
+      开发计划
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../term/" title="术语表" class="md-nav__link">
+      术语表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../whitepaper/" title="白皮书" class="md-nav__link">
+      白皮书
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ProofOfStake/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../network-status/" title="网络状态" class="md-nav__link">
+      网络状态
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-9" type="checkbox" id="nav-5-9">
+    
+    <label class="md-nav__link" for="nav-5-9">
+      twister
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-9">
+        twister
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../twister/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../twister/build-unix/" title="UNIX" class="md-nav__link">
+      UNIX
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../twister/building-on-ubuntu-debian/" title="UBUNTU" class="md-nav__link">
+      UBUNTU
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../twister/build-osx/" title="OSX" class="md-nav__link">
+      OSX
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../twister/compiling-for-windows/" title="Windows" class="md-nav__link">
+      Windows
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      IOT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        IOT
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../iot/InternetOfThings/" title="物联网" class="md-nav__link">
+      物联网
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Py
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Py
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../python/python/" title="Python" class="md-nav__link">
+      Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../python/awesome/" title="赞表" class="md-nav__link">
+      赞表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
+    
+    <label class="md-nav__link" for="nav-7-3">
+      PIP
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-3">
+        PIP
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../python/pip/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-4" type="checkbox" id="nav-7-4">
+    
+    <label class="md-nav__link" for="nav-7-4">
+      Django
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-4">
+        Django
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../python/django/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../python/django/awesome/" title="赞表" class="md-nav__link">
+      赞表
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Node
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Node
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/nodejs/" title="NodeJs" class="md-nav__link">
+      NodeJs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/awesome/" title="赞表" class="md-nav__link">
+      赞表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/express/" title="Express" class="md-nav__link">
+      Express
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/koa/" title="KOA" class="md-nav__link">
+      KOA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/mongoose/" title="獴" class="md-nav__link">
+      獴
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/pm2/" title="PM2" class="md-nav__link">
+      PM2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-7" type="checkbox" id="nav-8-7">
+    
+    <label class="md-nav__link" for="nav-8-7">
+      组件
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-7">
+        组件
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-7-1" type="checkbox" id="nav-8-7-1">
+    
+    <label class="md-nav__link" for="nav-8-7-1">
+      QrCode
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-8-7-1">
+        QrCode
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/node_modules/qrcode/readme/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/node_modules/qrcode/api/" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/node_modules/gm/" title="GM" class="md-nav__link">
+      GM
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Ng
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Ng
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/cli/" title="cli" class="md-nav__link">
+      cli
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/awesome/" title="赞表" class="md-nav__link">
+      赞表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/starter/" title="starter" class="md-nav__link">
+      starter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/migrate/" title="升级" class="md-nav__link">
+      升级
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      GitHub
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        GitHub
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../github/collections/" title="集合" class="md-nav__link">
+      集合
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      阿里云
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        阿里云
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../aliyun/" title="阿里云" class="md-nav__link">
+      阿里云
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../aliyun/" title="ECS" class="md-nav__link">
+      ECS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../aliyun/" title="MonogoDb" class="md-nav__link">
+      MonogoDb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../aliyun/" title="LBS" class="md-nav__link">
+      LBS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../aliyun/" title="DDOS" class="md-nav__link">
+      DDOS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../aliyun/" title="云客服" class="md-nav__link">
+      云客服
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../aliyun/video/" title="视频" class="md-nav__link">
+      视频
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      微信
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        微信
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/" title="微信" class="md-nav__link">
+      微信
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/oa/" title="公号" class="md-nav__link">
+      公号
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/" title="第三方" class="md-nav__link">
+      第三方
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/" title="企业微信" class="md-nav__link">
+      企业微信
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/weapp-awesome/" title="小程序" class="md-nav__link">
+      小程序
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      拼
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        拼
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pin/group/" title="佣金团" class="md-nav__link">
+      佣金团
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pin/ladder/" title="阶梯团" class="md-nav__link">
+      阶梯团
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pin/cohesion/" title="聚力团" class="md-nav__link">
+      聚力团
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      生鲜
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        生鲜
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../fresh/platform/" title="平台" class="md-nav__link">
+      平台
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../fresh/education/" title="教育" class="md-nav__link">
+      教育
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../fresh/repository/" title="知识库" class="md-nav__link">
+      知识库
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#serpentpython" title="Serpent与Python的区别" class="md-nav__link">
+    Serpent与Python的区别
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="安装" class="md-nav__link">
+    安装
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="指南" class="md-nav__link">
+    指南
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#name-registry" title="另一个实例：名称注册合约 (Name Registry)" class="md-nav__link">
+    另一个实例：名称注册合约 (Name Registry)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="引用代码和调用其他合约" class="md-nav__link">
+    引用代码和调用其他合约
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="持久化保存结构化数据" class="md-nav__link">
+    持久化保存结构化数据
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="内存中的数组" class="md-nav__link">
+    内存中的数组
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="数组与函数" class="md-nav__link">
+    数组与函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" title="字符串" class="md-nav__link">
+    字符串
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macros" title="Macros (宏)" class="md-nav__link">
+    Macros (宏)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" title="类型" class="md-nav__link">
+    类型
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" title="其他" class="md-nav__link">
+    其他
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" title="小提示" class="md-nav__link">
+    小提示
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="serpent-">Serpent - 大蛇 编写以太坊合约高级编程语言<a class="headerlink" href="#serpent-" title="Permanent link">&para;</a></h1>
+<p>译者: jan</p>
+<p><strong>更多以太坊信息请访问<a href="http://ethfans.org">EthFans.org</a></strong></p>
+<p>有关Serpent 1.0的信息请查阅: https://github.com/ethereum/wiki/wiki/Serpent-1.0-(old)</p>
+<p>Serpent是一种用来编写以太坊合约(Ethereum Contract)的高级编程语言。Serpent翻译成中文意思是"大蛇"，如这个名字所示，这是一种与Python类似的编程语言。Serpent在兼顾底层语言效率与良好编程风格的同时尽可能的追求简洁，还加入了一些针对合约编程的特性。Serpent编译器由C++实现，因此可以被轻松打包进任何客户端，最新版本可以在<a href="http://github.com/ethereum/serpent">Github</a>上找到。</p>
+<p>以下内容需要读者对以太坊的工作原理有一个基本认识，包括区块，交易，合约和消息的概念，以及合约是如何通过读入字节数组和输出字节数组工作的。读者可以通过阅读<a href="https://github.com/ethereum/wiki/wiki/Ethereum-Development-Tutorial">以太坊开发指南</a>得到这些知识。</p>
+<h2 id="serpentpython">Serpent与Python的区别<a class="headerlink" href="#serpentpython" title="Permanent link">&para;</a></h2>
+<p>Serpent与Python之间的主要区别有:</p>
+<ul>
+<li>Python中的数字类型没有大小限制，Serpent的数字类型则会在2<sup>256</sup>溢出。例如，在Serpent中计算<code>3^(2^254)</code>的结果是1,虽然事实上这是一个天文数字。</li>
+<li>Serpent没有Decimal类型。</li>
+<li>Serpent没有list comprehensions (例如<code>[x**2 for x in my_list]</code>这样的表达式),字典(Hash/Map)，和其它一些高级特性。</li>
+<li>Serpent没有first-class函数的概念。虽然合约中可以定义函数, 合约也可以调用这些函数，但是在两次函数调用之间变量(除了持久变量)是会丢失的。</li>
+<li>Serpent有一个被称作”持久变量“(persistent storage variables)的概念。</li>
+<li>在Serpent中可以使用<code>extern</code>语句来调用其他合约中定义的函数。</li>
+</ul>
+<h2 id="_1">安装<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>我们可以通过pip来安装Serpent的python库和可执行文件 (注：译者使用的Python版本为2.7):</p>
+<div class="codehilite"><pre><span></span>sudo pip install ethereum-serpent
+</pre></div>
+
+
+<p>如果想要一个在C++中可以直接调用的库，可以自行编译Serpent:</p>
+<div class="codehilite"><pre><span></span>git clone http://github.com/ethereum/serpent
+cd serpent
+make
+sudo make install
+</pre></div>
+
+
+<h2 id="_2">指南<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>现在开始编写我们的第一个合约吧！</p>
+<p>首先创建一个叫做"mul2.se"的文件，内容如下:</p>
+<div class="codehilite"><pre><span></span>def double(x):
+     return(x * 2)
+</pre></div>
+
+
+<p>这是一个非常简单的只有两行代码的合约，它定义了一个函数。一份Serpent合约通过函数向其他合约或者交易(transaction)提供”接口“(interface)，合约定义的函数即可以被交易也可以被其他合约调用。例如一份定义货币的合约可能会定义类似<code>send(to,value)</code>和<code>check_balance(address)</code>的函数。</p>
+<p>现在让我们来编译这份代码。在命令行中输入:</p>
+<div class="codehilite"><pre><span></span>&gt; serpent compile mul2.se
+604380600b600039604e567c01000000000000000000000000000000000000000000000000000000006000350463eee9720681141560415760043560405260026040510260605260206060f35b505b6000f3
+</pre></div>
+
+<p>执行成功后就得到了一串可以放入交易执行的16进制编码的字符串。如果你想要的是机器指令(opcodes)，可以使用<code>pretty_compile</code>来编译：</p>
+<div class="codehilite"><pre><span></span>    &gt; serpent pretty_compile mul2.se
+    <span class="o">[</span>PUSH1, <span class="m">67</span>, DUP1, PUSH1, <span class="m">11</span>, PUSH1, <span class="m">0</span>, CODECOPY, PUSH1, <span class="m">78</span>, JUMP, PUSH29, <span class="m">1</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, PUSH1, <span class="m">0</span>, CALLDATALOAD, DIV, PUSH4, <span class="m">238</span>, <span class="m">233</span>, <span class="m">114</span>, <span class="m">6</span>, DUP2, EQ, ISZERO, PUSH1, <span class="m">65</span>, JUMPI, PUSH1, <span class="m">4</span>, CALLDATALOAD, PUSH1, <span class="m">64</span>, MSTORE, PUSH1, <span class="m">2</span>, PUSH1, <span class="m">64</span>, MLOAD, MUL, PUSH1, <span class="m">96</span>, MSTORE, PUSH1, <span class="m">32</span>, PUSH1, <span class="m">96</span>, RETURN, JUMPDEST, POP, JUMPDEST, PUSH1, <span class="m">0</span>, RETURN<span class="o">]</span>
+</pre></div>
+
+<p>使用<code>compile_to_lll</code>可以查看LLL形式的中间编译结果：</p>
+<div class="codehilite"><pre><span></span>&gt; serpent compile_to_lll mul2.se
+<span class="o">(</span><span class="k">return</span> <span class="m">0</span>
+  <span class="o">(</span>lll
+    <span class="o">(</span>with <span class="s1">&#39;__funid</span>
+<span class="s1">      (div (calldataload 0)</span>
+<span class="s1">        26959946667150639794667015087019630673637144422540572481103610249216</span>
+<span class="s1">      )</span>
+<span class="s1">      (unless (iszero (eq (get &#39;</span>__funid<span class="o">)</span> <span class="m">4008276486</span><span class="o">))</span>
+        <span class="o">(</span>seq
+          <span class="o">(</span><span class="nb">set</span> <span class="s1">&#39;x (calldataload 4))</span>
+<span class="s1">          (seq</span>
+<span class="s1">            (set &#39;</span>_temp_521 <span class="o">(</span>mul <span class="o">(</span>get <span class="s1">&#39;x) 2))</span>
+<span class="s1">            (return (ref &#39;</span>_temp_521<span class="o">)</span> <span class="m">32</span><span class="o">)</span>
+          <span class="o">)</span>
+        <span class="o">)</span>
+      <span class="o">)</span>
+    <span class="o">)</span>
+    <span class="m">0</span>
+  <span class="o">)</span>
+<span class="o">)</span>
+</pre></div>
+
+<p>让我们来理解一下上面编译结果的含义。与大多数合约一样，代码最外一层的目的仅仅是在合约初始化阶段将合约内部的代码复制并作为运算结果返回。初始化阶段返回的代码将会在每次调用合约的时候被执行。因此在EVM (Ethereum Virtual Machine)执行的代码中你可以看到<code>CODECOPY</code>指令, 在LLL表达式中对应的则是<code>lll</code>元操作。在<code>lll</code>元操作内部，首先是一段获取保存在合约数据头四个字节的函数ID(function ID)的代码（也就是<code>(div (calldataload 0) 26959946667150639794667015087019630673637144422540572481103610249216)</code>这一段，我们通过先读入32个字节，再将其除以2^224得到头四个字节）。再往下，则会将获得的函数ID与该合约支持的所有函数ID逐一比较。在我们的例子中，如果函数ID是4008276486，则会将消息数据中的4到35字节的数据赋值给一个名为<code>'x</code>的变量（对应的代码是<code>(calldataload 4)</code>），然后将<code>2 * x</code>的结果赋值给一个临时变量<code>'_temp_521</code>，最后将这个临时变量对应的内存地址中存放的32字节长的数据作为结果返回。</p>
+<p>函数ID通过计算函数名字和参数的哈希值(Hash)的头四个字节得到。在我们的例子中，定义了一个名字为”double“，接受一个整型数作为参数的函数，因此可以通过如下命令得到其对应的函数ID:</p>
+<div class="codehilite"><pre><span></span>    &gt; serpent get_prefix double i
+    <span class="m">4008276486</span>
+</pre></div>
+
+<p>定义接受不同参数列表的同名函数是允许的。例如，我们可以定义一个接受三个整型数为参数的”double“函数，它会将每一个参数翻倍然后以数组形式返回。这个函数会有一个不同的函数ID (或者说前缀，prefix）：</p>
+<div class="codehilite"><pre><span></span>    &gt; serpent get_prefix double iii
+    <span class="m">1142360101</span>
+</pre></div>
+
+<p>字母<code>i</code>代表整型或者定长字符串（32字节，在Serpern和EVM中与整型等价）参数，字母<code>s</code>代表变长字符串参数，而字母<code>a</code>代表数组参数。后文会对此做更详细的介绍。</p>
+<p>那么如何运行这份合约呢？这时候我们需要使用<a href="https://github.com/ethereum/pyethereum">pyethereum</a>。先通过pip(环境是python 2.7)安装pyethereum:</p>
+<div class="codehilite"><pre><span></span>    &gt; sudo pip install pyethereum
+</pre></div>
+
+<p>在合约代码所在目录中打开Python控制台，输入：</p>
+<div class="codehilite"><pre><span></span>    &gt; from pyethereum import tester as t
+    &gt; <span class="nv">s</span> <span class="o">=</span> t.state<span class="o">()</span>
+    &gt; <span class="nv">c</span> <span class="o">=</span> s.abi_contract<span class="o">(</span><span class="s1">&#39;mul2.se&#39;</span><span class="o">)</span>
+    &gt; c.double<span class="o">(</span><span class="m">42</span><span class="o">)</span>
+    <span class="o">[</span><span class="m">84</span><span class="o">]</span>
+</pre></div>
+
+<p>第二行创建了一个初始化的状态(类似于创世块, genesis block)。第三行创建了一个Python对象，代表mul2.se这个合约。你可以用<code>c.address</code>来查看这份合约存放的地址。第四行调用这个合约，传入参数42,然后我们看到这份合约返回给我们结果84。</p>
+<p>如果要在testnet或者livenet上调用这样一份合约，你需要打包一个内容为”以整型参数42作为输入调用函数double“的消息发送给这份合约。使用下面的命令可以得到消息对应的字节码：</p>
+<div class="codehilite"><pre><span></span>    &gt; serpent encode_abi double i <span class="m">42</span>
+    eee97206000000000000000000000000000000000000000000000000000000000000002a
+</pre></div>
+
+<h2 id="name-registry">另一个实例：名称注册合约 (Name Registry)<a class="headerlink" href="#name-registry" title="Permanent link">&para;</a></h2>
+<p>读者一定觉得在区块链上跑一个”乘以2“的函数略显无聊吧... 接下来让我们来实现一个更有趣的合约：名称注册。这个合约的主要接口是一个<code>register(key, value)</code>函数。通过这个接口可以检查给定的key是否已经被使用/注册了；如果没有，则将这个key注册为指定的键值然后返回1；如果已经被使用则直接返回0。这个合约还提供另外一个接口用来获取指定key对应的键值。下面就是合约代码：</p>
+<div class="codehilite"><pre><span></span>    <span class="k">def</span> <span class="nf">register</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="c1"># Key not yet claimed</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">storage</span><span class="p">[</span><span class="n">key</span><span class="p">]:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">storage</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+            <span class="k">return</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># Key already claimed</span>
+
+    <span class="k">def</span> <span class="nf">ask</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+        <span class="k">return</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">storage</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+</pre></div>
+
+<p>这份合约首先定义了<code>register</code>函数，这个函数接受<code>key</code>和<code>value</code>变量作为参数。第二行是注释，以<code>#</code>开头，注释会被编译器忽略，仅仅用来帮助程序员更好的理解程序。然后是一个标准的if/else条件语句：先检查<code>self.storage[key]</code>是否为0(即表明这个key没有被使用)，如果是0则执行赋值<code>self.storage[key] = value</code>然后返回1,否则直接返回0。<code>self.storage</code>是一个伪数组，有和数组类似的行为但是实际上没有一块内存与之对应。</p>
+<p>让我们把这段代码放入一个名为"namecoin.se"的文件，然后在pyethereum中试试：</p>
+<div class="codehilite"><pre><span></span>    &gt; from pyethereum import tester as t
+    &gt; <span class="nv">s</span> <span class="o">=</span> t.state<span class="o">()</span>
+    &gt; <span class="nv">c</span> <span class="o">=</span> s.abi_contract<span class="o">(</span><span class="s1">&#39;namecoin.se&#39;</span><span class="o">)</span>
+    &gt; c.register<span class="o">(</span>0x67656f726765, <span class="m">45</span><span class="o">)</span>
+    <span class="o">[</span><span class="m">1</span><span class="o">]</span>
+    &gt; c.register<span class="o">(</span>0x67656f726765, <span class="m">20</span><span class="o">)</span>
+    <span class="o">[</span><span class="m">0</span><span class="o">]</span>
+    &gt; c.register<span class="o">(</span>0x6861727279, <span class="m">65</span><span class="o">)</span>
+    <span class="o">[</span><span class="m">1</span><span class="o">]</span>
+    &gt; c.ask<span class="o">(</span>0x6861727279<span class="o">)</span>
+    <span class="o">[</span><span class="m">65</span><span class="o">]</span>
+</pre></div>
+
+<p>如果我们想要把上面的第一次调用写成消息的形式：</p>
+<div class="codehilite"><pre><span></span>&gt; serpent encode_abi register ii 0x67656f726765 <span class="m">45</span>
+d66d6c10000000000000000000000000000000000000000000000000000067656f726765000000000000000000000000000000000000000000000000000000000000002d
+</pre></div>
+
+<h2 id="_3">引用代码和调用其他合约<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>当你的项目越来越大时把所有代码放在一个文件里面就很不科学了，所幸的是把合约代码分开保存在多个文件中是一件很容易的事情。假设我们创建了如下两个文件：</p>
+<div class="codehilite"><pre><span></span>mul2.se:
+
+    def double(x):
+        return(x * 2)
+
+returnten.se:
+
+    extern mul2: [double]
+
+    MUL2 = create(&#39;mul2.se&#39;)
+    def returnten():
+        return(MUL2.double(5, as=mul2))
+</pre></div>
+
+<p>现在打开Python，执行以下代码：</p>
+<div class="codehilite"><pre><span></span>    <span class="o">&gt;</span> <span class="kn">from</span> <span class="nn">pyethereum</span> <span class="kn">import</span> <span class="n">tester</span> <span class="k">as</span> <span class="n">t</span>
+    <span class="o">&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">state</span><span class="p">()</span>
+    <span class="o">&gt;</span> <span class="n">c</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">abi_contract</span><span class="p">(</span><span class="s1">&#39;returnten.se&#39;</span><span class="p">)</span>
+    <span class="o">&gt;</span> <span class="n">c</span><span class="o">.</span><span class="n">returnten</span><span class="p">()</span>
+    <span class="p">[</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+
+<p>通过这个例子我们可以看到一些新特性：</p>
+<ul>
+<li>使用<code>create</code>方法可以从文件中读入代码创建合约</li>
+<li>使用<code>extern</code>关键字可以声明一个合约类(class of contract)，通过这个类可以知道合约中的函数名</li>
+<li>用来调用其他合约的编程接口</li>
+</ul>
+<p><code>create</code>方法很容易理解 - 使用它可以创建一份合约，返回值是这份合约的地址（address）。<code>extern</code>后面先是声明了合约类的名字，例子中是<code>mul2</code>,然后用一个数组声明了这个合约类中的所有方法名，例子中是<code>[double]</code>。声明之后，对于任何地址变量x（变量的值是一个地址），都可以通过<code>x.double(arg1, as=mul2)</code>来调用该地址中保存的合约。合约类通过<code>as</code>关键字提供（合约类用来确定<code>double</code>对应的函数ID；另一个合约类中如果<code>double</code>函数可能对应不同的ID）。<code>as</code>关键字是可选的，但是在两个合约类包含同名函数时会产生歧义。<code>arg1</code>是传给<code>double</code>函数的参数，如果传入的参数个数比函数声明需要的参数少，缺少的参数会以'0'补上；如果传入的参数比声明需要的参数多，多余的参数会被忽略。函数调用还支持一些其他的可选参数：</p>
+<ul>
+<li><code>gas=12414</code> - 设置函数执行可用的gas上限 （默认是所有gas，即合约可用gas上限）。</li>
+<li><code>value=10^19</code> - 随调用消息转账10^19 wei(10 ether)</li>
+<li><code>data=x</code>, <code>datasz=5</code> - 用数组x中的头5个值作为参数调用函数；之前传入的参数会被覆盖掉；只指定data而不指定datasz会导致非法调用。</li>
+<li><code>outsz=7</code> - Serpent在默认情况下取运算结果的头32字节作为函数返回值，通过<code>outsz</code>可以要求函数通过数组返回更多的值。例如执行<code>y = x.fun(arg1, outsz=7)</code>之后你可以通过<code>y[0]</code>, <code>y[1]</code>等等操作返回值。</li>
+</ul>
+<p>和<code>create</code>类似的一个操作是<code>inset('filename')</code>，它的作用是用文件中的代码替换调用的那一行，而不是创建一个合约。</p>
+<h2 id="_4">持久化保存结构化数据<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>（注：原文用词是data structure，直译应为数据结构，但例子中定义的更像是数据而不是数据结构，因此翻译为结构化数据。）</p>
+<p>在更复杂的场景中，我们经常需要将结构化数据持久的保存。例如一份去中心话的交易所合约，既需要保存用户各种资金的余额，也需要保存待成交的包含了价格和数量信息的买单和卖单。因此Serpent内建支持自定义数据结构。以去中心化交易所合约为例，其中可能需要定义这样的结构化数据：</p>
+<div class="codehilite"><pre><span></span>    data user_balances[][]
+    data orders[](buys[](user, price, quantity), sells[](user, price, quantity))
+</pre></div>
+
+<p>接下来可以使用这些定义好的数据：</p>
+<div class="codehilite"><pre><span></span>    def fill_buy_order(currency, order_id):
+        # Available amount buyer is willing to buy
+        q = self.orders[currency].buys[order_id].quantity
+        # My balance in the currency
+        bal = self.user_balances[msg.sender][currency]
+        # The buyer
+        buyer = self.orders[currency].buys[order_id].user
+        if q &gt; 0:
+            # The amount we can actually trade
+            amount = min(q, bal)
+            # Trade the currency against the base currency
+            self.user_balances[msg.sender][currency] -= amount
+            self.user_balances[buyer][currency] += amount
+            self.user_balances[msg.sender][0] += amount * self.orders[currency].buys[order_id].price
+            self.user_balances[buyer][0] -= amount * self.orders[currency].buys[order_id].price
+            # Reduce the remaining quantity on the order
+            self.orders[currency].buys[order_id].quantity -= amount
+</pre></div>
+
+<p>请注意我们是如何先在顶部定义结构化数据，然后在合约中使用它们的。对这些结构化数据的读和写都会被转化成在持久化存储上的读写，因此这些结构化数据是持久保存的。</p>
+<p>定义结构化数据的语法很简单。首先可以定义最简单的变量：</p>
+<div class="codehilite"><pre><span></span>    data blah
+
+    x = self.blah
+    self.blah = x + 1
+</pre></div>
+
+<p>还可以定义定长数组和不定长数组：</p>
+<div class="codehilite"><pre><span></span>    data blah[1243]
+    data blaz[]
+
+    x = self.blah[505]
+    y = self.blaz[3**160]
+    self.blah[125] = x + y
+</pre></div>
+
+<p>我们应该优先考虑使用定长数组，因为在计算数组元素(array index)对应的存储位置(storage index)的时候，定长数组消耗的gas更少。</p>
+<p>也可以定义元组(tuple)，元组的元素也可以是结构化数据：</p>
+<div class="codehilite"><pre><span></span>    data body(head(eyes[2], nose, mouth), arms[2], legs[2])
+
+    x = self.body.head.nose
+    y = self.body.arms[1]
+</pre></div>
+
+<p>然后是元组数组(array of tuples)：</p>
+<div class="codehilite"><pre><span></span>    data bodies[100](head(eyes[2], nose, mouth), arms[2](fingers[5], elbow), legs[2])
+
+    x = self.bodies[45].head.eyes[1]
+    y = self.bodies[x].arms[1].fingers[3]
+</pre></div>
+
+<p>注意下面这样的写法是不行的：</p>
+<div class="codehilite"><pre><span></span>    data body(head(eyes[2], nose, mouth), arms[2], legs[2])
+
+    x = self.body.head
+    y = x.eyes[0]
+</pre></div>
+
+<p>也就是说对结构化数据内部元素的存取必须在一行语句中完成。</p>
+<p>还是以名称注册表（name registry）为例，让我们来看看具体如何使用结构化数据。我们要实现一个增强版的名称注册表，当用户注册key成功时他会成为key的所有者，key的所有者可以 (1) 转移所有权，以及(2) 改变key对应的键值(value)。为了简洁函数不再返回1或者0。</p>
+<div class="codehilite"><pre><span></span>    data registry[](owner, value)
+
+    def register(key):
+        # Key not yet claimed
+        if not self.registry[key].owner:
+            self.registry[key].owner = msg.sender
+
+    def transfer_ownership(key, new_owner):
+        if self.registry[key].owner == msg.sender:
+            self.registry[key].owner = new_owner
+
+    def set_value(key, new_value):
+        if self.registry[key].owner == msg.sender:
+            self.registry[key].value = new_value
+
+    def ask(key):
+        return([self.registry[key].owner, self.registry[key].value], items=2)
+</pre></div>
+
+<p>最后定义的ask函数返回一个长度为2的数组。通过调用ask函数，例如<code>o = registry.ask(key, outsz=2)</code>，我们可以通过返回值<code>o[1]</code>和<code>o[1]</code>获取key对应的所有者和键值。</p>
+<h2 id="_5">内存中的数组<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>使用内存中的数组有一套不同的语法。内存数组只能是定长数组，也不能有元组(tuple)或者更复杂的数组元素。例如：</p>
+<div class="codehilite"><pre><span></span>    def bitwise_or(x, y):
+        blah = array(1243)
+        blah[567] = x
+        blah[568] = y
+        blah[569] = blah[567] | blah[568]
+        return(blah[569])
+</pre></div>
+
+<p>Serpent还定义了两个常用的数组操作：</p>
+<div class="codehilite"><pre><span></span>    len(x)
+</pre></div>
+
+<p>用于查询数组的长度。</p>
+<div class="codehilite"><pre><span></span>    slice(x, start, end)
+</pre></div>
+
+<p>用于截取从start开始到end结束范围内数组元素，注意end必须大于等于start，否则执行是会出错。</p>
+<h2 id="_6">数组与函数<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>函数可以接受数组作为参数，也可以返回一个数组：</p>
+<div class="codehilite"><pre><span></span>    def compose(inputs:arr):
+        return(inputs[0] + inputs[1] * 10 + inputs[2] * 100)
+
+    def decompose(x):
+        return([x % 10, (x % 100) / 10, x / 100]:arr)
+</pre></div>
+
+<p>在参数定义后面加<code>:arr</code>表示这个参数是一个数组；而在返回值后面加<code>:arr</code>表示返回一个数组（如果不加<code>:arr</code>只写<code>return([x,y,z])</code>，函数的返回值将会是这个数组的内存地址）。</p>
+<p>当合约调用自己定义的函数的时候，数组参数会被自动识别出来正确处理，例如：</p>
+<div class="codehilite"><pre><span></span>    def compose(inputs:arr, radix):
+        return(inputs[0] + inputs[1] * radix + inputs[1] * radix ** 2)
+
+    def main():
+        return self.compose([1,2,3,4,5], 100)
+</pre></div>
+
+<p>但是当合约需要调用另一份接受数组参数的合约时，你需要通过<code>extern</code>声明这一点，加入数组签名到函数签名中：</p>
+<div class="codehilite"><pre><span></span>extern composer: [compose:ai, main]
+</pre></div>
+
+
+<p>这里<code>ai</code>的意思是“一个数组参数后面跟着一个整型参数”。同理，如果签名是<code>iiaa</code>，则代表“两个整型参数后面跟着两个数组参数”，而<code>iss</code>表示“一个整型参数，后面是两个字符串做参数”。如果函数名后面没有跟冒号(:)，如本例中<code>main</code> 所示，则表示这个函数不接受参数。如果你想知道一个文件中定义了哪些函数签名，执行下面的命令即可：</p>
+<div class="codehilite"><pre><span></span>    &gt; serpent mk_signature compose_test.se
+    extern compose_test: [compose:ai, main]
+</pre></div>
+
+<h2 id="_7">字符串<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>Serpent中有两种字符串：短字符串(short strings)，例如<code>"george"</code>，以及长字符串(long strings)，例如<code>text("afjqwhruqwhurhqkwrhguqwhrkuqwrkqwhwhrugquwrguwegtwetwet")</code>.用双引号括起来的短字符串和数字类型是等价的；用<code>text</code>关键字定义的长字符串则是类似与数组的对象。我们可以使用<code>getch(str, index)</code>和<code>setch(str, index)</code>方法来操作字符串中的字符。<code>str[0]</code>这样的写法则会将字符串当作数组处理，将字符当作数字返回。</p>
+<p>将字符串用作函数参数或者返回值时，需要在函数签名中使用字符串标记<code>str</code>，类似使用<code>arr</code>来标记数组。使用<code>len(s)</code>方法可以得到字符串的长度，而<code>slice(s)</code>方法可以用来裁剪字符串。</p>
+<p>下面是一个用字符串做参数和返回值的例子：</p>
+<div class="codehilite"><pre><span></span>data str
+
+def t2():
+    self.str = text(&quot;01&quot;)
+    log(data=self.str)
+    return(self.str, chars=2)
+
+def runThis():
+    s = self.t2(outsz=2)
+    log(data=s)
+</pre></div>
+
+<h2 id="macros">Macros (宏)<a class="headerlink" href="#macros" title="Permanent link">&para;</a></h2>
+<p><strong>警告：这是新加入的未经测试的特性，大蛇出没注意！</strong></p>
+<p>通过macro我们可以创造重写规则，极大的增强程序的表达能力。例如，假设我们想写一条计算三个数字的中位数的命令：</p>
+<div class="codehilite"><pre><span></span>    macro median($a, $b, $c):
+        min(min(max($a, $b), max($a, $c)), max($b, $c))
+</pre></div>
+
+<p>现在我们可以使用这个新定义的macro：</p>
+<div class="codehilite"><pre><span></span>    x = median(5, 9, 7)
+</pre></div>
+
+<p>接下来看另一个例子，一个查找数组中最大元素的macro:</p>
+<div class="codehilite"><pre><span></span>    macro maxarray($a:$asz): # search pattern. below is substitution pattern
+        $m = 0
+        $i = 0
+        while i &lt; $asz:
+            $m = max($m, $a[i])
+            $i += 1
+        $m
+
+    x = maxarray([1, 9, 5, 6, 2, 4]:6)
+</pre></div>
+
+<p>点击下面的链接可以看到更多展示macros牛逼用法的例子：</p>
+<p>https://github.com/ethereum/serpent/blob/poc7/examples/peano.se</p>
+<p>这里要提醒读者注意的是：macros不是函数(functions)。每次调用macro的时候，macro的定义都会被文本复制到调用的地方（宏展开）。因此当macro的定义变得很长时，请考虑定义一个函数替代它。还要注意的是占位符前面的$符号非常重要：如果$a前少了$符号，实际上是在使用名字为a的变量。我们也可以在替换模式(substitution pattern, 指宏的定义体)而不是搜索模式(search pattern，指宏定义的第一行)中使用$占位符，这样在每一次宏展开时会产生一个名字为随机前缀的变量。在替换模式中也可以使用普通变量(变量名前面没有$)，结果就是所有宏展开使用的是同一个变量，而且该变量可能在宏展开之外的地方也会用到。</p>
+<h2 id="_8">类型<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p><strong>警告：这是新加入的未经测试的特性，大蛇出没注意！</strong></p>
+<p>Serpent中的穷人版类型系统是体现macros威力的绝佳例子，和macros一起使用时能产生非常有趣的结果。直接上例子：</p>
+<div class="codehilite"><pre><span></span>    type float: [a, b, c]
+
+    macro float($x) + float($y):
+        float($x + $y)
+
+    macro float($x) - float($y):
+        float($x - $y)
+
+    macro float($x) * float($y):
+        float($x * $y / 2^32)
+
+    macro float($x) / float($y):
+        float($x * 2^32 / $y)
+
+    macro unfloat($x):
+        $x / 2^32
+
+    macro floatfy($x):
+        float($x * 2^32)
+
+    macro float($x) = float($y):
+        $x = $y
+
+    macro with(float($x), float($y), $z):
+        with($x, $y, $z)
+
+    a = floatfy(25)
+    b = a / floatfy(2)
+    c = b * b
+    return(unfloat(c))
+</pre></div>
+
+<p>这段代码的返回值是156,即12.5^2的整数部分。如果只用整型计算，结果将是144。这个技巧可以用来重写<a href="https://github.com/ethereum/serpent/blob/df0aa0e1285d7667d4a0cc81b1e11e0abb31fff3/examples/ecc/jacobian_add.se">椭圆曲线签名的公钥复原代码</a>，类型系统可以让里面的加法和乘法隐式的做模运算(modulo P)，从而是代码更精巧；我们也可以利用<a href="https://github.com/ethereum/serpent/blob/poc7/examples/long_integer_macros.se">长整形</a>来处理RSA以及其他基于大数的加密算法中的计算。</p>
+<h2 id="_9">其他<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p>更多的Serpent代码示例请参阅：https://github.com/ethereum/serpent/tree/master/examples</p>
+<p>pyethereum tester的一些有用技巧：</p>
+<ul>
+<li>区块数据 - 你可以通过<code>s.block</code>查看区块数据。例如，<code>s.block.number</code>, <code>s.block.get_balance(addr)</code>, <code>s.block.get_storage_data(addr, index)</code>等等。</li>
+<li>快照 - 通过<code>x = s.snapshot()</code>和<code>s.revert(x)</code>可以创建和恢复快照。</li>
+<li>挖矿 - 调用<code>s.mine(100)</code>会挖出100个块，块之间间隔60秒。通过<code>s.mine(100, addr)</code>可以指定获得挖矿收益的地址。</li>
+<li>Dump所有区块数据 - <code>s.block.to_dict()</code></li>
+</ul>
+<p>Serpent还提供了许多特别变量(special variables)，以下是完整列表：</p>
+<ul>
+<li><code>tx.origin</code> - 交易的发送者</li>
+<li><code>tx.gas</code> - 剩余gas</li>
+<li><code>tx.gasprice</code> - 交易包含的gasprice(油价)</li>
+<li><code>msg.sender</code> - 消息的发送者</li>
+<li><code>msg.value</code> - 通过消息转移的wei(以太坊中最小的价值单位）的数量</li>
+<li><code>self</code> - 合约自身的地址</li>
+<li><code>self.balance</code> - 合约自身的余额（拥有多少wei）</li>
+<li><code>x.balance</code> (对于任意的x） - x的账户余额</li>
+<li><code>block.coinbase</code> - 挖出当前块的矿工的收益地址(coinbase)</li>
+<li><code>block.timestamp</code> - 当前块的时间戳</li>
+<li><code>block.prevhash</code> - 前一个块的hash</li>
+<li><code>block.difficulty</code> - 当前的挖矿难度</li>
+<li><code>block.number</code> - 当前块的编号</li>
+<li><code>block.gaslimit</code> - 当前块的可用gas上限</li>
+</ul>
+<p>Serpent支持以下特别函数(special functions)：</p>
+<ul>
+<li><code>init</code> - 在创建合约时执行</li>
+<li><code>shared</code> - 在执行<code>init</code>和用户函数之前执行</li>
+<li><code>any</code> - 在用户函数之前执行</li>
+</ul>
+<p>此外还提供了几个加密操作：</p>
+<ul>
+<li><code>addr = ecrecover(h, v, r, s)</code> - determines the address that produced the elliptic curve signature <code>v, r, s</code> of the hash <code>h</code></li>
+<li><code>x = sha256(a, items=4)</code> - 返回数组a中头4个元素构成的128字节的SHA256 hash。</li>
+<li><code>x = ripemd160(a, items=4)</code> - same as above but for ripemd160</li>
+<li>使用字符语法(chars syntax)可以计算任意数量字节的hash。例如：<code>x = sha256([0xf1fc122bc7f5d74df2b9441a42a1469500000000000000000000000000000000], chars=16)</code> - 返回的是头16个字节的hash。注意最后用0对齐，否则头16个字节会是0（因为一个word是32字节）,计算的是16个0字节的hash。</li>
+</ul>
+<h2 id="_10">小提示<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>如果函数的返回值和你预计的不同，仔细检查所有的变量名 - 使用没有声明过的变量是不会产生错误信息的。</p>
+</li>
+<li>
+<p><code>Invalid argument count or LLL function</code>通常表示你将<code>self.foo()</code>写成了<code>foo()</code>。</p>
+</li>
+<li>
+<p>有时你需要的是无符号运算符，例如div()和lt()而不是'/'和'&lt;'。</p>
+</li>
+<li>
+<p>升级Serpent的时候，需要先<code>pip uninstall ethereum-serpent</code>然后<code>python setup.py install</code>。避免使用<code>pip install ethereum-serpent</code>，因为pypi上的包八成已经过时了。</p>
+</li>
+<li>
+<p>在调用abi_contract()时如果你遇到<code>Exception: Error (file "main", line 1, char 5): Invalid object member (ie. a foo.bar not mapped to anything)</code>这样的错误，确认你要编译的文件所在路径写对了。</p>
+</li>
+<li>
+<p>如果在调用abi_contract()的时候遇到core dump，确认你没有定义同名函数。</p>
+</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../../ipfs/" title="IPFS" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  后退
+                </span>
+                IPFS
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../development/" title="开发计划" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前进
+                </span>
+                开发计划
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            版权 &copy; 2017 - 2018 wohugb.github.io
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="http://wohugb.github.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/wohugb" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/wohugb" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/wohugb" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.02434462.js"></script>
+      
+        
+        
+          
+          <script src="../../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../../../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../../../assets/javascripts/lunr/lunr.jp.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

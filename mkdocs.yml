@@ -1,18 +1,137 @@
 site_name: 大鼻子
-copyright: '版权 &copy; 2016 - 2017 wohugb.github.io'
-pages:
-  - 概述: index.md
-  - 人工智能: ai/index.md
+site_description: 大鼻子的日常学习记录
+site_author: Nosy
+copyright: '版权 &copy; 2017 - 2018 wohugb.github.io'
+
+repo_name: wohugb/wangdake
+repo_url: https://github.com/wohugb/wangdake
+edit_uri: ""
+
 theme:
   name: material
+
+  include_search_page: false
+  search_index_only: true
+
+  language: zh
+  feature:
+    tabs: true
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.png
+  logo:
+    icon: "\uE80C"
+  extra_css: [assets/stylesheets/extra.css]
+extra:
+  search:
+    language: 'jp'
+  social:
+    - type: globe
+      link: http://wohugb.github.io
+    - type: github-alt
+      link: https://github.com/wohugb
+    - type: twitter
+      link: https://twitter.com/wohugb
+    - type: linkedin
+      link: https://linkedin.com/in/wohugb
+
 markdown_extensions:
   - admonition
   - codehilite:
-      linenums: true
+      linenums: false
   - footnotes
   - meta
   - toc:
       permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+
+pages:
+  - Ð巴别塔: index.md
+  - 赞表: awesome/index.md
+  - 器:
+    - 利器: tools/index.md
+    - vscode: tools/vscode/index.md
+  - 智能:
+    - AI: ai/index.md
+    - 自然语言处理: ai/nlp.md
+    - 机器学习: ai/deeplearning.md
+    - 赞表: ai/awesome.md
+    - 2017: ai/2017.md
+  - 无心:
+    - 概述: blockchain/index.md
+    - 技术树: blockchain/tree.md
+    - 术语: blockchain/term.md
+    - 赞表: blockchain/awesome.md
+    - 比特币: blockchain/bitcoin/index.md
+    - 山寨币: blockchain/altcoins.md
+    - IPFS: ipfs/index.md
+    - 以太坊:
+      - Serpent指南: blockchain/ethereum/serpent.md
+      - 开发计划: blockchain/ethereum/development.md
+      - 术语表: blockchain/ethereum/term.md
+      - 白皮书: blockchain/ethereum/whitepaper.md
+      - FAQ: blockchain/ethereum/ProofOfStake.md
+      - 网络状态: blockchain/ethereum/network-status.md
+    - twister:
+      - 概述: blockchain/twister/index.md
+      - UNIX: blockchain/twister/build-unix.md
+      - UBUNTU: blockchain/twister/building-on-ubuntu-debian.md
+      - OSX: blockchain/twister/build-osx.md
+      - Windows: blockchain/twister/compiling-for-windows.md
+  - IOT:
+    - 物联网: iot/InternetOfThings.md
+  - Py:
+    - Python: python/python.md
+    - 赞表: python/awesome.md
+    - PIP:
+      - 概述: python/pip/index.md
+    - Django:
+      - 概述: python/django/index.md
+      - 赞表: python/django/awesome.md
+  - Node:
+    - NodeJs: nodejs/nodejs.md
+    - 赞表: nodejs/awesome.md
+    - Express: nodejs/express.md
+    - KOA: nodejs/koa.md
+    - 獴: nodejs/mongoose.md
+    - PM2: nodejs/pm2.md
+    - 组件:
+      - QrCode:
+        - 概述: nodejs/node_modules/qrcode/readme.md
+        - API: nodejs/node_modules/qrcode/api.md
+      - GM: nodejs/node_modules/gm.md
+  - Ng:
+    - 概述: angular/index.md
+    - cli: angular/cli.md
+    - 赞表: angular/awesome.md
+    - starter: angular/starter.md
+    - 升级: angular/migrate.md
+  - GitHub:
+    - 集合: github/collections.md
+  - 阿里云:
+    - 阿里云: aliyun/index.md
+    - ECS: aliyun/index.md
+    - MonogoDb: aliyun/index.md
+    - LBS: aliyun/index.md
+    - DDOS: aliyun/index.md
+    - 云客服: aliyun/index.md
+    - 视频: aliyun/video.md
+  - 微信:
+    - 微信: wechat/index.md
+    - 公号: wechat/oa.md
+    - 第三方: wechat/index.md
+    - 企业微信: wechat/index.md
+    - 小程序: wechat/weapp-awesome.md
+  - 拼:
+    - 佣金团: pin/group.md
+    - 阶梯团: pin/ladder.md
+    - 聚力团: pin/cohesion.md
+  - 生鲜:
+    - 平台: fresh/platform.md
+    - 教育: fresh/education.md
+    - 知识库: fresh/repository.md
