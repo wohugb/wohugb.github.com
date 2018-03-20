@@ -3,8 +3,8 @@ site_description: 大鼻子的日常学习记录
 site_author: Nosy
 copyright: '版权 &copy; 2017 - 2018 wohugb.github.io'
 
-repo_name: wohugb/wangdake
-repo_url: https://github.com/wohugb/wangdake
+repo_name: wohugb/wohugb.github.com
+repo_url: https://github.com/wohugb/wohugb.github.com
 edit_uri: ""
 
 theme:
