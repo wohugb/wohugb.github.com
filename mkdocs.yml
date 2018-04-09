@@ -135,3 +135,8 @@ pages:
     - 平台: fresh/platform.md
     - 教育: fresh/education.md
     - 知识库: fresh/repository.md
+  - 教育:
+    - 幼儿园: education/kindergarten.md
+    - 小学: education/primary-school.md
+    - 初中: education/junior-middle-school.md
+    - 高中: education/senior-middle-school.md
