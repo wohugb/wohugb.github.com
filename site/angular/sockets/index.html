@@ -1,0 +1,2897 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="大鼻子的日常学习记录">
+      
+      
+      
+        <meta name="author" content="Nosy">
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.0">
+    
+    
+      
+        <title>IO - 大鼻子</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.78aab2dc.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#typescriptwebnodeangular" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="大鼻子" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                大鼻子
+              </span>
+              <span class="md-header-nav__topic">
+                IO
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/wohugb/wohugb.github.com" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wohugb/wohugb.github.com
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Ð巴别塔" class="md-tabs__link">
+        Ð巴别塔
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tools/" title="器" class="md-tabs__link">
+          器
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../ai/" title="智能" class="md-tabs__link">
+          智能
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../bot/" title="机器人" class="md-tabs__link">
+          机器人
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../blockchain/" title="无心" class="md-tabs__link">
+          无心
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../iot/InternetOfThings/" title="IOT" class="md-tabs__link">
+          IOT
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../python/python/" title="Py" class="md-tabs__link">
+          Py
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../nodejs/nodejs/" title="Node" class="md-tabs__link">
+          Node
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../" title="Ng" class="md-tabs__link md-tabs__link--active">
+          Ng
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../github/collections/" title="GitHub" class="md-tabs__link">
+          GitHub
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../aliyun/" title="阿里云" class="md-tabs__link">
+          阿里云
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../wechat/" title="微信" class="md-tabs__link">
+          微信
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../pin/group/" title="拼" class="md-tabs__link">
+          拼
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../fresh/platform/" title="生鲜" class="md-tabs__link">
+          生鲜
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../education/kindergarten/" title="教育" class="md-tabs__link">
+          教育
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../apartment/" title="寓" class="md-tabs__link">
+          寓
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    大鼻子
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/wohugb/wohugb.github.com" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wohugb/wohugb.github.com
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Ð巴别塔" class="md-nav__link">
+      Ð巴别塔
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../awesome/" title="赞表" class="md-nav__link">
+      赞表
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      器
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        器
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/" title="利器" class="md-nav__link">
+      利器
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/vscode/" title="vscode" class="md-nav__link">
+      vscode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      智能
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        智能
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/" title="AI" class="md-nav__link">
+      AI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/nlp/" title="自然语言处理" class="md-nav__link">
+      自然语言处理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/deeplearning/" title="机器学习" class="md-nav__link">
+      机器学习
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/awesome/" title="赞表" class="md-nav__link">
+      赞表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/2017/" title="2017" class="md-nav__link">
+      2017
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      机器人
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        机器人
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../bot/" title="BOT" class="md-nav__link">
+      BOT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../bot/framework/" title="开发框架" class="md-nav__link">
+      开发框架
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../bot/ros/" title="ROS" class="md-nav__link">
+      ROS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../bot/arduino/" title="Arduino" class="md-nav__link">
+      Arduino
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      无心
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        无心
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/tree/" title="技术树" class="md-nav__link">
+      技术树
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/term/" title="术语" class="md-nav__link">
+      术语
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/awesome/" title="赞表" class="md-nav__link">
+      赞表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/bitcoin/" title="比特币" class="md-nav__link">
+      比特币
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/altcoins/" title="山寨币" class="md-nav__link">
+      山寨币
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ipfs/" title="IPFS" class="md-nav__link">
+      IPFS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-8" type="checkbox" id="nav-6-8">
+    
+    <label class="md-nav__link" for="nav-6-8">
+      以太坊
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-8">
+        以太坊
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/ethereum/serpent/" title="Serpent指南" class="md-nav__link">
+      Serpent指南
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/ethereum/development/" title="开发计划" class="md-nav__link">
+      开发计划
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/ethereum/term/" title="术语表" class="md-nav__link">
+      术语表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/ethereum/whitepaper/" title="白皮书" class="md-nav__link">
+      白皮书
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/ethereum/ProofOfStake/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/ethereum/network-status/" title="网络状态" class="md-nav__link">
+      网络状态
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-9" type="checkbox" id="nav-6-9">
+    
+    <label class="md-nav__link" for="nav-6-9">
+      twister
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-9">
+        twister
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/twister/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/twister/build-unix/" title="UNIX" class="md-nav__link">
+      UNIX
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/twister/building-on-ubuntu-debian/" title="UBUNTU" class="md-nav__link">
+      UBUNTU
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/twister/build-osx/" title="OSX" class="md-nav__link">
+      OSX
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/twister/compiling-for-windows/" title="Windows" class="md-nav__link">
+      Windows
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      IOT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        IOT
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iot/InternetOfThings/" title="物联网" class="md-nav__link">
+      物联网
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Py
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Py
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/python/" title="Python" class="md-nav__link">
+      Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/awesome/" title="赞表" class="md-nav__link">
+      赞表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-3" type="checkbox" id="nav-8-3">
+    
+    <label class="md-nav__link" for="nav-8-3">
+      PIP
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-3">
+        PIP
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/pip/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-4" type="checkbox" id="nav-8-4">
+    
+    <label class="md-nav__link" for="nav-8-4">
+      Django
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-4">
+        Django
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/django/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/django/awesome/" title="赞表" class="md-nav__link">
+      赞表
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Node
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Node
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/nodejs/" title="NodeJs" class="md-nav__link">
+      NodeJs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/awesome/" title="awesome" class="md-nav__link">
+      awesome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/express/" title="Express" class="md-nav__link">
+      Express
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/koa/" title="KOA" class="md-nav__link">
+      KOA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/mongoose/" title="Mongoose" class="md-nav__link">
+      Mongoose
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/pm2/" title="PM2" class="md-nav__link">
+      PM2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-7" type="checkbox" id="nav-9-7">
+    
+    <label class="md-nav__link" for="nav-9-7">
+      组件
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-9-7">
+        组件
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-7-1" type="checkbox" id="nav-9-7-1">
+    
+    <label class="md-nav__link" for="nav-9-7-1">
+      QrCode
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-9-7-1">
+        QrCode
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/node_modules/qrcode/readme/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/node_modules/qrcode/api/" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/node_modules/gm/" title="GM" class="md-nav__link">
+      GM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-7-3" type="checkbox" id="nav-9-7-3">
+    
+    <label class="md-nav__link" for="nav-9-7-3">
+      RSA
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-9-7-3">
+        RSA
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/node_modules/node-rsa/readme/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/node_modules/node-rsa/jsbn/" title="JSBN" class="md-nav__link">
+      JSBN
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" checked>
+    
+    <label class="md-nav__link" for="nav-10">
+      Ng
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Ng
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cli/" title="cli" class="md-nav__link">
+      cli
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../awesome/" title="赞表" class="md-nav__link">
+      赞表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../starter/" title="starter" class="md-nav__link">
+      starter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../migrate/" title="升级" class="md-nav__link">
+      升级
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../migrate6/" title="升级6" class="md-nav__link">
+      升级6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        IO
+      </label>
+    
+    <a href="./" title="IO" class="md-nav__link md-nav__link--active">
+      IO
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="什么是实时应用程序？" class="md-nav__link">
+    什么是实时应用程序？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#websockets" title="WebSockets" class="md-nav__link">
+    WebSockets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="应用结构" class="md-nav__link">
+    应用结构
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="服务器代码" class="md-nav__link">
+    服务器代码
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typescript" title="为什么在服务器端代码上使用TypeScript？" class="md-nav__link">
+    为什么在服务器端代码上使用TypeScript？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="初始化服务器应用" class="md-nav__link">
+    初始化服务器应用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typescript_1" title="TypeScript编译器" class="md-nav__link">
+    TypeScript编译器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="定义的数据模型" class="md-nav__link">
+    定义的数据模型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="聊天服务器实现" class="md-nav__link">
+    聊天服务器实现
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="服务器类" class="md-nav__link">
+    服务器类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="构建并运行服务器" class="md-nav__link">
+    构建并运行服务器
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" title="客户代码" class="md-nav__link">
+    客户代码
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="添加角度材质" class="md-nav__link">
+    添加角度材质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expresssocketio" title="添加express和socket.IO" class="md-nav__link">
+    添加express和socket.IO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="聊天模块和组件" class="md-nav__link">
+    聊天模块和组件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observablesweb" title="Observables和Web套接字" class="md-nav__link">
+    Observables和Web套接字
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" title="聊天应用功能" class="md-nav__link">
+    聊天应用功能
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" title="源代码" class="md-nav__link">
+    源代码
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" title="现场演示" class="md-nav__link">
+    现场演示
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      GitHub
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        GitHub
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../github/collections/" title="集合" class="md-nav__link">
+      集合
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      阿里云
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        阿里云
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../aliyun/" title="阿里云" class="md-nav__link">
+      阿里云
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../aliyun/" title="ECS" class="md-nav__link">
+      ECS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../aliyun/" title="MonogoDb" class="md-nav__link">
+      MonogoDb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../aliyun/" title="LBS" class="md-nav__link">
+      LBS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../aliyun/" title="DDOS" class="md-nav__link">
+      DDOS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../aliyun/" title="云客服" class="md-nav__link">
+      云客服
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../aliyun/video/" title="视频" class="md-nav__link">
+      视频
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      微信
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        微信
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/" title="微信" class="md-nav__link">
+      微信
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/oa/" title="公号" class="md-nav__link">
+      公号
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/" title="第三方" class="md-nav__link">
+      第三方
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/" title="企业微信" class="md-nav__link">
+      企业微信
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/weapp-awesome/" title="小程序" class="md-nav__link">
+      小程序
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      拼
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        拼
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pin/group/" title="佣金团" class="md-nav__link">
+      佣金团
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pin/ladder/" title="阶梯团" class="md-nav__link">
+      阶梯团
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pin/cohesion/" title="聚力团" class="md-nav__link">
+      聚力团
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      生鲜
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        生鲜
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../fresh/platform/" title="平台" class="md-nav__link">
+      平台
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../fresh/education/" title="教育" class="md-nav__link">
+      教育
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../fresh/repository/" title="知识库" class="md-nav__link">
+      知识库
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16">
+    
+    <label class="md-nav__link" for="nav-16">
+      教育
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-16">
+        教育
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../education/kindergarten/" title="幼儿园" class="md-nav__link">
+      幼儿园
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../education/primary-school/" title="小学" class="md-nav__link">
+      小学
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../education/junior-middle-school/" title="初中" class="md-nav__link">
+      初中
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../education/senior-middle-school/" title="高中" class="md-nav__link">
+      高中
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-17" type="checkbox" id="nav-17">
+    
+    <label class="md-nav__link" for="nav-17">
+      寓
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-17">
+        寓
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apartment/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apartment/inboyu/" title="泊寓" class="md-nav__link">
+      泊寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apartment/boonself/" title="邦舍公寓" class="md-nav__link">
+      邦舍公寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apartment/ziroom/" title="自如寓" class="md-nav__link">
+      自如寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apartment/danke/" title="蛋壳公寓" class="md-nav__link">
+      蛋壳公寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apartment/guanyu/" title="冠寓" class="md-nav__link">
+      冠寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apartment/1zu/" title="相寓" class="md-nav__link">
+      相寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apartment/youranke/" title="悠然客公寓" class="md-nav__link">
+      悠然客公寓
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="什么是实时应用程序？" class="md-nav__link">
+    什么是实时应用程序？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#websockets" title="WebSockets" class="md-nav__link">
+    WebSockets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="应用结构" class="md-nav__link">
+    应用结构
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="服务器代码" class="md-nav__link">
+    服务器代码
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typescript" title="为什么在服务器端代码上使用TypeScript？" class="md-nav__link">
+    为什么在服务器端代码上使用TypeScript？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="初始化服务器应用" class="md-nav__link">
+    初始化服务器应用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typescript_1" title="TypeScript编译器" class="md-nav__link">
+    TypeScript编译器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="定义的数据模型" class="md-nav__link">
+    定义的数据模型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="聊天服务器实现" class="md-nav__link">
+    聊天服务器实现
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="服务器类" class="md-nav__link">
+    服务器类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="构建并运行服务器" class="md-nav__link">
+    构建并运行服务器
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" title="客户代码" class="md-nav__link">
+    客户代码
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="添加角度材质" class="md-nav__link">
+    添加角度材质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expresssocketio" title="添加express和socket.IO" class="md-nav__link">
+    添加express和socket.IO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="聊天模块和组件" class="md-nav__link">
+    聊天模块和组件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observablesweb" title="Observables和Web套接字" class="md-nav__link">
+    Observables和Web套接字
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" title="聊天应用功能" class="md-nav__link">
+    聊天应用功能
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" title="源代码" class="md-nav__link">
+    源代码
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" title="现场演示" class="md-nav__link">
+    现场演示
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="typescriptwebnodeangular">使用TypeScript的实时应用程序：集成Web套接字，Node和Angular<a class="headerlink" href="#typescriptwebnodeangular" title="Permanent link">&para;</a></h1>
+<p>作者: <a href="https://medium.com/dailyjs/real-time-apps-with-typescript-integrating-web-sockets-node-angular-e2b57cbd1ec1">Luis Aviles</a></p>
+<p>使用TypeScript从头开始构建实时聊天应用程序</p>
+<p>前段时间我只使用TypeScript语言实现了一个简单的聊天应用程序。 主要目标是写一个演示来解释如何在客户端和服务器上使用这种编程语言。 客户端应用程序正在使用最新的Angular功能。</p>
+<p>在这篇文章中，我将向您展示我是如何从头开始实施该应用的。</p>
+<p>演示：TypeScript聊天应用程序</p>
+<h2 id="_1">什么是实时应用程序？<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>根据维基百科的定义，实时应用程序允许信息一发布即可收到，而不需要定期检查信息来源以获取更新。
+因此，这种应用程序应该给用户感觉事件和行为立即发生。</p>
+<h2 id="websockets">WebSockets<a class="headerlink" href="#websockets" title="Permanent link">&para;</a></h2>
+<p>WebSockets是一种提供双向通信信道的协议。
+这意味着浏览器和Web服务器可以维护实时通信，并在连接打开时来回发送消息。</p>
+<p>Websockets通信</p>
+<h2 id="_2">应用结构<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>我们将分离服务器相关的代码和客户端代码。
+我将详细解释最重要的文件。
+目前，这是我们应用程序的预期结构：</p>
+<div class="codehilite"><pre><span></span>server/
+  |- src/
+  |- package.json
+  |- tsconfig.json
+  |- gulpfile.js
+client/
+  |- src/
+  |- package.json
+  |- tsconfig.json
+  |- .angular-cli.json
+</pre></div>
+
+
+<h2 id="_3">服务器代码<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>由于WebSockets是一个规范，我们可以找到它的几个实现。
+我们可以选择TypeScript或任何其他编程语言。</p>
+<p>在这种情况下，我们将使用Socket.IO，它是最快和最可靠的实时引擎之一。</p>
+<h3 id="typescript">为什么在服务器端代码上使用TypeScript？<a class="headerlink" href="#typescript" title="Permanent link">&para;</a></h3>
+<p>TypeScript带有非常酷的功能，并且经常更新。
+它可以防止大约15％的错误。
+你需要更多的理由吗？ 😄</p>
+<h3 id="_4">初始化服务器应用<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>创建一个package.json文件，然后安装以下依赖项:</p>
+<div class="codehilite"><pre><span></span>  npm install --save express socket.io @types/express @types/socket.io
+</pre></div>
+
+<p>我们需要安装一些devDependencies以允许集成gulp和typescript，以便我们可以稍后使用这些工具轻松定义构建任务:</p>
+<div class="codehilite"><pre><span></span>npm install --save-dev typescript gulp gulp-typescript
+</pre></div>
+
+<h3 id="typescript_1">TypeScript编译器<a class="headerlink" href="#typescript_1" title="Permanent link">&para;</a></h3>
+<p>使用以下内容创建一个tsconfig.json文件:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;src/*.ts&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;src/model/*.ts&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;compilerOptions&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;target&quot;</span><span class="p">:</span> <span class="s2">&quot;es5&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3 id="_5">定义的数据模型<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>利用静态类型，我们定义一个小数据模型如下:</p>
+<div class="codehilite"><pre><span></span><span class="kr">export</span> <span class="kr">class</span> <span class="nx">User</span> <span class="p">{</span>
+    <span class="kr">constructor</span><span class="p">(</span><span class="kr">private</span> <span class="nx">name</span>: <span class="kt">string</span><span class="p">)</span> <span class="p">{}</span>
+<span class="p">}</span>
+
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">Message</span> <span class="p">{</span>
+    <span class="kr">constructor</span><span class="p">(</span><span class="kr">private</span> <span class="nx">from</span>: <span class="kt">User</span><span class="p">,</span> <span class="kr">private</span> <span class="nx">content</span>: <span class="kt">string</span><span class="p">)</span> <span class="p">{}</span>
+<span class="p">}</span>
+
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">ChatMessage</span> <span class="kr">extends</span> <span class="nx">Message</span><span class="p">{</span>
+    <span class="kr">constructor</span><span class="p">(</span><span class="nx">from</span>: <span class="kt">User</span><span class="p">,</span> <span class="nx">content</span>: <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kr">super</span><span class="p">(</span><span class="nx">from</span><span class="p">,</span> <span class="nx">content</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>..让我们看看更多的细节到我们的server/src目录:</p>
+<div class="codehilite"><pre><span></span>server/
+  |- src/
+    |- model/
+        |- message.model.ts
+        |- user.model.ts
+    |- index.ts
+    |- server.ts
+  |- package.json
+  |- tsconfig.json
+  |- gulpfile.js
+</pre></div>
+
+
+<h3 id="_6">聊天服务器实现<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>服务器目录中的主要文件是index.ts和chat-server.ts。
+第一个允许我们创建和导出我们的ChatServer应用程序，而最后一个包含express和socket.IO配置：</p>
+<p>index.ts</p>
+<div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">ChatServer</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./chat-server&#39;</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">app</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ChatServer</span><span class="p">().</span><span class="nx">getApp</span><span class="p">();</span>
+<span class="kr">export</span> <span class="p">{</span> <span class="nx">app</span> <span class="p">};</span>
+</pre></div>
+
+<p>chat-server.ts</p>
+<div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">createServer</span><span class="p">,</span> <span class="nx">Server</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;http&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">express</span> <span class="nx">from</span> <span class="s1">&#39;express&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">socketIo</span> <span class="nx">from</span> <span class="s1">&#39;socket.io&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Message</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./model&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">ChatServer</span> <span class="p">{</span>
+    <span class="kr">public</span> <span class="kr">static</span> <span class="nx">readonly</span> <span class="nx">PORT</span>:<span class="kt">number</span> <span class="o">=</span> <span class="mi">8080</span><span class="p">;</span>
+    <span class="kr">private</span> <span class="nx">app</span>: <span class="kt">express.Application</span><span class="p">;</span>
+    <span class="kr">private</span> <span class="nx">server</span>: <span class="kt">Server</span><span class="p">;</span>
+    <span class="kr">private</span> <span class="nx">io</span>: <span class="kt">SocketIO.Server</span><span class="p">;</span>
+    <span class="kr">private</span> <span class="nx">port</span>: <span class="kt">string</span> <span class="o">|</span> <span class="kt">number</span><span class="p">;</span>
+
+    <span class="kr">constructor</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">createApp</span><span class="p">();</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">config</span><span class="p">();</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">createServer</span><span class="p">();</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">sockets</span><span class="p">();</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">listen</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="kr">private</span> <span class="nx">createApp</span><span class="p">()</span><span class="o">:</span> <span class="k">void</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="kr">private</span> <span class="nx">createServer</span><span class="p">()</span><span class="o">:</span> <span class="k">void</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">server</span> <span class="o">=</span> <span class="nx">createServer</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">app</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kr">private</span> <span class="nx">config</span><span class="p">()</span><span class="o">:</span> <span class="k">void</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">port</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">PORT</span> <span class="o">||</span> <span class="nx">ChatServer</span><span class="p">.</span><span class="nx">PORT</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kr">private</span> <span class="nx">sockets</span><span class="p">()</span><span class="o">:</span> <span class="k">void</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">io</span> <span class="o">=</span> <span class="nx">socketIo</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">server</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kr">private</span> <span class="nx">listen</span><span class="p">()</span><span class="o">:</span> <span class="k">void</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">port</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Running server on port %s&#39;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">port</span><span class="p">);</span>
+        <span class="p">});</span>
+
+        <span class="k">this</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;connect&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">socket</span>: <span class="kt">any</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Connected client on port %s.&#39;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">port</span><span class="p">);</span>
+            <span class="nx">socket</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">m</span>: <span class="kt">Message</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;[server](message): %s&#39;</span><span class="p">,</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">m</span><span class="p">));</span>
+                <span class="k">this</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="nx">m</span><span class="p">);</span>
+            <span class="p">});</span>
+
+            <span class="nx">socket</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;disconnect&#39;</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Client disconnected&#39;</span><span class="p">);</span>
+            <span class="p">});</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+
+    <span class="kr">public</span> <span class="nx">getApp</span><span class="p">()</span><span class="o">:</span> <span class="nx">express</span><span class="p">.</span><span class="nx">Application</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">app</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3 id="_7">服务器类<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>前面的代码将给出以下类和关系的结果：</p>
+<p><img alt="服务器类图" src="https://cdn-images-1.medium.com/max/2000/1*-FNkJxTH5kDiBPdJx4tVIg.png" /></p>
+<h3 id="_8">构建并运行服务器<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>为了获得Node.js的V8引擎所需的JavaScript文件，我们可以将一个构建任务添加到我们的gulpfile.js文件中：</p>
+<p>gulpfile.js</p>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">gulp</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;gulp&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">ts</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;gulp-typescript&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">tsProject</span> <span class="o">=</span> <span class="nx">ts</span><span class="p">.</span><span class="nx">createProject</span><span class="p">(</span><span class="s2">&quot;tsconfig.json&quot;</span><span class="p">);</span>
+
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s2">&quot;build&quot;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">tsProject</span><span class="p">.</span><span class="nx">src</span><span class="p">()</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">tsProject</span><span class="p">())</span>
+        <span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s2">&quot;./dist&quot;</span><span class="p">));</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>如您所见，构建过程（JavaScript文件）的输出将位于indist目录中。
+要执行此操作，您需要运行：</p>
+<div class="codehilite"><pre><span></span>gulp build
+</pre></div>
+
+<p>现在我们可以运行<code>node dist/index.js</code>命令让服务器运行。</p>
+<h2 id="_9">客户代码<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p>让我们使用最新的Angular CLI版本生成客户端目录：</p>
+<div class="codehilite"><pre><span></span>ng new typescript-chat-client --routing --prefix tcc --skip-install
+</pre></div>
+
+<p>然后安装运行<code>npm install</code>的依赖项（我更喜欢使用<code>Yarn</code>来执行此步骤）：</p>
+<div class="codehilite"><pre><span></span><span class="nb">cd</span> typescript-chat-client
+yarn install
+</pre></div>
+
+<h3 id="_10">添加角度材质<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>查找并按照最新指南在Angular CLI项目中安装Angular Material。</p>
+<p>作为我们项目结构中使用最佳实践的一部分，我们可以创建共享和物料模块：</p>
+<div class="codehilite"><pre><span></span>client/
+  |- src/
+    |- app/
+        |- chat/
+        |- shared/
+          |- material/
+              |- material.module.ts
+          |- shared.module.ts
+        |-app.module.ts
+</pre></div>
+
+
+<p>我们可以从命令行界面执行此操作：</p>
+<div class="codehilite"><pre><span></span>ng generate module shared --module app
+ng generate module shared/material --module shared
+</pre></div>
+
+<p>检查<code>app.module.ts</code>和<code>shared.module.ts</code>中的更改以查看这些模块之间创建的关系。</p>
+<h3 id="expresssocketio">添加express和socket.IO<a class="headerlink" href="#expresssocketio" title="Permanent link">&para;</a></h3>
+<p>我们需要将express和socket.io模块添加到我们的客户端应用程序中：</p>
+<div class="codehilite"><pre><span></span>npm install express socket.io --save
+</pre></div>
+
+<h3 id="_11">聊天模块和组件<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>在开始为聊天应用程序创建组件之前，先创建一个新模块：</p>
+<div class="codehilite"><pre><span></span>ng generate module chat --module app
+</pre></div>
+
+<p>现在将一个组件添加到最新的模块中：</p>
+<div class="codehilite"><pre><span></span>ng generate component chat --module chat
+</pre></div>
+
+<p>为了使用网络套接字和自定义模型，我们创建另一个共享文件夹。
+这段时间内聊天目录中：</p>
+<div class="codehilite"><pre><span></span>ng generate service chat/shared/services/socket --module chat
+ng generate class chat/shared/model/user
+ng generate class chat/shared/model/message
+</pre></div>
+
+<p>我们将以类似于以下的结构结束：</p>
+<div class="codehilite"><pre><span></span>client/
+  |- src/
+    |- app/
+        |- chat/
+          |- shared/
+            |- model/
+                |- user.ts
+                |- message.ts
+            |- services/
+                |- socket.service.ts
+        |- shared/
+        |-app.module.ts
+</pre></div>
+
+
+<h3 id="observablesweb">Observables和Web套接字<a class="headerlink" href="#observablesweb" title="Permanent link">&para;</a></h3>
+<p>由于我们的Angular应用程序带有RxJS，因此我们可以使用Observables来捕获Socket.IO事件：</p>
+<p>socket.service.ts</p>
+<div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">Injectable</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Observable</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;rxjs/Observable&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Observer</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;rxjs/Observer&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Message</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;../model/message&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Event</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;../model/event&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">socketIo</span> <span class="nx">from</span> <span class="s1">&#39;socket.io-client&#39;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">SERVER_URL</span> <span class="o">=</span> <span class="s1">&#39;http://localhost:8080&#39;</span><span class="p">;</span>
+
+<span class="kd">@Injectable</span><span class="p">()</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">SocketService</span> <span class="p">{</span>
+    <span class="kr">private</span> <span class="nx">socket</span><span class="p">;</span>
+
+    <span class="kr">public</span> <span class="nx">initSocket</span><span class="p">()</span><span class="o">:</span> <span class="k">void</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">socket</span> <span class="o">=</span> <span class="nx">socketIo</span><span class="p">(</span><span class="nx">SERVER_URL</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kr">public</span> <span class="nx">send</span><span class="p">(</span><span class="nx">message</span>: <span class="kt">Message</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">socket</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="nx">message</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kr">public</span> <span class="nx">onMessage</span><span class="p">()</span><span class="o">:</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">Message</span><span class="o">&gt;</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">Message</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">observer</span> <span class="o">=&gt;</span> <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">socket</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">data</span>: <span class="kt">Message</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">observer</span><span class="p">.</span><span class="nx">next</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+
+    <span class="kr">public</span> <span class="nx">onEvent</span><span class="p">(</span><span class="nx">event</span>: <span class="kt">Event</span><span class="p">)</span><span class="o">:</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">Event</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">observer</span> <span class="o">=&gt;</span> <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">socket</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">observer</span><span class="p">.</span><span class="nx">next</span><span class="p">());</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>我们需要定义一些枚举来管理应用中的操作和事件：</p>
+<div class="codehilite"><pre><span></span><span class="c1">// Actions you can take on the App</span>
+<span class="kr">export</span> <span class="kr">enum</span> <span class="nx">Action</span> <span class="p">{</span>
+    <span class="nx">JOINED</span><span class="p">,</span>
+    <span class="nx">LEFT</span><span class="p">,</span>
+    <span class="nx">RENAME</span>
+<span class="p">}</span>
+
+<span class="c1">// Socket.io events</span>
+<span class="kr">export</span> <span class="kr">enum</span> <span class="nx">Event</span> <span class="p">{</span>
+    <span class="nx">CONNECT</span> <span class="o">=</span> <span class="s1">&#39;connect&#39;</span><span class="p">,</span>
+    <span class="nx">DISCONNECT</span> <span class="o">=</span> <span class="s1">&#39;disconnect&#39;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>现在我们准备好收听来自服务器的消息：</p>
+<div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">OnInit</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Action</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./shared/model/action&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Event</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./shared/model/event&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Message</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./shared/model/message&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">User</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./shared/model/user&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">SocketService</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./shared/services/socket.service&#39;</span><span class="p">;</span>
+
+<span class="kd">@Component</span><span class="p">({</span>
+  <span class="nx">selector</span><span class="o">:</span> <span class="s1">&#39;tcc-chat&#39;</span><span class="p">,</span>
+  <span class="nx">templateUrl</span><span class="o">:</span> <span class="s1">&#39;./chat.component.html&#39;</span><span class="p">,</span>
+  <span class="nx">styleUrls</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;./chat.component.css&#39;</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">ChatComponent</span> <span class="kr">implements</span> <span class="nx">OnInit</span> <span class="p">{</span>
+  <span class="nx">action</span> <span class="o">=</span> <span class="nx">Action</span><span class="p">;</span>
+  <span class="nx">user</span>: <span class="kt">User</span><span class="p">;</span>
+  <span class="nx">messages</span>: <span class="kt">Message</span><span class="p">[]</span> <span class="o">=</span> <span class="p">[];</span>
+  <span class="nx">messageContent</span>: <span class="kt">string</span><span class="p">;</span>
+  <span class="nx">ioConnection</span>: <span class="kt">any</span><span class="p">;</span>
+
+  <span class="kr">constructor</span><span class="p">(</span><span class="kr">private</span> <span class="nx">socketService</span>: <span class="kt">SocketService</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+
+  <span class="nx">ngOnInit</span><span class="p">()</span><span class="o">:</span> <span class="k">void</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">initIoConnection</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="kr">private</span> <span class="nx">initIoConnection</span><span class="p">()</span><span class="o">:</span> <span class="k">void</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">socketService</span><span class="p">.</span><span class="nx">initSocket</span><span class="p">();</span>
+
+    <span class="k">this</span><span class="p">.</span><span class="nx">ioConnection</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">socketService</span><span class="p">.</span><span class="nx">onMessage</span><span class="p">()</span>
+      <span class="p">.</span><span class="nx">subscribe</span><span class="p">((</span><span class="nx">message</span>: <span class="kt">Message</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+      <span class="p">});</span>
+
+    <span class="k">this</span><span class="p">.</span><span class="nx">socketService</span><span class="p">.</span><span class="nx">onEvent</span><span class="p">(</span><span class="nx">Event</span><span class="p">.</span><span class="nx">CONNECT</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">subscribe</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;connected&#39;</span><span class="p">);</span>
+      <span class="p">});</span>
+
+    <span class="k">this</span><span class="p">.</span><span class="nx">socketService</span><span class="p">.</span><span class="nx">onEvent</span><span class="p">(</span><span class="nx">Event</span><span class="p">.</span><span class="nx">DISCONNECT</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">subscribe</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;disconnected&#39;</span><span class="p">);</span>
+      <span class="p">});</span>
+  <span class="p">}</span>
+
+  <span class="kr">public</span> <span class="nx">sendMessage</span><span class="p">(</span><span class="nx">message</span>: <span class="kt">string</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">message</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">this</span><span class="p">.</span><span class="nx">socketService</span><span class="p">.</span><span class="nx">send</span><span class="p">({</span>
+      <span class="nx">from</span>: <span class="kt">this.user</span><span class="p">,</span>
+      <span class="nx">content</span>: <span class="kt">message</span>
+    <span class="p">});</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">messageContent</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="kr">public</span> <span class="nx">sendNotification</span><span class="p">(</span><span class="nx">params</span>: <span class="kt">any</span><span class="p">,</span> <span class="nx">action</span>: <span class="kt">Action</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">message</span>: <span class="kt">Message</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">action</span> <span class="o">===</span> <span class="nx">Action</span><span class="p">.</span><span class="nx">JOINED</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">message</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="nx">from</span>: <span class="kt">this.user</span><span class="p">,</span>
+        <span class="nx">action</span>: <span class="kt">action</span>
+      <span class="p">}</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">action</span> <span class="o">===</span> <span class="nx">Action</span><span class="p">.</span><span class="nx">RENAME</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">message</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="nx">action</span>: <span class="kt">action</span><span class="p">,</span>
+        <span class="nx">content</span><span class="o">:</span> <span class="p">{</span>
+          <span class="nx">username</span>: <span class="kt">this.user.name</span><span class="p">,</span>
+          <span class="nx">previousUsername</span>: <span class="kt">params.previousUsername</span>
+        <span class="p">}</span>
+      <span class="p">};</span>
+    <span class="p">}</span>
+
+    <span class="k">this</span><span class="p">.</span><span class="nx">socketService</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>材料代码和UI事件在此文件中被省略</p>
+<p>一旦ChatComponent被初始化，组件将订阅SocketService observables以开始接收连接事件或传入消息。</p>
+<p>sendMessage和sendNotification函数将通过相同的服务发送相应的内容。
+此时发送的通知是重命名用户和用户加入。</p>
+<h3 id="_12">聊天应用功能<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>Angular CLI</p>
+<p>Angular 5</p>
+<p>Angular Material</p>
+<p>Validation Forms</p>
+<h2 id="_13">源代码<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<p>在这个GitHub仓库中找到完整的项目：</p>
+<blockquote>
+<p><a href="https://github.com/luixaviles/socket-io-typescript-chat">github.com/luixaviles/socket-io-typescript-chat</a></p>
+</blockquote>
+<h2 id="_14">现场演示<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<p>打开<a href="https://typescript-chat.firebaseapp.com/">typescript-chat.firebaseapp.com</a>并在您喜爱的浏览器中打开两个或更多标签并开始对话。</p>
+<p>如果你喜欢这篇文章，一定要分享给你的朋友，或给它拍手。👏</p>
+<p>您可以在<a href="https://twitter.com/luixaviles">Twitter</a>和<a href="https://github.com/luixaviles">GitHub</a>上关注我，以了解更多关于我的工作的信息。</p>
+<p>感谢您的阅读！ — 路易斯阿维莱斯</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../migrate6/" title="升级6" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  后退
+                </span>
+                升级6
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../github/collections/" title="集合" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前进
+                </span>
+                集合
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            版权 &copy; 2017 - 2018 wohugb.github.io
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="http://wohugb.github.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/wohugb" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/wohugb" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/wohugb" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.8eb9be28.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.jp.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

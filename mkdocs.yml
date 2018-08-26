@@ -62,6 +62,11 @@ pages:
     - 机器学习: ai/deeplearning.md
     - 赞表: ai/awesome.md
     - 2017: ai/2017.md
+  - 机器人:
+    - BOT: bot/index.md
+    - 开发框架: bot/framework.md
+    - ROS: bot/ros.md
+    - Arduino: bot/arduino.md
   - 无心:
     - 概述: blockchain/index.md
     - 技术树: blockchain/tree.md
@@ -95,22 +100,27 @@ pages:
       - 赞表: python/django/awesome.md
   - Node:
     - NodeJs: nodejs/nodejs.md
-    - 赞表: nodejs/awesome.md
+    - awesome: nodejs/awesome.md
     - Express: nodejs/express.md
     - KOA: nodejs/koa.md
-    - 獴: nodejs/mongoose.md
+    - Mongoose: nodejs/mongoose.md
     - PM2: nodejs/pm2.md
     - 组件:
       - QrCode:
         - 概述: nodejs/node_modules/qrcode/readme.md
         - API: nodejs/node_modules/qrcode/api.md
       - GM: nodejs/node_modules/gm.md
+      - RSA:
+        - 概述: nodejs/node_modules/node-rsa/readme.md
+        - JSBN: nodejs/node_modules/node-rsa/jsbn.md
   - Ng:
     - 概述: angular/index.md
     - cli: angular/cli.md
     - 赞表: angular/awesome.md
     - starter: angular/starter.md
     - 升级: angular/migrate.md
+    - 升级6: angular/migrate6.md
+    - IO: angular/sockets.md
   - GitHub:
     - 集合: github/collections.md
   - 阿里云:
