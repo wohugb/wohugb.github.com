@@ -22,6 +22,7 @@ ng serve --open
 ## 第四步: 编辑第一个组件
 
 !!! note "src/app/app.component.ts"
+
     ```js
     export class AppComponent {
       title = 'My First Angular App';
@@ -29,6 +30,7 @@ ng serve --open
     ```
 
 !!! note "src/app/app.component.css"
+
     ```css
     h1 {
       color: #369;
