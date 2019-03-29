@@ -1,4 +1,8 @@
-# [Awesome Node.js](https://node.cool) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Awesome Node.js
+
+[Awesome Node.js](https://node.cool)
+
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 [<img src="https://cdn.rawgit.com/gilbarbara/logos/e7b1dc2666c3dabe6c1276abd0a767b6ebd6af43/logos/nodejs-icon.svg" align="right" width="70">](https://nodejs.org)
 
@@ -28,7 +32,6 @@
 - [seedshot](https://github.com/twobucks/seedshot) - Temporary P2P screenshot sharing from your browser.
 - [js-git](https://github.com/creationix/js-git) - JavaScript implementation of Git.
 - [skale](https://github.com/skale-me/skale-engine) - High performance distributed data processing engine.
-
 
 ### 命令行程序
 
@@ -96,7 +99,6 @@
 - [cost-of-modules](https://github.com/siddharthkp/cost-of-modules) - Find out which dependencies are slowing you down.
 - [localtunnel](https://github.com/localtunnel/localtunnel) - Expose your localhost to the world.
 
-
 ### 函数式编程
 
 - [lodash](https://lodash.com) - Utility library delivering consistency, customization, performance, & extras. A better and faster Underscore.js.
@@ -110,7 +112,6 @@
 - [RxJS](http://reactivex.io) - Functional reactive library for transforming, composing, and querying various kinds of data.
 - [Lazy.js](https://github.com/dtao/lazy.js) - Utility library similar to lodash/Underscore but with lazy evaluation, which can translate to superior performance in many cases.
 - [Kefir.js](https://github.com/rpominov/kefir) - Reactive library with focus on high performance and low memory usage.
-
 
 ### HTTP
 
@@ -130,7 +131,6 @@
 - [http-fake-backend](https://github.com/micromata/http-fake-backend) - Build a fake backend by providing the content of JSON files or JavaScript objects through configurable routes.
 - [cacheable-request](https://github.com/lukechilds/cacheable-request) - Wrap native HTTP requests with RFC compliant cache support.
 
-
 ### 调试/分析
 
 - [ironNode](https://github.com/s-a/iron-node) - Node.js debugger supporting ES2015 out of the box.
@@ -149,7 +149,6 @@
 - [ctrace](https://github.com/automation-stack/ctrace) - Well-formatted and improved trace system calls and signals.
 - [leakage](https://github.com/andywer/leakage) - Write memory leak tests.
 
-
 ### 日志
 
 - [pino](https://github.com/pinojs/pino) - Extremely fast logger inspired by Bunyan.
@@ -158,7 +157,6 @@
 - [intel](http://seanmonstar.github.io/intel/) - Logging library (handlers, filters, formatters, console injection).
 - [console-log-level](https://github.com/watson/console-log-level) - The most simple logger imaginable with support for log levels and custom prefixes.
 - [storyboard](https://github.com/guigrpa/storyboard) - End-to-end, hierarchical, real-time, colorful logs and stories.
-
 
 ### 命令行实用工具
 
@@ -205,7 +203,6 @@
 - [Bit](https://github.com/teambit/bit) - Create, maintain, find and use small modules and components across repositories.
 - [gradient-string](https://github.com/bokub/gradient-string) - Beautiful color gradients in terminal output.
 
-
 ### 构建工具
 
 - [webpack](https://github.com/webpack/webpack) - Packs modules and assets for the browser.
@@ -222,7 +219,6 @@
 - [FuseBox](https://github.com/fuse-box/fuse-box) - Fast build system that combines the power of webpack, JSPM and SystemJS, with first-class TypeScript support.
 - [pkg](https://github.com/zeit/pkg) - Package your Node.js project into an executable.
 
-
 ### 硬件
 
 - [johnny-five](https://github.com/rwaldron/johnny-five) - Firmata based Arduino Framework.
@@ -234,7 +230,6 @@
 - [spi-device](https://github.com/fivdi/spi-device) - SPI serial bus access.
 - [pigpio](https://github.com/fivdi/pigpio) - Fast GPIO, PWM, servo control, state change notification, and interrupt handling on the Raspberry Pi.
 
-
 ### 模板
 
 - [marko](https://github.com/marko-js/marko) - HTML-based templating engine that compiles templates to CommonJS modules and supports streaming, async rendering and custom tags.
@@ -244,15 +239,14 @@
 - [EJS](https://github.com/mde/ejs) - Simple unopinionated templating language.
 - [Pug](https://github.com/pugjs/pug) - High-performance template engine heavily influenced by Haml.
 
-
-### Web框架
+### Web 框架
 
 - [Hapi](http://hapijs.com) - Framework for building applications and services.
 - [Koa](http://koajs.com) - Framework designed by the team behind Express, which aims to be a smaller, more expressive, and more robust foundation for web applications and APIs.
 - [Express](http://expressjs.com) - Web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications.
 - [Feathers](http://feathersjs.com) - Microservice framework built in the spirit of Express.
 - [LoopBack](http://loopback.io) - Powerful framework for creating REST APIs and easily connecting to backend data sources.
-- [Meteor](https://www.meteor.com) - An ultra-simple, database-everywhere, data-on-the-wire, pure-Javascript web framework. *(You might like [awesome-meteor](https://github.com/Urigo/awesome-meteor))*
+- [Meteor](https://www.meteor.com) - An ultra-simple, database-everywhere, data-on-the-wire, pure-Javascript web framework. _(You might like [awesome-meteor](https://github.com/Urigo/awesome-meteor))_
 - [SailsJS](http://sailsjs.org) - An MVC web framework with a modern twist, supporting WebSockets, streams, and a data-driven API.
 - [Restify](http://restify.com) - Enables you to build correct REST web services.
 - [Interfake](https://github.com/basicallydan/interfake) - Rapid prototyping framework for making mock HTTP APIs, with a Node.js, command-line and HTTP interface.
@@ -267,7 +261,6 @@
 - [Hemera](https://github.com/hemerajs/hemera) - Write reliable and fault-tolerant microservices with [NATS](https://nats.io).
 - [Micro](https://github.com/zeit/micro) - Minimalistic microservice framework with an async approach.
 
-
 ### 文档
 
 - [Docco](http://jashkenas.github.io/docco/) - Documentation generator which produces an HTML document that displays your comments intermingled with your code.
@@ -278,7 +271,6 @@
 - [documentation.js](http://documentation.js.org) - API documentation generator with support for ES2015+ and flow annotation.
 - [YUIDoc](http://yui.github.com/yuidoc/) - Generates API documentation from comments in source.
 - [ESDoc](https://esdoc.org) - Documentation generator targeting ES2015, attaching test code and measuring documentation coverage.
-
 
 ### 文件系统
 
@@ -303,36 +295,15 @@
 - [sander](https://github.com/rich-harris/sander) - Promise-based replacement for the `fs` module.
 - [filehound](https://github.com/nspragg/filehound) - Flexible and fluent interface for searching the file system.
 
-
 ### 控制流
 
-- Promises
-	- [Bluebird](https://github.com/petkaantonov/bluebird) - Promise library with focus on innovative features and performance.
-	- [pify](https://github.com/sindresorhus/pify) - Promisify a callback-style function.
-	- [delay](https://github.com/sindresorhus/delay) - Delay a promise a specified amount of time.
-	- [promise-memoize](https://github.com/nodeca/promise-memoize) - Memoize promise-returning functions, with expire and prefetch.
-	- [valvelet](https://github.com/lpinca/valvelet) - Limit the execution rate of a promise-returning function.
-	- [p-map](https://github.com/sindresorhus/p-map) - Map over promises concurrently.
-	- [More…](https://github.com/wbinnssmith/awesome-promises)
-- Observables
-	- [zen-observable](https://github.com/zenparsing/zen-observable) - Implementation of Observables.
-	- [RxJS](https://github.com/ReactiveX/RxJS) - Reactive programming.
-	- [observable-to-promise](https://github.com/sindresorhus/awesome-observables) - Convert an Observable to a Promise.
-	- [More…](https://github.com/sindresorhus/awesome-observables)
-- Generators
-	- [co](https://github.com/tj/co) - The ultimate generator based flow-control goodness.
-	- [bluebird-co](https://github.com/novacrazy/bluebird-co) - High performance yield handlers for Bluebird coroutines.
-	- [iterum](https://github.com/xgbuils/iterum) - Build generator pipelines using Array-like methods.
-- Streams
-	- [Highland.js](http://highlandjs.org) - Manages synchronous and asynchronous code easily, using nothing more than standard JavaScript and Node-like Streams.
-- Callbacks
-	- [each-async](https://github.com/sindresorhus/each-async) - Async concurrent iterator like forEach.
-	- [async](https://github.com/caolan/async) - Provides straight-forward, powerful functions for working with asynchronicity.
-- Channels
-	- [js-csp](https://github.com/ubolonton/js-csp) - Communicating sequential processes for JavaScript (like Clojurescript core.async, or Go).
-- Other
-	- [zone](https://github.com/strongloop/zone) - Provides a way to group and track resources and errors across asynchronous operations.
-
+- Promises - [Bluebird](https://github.com/petkaantonov/bluebird) - Promise library with focus on innovative features and performance. - [pify](https://github.com/sindresorhus/pify) - Promisify a callback-style function. - [delay](https://github.com/sindresorhus/delay) - Delay a promise a specified amount of time. - [promise-memoize](https://github.com/nodeca/promise-memoize) - Memoize promise-returning functions, with expire and prefetch. - [valvelet](https://github.com/lpinca/valvelet) - Limit the execution rate of a promise-returning function. - [p-map](https://github.com/sindresorhus/p-map) - Map over promises concurrently. - [More…](https://github.com/wbinnssmith/awesome-promises)
+- Observables - [zen-observable](https://github.com/zenparsing/zen-observable) - Implementation of Observables. - [RxJS](https://github.com/ReactiveX/RxJS) - Reactive programming. - [observable-to-promise](https://github.com/sindresorhus/awesome-observables) - Convert an Observable to a Promise. - [More…](https://github.com/sindresorhus/awesome-observables)
+- Generators - [co](https://github.com/tj/co) - The ultimate generator based flow-control goodness. - [bluebird-co](https://github.com/novacrazy/bluebird-co) - High performance yield handlers for Bluebird coroutines. - [iterum](https://github.com/xgbuils/iterum) - Build generator pipelines using Array-like methods.
+- Streams - [Highland.js](http://highlandjs.org) - Manages synchronous and asynchronous code easily, using nothing more than standard JavaScript and Node-like Streams.
+- Callbacks - [each-async](https://github.com/sindresorhus/each-async) - Async concurrent iterator like forEach. - [async](https://github.com/caolan/async) - Provides straight-forward, powerful functions for working with asynchronicity.
+- Channels - [js-csp](https://github.com/ubolonton/js-csp) - Communicating sequential processes for JavaScript (like Clojurescript core.async, or Go).
+- Other - [zone](https://github.com/strongloop/zone) - Provides a way to group and track resources and errors across asynchronous operations.
 
 ### 流
 
@@ -353,7 +324,6 @@
 - [through2-concurrent](https://github.com/almost/through2-concurrent) - Transform object streams concurrently.
 - [graphicsmagick-stream](https://github.com/e-conomic/graphicsmagick-stream) - Fast conversion/scaling of images using a pool of long lived GraphicsMagick processes.
 
-
 ### 实时
 
 - [µWebSockets](https://github.com/uWebSockets/uWebSockets) - Highly scalable WebSocket server & client library.
@@ -367,7 +337,6 @@
 - [Kalm](https://github.com/kalm/kalm.js) - Low-level socket router and middleware framework.
 - [MQTT.js](https://github.com/mqttjs/MQTT.js) - Client for MQTT - Pub-sub based messaging protocol for use on top of TCP/IP.
 
-
 ### 图像
 
 - [sharp](https://github.com/lovell/sharp) - 改变 JPEG, PNG, WebP 和 TIFF 图片大小最快的模块. ![GitHub stars](https://img.shields.io/github/stars/lovell/sharp.svg?style=social)
@@ -375,10 +344,9 @@
 - [gm](https://github.com/aheckmann/gm) - GraphicsMagick 和 ImageMagick 的包装. ![GitHub stars](https://img.shields.io/github/stars/aheckmann/gm.svg?style=social)
 - [lwip](https://github.com/EyalAr/lwip) - 不需要 ImageMagick 轻量级图像处理. ![GitHub stars](https://img.shields.io/github/stars/EyalAr/lwip.svg?style=social)
 - [pica](https://github.com/nodeca/pica) - High quality & fast resize (lanczos3) in pure JS. Alternative to canvas drawImage(), when no pixelation allowed. ![GitHub stars](https://img.shields.io/github/stars/nodeca/pica.svg?style=social)
-- [jimp](https://github.com/oliver-moran/jimp) - 纯JavaScript的图像处理. ![GitHub stars](https://img.shields.io/github/stars/oliver-moran/jimp.svg?style=social)
-- [is-progressive](https://github.com/sindresorhus/is-progressive) - 检查JPEG图像是否具有渐进性. ![GitHub stars](https://img.shields.io/github/stars/sindresorhus/is-progressive.svg?style=social)
+- [jimp](https://github.com/oliver-moran/jimp) - 纯 JavaScript 的图像处理. ![GitHub stars](https://img.shields.io/github/stars/oliver-moran/jimp.svg?style=social)
+- [is-progressive](https://github.com/sindresorhus/is-progressive) - 检查 JPEG 图像是否具有渐进性. ![GitHub stars](https://img.shields.io/github/stars/sindresorhus/is-progressive.svg?style=social)
 - [probe-image-size](https://github.com/nodeca/probe-image-size) - 在没有完整下载的情况下，获取大多数图像格式的大小. ![GitHub stars](https://img.shields.io/github/stars/nodeca/probe-image-size.svg?style=social)
-
 
 ### 文本
 
@@ -399,14 +367,12 @@
 - [matcher](https://github.com/sindresorhus/matcher) - Simple wildcard matching.
 - [unhomoglyph](https://github.com/nodeca/unhomoglyph) - Normalize visually similar unicode characters.
 
-
 ### 数字
 
 - [random-int](https://github.com/sindresorhus/random-int) - Generate a random integer.
 - [random-float](https://github.com/sindresorhus/random-float) - Generate a random float.
 - [unique-random](https://github.com/sindresorhus/unique-random) - Generate random numbers that are consecutively unique.
 - [round-to](https://github.com/sindresorhus/round-to) - Round a number to a specific number of decimal places: `1.234` → `1.2`.
-
 
 ### 数学
 
@@ -416,7 +382,6 @@
 - [math-clamp](https://github.com/sindresorhus/math-clamp) - Clamp a number.
 - [algebra](https://github.com/fibo/algebra) - Algebraic structures.
 
-
 ### 日期
 
 - [date-fns](https://github.com/date-fns/date-fns) - Modern date utility.
@@ -425,7 +390,6 @@
 - [dateformat](https://github.com/felixge/node-dateformat) - Date formatting.
 - [tz-format](https://github.com/samverschueren/tz-format) - Format a date with timezone: `2015-11-30T10:40:35+01:00`.
 - [cctz](https://github.com/floatdrop/node-cctz) - Fast parsing, formatting, and timezone conversation for dates.
-
 
 ### URL
 
@@ -437,7 +401,6 @@
 - [url-pattern](https://github.com/snd/url-pattern) - Easier than regex string matching patterns for URLs and other strings.
 - [embedza](https://github.com/nodeca/embedza) - Create HTML snippets/embeds from URLs using info from oEmbed, Open Graph, meta tags.
 
-
 ### 数据验证
 
 - [joi](https://github.com/hapijs/joi) - Object schema description language and validator for JavaScript objects.
@@ -445,7 +408,6 @@
 - [property-validator](https://github.com/nettofarah/property-validator) - Easy property validation for Express.
 - [schema-inspector](https://github.com/Atinux/schema-inspector) - JSON API sanitization and validation.
 - [ajv](https://github.com/epoberezkin/ajv) - The fastest JSON Schema validator. Supports v5 proposals.
-
 
 ### 解析
 
@@ -474,7 +436,6 @@
 - [ref](https://github.com/TooTallNate/ref) - Read/write structured binary data in Buffers.
 - [xlsx-populate](https://github.com/dtjohnson/xlsx-populate) - Read/write Excel XLSX.
 
-
 ### 人性化
 
 - [pretty-bytes](https://github.com/sindresorhus/pretty-bytes) - Convert bytes to a human readable string: `1337` → `1.34 kB`.
@@ -483,7 +444,6 @@
 - [pretty-error](https://github.com/AriaMinaei/pretty-error) - Errors with less clutter.
 - [humanize](https://github.com/taijinlee/humanize) - Data formatter for human readability.
 - [read-art](https://github.com/Tjatse/node-readability) - Extract readable content from any page.
-
 
 ### 压缩
 
@@ -494,7 +454,6 @@
 - [tar-stream](https://github.com/mafintosh/tar-stream) - Streaming tar parser and generator. Also see [tar-fs](https://github.com/mafintosh/tar-fs).
 - [decompress](https://github.com/kevva/decompress) - Decompression module with support for `tar`, `tar.gz` and `zip` files out of the box.
 
-
 ### Network
 
 - [get-port](https://github.com/sindresorhus/get-port) - Get an available port.
@@ -503,37 +462,12 @@
 - [polo](https://github.com/mafintosh/polo) - Zero-config service discovery.
 - [DHCP](https://github.com/infusion/node-dhcp) - DHCP client and server.
 
-
 ### 数据库
 
-- Drivers
-	- [PostgreSQL](https://github.com/brianc/node-postgres) - PostgreSQL client. Pure JavaScript and native libpq bindings.
-	- [Redis](https://github.com/luin/ioredis) - Redis client.
-	- [LevelUP](https://github.com/Level/levelup) - LevelDB.
-	- [MySQL](https://github.com/mysqljs/mysql) - MySQL client.
-	- [nano](https://github.com/dscape/nano) - CouchDB client.
-	- [Aerospike](https://github.com/aerospike/aerospike-client-nodejs) - Aerospike client.
-	- [Couchbase](https://github.com/couchbase/couchnode) - Couchbase client.
-	- [MongoDB](https://github.com/mongodb/node-mongodb-native) - MongoDB driver.
-- ODM / ORM
-	- [Sequelize](https://github.com/sequelize/sequelize) - Multi-dialect ORM. Supports PostgreSQL, SQLite, MySQL.
-	- [Bookshelf](http://bookshelfjs.org) - ORM for PostgreSQL, MySQL and SQLite3 in the style of Backbone.js.
-	- [Massive](https://github.com/robconery/massive-js) - PostgreSQL data access tool.
-	- [Mongoose](http://mongoosejs.com) - Elegant MongoDB object modeling.
-	- [Waterline](https://github.com/balderdashy/waterline) - Datastore-agnostic tool that dramatically simplifies interaction with one or more databases.
-	- [Iridium](https://github.com/SierraSoftworks/Iridium) - MongoDB ORM with support for promises, distributed caching, preprocessing, validation and plugins.
-	- [OpenRecord](https://github.com/PhilWaldmann/openrecord) - ORM for PostgreSQL, MySQL, SQLite3 and RESTful datastores. Similar to ActiveRecord.
-	- [orm2](https://github.com/dresende/node-orm2) - ORM for PostgreSQL, MariaDB, MySQL, Amazon Redshift, SQLite, MongoDB.
-	- [firenze](https://github.com/fahad19/firenze) - Adapter-based ORM for MySQL, Memory, Redis, localStorage and more.
-	- [pg-promise](https://github.com/vitaly-t/pg-promise) - PostgreSQL framework for native SQL using promises.
-	- [Objection.js](https://github.com/Vincit/objection.js) - Lightweight ORM built on the SQL query builder Knex.
-- Query builder
-	- [Knex](http://knexjs.org) - Query builder for PostgreSQL, MySQL and SQLite3, designed to be flexible, portable, and fun to use.
-- Other
-	- [NeDB](https://github.com/louischatriot/nedb) - Embedded persistent database written in JavaScript.
-	- [Lowdb](https://github.com/typicode/lowdb) - Small JavaScript database powered by Lodash.
-	- [Keyv](https://github.com/lukechilds/keyv) - Simple key-value storage with support for multiple backends.
-
+- Drivers - [PostgreSQL](https://github.com/brianc/node-postgres) - PostgreSQL client. Pure JavaScript and native libpq bindings. - [Redis](https://github.com/luin/ioredis) - Redis client. - [LevelUP](https://github.com/Level/levelup) - LevelDB. - [MySQL](https://github.com/mysqljs/mysql) - MySQL client. - [nano](https://github.com/dscape/nano) - CouchDB client. - [Aerospike](https://github.com/aerospike/aerospike-client-nodejs) - Aerospike client. - [Couchbase](https://github.com/couchbase/couchnode) - Couchbase client. - [MongoDB](https://github.com/mongodb/node-mongodb-native) - MongoDB driver.
+- ODM / ORM - [Sequelize](https://github.com/sequelize/sequelize) - Multi-dialect ORM. Supports PostgreSQL, SQLite, MySQL. - [Bookshelf](http://bookshelfjs.org) - ORM for PostgreSQL, MySQL and SQLite3 in the style of Backbone.js. - [Massive](https://github.com/robconery/massive-js) - PostgreSQL data access tool. - [Mongoose](http://mongoosejs.com) - Elegant MongoDB object modeling. - [Waterline](https://github.com/balderdashy/waterline) - Datastore-agnostic tool that dramatically simplifies interaction with one or more databases. - [Iridium](https://github.com/SierraSoftworks/Iridium) - MongoDB ORM with support for promises, distributed caching, preprocessing, validation and plugins. - [OpenRecord](https://github.com/PhilWaldmann/openrecord) - ORM for PostgreSQL, MySQL, SQLite3 and RESTful datastores. Similar to ActiveRecord. - [orm2](https://github.com/dresende/node-orm2) - ORM for PostgreSQL, MariaDB, MySQL, Amazon Redshift, SQLite, MongoDB. - [firenze](https://github.com/fahad19/firenze) - Adapter-based ORM for MySQL, Memory, Redis, localStorage and more. - [pg-promise](https://github.com/vitaly-t/pg-promise) - PostgreSQL framework for native SQL using promises. - [Objection.js](https://github.com/Vincit/objection.js) - Lightweight ORM built on the SQL query builder Knex.
+- Query builder - [Knex](http://knexjs.org) - Query builder for PostgreSQL, MySQL and SQLite3, designed to be flexible, portable, and fun to use.
+- Other - [NeDB](https://github.com/louischatriot/nedb) - Embedded persistent database written in JavaScript. - [Lowdb](https://github.com/typicode/lowdb) - Small JavaScript database powered by Lodash. - [Keyv](https://github.com/lukechilds/keyv) - Simple key-value storage with support for multiple backends.
 
 ### 测试
 
@@ -559,7 +493,6 @@
 - [TestCafe](https://github.com/DevExpress/testcafe) - Automated browser testing.
 - [abstruse](https://github.com/bleenco/abstruse) - Continuous Integration server.
 
-
 ### 安全
 
 - [snyk](https://github.com/Snyk/snyk) - CLI and build-time tool to find & fix vulnerable npm dependencies.
@@ -567,12 +500,10 @@
 - [RegEx-DoS](https://github.com/jagracey/RegEx-DoS) - CLI tool to identify possible regex denial of service (ReDos) vulnerabilities in your project.
 - [credential-plus](https://github.com/simonepri/credential-plus) - Password hashing and verification made easy.
 
-
 ### 基准测试
 
 - [Benchmark.js](http://benchmarkjs.com) - Benchmarking library that supports high-resolution timers and returns statistically significant results.
 - [matcha](https://github.com/logicalparadox/matcha) - Simplistic approach to benchmarking.
-
 
 ### 缩小镜
 
@@ -581,7 +512,6 @@
 - [clean-css](https://github.com/jakubpawlowicz/clean-css) - CSS minifier.
 - [minimize](https://github.com/Swaagie/minimize) - HTML minifier.
 - [imagemin](https://github.com/imagemin/imagemin) - Image minifier.
-
 
 ### 身份验证
 
@@ -592,13 +522,11 @@
 - [Grant](https://github.com/simov/grant) - OAuth middleware for Express, Koa, and Hapi.
 - [CloudRail](https://github.com/CloudRail/cloudrail-si-node-sdk) - Unified API for social authentication (Facebook, Twitter, Slack, Instagram, …).
 
-
 ### Email
 
 - [Nodemailer](https://github.com/andris9/Nodemailer) - The fastest way to handle email.
 - [emailjs](https://github.com/eleith/emailjs) - Send text/HTML emails with attachments to any SMTP server.
 - [email-templates](https://github.com/niftylettuce/email-templates) - Create, preview, and send custom email templates.
-
 
 ### 工作队列
 
@@ -608,7 +536,6 @@
 - [idoit](https://github.com/nodeca/idoit) - Redis-backed job queue engine with advanced job control.
 - [node-resque](https://github.com/taskrabbit/node-resque) - Redis-backed job queue.
 
-
 ### Node.js 管理
 
 - [n](https://github.com/tj/n) - Node.js version management.
@@ -616,17 +543,10 @@
 - [nodeenv](https://github.com/ekalinin/nodeenv) - Node.js virtual environment compatible to Python's virtualenv.
 - [nvm for Windows](https://github.com/coreybutler/nvm-windows) - Version management for Windows.
 
-
 ### Polyfills
 
-- Node.js
-	- [user-info](https://github.com/sindresorhus/user-info) - Node.js 6 `os.userInfo()` ponyfill.
-	- [buffer-includes](https://github.com/sindresorhus/buffer-includes) - Node.js 5.3 `buffer.includes()` ponyfill.
-	- [deep-strict-equal](https://github.com/sindresorhus/deep-strict-equal) - Test for deep equality - Node.js `assert.deepStrictEqual()` algorithm as a standalone module.
-- JavaScript
-	- [harmony-reflect](https://github.com/tvcutsem/harmony-reflect) - ES2015 `Reflect` and `Proxy` polyfill.
-	- [es6-shim](https://github.com/paulmillr/es6-shim) - Collection of ES2015 polyfills.
-
+- Node.js - [user-info](https://github.com/sindresorhus/user-info) - Node.js 6 `os.userInfo()` ponyfill. - [buffer-includes](https://github.com/sindresorhus/buffer-includes) - Node.js 5.3 `buffer.includes()` ponyfill. - [deep-strict-equal](https://github.com/sindresorhus/deep-strict-equal) - Test for deep equality - Node.js `assert.deepStrictEqual()` algorithm as a standalone module.
+- JavaScript - [harmony-reflect](https://github.com/tvcutsem/harmony-reflect) - ES2015 `Reflect` and `Proxy` polyfill. - [es6-shim](https://github.com/paulmillr/es6-shim) - Collection of ES2015 polyfills.
 
 ### 自然语言处理
 
@@ -634,7 +554,6 @@
 - [franc](https://github.com/wooorm/franc) - Detect the language of text.
 - [leven](https://github.com/sindresorhus/leven) - Measure the difference between two strings using the Levenshtein distance algorithm.
 - [natural](https://github.com/NaturalNode/natural) - Natural language facility.
-
 
 ### 进程管理
 
@@ -648,17 +567,14 @@
 - [Phusion Passenger](https://www.phusionpassenger.com) - Friendly process manager that integrates directly into Nginx.
 - [naught](https://github.com/andrewrk/naught) - Process manager with zero downtime deployment.
 
-
 ### 自动化
 
 - [robotjs](https://github.com/octalmage/robotjs) - Desktop Automation: control the mouse, keyboard and read the screen.
-
 
 ### AST
 
 - [Acorn](https://github.com/ternjs/acorn) - Tiny, fast JavaScript parser.
 - [Rocambole](https://github.com/millermedeiros/rocambole) - Recursively walk and transform JavaScript AST.
-
 
 ### 静态网站生成
 
@@ -669,23 +585,19 @@
 - [Phenomic](https://phenomic.io) - Modern static website generator based on the React and Webpack ecosystem.
 - [docsify](https://docsify.js.org) - Markdown documentation site generator with no statically built HTML files.
 
-
 ### 内容管理系统
 
 - [KeystoneJS](http://keystonejs.com) - CMS and web application platform built on Express and MongoDB.
 - [Apostrophe2](http://apostrophenow.org) - Content management system with an emphasis on intuitive front end content editing and administration built on Express and MongoDB.
 
-
 ### 论坛
 
 - [nodeBB](https://nodebb.org) - Forum platform for the modern web.
-
 
 ### 博客
 
 - [ghost](https://ghost.org) - Simple, powerful publishing platform.
 - [Hexo](https://hexo.io) - Fast, simple and powerful blogging framework.
-
 
 ### Weird
 
@@ -699,12 +611,11 @@
 - [cat-ascii-faces](https://github.com/melaniecebula/cat-ascii-faces) - ₍˄·͈༝·͈˄₎◞ ̑̑ෆ⃛ (=ↀωↀ=)✧ (^･o･^)ﾉ”
 - [nerds](https://github.com/SkyHacks/nerds) - Get data from nerdy topics like Harry Potter, Star Wars, and Pokémon.
 
-
 ### 杂项
 
 - [execa](https://github.com/sindresorhus/execa) - Better `child_process`.
 - [cheerio](https://github.com/cheeriojs/cheerio) - Fast, flexible, and lean implementation of core jQuery designed specifically for the server.
-- [Electron](https://github.com/atom/electron) - Build cross platform desktop apps with web technologies. *(You might like [awesome-electron](https://github.com/sindresorhus/awesome-electron))*
+- [Electron](https://github.com/atom/electron) - Build cross platform desktop apps with web technologies. _(You might like [awesome-electron](https://github.com/sindresorhus/awesome-electron))_
 - [opn](https://github.com/sindresorhus/opn) - Opens stuff like websites, files, executables.
 - [hasha](https://github.com/sindresorhus/hasha) - Hashing made simple. Get the hash of a buffer/string/stream/file.
 - [dot-prop](https://github.com/sindresorhus/dot-prop) - Get a property from a nested object using a dot path.
@@ -735,7 +646,6 @@
 - [jsdom](https://github.com/tmpvar/jsdom) - JavaScript implementation of HTML and the DOM.
 - [hypernova](https://github.com/airbnb/hypernova) - Server-side rendering your JavaScript views.
 
-
 ## 资源
 
 ### 文档
@@ -747,7 +657,6 @@
 - [module-best-practices](https://github.com/mattdesl/module-best-practices) - Some good practices when writing new npm modules.
 - [The Node Way](http://thenodeway.io) - An entire philosophy of Node.js best practices and guiding principles exists for writing maintainable modules, scalable applications, and code that is actually pleasant to read.
 - [You Don't Know Node.js](https://github.com/azat-co/you-dont-know-node) - Introduction to Node.js core features and asynchronous JavaScript.
-
 
 ### 发现
 
@@ -843,7 +752,6 @@
 - [generator-nm](https://github.com/sindresorhus/generator-nm) - Scaffold out a node module.
 - [awesome-cross-platform-nodejs](https://github.com/bcoe/awesome-cross-platform-nodejs) - Resources for writing and testing cross-platform code.
 - [Microsoft Node.js Guidelines](https://github.com/Microsoft/nodejs-guidelines) - Tips, tricks, and resources for working with Node.js on Microsoft platforms.
-
 
 ## 证书
 

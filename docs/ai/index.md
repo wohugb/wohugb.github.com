@@ -1,4 +1,6 @@
-# [2017年度30大最惊艳的开源机器学习项目](http://www.199it.com/archives/673044.html) <small>[源](https://medium.mybridge.co/30-amazing-machine-learning-projects-for-the-past-year-v-2018-b853b8621ac7)</small>
+# 2017年度30大最惊艳的开源机器学习项目
+
+[2017年度30大最惊艳的开源机器学习项目](http://www.199it.com/archives/673044.html) <small>[源](https://medium.mybridge.co/30-amazing-machine-learning-projects-for-the-past-year-v-2018-b853b8621ac7)</small>
 
 在过去的一年里，Mybridge AI 比较了近 8,800个开源机器学习项目，选择了前30名](。
 这是一个竞争激烈的名单，精挑细选了2017年1月到12月之间发布的最佳开源机器学习库、数据集和应用程序。Mybridge AI 通过考量受欢迎程度、参与度和新近度来等指标来评估这些参选项目的质量。这些项目在Github得星的数量平均为3,558个，其质量相当不错。
@@ -14,40 +16,40 @@ B. TensorFlow - [用Python进行深度学习的TensorFlow完整指南](http://bi
 
 ## 人工智能开源项目排行榜
 
-|项目|Github星|说明|厂商|作者|
-|-|-|-|-|-|
-| 1. [快速文本][Link-FastText] | ![][Stars-FastText] | 用于快速文本表示和分类的库 | Facebook Research | cpuhrsch |
-| 2. [人脸识别][Link-FaceRecognition] | ![][Stars-FaceRecognition] | Python和世界上最简单的面部识别api和命令行 | [MLIF][Link-MLiF] | Adam Geitgey[^1]
-| 3. [深度照片风格转移][Link-DPS] | ![][Stars-DPS] | 论文“深度照片风格转移”代码和数据 | 康奈尔大学 | Fujun Luan 博士|
-| 4. [洋红(Magenta)][Link-Magenta] | ![][Stars-Magenta] | 机器智能生成音乐和艺术 | TensorFlow  | adarob |
-| 5. [Sonnet][Link-Sonnet] | ![][Stars-Sonnet] | 基于TensorFlow的神经网络库 | Deepmind | Malcolm Reynolds |
-| 6. [深入学习.js][Stars-deeplearnjs] | ![][Stars-deeplearnjs] | 为Web提供硬件加速的机器智能库 | Google Brain | Nikhil Thorat
-| 7. [快速风格迁移][Link-fst] | ![][Stars-fst] | 使用TensorFlow在几分之一秒内将着名的绘画作品添加到任何照片中！ | MIT | Logan Engstrom
-| 8. [PySC2][Link-PySC2] | ![][Stars-pysc2] | 星际争霸II学习环境 | DeepMind | Timo Ewalds |
-| 9. [Link-AirSim][Link-AirSim] | ![][Stars-AirSim] | 基于Unreal Engine的开源模拟器，用于微软AI＆Research自主车辆 | Microsoft | Shital Shah
-| 10. [facets][Link-facets] | ![][Stars-facets] | 机器学习数据集的可视化 | PAIR | jameswex |
-| 11. [风格绘画][Link-STYLE2PAINTS] | ![][Stars-STYLE2PAINTS] | 最佳动漫彩色AI！ | - | lllyasviel |
-| 12. [tensor2tensor][Link-tensor2tensor] | ![][Stars-tensor2tensor] | Google Research的广义序列到序列模型库  | Google Brain | Ryan Sepassi
-| 13. [pix2pix][Link-pcap] | ![][Stars-pcap] | PyTorch中的图像到图像转换 |伯克利 | Jun-Yan Zhu博士|
-| 14. [faiss][Link-faiss] | ![][Stars-faiss] | 用于密集向量的高效相似性搜索和聚类的库 |Facebook Research|
-| 15. [时尚MNIST][Link-fashion-mnist] | ![][Stars-fashion-mnist] | 类似MNIST的时尚产品数据库 | Zalando Research | Han Xiao |
-| 16. [ParlAI][Link-ParlAI] | ![][Stars-ParlAI] | 用于在各种公开可用的对话数据集上训练和评估AI模型的框架 | Facebook Research | Alexander Miller|
-| 17. [fairseq][Link-fairseq] | ![][Stars-fairseq] | Facebook AI研究序列对序列工具包 | Facebook Research | jgehring |
-| 18. [pyro][Link-pyro] | ![][Stars-pyro] | Python和PyTorch的深度通用概率编程 | Uber Engineering | - |
-| 19. [iGAN][Stars-iGAN] | ![][Stars-iGAN] | 基于生成对抗网络的交互式图像生成 | | Jun-Yan Zhu |
-| 20. [深度老图][Link-deep-image-prior] | ![][Stars-deep-image-prior] | 使用无需学习的神经网络进行图像恢复 | Skoltech | Dmitry Ulyanov|
-| 21. [面部分类][Link-fc] | ![][Stars-fc] | 来自B-IT-BOTS机器人小组的面部分类和检测 |
-| 22. [语音转文本][Link-sttw] | ![][Stars-sttw] | 使用DeepMind的WaveNet进行端到端的句子级英语语音识别 | Kakao Brain | Namju Kim
-| 23. [StarGAN][Link-StarGAN] | ![][Stars-StarGAN] | 用于多域图像到图像转换的统一生成对抗网络 | 韩国大学 | Yunjey Choi
-| 24. [Unity ML代理](Link-Unity3D) | ![][Stars-Unity3D] | Unity机器学习代理  | Unity Technologies | awjuliani |
-| 25. [深度视频分析][Link-DeepVideoAnalytics] | ![][Stars-DeepVideoAnalytics] | 分布式可视化搜索和可视化数据分析平台 |康奈尔大学 | Akshay Bhat博士 |
-| 26. [OpenNMT][Link-OpenNMT] | ![][Stars-OpenNMT] | 火炬开源神经机器翻译 | OpenNMT | guillaumekln |
-| 27. [Tensorflow NMT][Link-nmt] | ![][Stars-nmt] | TensorFlow神经机器翻译教程  | TensorFlow | oahziur |
-| 28. [Horovod][Link-Horovod] | ![][Stars-Horovod] | TensorFlow的分布式训练框架 | Uber Engineering |
-| 29. [pix2pixHD][Link-pix2pixHD] | ![][Stars-pix2pixHD] | 使用条件GAN合成和处理2048×1024的图像 | Nvidia AI Research | Ming-Yu Liu|
-| 30. [AI块][Link-AI-Blocks] | ![][Stars-AI-Blocks] | 强大的和直观的所见即所得的界面，允许任何人创建的机器学习模型 | | MrNothing |
-| 31. [深度声音转换][Link-dvc] | ![][Stars-dvc] | 采用Tensorflow的深度神经网络进行语音转换(语音风格迁移) | AI Kakao Brain | Dabi Ahn |
-| 32. [MUSE][Link-MUSE] | ![][Stars-MUSE] | 多语言无监督或监督词语嵌入的库 | Facebook Search | Alex Conneau |
+| 项目                                        | Github星                      | 说明                                                           | 厂商               | 作者             |
+| ------------------------------------------- | ----------------------------- | -------------------------------------------------------------- | ------------------ | ---------------- |
+| 1. [快速文本][Link-FastText]                | ![][Stars-FastText]           | 用于快速文本表示和分类的库                                     | Facebook Research  | cpuhrsch         |
+| 2. [人脸识别][Link-FaceRecognition]         | ![][Stars-FaceRecognition]    | Python和世界上最简单的面部识别api和命令行                      | [MLIF][Link-MLiF]  | Adam Geitgey[^1] |
+| 3. [深度照片风格转移][Link-DPS]             | ![][Stars-DPS]                | 论文“深度照片风格转移”代码和数据                             | 康奈尔大学         | Fujun Luan 博士  |
+| 4. [洋红(Magenta)][Link-Magenta]            | ![][Stars-Magenta]            | 机器智能生成音乐和艺术                                         | TensorFlow         | adarob           |
+| 5. [Sonnet][Link-Sonnet]                    | ![][Stars-Sonnet]             | 基于TensorFlow的神经网络库                                     | Deepmind           | Malcolm Reynolds |
+| 6. [深入学习.js][Stars-deeplearnjs]         | ![][Stars-deeplearnjs]        | 为Web提供硬件加速的机器智能库                                  | Google Brain       | Nikhil Thorat    |
+| 7. [快速风格迁移][Link-fst]                 | ![][Stars-fst]                | 使用TensorFlow在几分之一秒内将着名的绘画作品添加到任何照片中！ | MIT                | Logan Engstrom   |
+| 8. [PySC2][Link-PySC2]                      | ![][Stars-pysc2]              | 星际争霸II学习环境                                             | DeepMind           | Timo Ewalds      |
+| 9. [Link-AirSim][Link-AirSim]               | ![][Stars-AirSim]             | 基于Unreal Engine的开源模拟器，用于微软AI＆Research自主车辆    | Microsoft          | Shital Shah      |
+| 10. [facets][Link-facets]                   | ![][Stars-facets]             | 机器学习数据集的可视化                                         | PAIR               | jameswex         |
+| 11. [风格绘画][Link-STYLE2PAINTS]           | ![][Stars-STYLE2PAINTS]       | 最佳动漫彩色AI！                                               | -                  | lllyasviel       |
+| 12. [tensor2tensor][Link-tensor2tensor]     | ![][Stars-tensor2tensor]      | Google Research的广义序列到序列模型库                          | Google Brain       | Ryan Sepassi     |
+| 13. [pix2pix][Link-pcap]                    | ![][Stars-pcap]               | PyTorch中的图像到图像转换                                      | 伯克利             | Jun-Yan Zhu博士  |
+| 14. [faiss][Link-faiss]                     | ![][Stars-faiss]              | 用于密集向量的高效相似性搜索和聚类的库                         | Facebook Research  |
+| 15. [时尚MNIST][Link-fashion-mnist]         | ![][Stars-fashion-mnist]      | 类似MNIST的时尚产品数据库                                      | Zalando Research   | Han Xiao         |
+| 16. [ParlAI][Link-ParlAI]                   | ![][Stars-ParlAI]             | 用于在各种公开可用的对话数据集上训练和评估AI模型的框架         | Facebook Research  | Alexander Miller |
+| 17. [fairseq][Link-fairseq]                 | ![][Stars-fairseq]            | Facebook AI研究序列对序列工具包                                | Facebook Research  | jgehring         |
+| 18. [pyro][Link-pyro]                       | ![][Stars-pyro]               | Python和PyTorch的深度通用概率编程                              | Uber Engineering   | -                |
+| 19. [iGAN][Stars-iGAN]                      | ![][Stars-iGAN]               | 基于生成对抗网络的交互式图像生成                               |                    | Jun-Yan Zhu      |
+| 20. [深度老图][Link-deep-image-prior]       | ![][Stars-deep-image-prior]   | 使用无需学习的神经网络进行图像恢复                             | Skoltech           | Dmitry Ulyanov   |
+| 21. [面部分类][Link-fc]                     | ![][Stars-fc]                 | 来自B-IT-BOTS机器人小组的面部分类和检测                        |
+| 22. [语音转文本][Link-sttw]                 | ![][Stars-sttw]               | 使用DeepMind的WaveNet进行端到端的句子级英语语音识别            | Kakao Brain        | Namju Kim        |
+| 23. [StarGAN][Link-StarGAN]                 | ![][Stars-StarGAN]            | 用于多域图像到图像转换的统一生成对抗网络                       | 韩国大学           | Yunjey Choi      |
+| 24. [Unity ML代理](Link-Unity3D)            | ![][Stars-Unity3D]            | Unity机器学习代理                                              | Unity Technologies | awjuliani        |
+| 25. [深度视频分析][Link-DeepVideoAnalytics] | ![][Stars-DeepVideoAnalytics] | 分布式可视化搜索和可视化数据分析平台                           | 康奈尔大学         | Akshay Bhat博士  |
+| 26. [OpenNMT][Link-OpenNMT]                 | ![][Stars-OpenNMT]            | 火炬开源神经机器翻译                                           | OpenNMT            | guillaumekln     |
+| 27. [Tensorflow NMT][Link-nmt]              | ![][Stars-nmt]                | TensorFlow神经机器翻译教程                                     | TensorFlow         | oahziur          |
+| 28. [Horovod][Link-Horovod]                 | ![][Stars-Horovod]            | TensorFlow的分布式训练框架                                     | Uber Engineering   |
+| 29. [pix2pixHD][Link-pix2pixHD]             | ![][Stars-pix2pixHD]          | 使用条件GAN合成和处理2048×1024的图像                           | Nvidia AI Research | Ming-Yu Liu      |
+| 30. [AI块][Link-AI-Blocks]                  | ![][Stars-AI-Blocks]          | 强大的和直观的所见即所得的界面，允许任何人创建的机器学习模型   |                    | MrNothing        |
+| 31. [深度声音转换][Link-dvc]                | ![][Stars-dvc]                | 采用Tensorflow的深度神经网络进行语音转换(语音风格迁移)         | AI Kakao Brain     | Dabi Ahn         |
+| 32. [MUSE][Link-MUSE]                       | ![][Stars-MUSE]               | 多语言无监督或监督词语嵌入的库                                 | Facebook Search    | Alex Conneau     |
 
 [Link-MLiF]: https://www.machinelearningisfun.com/
 [Link-nmt]: https://github.com/tensorflow/nmt
