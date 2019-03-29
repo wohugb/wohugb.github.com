@@ -1,0 +1,3252 @@
+
+
+
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="大鼻子的日常学习记录">
+      
+      
+      
+        <meta name="author" content="Nosy">
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.0">
+    
+    
+      
+        <title>2018 年排名前 11 的 Python 框架 - 大鼻子</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.982221ab.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#2018-11-python" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="大鼻子" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              大鼻子
+            </span>
+            <span class="md-header-nav__topic">
+              2018 年排名前 11 的 Python 框架
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/wohugb/wohugb.github.com" title="前往 Github 仓库" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    wohugb/wohugb.github.com
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="大鼻子的巴别塔" class="md-tabs__link">
+        大鼻子的巴别塔
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../ai/" title="Ai" class="md-tabs__link">
+          Ai
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../aliyun/" title="Aliyun" class="md-tabs__link">
+          Aliyun
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../angular/" title="Angular" class="md-tabs__link">
+          Angular
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../apartment/" title="Apartment" class="md-tabs__link">
+          Apartment
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../blockchain/" title="Blockchain" class="md-tabs__link">
+          Blockchain
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../education/junior-middle-school/" title="Education" class="md-tabs__link">
+          Education
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../nodejs/" title="Nodejs" class="md-tabs__link">
+          Nodejs
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../pin/cohesion/" title="Pin" class="md-tabs__link">
+          Pin
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../PyMongo/" title="Python" class="md-tabs__link md-tabs__link--active">
+          Python
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../running/bicycle/" title="Running" class="md-tabs__link">
+          Running
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tools/" title="Tools" class="md-tabs__link">
+          Tools
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../wechat/" title="Wechat" class="md-tabs__link">
+          Wechat
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="大鼻子" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    大鼻子
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/wohugb/wohugb.github.com" title="前往 Github 仓库" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    wohugb/wohugb.github.com
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="大鼻子的巴别塔" class="md-nav__link">
+      大鼻子的巴别塔
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../awesome/" title="Awesome" class="md-nav__link">
+      Awesome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../github/" title="GitHub 集合" class="md-nav__link">
+      GitHub 集合
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Ai
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Ai
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/" title="2017年度30大最惊艳的开源机器学习项目" class="md-nav__link">
+      2017年度30大最惊艳的开源机器学习项目
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/2017/" title="2017 开源机器学习项目" class="md-nav__link">
+      2017 开源机器学习项目
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/2018/" title="过去一年 30 个惊人的 Python 项目 (v.2018)" class="md-nav__link">
+      过去一年 30 个惊人的 Python 项目 (v.2018)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/PhosphorJS/" title="PhosphorJS" class="md-nav__link">
+      PhosphorJS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/awesome/" title="深度学习赞表" class="md-nav__link">
+      深度学习赞表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/deeplearning/" title="Deeplearning" class="md-nav__link">
+      Deeplearning
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/jupyterlab/" title="jupyterlab" class="md-nav__link">
+      jupyterlab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/nlp/" title="自然语言处理" class="md-nav__link">
+      自然语言处理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
+    
+    <label class="md-nav__link" for="nav-4-9">
+      Bot
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-9">
+        Bot
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/bot/" title="机器人" class="md-nav__link">
+      机器人
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/bot/arduino/" title="Arduino" class="md-nav__link">
+      Arduino
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/bot/framework/" title="机器人开发框架项目汇总" class="md-nav__link">
+      机器人开发框架项目汇总
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/bot/ros/" title="ROS" class="md-nav__link">
+      ROS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-10" type="checkbox" id="nav-4-10">
+    
+    <label class="md-nav__link" for="nav-4-10">
+      Iot
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-10">
+        Iot
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/iot/InternetOfThings/" title="物联网" class="md-nav__link">
+      物联网
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Aliyun
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Aliyun
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../aliyun/" title="阿里云相关文档" class="md-nav__link">
+      阿里云相关文档
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../aliyun/video/" title="阿里云点播" class="md-nav__link">
+      阿里云点播
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Angular
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Angular
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/" title="Angular" class="md-nav__link">
+      Angular
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/angular/" title="Angular" class="md-nav__link">
+      Angular
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/awesome/" title="Awesome Angular" class="md-nav__link">
+      Awesome Angular
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/babel/" title="Babel" class="md-nav__link">
+      Babel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/bit/" title="Bit" class="md-nav__link">
+      Bit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/cli/" title="Cli" class="md-nav__link">
+      Cli
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/dart/" title="Dart" class="md-nav__link">
+      Dart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/es5/" title="Es5" class="md-nav__link">
+      Es5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/haxe/" title="Haxe" class="md-nav__link">
+      Haxe
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/ionic/" title="Ionic" class="md-nav__link">
+      Ionic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/meteor/" title="Meteor" class="md-nav__link">
+      Meteor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/migrate/" title="如何从Angular4迁移到5" class="md-nav__link">
+      如何从Angular4迁移到5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/migrate6/" title="Migrate6" class="md-nav__link">
+      Migrate6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/nativescript/" title="Nativescript" class="md-nav__link">
+      Nativescript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/ngrx/" title="Ngrx" class="md-nav__link">
+      Ngrx
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/ngx-markdown/" title="ngx-markdown" class="md-nav__link">
+      ngx-markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/react/" title="React" class="md-nav__link">
+      React
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/scala/" title="Scala" class="md-nav__link">
+      Scala
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/security/" title="Security" class="md-nav__link">
+      Security
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/sockets/" title="使用TypeScript的实时应用程序：集成Web套接字，Node和Angular" class="md-nav__link">
+      使用TypeScript的实时应用程序：集成Web套接字，Node和Angular
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/starter/" title="Angular 的 webpack 启动器" class="md-nav__link">
+      Angular 的 webpack 启动器
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/traceur/" title="Traceur" class="md-nav__link">
+      Traceur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/typescript/" title="Typescript" class="md-nav__link">
+      Typescript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/universal/" title="Universal" class="md-nav__link">
+      Universal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-25" type="checkbox" id="nav-6-25">
+    
+    <label class="md-nav__link" for="nav-6-25">
+      Features
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-25">
+        Features
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../angular/features/Test/" title="Test" class="md-nav__link">
+      Test
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Apartment
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Apartment
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apartment/" title="公寓品牌" class="md-nav__link">
+      公寓品牌
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apartment/1zu/" title="相寓" class="md-nav__link">
+      相寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apartment/boonself/" title="邦舍公寓" class="md-nav__link">
+      邦舍公寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apartment/danke/" title="蛋壳公寓" class="md-nav__link">
+      蛋壳公寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apartment/guanyu/" title="冠寓" class="md-nav__link">
+      冠寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apartment/inboyu/" title="泊寓" class="md-nav__link">
+      泊寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apartment/youranke/" title="悠然客公寓" class="md-nav__link">
+      悠然客公寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../apartment/ziroom/" title="自如寓" class="md-nav__link">
+      自如寓
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Blockchain
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Blockchain
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/" title="区块链相关资源" class="md-nav__link">
+      区块链相关资源
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/altcoins/" title="山寨币" class="md-nav__link">
+      山寨币
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/awesome/" title="Awesome Blockchain" class="md-nav__link">
+      Awesome Blockchain
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/term/" title="术语表" class="md-nav__link">
+      术语表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/tree/" title="区块链技术树" class="md-nav__link">
+      区块链技术树
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6" type="checkbox" id="nav-8-6">
+    
+    <label class="md-nav__link" for="nav-8-6">
+      Bitcoin
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-6">
+        Bitcoin
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/bitcoin/" title="比特币" class="md-nav__link">
+      比特币
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-7" type="checkbox" id="nav-8-7">
+    
+    <label class="md-nav__link" for="nav-8-7">
+      Ethereum
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-7">
+        Ethereum
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/ethereum/ProofOfStake/" title="Proof of Stake - 权益证明机制" class="md-nav__link">
+      Proof of Stake - 权益证明机制
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/ethereum/development/" title="以太坊开发计划" class="md-nav__link">
+      以太坊开发计划
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/ethereum/network-status/" title="网络状态监控" class="md-nav__link">
+      网络状态监控
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/ethereum/serpent/" title="Serpent - 大蛇 编写以太坊合约高级编程语言" class="md-nav__link">
+      Serpent - 大蛇 编写以太坊合约高级编程语言
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/ethereum/term/" title="以太坊术语表" class="md-nav__link">
+      以太坊术语表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/ethereum/whitepaper/" title="以太坊（Ethereum ）:下一代智能合约和去中心化应用平台" class="md-nav__link">
+      以太坊（Ethereum ）:下一代智能合约和去中心化应用平台
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-8" type="checkbox" id="nav-8-8">
+    
+    <label class="md-nav__link" for="nav-8-8">
+      Ipfs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-8">
+        Ipfs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/ipfs/" title="星际文件系统（InterPlanetary File System，缩写IPFS）" class="md-nav__link">
+      星际文件系统（InterPlanetary File System，缩写IPFS）
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-9" type="checkbox" id="nav-8-9">
+    
+    <label class="md-nav__link" for="nav-8-9">
+      Twister
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-9">
+        Twister
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/twister/" title="twister - p2p 微博客" class="md-nav__link">
+      twister - p2p 微博客
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/twister/build-osx/" title="OS X 构建说明和注释" class="md-nav__link">
+      OS X 构建说明和注释
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/twister/build-unix/" title="Build unix" class="md-nav__link">
+      Build unix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/twister/building-on-ubuntu-debian/" title="Ubuntu / Debian building instructions" class="md-nav__link">
+      Ubuntu / Debian building instructions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blockchain/twister/compiling-for-windows/" title="Compiling for windows" class="md-nav__link">
+      Compiling for windows
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Education
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Education
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../education/junior-middle-school/" title="Junior middle school" class="md-nav__link">
+      Junior middle school
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../education/kindergarten/" title="幼儿园" class="md-nav__link">
+      幼儿园
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../education/primary-school/" title="小学" class="md-nav__link">
+      小学
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../education/senior-middle-school/" title="Senior middle school" class="md-nav__link">
+      Senior middle school
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Nodejs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Nodejs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/awesome/" title="Awesome Node.js" class="md-nav__link">
+      Awesome Node.js
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/express/" title="Express" class="md-nav__link">
+      Express
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/koa/" title="Koa" class="md-nav__link">
+      Koa
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/mongoose/" title="Mongoose" class="md-nav__link">
+      Mongoose
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/nodejs/" title="Nodejs" class="md-nav__link">
+      Nodejs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/pm2/" title="Pm2" class="md-nav__link">
+      Pm2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-8" type="checkbox" id="nav-10-8">
+    
+    <label class="md-nav__link" for="nav-10-8">
+      Node modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-10-8">
+        Node modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/node_modules/gm/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-8-2" type="checkbox" id="nav-10-8-2">
+    
+    <label class="md-nav__link" for="nav-10-8-2">
+      Node rsa
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-10-8-2">
+        Node rsa
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/node_modules/node-rsa/jsbn/" title="JavaScript中的RSA和ECC" class="md-nav__link">
+      JavaScript中的RSA和ECC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/node_modules/node-rsa/readme/" title="Node-RSA" class="md-nav__link">
+      Node-RSA
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-8-3" type="checkbox" id="nav-10-8-3">
+    
+    <label class="md-nav__link" for="nav-10-8-3">
+      Qrcode
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-10-8-3">
+        Qrcode
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/node_modules/qrcode/api/" title="Api" class="md-nav__link">
+      Api
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nodejs/node_modules/qrcode/readme/" title="node-qrcode" class="md-nav__link">
+      node-qrcode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Pin
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        Pin
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pin/cohesion/" title="Cohesion" class="md-nav__link">
+      Cohesion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pin/group/" title="Group" class="md-nav__link">
+      Group
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pin/ladder/" title="Ladder" class="md-nav__link">
+      Ladder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-4" type="checkbox" id="nav-11-4">
+    
+    <label class="md-nav__link" for="nav-11-4">
+      Fresh
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-11-4">
+        Fresh
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pin/fresh/education/" title="Education" class="md-nav__link">
+      Education
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pin/fresh/platform/" title="Platform" class="md-nav__link">
+      Platform
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pin/fresh/repository/" title="Repository" class="md-nav__link">
+      Repository
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12" checked>
+    
+    <label class="md-nav__link" for="nav-12">
+      Python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../PyMongo/" title="关于 PyMongo 发布的一些注释" class="md-nav__link">
+      关于 PyMongo 发布的一些注释
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../awesome/" title="Awesome Python" class="md-nav__link">
+      Awesome Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        2018 年排名前 11 的 Python 框架
+      </label>
+    
+    <a href="./" title="2018 年排名前 11 的 Python 框架" class="md-nav__link md-nav__link--active">
+      2018 年排名前 11 的 Python 框架
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="全栈框架" class="md-nav__link">
+    全栈框架
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-django" title="1. Django" class="md-nav__link">
+    1. Django
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-web2py" title="2. Web2py" class="md-nav__link">
+    2. Web2py
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-turbogears" title="3. 涡轮增压器 TurboGears" class="md-nav__link">
+    3. 涡轮增压器 TurboGears
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-cubicweb" title="4. 立方网 CubicWeb" class="md-nav__link">
+    4. 立方网 CubicWeb
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-giotto" title="5. 乔托 Giotto" class="md-nav__link">
+    5. 乔托 Giotto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-pylon" title="6. 铁塔 Pylon" class="md-nav__link">
+    6. 铁塔 Pylon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-bottle" title="7. 瓶子 Bottle" class="md-nav__link">
+    7. 瓶子 Bottle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-cherrypy" title="8. 樱桃 CherryPy" class="md-nav__link">
+    8. 樱桃 CherryPy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-flask" title="9. 烧瓶 Flask" class="md-nav__link">
+    9. 烧瓶 Flask
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-sanic" title="10. Sanic" class="md-nav__link">
+    10. Sanic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-tornado" title="11. 龙卷风 Tornado" class="md-nav__link">
+    11. 龙卷风 Tornado
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python" title="哪个 Python 框架最好？" class="md-nav__link">
+    哪个 Python 框架最好？
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/" title="Python" class="md-nav__link">
+      Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-5" type="checkbox" id="nav-12-5">
+    
+    <label class="md-nav__link" for="nav-12-5">
+      Anaconda
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-5">
+        Anaconda
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Anaconda/QuickStart/" title="Anaconda 入门使用指南" class="md-nav__link">
+      Anaconda 入门使用指南
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-6" type="checkbox" id="nav-12-6">
+    
+    <label class="md-nav__link" for="nav-12-6">
+      FullStack
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-6">
+        FullStack
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FullStack/mfap0/" title="[Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)" class="md-nav__link">
+      [Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FullStack/mfap1/" title="使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分" class="md-nav__link">
+      使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FullStack/mfap2/" title="使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分" class="md-nav__link">
+      使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FullStack/mfap3/" title="使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分" class="md-nav__link">
+      使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-7" type="checkbox" id="nav-12-7">
+    
+    <label class="md-nav__link" for="nav-12-7">
+      Django
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-7">
+        Django
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../django/" title="Django 简要学习文档" class="md-nav__link">
+      Django 简要学习文档
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../django/awesome/" title="<a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>" class="md-nav__link">
+      <a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-8" type="checkbox" id="nav-12-8">
+    
+    <label class="md-nav__link" for="nav-12-8">
+      Flask
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-8">
+        Flask
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../flask/" title="flask 文档" class="md-nav__link">
+      flask 文档
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../flask/awesome/" title="Awesome Flask [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)" class="md-nav__link">
+      Awesome Flask [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-9" type="checkbox" id="nav-12-9">
+    
+    <label class="md-nav__link" for="nav-12-9">
+      Pip
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-9">
+        Pip
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pip/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      Running
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        Running
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../running/bicycle/" title="变速自行车" class="md-nav__link">
+      变速自行车
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../running/card/" title="自动驾驶" class="md-nav__link">
+      自动驾驶
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../running/walk/" title="徒步健身" class="md-nav__link">
+      徒步健身
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      Tools
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/" title="器" class="md-nav__link">
+      器
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14-2" type="checkbox" id="nav-14-2">
+    
+    <label class="md-nav__link" for="nav-14-2">
+      Eslint
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-14-2">
+        Eslint
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/eslint/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14-3" type="checkbox" id="nav-14-3">
+    
+    <label class="md-nav__link" for="nav-14-3">
+      Vscode
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-14-3">
+        Vscode
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/vscode/" title="vscode 文档" class="md-nav__link">
+      vscode 文档
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/vscode/prettier/" title="Prettier" class="md-nav__link">
+      Prettier
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      Wechat
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        Wechat
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/" title="微信相关文档" class="md-nav__link">
+      微信相关文档
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/oa/" title="oa" class="md-nav__link">
+      oa
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/weapp-awesome/" title="微信小程序开发资源汇总" class="md-nav__link">
+      微信小程序开发资源汇总
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-4" type="checkbox" id="nav-15-4">
+    
+    <label class="md-nav__link" for="nav-15-4">
+      Open
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-15-4">
+        Open
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/open/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-4-2" type="checkbox" id="nav-15-4-2">
+    
+    <label class="md-nav__link" for="nav-15-4-2">
+      App
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-15-4-2">
+        App
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/open/app/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-4-3" type="checkbox" id="nav-15-4-3">
+    
+    <label class="md-nav__link" for="nav-15-4-3">
+      Code
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-15-4-3">
+        Code
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/open/code/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-4-4" type="checkbox" id="nav-15-4-4">
+    
+    <label class="md-nav__link" for="nav-15-4-4">
+      D3f
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-15-4-4">
+        D3f
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/open/d3f/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-4-5" type="checkbox" id="nav-15-4-5">
+    
+    <label class="md-nav__link" for="nav-15-4-5">
+      Download
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-15-4-5">
+        Download
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/open/download/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/open/download/android/" title="Android 资源下载" class="md-nav__link">
+      Android 资源下载
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/open/download/design/" title="设计资源下载" class="md-nav__link">
+      设计资源下载
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/open/download/ios/" title="iOS 资源下载" class="md-nav__link">
+      iOS 资源下载
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wechat/open/download/wp8/" title="WP8 资源下载" class="md-nav__link">
+      WP8 资源下载
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="全栈框架" class="md-nav__link">
+    全栈框架
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-django" title="1. Django" class="md-nav__link">
+    1. Django
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-web2py" title="2. Web2py" class="md-nav__link">
+    2. Web2py
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-turbogears" title="3. 涡轮增压器 TurboGears" class="md-nav__link">
+    3. 涡轮增压器 TurboGears
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-cubicweb" title="4. 立方网 CubicWeb" class="md-nav__link">
+    4. 立方网 CubicWeb
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-giotto" title="5. 乔托 Giotto" class="md-nav__link">
+    5. 乔托 Giotto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-pylon" title="6. 铁塔 Pylon" class="md-nav__link">
+    6. 铁塔 Pylon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-bottle" title="7. 瓶子 Bottle" class="md-nav__link">
+    7. 瓶子 Bottle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-cherrypy" title="8. 樱桃 CherryPy" class="md-nav__link">
+    8. 樱桃 CherryPy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-flask" title="9. 烧瓶 Flask" class="md-nav__link">
+    9. 烧瓶 Flask
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-sanic" title="10. Sanic" class="md-nav__link">
+    10. Sanic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-tornado" title="11. 龙卷风 Tornado" class="md-nav__link">
+    11. 龙卷风 Tornado
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python" title="哪个 Python 框架最好？" class="md-nav__link">
+    哪个 Python 框架最好？
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="2018-11-python">2018 年排名前 11 的 Python 框架<a class="headerlink" href="#2018-11-python" title="Permanent link">&para;</a></h1>
+<p>Python is an interpreted, dynamically-typed, and high-level language.
+It also implements the basic concepts of an object-oriented programming language (OOP).
+It has a unique syntax, which makes it different from other programming languages such as Java, C++, and C.
+Hence, it is simple and easy to learn the language.</p>
+<p>Most developers use frameworks to create code and develop applications.
+The framework provides a defined structure to the developers so that they can focus on the core logic of the application rather than on other elements.</p>
+<p>In order to start development with Python, you will require a platform or framework to code.
+While choosing a framework, remember to consider the size and complexity of your application or project.
+In this article, we will discuss some commonly used Python frameworks.</p>
+<p>Python provides support for a wide range of frameworks.
+Generally, there are two types of Python framework used while developing applications.</p>
+<p><img alt="Python Frameworks" src="https://stackify.com/wp-content/uploads/2018/08/PythonFrameworks.png" /></p>
+<h2 id="_1">全栈框架<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>全栈框架为开发人员提供了完整的支持，包括表单验证，表单生成器和模板布局等必要元素。
+一些常见的全栈框架是:</p>
+<h2 id="1-django">1. Django<a class="headerlink" href="#1-django" title="Permanent link">&para;</a></h2>
+<p>Django 由 Django Software Foundation 开发，是一个全栈 Python Web 框架。
+It is an open source and free-to-use framework, released officially in July 2005.
+It helps developers to create complex code and applications in an easier way, and requires much less time compared to other frameworks.
+It follows the principle of DRY (don’t repeat yourself) and a model-view-template architectural pattern.</p>
+<p>It is widely popular among developers as it has a vast collection of libraries written in the Python language.
+It emphasizes efficiency, the reusability of components, and less code.
+Some of the main features of Django are URL routing, object-relational mapper (ORM), authentication mechanism, template engine, and database schema migrations.</p>
+<p>Django implements ORM to map its instances to database tables.
+It provides support for multiple databases such as PostgreSQL, MySQL, SQLite, and Oracle.
+Hence, it becomes easier for developers to transfer the code from one database to another.
+In addition, it also provides support for web servers.
+Because of its amazing features, Django is widely used by most of the renowned companies such as Instagram, Pinterest, Disqus, Mozilla, The Washington Times, and Bitbucket.</p>
+<h2 id="2-web2py">2. Web2py<a class="headerlink" href="#2-web2py" title="Permanent link">&para;</a></h2>
+<p>由 Massimo De Pierro 开发的 Web2py 是一个用 Python 编程语言编写的跨平台 Web 应用程序框架。
+它是一个开源且免费使用的 Python Web 框架，于 2007 年 9 月发布。
+它使用户能够在 Python 中创建动态 Web 内容。
+Web2py 框架附带了代码编辑器，调试器和部署工具，您可以使用它来开发和调试代码，以及测试和维护应用程序。
+它包含一个票务系统，可在发生错误时向用户发出票证。
+此票证可帮助用户跟踪错误的状态。</p>
+<p>Some of the main features of the Web2py Python framework are:</p>
+<p>Cross-platform framework that provides support for Windows, Unix/Linux, Mac, Google App Engine, and many other platforms.
+No additional installation and configuration.
+Built-in components to handle HTTP requests, HTTP responses, cookies, and sessions as well.
+Ability to read multiple protocols.
+Security to data against all possible threats such as cross-site scripting, injection flaws, and execution of infected files.
+Follows model-view-controller (MVC) pattern.
+Support for role-based access control and internationalization.
+Allows users to embed jQuery for Ajax and UI effects.</p>
+<h2 id="3-turbogears">3. 涡轮增压器 TurboGears<a class="headerlink" href="#3-turbogears" title="Permanent link">&para;</a></h2>
+<p>由 KevinDangoor 和 Mark Ramm 开发的 TurboGears 是一个全栈 Web 应用程序框架。
+它是一个数据驱动，开源和免费使用的 Python Web 框架。
+借助 WebOb，SQLAlchemy，Genshi 和 Repoze 等组件，与其他现有框架相比，您可以更轻松地开发需要数据库连接的应用程序。</p>
+<p>Some of the main features of TurboGears are:</p>
+<p>Support for multiple databases.
+Follows an MVC pattern.
+Support for web servers such as Pylons.
+Numerous libraries.
+WSGI (Web Server Gateway Interface) components.
+For example, it uses ToscaWidgets, which enable developers to embed any complex widget in their application.
+New call-to-action</p>
+<h2 id="4-cubicweb">4. 立方网 CubicWeb<a class="headerlink" href="#4-cubicweb" title="Permanent link">&para;</a></h2>
+<p>由 Logilab 开发的 CubicWeb 是一个开源，语义和免费使用的 Python Web 框架。
+该框架基于数据模型。
+您需要定义数据模型才能获得功能性应用程序。
+它使用多维数据集代替使用单独的视图和模型。
+在一些配置文件，Web 服务器和数据库的帮助下，将多个多维数据集连接在一起以创建实例。</p>
+<p>Some of the main features of CubicWeb are:</p>
+<p>Multiple databases, security workflows, and reusable components.
+Support for Web Ontology Language (OWL) and Resource Description Framework (RDF).
+Embeds Relational Query Language (RQL) in order to simplify the queries related to data.</p>
+<h2 id="5-giotto">5. 乔托 Giotto<a class="headerlink" href="#5-giotto" title="Permanent link">&para;</a></h2>
+<p>Giotto 是一个基于 MVC（模型视图控制器）模式的 Python 框架。
+它将 Model，View 和 Controller 元素分开，以确保 Web 设计人员，Web 开发人员和系统管理员可以独立有效地执行其功能。</p>
+<p>Apart from this, it also incorporates controller modules, which enables users to create applications on top of the web, irc, or command line.</p>
+<h2 id="6-pylon">6. 铁塔 Pylon<a class="headerlink" href="#6-pylon" title="Permanent link">&para;</a></h2>
+<p>Pylon 于 2010 年 12 月开发，是一个轻量级的 Python Web 框架。
+它强调应用程序的快速发展。
+它是使用 Ruby，Python 和 Perl 等语言中的一些最佳创意开发的。
+因此，它为 Web 开发提供了高度灵活的结构。</p>
+<p>Note: The Pylon framework is in maintenance mode, after being merged with Pyramid to make Pylons project in order to develop Python-based web technologies.</p>
+<p>Non-full-stack Frameworks
+The non-full-stack frameworks do not provide additional functionalities and features to the users.
+Developers need to add a lot of code and other things manually.
+Some commonly used Python frameworks are:</p>
+<h2 id="7-bottle">7. 瓶子 Bottle<a class="headerlink" href="#7-bottle" title="Permanent link">&para;</a></h2>
+<p>由 Marcel Hellkemp 开发的瓶子是一个微框架。
+它是一个易于使用的轻量级框架，通常用于构建小型 Web 应用程序。
+它为每个项目或应用程序创建单个源文件。
+除了 Python 标准库之外，它没有其他依赖性。</p>
+<p>Some of the basic features of the Bottle framework are:</p>
+<p>Built-in HTTP server.
+Adapters for third-party template engines and WSGI/HTTP servers.
+Allows users to access form data, file uploads, cookies, and other HTTP-related metadata in a much simpler way.
+Provides request-dispatching routes having URL-parameter support.
+Support for plugins of different databases.</p>
+<h2 id="8-cherrypy">8. 樱桃 CherryPy<a class="headerlink" href="#8-cherrypy" title="Permanent link">&para;</a></h2>
+<p>CherryPy 是一个面向对象的开源 Python 框架。
+Remi Delon is known as the founder of the CherryPy project.
+The CherryPy framework is widely implemented by developers to create Python web applications.
+It has its own multi-threaded web server.</p>
+<p>You can create applications using CherryPy that will run on any Python-supporting operating systems such as Windows, Linux/Unix, and macOS.</p>
+<p>Some of the common features of CherryPy are:</p>
+<p>Contains an HTTP/1.1-compliant, WSGI threaded-pooled web server.
+It provides support for different web servers as well, for example, Apache and IIS.
+Allows you to run several HTTP servers simultaneously.
+Contains some tools for events such as caching, encoding, authorization, etc.
+by default.
+Support for profiling, testing, and coverage by default.
+Built-in plugin system.</p>
+<h2 id="9-flask">9. 烧瓶 Flask<a class="headerlink" href="#9-flask" title="Permanent link">&para;</a></h2>
+<p>Flask 由 Armin Ronacher 开发，是一个功能强大的 Python Web 应用程序框架。
+它通常被称为微框架，因为它没有以下元素：</p>
+<ul>
+<li>特定工具和库</li>
+<li>没有数据库抽象层</li>
+<li>没有表单验证</li>
+</ul>
+<p>The functionalities provided by the above-mentioned elements are now provided by third-party libraries.
+It depends on the Werkzeug WSGI toolkit and Jinja2template.
+Some of the common features of the Flask framework are:</p>
+<ul>
+<li>内置开发服务器和调试器也。</li>
+<li>支持单元测试。</li>
+<li>包含 RESTful 请求调度。</li>
+<li>建立安全的客户端会话。</li>
+<li>与 Google App Engine 兼容。</li>
+</ul>
+<h2 id="10-sanic">10. Sanic<a class="headerlink" href="#10-sanic" title="Permanent link">&para;</a></h2>
+<p>Sanic 是一个简单，开源，简单的 Python 框架。
+这个框架在功能上类似于 Flask，但相对来说速度要快得多。
+它是专门为异步请求处理程序的快速 HTTP 响应而设计的。</p>
+<p>在使用 Sanic 框架进行基准测试期间取得了显着的成绩。
+据记录，Sanic 框架有可能在一秒钟内处理 33,342 个请求。
+这个统计数据足以显示 Sanic 的速度。</p>
+<p><img alt="新的号召性用语" src="https://cdn2.hubspot.net/hubfs/207384/hub_generated/resized/46f63d27-f516-4578-9bab-ddebf87d4763.png" /></p>
+<h2 id="11-tornado">11. 龙卷风 Tornado<a class="headerlink" href="#11-tornado" title="Permanent link">&para;</a></h2>
+<p>由 Ben Darnell 和 Bret Taylor 开发的 Tornado 是一个 Python Web 应用程序框架。
+最初，它是为一家名为 FriendFeed 的公司开发的，该公司后来于 2009 年被 Facebook 接管。
+Tornado 是一个开源框架，通常以其高性能而闻名。
+它使用非阻塞网络 I / O，能够一次处理 10,000 多个连接。</p>
+<p>Tornado 框架的一些主要功能是：</p>
+<p>默认支持用户身份验证。
+提供高质量的输出。
+非阻塞 HTTP 客户端。
+允许您实施第三方身份验证和授权方案，例如 Google OpenID / OAuth，Facebook 登录，Yahoo BBAuth 和 Twitter OAuth。</p>
+<h2 id="python">哪个 Python 框架最好？<a class="headerlink" href="#python" title="Permanent link">&para;</a></h2>
+<p>每个框架都有优点和缺点，每个开发人员都有不同的编码风格和偏好。
+我们希望您在我们的列表中找到对您和您的团队有价值的框架。</p>
+<p>在我们的博客上获取有关软件开发的最新新闻，提示和指南。
+立即注册我们的双周通讯！</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../awesome/" title="Awesome Python" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  后退
+                </span>
+                Awesome Python
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../python/" title="Python" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前进
+                </span>
+                Python
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            版权 &copy; 2017 - 2018 wohugb.github.io
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="http://wohugb.github.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/wohugb" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/wohugb" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/wohugb" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.2ba8dec4.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

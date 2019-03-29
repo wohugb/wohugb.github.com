@@ -1,0 +1,3604 @@
+
+
+
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="大鼻子的日常学习记录">
+      
+      
+      
+        <meta name="author" content="Nosy">
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.0">
+    
+    
+      
+        <title>使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分 - 大鼻子</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.982221ab.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#pythonflask-angular-web-2" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="大鼻子" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              大鼻子
+            </span>
+            <span class="md-header-nav__topic">
+              使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/wohugb/wohugb.github.com" title="前往 Github 仓库" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    wohugb/wohugb.github.com
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="大鼻子的巴别塔" class="md-tabs__link">
+        大鼻子的巴别塔
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../ai/" title="Ai" class="md-tabs__link">
+          Ai
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../aliyun/" title="Aliyun" class="md-tabs__link">
+          Aliyun
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../angular/" title="Angular" class="md-tabs__link">
+          Angular
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../apartment/" title="Apartment" class="md-tabs__link">
+          Apartment
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../blockchain/" title="Blockchain" class="md-tabs__link">
+          Blockchain
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../education/junior-middle-school/" title="Education" class="md-tabs__link">
+          Education
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../nodejs/" title="Nodejs" class="md-tabs__link">
+          Nodejs
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../pin/cohesion/" title="Pin" class="md-tabs__link">
+          Pin
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../PyMongo/" title="Python" class="md-tabs__link md-tabs__link--active">
+          Python
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../running/bicycle/" title="Running" class="md-tabs__link">
+          Running
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../tools/" title="Tools" class="md-tabs__link">
+          Tools
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../wechat/" title="Wechat" class="md-tabs__link">
+          Wechat
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="大鼻子" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    大鼻子
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/wohugb/wohugb.github.com" title="前往 Github 仓库" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    wohugb/wohugb.github.com
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="大鼻子的巴别塔" class="md-nav__link">
+      大鼻子的巴别塔
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../awesome/" title="Awesome" class="md-nav__link">
+      Awesome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../github/" title="GitHub 集合" class="md-nav__link">
+      GitHub 集合
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Ai
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Ai
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/" title="2017年度30大最惊艳的开源机器学习项目" class="md-nav__link">
+      2017年度30大最惊艳的开源机器学习项目
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/2017/" title="2017 开源机器学习项目" class="md-nav__link">
+      2017 开源机器学习项目
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/2018/" title="过去一年 30 个惊人的 Python 项目 (v.2018)" class="md-nav__link">
+      过去一年 30 个惊人的 Python 项目 (v.2018)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/PhosphorJS/" title="PhosphorJS" class="md-nav__link">
+      PhosphorJS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/awesome/" title="深度学习赞表" class="md-nav__link">
+      深度学习赞表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/deeplearning/" title="Deeplearning" class="md-nav__link">
+      Deeplearning
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/jupyterlab/" title="jupyterlab" class="md-nav__link">
+      jupyterlab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/nlp/" title="自然语言处理" class="md-nav__link">
+      自然语言处理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
+    
+    <label class="md-nav__link" for="nav-4-9">
+      Bot
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-9">
+        Bot
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/bot/" title="机器人" class="md-nav__link">
+      机器人
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/bot/arduino/" title="Arduino" class="md-nav__link">
+      Arduino
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/bot/framework/" title="机器人开发框架项目汇总" class="md-nav__link">
+      机器人开发框架项目汇总
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/bot/ros/" title="ROS" class="md-nav__link">
+      ROS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-10" type="checkbox" id="nav-4-10">
+    
+    <label class="md-nav__link" for="nav-4-10">
+      Iot
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-10">
+        Iot
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/iot/InternetOfThings/" title="物联网" class="md-nav__link">
+      物联网
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Aliyun
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Aliyun
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../aliyun/" title="阿里云相关文档" class="md-nav__link">
+      阿里云相关文档
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../aliyun/video/" title="阿里云点播" class="md-nav__link">
+      阿里云点播
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Angular
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Angular
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/" title="Angular" class="md-nav__link">
+      Angular
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/angular/" title="Angular" class="md-nav__link">
+      Angular
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/awesome/" title="Awesome Angular" class="md-nav__link">
+      Awesome Angular
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/babel/" title="Babel" class="md-nav__link">
+      Babel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/bit/" title="Bit" class="md-nav__link">
+      Bit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/cli/" title="Cli" class="md-nav__link">
+      Cli
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/dart/" title="Dart" class="md-nav__link">
+      Dart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/es5/" title="Es5" class="md-nav__link">
+      Es5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/haxe/" title="Haxe" class="md-nav__link">
+      Haxe
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/ionic/" title="Ionic" class="md-nav__link">
+      Ionic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/meteor/" title="Meteor" class="md-nav__link">
+      Meteor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/migrate/" title="如何从Angular4迁移到5" class="md-nav__link">
+      如何从Angular4迁移到5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/migrate6/" title="Migrate6" class="md-nav__link">
+      Migrate6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/nativescript/" title="Nativescript" class="md-nav__link">
+      Nativescript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/ngrx/" title="Ngrx" class="md-nav__link">
+      Ngrx
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/ngx-markdown/" title="ngx-markdown" class="md-nav__link">
+      ngx-markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/react/" title="React" class="md-nav__link">
+      React
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/scala/" title="Scala" class="md-nav__link">
+      Scala
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/security/" title="Security" class="md-nav__link">
+      Security
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/sockets/" title="使用TypeScript的实时应用程序：集成Web套接字，Node和Angular" class="md-nav__link">
+      使用TypeScript的实时应用程序：集成Web套接字，Node和Angular
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/starter/" title="Angular 的 webpack 启动器" class="md-nav__link">
+      Angular 的 webpack 启动器
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/traceur/" title="Traceur" class="md-nav__link">
+      Traceur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/typescript/" title="Typescript" class="md-nav__link">
+      Typescript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/universal/" title="Universal" class="md-nav__link">
+      Universal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-25" type="checkbox" id="nav-6-25">
+    
+    <label class="md-nav__link" for="nav-6-25">
+      Features
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-25">
+        Features
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/features/Test/" title="Test" class="md-nav__link">
+      Test
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Apartment
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Apartment
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../apartment/" title="公寓品牌" class="md-nav__link">
+      公寓品牌
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../apartment/1zu/" title="相寓" class="md-nav__link">
+      相寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../apartment/boonself/" title="邦舍公寓" class="md-nav__link">
+      邦舍公寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../apartment/danke/" title="蛋壳公寓" class="md-nav__link">
+      蛋壳公寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../apartment/guanyu/" title="冠寓" class="md-nav__link">
+      冠寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../apartment/inboyu/" title="泊寓" class="md-nav__link">
+      泊寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../apartment/youranke/" title="悠然客公寓" class="md-nav__link">
+      悠然客公寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../apartment/ziroom/" title="自如寓" class="md-nav__link">
+      自如寓
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Blockchain
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Blockchain
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/" title="区块链相关资源" class="md-nav__link">
+      区块链相关资源
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/altcoins/" title="山寨币" class="md-nav__link">
+      山寨币
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/awesome/" title="Awesome Blockchain" class="md-nav__link">
+      Awesome Blockchain
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/term/" title="术语表" class="md-nav__link">
+      术语表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/tree/" title="区块链技术树" class="md-nav__link">
+      区块链技术树
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6" type="checkbox" id="nav-8-6">
+    
+    <label class="md-nav__link" for="nav-8-6">
+      Bitcoin
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-6">
+        Bitcoin
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/bitcoin/" title="比特币" class="md-nav__link">
+      比特币
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-7" type="checkbox" id="nav-8-7">
+    
+    <label class="md-nav__link" for="nav-8-7">
+      Ethereum
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-7">
+        Ethereum
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/ethereum/ProofOfStake/" title="Proof of Stake - 权益证明机制" class="md-nav__link">
+      Proof of Stake - 权益证明机制
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/ethereum/development/" title="以太坊开发计划" class="md-nav__link">
+      以太坊开发计划
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/ethereum/network-status/" title="网络状态监控" class="md-nav__link">
+      网络状态监控
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/ethereum/serpent/" title="Serpent - 大蛇 编写以太坊合约高级编程语言" class="md-nav__link">
+      Serpent - 大蛇 编写以太坊合约高级编程语言
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/ethereum/term/" title="以太坊术语表" class="md-nav__link">
+      以太坊术语表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/ethereum/whitepaper/" title="以太坊（Ethereum ）:下一代智能合约和去中心化应用平台" class="md-nav__link">
+      以太坊（Ethereum ）:下一代智能合约和去中心化应用平台
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-8" type="checkbox" id="nav-8-8">
+    
+    <label class="md-nav__link" for="nav-8-8">
+      Ipfs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-8">
+        Ipfs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/ipfs/" title="星际文件系统（InterPlanetary File System，缩写IPFS）" class="md-nav__link">
+      星际文件系统（InterPlanetary File System，缩写IPFS）
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-9" type="checkbox" id="nav-8-9">
+    
+    <label class="md-nav__link" for="nav-8-9">
+      Twister
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-9">
+        Twister
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/twister/" title="twister - p2p 微博客" class="md-nav__link">
+      twister - p2p 微博客
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/twister/build-osx/" title="OS X 构建说明和注释" class="md-nav__link">
+      OS X 构建说明和注释
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/twister/build-unix/" title="Build unix" class="md-nav__link">
+      Build unix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/twister/building-on-ubuntu-debian/" title="Ubuntu / Debian building instructions" class="md-nav__link">
+      Ubuntu / Debian building instructions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/twister/compiling-for-windows/" title="Compiling for windows" class="md-nav__link">
+      Compiling for windows
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Education
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Education
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../education/junior-middle-school/" title="Junior middle school" class="md-nav__link">
+      Junior middle school
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../education/kindergarten/" title="幼儿园" class="md-nav__link">
+      幼儿园
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../education/primary-school/" title="小学" class="md-nav__link">
+      小学
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../education/senior-middle-school/" title="Senior middle school" class="md-nav__link">
+      Senior middle school
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Nodejs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Nodejs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/awesome/" title="Awesome Node.js" class="md-nav__link">
+      Awesome Node.js
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/express/" title="Express" class="md-nav__link">
+      Express
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/koa/" title="Koa" class="md-nav__link">
+      Koa
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/mongoose/" title="Mongoose" class="md-nav__link">
+      Mongoose
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/nodejs/" title="Nodejs" class="md-nav__link">
+      Nodejs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/pm2/" title="Pm2" class="md-nav__link">
+      Pm2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-8" type="checkbox" id="nav-10-8">
+    
+    <label class="md-nav__link" for="nav-10-8">
+      Node modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-10-8">
+        Node modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/node_modules/gm/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-8-2" type="checkbox" id="nav-10-8-2">
+    
+    <label class="md-nav__link" for="nav-10-8-2">
+      Node rsa
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-10-8-2">
+        Node rsa
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/node_modules/node-rsa/jsbn/" title="JavaScript中的RSA和ECC" class="md-nav__link">
+      JavaScript中的RSA和ECC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/node_modules/node-rsa/readme/" title="Node-RSA" class="md-nav__link">
+      Node-RSA
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-8-3" type="checkbox" id="nav-10-8-3">
+    
+    <label class="md-nav__link" for="nav-10-8-3">
+      Qrcode
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-10-8-3">
+        Qrcode
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/node_modules/qrcode/api/" title="Api" class="md-nav__link">
+      Api
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/node_modules/qrcode/readme/" title="node-qrcode" class="md-nav__link">
+      node-qrcode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Pin
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        Pin
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pin/cohesion/" title="Cohesion" class="md-nav__link">
+      Cohesion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pin/group/" title="Group" class="md-nav__link">
+      Group
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pin/ladder/" title="Ladder" class="md-nav__link">
+      Ladder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-4" type="checkbox" id="nav-11-4">
+    
+    <label class="md-nav__link" for="nav-11-4">
+      Fresh
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-11-4">
+        Fresh
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pin/fresh/education/" title="Education" class="md-nav__link">
+      Education
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pin/fresh/platform/" title="Platform" class="md-nav__link">
+      Platform
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pin/fresh/repository/" title="Repository" class="md-nav__link">
+      Repository
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12" checked>
+    
+    <label class="md-nav__link" for="nav-12">
+      Python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../PyMongo/" title="关于 PyMongo 发布的一些注释" class="md-nav__link">
+      关于 PyMongo 发布的一些注释
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../awesome/" title="Awesome Python" class="md-nav__link">
+      Awesome Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../framework/" title="2018 年排名前 11 的 Python 框架" class="md-nav__link">
+      2018 年排名前 11 的 Python 框架
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/" title="Python" class="md-nav__link">
+      Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-5" type="checkbox" id="nav-12-5">
+    
+    <label class="md-nav__link" for="nav-12-5">
+      Anaconda
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-5">
+        Anaconda
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Anaconda/QuickStart/" title="Anaconda 入门使用指南" class="md-nav__link">
+      Anaconda 入门使用指南
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-6" type="checkbox" id="nav-12-6" checked>
+    
+    <label class="md-nav__link" for="nav-12-6">
+      FullStack
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-6">
+        FullStack
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mfap0/" title="[Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)" class="md-nav__link">
+      [Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mfap1/" title="使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分" class="md-nav__link">
+      使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分
+      </label>
+    
+    <a href="./" title="使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分" class="md-nav__link md-nav__link--active">
+      使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="你将要建立什么" class="md-nav__link">
+    你将要建立什么
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auth0" title="使用 Auth0 管理身份" class="md-nav__link">
+    使用 Auth0 管理身份
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auth0-flask" title="使用 Auth0 保护 Flask 应用程序" class="md-nav__link">
+    使用 Auth0 保护 Flask 应用程序
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="添加表单以创建考试" class="md-nav__link">
+    添加表单以创建考试
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auth0-angular" title="使用 Auth0 保护 Angular 应用程序" class="md-nav__link">
+    使用 Auth0 保护 Angular 应用程序
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="结论和后续步骤" class="md-nav__link">
+    结论和后续步骤
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mfap3/" title="使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分" class="md-nav__link">
+      使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-7" type="checkbox" id="nav-12-7">
+    
+    <label class="md-nav__link" for="nav-12-7">
+      Django
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-7">
+        Django
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../django/" title="Django 简要学习文档" class="md-nav__link">
+      Django 简要学习文档
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../django/awesome/" title="<a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>" class="md-nav__link">
+      <a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-8" type="checkbox" id="nav-12-8">
+    
+    <label class="md-nav__link" for="nav-12-8">
+      Flask
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-8">
+        Flask
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../flask/" title="flask 文档" class="md-nav__link">
+      flask 文档
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../flask/awesome/" title="Awesome Flask [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)" class="md-nav__link">
+      Awesome Flask [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-9" type="checkbox" id="nav-12-9">
+    
+    <label class="md-nav__link" for="nav-12-9">
+      Pip
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-9">
+        Pip
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pip/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      Running
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        Running
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../running/bicycle/" title="变速自行车" class="md-nav__link">
+      变速自行车
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../running/card/" title="自动驾驶" class="md-nav__link">
+      自动驾驶
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../running/walk/" title="徒步健身" class="md-nav__link">
+      徒步健身
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      Tools
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tools/" title="器" class="md-nav__link">
+      器
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14-2" type="checkbox" id="nav-14-2">
+    
+    <label class="md-nav__link" for="nav-14-2">
+      Eslint
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-14-2">
+        Eslint
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tools/eslint/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14-3" type="checkbox" id="nav-14-3">
+    
+    <label class="md-nav__link" for="nav-14-3">
+      Vscode
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-14-3">
+        Vscode
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tools/vscode/" title="vscode 文档" class="md-nav__link">
+      vscode 文档
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tools/vscode/prettier/" title="Prettier" class="md-nav__link">
+      Prettier
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      Wechat
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        Wechat
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/" title="微信相关文档" class="md-nav__link">
+      微信相关文档
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/oa/" title="oa" class="md-nav__link">
+      oa
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/weapp-awesome/" title="微信小程序开发资源汇总" class="md-nav__link">
+      微信小程序开发资源汇总
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-4" type="checkbox" id="nav-15-4">
+    
+    <label class="md-nav__link" for="nav-15-4">
+      Open
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-15-4">
+        Open
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-4-2" type="checkbox" id="nav-15-4-2">
+    
+    <label class="md-nav__link" for="nav-15-4-2">
+      App
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-15-4-2">
+        App
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/app/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-4-3" type="checkbox" id="nav-15-4-3">
+    
+    <label class="md-nav__link" for="nav-15-4-3">
+      Code
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-15-4-3">
+        Code
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/code/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-4-4" type="checkbox" id="nav-15-4-4">
+    
+    <label class="md-nav__link" for="nav-15-4-4">
+      D3f
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-15-4-4">
+        D3f
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/d3f/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-4-5" type="checkbox" id="nav-15-4-5">
+    
+    <label class="md-nav__link" for="nav-15-4-5">
+      Download
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-15-4-5">
+        Download
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/download/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/download/android/" title="Android 资源下载" class="md-nav__link">
+      Android 资源下载
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/download/design/" title="设计资源下载" class="md-nav__link">
+      设计资源下载
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/download/ios/" title="iOS 资源下载" class="md-nav__link">
+      iOS 资源下载
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/download/wp8/" title="WP8 资源下载" class="md-nav__link">
+      WP8 资源下载
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="你将要建立什么" class="md-nav__link">
+    你将要建立什么
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auth0" title="使用 Auth0 管理身份" class="md-nav__link">
+    使用 Auth0 管理身份
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auth0-flask" title="使用 Auth0 保护 Flask 应用程序" class="md-nav__link">
+    使用 Auth0 保护 Flask 应用程序
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="添加表单以创建考试" class="md-nav__link">
+    添加表单以创建考试
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auth0-angular" title="使用 Auth0 保护 Angular 应用程序" class="md-nav__link">
+    使用 Auth0 保护 Angular 应用程序
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="结论和后续步骤" class="md-nav__link">
+    结论和后续步骤
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="pythonflask-angular-web-2">使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分<a class="headerlink" href="#pythonflask-angular-web-2" title="Permanent link">&para;</a></h1>
+<p>In this series, you will learn how to create modern web applications with Python, Flask, and Angular.</p>
+<p>TL;DR: In this series, you will learn how to create modern web applications with Python, Flask, and Angular.
+You will use this stack to build a SPA and a backend API to expose exams and questions so users can test their knowledge regarding different technologies.
+In this GitHub repository, you can find the final code created throughout the second part of the series.</p>
+<p>So far, this series contains three parts:</p>
+<ul>
+<li>Part 1 includes topics like bootstrapping the Flask application, managing Entities with SQLAlchemy ORM, and bootstrapping the Angular application.</li>
+<li>Part 2 (this one) includes topics like securing Flask Apps, handling Angular forms, and securing Angular Apps.</li>
+<li>Part 3 includes topics like configuring Angular Material, handling Authorization, and migrating Databases with Alembic.</li>
+</ul>
+<h2 id="_1">你将要建立什么<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>在本系列中，您将使用 Python，Flask 和 Angular 构建基于现代架构的 Web 应用程序。
+使用 Angular，您将构建一个 SPA（单页应用程序），允许用户浏览考试和问题。
+这些用户在通过身份验证后，将能够通过选择问题所揭示的多个选项之一来测试他们关于特定主题的知识。
+然后，当您的用户提交他们的答案时，您的后端将检查他们是对还是错，记录结果，并将此结果发回给用户。</p>
+<p>在本系列的这一部分中，您将首先将 Auth0 配置为应用程序的身份管理系统。
+您将配置 Auth0 API 来表示和保护您的 Flask 应用程序，您将配置 Auth0 应用程序来表示和保护您的 Angular SPA。
+使用 Auth0 保护您的应用程序后，您将增强应用程序以允许用户测试他们的知识。</p>
+<h2 id="auth0">使用 Auth0 管理身份<a class="headerlink" href="#auth0" title="Permanent link">&para;</a></h2>
+<p>Instead of investing time to develop rudimentary authentication mechanisms to manage the identity of your users, you are going to use Auth0.
+For startup projects like this one, the free tier provided by Auth0 is more than enough.
+Besides being free, by choosing Auth0, you will get a modern, easy to use, and reliable service capable of integrating with tons of different social identity providers (e.g.
+Facebook, Google, Twitter, etc).
+Also, if you ever need to integrate with enterprise identity providers using protocols like OpenID Connect, SAML, and WS-Federation, don’t worry, Auth0’s got you covered.</p>
+<p>That is, Auth0 can help you focus on what matters the most to you, the special features of your product.
+In addition, Auth0 can improve your product’s security with state-of-the-art features like passwordless, breached password surveillance, and multifactor authentication.</p>
+<h2 id="auth0-flask">使用 Auth0 保护 Flask 应用程序<a class="headerlink" href="#auth0-flask" title="Permanent link">&para;</a></h2>
+<p>To integrate Auth0 into your Flask application, you will need to create an Auth0 API.
+If you haven’t done so yet, you can sign up for a free Auth0 account now.
+After creating your account, head to the APIs page on your Auth0 dashboard and click on the Create API button.
+When clicked, this button will bring up a form where Auth0 will ask you for three properties.
+The following list summarizes these properties and how to fill them:</p>
+<p>Name: This is a friendly name to remind you what this API is about.
+Here, you can enter something like “Online Exam”.
+Identifier: This is the logical identifier (a.k.a.
+audience) of your API.
+Usually, developers use an URL to represent their APIs.
+Although this is not mandatory, it is a good approach.
+So, in this field, enter something like https://online-exam.digituz.com.br.
+Signing Algorithm: In this field, you will have to select between two strategies: RS256 (the default one) and HS256.
+The best option is to stick with the default one (RS256).
+If you are curious, you can check this thread to understand the difference between them.
+When you finish filling out this form, you can hit the Create button.
+This will redirect you to a tab called Quick Start inside your new Auth0 API.
+From there, select the Scopes tab and add a new scope called manage:exams (as a good practice, always define scopes when dealing with the OAuth 2.0 authorization mechanism).
+You can add a simple description like Manage exams to it.
+After that, you can leave this page open and head back to your Flask project (i.e.
+to the backend directory inside the project root).</p>
+<p>Back in your project, you will need to create a Python decorator to wrap the endpoints that must be secured.
+To define this decorator, create a new file called auth.py inside the ./backend/src/ directory.
+Then, inside this file, paste the following code:</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">request</span><span class="p">,</span> <span class="n">_request_ctx_stack</span>
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
+<span class="kn">from</span> <span class="nn">jose</span> <span class="kn">import</span> <span class="n">jwt</span>
+<span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
+
+
+<span class="n">AUTH0_DOMAIN</span> <span class="o">=</span> <span class="s1">&#39;bk-samples.auth0.com&#39;</span>
+<span class="n">ALGORITHMS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;RS256&#39;</span><span class="p">]</span>
+<span class="n">API_AUDIENCE</span> <span class="o">=</span> <span class="s1">&#39;https://online-exam.digituz.com.br&#39;</span>
+
+
+<span class="k">class</span> <span class="nc">AuthError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">error</span><span class="p">,</span> <span class="n">status_code</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">error</span> <span class="o">=</span> <span class="n">error</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">status_code</span> <span class="o">=</span> <span class="n">status_code</span>
+
+
+<span class="k">def</span> <span class="nf">get_token_auth_header</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Obtains the Access Token from the Authorization Header</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">auth</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;Authorization&#39;</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">auth</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">AuthError</span><span class="p">({</span>
+            <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="s1">&#39;authorization_header_missing&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Authorization header is expected.&#39;</span>
+        <span class="p">},</span> <span class="mi">401</span><span class="p">)</span>
+
+    <span class="n">parts</span> <span class="o">=</span> <span class="n">auth</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">parts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">!=</span> <span class="s1">&#39;bearer&#39;</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">AuthError</span><span class="p">({</span>
+            <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="s1">&#39;invalid_header&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Authorization header must start with &quot;Bearer&quot;.&#39;</span>
+        <span class="p">},</span> <span class="mi">401</span><span class="p">)</span>
+
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">AuthError</span><span class="p">({</span>
+            <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="s1">&#39;invalid_header&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Token not found.&#39;</span>
+        <span class="p">},</span> <span class="mi">401</span><span class="p">)</span>
+
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">AuthError</span><span class="p">({</span>
+            <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="s1">&#39;invalid_header&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Authorization header must be bearer token.&#39;</span>
+        <span class="p">},</span> <span class="mi">401</span><span class="p">)</span>
+
+    <span class="n">token</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">token</span>
+
+
+<span class="k">def</span> <span class="nf">requires_auth</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Determines if the Access Token is valid</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nd">@wraps</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">decorated</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">token</span> <span class="o">=</span> <span class="n">get_token_auth_header</span><span class="p">()</span>
+        <span class="n">jsonurl</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;https://{AUTH0_DOMAIN}/.well-known/jwks.json&#39;</span><span class="p">)</span>
+        <span class="n">jwks</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">jsonurl</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+        <span class="n">unverified_header</span> <span class="o">=</span> <span class="n">jwt</span><span class="o">.</span><span class="n">get_unverified_header</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+        <span class="n">rsa_key</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">jwks</span><span class="p">[</span><span class="s1">&#39;keys&#39;</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="n">key</span><span class="p">[</span><span class="s1">&#39;kid&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">unverified_header</span><span class="p">[</span><span class="s1">&#39;kid&#39;</span><span class="p">]:</span>
+                <span class="n">rsa_key</span> <span class="o">=</span> <span class="p">{</span>
+                    <span class="s1">&#39;kty&#39;</span><span class="p">:</span> <span class="n">key</span><span class="p">[</span><span class="s1">&#39;kty&#39;</span><span class="p">],</span>
+                    <span class="s1">&#39;kid&#39;</span><span class="p">:</span> <span class="n">key</span><span class="p">[</span><span class="s1">&#39;kid&#39;</span><span class="p">],</span>
+                    <span class="s1">&#39;use&#39;</span><span class="p">:</span> <span class="n">key</span><span class="p">[</span><span class="s1">&#39;use&#39;</span><span class="p">],</span>
+                    <span class="s1">&#39;n&#39;</span><span class="p">:</span> <span class="n">key</span><span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">],</span>
+                    <span class="s1">&#39;e&#39;</span><span class="p">:</span> <span class="n">key</span><span class="p">[</span><span class="s1">&#39;e&#39;</span><span class="p">]</span>
+                <span class="p">}</span>
+        <span class="k">if</span> <span class="n">rsa_key</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">payload</span> <span class="o">=</span> <span class="n">jwt</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span>
+                    <span class="n">token</span><span class="p">,</span>
+                    <span class="n">rsa_key</span><span class="p">,</span>
+                    <span class="n">algorithms</span><span class="o">=</span><span class="n">ALGORITHMS</span><span class="p">,</span>
+                    <span class="n">audience</span><span class="o">=</span><span class="n">API_AUDIENCE</span><span class="p">,</span>
+                    <span class="n">issuer</span><span class="o">=</span><span class="s1">&#39;https://&#39;</span> <span class="o">+</span> <span class="n">AUTH0_DOMAIN</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span>
+                <span class="p">)</span>
+
+            <span class="k">except</span> <span class="n">jwt</span><span class="o">.</span><span class="n">ExpiredSignatureError</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">AuthError</span><span class="p">({</span>
+                    <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="s1">&#39;token_expired&#39;</span><span class="p">,</span>
+                    <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Token expired.&#39;</span>
+                <span class="p">},</span> <span class="mi">401</span><span class="p">)</span>
+
+            <span class="k">except</span> <span class="n">jwt</span><span class="o">.</span><span class="n">JWTClaimsError</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">AuthError</span><span class="p">({</span>
+                    <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="s1">&#39;invalid_claims&#39;</span><span class="p">,</span>
+                    <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Incorrect claims.</span>
+<span class="n">Please</span><span class="p">,</span> <span class="n">check</span> <span class="n">the</span> <span class="n">audience</span> <span class="ow">and</span> <span class="n">issuer</span><span class="o">.</span><span class="s1">&#39;</span>
+                <span class="p">},</span> <span class="mi">401</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">AuthError</span><span class="p">({</span>
+                    <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="s1">&#39;invalid_header&#39;</span><span class="p">,</span>
+                    <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Unable to parse authentication token.&#39;</span>
+                <span class="p">},</span> <span class="mi">400</span><span class="p">)</span>
+
+            <span class="n">_request_ctx_stack</span><span class="o">.</span><span class="n">top</span><span class="o">.</span><span class="n">current_user</span> <span class="o">=</span> <span class="n">payload</span>
+            <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="k">raise</span> <span class="n">AuthError</span><span class="p">({</span>
+            <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="s1">&#39;invalid_header&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Unable to find the appropriate key.&#39;</span>
+        <span class="p">},</span> <span class="mi">400</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">decorated</span>
+</pre></div>
+
+<p>Although lengthy, this code is quite simple.
+Here is a list to explain what this new module does:</p>
+<p>First, it defines three constants: AUTH0_DOMAIN, ALGORITHMS, and API_AUDIENCE.
+Your project will use these constants to communicate with Auth0 to validate users (tokens).
+Note that you will have to replace the value of these constants with the details of your Auth0 account.
+Second, it defines a class called AuthError.
+This class exists to represent errors originated in this module.
+Third, it defines a function called get_token_auth_header.
+Your app will use this function to read Authorization headers to fetch their access tokens.
+Lastly, this module defines the requires_auth decorator.
+This decorator might look complex but, if you analyze carefully, you will see that all it does is to fetch the correct public key from Auth0 to validate tokens.
+Instead of sharing static public keys, Auth0 uses the JWK specification to represent the cryptographic keys used for signing tokens.
+You can learn more about this subject here.
+You probably noticed that the decorator that your created is using a module called jwt that is not available to your project.
+To install this dependency, issue the following command inside the backend directory:</p>
+<p>pipenv install python-jose-cryptodome
+Now, to use this decorator, you can update the main.py file as follows:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># coding=utf-8</span>
+
+<span class="c1"># ...</span>
+<span class="n">other</span> <span class="kn">import</span> <span class="nn">statements</span> <span class="o">...</span>
+<span class="kn">from</span> <span class="nn">.auth</span> <span class="kn">import</span> <span class="n">AuthError</span><span class="p">,</span> <span class="n">requires_auth</span>
+
+<span class="c1"># ...</span>
+<span class="n">create</span> <span class="n">Flask</span> <span class="n">app</span><span class="p">,</span> <span class="n">schema</span> <span class="n">generation</span> <span class="o">...</span>
+
+<span class="c1"># ...</span>
+<span class="n">get_exams</span> <span class="n">implementation</span> <span class="o">...</span>
+
+<span class="nd">@app.route</span><span class="p">(</span><span class="s1">&#39;/exams&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;POST&#39;</span><span class="p">])</span>
+<span class="nd">@requires_auth</span>
+<span class="k">def</span> <span class="nf">add_exam</span><span class="p">():</span>
+    <span class="c1"># ...</span>
+<span class="n">implementation</span> <span class="o">...</span>
+
+<span class="nd">@app.errorhandler</span><span class="p">(</span><span class="n">AuthError</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">handle_auth_error</span><span class="p">(</span><span class="n">ex</span><span class="p">):</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">ex</span><span class="o">.</span><span class="n">error</span><span class="p">)</span>
+    <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">=</span> <span class="n">ex</span><span class="o">.</span><span class="n">status_code</span>
+    <span class="k">return</span> <span class="n">response</span>
+</pre></div>
+
+<p>Note that you are securing only the add_exam function (i.e.
+the endpoint that accepts POST requests).
+The endpoint that retrieves exams will remain public so visitors can see what exams your application contains.
+Another important feature added by the new version of this file is the handle_auth_error function.
+By using the @app.errorhandler decorator, you are configuring your Flask application to call this function when AuthErrors are raised.
+This error handler makes errors look nice and easier to fix as they simply return a JSON object with the details.</p>
+<p>That’s it! You Flask application is now secured with Auth0.
+To test it, you can issue the following commands:</p>
+<div class="codehilite"><pre><span></span><span class="err">#</span> <span class="nx">run</span> <span class="nx">the</span> <span class="nx">app</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">background</span>
+<span class="p">.</span><span class="o">/</span><span class="nx">bootstrap</span><span class="p">.</span><span class="nx">sh</span> <span class="o">&amp;</span>
+
+<span class="err">#</span> <span class="nx">good</span> <span class="nx">to</span> <span class="nx">go</span><span class="p">,</span> <span class="nx">endpoint</span> <span class="nx">not</span> <span class="nx">secured</span>
+<span class="nx">curl</span> <span class="nx">http</span><span class="o">:</span><span class="c1">//0.0.0.0:5000/exams</span>
+
+<span class="err">#</span> <span class="nx">unauthorized</span><span class="p">,</span> <span class="nx">endpoint</span> <span class="nx">secured</span> <span class="nx">and</span> <span class="nx">no</span> <span class="nx">bearer</span>
+<span class="nx">curl</span> <span class="o">-</span><span class="nx">X</span> <span class="nx">POST</span> <span class="o">-</span><span class="nx">H</span> <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="o">-</span><span class="nx">d</span> <span class="s1">&#39;{</span>
+<span class="s1">  &quot;title&quot;: &quot;TypeScript Advanced Exam&quot;,</span>
+<span class="s1">  &quot;description&quot;: &quot;Tricky questions about TypeScript.&quot;</span>
+<span class="s1">}&#39;</span> <span class="nx">http</span><span class="o">:</span><span class="c1">//0.0.0.0:5000/exams</span>
+</pre></div>
+
+<p>Now, to get an access token to test the secured endpoint, you will need to copy a command from your Auth0 API.
+So, head back to the page that you left open, then click on the Test tab, and copy the first curl command shown there.
+The code snippet below shows how to use this command to fetch the access token and how to send it to your Flask application (replace the first command with the one you copied from your Auth0 API):</p>
+<div class="codehilite"><pre><span></span><span class="c1"># retrieve token from Auth0</span>
+curl -X POST -H <span class="s1">&#39;Content-Type: application/json&#39;</span> -d <span class="s1">&#39;{</span>
+<span class="s1">    &quot;client_id&quot;:&quot;Rp4He7RGWAnMfY34SxwnWHpw7gjdOOPI&quot;,&quot;client_secret&quot;:&quot;2cCS521K7k2Btc434VMBmIBTeLbRfw1tvEKw6l8DYt9OvIEYHUqgdZPioM_rBKsx&quot;,&quot;audience&quot;:&quot;https://online-exam.digituz.com.br&quot;,&quot;grant_type&quot;:&quot;client_credentials&quot;</span>
+<span class="s1">}&#39;</span> https://bk-samples.auth0.com/oauth/token
+
+<span class="c1"># copy token into env variable</span>
+<span class="nv">JWT</span><span class="o">=</span><span class="s2">&quot;aaa.bbb.ccc&quot;</span>
+
+<span class="c1"># create new exam</span>
+curl -X POST -H <span class="s1">&#39;Content-Type: application/json&#39;</span> -H <span class="s1">&#39;Authorization: Bearer &#39;</span><span class="nv">$JWT</span> -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;title&quot;: &quot;TypeScript Advanced Exam&quot;,</span>
+<span class="s1">  &quot;description&quot;: &quot;Tricky questions about TypeScript.&quot;</span>
+<span class="s1">}&#39;</span> http://0.0.0.0:5000/exams
+</pre></div>
+
+<p>Hurray! You have a Flask application secured with a modern identity management solution.
+Time to save your progress:</p>
+<div class="codehilite"><pre><span></span>git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;securing Flask with Auth0&quot;</span>
+</pre></div>
+
+<h2 id="_2">添加表单以创建考试<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Next, you can go back to your code.
+Before integrating Auth0 into your Angular app, you will add two new components to it: ExamsComponent and ExamFormComponent.
+The first one will render the list of exams (i.e.
+you will remove this functionality from the AppComponent) and the second one will allow authenticated users to create exams.</p>
+<p>As such, open the app.component.ts file and replace all its content with this:</p>
+<div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@angular/core&quot;</span><span class="p">;</span>
+
+<span class="kd">@Component</span><span class="p">({</span>
+  <span class="nx">selector</span><span class="o">:</span> <span class="s2">&quot;app-root&quot;</span><span class="p">,</span>
+  <span class="nx">template</span><span class="o">:</span> <span class="sb">`</span>
+<span class="sb">    &lt;div style=&quot;text-align:center&quot;&gt;</span>
+<span class="sb">      &lt;h1&gt;Exams&lt;/h1&gt;</span>
+<span class="sb">    &lt;/div&gt;</span>
+<span class="sb">    &lt;h2&gt;Here are the exams created so far:&lt;/h2&gt;</span>
+<span class="sb">    &lt;router-outlet&gt;&lt;/router-outlet&gt;</span>
+<span class="sb">  `</span><span class="p">,</span>
+  <span class="nx">styleUrls</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;./app.component.css&quot;</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">AppComponent</span> <span class="p">{}</span>
+</pre></div>
+
+<p>As you can see, this component exists only to show a title and to define where other components will be rendered (<code>&lt;router-outlet&gt;&lt;/router-outlet&gt;</code>).
+As you have moved this component’s template to this file, you can remove the app.component.html file.</p>
+<p>Now, to show the exams list again, you are going to create the ExamsComponent.
+To do so, create a new file called exams.component.ts inside the src/app/exams directory with the following code:</p>
+<div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">OnDestroy</span><span class="p">,</span> <span class="nx">OnInit</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@angular/core&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Subscription</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;rxjs/Subscription&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Exam</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;./exam.model&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">ExamsApiService</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;./exams-api.service&quot;</span><span class="p">;</span>
+
+<span class="kd">@Component</span><span class="p">({</span>
+  <span class="nx">selector</span><span class="o">:</span> <span class="s2">&quot;exams&quot;</span><span class="p">,</span>
+  <span class="nx">template</span><span class="o">:</span> <span class="sb">`</span>
+<span class="sb">    &lt;div&gt;</span>
+<span class="sb">      &lt;button routerLink=&quot;/new-exam&quot;&gt;New Exam&lt;/button&gt;</span>
+<span class="sb">      &lt;ul&gt;</span>
+<span class="sb">        &lt;li *ngFor=&quot;let exam of examsList&quot;&gt;</span>
+<span class="sb">          {{ exam.title }}</span>
+<span class="sb">        &lt;/li&gt;</span>
+<span class="sb">      &lt;/ul&gt;</span>
+<span class="sb">    &lt;/div&gt;</span>
+<span class="sb">  `</span>
+<span class="p">})</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">ExamsComponent</span> <span class="kr">implements</span> <span class="nx">OnInit</span><span class="p">,</span> <span class="nx">OnDestroy</span> <span class="p">{</span>
+  <span class="nx">examsListSubs</span>: <span class="kt">Subscription</span><span class="p">;</span>
+  <span class="nx">examsList</span>: <span class="kt">Exam</span><span class="p">[];</span>
+
+  <span class="kr">constructor</span><span class="p">(</span><span class="kr">private</span> <span class="nx">examsApi</span>: <span class="kt">ExamsApiService</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="nx">ngOnInit() {</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">examsListSubs</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">examsApi</span><span class="p">.</span><span class="nx">getExams</span><span class="p">().</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">res</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">examsList</span> <span class="o">=</span> <span class="nx">res</span><span class="p">;</span>
+    <span class="p">},</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="nx">ngOnDestroy() {</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">examsListSubs</span><span class="p">.</span><span class="nx">unsubscribe</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>There is nothing fancy about this component, you are simply moving the code that renders the list of exams from the AppComponent to this one and adding a button to enable users to navigate to the /new-exam page.</p>
+<p>Speaking of which, you have to create the component that will be responsible for this URI.
+Therefore, create a new file called exam-form.component.ts inside the src/app/exams directory and add the following code to it:</p>
+<div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@angular/core&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">HttpClient</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@angular/common/http&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">ExamsApiService</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;./exams-api.service&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Router</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@angular/router&quot;</span><span class="p">;</span>
+
+<span class="kd">@Component</span><span class="p">({</span>
+  <span class="nx">selector</span><span class="o">:</span> <span class="s2">&quot;exam-form&quot;</span><span class="p">,</span>
+  <span class="nx">template</span><span class="o">:</span> <span class="sb">`</span>
+<span class="sb">    &lt;div&gt;</span>
+<span class="sb">      &lt;h2&gt;New Exam&lt;/h2&gt;</span>
+<span class="sb">      &lt;label for=&quot;exam-title&quot;&gt;Title&lt;/label&gt;</span>
+<span class="sb">      &lt;input id=&quot;exam-title&quot; (keyup)=&quot;updateTitle($event)&quot; /&gt;</span>
+<span class="sb">      &lt;label for=&quot;exam-description&quot;&gt;Description&lt;/label&gt;</span>
+<span class="sb">      &lt;input id=&quot;exam-description&quot; (keyup)=&quot;updateDescription($event)&quot; /&gt;</span>
+<span class="sb">      &lt;button (click)=&quot;saveExam()&quot;&gt;Save Exam&lt;/button&gt;</span>
+<span class="sb">    &lt;/div&gt;</span>
+<span class="sb">  `</span>
+<span class="p">})</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">ExamFormComponent</span> <span class="p">{</span>
+  <span class="nx">exam</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nx">description</span><span class="o">:</span> <span class="s2">&quot;&quot;</span>
+  <span class="p">};</span>
+
+  <span class="kr">constructor</span><span class="p">(</span><span class="kr">private</span> <span class="nx">examsApi</span>: <span class="kt">ExamsApiService</span><span class="p">,</span> <span class="kr">private</span> <span class="nx">router</span>: <span class="kt">Router</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="nx">updateTitle</span><span class="p">(</span><span class="nx">event</span>: <span class="kt">any</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">exam</span><span class="p">.</span><span class="nx">title</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nx">updateDescription</span><span class="p">(</span><span class="nx">event</span>: <span class="kt">any</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">exam</span><span class="p">.</span><span class="nx">description</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nx">saveExam() {</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">examsApi</span>
+      <span class="p">.</span><span class="nx">saveExam</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">exam</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span>
+        <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">router</span><span class="p">.</span><span class="nx">navigate</span><span class="p">([</span><span class="s2">&quot;/&quot;</span><span class="p">]),</span>
+        <span class="nx">error</span> <span class="o">=&gt;</span> <span class="nx">alert</span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="p">)</span>
+      <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>In this component, you are defining two input elements where users will be able to inform the title and description of the exam that they are creating and a button that triggers the saveExam method.
+This method calls another (homonymous) method that you will define in the examsApi service.
+Then, if the call to this method is successful, users are redirected to the home page (/) and, if the call is unsuccessful, an alert is shown by the browser.</p>
+<p>Now, to define the saveExam method on the ExamsApiService, open the exams-api.service.ts file and update it as follows:</p>
+<div class="codehilite"><pre><span></span><span class="c1">// ...</span>
+<span class="kr">import</span> <span class="nx">statements</span> <span class="p">...</span>
+
+<span class="kd">@Injectable</span><span class="p">()</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">ExamsApiService</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="kr">constructor</span><span class="p">,</span> <span class="nx">_handleError</span><span class="p">,</span> <span class="nx">getExams</span> <span class="p">...</span>
+
+  <span class="nx">saveExam</span><span class="p">(</span><span class="nx">exam</span>: <span class="kt">Exam</span><span class="p">)</span><span class="o">:</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">http</span>
+      <span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">API_URL</span><span class="si">}</span><span class="sb">/exams`</span><span class="p">,</span> <span class="nx">exam</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">Lastly</span><span class="p">,</span> <span class="nx">you</span> <span class="nx">will</span> <span class="nx">have</span> <span class="nx">to</span> <span class="nx">update</span> <span class="nx">the</span> <span class="nx">app</span><span class="p">.</span><span class="kr">module</span><span class="nx">.ts</span> <span class="nx">file</span> <span class="kr">as</span> <span class="nx">follows</span><span class="o">:</span>
+
+<span class="c1">// ...</span>
+<span class="nx">other</span> <span class="nx">imports</span> <span class="p">...</span>
+
+<span class="kr">import</span> <span class="p">{</span><span class="nx">ExamFormComponent</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./exams/exam-form.component&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">RouterModule</span><span class="p">,</span> <span class="nx">Routes</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@angular/router&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">ExamsComponent</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./exams/exams.component&#39;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">appRoutes</span>: <span class="kt">Routes</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;new-exam&#39;</span><span class="p">,</span> <span class="nx">component</span>: <span class="kt">ExamFormComponent</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nx">component</span>: <span class="kt">ExamsComponent</span> <span class="p">},</span>
+<span class="p">];</span>
+
+<span class="kd">@NgModule</span><span class="p">({</span>
+  <span class="nx">declarations</span><span class="o">:</span> <span class="p">[</span>
+    <span class="nx">AppComponent</span><span class="p">,</span>
+    <span class="nx">ExamFormComponent</span><span class="p">,</span>
+    <span class="nx">ExamsComponent</span><span class="p">,</span>
+  <span class="p">],</span>
+  <span class="nx">imports</span><span class="o">:</span> <span class="p">[</span>
+    <span class="c1">// ...</span>
+<span class="nx">BrowserModule</span> <span class="nx">and</span> <span class="nx">HttpClientModule</span> <span class="p">...</span>
+    <span class="nx">RouterModule</span><span class="p">.</span><span class="nx">forRoot</span><span class="p">(</span>
+      <span class="nx">appRoutes</span><span class="p">,</span>
+    <span class="p">),</span>
+  <span class="p">],</span>
+  <span class="c1">// ...</span>
+<span class="nx">providers</span> <span class="nx">and</span> <span class="nx">bootstrap</span> <span class="p">...</span>
+<span class="p">})</span>
+<span class="c1">// ...</span>
+<span class="nx">AppModule</span> <span class="kr">class</span> <span class="nx">definition</span>
+</pre></div>
+
+<p>With these changes in place, you can open a terminal, move to the frontend directory, and run the ng serve command.
+Then, if you open http://localhost:4200/ in a browser, you will see the list of exams and a button labeled New Exam.
+Clicking on this button, you will be redirected to your new form.
+The problem now is that you will get an error saying “Http failure response for http://localhost:5000/exams: 401 UNAUTHORIZED” when clicking on the Save Exam button.
+The reason for that is simple, you haven’t configured Auth0 in your Angular app yet.</p>
+<h2 id="auth0-angular">使用 Auth0 保护 Angular 应用程序<a class="headerlink" href="#auth0-angular" title="Permanent link">&para;</a></h2>
+<p>To solve the 401 UNAUTHORIZED issue, the first thing you will have to do is to create an Auth0 Application to represent your Angular app.
+To do so, browse to the Applications page on the Auth0 dashboard and click on the Create Application button.
+This time, you will have to provide only two things to Auth0:</p>
+<p>Name: Another friendly reminder, this time to your Auth0 Application.
+Here, you can add something like “Online Exam Application”.
+Application Type: The type of the application that you are creating.
+In this case, as you are using Angular to create a SPA, you will choose Single Page Web Applications.
+Creating an Auth0 Application to represent the Angular app.</p>
+<p>Having filled out this form, click on the Create button.
+When finished creating your application (it takes just a second or two), Auth0 will redirect you to the Quick Start tab of the new application.
+From there, click on the Settings tab to inform to Auth0 what the Allowed Callback URLs are.
+As for the moment you are only running your app locally, you can simply add the http://localhost:4200/callback URL to this field.
+Now, you can hit the Save Changes button at the bottom of the page and leave it open (you will need to copy some properties from it soon).</p>
+<p>Now, you can go back to your Angular project and integrate it with Auth0.
+To do so, you will have to install the auth0-web NPM package.
+So, open a terminal, move to the frontend directory, and issue the following command:</p>
+<p>npm i auth0-web@1.7.0
+Note: You have to use version 1.7.0 of this library as the latest version (2.X) includes breaking changes.</p>
+<p>After installing this package, you will have to create the component responsible for handling the callback URL called by Auth0.
+As such, create a new file called callback.component.ts in the src/app/ directory and add the following code to it:</p>
+<div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">Auth0</span> <span class="nx">from</span> <span class="s2">&quot;auth0-web&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">OnInit</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@angular/core&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Router</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@angular/router&quot;</span><span class="p">;</span>
+
+<span class="kd">@Component</span><span class="p">({</span>
+  <span class="nx">selector</span><span class="o">:</span> <span class="s2">&quot;callback&quot;</span><span class="p">,</span>
+  <span class="nx">template</span><span class="o">:</span> <span class="sb">`</span>
+<span class="sb">    &lt;div&gt;Loading authentication details...&lt;/div&gt;</span>
+<span class="sb">  `</span>
+<span class="p">})</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">CallbackComponent</span> <span class="kr">implements</span> <span class="nx">OnInit</span> <span class="p">{</span>
+  <span class="kr">constructor</span><span class="p">(</span><span class="kr">private</span> <span class="nx">router</span>: <span class="kt">Router</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="nx">ngOnInit</span><span class="p">()</span><span class="o">:</span> <span class="k">void</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">self</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+    <span class="nx">Auth0</span><span class="p">.</span><span class="nx">handleAuthCallback</span><span class="p">(</span><span class="nx">err</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="nx">alert</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+      <span class="nx">self</span><span class="p">.</span><span class="nx">router</span><span class="p">.</span><span class="nx">navigate</span><span class="p">([</span><span class="s2">&quot;/&quot;</span><span class="p">]);</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>As you can see, this component simply shows a message saying “Loading authentication details…” to users and delegates to auth0-web the process of parsing the callback URL.
+Then, when auth0-web finishes its job, users are redirected to the home page (self.router.navigate(['/'])).</p>
+<p>Next, you will have to refactor the exams.component.ts file to allow users to sign in and sign out.
+So, open this file and replace its code with the following:</p>
+<div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">Auth0</span> <span class="nx">from</span> <span class="s2">&quot;auth0-web&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">OnDestroy</span><span class="p">,</span> <span class="nx">OnInit</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@angular/core&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Subscription</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;rxjs/Subscription&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Exam</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;./exam.model&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">ExamsApiService</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;./exams-api.service&quot;</span><span class="p">;</span>
+
+<span class="kd">@Component</span><span class="p">({</span>
+  <span class="nx">selector</span><span class="o">:</span> <span class="s2">&quot;exams&quot;</span><span class="p">,</span>
+  <span class="nx">template</span><span class="o">:</span> <span class="sb">`</span>
+<span class="sb">    &lt;div&gt;</span>
+<span class="sb">      &lt;button routerLink=&quot;/new-exam&quot;&gt;New Exam&lt;/button&gt;</span>
+<span class="sb">      &lt;button (click)=&quot;signIn()&quot; *ngIf=&quot;!authenticated&quot;&gt;Sign In&lt;/button&gt;</span>
+<span class="sb">      &lt;button (click)=&quot;signOut()&quot; *ngIf=&quot;authenticated&quot;&gt;Sign Out&lt;/button&gt;</span>
+<span class="sb">      &lt;p *ngIf=&quot;authenticated&quot;&gt;Hello, {{ getProfile().name }}&lt;/p&gt;</span>
+<span class="sb">      &lt;ul&gt;</span>
+<span class="sb">        &lt;li *ngFor=&quot;let exam of examsList&quot;&gt;</span>
+<span class="sb">          {{ exam.title }}</span>
+<span class="sb">        &lt;/li&gt;</span>
+<span class="sb">      &lt;/ul&gt;</span>
+<span class="sb">    &lt;/div&gt;</span>
+<span class="sb">  `</span>
+<span class="p">})</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">ExamsComponent</span> <span class="kr">implements</span> <span class="nx">OnInit</span><span class="p">,</span> <span class="nx">OnDestroy</span> <span class="p">{</span>
+  <span class="nx">examsListSubs</span>: <span class="kt">Subscription</span><span class="p">;</span>
+  <span class="nx">examsList</span>: <span class="kt">Exam</span><span class="p">[];</span>
+  <span class="nx">authenticated</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+  <span class="kr">constructor</span><span class="p">(</span><span class="kr">private</span> <span class="nx">examsApi</span>: <span class="kt">ExamsApiService</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="nx">signIn</span> <span class="o">=</span> <span class="nx">Auth0</span><span class="p">.</span><span class="nx">signIn</span><span class="p">;</span>
+  <span class="nx">signOut</span> <span class="o">=</span> <span class="nx">Auth0</span><span class="p">.</span><span class="nx">signOut</span><span class="p">;</span>
+  <span class="nx">getProfile</span> <span class="o">=</span> <span class="nx">Auth0</span><span class="p">.</span><span class="nx">getProfile</span><span class="p">;</span>
+
+  <span class="nx">ngOnInit() {</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">examsListSubs</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">examsApi</span><span class="p">.</span><span class="nx">getExams</span><span class="p">().</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">res</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">examsList</span> <span class="o">=</span> <span class="nx">res</span><span class="p">;</span>
+    <span class="p">},</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">);</span>
+    <span class="kr">const</span> <span class="nx">self</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+    <span class="nx">Auth0</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">authenticated</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="nx">self</span><span class="p">.</span><span class="nx">authenticated</span> <span class="o">=</span> <span class="nx">authenticated</span><span class="p">));</span>
+  <span class="p">}</span>
+
+  <span class="nx">ngOnDestroy() {</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">examsListSubs</span><span class="p">.</span><span class="nx">unsubscribe</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>In the new version of this component, you are adding two new buttons (Sign In and Sign Out) and a paragraph that shows names of authenticated users.
+All these new elements are conditionally showed according to the authenticated flag.
+The Sign Out and New Exam buttons are visible when this flag is set, otherwise you’ll see the Sign In button.</p>
+<p>To make everything work, the new ExamsComponent references and calls three methods provided by auth0-web (signIn, signOut, and getProfile).
+Besides these methods, this component also subscribes an anonymous function to change the value of the authenticated flag whenever the authentication status changes.</p>
+<p>After updating the ExamsComponent, you will have to update the ExamsApiService to make use of the access_token retrieved from Auth0.
+So, open the exams-api.service.ts file and update it as follows:</p>
+<div class="codehilite"><pre><span></span><span class="c1">// ...</span>
+<span class="nx">other</span> <span class="nx">imports</span> <span class="p">...</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">HttpClient</span><span class="p">,</span> <span class="nx">HttpErrorResponse</span><span class="p">,</span> <span class="nx">HttpHeaders</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@angular/common/http&#39;</span><span class="p">;</span>
+<span class="c1">// ...</span>
+<span class="nx">other</span> <span class="nx">imports</span> <span class="p">...</span>
+<span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">Auth0</span> <span class="nx">from</span> <span class="s1">&#39;auth0-web&#39;</span><span class="p">;</span>
+
+<span class="kd">@Injectable</span><span class="p">()</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">ExamsApiService</span> <span class="p">{</span>
+
+  <span class="c1">// ...</span>
+<span class="kr">constructor</span><span class="p">,</span> <span class="nx">_handleError</span><span class="p">,</span> <span class="nx">and</span> <span class="nx">getExams</span>
+
+  <span class="nx">saveExam</span><span class="p">(</span><span class="nx">exam</span>: <span class="kt">Exam</span><span class="p">)</span><span class="o">:</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">httpOptions</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="nx">headers</span>: <span class="kt">new</span> <span class="nx">HttpHeaders</span><span class="p">({</span>
+        <span class="s1">&#39;Authorization&#39;</span><span class="o">:</span> <span class="sb">`Bearer </span><span class="si">${</span><span class="nx">Auth0</span><span class="p">.</span><span class="nx">getAccessToken</span><span class="p">()</span><span class="si">}</span><span class="sb">`</span>
+      <span class="p">})</span>
+    <span class="p">};</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">http</span>
+      <span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">API_URL</span><span class="si">}</span><span class="sb">/exams`</span><span class="p">,</span> <span class="nx">exam</span><span class="p">,</span> <span class="nx">httpOptions</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>The difference to the previous version is that now you are adding the Authorization header to the POST request that is sent when users try to save a new exam.
+This header is the missing piece to make your Angular and your Flask apps communicate properly.</p>
+<p>So, to wrap up everything, you will have to update your AppModule to declare the CallbackComponent, register the /callback route, and to configure the auth0-web package.
+As such, open the app.module.ts and change it as follows:</p>
+<div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">Auth0</span> <span class="nx">from</span> <span class="s1">&#39;auth0-web&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">CallbackComponent</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./callback.component&#39;</span><span class="p">;</span>
+
+<span class="c1">// ...</span>
+<span class="nx">other</span> <span class="kr">import</span> <span class="nx">statements</span> <span class="p">...</span>
+<span class="kr">const</span> <span class="nx">appRoutes</span>: <span class="kt">Routes</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;callback&#39;</span><span class="p">,</span> <span class="nx">component</span>: <span class="kt">CallbackComponent</span> <span class="p">},</span>
+  <span class="c1">// ...</span>
+<span class="nx">other</span> <span class="nx">routes</span> <span class="p">...</span>
+<span class="p">];</span>
+
+<span class="kd">@NgModule</span><span class="p">({</span>
+  <span class="nx">declarations</span><span class="o">:</span> <span class="p">[</span>
+    <span class="c1">// ...</span>
+<span class="nx">other</span> <span class="nx">components</span> <span class="p">...</span>
+    <span class="nx">CallbackComponent</span><span class="p">,</span>
+  <span class="p">],</span>
+  <span class="c1">// ...</span>
+<span class="nx">imports</span><span class="p">,</span> <span class="nx">providers</span><span class="p">,</span> <span class="nx">and</span> <span class="nx">bootstrap</span> <span class="p">...</span>
+<span class="p">})</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">AppModule</span> <span class="p">{</span>
+  <span class="kr">constructor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">Auth0</span><span class="p">.</span><span class="nx">configure</span><span class="p">({</span>
+      <span class="nx">domain</span><span class="o">:</span> <span class="s1">&#39;bk-samples.auth0.com&#39;</span><span class="p">,</span>
+      <span class="nx">audience</span><span class="o">:</span> <span class="s1">&#39;https://online-exam.digituz.com.br&#39;</span><span class="p">,</span>
+      <span class="nx">clientID</span><span class="o">:</span> <span class="s1">&#39;oxiIp4EX1diCft0rOjzTc9PnHRvtuh9a&#39;</span><span class="p">,</span>
+      <span class="nx">redirectUri</span><span class="o">:</span> <span class="s1">&#39;http://localhost:4200/callback&#39;</span><span class="p">,</span>
+      <span class="nx">scope</span><span class="o">:</span> <span class="s1">&#39;openid profile manage:exams&#39;</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Note that you will have to replace the domain, audience, and clientID properties on this code with values from your Auth0 account.
+So, head back to your Auth0 management dashboard and copy the domain and clientID from the Auth0 Application created before and audience from the Auth0 API (that is, copy the API identifier and paste it here).</p>
+<p>That’s it! If you run your Angular application now, you will be able to create new exams.</p>
+<p>Developing modern applications with Python, Flask, and Angular.</p>
+<p>Wait! Don’t forget to save your progress!!</p>
+<div class="codehilite"><pre><span></span>git add .
+git commit -m <span class="s2">&quot;Integrating Angular with Auth0&quot;</span>
+</pre></div>
+
+<p>"Securing applications with Auth0 is easy and allows me to focus on my apps features."</p>
+<p>Tweet This</p>
+<h2 id="_3">结论和后续步骤<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>在本系列的第二部分中，您将重点放在添加 Auth0 以充当 Flask 和 Angular 应用程序的身份管理服务。
+您首先定义了一个代表 Flask 后端应用程序的 Auth0 API，然后在项目中添加了一个新功能（允许用户添加检查的表单），最后，您将 Auth0 集成到 Angular 应用程序中。</p>
+<p>在下一篇文章中，您将学习如何安装和配置 Angular Material 组件，如何使用 Auth0 角色来控制用户可以执行的操作，以及如何使用 Alembic（数据库迁移工具）来管理数据库模式。</p>
+<p>敬请关注！</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../mfap1/" title="使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  后退
+                </span>
+                使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../mfap3/" title="使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前进
+                </span>
+                使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            版权 &copy; 2017 - 2018 wohugb.github.io
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    
+      <a href="http://wohugb.github.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/wohugb" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/wohugb" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/wohugb" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.2ba8dec4.js"></script>
+      
+        
+        
+          
+          <script src="../../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+  </body>
+</html>

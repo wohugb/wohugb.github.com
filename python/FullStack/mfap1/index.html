@@ -1,0 +1,3620 @@
+
+
+
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="大鼻子的日常学习记录">
+      
+      
+      
+        <meta name="author" content="Nosy">
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.0">
+    
+    
+      
+        <title>使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分 - 大鼻子</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.982221ab.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#pythonflask-angular-web-1" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="大鼻子" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              大鼻子
+            </span>
+            <span class="md-header-nav__topic">
+              使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/wohugb/wohugb.github.com" title="前往 Github 仓库" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    wohugb/wohugb.github.com
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="大鼻子的巴别塔" class="md-tabs__link">
+        大鼻子的巴别塔
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../ai/" title="Ai" class="md-tabs__link">
+          Ai
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../aliyun/" title="Aliyun" class="md-tabs__link">
+          Aliyun
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../angular/" title="Angular" class="md-tabs__link">
+          Angular
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../apartment/" title="Apartment" class="md-tabs__link">
+          Apartment
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../blockchain/" title="Blockchain" class="md-tabs__link">
+          Blockchain
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../education/junior-middle-school/" title="Education" class="md-tabs__link">
+          Education
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../nodejs/" title="Nodejs" class="md-tabs__link">
+          Nodejs
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../pin/cohesion/" title="Pin" class="md-tabs__link">
+          Pin
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../PyMongo/" title="Python" class="md-tabs__link md-tabs__link--active">
+          Python
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../running/bicycle/" title="Running" class="md-tabs__link">
+          Running
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../tools/" title="Tools" class="md-tabs__link">
+          Tools
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../wechat/" title="Wechat" class="md-tabs__link">
+          Wechat
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="大鼻子" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    大鼻子
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/wohugb/wohugb.github.com" title="前往 Github 仓库" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    wohugb/wohugb.github.com
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="大鼻子的巴别塔" class="md-nav__link">
+      大鼻子的巴别塔
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../awesome/" title="Awesome" class="md-nav__link">
+      Awesome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../github/" title="GitHub 集合" class="md-nav__link">
+      GitHub 集合
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Ai
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Ai
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/" title="2017年度30大最惊艳的开源机器学习项目" class="md-nav__link">
+      2017年度30大最惊艳的开源机器学习项目
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/2017/" title="2017 开源机器学习项目" class="md-nav__link">
+      2017 开源机器学习项目
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/2018/" title="过去一年 30 个惊人的 Python 项目 (v.2018)" class="md-nav__link">
+      过去一年 30 个惊人的 Python 项目 (v.2018)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/PhosphorJS/" title="PhosphorJS" class="md-nav__link">
+      PhosphorJS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/awesome/" title="深度学习赞表" class="md-nav__link">
+      深度学习赞表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/deeplearning/" title="Deeplearning" class="md-nav__link">
+      Deeplearning
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/jupyterlab/" title="jupyterlab" class="md-nav__link">
+      jupyterlab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/nlp/" title="自然语言处理" class="md-nav__link">
+      自然语言处理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
+    
+    <label class="md-nav__link" for="nav-4-9">
+      Bot
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-9">
+        Bot
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/bot/" title="机器人" class="md-nav__link">
+      机器人
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/bot/arduino/" title="Arduino" class="md-nav__link">
+      Arduino
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/bot/framework/" title="机器人开发框架项目汇总" class="md-nav__link">
+      机器人开发框架项目汇总
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/bot/ros/" title="ROS" class="md-nav__link">
+      ROS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-10" type="checkbox" id="nav-4-10">
+    
+    <label class="md-nav__link" for="nav-4-10">
+      Iot
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-10">
+        Iot
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ai/iot/InternetOfThings/" title="物联网" class="md-nav__link">
+      物联网
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Aliyun
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Aliyun
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../aliyun/" title="阿里云相关文档" class="md-nav__link">
+      阿里云相关文档
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../aliyun/video/" title="阿里云点播" class="md-nav__link">
+      阿里云点播
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Angular
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Angular
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/" title="Angular" class="md-nav__link">
+      Angular
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/angular/" title="Angular" class="md-nav__link">
+      Angular
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/awesome/" title="Awesome Angular" class="md-nav__link">
+      Awesome Angular
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/babel/" title="Babel" class="md-nav__link">
+      Babel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/bit/" title="Bit" class="md-nav__link">
+      Bit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/cli/" title="Cli" class="md-nav__link">
+      Cli
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/dart/" title="Dart" class="md-nav__link">
+      Dart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/es5/" title="Es5" class="md-nav__link">
+      Es5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/haxe/" title="Haxe" class="md-nav__link">
+      Haxe
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/ionic/" title="Ionic" class="md-nav__link">
+      Ionic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/meteor/" title="Meteor" class="md-nav__link">
+      Meteor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/migrate/" title="如何从Angular4迁移到5" class="md-nav__link">
+      如何从Angular4迁移到5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/migrate6/" title="Migrate6" class="md-nav__link">
+      Migrate6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/nativescript/" title="Nativescript" class="md-nav__link">
+      Nativescript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/ngrx/" title="Ngrx" class="md-nav__link">
+      Ngrx
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/ngx-markdown/" title="ngx-markdown" class="md-nav__link">
+      ngx-markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/react/" title="React" class="md-nav__link">
+      React
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/scala/" title="Scala" class="md-nav__link">
+      Scala
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/security/" title="Security" class="md-nav__link">
+      Security
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/sockets/" title="使用TypeScript的实时应用程序：集成Web套接字，Node和Angular" class="md-nav__link">
+      使用TypeScript的实时应用程序：集成Web套接字，Node和Angular
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/starter/" title="Angular 的 webpack 启动器" class="md-nav__link">
+      Angular 的 webpack 启动器
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/traceur/" title="Traceur" class="md-nav__link">
+      Traceur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/typescript/" title="Typescript" class="md-nav__link">
+      Typescript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/universal/" title="Universal" class="md-nav__link">
+      Universal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-25" type="checkbox" id="nav-6-25">
+    
+    <label class="md-nav__link" for="nav-6-25">
+      Features
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-25">
+        Features
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../angular/features/Test/" title="Test" class="md-nav__link">
+      Test
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Apartment
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Apartment
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../apartment/" title="公寓品牌" class="md-nav__link">
+      公寓品牌
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../apartment/1zu/" title="相寓" class="md-nav__link">
+      相寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../apartment/boonself/" title="邦舍公寓" class="md-nav__link">
+      邦舍公寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../apartment/danke/" title="蛋壳公寓" class="md-nav__link">
+      蛋壳公寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../apartment/guanyu/" title="冠寓" class="md-nav__link">
+      冠寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../apartment/inboyu/" title="泊寓" class="md-nav__link">
+      泊寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../apartment/youranke/" title="悠然客公寓" class="md-nav__link">
+      悠然客公寓
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../apartment/ziroom/" title="自如寓" class="md-nav__link">
+      自如寓
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Blockchain
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Blockchain
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/" title="区块链相关资源" class="md-nav__link">
+      区块链相关资源
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/altcoins/" title="山寨币" class="md-nav__link">
+      山寨币
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/awesome/" title="Awesome Blockchain" class="md-nav__link">
+      Awesome Blockchain
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/term/" title="术语表" class="md-nav__link">
+      术语表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/tree/" title="区块链技术树" class="md-nav__link">
+      区块链技术树
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6" type="checkbox" id="nav-8-6">
+    
+    <label class="md-nav__link" for="nav-8-6">
+      Bitcoin
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-6">
+        Bitcoin
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/bitcoin/" title="比特币" class="md-nav__link">
+      比特币
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-7" type="checkbox" id="nav-8-7">
+    
+    <label class="md-nav__link" for="nav-8-7">
+      Ethereum
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-7">
+        Ethereum
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/ethereum/ProofOfStake/" title="Proof of Stake - 权益证明机制" class="md-nav__link">
+      Proof of Stake - 权益证明机制
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/ethereum/development/" title="以太坊开发计划" class="md-nav__link">
+      以太坊开发计划
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/ethereum/network-status/" title="网络状态监控" class="md-nav__link">
+      网络状态监控
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/ethereum/serpent/" title="Serpent - 大蛇 编写以太坊合约高级编程语言" class="md-nav__link">
+      Serpent - 大蛇 编写以太坊合约高级编程语言
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/ethereum/term/" title="以太坊术语表" class="md-nav__link">
+      以太坊术语表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/ethereum/whitepaper/" title="以太坊（Ethereum ）:下一代智能合约和去中心化应用平台" class="md-nav__link">
+      以太坊（Ethereum ）:下一代智能合约和去中心化应用平台
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-8" type="checkbox" id="nav-8-8">
+    
+    <label class="md-nav__link" for="nav-8-8">
+      Ipfs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-8">
+        Ipfs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/ipfs/" title="星际文件系统（InterPlanetary File System，缩写IPFS）" class="md-nav__link">
+      星际文件系统（InterPlanetary File System，缩写IPFS）
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-9" type="checkbox" id="nav-8-9">
+    
+    <label class="md-nav__link" for="nav-8-9">
+      Twister
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-9">
+        Twister
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/twister/" title="twister - p2p 微博客" class="md-nav__link">
+      twister - p2p 微博客
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/twister/build-osx/" title="OS X 构建说明和注释" class="md-nav__link">
+      OS X 构建说明和注释
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/twister/build-unix/" title="Build unix" class="md-nav__link">
+      Build unix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/twister/building-on-ubuntu-debian/" title="Ubuntu / Debian building instructions" class="md-nav__link">
+      Ubuntu / Debian building instructions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../blockchain/twister/compiling-for-windows/" title="Compiling for windows" class="md-nav__link">
+      Compiling for windows
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Education
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Education
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../education/junior-middle-school/" title="Junior middle school" class="md-nav__link">
+      Junior middle school
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../education/kindergarten/" title="幼儿园" class="md-nav__link">
+      幼儿园
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../education/primary-school/" title="小学" class="md-nav__link">
+      小学
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../education/senior-middle-school/" title="Senior middle school" class="md-nav__link">
+      Senior middle school
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Nodejs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Nodejs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/awesome/" title="Awesome Node.js" class="md-nav__link">
+      Awesome Node.js
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/express/" title="Express" class="md-nav__link">
+      Express
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/koa/" title="Koa" class="md-nav__link">
+      Koa
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/mongoose/" title="Mongoose" class="md-nav__link">
+      Mongoose
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/nodejs/" title="Nodejs" class="md-nav__link">
+      Nodejs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/pm2/" title="Pm2" class="md-nav__link">
+      Pm2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-8" type="checkbox" id="nav-10-8">
+    
+    <label class="md-nav__link" for="nav-10-8">
+      Node modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-10-8">
+        Node modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/node_modules/gm/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-8-2" type="checkbox" id="nav-10-8-2">
+    
+    <label class="md-nav__link" for="nav-10-8-2">
+      Node rsa
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-10-8-2">
+        Node rsa
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/node_modules/node-rsa/jsbn/" title="JavaScript中的RSA和ECC" class="md-nav__link">
+      JavaScript中的RSA和ECC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/node_modules/node-rsa/readme/" title="Node-RSA" class="md-nav__link">
+      Node-RSA
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-8-3" type="checkbox" id="nav-10-8-3">
+    
+    <label class="md-nav__link" for="nav-10-8-3">
+      Qrcode
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-10-8-3">
+        Qrcode
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/node_modules/qrcode/api/" title="Api" class="md-nav__link">
+      Api
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../nodejs/node_modules/qrcode/readme/" title="node-qrcode" class="md-nav__link">
+      node-qrcode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Pin
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        Pin
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pin/cohesion/" title="Cohesion" class="md-nav__link">
+      Cohesion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pin/group/" title="Group" class="md-nav__link">
+      Group
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pin/ladder/" title="Ladder" class="md-nav__link">
+      Ladder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-4" type="checkbox" id="nav-11-4">
+    
+    <label class="md-nav__link" for="nav-11-4">
+      Fresh
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-11-4">
+        Fresh
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pin/fresh/education/" title="Education" class="md-nav__link">
+      Education
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pin/fresh/platform/" title="Platform" class="md-nav__link">
+      Platform
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pin/fresh/repository/" title="Repository" class="md-nav__link">
+      Repository
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12" checked>
+    
+    <label class="md-nav__link" for="nav-12">
+      Python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../PyMongo/" title="关于 PyMongo 发布的一些注释" class="md-nav__link">
+      关于 PyMongo 发布的一些注释
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../awesome/" title="Awesome Python" class="md-nav__link">
+      Awesome Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../framework/" title="2018 年排名前 11 的 Python 框架" class="md-nav__link">
+      2018 年排名前 11 的 Python 框架
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/" title="Python" class="md-nav__link">
+      Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-5" type="checkbox" id="nav-12-5">
+    
+    <label class="md-nav__link" for="nav-12-5">
+      Anaconda
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-5">
+        Anaconda
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Anaconda/QuickStart/" title="Anaconda 入门使用指南" class="md-nav__link">
+      Anaconda 入门使用指南
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-6" type="checkbox" id="nav-12-6" checked>
+    
+    <label class="md-nav__link" for="nav-12-6">
+      FullStack
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-6">
+        FullStack
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mfap0/" title="[Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)" class="md-nav__link">
+      [Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分
+      </label>
+    
+    <a href="./" title="使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分" class="md-nav__link md-nav__link--active">
+      使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="你将要建立什么" class="md-nav__link">
+    你将要建立什么
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pythonflask-angular" title="为何选择 Python，Flask 和 Angular" class="md-nav__link">
+    为何选择 Python，Flask 和 Angular
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="依赖" class="md-nav__link">
+    依赖
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="后端依赖" class="md-nav__link">
+    后端依赖
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="前端依赖" class="md-nav__link">
+    前端依赖
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python" title="自举 Python 应用程序" class="md-nav__link">
+    自举 Python 应用程序
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sqlalchemy-orm" title="使用 SQLAlchemy ORM 管理实体" class="md-nav__link">
+    使用 SQLAlchemy ORM 管理实体
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flask-http" title="使用 Flask 管理 HTTP 请求" class="md-nav__link">
+    使用 Flask 管理 HTTP 请求
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flask-cors" title="在 Flask 应用程序上处理 CORS" class="md-nav__link">
+    在 Flask 应用程序上处理 CORS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angular" title="引导 Angular 应用程序" class="md-nav__link">
+    引导 Angular 应用程序
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angular-flask-endpoints" title="使用 Angular 消耗 Flask Endpoints" class="md-nav__link">
+    使用 Angular 消耗 Flask Endpoints
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="结论和后续步骤" class="md-nav__link">
+    结论和后续步骤
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mfap2/" title="使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分" class="md-nav__link">
+      使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mfap3/" title="使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分" class="md-nav__link">
+      使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-7" type="checkbox" id="nav-12-7">
+    
+    <label class="md-nav__link" for="nav-12-7">
+      Django
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-7">
+        Django
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../django/" title="Django 简要学习文档" class="md-nav__link">
+      Django 简要学习文档
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../django/awesome/" title="<a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>" class="md-nav__link">
+      <a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-8" type="checkbox" id="nav-12-8">
+    
+    <label class="md-nav__link" for="nav-12-8">
+      Flask
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-8">
+        Flask
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../flask/" title="flask 文档" class="md-nav__link">
+      flask 文档
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../flask/awesome/" title="Awesome Flask [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)" class="md-nav__link">
+      Awesome Flask [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-9" type="checkbox" id="nav-12-9">
+    
+    <label class="md-nav__link" for="nav-12-9">
+      Pip
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-9">
+        Pip
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pip/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      Running
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        Running
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../running/bicycle/" title="变速自行车" class="md-nav__link">
+      变速自行车
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../running/card/" title="自动驾驶" class="md-nav__link">
+      自动驾驶
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../running/walk/" title="徒步健身" class="md-nav__link">
+      徒步健身
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      Tools
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tools/" title="器" class="md-nav__link">
+      器
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14-2" type="checkbox" id="nav-14-2">
+    
+    <label class="md-nav__link" for="nav-14-2">
+      Eslint
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-14-2">
+        Eslint
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tools/eslint/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14-3" type="checkbox" id="nav-14-3">
+    
+    <label class="md-nav__link" for="nav-14-3">
+      Vscode
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-14-3">
+        Vscode
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tools/vscode/" title="vscode 文档" class="md-nav__link">
+      vscode 文档
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tools/vscode/prettier/" title="Prettier" class="md-nav__link">
+      Prettier
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      Wechat
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        Wechat
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/" title="微信相关文档" class="md-nav__link">
+      微信相关文档
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/oa/" title="oa" class="md-nav__link">
+      oa
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/weapp-awesome/" title="微信小程序开发资源汇总" class="md-nav__link">
+      微信小程序开发资源汇总
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-4" type="checkbox" id="nav-15-4">
+    
+    <label class="md-nav__link" for="nav-15-4">
+      Open
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-15-4">
+        Open
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-4-2" type="checkbox" id="nav-15-4-2">
+    
+    <label class="md-nav__link" for="nav-15-4-2">
+      App
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-15-4-2">
+        App
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/app/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-4-3" type="checkbox" id="nav-15-4-3">
+    
+    <label class="md-nav__link" for="nav-15-4-3">
+      Code
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-15-4-3">
+        Code
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/code/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-4-4" type="checkbox" id="nav-15-4-4">
+    
+    <label class="md-nav__link" for="nav-15-4-4">
+      D3f
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-15-4-4">
+        D3f
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/d3f/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-4-5" type="checkbox" id="nav-15-4-5">
+    
+    <label class="md-nav__link" for="nav-15-4-5">
+      Download
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-15-4-5">
+        Download
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/download/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/download/android/" title="Android 资源下载" class="md-nav__link">
+      Android 资源下载
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/download/design/" title="设计资源下载" class="md-nav__link">
+      设计资源下载
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/download/ios/" title="iOS 资源下载" class="md-nav__link">
+      iOS 资源下载
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../wechat/open/download/wp8/" title="WP8 资源下载" class="md-nav__link">
+      WP8 资源下载
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="你将要建立什么" class="md-nav__link">
+    你将要建立什么
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pythonflask-angular" title="为何选择 Python，Flask 和 Angular" class="md-nav__link">
+    为何选择 Python，Flask 和 Angular
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="依赖" class="md-nav__link">
+    依赖
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="后端依赖" class="md-nav__link">
+    后端依赖
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="前端依赖" class="md-nav__link">
+    前端依赖
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python" title="自举 Python 应用程序" class="md-nav__link">
+    自举 Python 应用程序
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sqlalchemy-orm" title="使用 SQLAlchemy ORM 管理实体" class="md-nav__link">
+    使用 SQLAlchemy ORM 管理实体
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flask-http" title="使用 Flask 管理 HTTP 请求" class="md-nav__link">
+    使用 Flask 管理 HTTP 请求
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flask-cors" title="在 Flask 应用程序上处理 CORS" class="md-nav__link">
+    在 Flask 应用程序上处理 CORS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angular" title="引导 Angular 应用程序" class="md-nav__link">
+    引导 Angular 应用程序
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angular-flask-endpoints" title="使用 Angular 消耗 Flask Endpoints" class="md-nav__link">
+    使用 Angular 消耗 Flask Endpoints
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="结论和后续步骤" class="md-nav__link">
+    结论和后续步骤
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="pythonflask-angular-web-1">使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分<a class="headerlink" href="#pythonflask-angular-web-1" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>https://auth0.com/blog/using-python-flask-and-angular-to-build-modern-apps-part-1/</p>
+<p>在本系列中，您将学习如何使用 Python，Flask 和 Angular 创建现代 Web 应用程序。</p>
+</blockquote>
+<p>在本系列中，您将学习如何使用 Python，Flask 和 Angular 创建现代 Web 应用程序。
+您将使用此堆栈构建 SPA 和后端 API 以公开考试和问题，以便用户可以测试他们对不同技术的知识。在这个 GitHub 存储库中，您可以找到在本系列的第一部分中创建的最终代码。</p>
+<p>到目前为止，这个系列包含三个部分:</p>
+<ul>
+<li>第 1 部分包括引导 Flask 应用程序，使用 SQLAlchemy ORM 管理实体以及引导 Angular 应用程序等主题。</li>
+<li>第 2 部分包括保护 Flask 应用程序，处理 Angular 表单和保护 Angular Apps 等主题。</li>
+<li>第 3 部分包括配置 Angular Material，处理授权和使用 Alembic 迁移数据库等主题。</li>
+</ul>
+<h2 id="_1">你将要建立什么<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>在本系列中，您将使用 Python，Flask 和 Angular 构建基于现代架构的 Web 应用程序。
+使用 Angular，您将构建一个 SPA（单页应用程序），允许用户浏览考试和问题。
+这些用户在通过身份验证后，将能够通过选择问题所揭示的多个选项之一来测试他们关于特定主题的知识。
+然后，当您的用户提交他们的答案时，您的后端将检查他们是对还是错，记录结果，并将此结果发回给用户。</p>
+<p>当您期待构建现代 Web 应用程序时，您将使用 Auth0 作为应用程序的身份管理系统。
+您还将在数据库中保留所有考试，问题，替代方案和结果。</p>
+<h2 id="pythonflask-angular">为何选择 Python，Flask 和 Angular<a class="headerlink" href="#pythonflask-angular" title="Permanent link">&para;</a></h2>
+<p>正如 StackOverflow 最近分析的那样，Python 是增长最快的编程语言之一，在平台上提出的问题数量上甚至超过了 Java。
+除此之外，该语言也在 GitHub 上大量采用。
+在这个平台上，Python 在 2017 年开放的拉动请求数量上占据第二的位置。</p>
+<p>在使用 Python 开发 Web 应用程序时，您必须在两个流行的框架之间进行选择：Django 或 Flask。
+Django 比 Flask 更成熟，更受欢迎。
+然而，Flask 也有其优势。
+从一开始，Flask 就是可扩展的，并且易于入门。
+与 Django 相比，使用 Flask 构建的应用程序明显更轻。
+因此，Python 开发人员通常将 Flask 称为微框架。</p>
+<p>对于前端应用程序，您将使用 Angular，因为这是最流行的框架之一。
+要了解此框架的优点，您可以在 Rangle.io 上查看这个漂亮的页面。
+如本页所述，Angular 为开发人员提供了构建和构建大型 JavaScript 应用程序所需的工具。
+除此之外，Angular 比一些替代品有一些很大的优势。
+例如，Angular 由 Google 工程师构建和支持。
+除了这些工程师之外，还有一个庞大的社区随时准备帮助您解决问题。</p>
+<p>正如您所看到的，通过选择 Python，Flask 和 Angular 来构建 Web 应用程序，您可以放心，您将始终能够依靠优秀且蓬勃发展的社区来为您提供支持。</p>
+<h2 id="_2">依赖<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>既然您已经了解了为什么 Python，Flask 和 Angular 构建了一个很好的堆栈来构建现代 Web 应用程序，那么您就可以安装本地依赖项了。
+本节分为两个小节，以突出显示后端和前端视图中的环境依赖性。</p>
+<h3 id="_3">后端依赖<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>首先，您需要一个最新版本的 Python 3。
+如果您的开发计算机上没有可用的 Python 3，请浏览 Python 下载页面并进行安装。</p>
+<p>安装 Python 后，您必须安装 pipenv 工具。
+该工具旨在为 Python 开发人员带来最好的打包世界（bundler，composer，npm 等）。
+此外，该工具是 Windows 上的一流公民。
+因此，如果您仍然停留在此操作系统上，请不要担心，您将受到保护。</p>
+<p>要安装 pipenv，只需打开终端并键入以下命令：</p>
+<div class="codehilite"><pre><span></span><span class="c1"># depending on the environment, you will have to use</span>
+<span class="c1"># pip3 instead of pip (just once)</span>
+pip install pipenv
+</pre></div>
+
+<p>Python 和 pipenv 一起就足以开始开发 Flask 应用程序了。
+但是，由于您希望保留事务数据，因此仍需要选择和配置数据库引擎。
+为了让您的生活更轻松，您将使用 SQLAlchemy 来持久化并从所选引擎中检索数据。
+如果您没有 SQLAlchemy 的经验，请查看关于该主题的这篇精彩的介绍性文章。
+在那里，您将了解到通过使用 SQLAlchemy ORM（对象关系映射）扩展，您将能够轻松连接和使用任何主要的 SQL 数据库引擎（例如，</p>
+<p>如果您的计算机上没有可用的数据库，一个很好的方法是使用 Docker 创建一个新数据库:</p>
+<div class="codehilite"><pre><span></span>docker run --name online-exam-db <span class="se">\</span>
+ -p <span class="m">5432</span>:5432 <span class="se">\</span>
+ -e <span class="nv">POSTGRES_DB</span><span class="o">=</span>online-exam <span class="se">\</span>
+ -e <span class="nv">POSTGRES_PASSWORD</span><span class="o">=</span>0NLIN3-ex4m <span class="se">\</span>
+ -d postgres
+</pre></div>
+
+<p>当然，要运行上面的命令，您需要在本地安装 Docker。</p>
+<h3 id="_4">前端依赖<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>当您打算使用 Angular 创建前端应用程序时，您需要在计算机上安装 Node.js 和 NPM。
+您可以通过从 Node.js 下载页面下载并执行安装程序（根据您的操作系统选择一个）来同时安装这两个工具。
+另一种方法是使用 NVM 之类的工具来管理多个主动节点版本。
+在开发机器上，这可能是最好的选择。</p>
+<p>无论您选择哪种安装方法，请确保使用的是最新版本的 Node.js（即&gt; = 8）。</p>
+<p>正确安装 Node.js 和 NPM 后，可以使用 npm 命令安装 Angular CLI 工具。
+您将使用此 CLI（命令行界面）来引导前端应用程序，启动开发服务器以及创建 Angular 组件，服务等。</p>
+<p>使用以下命令安装 Angular CLI:</p>
+<div class="codehilite"><pre><span></span>nstall -g @angular/cli
+</pre></div>
+
+<h2 id="python">自举 Python 应用程序<a class="headerlink" href="#python" title="Permanent link">&para;</a></h2>
+<p>现在您已经处理了环境依赖关系，您可以专注于开发应用程序。
+对于初学者，您可以创建一个目录来保存应用程序的所有前端和后端源代码。
+此外，您可能希望将所有内容提交到 Git 存储库以保证您的进度得以保存。
+因此，请使用以下命令开始构建应用程序:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># create the project root directory</span>
+mkdir online-exam
+<span class="c1"># move into it</span>
+<span class="nb">cd</span> online-exam
+<span class="c1"># initialize it as a Git repository</span>
+git init
+</pre></div>
+
+<p>之后，您将需要专门为 Flask 后端应用程序创建的目录:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># create directory to hold backend source code</span>
+mkdir backend
+<span class="c1"># move into it</span>
+<span class="nb">cd</span> backend
+</pre></div>
+
+<p>然后，您将需要使用 pipenv 来创建虚拟环境。
+如果您不知道为什么需要虚拟环境，请查看 pipenv 作者撰写的这篇精彩文章。</p>
+<div class="codehilite"><pre><span></span><span class="c1"># initialize the virtual environment</span>
+pipenv --three
+</pre></div>
+
+<p>当您使用 Git 备份代码时，您可能希望忽略某些文件。
+为此，请在项目根目录中创建名为.gitignore 的文件，并将此 URL 中的规则复制到其中。</p>
+<h2 id="sqlalchemy-orm">使用 SQLAlchemy ORM 管理实体<a class="headerlink" href="#sqlalchemy-orm" title="Permanent link">&para;</a></h2>
+<p>在设置虚拟环境后，您可以开始开发应用程序的功能。
+一个好的起点是定义实体并配置 SQLAlchemy 以持久化并检索这些实体的实例。
+因此，您将使用 pipenv 安装 sqlalchemy 软件包和驱动程序以连接到您的数据库。
+如果您使用的是 PostgreSQL，则可以将 SQLycopg2-binary 驱动程序与 SQLAlchemy 一起使用。
+如果您正在使用其他数据库引擎，请检查此页面以选择一个好的驱动程序。</p>
+<p>以下命令显示如何使用 pipenv 安装 sqlalchemy 和 psycopg2-binary 驱动程序:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># install sqlalchemy and psycopg2 on the venv</span>
+pipenv install sqlalchemy psycopg2-binary
+</pre></div>
+
+<p>安装 SQLAlchemy 和驱动程序以连接到数据库后，您可以开始创建实体.
+为此，请使用以下命令在另一个名为 src 的模块中创建名为 entities 的模块:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># create directories</span>
+mkdir -p src/entities
+<span class="c1"># create file to mark src as a module</span>
+touch src/**init**.py
+<span class="c1"># create file to mark entities as a module</span>
+touch src/entities/**init**.py
+<span class="c1"># create file to hold some boilerplate code</span>
+touch src/entities/entity.py
+</pre></div>
+
+<p>上面的前两个<code>touch</code>命令只是创建空的<code>** init **.py</code>文件，将两个目录标记为 Python 模块。
+最后一个 <code>touch</code> 命令创建将保存名为 <code>Entity</code> 的类的文件。
+您将使用此类作为所有实体的超类。
+这将有助于避免重复某些样板代码连接到数据库并定义一些常见属性（例如 id 和 created_at）：</p>
+<div class="codehilite"><pre><span></span><span class="c1"># coding=utf-8</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span><span class="p">,</span> <span class="n">Column</span><span class="p">,</span> <span class="n">String</span><span class="p">,</span> <span class="n">Integer</span><span class="p">,</span> <span class="n">DateTime</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.ext.declarative</span> <span class="kn">import</span> <span class="n">declarative_base</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">sessionmaker</span>
+
+<span class="n">db_url</span> <span class="o">=</span> <span class="s1">&#39;localhost:5432&#39;</span>
+<span class="n">db_name</span> <span class="o">=</span> <span class="s1">&#39;online-exam&#39;</span>
+<span class="n">db_user</span> <span class="o">=</span> <span class="s1">&#39;postgres&#39;</span>
+<span class="n">db_password</span> <span class="o">=</span> <span class="s1">&#39;0NLIN3-ex4m&#39;</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;postgresql://{db_user}:{db_password}@{db_url}/{db_name}&#39;</span><span class="p">)</span>
+<span class="n">Session</span> <span class="o">=</span> <span class="n">sessionmaker</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
+
+<span class="n">Base</span> <span class="o">=</span> <span class="n">declarative_base</span><span class="p">()</span>
+
+<span class="k">class</span> <span class="nc">Entity</span><span class="p">():</span>
+<span class="nb">id</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">created_at</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">DateTime</span><span class="p">)</span>
+<span class="n">updated_at</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">DateTime</span><span class="p">)</span>
+<span class="n">last_updated_by</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">String</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">created_by</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">created_at</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">updated_at</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">last_updated_by</span> <span class="o">=</span> <span class="n">created_by</span>
+</pre></div>
+
+<p>然后，在定义 Entity 类之后，您可以创建一个名为 exam.py 的文件来表示您的第一个实体:</p>
+<div class="codehilite"><pre><span></span>touch src/entities/exam.py
+</pre></div>
+
+<p>On this file, insert the following code:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># coding=utf-8</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">Column</span><span class="p">,</span> <span class="n">String</span>
+<span class="kn">from</span> <span class="nn">.entity</span> <span class="kn">import</span> <span class="n">Entity</span><span class="p">,</span> <span class="n">Base</span>
+<span class="k">class</span> <span class="nc">Exam</span><span class="p">(</span><span class="n">Entity</span><span class="p">,</span> <span class="n">Base</span><span class="p">):</span>
+<span class="o">**</span><span class="n">tablename</span><span class="o">**</span> <span class="o">=</span> <span class="s1">&#39;exams&#39;</span>
+
+    <span class="n">title</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">String</span><span class="p">)</span>
+    <span class="n">description</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">String</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">created_by</span><span class="p">):</span>
+        <span class="n">Entity</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">created_by</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">title</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">description</span> <span class="o">=</span> <span class="n">description</span>
+</pre></div>
+
+<p>Here, you are defining a class called Exam that inherits from Entity and from Base.
+This entity contains, besides the properties defined by its superclasses, two properties: title and description.
+Besides that, this class also defines that instances of it must be persisted to and retrieved from a table called exams.</p>
+<p>Having the Exam and Entity classes properly defined, you can create a script called main.py in the src directory to test if they are really connecting to the database:</p>
+<div class="codehilite"><pre><span></span>touch src/main.py
+</pre></div>
+
+<p>Inside this script, you can add the following code:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># coding=utf-8</span>
+<span class="kn">from</span> <span class="nn">.entities.entity</span> <span class="kn">import</span> <span class="n">Session</span><span class="p">,</span> <span class="n">engine</span><span class="p">,</span> <span class="n">Base</span>
+<span class="kn">from</span> <span class="nn">.entities.exam</span> <span class="kn">import</span> <span class="n">Exam</span>
+<span class="c1"># generate database schema</span>
+<span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span>
+<span class="c1"># start session</span>
+<span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<span class="c1"># check for existing data</span>
+<span class="n">exams</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">Exam</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">exams</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># create and persist dummy exam</span>
+<span class="n">python_exam</span> <span class="o">=</span> <span class="n">Exam</span><span class="p">(</span><span class="s2">&quot;SQLAlchemy Exam&quot;</span><span class="p">,</span> <span class="s2">&quot;Test your knowledge about SQLAlchemy.&quot;</span><span class="p">,</span> <span class="s2">&quot;script&quot;</span><span class="p">)</span>
+<span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">python_exam</span><span class="p">)</span>
+<span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="n">session</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="c1"># reload exams</span>
+    <span class="n">exams</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">Exam</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+<span class="c1"># show existing exams</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;### Exams:&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">exam</span> <span class="ow">in</span> <span class="n">exams</span><span class="p">:</span>
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;({exam.id}) {exam.title} - {exam.description}&#39;</span><span class="p">)</span>
+</pre></div>
+
+<p>As you can see, the code in this script is quite simple.
+Here is a list that summarizes what it does:</p>
+<p>It starts by importing Session, engine, and Base from the .entities.entity module.
+Then, it imports the Exam class from the .entities.exam module.
+Then, it generates (if needed) the database schema.
+After generating the schema, it queries all instances of Exam.
+Then, if there are no exams on the database, it creates a new one and queries all instances of the Exam class again.
+Lastly, it prints the exams retrieved from the database.
+To run this script, you will have to activate the virtual environment (created by pipenv) then use python to trigger the src.main module:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># activate virtual environment</span>
+pipenv shell
+<span class="c1"># run main module</span>
+python -m src.main
+</pre></div>
+
+<p>If everything works as expected, your module will create an instance of Exam, persist to the database, and print its details on the terminal.</p>
+<p>SQLAlchemy ORM querying a PostgreSQL database</p>
+<p>By the way, this might be a good time to save your progress:</p>
+<div class="codehilite"><pre><span></span>git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;adding SQLAlchemy and some entities&quot;</span>
+</pre></div>
+
+<h2 id="flask-http">使用 Flask 管理 HTTP 请求<a class="headerlink" href="#flask-http" title="Permanent link">&para;</a></h2>
+<p>Now that your app is connected to a database, it's time to transform it into a Flask web application.
+To do so, the first thing you will need is to install Flask.
+Besides Flask, you will also need to install marshmallow to handle serialization and deserialization of JSON objects.
+To install both dependencies, issue the following command in the backend directory:</p>
+<p>pipenv install flask marshmallow
+After that, you will need to update the ./src/entities/exam.py file as follows:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># coding=utf-8</span>
+<span class="kn">from</span> <span class="nn">marshmallow</span> <span class="kn">import</span> <span class="n">Schema</span><span class="p">,</span> <span class="n">fields</span>
+<span class="c1"># ...</span>
+<span class="n">other</span> <span class="kn">import</span> <span class="nn">statements</span> <span class="o">...</span>
+<span class="c1"># ...</span>
+</pre></div>
+
+<p>Exam class definition ...</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">ExamSchema</span><span class="p">(</span><span class="n">Schema</span><span class="p">):</span>
+<span class="nb">id</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Number</span><span class="p">()</span>
+<span class="n">title</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Str</span><span class="p">()</span>
+<span class="n">description</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Str</span><span class="p">()</span>
+<span class="n">created_at</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">DateTime</span><span class="p">()</span>
+<span class="n">updated_at</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">DateTime</span><span class="p">()</span>
+<span class="n">last_updated_by</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Str</span><span class="p">()</span>
+</pre></div>
+
+<p>In the new version of this file, you are using the Schema class of marshmallow to define a new class called ExamSchema.
+You will use this class to transform instances of Exam into JSON objects.</p>
+<p>After defining ExamSchema, you can refactor the ./src/main.py file to expose two endpoints:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># coding=utf-8</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">jsonify</span><span class="p">,</span> <span class="n">request</span>
+<span class="kn">from</span> <span class="nn">.entities.entity</span> <span class="kn">import</span> <span class="n">Session</span><span class="p">,</span> <span class="n">engine</span><span class="p">,</span> <span class="n">Base</span>
+<span class="kn">from</span> <span class="nn">.entities.exam</span> <span class="kn">import</span> <span class="n">Exam</span><span class="p">,</span> <span class="n">ExamSchema</span>
+<span class="c1"># creating the Flask application</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="o">**</span><span class="n">name</span><span class="o">**</span><span class="p">)</span>
+<span class="c1"># if needed, generate database schema</span>
+<span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span>
+<span class="nd">@app.route</span><span class="p">(</span><span class="s1">&#39;/exams&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">get_exams</span><span class="p">():</span> <span class="c1"># fetching from the database</span>
+<span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<span class="n">exam_objects</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">Exam</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+
+    <span class="c1"># transforming into JSON-serializable objects</span>
+    <span class="n">schema</span> <span class="o">=</span> <span class="n">ExamSchema</span><span class="p">(</span><span class="n">many</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">exams</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">exam_objects</span><span class="p">)</span>
+
+    <span class="c1"># serializing as JSON</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">exams</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+<span class="nd">@app.route</span><span class="p">(</span><span class="s1">&#39;/exams&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;POST&#39;</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">add_exam</span><span class="p">():</span> <span class="c1"># mount exam object</span>
+<span class="n">posted_exam</span> <span class="o">=</span> <span class="n">ExamSchema</span><span class="p">(</span><span class="n">only</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;description&#39;</span><span class="p">))</span>\
+ <span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">get_json</span><span class="p">())</span>
+
+    <span class="n">exam</span> <span class="o">=</span> <span class="n">Exam</span><span class="p">(</span><span class="o">**</span><span class="n">posted_exam</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">created_by</span><span class="o">=</span><span class="s2">&quot;HTTP post request&quot;</span><span class="p">)</span>
+
+    <span class="c1"># persist exam</span>
+    <span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">exam</span><span class="p">)</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+    <span class="c1"># return created exam</span>
+    <span class="n">new_exam</span> <span class="o">=</span> <span class="n">ExamSchema</span><span class="p">()</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">exam</span><span class="p">)</span><span class="o">.</span><span class="n">data</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">new_exam</span><span class="p">),</span> <span class="mi">201</span>
+</pre></div>
+
+<p>This file now creates a Flask application, based on SQLAlchemy and PostgreSQL, that is capable of accepting POST requests to create new instances of exam and capable of accepting GET requests to serialize these instances as a JSON array.</p>
+<p>Now, to facilitate running this application, you can create a script called bootstrap.sh in the backend directory with the following code:</p>
+<div class="codehilite"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="nb">export</span> <span class="nv">FLASK_APP</span><span class="o">=</span>./src/main.py
+<span class="nb">source</span> <span class="se">\$</span><span class="o">(</span>pipenv --venv<span class="o">)</span>/bin/activate
+flask run -h <span class="m">0</span>.0.0.0
+</pre></div>
+
+<p>This script does three things:</p>
+<p>it sets ./src/main.py as the value of the FLASK_APP environment variable (this is needed by the last command);
+it activates the virtual environment;
+and it runs flask listening on all interfaces (-h 0.0.0.0).
+Then, to test everything, you can use the following commands:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># make script executable</span>
+chmod u+x bootstrap.sh
+<span class="c1"># execute script in the background</span>
+./bootstrap.sh <span class="p">&amp;</span>
+<span class="c1"># create a new exam</span>
+curl -X POST -H <span class="s1">&#39;Content-Type: application/json&#39;</span> -d <span class="s1">&#39;{</span>
+<span class="s1">&quot;title&quot;: &quot;TypeScript Advanced Exam&quot;,</span>
+<span class="s1">&quot;description&quot;: &quot;Tricky questions about TypeScript.&quot;</span>
+<span class="s1">}&#39;</span> http://0.0.0.0:5000/exams
+<span class="c1"># retrieve exams</span>
+curl http://0.0.0.0:5000/exams
+</pre></div>
+
+<p>The first command on the snippet above transforms the bootstrap.sh script into an executable file.
+After that, it runs this script in the backend so you can keep using the same terminal.
+When the Flask application is up and running, you can use the two curl commands to interact with it.
+The first one issues POST requests to create new exams and the second one lists all exams persisted on the database.</p>
+<p>Flask application and SQLAlchemy ORM integrated.</p>
+<p>Besides using curl, you can also fetch exams by browsing to http://0.0.0.0:5000/exams.</p>
+<p>You have made some good progress.
+So, it's better to save everything:</p>
+<div class="codehilite"><pre><span></span>git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;integrating Flask RESTful endpoints and SQLAlchemy&quot;</span>
+</pre></div>
+
+<h2 id="flask-cors">在 Flask 应用程序上处理 CORS<a class="headerlink" href="#flask-cors" title="Permanent link">&para;</a></h2>
+<p>As your Flask app will receive requests from a SPA, you will need to allow CORS on it.
+If you don't do so, most browsers will block requests to your API because the backend does not explicitly allow Cross-Origin Resource Sharing (CORS).</p>
+<p>Luckily, there is a Flask module called flask-cors that is easy to configure.
+So, to install this module, issue the following command in your backend directory:</p>
+<div class="codehilite"><pre><span></span>pipenv install flask-cors
+</pre></div>
+
+<p>Then, update the main.py file to take advantage of this module:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># coding=utf-8</span>
+<span class="kn">from</span> <span class="nn">flask_cors</span> <span class="kn">import</span> <span class="n">CORS</span>
+<span class="c1"># ...</span>
+<span class="n">other</span> <span class="kn">import</span> <span class="nn">statements</span> <span class="o">...</span>
+<span class="c1"># creating the Flask application</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="o">**</span><span class="n">name</span><span class="o">**</span><span class="p">)</span>
+<span class="n">CORS</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+<span class="c1"># ...</span>
+<span class="n">create_all</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span> <span class="ow">and</span> <span class="n">endpoint</span> <span class="n">definitions</span> <span class="o">...</span>
+</pre></div>
+
+<p>Without any further configuration, flask-cors allows CORS for all domains on all routes.
+During the development process, this configuration will be enough.
+However, in the future, you will probably want to be more restrictive.
+When the day comes, check the official documentation of the flask-cors module to learn how to tweak these settings.</p>
+<p>Now, before switching to Angular, you can save your progress and leave your Flask application up and running:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># commit your progress</span>
+git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;enabling CORS&quot;</span>
+<span class="c1"># run the Flask app in the background</span>
+./bootstrap.sh <span class="p">&amp;</span>
+</pre></div>
+
+<h2 id="angular">引导 Angular 应用程序<a class="headerlink" href="#angular" title="Permanent link">&para;</a></h2>
+<p>To create your Angular application, you will use the ng tool that Angular CLI made available.
+So, move back to the project root directory and issue ng new frontend.
+This will create the basic structure of an Angular app.
+The following snippet summarizes the commands to create your app and to commit it untouched to your Git repository:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># change working directory to project root</span>
+<span class="nb">cd</span> ..
+<span class="c1"># run @angular/cli to bootstrap the Angular app</span>
+ng new frontend
+<span class="c1"># move working directory to your frontend app</span>
+<span class="nb">cd</span> frontend
+<span class="c1"># commit template Angular project</span>
+git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;bootstrapping an Angular project&quot;</span>
+</pre></div>
+
+<h2 id="angular-flask-endpoints">使用 Angular 消耗 Flask Endpoints<a class="headerlink" href="#angular-flask-endpoints" title="Permanent link">&para;</a></h2>
+<p>After creating your Angular app, the next thing you will need is to create a file called env.ts inside the ./frontend/src/app directory with the following code:</p>
+<div class="codehilite"><pre><span></span><span class="nb">export</span> const <span class="nv">API_URL</span> <span class="o">=</span> <span class="s1">&#39;http://localhost:5000&#39;</span><span class="p">;</span>
+</pre></div>
+
+<p>For now, this TypeScript module simply exports a single constant (API_URL) that references your Flask backend application running locally.
+In the third part of this series, you will enhance this module to define different API_URL values depending on the environment.</p>
+<p>Now, you can create a new directory called exams inside ./frontend/src/app to hold files related to this entity.
+In this directory, you will create two files: exam.model.ts and exams-api.service.ts.
+The first file (exam.model.ts) will have a TypeScript class to represent exams:</p>
+<div class="codehilite"><pre><span></span><span class="kr">export</span> <span class="kr">class</span> <span class="nx">Exam</span> <span class="p">{</span>
+<span class="nx">constructor</span><span class="p">(</span>
+<span class="kr">public</span> <span class="nx">title</span><span class="o">:</span> <span class="nx">string</span><span class="p">,</span>
+<span class="kr">public</span> <span class="nx">description</span><span class="o">:</span> <span class="nx">string</span><span class="p">,</span>
+<span class="kr">public</span> <span class="err">\</span><span class="nx">_id</span><span class="o">?:</span> <span class="nx">number</span><span class="p">,</span>
+<span class="kr">public</span> <span class="nx">updatedAt</span><span class="o">?:</span> <span class="nb">Date</span><span class="p">,</span>
+<span class="kr">public</span> <span class="nx">createdAt</span><span class="o">?:</span> <span class="nb">Date</span><span class="p">,</span>
+<span class="kr">public</span> <span class="nx">lastUpdatedBy</span><span class="o">?:</span> <span class="nx">string</span><span class="p">,</span>
+<span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>The second file, exams-api.service.ts, will create a service that uses HttpClient to fetch exams from your Flask backend application:</p>
+<div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="p">{</span><span class="nx">Injectable</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">HttpClient</span><span class="p">,</span> <span class="nx">HttpErrorResponse</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@angular/common/http&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">Observable</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;rxjs/Observable&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="s1">&#39;rxjs/add/operator/catch&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">API_URL</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;../env&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">Exam</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./exam.model&#39;</span><span class="p">;</span>
+
+<span class="err">@</span><span class="nx">Injectable</span><span class="p">()</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">ExamsApiService</span> <span class="p">{</span>
+
+<span class="nx">constructor</span><span class="p">(</span><span class="kr">private</span> <span class="nx">http</span><span class="o">:</span> <span class="nx">HttpClient</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="kr">private</span> <span class="kr">static</span> <span class="err">\</span><span class="nx">_handleError</span><span class="p">(</span><span class="nx">err</span><span class="o">:</span> <span class="nx">HttpErrorResponse</span> <span class="o">|</span> <span class="nx">any</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">return</span> <span class="nx">Observable</span><span class="p">.</span><span class="k">throw</span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">message</span> <span class="o">||</span> <span class="s1">&#39;Error: Unable to complete request.&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// GET list of public, future events</span>
+<span class="nx">getExams</span><span class="p">()</span><span class="o">:</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">Exam</span><span class="p">[]</span><span class="o">&gt;</span> <span class="p">{</span>
+<span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">http</span>
+<span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">API_URL</span><span class="si">}</span><span class="sb">/exams`</span><span class="p">)</span>
+<span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">ExamsApiService</span><span class="p">.</span><span class="err">\</span><span class="nx">_handleError</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>As this service depends on HttpClient, you will need to import HttpClientModule from Angular in your AppModule declaration.
+Besides that, you will have to register ExamsApiService as a provider.
+So, open the ./frontend/src/app/app.module.ts file and replace its contents with this:</p>
+<div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">BrowserModule</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@angular/platform-browser&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">NgModule</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@angular/core&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">HttpClientModule</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@angular/common/http&quot;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">AppComponent</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;./app.component&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">ExamsApiService</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;./exams/exams-api.service&quot;</span><span class="p">;</span>
+
+<span class="err">@</span><span class="nx">NgModule</span><span class="p">({</span>
+  <span class="nx">declarations</span><span class="o">:</span> <span class="p">[</span><span class="nx">AppComponent</span><span class="p">],</span>
+  <span class="nx">imports</span><span class="o">:</span> <span class="p">[</span><span class="nx">BrowserModule</span><span class="p">,</span> <span class="nx">HttpClientModule</span><span class="p">],</span>
+  <span class="nx">providers</span><span class="o">:</span> <span class="p">[</span><span class="nx">ExamsApiService</span><span class="p">],</span>
+  <span class="nx">bootstrap</span><span class="o">:</span> <span class="p">[</span><span class="nx">AppComponent</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">AppModule</span> <span class="p">{}</span>
+</pre></div>
+
+<p>Now, you will have to update the ./frontend/src/app/app.component.ts file to use your new service to fetch data from your Flask app:</p>
+<div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="p">{</span><span class="nx">Component</span><span class="p">,</span> <span class="nx">OnInit</span><span class="p">,</span> <span class="nx">OnDestroy</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">Subscription</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;rxjs/Subscription&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">ExamsApiService</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./exams/exams-api.service&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">Exam</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./exams/exam.model&#39;</span><span class="p">;</span>
+
+<span class="err">@</span><span class="nx">Component</span><span class="p">({</span>
+<span class="nx">selector</span><span class="o">:</span> <span class="s1">&#39;app-root&#39;</span><span class="p">,</span>
+<span class="nx">templateUrl</span><span class="o">:</span> <span class="s1">&#39;./app.component.html&#39;</span><span class="p">,</span>
+<span class="nx">styleUrls</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;./app.component.css&#39;</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">AppComponent</span> <span class="kr">implements</span> <span class="nx">OnInit</span><span class="p">,</span> <span class="nx">OnDestroy</span> <span class="p">{</span>
+<span class="nx">title</span> <span class="o">=</span> <span class="s1">&#39;app&#39;</span><span class="p">;</span>
+<span class="nx">examsListSubs</span><span class="o">:</span> <span class="nx">Subscription</span><span class="p">;</span>
+<span class="nx">examsList</span><span class="o">:</span> <span class="nx">Exam</span><span class="p">[];</span>
+
+<span class="nx">constructor</span><span class="p">(</span><span class="kr">private</span> <span class="nx">examsApi</span><span class="o">:</span> <span class="nx">ExamsApiService</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="nx">ngOnInit</span><span class="p">()</span> <span class="p">{</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">examsListSubs</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">examsApi</span>
+<span class="p">.</span><span class="nx">getExams</span><span class="p">()</span>
+<span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">res</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">examsList</span> <span class="o">=</span> <span class="nx">res</span><span class="p">;</span>
+<span class="p">},</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">error</span>
+<span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">ngOnDestroy</span><span class="p">()</span> <span class="p">{</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">examsListSubs</span><span class="p">.</span><span class="nx">unsubscribe</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Lastly, you will have to update its template (app.component.html) to show the exams fetched:</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;text-align:center&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Exams<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Here are the exams created so far:<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&quot;let exam of examsList&quot;</span><span class="p">&gt;</span>
+    {{exam.title}}
+  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre></div>
+
+<p>With all these changes in place, you can run your Angular application (run ng serve on the frontend directory) to check if everything is working as expected.
+After Angular finishes compiling your app, you can browse to http://localhost:4200.
+On this URL, you will see a page similar to this:</p>
+<p>使用 Angular 从 Flask 应用程序中获取数据</p>
+<p>这包含了系列的第一部分。
+因此，在继续下一部分之前，不要忘记保存进度:</p>
+<div class="codehilite"><pre><span></span>git add .
+git commit -m <span class="s2">&quot;integrating Flask and Angular&quot;</span>
+</pre></div>
+
+<p>"使用 Angular 和 Flask 开发 Web 应用程序非常简单！"</p>
+<h2 id="_5">结论和后续步骤<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>在本系列的第一部分中，您使用 pipenv 来引导 Flask 后端 API。
+之后，您使用 SQLAlchemy ORM 将 Flask 应用程序与数据库集成。
+然后，您安装并运行了 Angular CLI 以创建新的 Angular SPA。
+最后，您从后端进行了 SPA 提取检查以向访问者显示。
+这些功能共同为创建依赖于 Flask 和 Angular 的应用程序铺平了道路，以提供现代用户体验。</p>
+<p>在下一篇文章中，您将了解现代 Web 应用程序如何管理身份，您将增强后端和前端应用程序以包含更多功能。
+敬请关注！</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../mfap0/" title="[Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  后退
+                </span>
+                [Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../mfap2/" title="使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前进
+                </span>
+                使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            版权 &copy; 2017 - 2018 wohugb.github.io
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    
+      <a href="http://wohugb.github.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/wohugb" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/wohugb" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/wohugb" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.2ba8dec4.js"></script>
+      
+        
+        
+          
+          <script src="../../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+  </body>
+</html>
