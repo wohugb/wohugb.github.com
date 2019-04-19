@@ -1,15 +1,5 @@
 # ngx-markdown
 
-![Ngx-Markdown Logo](https://github.com/jfcere/ngx-markdown/raw/master/demo/src/assets/ngx-markdown.png)
-
-[![CircleCI Status](https://circleci.com/gh/jfcere/ngx-markdown/tree/master.svg?style=shield)](https://circleci.com/gh/jfcere/ngx-markdown)
-[![Coverage Status](https://coveralls.io/repos/github/jfcere/ngx-markdown/badge.svg?branch=master)](https://coveralls.io/github/jfcere/ngx-markdown?branch=master)
-[![NPM Version](https://img.shields.io/npm/v/ngx-markdown.svg?style=flat)](https://www.npmjs.com/package/ngx-markdown)
-[![License](https://img.shields.io/npm/l/ngx-markdown.svg)](https://opensource.org/licenses/MIT)
-[![Monthly Downloads](https://img.shields.io/npm/dm/ngx-markdown.svg)](https://www.npmjs.com/package/ngx-markdown)
-[![Dependencies Status](https://david-dm.org/jfcere/ngx-markdown/status.svg?path=lib)](https://david-dm.org/jfcere/ngx-markdown?path=lib)
-[![PeerDependencies Status](https://david-dm.org/jfcere/ngx-markdown/peer-status.svg?path=lib)](https://david-dm.org/jfcere/ngx-markdown?path=lib&type=peer)
-
 ngx-markdown 是一个[Angular](https://angular.io/)库，它使用[标记](https://github.com/chjj/marked)来解析 html 与[Prism.js](http://prismjs.com/)的结合用于语法高亮。
 
 - 可用演示 @ [https://jfcere.github.io/ngx-markdown](https://jfcere.github.io/ngx-markdown)
@@ -42,11 +32,11 @@ npm install ngx-markdown --save
 
 要激活[Prism.js](http://prismjs.com/)语法高亮显示，您需要包含...
 
-- prism.js core library - `node_modules/prismjs/prism.js` file
-- a highlight css theme - from `node_modules/prismjs/themes` directory
-- desired code language syntax files - from `node_modules/prismjs/components` directory
+- prism.js 核心库 - `node_modules/prismjs/prism.js` 文件
+- 一个突出的CSS主题 - 来自 `node_modules/prismjs/themes` 目录
+- 所需的代码语言语法文件 - 来自 `node_modules/prismjs/components` 目录
 
-_Additional themes can be found by browsing the web such as [Prism-Themes](https://github.com/PrismJS/prism-themes) or [Mokokai](https://github.com/Ahrengot/Monokai-theme-for-Prism.js) for example._
+_通过浏览网页可以找到其他主题，如[Prism-Themes](https://github.com/PrismJS/prism-themes)或[Mokokai](https://github.com/Ahrengot/Monokai-theme- for-Prism.js)例如。_
 
 如果您使用的是[Angular CLI](https://cli.angular.io/)，可以按照下面的`angular.json`示例进行操作...
 
@@ -66,10 +56,10 @@ _Additional themes can be found by browsing the web such as [Prism-Themes](https
 
 要使用显示代码块中行号的[行号插件](http://prismjs.com/plugins/line-numbers/),除 Prism.js 配置文件外，还需要包含以下文件： `prismjs/plugins/line-numbers`目录到你的应用程序：
 
-- css styling for line numbers - `prism-line-numbers.css`
-- line numbers plugin script - `prism-line-numbers.js`
+- css为行号设计样式 - `prism-line-numbers.css`
+- 行号插件脚本 - `prism-line-numbers.js`
 
-If you are using [Angular CLI](https://cli.angular.io/) you can follow the `angular.json` example below...
+如果您使用的是[Angular CLI](https://cli.angular.io/)，可以按照下面的`angular.json`示例进行操作...
 
 ```diff
 "styles": [
@@ -85,9 +75,11 @@ If you are using [Angular CLI](https://cli.angular.io/) you can follow the `angu
 ]
 ```
 
-Using `markdown` component and/or directive, you will be able to use the `lineNumbers` property to activate the plugin. The property can be use in combinaison with either `data` for variable binding, `src` for remote content or using transclusion for static markdown.
+使用`markdown`组件和/或指令，您将能够使用`lineNumbers`属性来激活插件。
+该属性可以与用于变量绑定的`data`，用于远程内容的`src`或用于静态markdown的transclusion组合使用。
 
-Additionaly, you can use `start` input property to specify the offset number for the first display line.
+
+此外，您可以使用`start` input属性指定第一个显示行的偏移号。
 
 ```html
 <markdown [src]="path/to/file.js" lineNumbers [start]="5"></markdown>
@@ -95,12 +87,12 @@ Additionaly, you can use `start` input property to specify the offset number for
 
 #### 线条突出显示插件
 
-To use the [line highlight plugin](http://prismjs.com/plugins/line-highlight/) that highlights specific lines and/or line ranges in code blocks, in addition to Prism.js configuration files, you will need to include the following files from `prismjs/plugins/line-highlight` directory to your application:
+要使用突出显示代码块中特定行和/或行范围的[行高亮插件](http://prismjs.com/plugins/line-highlight/)，除Prism.js配置文件外，您还需要将`prismjs/plugins/line-highlight`目录中的以下文件包含在您的应用程序中:
 
-- css styling for line highlight - `prism-line-highlight.css`
-- line highlight plugin script - `prism-line-highlight.js`
+- css造型为线条突出显示 - `prism-line-highlight.css`
+- 行突出显示插件脚本 - `prism-line-highlight.js`
 
-If you are using [Angular CLI](https://cli.angular.io/) you can follow the `angular.json` example below...
+如果您使用的是[Angular CLI](https://cli.angular.io/)，可以按照下面的`angular.json`示例进行操作...
 
 ```diff
 "styles": [
@@ -116,9 +108,10 @@ If you are using [Angular CLI](https://cli.angular.io/) you can follow the `angu
 ]
 ```
 
-Using `markdown` component and/or directive, you will be able to use the `lineHighlight` property to activate the plugin. The property can be use in combinaison with either `data` for variable binding, `src` for remote content or using transclusion for static markdown.
+使用`markdown`组件和/或指令，您将能够使用`lineHighlight`属性来激活插件。
+该属性可以与用于变量绑定的`data`，用于远程内容的`src`或用于静态markdown的transclusion组合使用。
 
-Use `line` input property to specify the line(s) to highlight and optionally there is a `lineOffset` property to specify the starting line of code your snippet represents.
+使用`line`输入属性指定要突出显示的行，并可选择使用`lineOffset`属性来指定代码段所代表的起始行代码。
 
 ```html
 <markdown
@@ -133,7 +126,7 @@ Use `line` input property to specify the line(s) to highlight and optionally the
 
 ### 主要应用模块
 
-You must import `MarkdownModule` inside your main application module (usually named AppModule) with `forRoot` to be able to use `markdown` component and/or directive.
+您必须使用`forRoot`在主应用程序模块(通常名为AppModule)中导入`MarkdownModule`才能使用`markdown`组件和/或指令。
 
 ```diff
 import { NgModule } from '@angular/core';
@@ -151,7 +144,7 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
-If you want to use the `[src]` attribute to directly load a remote file, in order to keep only one instance of `HttpClient` and avoid issues with interceptors, you also have to provide `HttpClient`:
+您必须使用`forRoot`在主应用程序模块(通常称为AppModule)中导入`MarkdownModule`以使用`markdown`组件和/或指令。:
 
 ```diff
 imports: [
@@ -162,7 +155,7 @@ imports: [
 
 #### MarkedOptions
 
-Optionaly, markdown parsing can be configured by passing [MarkedOptions](https://marked.js.org/#/USING_ADVANCED.md#options) to the `forRoot` method of `MarkdownModule`.
+Optionaly，可以通过将[MarkedOptions](https://marked.js.org/#/USING_ADVANCED.md#options)传递给`MarkdownModule`的`forRoot`方法来配置markdown解析。
 
 Imports:
 
@@ -177,7 +170,7 @@ Default options:
 MarkdownModule.forRoot(),
 ```
 
-Custom options and passing `HttpClient` to use `[src]` attribute:
+自定义选项并传递`HttpClient`以使用`[src]`属性:
 
 ```typescript
 // using specific options with ValueProvider and passing HttpClient
@@ -200,9 +193,9 @@ MarkdownModule.forRoot({
 
 #### MarkedOptions.renderer
 
-`MarkedOptions` also exposes the `renderer` property which allows you to override token rendering for your whole application.
+`MarkedOptions`还公开了`renderer`属性，它允许你覆盖整个应用程序的标记渲染。
 
-The example below overrides the default blockquote token rendering by adding a CSS class for custom styling when using Bootstrap CSS:
+下面的示例通过在使用Bootstrap CSS时添加用于自定义样式的CSS类来覆盖默认的blockquote标记呈现：
 
 ```typescript
 import { MarkedOptions, MarkedRenderer } from 'ngx-markdown';
@@ -239,7 +232,7 @@ MarkdownModule.forRoot({
 
 ### 其他应用模块
 
-Use `forChild` when importing `MarkdownModule` into other application modules to allow you to use the same parser configuration accross your application.
+将`MarkdownModule`导入其他应用程序模块时使用`forChild`，以允许您在应用程序中使用相同的解析器配置。
 
 ```diff
 import { NgModule } from '@angular/core';
@@ -258,14 +251,15 @@ export class HomeModule { }
 
 ## 用法
 
-`ngx-markdown` provides different approaches to help you parse markdown to your application depending of your needs.
+`ngx-markdown`提供了不同的方法来帮助您根据需要解析应用程序的降价。
 
-> :bulb: As of Angular 6, the template compiler strips whitespace by default. Use `ngPreserveWhitespaces` directive to preserve whitespaces such as newlines in order for the markdown-formatted content to render as intended.
+> :bulb: 从Angular 6开始，模板编译器默认情况下会删除空格。使用`ngPreserveWhitespaces`指令来保留空格，例如换行符，以便按照预期呈现降价格式的内容。
 > https://angular.io/api/core/Component#preserveWhitespaces
 
 ### 组件
 
-You can use `markdown` component to either parse static markdown directly from your html markup, load the content from a remote url using `src` property or bind a variable to your component using `data` property. You can get a hook on load complete using `load` output event property or on loading error using `error` output event property.
+你可以使用`markdown`组件直接从你的html标记解析静态markdown，使用`src`属性从远程url加载内容，或者使用`data`属性将变量绑定到你的组件。
+您可以使用`load`输出事件属性或使用`error`输出事件属性加载错误来获取加载完成时的挂钩。
 
 ```html
 <!-- static markdown -->
@@ -286,7 +280,7 @@ You can use `markdown` component to either parse static markdown directly from y
 
 ### Directive
 
-The same way the component works, you can use `markdown` directive to accomplish the same thing.
+组件的工作方式相同，您可以使用`markdown`指令来完成相同的操作。
 
 ```html
 <!-- static markdown -->
@@ -308,7 +302,7 @@ The same way the component works, you can use `markdown` directive to accomplish
 
 ### Pipe
 
-Using `markdown` pipe to transform markdown to HTML allow you to chain pipe transformations and will update the DOM when value changes.
+使用`markdown`管道将markdown转换为HTML允许您链接管道转换，并在值更改时更新DOM。
 
 ```html
 <!-- chain `language` pipe with `markdown` pipe to convert typescriptMarkdown variable content -->
@@ -319,13 +313,14 @@ Using `markdown` pipe to transform markdown to HTML allow you to chain pipe tran
 
 ### Service
 
-You can use `MarkdownService` to have access to markdown parser and syntax highlight methods.
+您可以使用`MarkdownService`访问markdown解析器和语法高亮方法。
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { MarkdownService } from 'ngx-markdown';
 
-@Component({ ... })
+@Component({ ...
+})
 export class ExampleComponent implements OnInit() {
   constructor(private markdownService: MarkdownService) { }
 
@@ -338,12 +333,12 @@ export class ExampleComponent implements OnInit() {
 
 ## Renderer
 
-Tokens can be render in a custom manner by either...
+标记可以通过自定义方式呈现...
 
-- providing the `renderer` property with the `MarkedOptions` when importing `MarkdownModule.forRoot()` into your main application module (see [Configuration](#markedoptionsrenderer) section)
-- using `MarkdownService` exposed `renderer`
+- 在将`MarkdownModule.forRoot()`导入主应用程序模块时，将`renderer`属性与`MarkedOptions`一起提供(参见[Configuration](＃markedoptionsrenderer)部分)
+- 使用`MarkdownService`暴露`renderer`
 
-Here is an example of overriding the default heading token rendering through `MarkdownService` by adding an embedded anchor tag like on GitHub:
+这是一个通过添加嵌入式锚标记来覆盖默认标题标记呈现的示例，通过添加嵌入式锚标记，如GitHub:
 
 ```typescript
 import { Component, OnInit } from "@angular/core";
@@ -380,7 +375,7 @@ export class ExampleComponent implements OnInit() {
 }
 ```
 
-This code will output the following HTML:
+此代码将输出以下HTML:
 
 ```html
 <h1>
@@ -391,11 +386,11 @@ This code will output the following HTML:
 </h1>
 ```
 
-> :blue_book: Follow official [marked.renderer](https://github.com/chjj/marked#block-level-renderer-methods) documentation for the list of tokens that can be overriden.
+> :blue_book: 按照官方[marked.renderer](https://github.com/chjj/marked#block-level-renderer-methods)文档获取可以覆盖的令牌列表。
 
 ## 语法高亮
 
-When using static markdown you are responsible to provide the code block with related language.
+使用静态markdown时，您有责任使用相关语言提供代码块。
 
 ````diff
 <markdown ngPreserveWhitespaces>
@@ -405,7 +400,7 @@ When using static markdown you are responsible to provide the code block with re
 </markdown>
 ````
 
-When using remote url ngx-markdown will use file extension to automatically resolve the code language.
+使用远程url时，ngx-markdown将使用文件扩展名自动解析代码语言。
 
 ```html
 <!-- will use html highlights -->
@@ -415,7 +410,7 @@ When using remote url ngx-markdown will use file extension to automatically reso
 <markdown [src]="'path/to/file.php'"></markdown>
 ```
 
-When using variable binding you can optionally use `language` pipe to specify the language of the variable content (default value is markdown when pipe is not used).
+使用变量绑定时，您可以选择使用`language`管道来指定变量内容的语言(默认值为不使用管道时的降价)。
 
 ```html
 <markdown [data]="markdown | language : 'typescript'"></markdown>
@@ -423,9 +418,9 @@ When using variable binding you can optionally use `language` pipe to specify th
 
 ## 演示应用程序
 
-A demo is available @ [https://jfcere.github.io/ngx-markdown](https://jfcere.github.io/ngx-markdown) and it source code can be found inside the `demo` directory.
+@ [https://jfcere.github.io/ngx-markdown](https://jfcere.github.io/ngx-markdown)提供了一个演示，它的源代码可以在`demo`目录中找到。
 
-The following commands will clone the repository, install npm dependencies and serve the application @ [http://localhost:4200](http://localhost:4200)
+以下命令将克隆存储库，安装npm依赖项并提供应用程序@ [http：// localhost：4200](http：// localhost：4200)
 
 ```bash
 git clone https://github.com/jfcere/ngx-markdown.git
@@ -435,27 +430,27 @@ ng serve
 
 ## AoT 编译
 
-Building with AoT is part of the CI and is tested every time a commit occurs so you don't have to worry at all.
+使用AoT构建是CI的一部分，每次提交时都会对其进行测试，因此您根本不必担心。
 
 ## 路线图
 
-Here is the list of tasks that will be done on this library in a near future ...
+以下是在不久的将来将在此库上完成的任务列表 ...
 
-- ~~Add CircleCI integration~~
-- ~~Publish demo on github pages~~
-- ~~Add variable binding feature~~
-- ~~Transpile library to Javascript~~
-- ~~Make Prism highlight optional~~
-- Support Prism.js customizing options (line-numbers, line-height, ...)
+- ~~添加CircleCI集成~~
+- ~~在github页面上发布演示~~
+- ~~添加变量绑定功能~~
+- ~~将库变换为Javascript~~
+- ~~使棱镜高亮显示可选~~
+- 支持Prism.js自定义选项(行号，行高，...)
 
 ## 贡献
 
-Contributions are always welcome, just make sure that ...
+我们始终欢迎您的贡献，只需确保 ...
 
-- Your code style matches with the rest of the project
-- Unit tests pass
-- Linter passes
+- 您的代码样式与项目的其余部分匹配
+- 单元测试通过
+- Linter传球
 
 ## 执照
 
-Licensed under [MIT](https://opensource.org/licenses/MIT).
+根据[麻省理工](https://opensource.org/licenses/MIT)获得许可.
