@@ -1,0 +1,3733 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="大鼻子的日常学习记录">
+      
+      
+      
+        <meta name="author" content="Nosy">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
+    
+    
+      
+        <title>Angular 的 webpack 启动器 - 大鼻子</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.9299cb39.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#angular-webpack" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="大鼻子" class="md-header__button md-logo" aria-label="大鼻子" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            大鼻子
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Angular 的 webpack 启动器
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wohugb/wohugb.github.com
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="大鼻子" class="md-nav__button md-logo" aria-label="大鼻子" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    大鼻子
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wohugb/wohugb.github.com
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        大鼻子的巴别塔
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../awesome/" class="md-nav__link">
+        Awesome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../github/" class="md-nav__link">
+        GitHub 集合
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Ai
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Ai" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Ai
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/" class="md-nav__link">
+        2017年度30大最惊艳的开源机器学习项目
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/2017/" class="md-nav__link">
+        2017 开源机器学习项目
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/2018/" class="md-nav__link">
+        过去一年 30 个惊人的 Python 项目 (v.2018)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/PhosphorJS/" class="md-nav__link">
+        PhosphorJS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/awesome/" class="md-nav__link">
+        深度学习赞表
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/deeplearning/" class="md-nav__link">
+        Deeplearning
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/jupyterlab/" class="md-nav__link">
+        jupyterlab
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/nlp/" class="md-nav__link">
+        自然语言处理
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/top/" class="md-nav__link">
+        TOP25
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10" type="checkbox" id="__nav_4_10" >
+      
+      <label class="md-nav__link" for="__nav_4_10">
+        Bot
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Bot" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_10">
+          <span class="md-nav__icon md-icon"></span>
+          Bot
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/bot/" class="md-nav__link">
+        机器人
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/bot/arduino/" class="md-nav__link">
+        Arduino
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/bot/framework/" class="md-nav__link">
+        机器人开发框架项目汇总
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/bot/ros/" class="md-nav__link">
+        ROS
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
+      
+      <label class="md-nav__link" for="__nav_4_11">
+        Iot
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Iot" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_11">
+          <span class="md-nav__icon md-icon"></span>
+          Iot
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/iot/InternetOfThings/" class="md-nav__link">
+        物联网
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Aliyun
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Aliyun" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Aliyun
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aliyun/" class="md-nav__link">
+        阿里云相关文档
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aliyun/video/" class="md-nav__link">
+        阿里云点播
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      <label class="md-nav__link" for="__nav_6">
+        Angular
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Angular" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Angular
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Angular
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../angular/" class="md-nav__link">
+        Angular
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../awesome/" class="md-nav__link">
+        Awesome Angular
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../babel/" class="md-nav__link">
+        Babel
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bit/" class="md-nav__link">
+        Bit
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cli/" class="md-nav__link">
+        Cli
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dart/" class="md-nav__link">
+        Dart
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../es5/" class="md-nav__link">
+        Es5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../haxe/" class="md-nav__link">
+        Haxe
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ionic/" class="md-nav__link">
+        Ionic
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meteor/" class="md-nav__link">
+        Meteor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migrate/" class="md-nav__link">
+        如何从Angular4迁移到5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migrate6/" class="md-nav__link">
+        Migrate6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nativescript/" class="md-nav__link">
+        Nativescript
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ngrx/" class="md-nav__link">
+        Ngrx
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ngx-markdown/" class="md-nav__link">
+        ngx-markdown
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../react/" class="md-nav__link">
+        React
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scala/" class="md-nav__link">
+        Scala
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security/" class="md-nav__link">
+        Security
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sockets/" class="md-nav__link">
+        使用TypeScript的实时应用程序：集成Web套接字，Node和Angular
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Angular 的 webpack 启动器
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Angular 的 webpack 启动器
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    快速入门
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    文件结构
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    入门指南
+  </a>
+  
+    <nav class="md-nav" aria-label="入门指南">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    依赖关系
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    安装
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    运行应用
+  </a>
+  
+    <nav class="md-nav" aria-label="运行应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    服务
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    其它命令
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    配置
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aot-donts" class="md-nav__link">
+    AoT Don'ts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    扩展样式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    贡献
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typescript" class="md-nav__link">
+    TypeScript
+  </a>
+  
+    <nav class="md-nav" aria-label="TypeScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-latest-typescript-compiler" class="md-nav__link">
+    Use latest TypeScript compiler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-a-typescript-aware-editor" class="md-nav__link">
+    Use a TypeScript-aware editor
+  </a>
+  
+    <nav class="md-nav" aria-label="Use a TypeScript-aware editor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visual-studio-code-debugger-for-chrome" class="md-nav__link">
+    Visual Studio Code + Debugger for Chrome
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    Types
+  </a>
+  
+    <nav class="md-nav" aria-label="Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    自定义类型定义
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    常见问题
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    支持、问题或反馈
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    部署
+  </a>
+  
+    <nav class="md-nav" aria-label="部署">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    Docker
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker_1" class="md-nav__link">
+    安装 docker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    构建镜像
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    运行镜像
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-and-run-image-using-docker-compose" class="md-nav__link">
+    Build and Run image using docker-compose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-image-on-sub-domain" class="md-nav__link">
+    Run image on sub-domain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#login-into-docker-container" class="md-nav__link">
+    Login into docker container
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#netlify" class="md-nav__link">
+    Netlify
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    证书
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../traceur/" class="md-nav__link">
+        Traceur
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../typescript/" class="md-nav__link">
+        Typescript
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../universal/" class="md-nav__link">
+        Universal
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_25" type="checkbox" id="__nav_6_25" >
+      
+      <label class="md-nav__link" for="__nav_6_25">
+        Features
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Features" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_25">
+          <span class="md-nav__icon md-icon"></span>
+          Features
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/Test/" class="md-nav__link">
+        Test
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        Apartment
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Apartment" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Apartment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apartment/" class="md-nav__link">
+        公寓品牌
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apartment/1zu/" class="md-nav__link">
+        相寓
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apartment/boonself/" class="md-nav__link">
+        邦舍公寓
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apartment/danke/" class="md-nav__link">
+        蛋壳公寓
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apartment/guanyu/" class="md-nav__link">
+        冠寓
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apartment/inboyu/" class="md-nav__link">
+        泊寓
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apartment/youranke/" class="md-nav__link">
+        悠然客公寓
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apartment/ziroom/" class="md-nav__link">
+        自如寓
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      <label class="md-nav__link" for="__nav_8">
+        Blockchain
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Blockchain" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Blockchain
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/" class="md-nav__link">
+        区块链相关资源
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/altcoins/" class="md-nav__link">
+        山寨币
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/awesome/" class="md-nav__link">
+        Awesome Blockchain
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/term/" class="md-nav__link">
+        术语表
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/tree/" class="md-nav__link">
+        区块链技术树
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_6" type="checkbox" id="__nav_8_6" >
+      
+      <label class="md-nav__link" for="__nav_8_6">
+        Bitcoin
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Bitcoin" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_6">
+          <span class="md-nav__icon md-icon"></span>
+          Bitcoin
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/bitcoin/" class="md-nav__link">
+        比特币
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_7" type="checkbox" id="__nav_8_7" >
+      
+      <label class="md-nav__link" for="__nav_8_7">
+        Ethereum
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Ethereum" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_7">
+          <span class="md-nav__icon md-icon"></span>
+          Ethereum
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/ethereum/ProofOfStake/" class="md-nav__link">
+        Proof of Stake - 权益证明机制
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/ethereum/development/" class="md-nav__link">
+        以太坊开发计划
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/ethereum/network-status/" class="md-nav__link">
+        网络状态监控
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/ethereum/serpent/" class="md-nav__link">
+        Serpent - 大蛇 编写以太坊合约高级编程语言
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/ethereum/term/" class="md-nav__link">
+        以太坊术语表
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/ethereum/whitepaper/" class="md-nav__link">
+        以太坊（Ethereum ）:下一代智能合约和去中心化应用平台
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_8" type="checkbox" id="__nav_8_8" >
+      
+      <label class="md-nav__link" for="__nav_8_8">
+        Ipfs
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Ipfs" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_8">
+          <span class="md-nav__icon md-icon"></span>
+          Ipfs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/ipfs/" class="md-nav__link">
+        星际文件系统（InterPlanetary File System，缩写IPFS）
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_9" type="checkbox" id="__nav_8_9" >
+      
+      <label class="md-nav__link" for="__nav_8_9">
+        Twister
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Twister" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_9">
+          <span class="md-nav__icon md-icon"></span>
+          Twister
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/twister/" class="md-nav__link">
+        twister - p2p 微博客
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/twister/build-osx/" class="md-nav__link">
+        OS X 构建说明和注释
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/twister/build-unix/" class="md-nav__link">
+        Build unix
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/twister/building-on-ubuntu-debian/" class="md-nav__link">
+        Ubuntu / Debian building instructions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockchain/twister/compiling-for-windows/" class="md-nav__link">
+        Compiling for windows
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      <label class="md-nav__link" for="__nav_9">
+        Education
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Education" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Education
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/junior-middle-school/" class="md-nav__link">
+        Junior middle school
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/kindergarten/" class="md-nav__link">
+        幼儿园
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/primary-school/" class="md-nav__link">
+        小学
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/senior-middle-school/" class="md-nav__link">
+        Senior middle school
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      <label class="md-nav__link" for="__nav_10">
+        Nodejs
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Nodejs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Nodejs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/awesome/" class="md-nav__link">
+        Awesome Node.js
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/express/" class="md-nav__link">
+        Express
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/koa/" class="md-nav__link">
+        Koa
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/mongoose/" class="md-nav__link">
+        Mongoose
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/nodejs/" class="md-nav__link">
+        Nodejs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/pm2/" class="md-nav__link">
+        Pm2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8" type="checkbox" id="__nav_10_8" >
+      
+      <label class="md-nav__link" for="__nav_10_8">
+        Node modules
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Node modules" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_8">
+          <span class="md-nav__icon md-icon"></span>
+          Node modules
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/node_modules/gm/" class="md-nav__link">
+        概述
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8_2" type="checkbox" id="__nav_10_8_2" >
+      
+      <label class="md-nav__link" for="__nav_10_8_2">
+        Node rsa
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Node rsa" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Node rsa
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/node_modules/node-rsa/jsbn/" class="md-nav__link">
+        JavaScript中的RSA和ECC
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/node_modules/node-rsa/readme/" class="md-nav__link">
+        Node-RSA
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8_3" type="checkbox" id="__nav_10_8_3" >
+      
+      <label class="md-nav__link" for="__nav_10_8_3">
+        Qrcode
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Qrcode" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_8_3">
+          <span class="md-nav__icon md-icon"></span>
+          Qrcode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/node_modules/qrcode/api/" class="md-nav__link">
+        Api
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/node_modules/qrcode/readme/" class="md-nav__link">
+        node-qrcode
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
+      
+      <label class="md-nav__link" for="__nav_11">
+        Pin
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pin" data-md-level="1">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          Pin
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pin/cohesion/" class="md-nav__link">
+        Cohesion
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pin/group/" class="md-nav__link">
+        Group
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pin/ladder/" class="md-nav__link">
+        Ladder
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_4" type="checkbox" id="__nav_11_4" >
+      
+      <label class="md-nav__link" for="__nav_11_4">
+        Fresh
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Fresh" data-md-level="2">
+        <label class="md-nav__title" for="__nav_11_4">
+          <span class="md-nav__icon md-icon"></span>
+          Fresh
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pin/fresh/education/" class="md-nav__link">
+        Education
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pin/fresh/platform/" class="md-nav__link">
+        Platform
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pin/fresh/repository/" class="md-nav__link">
+        Repository
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+      
+      <label class="md-nav__link" for="__nav_12">
+        Python
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Python" data-md-level="1">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/PyMongo/" class="md-nav__link">
+        关于 PyMongo 发布的一些注释
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/awesome/" class="md-nav__link">
+        Awesome Python
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/framework/" class="md-nav__link">
+        2018 年排名前 11 的 Python 框架
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/python/" class="md-nav__link">
+        Python
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_5" type="checkbox" id="__nav_12_5" >
+      
+      <label class="md-nav__link" for="__nav_12_5">
+        Anaconda
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Anaconda" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_5">
+          <span class="md-nav__icon md-icon"></span>
+          Anaconda
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/Anaconda/QuickStart/" class="md-nav__link">
+        Anaconda 入门使用指南
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_6" type="checkbox" id="__nav_12_6" >
+      
+      <label class="md-nav__link" for="__nav_12_6">
+        FullStack
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="FullStack" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_6">
+          <span class="md-nav__icon md-icon"></span>
+          FullStack
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/FullStack/mfap0/" class="md-nav__link">
+        [Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/FullStack/mfap1/" class="md-nav__link">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/FullStack/mfap2/" class="md-nav__link">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/FullStack/mfap3/" class="md-nav__link">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_7" type="checkbox" id="__nav_12_7" >
+      
+      <label class="md-nav__link" for="__nav_12_7">
+        Django
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Django" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_7">
+          <span class="md-nav__icon md-icon"></span>
+          Django
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/django/" class="md-nav__link">
+        Django 简要学习文档
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/django/awesome/" class="md-nav__link">
+        <a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_8" type="checkbox" id="__nav_12_8" >
+      
+      <label class="md-nav__link" for="__nav_12_8">
+        Flask
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Flask" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_8">
+          <span class="md-nav__icon md-icon"></span>
+          Flask
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/flask/" class="md-nav__link">
+        flask 文档
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/flask/awesome/" class="md-nav__link">
+        Awesome Flask [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_9" type="checkbox" id="__nav_12_9" >
+      
+      <label class="md-nav__link" for="__nav_12_9">
+        Pip
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pip" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_9">
+          <span class="md-nav__icon md-icon"></span>
+          Pip
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/pip/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
+      
+      <label class="md-nav__link" for="__nav_13">
+        Running
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Running" data-md-level="1">
+        <label class="md-nav__title" for="__nav_13">
+          <span class="md-nav__icon md-icon"></span>
+          Running
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../running/bicycle/" class="md-nav__link">
+        变速自行车
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../running/card/" class="md-nav__link">
+        自动驾驶
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../running/walk/" class="md-nav__link">
+        徒步健身
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
+      
+      <label class="md-nav__link" for="__nav_14">
+        Tools
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Tools" data-md-level="1">
+        <label class="md-nav__title" for="__nav_14">
+          <span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/" class="md-nav__link">
+        器
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_2" type="checkbox" id="__nav_14_2" >
+      
+      <label class="md-nav__link" for="__nav_14_2">
+        Eslint
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Eslint" data-md-level="2">
+        <label class="md-nav__title" for="__nav_14_2">
+          <span class="md-nav__icon md-icon"></span>
+          Eslint
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/eslint/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_3" type="checkbox" id="__nav_14_3" >
+      
+      <label class="md-nav__link" for="__nav_14_3">
+        Vscode
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Vscode" data-md-level="2">
+        <label class="md-nav__title" for="__nav_14_3">
+          <span class="md-nav__icon md-icon"></span>
+          Vscode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/vscode/" class="md-nav__link">
+        vscode 文档
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/vscode/prettier/" class="md-nav__link">
+        Prettier
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
+      
+      <label class="md-nav__link" for="__nav_15">
+        Wechat
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Wechat" data-md-level="1">
+        <label class="md-nav__title" for="__nav_15">
+          <span class="md-nav__icon md-icon"></span>
+          Wechat
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wechat/" class="md-nav__link">
+        微信相关文档
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wechat/oa/" class="md-nav__link">
+        oa
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wechat/weapp-awesome/" class="md-nav__link">
+        微信小程序开发资源汇总
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4" type="checkbox" id="__nav_15_4" >
+      
+      <label class="md-nav__link" for="__nav_15_4">
+        Open
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Open" data-md-level="2">
+        <label class="md-nav__title" for="__nav_15_4">
+          <span class="md-nav__icon md-icon"></span>
+          Open
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wechat/open/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_2" type="checkbox" id="__nav_15_4_2" >
+      
+      <label class="md-nav__link" for="__nav_15_4_2">
+        App
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="App" data-md-level="3">
+        <label class="md-nav__title" for="__nav_15_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          App
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wechat/open/app/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_3" type="checkbox" id="__nav_15_4_3" >
+      
+      <label class="md-nav__link" for="__nav_15_4_3">
+        Code
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Code" data-md-level="3">
+        <label class="md-nav__title" for="__nav_15_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Code
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wechat/open/code/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_4" type="checkbox" id="__nav_15_4_4" >
+      
+      <label class="md-nav__link" for="__nav_15_4_4">
+        D3f
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="D3f" data-md-level="3">
+        <label class="md-nav__title" for="__nav_15_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          D3f
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wechat/open/d3f/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_5" type="checkbox" id="__nav_15_4_5" >
+      
+      <label class="md-nav__link" for="__nav_15_4_5">
+        Download
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Download" data-md-level="3">
+        <label class="md-nav__title" for="__nav_15_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          Download
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wechat/open/download/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wechat/open/download/android/" class="md-nav__link">
+        Android 资源下载
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wechat/open/download/design/" class="md-nav__link">
+        设计资源下载
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wechat/open/download/ios/" class="md-nav__link">
+        iOS 资源下载
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wechat/open/download/wp8/" class="md-nav__link">
+        WP8 资源下载
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    快速入门
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    文件结构
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    入门指南
+  </a>
+  
+    <nav class="md-nav" aria-label="入门指南">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    依赖关系
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    安装
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    运行应用
+  </a>
+  
+    <nav class="md-nav" aria-label="运行应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    服务
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    其它命令
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    配置
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aot-donts" class="md-nav__link">
+    AoT Don'ts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    扩展样式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    贡献
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typescript" class="md-nav__link">
+    TypeScript
+  </a>
+  
+    <nav class="md-nav" aria-label="TypeScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-latest-typescript-compiler" class="md-nav__link">
+    Use latest TypeScript compiler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-a-typescript-aware-editor" class="md-nav__link">
+    Use a TypeScript-aware editor
+  </a>
+  
+    <nav class="md-nav" aria-label="Use a TypeScript-aware editor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visual-studio-code-debugger-for-chrome" class="md-nav__link">
+    Visual Studio Code + Debugger for Chrome
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    Types
+  </a>
+  
+    <nav class="md-nav" aria-label="Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    自定义类型定义
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    常见问题
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    支持、问题或反馈
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    部署
+  </a>
+  
+    <nav class="md-nav" aria-label="部署">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    Docker
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker_1" class="md-nav__link">
+    安装 docker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    构建镜像
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    运行镜像
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-and-run-image-using-docker-compose" class="md-nav__link">
+    Build and Run image using docker-compose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-image-on-sub-domain" class="md-nav__link">
+    Run image on sub-domain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#login-into-docker-container" class="md-nav__link">
+    Login into docker container
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#netlify" class="md-nav__link">
+    Netlify
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    证书
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="angular-webpack">Angular 的 webpack 启动器</h1>
+<p>Angular Webpack Starter <a href="https://gitter.im/gdi2290/angular-starter?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img alt="Join the chat at https://gitter.im/gdi2290/angular-starter" src="https://badges.gitter.im/Join%20Chat.svg" /></a></p>
+<blockquote>
+<p>An Angular starter kit featuring <a href="https://angular.io">Angular 5</a>, <a href="https://angular.io/docs/ts/latest/cookbook/aot-compiler.html">Ahead of Time Compile</a>, <a href="https://angular.io/docs/ts/latest/guide/router.html">Router</a>, <a href="https://angular.io/docs/ts/latest/guide/forms.html">Forms</a>,
+<a href="https://angular.io/docs/ts/latest/guide/server-communication.html">Http</a>,
+<a href="https://gist.github.com/gdi2290/634101fec1671ee12b3e#_follow_@AngularClass_on_twitter">Services</a>,
+<a href="https://angular.io/docs/ts/latest/guide/testing.html">Tests</a>, <a href="https://angular.github.io/protractor/#/faq#what-s-the-difference-between-karma-and-protractor-when-do-i-use-which-">E2E</a>), <a href="https://karma-runner.github.io/">Karma</a>, <a href="https://angular.github.io/protractor/">Protractor</a>, <a href="https://github.com/jasmine/jasmine">Jasmine</a>, <a href="https://github.com/gotwarlost/istanbul">Istanbul</a>, <a href="http://www.typescriptlang.org/">TypeScript</a>, <a href="https://www.npmjs.com/~types">@types</a>, <a href="http://palantir.github.io/tslint/">TsLint</a>, <a href="https://github.com/mgechev/codelyzer">Codelyzer</a>, <a href="https://webpack.github.io/docs/hot-module-replacement-with-webpack.html">Hot Module Replacement</a>, and <a href="http://webpack.github.io/">Webpack</a> by <a href="https://angularclass.com">AngularClass</a>.</p>
+<p>If you're looking for Angular 1.x please use <a href="https://github.com/angularclass/NG6-starter">NG6-starter</a>
+If you're looking to learn about Webpack and ES6 Build Tools check out <a href="https://github.com/AngularClass/ES6-build-tools">ES6-build-tools</a>
+If you're looking to learn TypeScript see <a href="https://github.com/TypeStrong/learn-typescript">TypeStrong/learn-typescript</a>
+If you're looking for something easier to get started with then see the angular-seed that I also maintain <a href="https://github.com/AngularClass/angular-seed">AngularClass/angular-seed</a></p>
+</blockquote>
+<p>This seed repo serves as an Angular starter for anyone looking to get up and running with Angular and TypeScript fast. Using a <a href="https://webpack.js.org">Webpack 3</a> for building our files and assisting with boilerplate. We're also using Protractor for our end-to-end story and Karma for our unit tests.</p>
+<ul>
+<li>Best practices in file and application organization for Angular.</li>
+<li>Ready to go build system using Webpack for working with TypeScript.</li>
+<li>Angular examples that are ready to go when experimenting with Angular.</li>
+<li>A great Angular seed repo for anyone who wants to start their project.</li>
+<li>Ahead of Time (AoT) compile for rapid page loads of your production builds.</li>
+<li>Tree shaking to automatically remove unused code from your production bundle.</li>
+<li><a href="https://robertknight.github.io/posts/webpack-dll-plugins/">Webpack DLLs</a> dramatically speed your development builds.</li>
+<li>Testing Angular code with Jasmine and Karma.</li>
+<li>Coverage with Istanbul and Karma</li>
+<li>End-to-end Angular code using Protractor.</li>
+<li>Type manager with @types</li>
+<li>Hot Module Replacement with Webpack and <a href="https://github.com/angularclass/angular-hmr">@angularclass/hmr</a> and <a href="https://github.com/angularclass/angular-hmr-loader">@angularclass/hmr-loader</a></li>
+<li>Angular 4 support via changing package.json and any future Angular versions</li>
+</ul>
+<h4 id="_1">快速入门</h4>
+<p><strong>Make sure you have Node version &gt;= 6.0 and NPM &gt;= 3</strong></p>
+<blockquote>
+<p>Clone/Download the repo then edit <code>app.component.ts</code> inside <a href="/src/app/app.component.ts"><code>/src/app/app.component.ts</code></a></p>
+</blockquote>
+<pre><code class="language-bash">## clone our repo
+## --depth 1 removes all but one .git commit history
+git clone --depth 1 https://github.com/AngularClass/angular-starter.git
+
+## change directory to our repo
+cd angular-starter
+
+## WINDOWS only. In terminal as administrator
+npm install -g node-pre-gyp
+
+## install the repo with npm
+npm install
+
+## start the server
+npm start
+
+## use Hot Module Replacement
+npm run server:dev:hmr
+
+## if you're in China use cnpm
+## https://github.com/cnpm/cnpm
+</code></pre>
+<p>go to <a href="http://0.0.0.0:3000">http://0.0.0.0:3000</a> or <a href="http://localhost:3000">http://localhost:3000</a> in your browser</p>
+<h2 id="_2">文件结构</h2>
+<p>We use the component approach in our starter. This is the new standard for developing Angular apps and a great way to ensure maintainable code by encapsulation of our behavior logic. A component is basically a self contained app usually in a single file or a folder with each concern as a file: style, template, specs, e2e, and component class. Here's how it looks:</p>
+<pre><code>angular-starter/
+ ├──config/                        * 配置文件
+ |   ├──helpers.js                 * 配置文件帮助函数
+ |   ├──spec-bundle.js             * ignore this magic that sets up our Angular testing environment
+ |   ├──karma.conf.js              * karma 配置，为单元测试
+ |   ├──protractor.conf.js         * protractor config for our end-to-end tests
+ │   ├──webpack.dev.js             * webpack 开发配置
+ │   ├──webpack.prod.js            * webpack 产品配置
+ │   └──webpack.test.js            * webpack 测试配置
+ │
+ ├──src/                           * 编译成js的源原件
+ |   ├──main.browser.ts            * 浏览环境的入口文件
+ │   │
+ |   ├──index.html                 * 用于生成主页
+ │   │
+ |   ├──polyfills.ts               * polyfills 文件
+ │   │
+ │   ├──app/                       * 应用文件夹
+ │   │   ├──app.component.spec.ts  * a simple test of components in app.component.ts
+ │   │   ├──app.e2e.ts             * a simple end-to-end test for /
+ │   │   └──app.component.ts       * a simple version of our App component components
+ │   │
+ │   └──assets/                    * 静态资源
+ │       ├──icon/                  * our list of icons from www.favicon-generator.org
+ │       ├──service-worker.js      * ignore this. Web App service worker that's not complete yet
+ │       ├──robots.txt             * for search engines to crawl your website
+ │       └──humans.txt             * for humans to know who the developers are
+ │
+ │
+ ├──tslint.json                    * typescript lint 配置
+ ├──typedoc.json                   * typescript 文档成成器
+ ├──tsconfig.json                  * typescript config used outside webpack
+ ├──tsconfig.webpack.json          * config that webpack uses for typescript
+ ├──package.json                   * what npm uses to manage its dependencies
+ └──webpack.config.js              * webpack 主配置文件
+
+</code></pre>
+<h2 id="_3">入门指南</h2>
+<h3 id="_4">依赖关系</h3>
+<p>What you need to run this app:</p>
+<ul>
+<li><code>node</code> and <code>npm</code> (<code>brew install node</code>)</li>
+<li>Ensure you're running the latest versions Node <code>v6.x.x</code>+ (or <code>v7.x.x</code>) and NPM <code>3.x.x</code>+</li>
+</ul>
+<blockquote>
+<p>If you have <code>nvm</code> installed, which is highly recommended (<code>brew install nvm</code>) you can do a <code>nvm install --lts &amp;&amp; nvm use</code> in <code>$</code> to run with the latest Node LTS. You can also have this <code>zsh</code> done for you <a href="https://github.com/creationix/nvm#calling-nvm-use-automatically-in-a-directory-with-a-nvmrc-file">automatically</a></p>
+</blockquote>
+<p>Once you have those, you should install these globals with <code>npm install --global</code>:</p>
+<ul>
+<li><code>webpack</code> (<code>npm install --global webpack</code>)</li>
+<li><code>webpack-dev-server</code> (<code>npm install --global webpack-dev-server</code>)</li>
+<li><code>karma</code> (<code>npm install --global karma-cli</code>)</li>
+<li><code>protractor</code> (<code>npm install --global protractor</code>)</li>
+<li><code>typescript</code> (<code>npm install --global typescript</code>)</li>
+</ul>
+<h3 id="_5">安装</h3>
+<ul>
+<li><code>fork</code> this repo</li>
+<li><code>clone</code> your fork</li>
+<li><code>npm install webpack-dev-server rimraf webpack -g</code> to install required global dependencies</li>
+<li><code>npm install</code> to install all dependencies or <code>yarn</code></li>
+<li><code>npm run server</code> to start the dev server in another tab</li>
+</ul>
+<h3 id="_6">运行应用</h3>
+<p>After you have installed all dependencies you can now run the app. Run <code>npm run server</code> to start a local server using <code>webpack-dev-server</code> which will watch, build (in-memory), and reload for you. The port will be displayed to you as <code>http://0.0.0.0:3000</code> (or if you prefer IPv6, if you're using <code>express</code> server, then it's <code>http://[::1]:3000/</code>).</p>
+<h4 id="_7">服务</h4>
+<pre><code class="language-bash">## development
+npm run server
+## production
+npm run build:prod
+npm run server:prod
+</code></pre>
+<h3 id="_8">其它命令</h3>
+<p>??? info "构建文件"</p>
+<pre><code>```bash
+## development
+npm run build:dev
+## production (jit)
+npm run build:prod
+## AoT
+npm run build:aot
+```
+</code></pre>
+<p>??? info "热模块加载"</p>
+<pre><code>```bash
+npm run server:dev:hmr
+```
+</code></pre>
+<p>??? info "监控并构建文件"</p>
+<pre><code>```bash
+npm run watch
+```
+</code></pre>
+<p>??? info "运行单元测试"</p>
+<pre><code>```bash
+npm run test
+```
+</code></pre>
+<p>??? info "监控并运行测试"</p>
+<pre><code>```bash
+npm run watch:test
+```
+</code></pre>
+<p>??? info "运行 end-to-end 测试"</p>
+<pre><code>```bash
+## update Webdriver (optional, done automatically by postinstall script)
+npm run webdriver:update
+## this will start a test server and launch Protractor
+npm run e2e
+```
+</code></pre>
+<p>??? info "持续集成 (run unit tests and e2e tests together)"</p>
+<pre><code>```bash
+## this will test both your JIT and AoT builds
+npm run ci
+```
+</code></pre>
+<p>??? info "run Protractor's elementExplorer (for end-to-end)"</p>
+<pre><code>```bash
+npm run e2e:live
+```
+</code></pre>
+<p>??? info "构建 Docker"</p>
+<pre><code>```bash
+npm run build:docker
+```
+</code></pre>
+<h2 id="_9">配置</h2>
+<p>Configuration files live in <code>config/</code> we are currently using webpack, karma, and protractor for different stages of your application</p>
+<h2 id="aot-donts">AoT Don'ts</h2>
+<p>The following are some things that will make AoT compile fail.</p>
+<ul>
+<li>Don’t use require statements for your templates or styles, use styleUrls and templateUrls, the angular2-template-loader plugin will change it to require at build time.</li>
+<li>Don’t use default exports.</li>
+<li>Don’t use <code>form.controls.controlName</code>, use <code>form.get(‘controlName’)</code></li>
+<li>Don’t use <code>control.errors?.someError</code>, use <code>control.hasError(‘someError’)</code></li>
+<li>Don’t use functions in your providers, routes or declarations, export a function and then reference that function name</li>
+<li>@Inputs, @Outputs, View or Content Child(ren), Hostbindings, and any field you use from the template or annotate for Angular should be public</li>
+</ul>
+<h2 id="_10">扩展样式</h2>
+<p>Any stylesheets (Sass or CSS) placed in the <code>src/styles</code> directory and imported into your project will automatically be compiled into an external <code>.css</code> and embedded in your production builds.</p>
+<p>For example to use Bootstrap as an external stylesheet:</p>
+<ol>
+<li>Create a <code>styles.scss</code> file (name doesn't matter) in the <code>src/styles</code> directory.</li>
+<li><code>npm install</code> the version of Boostrap you want.</li>
+<li>In <code>styles.scss</code> add <code>@import 'bootstrap/scss/bootstrap.scss';</code></li>
+<li>In <code>src/app/app.module.ts</code> add underneath the other import statements: <code>import '../styles/styles.scss';</code></li>
+</ol>
+<h2 id="_11">贡献</h2>
+<p>You can include more examples as components but they must introduce a new concept such as <code>Home</code> component (separate folders), and Todo (services). I'll accept pretty much everything so feel free to open a Pull-Request</p>
+<h2 id="typescript">TypeScript</h2>
+<blockquote>
+<p>To take full advantage of TypeScript with autocomplete you would have to install it globally and use an editor with the correct TypeScript plugins.</p>
+</blockquote>
+<h3 id="use-latest-typescript-compiler">Use latest TypeScript compiler</h3>
+<p>TypeScript 2.1.x includes everything you need. Make sure to upgrade, even if you installed TypeScript previously.</p>
+<pre><code>npm install --global typescript
+</code></pre>
+<h3 id="use-a-typescript-aware-editor">Use a TypeScript-aware editor</h3>
+<p>We have good experience using these editors:</p>
+<ul>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+<li><a href="https://www.jetbrains.com/webstorm/download/">Webstorm 10</a></li>
+<li><a href="https://atom.io/">Atom</a> with <a href="https://atom.io/packages/atom-typescript">TypeScript plugin</a></li>
+<li><a href="http://www.sublimetext.com/3">Sublime Text</a> with <a href="https://github.com/Microsoft/Typescript-Sublime-plugin#installation">Typescript-Sublime-Plugin</a></li>
+</ul>
+<h4 id="visual-studio-code-debugger-for-chrome">Visual Studio Code + Debugger for Chrome</h4>
+<blockquote>
+<p>Install <a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome">Debugger for Chrome</a> and see docs for instructions to launch Chrome</p>
+</blockquote>
+<p>The included <code>.vscode</code> automatically connects to the webpack development server on port <code>3000</code>.</p>
+<h2 id="types">Types</h2>
+<blockquote>
+<p>When you include a module that doesn't include Type Definitions inside of the module you can include external Type Definitions with @types</p>
+</blockquote>
+<p>i.e, to have youtube api support, run this command in terminal:</p>
+<pre><code class="language-shell">npm i @types/youtube @types/gapi @types/gapi.youtube
+</code></pre>
+<p>In some cases where your code editor doesn't support Typescript 2 yet or these types weren't listed in <code>tsconfig.json</code>, add these to <strong>"src/custom-typings.d.ts"</strong> to make peace with the compile check:</p>
+<pre><code class="language-es6">import &quot;@types/gapi.youtube&quot;;
+import &quot;@types/gapi&quot;;
+import &quot;@types/youtube&quot;;
+</code></pre>
+<h3 id="_12">自定义类型定义</h3>
+<p>When including 3rd party modules you also need to include the type definition for the module
+if they don't provide one within the module. You can try to install it with @types</p>
+<pre><code class="language-sh">&gt; npm install @types/node
+&gt; npm install @types/lodash
+</code></pre>
+<p>If you can't find the type definition in the registry we can make an ambient definition in
+this file for now. For example</p>
+<pre><code class="language-typescript">declare module &quot;my-module&quot; {
+  export function doesSomething(value: string): string;
+}
+</code></pre>
+<p>If you're prototyping and you will fix the types later you can also declare it as type any</p>
+<pre><code class="language-typescript">declare var assert: any;
+declare var _: any;
+declare var $: any;
+</code></pre>
+<p>If you're importing a module that uses Node.js modules which are CommonJS you need to import as</p>
+<pre><code class="language-typescript">import * as _ from &quot;lodash&quot;;
+</code></pre>
+<h2 id="_13">常见问题</h2>
+<p>??? info "Angular 支持哪些浏览器?"</p>
+<pre><code>Please view the updated list of [browser support for Angular 2](https://github.com/angularclass/awesome-angular2#current-browser-support-for-angular-2)
+</code></pre>
+<p>??? info "Why is my service, aka provider, is not injecting parameter correctly?"</p>
+<pre><code>Please use `@Injectable()` for your service for typescript to correctly attach the metadata (this is a TypeScript problem)
+</code></pre>
+<p>??? info "我在哪里写测试?"</p>
+<pre><code> You can write your tests next to your component files. See [`/src/app/home/home.component.spec.ts`](/src/app/home/home.component.spec.ts)
+</code></pre>
+<p>??? info "How do I start the app when I get <code>EACCES</code> and <code>EADDRINUSE</code> errors?"</p>
+<pre><code> The `EADDRINUSE` error means the port `3000` is currently being used and `EACCES` is lack of permission for webpack to build files to `./dist/`
+</code></pre>
+<p>??? info "How to use <code>sass</code> for css?"</p>
+<pre><code> `loaders: ['raw-loader','sass-loader']` and `@Component({ styleUrls: ['./filename.scss'] })` see Wiki page [How to include SCSS in components](https://github.com/AngularClass/angular-starter/wiki/How-to-include-SCSS-in-components), or issue [#136](https://github.com/AngularClass/angular-starter/issues/136) for more information.
+</code></pre>
+<p>??? info "如何测试服务?"</p>
+<pre><code> See issue [#130](https://github.com/AngularClass/angular-starter/issues/130#issuecomment-158872648)
+</code></pre>
+<p>??? info "如何添加 <code>vscode-chrome-debug</code> 支持?"</p>
+<pre><code> The VS Code chrome debug extension support can be done via `launch.json` see issue [#144](https://github.com/AngularClass/angular-starter/issues/144#issuecomment-164063790)
+</code></pre>
+<p>??? info "How do I make the repo work in a virtual machine?"</p>
+<pre><code> You need to use `0.0.0.0` so revert these changes [#205](https://github.com/AngularClass/angular-starter/pull/205/files)
+</code></pre>
+<p>??? info "What are the naming conventions for Angular?"</p>
+<pre><code> please see issue [#185](https://github.com/AngularClass/angular-starter/issues/185) and PR [196](https://github.com/AngularClass/angular-starter/pull/196)
+</code></pre>
+<p>??? info "如何引入 bootstrap 或者 jQuery?"</p>
+<pre><code> please see issue [#215](https://github.com/AngularClass/angular-starter/issues/215) and [#214](https://github.com/AngularClass/angular-starter/issues/214#event-511768416)
+</code></pre>
+<p>??? info "如何异步加载模块?"</p>
+<pre><code> see wiki [How-do-I-async-load-a-component-with-AsyncRoute](https://github.com/AngularClass/angular-starter/wiki/How-do-I-async-load-a-component-with-AsyncRoute)
+</code></pre>
+<p>??? info "Error: Cannot find module 'tapable'"</p>
+<pre><code> Remove `node_modules/` and run `npm cache clean` then `npm install`
+</code></pre>
+<p>??? info "如何开启热模块加载？"</p>
+<pre><code> Run `npm run server:dev:hmr`
+</code></pre>
+<p>??? info "<code>RangeError: Maximum call stack size exceeded</code>"</p>
+<pre><code> This is a problem with minifying Angular and it's recent JIT templates. If you set `mangle` to `false` then you should be good.
+</code></pre>
+<p>??? info "开发环境为什么我的应用非常大?"</p>
+<pre><code> We are using inline source-maps and hot module replacement which will increase the bundle size.
+</code></pre>
+<p>??? info "如果你在中国"</p>
+<pre><code> check out https://github.com/cnpm/cnpm
+</code></pre>
+<p>??? info "node-pre-gyp ERR in npm install (Windows)"</p>
+<pre><code> install Python x86 version between 2.5 and 3.0 on windows see issue [#626](https://github.com/AngularClass/angular-starter/issues/626)
+</code></pre>
+<p>??? info "<code>Error:Error: Parse tsconfig error [{"messageText":"Unknown compiler option 'lib'.","category":1,"code":5023},{"messageText":"Unknown compiler option 'strictNullChecks'.","category":1,"code":5023},{"messageText":"Unknown compiler option 'baseUrl'.","category":1,"code":5023},{"messageText":"Unknown compiler option 'paths'.","category":1,"code":5023},{"messageText":"Unknown compiler option 'types'.","category":1,"code":5023}]</code>"</p>
+<pre><code> remove `node_modules/typescript` and run `npm install typescript@beta`. This repo now uses ts 2.0
+</code></pre>
+<p>??? info "There are multiple modules with names that only differ in casing"</p>
+<pre><code> change `c:\[path to angular-starter]` to `C:\[path to angular-starter]` see [926#issuecomment-245223547](https://github.com/AngularClass/angular-starter/issues/926#issuecomment-245223547)
+</code></pre>
+<h2 id="_14">支持、问题或反馈</h2>
+<blockquote>
+<p>Contact us anytime for anything about this repo or Angular</p>
+</blockquote>
+<ul>
+<li><a href="http://angularclass.com/member-join/">Chat: AngularClass.slack</a></li>
+<li><a href="https://twitter.com/AngularClass">Twitter: @AngularClass</a></li>
+<li><a href="https://gitter.im/angularclass/angular2-webpack-starter">Gitter: AngularClass/angular2-webpack-starter</a></li>
+</ul>
+<h2 id="_15">部署</h2>
+<h3 id="docker">Docker</h3>
+<p>To run project you only need host machine with <strong>operating system</strong> with installed <strong>git</strong> (to clone this repo)
+and <a href="https://www.docker.com/">docker</a> and thats all - any other software is not needed
+(other software like node.js etc. will be automatically downloaded and installed inside docker container during build step based on dockerfile).</p>
+<h4 id="docker_1">安装 docker</h4>
+<p><strong>MacOS:</strong></p>
+<p><code>brew cask install docker</code></p>
+<p>And run docker by Mac bottom menu&gt; launchpad &gt; docker (on first run docker will ask you about password)</p>
+<p><strong>Ubuntu:</strong></p>
+<pre><code class="language-sh">sudo apt-get update
+sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+sudo apt-add-repository 'deb https://apt.dockerproject.org/repo ubuntu-xenial main'
+sudo apt-get update
+apt-cache policy docker-engine
+sudo apt-get install -y docker-engine
+sudo systemctl status docker  ## test:  shoud be ‘active’
+</code></pre>
+<p>And add your user to docker group (to avoid <code>sudo</code> before using <code>docker</code> command in future):</p>
+<pre><code class="language-sh">sudo usermod -aG docker $(whoami)
+</code></pre>
+<p>and logout and login again.</p>
+<h4 id="_16">构建镜像</h4>
+<p>Because <em>node.js</em> is big memory consumer you need 1-2GB RAM or virtual memory to build docker image
+(it was successfully tested on machine with 512MB RAM + 2GB virtual memory - building process take 7min)</p>
+<p>Go to main project folder. To build big (~280MB) image which has cached data and is able to <strong>FAST</strong> rebuild
+(this is good for testing or staging environment) type:</p>
+<p><code>docker build -t angular-starter .</code></p>
+<p>To build <strong>SMALL</strong> (~20MB) image without cache (so each rebuild will take the same amount of time as first build)
+(this is good for production environment) type:</p>
+<p><code>docker build --squash="true" -t angular-starter .</code></p>
+<p>The <strong>angular-starter</strong> name used in above commands is only example image name.
+To remove intermediate images created by docker on build process, type:</p>
+<p><code>docker rmi -f $(docker images -f "dangling=true" -q)</code></p>
+<h4 id="_17">运行镜像</h4>
+<p>To run created docker image on <a href="localhost:8080">localhost:8080</a> type (parameter <code>-p 8080:80</code> is host:container port mapping)</p>
+<p><code>docker run --name angular-starter -p 8080:80 angular-starter &amp;</code></p>
+<p>And that's all, you can open browser and go to <a href="localhost:8080">localhost:8080</a>.</p>
+<h4 id="build-and-run-image-using-docker-compose">Build and Run image using docker-compose</h4>
+<p>To create and run docker image on <a href="localhost:8080">localhost:8080</a> as part of large project you may use <strong>docker-compose</strong>. Type</p>
+<p><code>docker-compose up &amp;</code></p>
+<p>And that's all, you can open browser and go to <a href="localhost:8080">localhost:8080</a>.</p>
+<h4 id="run-image-on-sub-domain">Run image on sub-domain</h4>
+<p>If you want to run image as virtual-host on sub-domain you must setup <a href="https://github.com/jwilder/nginx-proxy">proxy</a>
+. You should install proxy and set sub-domain in this way:</p>
+<pre><code class="language-sh">docker pull jwilder/nginx-proxy:alpine
+docker run -d -p 80:80 --name nginx-proxy -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy:alpine
+</code></pre>
+<p>And in your <code>/etc/hosts</code> file (linux) add line: <code>127.0.0.1 angular-starter.your-domain.com</code> or in yor hosting add folowing DNS record (wildchar <code>*</code> is handy because when you add new sub-domain in future, you don't need to touch/add any DNS record)</p>
+<pre><code class="language-config">Type: CNAME
+Hostname: *.your-domain.com
+Direct to: your-domain.com
+TTL(sec): 43200
+</code></pre>
+<p>And now you are ready to run image on subdomain by:</p>
+<pre><code class="language-sh">docker run -e VIRTUAL_HOST=angular-starter.your-domain.com --name angular-starter angular-starter &amp;
+</code></pre>
+<h4 id="login-into-docker-container">Login into docker container</h4>
+<p><code>docker exec -t -i angular-starter /bin/bash</code></p>
+<h3 id="netlify">Netlify</h3>
+<p>You can quickly create a free site to get started using this
+starter kit in production on <a href="https://www.netlify.com/">Netlify</a>:</p>
+<p><a href="https://app.netlify.com/start/deploy?repository=https://github.com/AngularClass/angular-starter"><img alt="Deploy to Netlify" src="https://www.netlify.com/img/deploy/button.svg" /></a></p>
+<hr />
+<p>enjoy — <a href="https://twitter.com/gdi2290"><strong>PatrickJS</strong></a></p>
+<hr />
+<h2 id="_18">证书</h2>
+<p><a href="/LICENSE">MIT</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../sockets/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              使用TypeScript的实时应用程序：集成Web套接字，Node和Angular
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../traceur/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Traceur
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            版权 &copy; 2017 - 2021 wohugb.github.io
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.7353b375.min.js"></script>
+      
+    
+  </body>
+</html>
