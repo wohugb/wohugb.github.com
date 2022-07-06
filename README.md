@@ -5,14 +5,14 @@
 
 ## 安装 mkdocs-material
 
-### Manually Upgrade mkdocs-material Version with pip
+### 使用 pip 手动升级 mkdocs-material 版本
 
 ```sh
 pip install --upgrade mkdocs-material
 pip show mkdocs-material
 ```
 
-### Includemkdocs-material Python package in a pip requirements.txt file
+### 在 pip requirements.txt 文件中包含 mkdocs-material Python 软件包
 
 创建 `requirements.txt` 输入
 

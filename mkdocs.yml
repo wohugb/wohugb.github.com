@@ -43,14 +43,14 @@ theme:
 #     - icon: fontawesome/brands/github-alt
 #       link: https://github.com/squidfunk
 
-# markdown_extensions:
-#   - admonition
-#   - codehilite:
-#       linenums: false
-#   - footnotes
-#   - meta
-#   - toc:
-#       permalink: true
-#   - pymdownx.superfences
-#   - pymdownx.details
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
 
