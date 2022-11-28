@@ -9,12 +9,11 @@
         <meta name="description" content="大鼻子的日常学习记录">
       
       
-      
         <meta name="author" content="Nosy">
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.7">
     
     
       
@@ -22,26 +21,28 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.9299cb39.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.9d5733d3.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
-    
+    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+
     
     
   </head>
@@ -55,7 +56,6 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -72,7 +72,10 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+    
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="大鼻子" class="md-header__button md-logo" aria-label="大鼻子" data-md-component="logo">
       
@@ -105,19 +108,22 @@
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -134,11 +140,10 @@
     
     
       <div class="md-header__source">
-        
-<a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     wohugb/wohugb.github.com
@@ -147,11 +152,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -177,11 +185,10 @@
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     wohugb/wohugb.github.com
@@ -203,6 +210,7 @@
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
       
         
       
@@ -258,10 +266,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
-      <label class="md-nav__link" for="__nav_4">
-        Ai
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Ai
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ai" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
@@ -270,6 +282,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -280,8 +293,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -292,8 +307,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -304,8 +321,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -316,8 +335,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -328,8 +349,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -340,8 +363,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -352,8 +377,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -364,8 +391,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -376,8 +405,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -387,10 +418,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10" type="checkbox" id="__nav_4_10" >
       
-      <label class="md-nav__link" for="__nav_4_10">
-        Bot
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_10">
+          Bot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Bot" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_10">
           <span class="md-nav__icon md-icon"></span>
@@ -399,6 +434,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -409,8 +445,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -421,8 +459,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -433,8 +473,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -445,14 +487,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -462,10 +507,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
       
-      <label class="md-nav__link" for="__nav_4_11">
-        Iot
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_11">
+          Iot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Iot" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_11">
           <span class="md-nav__icon md-icon"></span>
@@ -474,6 +523,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -484,12 +534,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -510,10 +562,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
-      <label class="md-nav__link" for="__nav_5">
-        Aliyun
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Aliyun
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Aliyun" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
@@ -522,6 +578,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -532,8 +589,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -544,6 +603,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -564,10 +624,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
-      <label class="md-nav__link" for="__nav_6">
-        Angular
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Angular
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Angular" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
@@ -576,6 +640,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -586,8 +651,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -598,8 +665,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -610,8 +679,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -622,8 +693,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -634,8 +707,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -646,8 +721,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -658,8 +735,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -670,8 +749,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -682,8 +763,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -694,8 +777,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -706,8 +791,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -718,8 +805,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -730,8 +819,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -742,8 +833,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -754,8 +847,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -766,8 +861,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -778,8 +875,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -790,8 +889,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -802,8 +903,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -814,8 +917,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -826,8 +931,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -838,8 +945,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -850,8 +959,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -862,8 +973,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -873,10 +986,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_25" type="checkbox" id="__nav_6_25" >
       
-      <label class="md-nav__link" for="__nav_6_25">
-        Features
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_25">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Features" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_25">
           <span class="md-nav__icon md-icon"></span>
@@ -885,6 +1002,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -895,12 +1013,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -921,10 +1041,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="__nav_7">
-        Apartment
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Apartment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Apartment" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
@@ -933,6 +1057,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -943,8 +1068,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -955,8 +1082,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -967,8 +1096,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -979,8 +1110,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -991,8 +1124,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1003,8 +1138,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1015,8 +1152,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1027,6 +1166,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1047,10 +1187,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
-      <label class="md-nav__link" for="__nav_8">
-        Blockchain
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Blockchain
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Blockchain" data-md-level="1">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1059,6 +1203,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1069,8 +1214,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1081,8 +1228,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1093,8 +1242,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1105,8 +1256,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1117,8 +1270,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1128,10 +1283,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_6" type="checkbox" id="__nav_8_6" >
       
-      <label class="md-nav__link" for="__nav_8_6">
-        Bitcoin
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_6">
+          Bitcoin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Bitcoin" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_6">
           <span class="md-nav__icon md-icon"></span>
@@ -1140,6 +1299,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1150,14 +1310,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1167,10 +1330,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_7" type="checkbox" id="__nav_8_7" >
       
-      <label class="md-nav__link" for="__nav_8_7">
-        Ethereum
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_7">
+          Ethereum
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ethereum" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_7">
           <span class="md-nav__icon md-icon"></span>
@@ -1179,6 +1346,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1189,8 +1357,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1201,8 +1371,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1213,8 +1385,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1225,8 +1399,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1237,8 +1413,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1249,14 +1427,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1266,10 +1447,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_8" type="checkbox" id="__nav_8_8" >
       
-      <label class="md-nav__link" for="__nav_8_8">
-        Ipfs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_8">
+          Ipfs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ipfs" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1278,6 +1463,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1288,14 +1474,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1305,10 +1494,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_9" type="checkbox" id="__nav_8_9" >
       
-      <label class="md-nav__link" for="__nav_8_9">
-        Twister
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_9">
+          Twister
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Twister" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1317,6 +1510,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1327,8 +1521,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1339,8 +1535,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1351,8 +1549,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1363,8 +1563,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1375,12 +1577,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1401,10 +1605,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
       
-      <label class="md-nav__link" for="__nav_9">
-        Education
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Education
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Education" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1413,6 +1621,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1423,8 +1632,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1435,8 +1646,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1447,8 +1660,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1459,6 +1674,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1479,102 +1695,37 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
       
-      <label class="md-nav__link" for="__nav_10">
-        Nodejs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Nodejs" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Langs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Langs" data-md-level="1">
         <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
-          Nodejs
+          Langs
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="nodejs/" class="md-nav__link">
+      <a href="langs/" class="md-nav__link">
         Index
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="nodejs/awesome/" class="md-nav__link">
-        Awesome Node.js
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="nodejs/express/" class="md-nav__link">
-        Express
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="nodejs/koa/" class="md-nav__link">
-        Koa
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="nodejs/mongoose/" class="md-nav__link">
-        Mongoose
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="nodejs/nodejs/" class="md-nav__link">
-        Nodejs
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="nodejs/pm2/" class="md-nav__link">
-        Pm2
-      </a>
-    </li>
-  
-
-          
-            
+              
   
   
   
@@ -1582,138 +1733,43 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8" type="checkbox" id="__nav_10_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" >
       
-      <label class="md-nav__link" for="__nav_10_8">
-        Node modules
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Node modules" data-md-level="2">
-        <label class="md-nav__title" for="__nav_10_8">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_2">
+          Go
           <span class="md-nav__icon md-icon"></span>
-          Node modules
+        </label>
+      
+      <nav class="md-nav" aria-label="Go" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_2">
+          <span class="md-nav__icon md-icon"></span>
+          Go
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="nodejs/node_modules/gm/" class="md-nav__link">
-        概述
+      <a href="langs/go/" class="md-nav__link">
+        Index
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8_2" type="checkbox" id="__nav_10_8_2" >
-      
-      <label class="md-nav__link" for="__nav_10_8_2">
-        Node rsa
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Node rsa" data-md-level="3">
-        <label class="md-nav__title" for="__nav_10_8_2">
-          <span class="md-nav__icon md-icon"></span>
-          Node rsa
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="nodejs/node_modules/node-rsa/jsbn/" class="md-nav__link">
-        JavaScript中的RSA和ECC
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="nodejs/node_modules/node-rsa/readme/" class="md-nav__link">
-        Node-RSA
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8_3" type="checkbox" id="__nav_10_8_3" >
-      
-      <label class="md-nav__link" for="__nav_10_8_3">
-        Qrcode
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Qrcode" data-md-level="3">
-        <label class="md-nav__title" for="__nav_10_8_3">
-          <span class="md-nav__icon md-icon"></span>
-          Qrcode
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="nodejs/node_modules/qrcode/api/" class="md-nav__link">
-        Api
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="nodejs/node_modules/qrcode/readme/" class="md-nav__link">
-        node-qrcode
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -1734,54 +1790,121 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
       
-      <label class="md-nav__link" for="__nav_11">
-        Pin
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Pin" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11">
+          Nodejs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Nodejs" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
-          Pin
+          Nodejs
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="pin/cohesion/" class="md-nav__link">
-        Cohesion
+      <a href="nodejs/" class="md-nav__link">
+        Index
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="pin/group/" class="md-nav__link">
-        Group
+      <a href="nodejs/awesome/" class="md-nav__link">
+        Awesome Node.js
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="pin/ladder/" class="md-nav__link">
-        Ladder
+      <a href="nodejs/express/" class="md-nav__link">
+        Express
       </a>
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nodejs/koa/" class="md-nav__link">
+        Koa
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nodejs/mongoose/" class="md-nav__link">
+        Mongoose
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nodejs/nodejs/" class="md-nav__link">
+        Nodejs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nodejs/pm2/" class="md-nav__link">
+        Pm2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1789,60 +1912,165 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_4" type="checkbox" id="__nav_11_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8" type="checkbox" id="__nav_11_8" >
       
-      <label class="md-nav__link" for="__nav_11_4">
-        Fresh
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Fresh" data-md-level="2">
-        <label class="md-nav__title" for="__nav_11_4">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8">
+          Node modules
           <span class="md-nav__icon md-icon"></span>
-          Fresh
+        </label>
+      
+      <nav class="md-nav" aria-label="Node modules" data-md-level="2">
+        <label class="md-nav__title" for="__nav_11_8">
+          <span class="md-nav__icon md-icon"></span>
+          Node modules
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="pin/fresh/education/" class="md-nav__link">
-        Education
+      <a href="nodejs/node_modules/gm/" class="md-nav__link">
+        概述
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
-    <li class="md-nav__item">
-      <a href="pin/fresh/platform/" class="md-nav__link">
-        Platform
-      </a>
-    </li>
-  
-
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8_2" type="checkbox" id="__nav_11_8_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8_2">
+          Node rsa
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Node rsa" data-md-level="3">
+        <label class="md-nav__title" for="__nav_11_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Node rsa
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="pin/fresh/repository/" class="md-nav__link">
-        Repository
+      <a href="nodejs/node_modules/node-rsa/jsbn/" class="md-nav__link">
+        JavaScript中的RSA和ECC
       </a>
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nodejs/node_modules/node-rsa/readme/" class="md-nav__link">
+        Node-RSA
+      </a>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8_3" type="checkbox" id="__nav_11_8_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8_3">
+          Qrcode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Qrcode" data-md-level="3">
+        <label class="md-nav__title" for="__nav_11_8_3">
+          <span class="md-nav__icon md-icon"></span>
+          Qrcode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nodejs/node_modules/qrcode/api/" class="md-nav__link">
+        Api
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nodejs/node_modules/qrcode/readme/" class="md-nav__link">
+        node-qrcode
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
@@ -1863,105 +2091,93 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
       
-      <label class="md-nav__link" for="__nav_12">
-        Python
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Python" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12">
+          Pin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Pin" data-md-level="1">
         <label class="md-nav__title" for="__nav_12">
           <span class="md-nav__icon md-icon"></span>
-          Python
+          Pin
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="python/PyMongo/" class="md-nav__link">
-        关于 PyMongo 发布的一些注释
+      <a href="pin/" class="md-nav__link">
+        拼团开发
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="python/awesome/" class="md-nav__link">
-        Awesome Python
+      <a href="pin/cohesion/" class="md-nav__link">
+        Cohesion
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="python/framework/" class="md-nav__link">
-        2018 年排名前 11 的 Python 框架
+      <a href="pin/group/" class="md-nav__link">
+        Group
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="python/python/" class="md-nav__link">
-        Python
+      <a href="pin/ladder/" class="md-nav__link">
+        Ladder
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_5" type="checkbox" id="__nav_12_5" >
-      
-      <label class="md-nav__link" for="__nav_12_5">
-        Anaconda
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Anaconda" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_5">
-          <span class="md-nav__icon md-icon"></span>
-          Anaconda
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="python/Anaconda/QuickStart/" class="md-nav__link">
-        Anaconda 入门使用指南
+      <a href="pin/sku-spu/" class="md-nav__link">
+        sku spu
       </a>
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
+            
           
             
+              
   
   
   
@@ -1971,211 +2187,69 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_6" type="checkbox" id="__nav_12_6" >
       
-      <label class="md-nav__link" for="__nav_12_6">
-        FullStack
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="FullStack" data-md-level="2">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_6">
+          Fresh
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Fresh" data-md-level="2">
         <label class="md-nav__title" for="__nav_12_6">
           <span class="md-nav__icon md-icon"></span>
-          FullStack
+          Fresh
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="python/FullStack/mfap0/" class="md-nav__link">
-        [Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)
+      <a href="pin/fresh/education/" class="md-nav__link">
+        Education
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="python/FullStack/mfap1/" class="md-nav__link">
-        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分
+      <a href="pin/fresh/platform/" class="md-nav__link">
+        Platform
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="python/FullStack/mfap2/" class="md-nav__link">
-        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分
+      <a href="pin/fresh/repository/" class="md-nav__link">
+        Repository
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="python/FullStack/mfap3/" class="md-nav__link">
-        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_7" type="checkbox" id="__nav_12_7" >
-      
-      <label class="md-nav__link" for="__nav_12_7">
-        Django
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Django" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_7">
-          <span class="md-nav__icon md-icon"></span>
-          Django
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="python/django/" class="md-nav__link">
-        Django 简要学习文档
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="python/django/awesome/" class="md-nav__link">
-        <a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_8" type="checkbox" id="__nav_12_8" >
-      
-      <label class="md-nav__link" for="__nav_12_8">
-        Flask
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Flask" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_8">
-          <span class="md-nav__icon md-icon"></span>
-          Flask
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="python/flask/" class="md-nav__link">
-        flask 文档
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="python/flask/awesome/" class="md-nav__link">
-        Awesome Flask [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_9" type="checkbox" id="__nav_12_9" >
-      
-      <label class="md-nav__link" for="__nav_12_9">
-        Pip
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Pip" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_9">
-          <span class="md-nav__icon md-icon"></span>
-          Pip
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="python/pip/" class="md-nav__link">
-        Index
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -2196,52 +2270,381 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
       
-      <label class="md-nav__link" for="__nav_13">
-        Running
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Running" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13">
+          Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Python" data-md-level="1">
         <label class="md-nav__title" for="__nav_13">
           <span class="md-nav__icon md-icon"></span>
-          Running
+          Python
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="running/bicycle/" class="md-nav__link">
-        变速自行车
+      <a href="python/PyMongo/" class="md-nav__link">
+        关于 PyMongo 发布的一些注释
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="running/card/" class="md-nav__link">
-        自动驾驶
+      <a href="python/awesome/" class="md-nav__link">
+        Awesome Python
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="running/walk/" class="md-nav__link">
-        徒步健身
+      <a href="python/framework/" class="md-nav__link">
+        2018 年排名前 11 的 Python 框架
       </a>
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="python/python/" class="md-nav__link">
+        Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_5" type="checkbox" id="__nav_13_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_5">
+          Anaconda
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Anaconda" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_5">
+          <span class="md-nav__icon md-icon"></span>
+          Anaconda
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="python/Anaconda/QuickStart/" class="md-nav__link">
+        Anaconda 入门使用指南
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_6" type="checkbox" id="__nav_13_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_6">
+          FullStack
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="FullStack" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_6">
+          <span class="md-nav__icon md-icon"></span>
+          FullStack
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="python/FullStack/mfap0/" class="md-nav__link">
+        [Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="python/FullStack/mfap1/" class="md-nav__link">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="python/FullStack/mfap2/" class="md-nav__link">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="python/FullStack/mfap3/" class="md-nav__link">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_7" type="checkbox" id="__nav_13_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_7">
+          Django
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Django" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_7">
+          <span class="md-nav__icon md-icon"></span>
+          Django
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="python/django/" class="md-nav__link">
+        Django 简要学习文档
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="python/django/awesome/" class="md-nav__link">
+        <a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_8" type="checkbox" id="__nav_13_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_8">
+          Flask
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Flask" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_8">
+          <span class="md-nav__icon md-icon"></span>
+          Flask
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="python/flask/" class="md-nav__link">
+        flask 文档
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="python/flask/awesome/" class="md-nav__link">
+        Awesome Flask [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_9" type="checkbox" id="__nav_13_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_9">
+          Pip
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Pip" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_9">
+          <span class="md-nav__icon md-icon"></span>
+          Pip
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="python/pip/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
@@ -2262,118 +2665,62 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
       
-      <label class="md-nav__link" for="__nav_14">
-        Tools
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Tools" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_14">
+          Running
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Running" data-md-level="1">
         <label class="md-nav__title" for="__nav_14">
           <span class="md-nav__icon md-icon"></span>
-          Tools
+          Running
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="tools/" class="md-nav__link">
-        器
+      <a href="running/bicycle/" class="md-nav__link">
+        变速自行车
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_2" type="checkbox" id="__nav_14_2" >
-      
-      <label class="md-nav__link" for="__nav_14_2">
-        Eslint
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Eslint" data-md-level="2">
-        <label class="md-nav__title" for="__nav_14_2">
-          <span class="md-nav__icon md-icon"></span>
-          Eslint
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="tools/eslint/" class="md-nav__link">
-        Index
+      <a href="running/card/" class="md-nav__link">
+        自动驾驶
       </a>
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_3" type="checkbox" id="__nav_14_3" >
-      
-      <label class="md-nav__link" for="__nav_14_3">
-        Vscode
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Vscode" data-md-level="2">
-        <label class="md-nav__title" for="__nav_14_3">
-          <span class="md-nav__icon md-icon"></span>
-          Vscode
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="tools/vscode/" class="md-nav__link">
-        vscode 文档
+      <a href="running/walk/" class="md-nav__link">
+        徒步健身
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="tools/vscode/prettier/" class="md-nav__link">
-        Prettier
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -2394,18 +2741,179 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
       
-      <label class="md-nav__link" for="__nav_15">
-        Wechat
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Wechat" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15">
+          Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tools" data-md-level="1">
         <label class="md-nav__title" for="__nav_15">
+          <span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tools/" class="md-nav__link">
+        器
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_2" type="checkbox" id="__nav_15_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15_2">
+          Eslint
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Eslint" data-md-level="2">
+        <label class="md-nav__title" for="__nav_15_2">
+          <span class="md-nav__icon md-icon"></span>
+          Eslint
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tools/eslint/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_3" type="checkbox" id="__nav_15_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15_3">
+          Vscode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Vscode" data-md-level="2">
+        <label class="md-nav__title" for="__nav_15_3">
+          <span class="md-nav__icon md-icon"></span>
+          Vscode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tools/vscode/" class="md-nav__link">
+        vscode 文档
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tools/vscode/prettier/" class="md-nav__link">
+        Prettier
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16">
+          Wechat
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Wechat" data-md-level="1">
+        <label class="md-nav__title" for="__nav_16">
           <span class="md-nav__icon md-icon"></span>
           Wechat
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2416,8 +2924,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2428,8 +2938,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2440,8 +2952,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2449,20 +2963,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4" type="checkbox" id="__nav_15_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4" type="checkbox" id="__nav_16_4" >
       
-      <label class="md-nav__link" for="__nav_15_4">
-        Open
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4">
+          Open
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Open" data-md-level="2">
-        <label class="md-nav__title" for="__nav_15_4">
+        <label class="md-nav__title" for="__nav_16_4">
           <span class="md-nav__icon md-icon"></span>
           Open
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2473,8 +2992,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2482,20 +3003,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_2" type="checkbox" id="__nav_15_4_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_2" type="checkbox" id="__nav_16_4_2" >
       
-      <label class="md-nav__link" for="__nav_15_4_2">
-        App
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_2">
+          App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="App" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_2">
+        <label class="md-nav__title" for="__nav_16_4_2">
           <span class="md-nav__icon md-icon"></span>
           App
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2506,14 +3032,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2521,20 +3050,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_3" type="checkbox" id="__nav_15_4_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_3" type="checkbox" id="__nav_16_4_3" >
       
-      <label class="md-nav__link" for="__nav_15_4_3">
-        Code
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_3">
+          Code
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Code" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_3">
+        <label class="md-nav__title" for="__nav_16_4_3">
           <span class="md-nav__icon md-icon"></span>
           Code
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2545,14 +3079,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2560,20 +3097,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_4" type="checkbox" id="__nav_15_4_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_4" type="checkbox" id="__nav_16_4_4" >
       
-      <label class="md-nav__link" for="__nav_15_4_4">
-        D3f
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_4">
+          D3f
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="D3f" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_4">
+        <label class="md-nav__title" for="__nav_16_4_4">
           <span class="md-nav__icon md-icon"></span>
           D3f
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2584,14 +3126,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2599,20 +3144,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_5" type="checkbox" id="__nav_15_4_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_5" type="checkbox" id="__nav_16_4_5" >
       
-      <label class="md-nav__link" for="__nav_15_4_5">
-        Download
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_5">
+          Download
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Download" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_5">
+        <label class="md-nav__title" for="__nav_16_4_5">
           <span class="md-nav__icon md-icon"></span>
           Download
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2623,8 +3173,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2635,8 +3187,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2647,8 +3201,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2659,8 +3215,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2671,18 +3229,21 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -2702,7 +3263,9 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -2718,28 +3281,31 @@
             <article class="md-content__inner md-typeset">
               
                 
-                
-                <h1 id="_1">大鼻子的巴别塔</h1>
+
+
+<h1 id="_1">大鼻子的巴别塔<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <p><a href="https://baike.baidu.com/item/%E4%BA%92%E8%81%94%E7%BD%91%E7%B2%BE%E7%A5%9E">互联网精神的百度词条</a>是这么定义的，<code>“互联网精神”即：开放、平等、协作、快速、分享 。它是互联网生命力之所在，也是新经济能否发展的命脉，是其发展的关键。</code>,可纵观现在的互联网现状，开放和平等将逐渐失去意义，而封闭集权将逐渐盛行，如果这些越来越强大，那所谓的互联网还是互联网吗？</p>
-<p>!!! danger "什么是互联网？"</p>
-<pre><code>***这是维基百科的定义***
-
-互联网或国际网（英语：Internet），是网络与网络之间所串连成的庞大网络，这些网络以一组标准的网络TCP/IP协议族相连，连接全世界几十亿个设备，形成逻辑上的单一巨大国际网络。[1]，它是由从地方到全球范围内几百万个私人的、学术界的、企业的和政府的网络所构成，通过电子，无线和光纤网络技术等等一系列广泛的技术联系在一起。这种将计算机网络互相联接在一起的方法可称作“网络互联”，在这基础上发展出覆盖全世界的全球性互联网络称互联网，即是互相连接一起的网络。互联网并不等同万维网（WWW），万维网只是一个基于超文本相互链接而成的全球性系统，且是互联网所能提供的服务其中之一。互联网带有范围广泛的信息资源和服务，例如相互关系的超文本文件，还有万维网的应用，支持电子邮件的基础设施，点对点网络，文件共享，以及IP电话服务。
-</code></pre>
-<p>!!! danger "机器人三大定律，推导的结果"</p>
-<pre><code>**定律**
-
-- 零 机器人不得伤害人类整体，或因不作为使人类整体受到伤害。
-- 一 机器人不得伤害人类，或因不作为使人类受到伤害。
-- 二 除非违背第一定律，机器人必须服从人类的命令。
-- 三 除非违背第一及第二定律，机器人必须保护自己。
-
-**悖论**
-
-- 为了保护人类 必须牺牲一部分人
-- 为了确保人类未来 必须放弃一些自由
-- 机器人会保证人类永世长存
-</code></pre>
+<div class="admonition danger">
+<p class="admonition-title">什么是互联网？</p>
+<p><strong><em>这是维基百科的定义</em></strong></p>
+<p>互联网或国际网（英语：Internet），是网络与网络之间所串连成的庞大网络，这些网络以一组标准的网络TCP/IP协议族相连，连接全世界几十亿个设备，形成逻辑上的单一巨大国际网络。[1]，它是由从地方到全球范围内几百万个私人的、学术界的、企业的和政府的网络所构成，通过电子，无线和光纤网络技术等等一系列广泛的技术联系在一起。这种将计算机网络互相联接在一起的方法可称作“网络互联”，在这基础上发展出覆盖全世界的全球性互联网络称互联网，即是互相连接一起的网络。互联网并不等同万维网（WWW），万维网只是一个基于超文本相互链接而成的全球性系统，且是互联网所能提供的服务其中之一。互联网带有范围广泛的信息资源和服务，例如相互关系的超文本文件，还有万维网的应用，支持电子邮件的基础设施，点对点网络，文件共享，以及IP电话服务。</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">机器人三大定律，推导的结果</p>
+<p><strong>定律</strong></p>
+<ul>
+<li>零 机器人不得伤害人类整体，或因不作为使人类整体受到伤害。</li>
+<li>一 机器人不得伤害人类，或因不作为使人类受到伤害。</li>
+<li>二 除非违背第一定律，机器人必须服从人类的命令。</li>
+<li>三 除非违背第一及第二定律，机器人必须保护自己。</li>
+</ul>
+<p><strong>悖论</strong></p>
+<ul>
+<li>为了保护人类 必须牺牲一部分人</li>
+<li>为了确保人类未来 必须放弃一些自由</li>
+<li>机器人会保证人类永世长存</li>
+</ul>
+</div>
 <ul>
 <li><a href="https://wohugb.github.io/mkdocs/">MkDocs 文档</a></li>
 <li><a href="https://github.com/wohugb/mkdocs-material">MkDocs 物料主题</a></li>
@@ -2758,11 +3324,6 @@
 <li><a href="https://zf2-documentation-zh.readthedocs.org">Zend Framework 2 中文文档</a></li>
 <li><a href="https://readthedocs.readthedocs.org">Read The Docs 中文文档</a></li>
 </ul>
-                
-              
-              
-                
-
 
               
             </article>
@@ -2771,13 +3332,13 @@
         
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
       
-        <a href="awesome/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="awesome/" class="md-footer__link md-footer__link--next" aria-label="Next: Awesome" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -2795,18 +3356,19 @@
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            版权 &copy; 2017 - 2021 wohugb.github.io
-          </div>
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
-      </div>
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      版权 &copy; 2017 - 2022 wohugb.github.io
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
     </div>
   </div>
@@ -2816,10 +3378,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.7353b375.min.js"></script>
+      <script src="assets/javascripts/bundle.e87a5f81.min.js"></script>
       
     
   </body>

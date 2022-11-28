@@ -9,12 +9,11 @@
         <meta name="description" content="大鼻子的日常学习记录">
       
       
-      
         <meta name="author" content="Nosy">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.7">
     
     
       
@@ -22,26 +21,28 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.9299cb39.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9d5733d3.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
-    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+
     
     
   </head>
@@ -55,7 +56,6 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -72,7 +72,10 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+    
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="大鼻子" class="md-header__button md-logo" aria-label="大鼻子" data-md-component="logo">
       
@@ -105,19 +108,22 @@
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -134,11 +140,10 @@
     
     
       <div class="md-header__source">
-        
-<a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     wohugb/wohugb.github.com
@@ -147,11 +152,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -177,11 +185,10 @@
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     wohugb/wohugb.github.com
@@ -249,10 +256,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
-      <label class="md-nav__link" for="__nav_4">
-        Ai
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Ai
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ai" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
@@ -261,6 +272,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -271,8 +283,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -283,8 +297,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -295,8 +311,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -307,8 +325,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -319,8 +339,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -331,8 +353,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -343,8 +367,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -355,8 +381,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -367,8 +395,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -378,10 +408,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10" type="checkbox" id="__nav_4_10" >
       
-      <label class="md-nav__link" for="__nav_4_10">
-        Bot
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_10">
+          Bot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Bot" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_10">
           <span class="md-nav__icon md-icon"></span>
@@ -390,6 +424,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -400,8 +435,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -412,8 +449,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -424,8 +463,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -436,14 +477,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -453,10 +497,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
       
-      <label class="md-nav__link" for="__nav_4_11">
-        Iot
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_11">
+          Iot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Iot" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_11">
           <span class="md-nav__icon md-icon"></span>
@@ -465,6 +513,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -475,12 +524,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -501,10 +552,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
-      <label class="md-nav__link" for="__nav_5">
-        Aliyun
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Aliyun
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Aliyun" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
@@ -513,6 +568,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -523,8 +579,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -535,6 +593,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -555,10 +614,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
-      <label class="md-nav__link" for="__nav_6">
-        Angular
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Angular
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Angular" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
@@ -567,6 +630,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -577,8 +641,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -589,8 +655,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -601,8 +669,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -613,8 +683,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -625,8 +697,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -637,8 +711,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -649,8 +725,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -661,8 +739,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -673,8 +753,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -685,8 +767,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -697,8 +781,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -709,8 +795,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -721,8 +809,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -733,8 +823,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -745,8 +837,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -757,8 +851,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -769,8 +865,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -781,8 +879,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -793,8 +893,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -805,8 +907,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -817,8 +921,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -829,8 +935,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -841,8 +949,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -853,8 +963,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -864,10 +976,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_25" type="checkbox" id="__nav_6_25" >
       
-      <label class="md-nav__link" for="__nav_6_25">
-        Features
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_25">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Features" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_25">
           <span class="md-nav__icon md-icon"></span>
@@ -876,6 +992,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -886,12 +1003,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -912,10 +1031,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="__nav_7">
-        Apartment
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Apartment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Apartment" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
@@ -924,6 +1047,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -934,8 +1058,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -946,8 +1072,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -958,8 +1086,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -970,8 +1100,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -982,8 +1114,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -994,8 +1128,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1006,8 +1142,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1018,6 +1156,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1038,10 +1177,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
-      <label class="md-nav__link" for="__nav_8">
-        Blockchain
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Blockchain
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Blockchain" data-md-level="1">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1050,6 +1193,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1060,8 +1204,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1072,8 +1218,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1084,8 +1232,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1096,8 +1246,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1108,8 +1260,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1119,10 +1273,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_6" type="checkbox" id="__nav_8_6" >
       
-      <label class="md-nav__link" for="__nav_8_6">
-        Bitcoin
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_6">
+          Bitcoin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Bitcoin" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_6">
           <span class="md-nav__icon md-icon"></span>
@@ -1131,6 +1289,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1141,14 +1300,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1158,10 +1320,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_7" type="checkbox" id="__nav_8_7" >
       
-      <label class="md-nav__link" for="__nav_8_7">
-        Ethereum
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_7">
+          Ethereum
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ethereum" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_7">
           <span class="md-nav__icon md-icon"></span>
@@ -1170,6 +1336,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1180,8 +1347,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1192,8 +1361,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1204,8 +1375,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1216,8 +1389,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1228,8 +1403,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1240,14 +1417,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1257,10 +1437,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_8" type="checkbox" id="__nav_8_8" >
       
-      <label class="md-nav__link" for="__nav_8_8">
-        Ipfs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_8">
+          Ipfs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ipfs" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1269,6 +1453,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1279,14 +1464,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1296,10 +1484,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_9" type="checkbox" id="__nav_8_9" >
       
-      <label class="md-nav__link" for="__nav_8_9">
-        Twister
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_9">
+          Twister
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Twister" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1308,6 +1500,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1318,8 +1511,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1330,8 +1525,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1342,8 +1539,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1354,8 +1553,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1366,12 +1567,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1392,10 +1595,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
       
-      <label class="md-nav__link" for="__nav_9">
-        Education
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Education
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Education" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1404,6 +1611,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1414,8 +1622,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1426,8 +1636,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1438,8 +1650,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1450,6 +1664,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1470,102 +1685,37 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
       
-      <label class="md-nav__link" for="__nav_10">
-        Nodejs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Nodejs" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Langs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Langs" data-md-level="1">
         <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
-          Nodejs
+          Langs
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../nodejs/" class="md-nav__link">
+      <a href="../../../langs/" class="md-nav__link">
         Index
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/awesome/" class="md-nav__link">
-        Awesome Node.js
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/express/" class="md-nav__link">
-        Express
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/koa/" class="md-nav__link">
-        Koa
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/mongoose/" class="md-nav__link">
-        Mongoose
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/nodejs/" class="md-nav__link">
-        Nodejs
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/pm2/" class="md-nav__link">
-        Pm2
-      </a>
-    </li>
-  
-
-          
-            
+              
   
   
   
@@ -1573,138 +1723,43 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8" type="checkbox" id="__nav_10_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" >
       
-      <label class="md-nav__link" for="__nav_10_8">
-        Node modules
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Node modules" data-md-level="2">
-        <label class="md-nav__title" for="__nav_10_8">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_2">
+          Go
           <span class="md-nav__icon md-icon"></span>
-          Node modules
+        </label>
+      
+      <nav class="md-nav" aria-label="Go" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_2">
+          <span class="md-nav__icon md-icon"></span>
+          Go
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/gm/" class="md-nav__link">
-        概述
+      <a href="../../../langs/go/" class="md-nav__link">
+        Index
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8_2" type="checkbox" id="__nav_10_8_2" >
-      
-      <label class="md-nav__link" for="__nav_10_8_2">
-        Node rsa
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Node rsa" data-md-level="3">
-        <label class="md-nav__title" for="__nav_10_8_2">
-          <span class="md-nav__icon md-icon"></span>
-          Node rsa
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/node-rsa/jsbn/" class="md-nav__link">
-        JavaScript中的RSA和ECC
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/node-rsa/readme/" class="md-nav__link">
-        Node-RSA
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8_3" type="checkbox" id="__nav_10_8_3" >
-      
-      <label class="md-nav__link" for="__nav_10_8_3">
-        Qrcode
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Qrcode" data-md-level="3">
-        <label class="md-nav__title" for="__nav_10_8_3">
-          <span class="md-nav__icon md-icon"></span>
-          Qrcode
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/qrcode/api/" class="md-nav__link">
-        Api
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/qrcode/readme/" class="md-nav__link">
-        node-qrcode
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -1725,18 +1780,338 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
       
-      <label class="md-nav__link" for="__nav_11">
-        Pin
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Pin" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11">
+          Nodejs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Nodejs" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          Nodejs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/awesome/" class="md-nav__link">
+        Awesome Node.js
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/express/" class="md-nav__link">
+        Express
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/koa/" class="md-nav__link">
+        Koa
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/mongoose/" class="md-nav__link">
+        Mongoose
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/nodejs/" class="md-nav__link">
+        Nodejs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/pm2/" class="md-nav__link">
+        Pm2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8" type="checkbox" id="__nav_11_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8">
+          Node modules
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Node modules" data-md-level="2">
+        <label class="md-nav__title" for="__nav_11_8">
+          <span class="md-nav__icon md-icon"></span>
+          Node modules
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/gm/" class="md-nav__link">
+        概述
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8_2" type="checkbox" id="__nav_11_8_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8_2">
+          Node rsa
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Node rsa" data-md-level="3">
+        <label class="md-nav__title" for="__nav_11_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Node rsa
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/node-rsa/jsbn/" class="md-nav__link">
+        JavaScript中的RSA和ECC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/node-rsa/readme/" class="md-nav__link">
+        Node-RSA
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8_3" type="checkbox" id="__nav_11_8_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8_3">
+          Qrcode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Qrcode" data-md-level="3">
+        <label class="md-nav__title" for="__nav_11_8_3">
+          <span class="md-nav__icon md-icon"></span>
+          Qrcode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/qrcode/api/" class="md-nav__link">
+        Api
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/qrcode/readme/" class="md-nav__link">
+        node-qrcode
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12">
+          Pin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Pin" data-md-level="1">
+        <label class="md-nav__title" for="__nav_12">
           <span class="md-nav__icon md-icon"></span>
           Pin
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pin/" class="md-nav__link">
+        拼团开发
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1747,8 +2122,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1759,8 +2136,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1771,8 +2150,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pin/sku-spu/" class="md-nav__link">
+        sku spu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1780,20 +2175,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_4" type="checkbox" id="__nav_11_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_6" type="checkbox" id="__nav_12_6" >
       
-      <label class="md-nav__link" for="__nav_11_4">
-        Fresh
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_6">
+          Fresh
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Fresh" data-md-level="2">
-        <label class="md-nav__title" for="__nav_11_4">
+        <label class="md-nav__title" for="__nav_12_6">
           <span class="md-nav__icon md-icon"></span>
           Fresh
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1804,8 +2204,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1816,8 +2218,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1828,12 +2232,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1854,20 +2260,25 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" checked>
       
-      <label class="md-nav__link" for="__nav_12">
-        Python
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13">
+          Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Python" data-md-level="1">
-        <label class="md-nav__title" for="__nav_12">
+        <label class="md-nav__title" for="__nav_13">
           <span class="md-nav__icon md-icon"></span>
           Python
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1878,8 +2289,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1890,8 +2303,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1902,8 +2317,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1914,8 +2331,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1923,20 +2342,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_5" type="checkbox" id="__nav_12_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_5" type="checkbox" id="__nav_13_5" >
       
-      <label class="md-nav__link" for="__nav_12_5">
-        Anaconda
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_5">
+          Anaconda
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Anaconda" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_5">
+        <label class="md-nav__title" for="__nav_13_5">
           <span class="md-nav__icon md-icon"></span>
           Anaconda
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1947,14 +2371,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1962,20 +2389,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_6" type="checkbox" id="__nav_12_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_6" type="checkbox" id="__nav_13_6" >
       
-      <label class="md-nav__link" for="__nav_12_6">
-        FullStack
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_6">
+          FullStack
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="FullStack" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_6">
+        <label class="md-nav__title" for="__nav_13_6">
           <span class="md-nav__icon md-icon"></span>
           FullStack
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1986,8 +2418,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1998,8 +2432,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2010,8 +2446,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2022,14 +2460,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -2039,20 +2480,25 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_7" type="checkbox" id="__nav_12_7" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_7" type="checkbox" id="__nav_13_7" checked>
       
-      <label class="md-nav__link" for="__nav_12_7">
-        Django
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_7">
+          Django
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Django" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_7">
+        <label class="md-nav__title" for="__nav_13_7">
           <span class="md-nav__icon md-icon"></span>
           Django
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2063,8 +2509,10 @@
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -2073,6 +2521,7 @@
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
       
         
       
@@ -2087,7 +2536,9 @@
       </a>
       
         
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -2414,14 +2865,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2429,20 +2883,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_8" type="checkbox" id="__nav_12_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_8" type="checkbox" id="__nav_13_8" >
       
-      <label class="md-nav__link" for="__nav_12_8">
-        Flask
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_8">
+          Flask
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Flask" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_8">
+        <label class="md-nav__title" for="__nav_13_8">
           <span class="md-nav__icon md-icon"></span>
           Flask
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2453,8 +2912,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2465,14 +2926,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2480,20 +2944,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_9" type="checkbox" id="__nav_12_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_9" type="checkbox" id="__nav_13_9" >
       
-      <label class="md-nav__link" for="__nav_12_9">
-        Pip
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_9">
+          Pip
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Pip" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_9">
+        <label class="md-nav__title" for="__nav_13_9">
           <span class="md-nav__icon md-icon"></span>
           Pip
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2504,78 +2973,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
-      
-      <label class="md-nav__link" for="__nav_13">
-        Running
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Running" data-md-level="1">
-        <label class="md-nav__title" for="__nav_13">
-          <span class="md-nav__icon md-icon"></span>
-          Running
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../running/bicycle/" class="md-nav__link">
-        变速自行车
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../running/card/" class="md-nav__link">
-        自动驾驶
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../running/walk/" class="md-nav__link">
-        徒步健身
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -2596,118 +3001,62 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
       
-      <label class="md-nav__link" for="__nav_14">
-        Tools
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Tools" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_14">
+          Running
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Running" data-md-level="1">
         <label class="md-nav__title" for="__nav_14">
           <span class="md-nav__icon md-icon"></span>
-          Tools
+          Running
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/" class="md-nav__link">
-        器
+      <a href="../../../running/bicycle/" class="md-nav__link">
+        变速自行车
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_2" type="checkbox" id="__nav_14_2" >
-      
-      <label class="md-nav__link" for="__nav_14_2">
-        Eslint
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Eslint" data-md-level="2">
-        <label class="md-nav__title" for="__nav_14_2">
-          <span class="md-nav__icon md-icon"></span>
-          Eslint
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/eslint/" class="md-nav__link">
-        Index
+      <a href="../../../running/card/" class="md-nav__link">
+        自动驾驶
       </a>
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_3" type="checkbox" id="__nav_14_3" >
-      
-      <label class="md-nav__link" for="__nav_14_3">
-        Vscode
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Vscode" data-md-level="2">
-        <label class="md-nav__title" for="__nav_14_3">
-          <span class="md-nav__icon md-icon"></span>
-          Vscode
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/vscode/" class="md-nav__link">
-        vscode 文档
+      <a href="../../../running/walk/" class="md-nav__link">
+        徒步健身
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../tools/vscode/prettier/" class="md-nav__link">
-        Prettier
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -2728,18 +3077,179 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
       
-      <label class="md-nav__link" for="__nav_15">
-        Wechat
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Wechat" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15">
+          Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tools" data-md-level="1">
         <label class="md-nav__title" for="__nav_15">
+          <span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/" class="md-nav__link">
+        器
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_2" type="checkbox" id="__nav_15_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15_2">
+          Eslint
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Eslint" data-md-level="2">
+        <label class="md-nav__title" for="__nav_15_2">
+          <span class="md-nav__icon md-icon"></span>
+          Eslint
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/eslint/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_3" type="checkbox" id="__nav_15_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15_3">
+          Vscode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Vscode" data-md-level="2">
+        <label class="md-nav__title" for="__nav_15_3">
+          <span class="md-nav__icon md-icon"></span>
+          Vscode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/vscode/" class="md-nav__link">
+        vscode 文档
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/vscode/prettier/" class="md-nav__link">
+        Prettier
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16">
+          Wechat
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Wechat" data-md-level="1">
+        <label class="md-nav__title" for="__nav_16">
           <span class="md-nav__icon md-icon"></span>
           Wechat
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2750,8 +3260,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2762,8 +3274,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2774,8 +3288,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2783,20 +3299,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4" type="checkbox" id="__nav_15_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4" type="checkbox" id="__nav_16_4" >
       
-      <label class="md-nav__link" for="__nav_15_4">
-        Open
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4">
+          Open
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Open" data-md-level="2">
-        <label class="md-nav__title" for="__nav_15_4">
+        <label class="md-nav__title" for="__nav_16_4">
           <span class="md-nav__icon md-icon"></span>
           Open
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2807,8 +3328,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2816,20 +3339,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_2" type="checkbox" id="__nav_15_4_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_2" type="checkbox" id="__nav_16_4_2" >
       
-      <label class="md-nav__link" for="__nav_15_4_2">
-        App
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_2">
+          App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="App" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_2">
+        <label class="md-nav__title" for="__nav_16_4_2">
           <span class="md-nav__icon md-icon"></span>
           App
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2840,14 +3368,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2855,20 +3386,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_3" type="checkbox" id="__nav_15_4_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_3" type="checkbox" id="__nav_16_4_3" >
       
-      <label class="md-nav__link" for="__nav_15_4_3">
-        Code
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_3">
+          Code
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Code" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_3">
+        <label class="md-nav__title" for="__nav_16_4_3">
           <span class="md-nav__icon md-icon"></span>
           Code
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2879,14 +3415,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2894,20 +3433,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_4" type="checkbox" id="__nav_15_4_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_4" type="checkbox" id="__nav_16_4_4" >
       
-      <label class="md-nav__link" for="__nav_15_4_4">
-        D3f
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_4">
+          D3f
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="D3f" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_4">
+        <label class="md-nav__title" for="__nav_16_4_4">
           <span class="md-nav__icon md-icon"></span>
           D3f
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2918,14 +3462,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2933,20 +3480,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_5" type="checkbox" id="__nav_15_4_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_5" type="checkbox" id="__nav_16_4_5" >
       
-      <label class="md-nav__link" for="__nav_15_4_5">
-        Download
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_5">
+          Download
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Download" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_5">
+        <label class="md-nav__title" for="__nav_16_4_5">
           <span class="md-nav__icon md-icon"></span>
           Download
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2957,8 +3509,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2969,8 +3523,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2981,8 +3537,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2993,8 +3551,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3005,18 +3565,21 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -3036,7 +3599,9 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -3368,8 +3933,9 @@
             <article class="md-content__inner md-typeset">
               
                 
-                
-                <h1 id="awesome-django"><a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a></h1>
+
+
+<h1 id="awesome-django"><a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a><a class="headerlink" href="#awesome-django" title="Permanent link">&para;</a></h1>
 <p><a href="https://gitlab.com/rosarior/awesome-django/commits/master"><img alt="Build status" src="https://gitlab.com/rosarior/awesome-django/badges/master/build.svg" /></a></p>
 <p>A curated list of awesome Django apps, projects and resources.</p>
 <p><em>Q: What is an awesome Django package?</em></p>
@@ -3378,7 +3944,7 @@ maintained, has a good amount of users, has good documentation, follows the best
 practices, and which latest release is less than 1 year old. Awesome Django packages
 and projects are the ones that inspire and serve as examples.</strong></p>
 <p>Twitter feed: <a href="https://twitter.com/AwesomeDjango">twitter.com/AwesomeDjango</a></p>
-<h2 id="_1">管理面板</h2>
+<h2 id="_1">管理面板<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p><em>Packages that extend the Admin interface, adding or improving features.</em></p>
 <ul>
 <li><a href="https://github.com/hersonls/djamin/">djamin</a> - A new style for Django admin. <img alt="GitHub stars" src="https://img.shields.io/github/stars/hersonls/djamin.svg?style=social" /></li>
@@ -3401,12 +3967,12 @@ and projects are the ones that inspire and serve as examples.</strong></p>
 <li><a href="https://github.com/sshwsfc/xadmin/">django-xadmin</a> - Drop-in replacement of Django admin comes with lots of goodies, fully extensible with plugin support, pretty UI based on Twitter Bootstrap <img alt="GitHub stars" src="https://img.shields.io/github/stars/sshwsfc/xadmin.svg?style=social" /></li>
 <li><a href="https://github.com/yawd/yawd-admin/">yawd-admin</a> - An administration website for Django <img alt="GitHub stars" src="https://img.shields.io/github/stars/yawd/yawd-admin.svg?style=social" /></li>
 </ul>
-<h2 id="_2">分析</h2>
+<h2 id="_2">分析<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p><em>Packages that do web analytics or integrate web analytics services.</em></p>
 <ul>
 <li><a href="https://github.com/jcassee/django-analytical">django-analytical</a> - Integrates analytics services with a generic interface, templates stay clean.</li>
 </ul>
-<h2 id="_3">资产管理</h2>
+<h2 id="_3">资产管理<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p><em>Packages that help manage the static assets of a project.</em></p>
 <ul>
 <li><a href="https://github.com/django-compressor/django-compressor/">django-compressor</a> - Compresses linked and inline javascript or CSS into a single cached file.</li>
@@ -3418,7 +3984,7 @@ and projects are the ones that inspire and serve as examples.</strong></p>
 <li><a href="https://github.com/markfinger/python-webpack">python-webpack</a> - Python bindings for webpack with django integration.</li>
 <li><a href="https://github.com/MicroPyramid/django-webpacker">django-webpacker</a> - A django compressor tool which bundles css, js files to a single css, js file with webpack and updates your html files with respective css, js file path.</li>
 </ul>
-<h2 id="_4">认证</h2>
+<h2 id="_4">认证<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p><em>Packages that improve or extend the authentication methods of Django.</em></p>
 <ul>
 <li><a href="https://github.com/pennersr/django-allauth/">django-allauth</a> - Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication.</li>
@@ -3430,7 +3996,7 @@ and projects are the ones that inspire and serve as examples.</strong></p>
 <li><a href="https://github.com/bread-and-pepper/django-userena/">django-userena</a> - Accounts for Django made beautifully simple</li>
 <li><a href="https://github.com/omab/python-social-auth/">python-social-auth</a> - Python Social Auth is an easy-to-setup social authentication/registration mechanism with support for several frameworks and auth providers.</li>
 </ul>
-<h2 id="_5">授权</h2>
+<h2 id="_5">授权<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p><em>Packages related to authorization infrastructure and permissions.</em></p>
 <ul>
 <li><a href="https://github.com/django-guardian/django-guardian">django-guardian</a> - Implementation of per object permissions as authorization backend.</li>
@@ -3440,7 +4006,7 @@ and projects are the ones that inspire and serve as examples.</strong></p>
 <li><a href="https://github.com/lambdalisue/django-permission/">django-permission</a> An enhanced permission library which enables a <em>logic-based permission system</em> to handle complex permissions in Django</li>
 <li><a href="https://github.com/dfunckt/django-rules">django-rules</a> - A tiny but powerful app providing object-level permissions to Django, without requiring a database. At its core, it is a generic framework for building rule-based systems, similar to decision trees. It can also be used as a standalone library in other contexts and frameworks.</li>
 </ul>
-<h2 id="_6">日志管理</h2>
+<h2 id="_6">日志管理<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <p><em>Packages to build and manage a blog app.</em></p>
 <ul>
 <li><a href="https://github.com/Fantomas42/django-blog-zinnia">django-blog-zinnia</a> -  Simple yet powerful and really extendable application for managing a blog within your Django Web site.</li>
@@ -3451,14 +4017,14 @@ and projects are the ones that inspire and serve as examples.</strong></p>
 <p><a href="https://github.com/MicroPyramid/django-blog-it">django-blog-it</a> - complete customizable and ready to use blog with one click installer.</p>
 </li>
 </ul>
-<h2 id="boilerplate">Boilerplate</h2>
+<h2 id="boilerplate">Boilerplate<a class="headerlink" href="#boilerplate" title="Permanent link">&para;</a></h2>
 <p><em>Packages related to starting a new project.</em></p>
 <ul>
 <li><a href="https://github.com/audreyr/cookiecutter/">cookiecutter</a> - A command-line utility that creates projects from cookiecutters (project templates).</li>
 <li><a href="https://github.com/DrkSephy/django-hackathon-starter">django-hackathon-starter</a> - A boilerplate for Django web applications, containing various social authentication methods and several popular API examples.</li>
 <li><a href="https://github.com/arocks/edge">edge</a> - A Django project skeleton that is modern and cutting edge.</li>
 </ul>
-<h2 id="_7">缓存</h2>
+<h2 id="_7">缓存<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <p><em>Packages that help with caching.</em></p>
 <ul>
 <li><a href="https://github.com/BertrandBordage/django-cachalot">django-cachalot</a> - Caches your Django ORM queries and automatically invalidates them.</li>
@@ -3470,23 +4036,23 @@ and projects are the ones that inspire and serve as examples.</strong></p>
 <li><a href="https://github.com/jmoiron/johnny-cache/">johnny-cache</a> - Johnny Cache is a caching framework for django applications.</li>
 <li><a href="http://www.grantjenks.com/docs/diskcache/">diskcache</a> - Fast SQLite and file backed cache backend for Django.</li>
 </ul>
-<h2 id="_8">兼容性</h2>
+<h2 id="_8">兼容性<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
 <p><em>Packages that help to keep compatibility of reusable apps between different Django versions.</em></p>
 <ul>
 <li><a href="https://github.com/arteria/django-compat">django-compat</a> - Forward and backwards compatibility layer for the officially supported Django versions.</li>
 <li><a href="https://github.com/ubernostrum/django-compat-lint">django-compat-lint</a> - Check Django compatibility of your code.</li>
 </ul>
-<h2 id="_9">面板</h2>
+<h2 id="_9">面板<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
 <p><em>Packages that create information dashboards to visualize data.</em></p>
 <ul>
 <li><a href="https://github.com/talpor/django-dashing/">django-dashing</a> - a customisable, modular dashboard application framework for Django to visualize interesting data about your project. Inspired in the exceptionally handsome dashboard framework Dashing.</li>
 </ul>
-<h2 id="_10">数据科学</h2>
+<h2 id="_10">数据科学<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
 <p><em>Packages that make it easier to work with large volumes of data.</em></p>
 <ul>
 <li><a href="https://github.com/wq/django-rest-pandas/">rest-pandas</a> - Serves up your Pandas dataframes via the Django REST Framework for use in client-side (i.e. d3.js) visualizations and offline analysis (e.g. Excel).</li>
 </ul>
-<h2 id="_11">数据库</h2>
+<h2 id="_11">数据库<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
 <p><em>Packages that add support for 3rd party databases or database specific features.</em></p>
 <ul>
 <li><a href="https://github.com/kennethreitz/dj-database-url/">dj-database-url</a> - Use Database URLs in your Django Application.</li>
@@ -3494,7 +4060,7 @@ and projects are the ones that inspire and serve as examples.</strong></p>
 <li><a href="https://github.com/stephenmcd/django-postgres-fuzzycount">django-postgres-fuzzycount</a> - Fast / fuzzy PostgreSQL counts for Django.</li>
 <li><a href="https://github.com/kennethreitz/django-postgrespool/">django-postgrespool</a> - Postgres Connection Pooling for Django, powered by SQLAlchemy.</li>
 </ul>
-<h2 id="_12">调试</h2>
+<h2 id="_12">调试<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
 <p><em>Packages that help hunt down bugs.</em></p>
 <ul>
 <li><a href="https://github.com/jazzband/django-debug-toolbar/">django-debug-toolbar</a> - A configurable set of panels that display various debug information about the current request/response.</li>
@@ -3505,7 +4071,7 @@ and projects are the ones that inspire and serve as examples.</strong></p>
 <li><a href="https://github.com/getsentry/sentry">sentry</a> - A modern error logging and aggregation platform.</li>
 <li><a href="https://github.com/MicroPyramid/django-web-profiler">django-web-profiler</a> - A django profiling tool which logs, stores debug toolbar statistics and also a set of URL's statistics using a management command.</li>
 </ul>
-<h2 id="email">Email</h2>
+<h2 id="email">Email<a class="headerlink" href="#email" title="Permanent link">&para;</a></h2>
 <p><em>Packages that help manage email sending.</em></p>
 <ul>
 <li><a href="https://github.com/pmclanahan/django-celery-email/">django-celery-email</a> - A Django email backend that uses a celery task for sending the email.</li>
@@ -3521,7 +4087,7 @@ and projects are the ones that inspire and serve as examples.</strong></p>
 <li><a href="https://github.com/bameda/djmail">djmail</a> - A simple and nonobstructive django email middleware.</li>
 <li><a href="https://github.com/brack3t/Djrill/">djrill</a> - Email backend and new message class for Mandrill transactional email service from MailChimp.</li>
 </ul>
-<h2 id="fields">Fields</h2>
+<h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h2>
 <p><em>Packages that extend the functionality of existing field type or add new field types.</em></p>
 <ul>
 <li><a href="https://github.com/areski/django-audiofield">django-audiofield</a> -  Allows audio files upload, management and conversion to different audio format (mp3, wav &amp; ogg).</li>
@@ -3541,14 +4107,14 @@ phone numbers.</li>
 <li><a href="https://github.com/dcramer/django-uuidfield/">django-uuidfield</a> - A UUIDField for Django.</li>
 <li><a href="https://github.com/respondcreate/django-versatileimagefield/">django-versatileimagefield</a> - A drop-in replacement for django's ImageField that provides a flexible, intuitive and easily-extensible interface for quickly creating new images from the one assigned to the field.</li>
 </ul>
-<h2 id="_13">文件传输</h2>
+<h2 id="_13">文件传输<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
 <p><em>Packages that help transfer files between projects and users.</em></p>
 <ul>
 <li><a href="https://github.com/benoitbryon/django-downloadview/">django-downloadview</a> - Serve files with Django.</li>
 <li><a href="https://github.com/johnsensible/django-sendfile/">django-sendfile</a> - This is a wrapper around web-server specific methods for sending files to web clients.</li>
 <li><a href="https://github.com/divio/django-filer/">django-filer</a> - Makes multiple files(text/image) uploading easy and provides interface with precise details.</li>
 </ul>
-<h2 id="_14">表单</h2>
+<h2 id="_14">表单<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
 <p><em>Packages that extend the functionality of forms or add new types of forms.</em></p>
 <ul>
 <li><a href="https://github.com/yourlabs/django-autocomplete-light/">django-autocomplete-light</a> - django-autocomplete-light's purpose is to enable autocompletes quickly and properly in a django project.</li>
@@ -3557,7 +4123,7 @@ phone numbers.</li>
 <li><a href="https://github.com/django-crispy-forms/django-crispy-forms/">django-crispy-forms</a> - The best way to have DRY Django forms. The app provides a tag and filter that lets you quickly render forms in a div format while providing an enormous amount of capability to configure and control the rendered HTML.</li>
 <li><a href="https://github.com/gregmuellegger/django-floppyforms/">django-floppyforms</a> - django-floppyforms is an application that gives you full control of the output of forms rendering. The forms API and features are exactly the same as Django’s, the key difference is that fields and widgets are rendered in templates instead of using string interpolation, giving you full control of the output using Django templates.</li>
 </ul>
-<h2 id="gis">GIS</h2>
+<h2 id="gis">GIS<a class="headerlink" href="#gis" title="Permanent link">&para;</a></h2>
 <p><em>Packages that make it easier to work with geographical information system projects.</em></p>
 <ul>
 <li><a href="https://github.com/philippbosch/django-geoposition/">django-geoposition</a> - A model field that can hold a geoposition (latitude/longitude), and corresponding admin/form widget.</li>
@@ -3565,28 +4131,28 @@ phone numbers.</li>
 <li><a href="https://github.com/bkg/django-spillway/">django-spillway</a> -  Geodata extensions for Django REST Framework.</li>
 <li><a href="https://github.com/djangonauts/django-rest-framework-gis/">djangorestframework-gis</a> - Geographic add-ons for Django Rest Framework.</li>
 </ul>
-<h2 id="_15">图片操作</h2>
+<h2 id="_15">图片操作<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
 <p><em>Packages that help to manipulate, alter, or convert images.</em></p>
 <ul>
 <li><a href="https://github.com/jonasundderwolf/django-image-cropping">django-image-cropping</a> - helper application to easily and non-destructively crop arbitrarily large images in admin and frontend.</li>
 <li><a href="https://github.com/respondcreate/django-versatileimagefield/">django-versatileimagefield</a> - A drop-in replacement for django's ImageField that provides a flexible, intuitive and easily-extensible interface for quickly creating new images from the one assigned to the field.</li>
 </ul>
-<h2 id="_16">导入/导出</h2>
+<h2 id="_16">导入/导出<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://github.com/django-import-export/django-import-export">django-import-export</a> - Django application and library for importing and exporting data with admin integration.</li>
 </ul>
-<h2 id="_17">迁移</h2>
+<h2 id="_17">迁移<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
 <p><em>Packages that help migrate the database when there are schema updates.</em></p>
 <ul>
 <li><a href="https://bitbucket.org/andrewgodwin/south/src/">South</a> - Django application to provide schema and data migrations that supports Django up to 1.6.x. (<a href="https://docs.djangoproject.com/en/dev/topics/migrations/">Django 1.7 and up have an integrated migration system, based on but not compatible with South</a>)</li>
 </ul>
-<h2 id="_18">手机支持</h2>
+<h2 id="_18">手机支持<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
 <p><em>Packages that help you support for mobile iOS, Android and Others.</em></p>
 <ul>
 <li><a href="https://github.com/jleclanche/django-push-notifications">django-push-notifications</a> - A minimal Django app that implements Device models that can send messages through APNS and GCM.</li>
 <li><a href="https://github.com/rakanalh/django-pushy">django-pushy</a> - Django app that provides push notifications functionality with celery. The main purpose of this app is to help you send push notifications to your users at scale. If you have lots of registered device keys, django-pushy will split your keys into smaller groups which run in parallel making the process of sending notifications faster.</li>
 </ul>
-<h2 id="_19">模型的扩展</h2>
+<h2 id="_19">模型的扩展<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
 <p><em>Packages that extend the functionality of models or add new classes of models.</em></p>
 <ul>
 <li><a href="https://github.com/henriquebastos/django-aggregate-if/">django-aggregate-if</a> - Conditional aggregates for Django queries, just like the famous SumIf and CountIf in Excel.</li>
@@ -3595,12 +4161,12 @@ phone numbers.</li>
 <li><a href="https://github.com/django-mptt/django-mptt/">django-mptt</a> - Utilities for implementing a modified pre-order traversal tree in django.</li>
 <li><a href="https://github.com/django-treebeard/django-treebeard/">django-treebeard</a> -Alternative tree data structures for Django (provides 3 different methods for storing hierarchical data, including MPTT )</li>
 </ul>
-<h2 id="_20">多租户</h2>
+<h2 id="_20">多租户<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h2>
 <p><em>Packages that allow a single install of Django to serve multiple organizations.</em></p>
 <ul>
 <li><a href="https://github.com/bernardopires/django-tenant-schemas/">django-tenant-schemas</a> - Tenant support for Django using PostgreSQL schemas.</li>
 </ul>
-<h2 id="_21">支付处理</h2>
+<h2 id="_21">支付处理<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
 <p><em>Packages that provide payment processing provider integration.</em></p>
 <ul>
 <li><a href="https://github.com/dj-stripe/dj-stripe/">dj-stripe</a> - Django + Stripe Made Easy.</li>
@@ -3612,18 +4178,18 @@ phone numbers.</li>
 <li><a href="https://github.com/rossp/django-pinpayments/">django-pinpayments</a> - Django library to simplify payment processing with pin.</li>
 <li><a href="https://github.com/GoodCloud/django-zebra/">django-zebra</a> - Forms, widgets, template tags and examples that make Stripe + Django easier.</li>
 </ul>
-<h2 id="_22">项目管理</h2>
+<h2 id="_22">项目管理<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
 <p><em>Packages for project management and time-tracking.</em></p>
 <ul>
 <li><a href="https://github.com/caktus/django-timepiece/">django-timepiece</a> - A multi-user Django application for tracking people's time on projects.</li>
 </ul>
-<h2 id="_23">报告</h2>
+<h2 id="_23">报告<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
 <p><em>Packages for creating reports</em></p>
 <ul>
 <li><a href="https://github.com/juanpex/django-model-report/">django-model-report</a> - Django reports integrated with highcharts.</li>
 <li><a href="https://github.com/burke-software/django-report-builder/">django-report-builder</a> - A GUI for Django ORM. Build custom queries and display results. Targets sys admins and capable end users who might not be able to program.</li>
 </ul>
-<h2 id="restful-api">RESTful API</h2>
+<h2 id="restful-api">RESTful API<a class="headerlink" href="#restful-api" title="Permanent link">&para;</a></h2>
 <p><em>Packages for developing RESTful APIs.</em></p>
 <ul>
 <li><a href="https://github.com/funkybob/django-nap/">django-nap</a> - A minimalist approach to object serialization, RESTful views, and RPC views.</li>
@@ -3636,14 +4202,14 @@ phone numbers.</li>
 <li><a href="https://github.com/toastdriven/restless/">restless</a> - A lightweight REST miniframework for Python</li>
 <li><a href="https://github.com/heywbj/django-rest-framework-recursive/">djangorestframework-recursive</a> - Recursive Serialization for Django REST framework</li>
 </ul>
-<h2 id="_24">搜索</h2>
+<h2 id="_24">搜索<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h2>
 <p><em>Packages that provide search capabilities to projects.</em></p>
 <ul>
 <li><a href="https://github.com/django-haystack/django-haystack">django-haystack</a> - Modular search for Django.</li>
 <li><a href="https://github.com/etianen/django-watson/">django-watson</a> - Fast multi-model full-text search plugin.</li>
 <li><a href="https://github.com/linuxlewis/djorm-ext-pgfulltext">djorm-ext-pgfulltext</a> - PostgreSQL full-text search integration with django orm.</li>
 </ul>
-<h2 id="_25">安全</h2>
+<h2 id="_25">安全<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h2>
 <p><em>Packages that improve the security of a project.</em></p>
 <ul>
 <li><a href="https://github.com/dmpayton/django-admin-honeypot/">django-admin-honeypot</a> - A fake Django admin login screen to notify admins of attempted unauthorized access.</li>
@@ -3657,14 +4223,14 @@ phone numbers.</li>
 <li><a href="https://github.com/mattrobenolt/django-sudo">django-sudo</a> - Sudo mode is an extra layer of security for your most sensitive pages. This is an implementation of GitHub's Sudo Mode for Django.</li>
 <li><a href="https://github.com/MicroPyramid/django-mfa">django-mfa</a> - Django app for providing MFA (Multi-Factor Authentication).</li>
 </ul>
-<h2 id="seo">SEO</h2>
+<h2 id="seo">SEO<a class="headerlink" href="#seo" title="Permanent link">&para;</a></h2>
 <p><em>Packages that help improve SEO ( Search Engine Optimization ) of projects.</em></p>
 <ul>
 <li><a href="https://github.com/nephila/django-meta/">django-meta</a> - a pluggable app to allow Django developers to quickly add meta tags and OpenGraph, Twitter, and Google Plus properties to their HTML responses.</li>
 <li><a href="https://github.com/jazzband/django-robots">django-robots</a> - A Django app for managing robots.txt files following the robots exclusion protocol.</li>
 <li><a href="https://github.com/romansalin/django-seo2/">django-seo2</a> - Provides a set of tools for managing Search Engine Optimisation (SEO) metadata for Django sites.</li>
 </ul>
-<h2 id="_26">设置</h2>
+<h2 id="_26">设置<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h2>
 <p><em>Packages that help manage the configurability of projects.</em></p>
 <ul>
 <li><a href="https://github.com/jazzband/django-configurations">django-configurations</a> - A helper for organizing Django project settings by relying on well established programming patterns.</li>
@@ -3674,7 +4240,7 @@ phone numbers.</li>
 <li><a href="https://github.com/sobolevn/django-split-settings">django-split-settings</a> - Organize Django settings into multiple files and directories. Easily override and modify settings. Use wildcards and optional settings files.</li>
 <li><a href="https://github.com/EliotBerriot/django-dynamic-preferences">django-dynamic-preferences</a> - Dynamic global and instance settings for your django project.</li>
 </ul>
-<h2 id="_27">存储</h2>
+<h2 id="_27">存储<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h2>
 <p><em>Packages that extend the functionality of the existing storage backend or provide new storage backends.</em></p>
 <ul>
 <li><a href="https://github.com/marazmiki/django-selectel-storage">django-selectel-storage</a> - This application allows you easily save media and static files into <a href="https://selectel.ru/">Selectel</a> cloud storage.</li>
@@ -3682,13 +4248,13 @@ phone numbers.</li>
 <li><a href="https://github.com/jazzband/django-queued-storage">django-queued-storage</a> - Provides a proxy for Django storage backends that allows you to upload files locally and eventually serve them remotely.</li>
 <li><a href="https://github.com/marazmiki/django-webdav-storage">django-webdav-storage</a> - Django storage backend that stores files in custom WebDAV storage.</li>
 </ul>
-<h2 id="_28">标签</h2>
+<h2 id="_28">标签<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h2>
 <p><em>Packages for adding tags to Django models.</em></p>
 <ul>
 <li><a href="https://github.com/alex/django-taggit/">django-taggit</a> - Simple tagging for Django.</li>
 <li><a href="https://github.com/mfcovington/django-taggit-helpers">django-taggit-helpers</a> - Django admin helper classes for django-taggit tags.</li>
 </ul>
-<h2 id="_29">任务队列</h2>
+<h2 id="_29">任务队列<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h2>
 <p><em>Packages that make working with task/background queues easier.</em></p>
 <ul>
 <li><a href="http://celery.github.io/django-celery/">django-celery</a> - Celery Integration for Django. (no longer required for Celery 3.1 and up)</li>
@@ -3696,7 +4262,7 @@ phone numbers.</li>
 <li><a href="https://github.com/ui/django-rq">django-rq</a> - The easiest way to monitor and use <a href="http://python-rq.org">RQ</a> in your Django projects.</li>
 <li><a href="https://github.com/coleifer/huey/">huey</a> - A little multi-threaded task queue for python.</li>
 </ul>
-<h2 id="_30">测试</h2>
+<h2 id="_30">测试<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h2>
 <p><em>Packages that help test code or generate test data.</em></p>
 <ul>
 <li><a href="https://github.com/behave/behave-django">behave-django</a> - Behave BDD integration for Django</li>
@@ -3718,7 +4284,7 @@ phone numbers.</li>
 <li><a href="https://pypi.python.org/pypi/pytest-django/">pytest-django</a> - Test runner using py.test</li>
 <li><a href="https://github.com/cobrateam/splinter/">splinter</a> - Test framework for web applications.</li>
 </ul>
-<h2 id="_31">相册</h2>
+<h2 id="_31">相册<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h2>
 <p><em>Packages that help generate thumbnails.</em></p>
 <ul>
 <li><a href="https://github.com/codingjoe/django-stdimage/">django-stdimage</a> - Thumbnails and image utils for Django.</li>
@@ -3726,7 +4292,7 @@ phone numbers.</li>
 <li><a href="https://github.com/SmileyChris/easy-thumbnails">easy-thumbnails</a> - Easy thumbnails for Django.</li>
 <li><a href="https://github.com/jazzband/sorl-thumbnail/">sorl-thumbnail</a> - Thumbnails for Django.</li>
 </ul>
-<h2 id="_32">翻译</h2>
+<h2 id="_32">翻译<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h2>
 <p><em>Packages help with the task of translating projects.</em></p>
 <ul>
 <li><a href="https://github.com/KristianOellegaard/django-hvad">django-hvad</a> - Painless translations in django, using the regular ORM. Integrates easily into existing projects and apps. Easy convertible from django-multilingual-ng.</li>
@@ -3735,13 +4301,13 @@ phone numbers.</li>
 <li><a href="https://github.com/django-parler/django-parler">django-parler</a> - Simple Django model translations without nasty hacks</li>
 <li><a href="https://github.com/mbi/django-rosetta/">django-rosetta</a> - Rosetta is a Django application that eases the translation process of your Django projects.</li>
 </ul>
-<h2 id="_33">视图</h2>
+<h2 id="_33">视图<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h2>
 <p><em>Packages that enhance or provide new view classes.</em></p>
 <ul>
 <li><a href="https://github.com/AndrewIngram/django-extra-views/">django-extra-views</a> - Django's class-based generic views are awesome, let's have more of them.</li>
 <li><a href="https://github.com/tomchristie/django-vanilla-views/">django-vanilla-views</a> - Beautifully simple class-based views.</li>
 </ul>
-<h2 id="_34">前端集成</h2>
+<h2 id="_34">前端集成<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h2>
 <p><em>Packages for integrating and managing front-end packages.</em></p>
 <ul>
 <li><a href="https://github.com/jrief/django-angular/">django-angular</a> - Let AngularJS play well with Django.</li>
@@ -3749,7 +4315,7 @@ phone numbers.</li>
 <li><a href="https://github.com/ierror/django-js-reverse">django-js-reverse</a> - Javascript url handling for Django that doesn't hurt.</li>
 <li><a href="https://github.com/appliedsec/djangular/">djangular</a> - A reusable Django app that provides better integration and tools for Angular.js.</li>
 </ul>
-<h2 id="wysiwyg-editors">WYSIWYG Editors</h2>
+<h2 id="wysiwyg-editors">WYSIWYG Editors<a class="headerlink" href="#wysiwyg-editors" title="Permanent link">&para;</a></h2>
 <p><em>Packages that makes text editing awesome.</em></p>
 <ul>
 <li><a href="https://github.com/django-ckeditor/django-ckeditor/">django-ckeditor</a> - Django admin CKEditor integration.</li>
@@ -3758,13 +4324,13 @@ phone numbers.</li>
 <li><a href="https://github.com/mazelife/django-redactoreditor/">django-redactoreditor</a> - This package helps integrate the Redactor Javascript WYSIWYG-editor in Django.</li>
 <li><a href="https://github.com/pydanny-archive/django-wysiwyg/">django-wysiwyg</a> - A Django application for making Django textareas rich text editors. Certainly as a template tag and possibly as a form widget.</li>
 </ul>
-<h2 id="wikis">Wikis</h2>
+<h2 id="wikis">Wikis<a class="headerlink" href="#wikis" title="Permanent link">&para;</a></h2>
 <p><em>Packages for adding wiki functionality to a project.</em></p>
 <ul>
 <li><a href="https://github.com/django-wiki/django-wiki">django-wiki</a> A wiki system with complex functionality for simple integration and a superb interface. Store your knowledge with style: Use django models.</li>
 <li><a href="https://github.com/mgaitan/waliki">waliki</a> An extensible wiki app for Django with a Git backend.</li>
 </ul>
-<h2 id="workflows">Workflows</h2>
+<h2 id="workflows">Workflows<a class="headerlink" href="#workflows" title="Permanent link">&para;</a></h2>
 <p><em>Packages that do process, procedure and/or business tasks management.</em></p>
 <ul>
 <li><a href="https://github.com/carlio/django-flows/">django-flows</a> - django-flows keeps state and position in complicated flows of logic, allowing optional branches and complicated paths through a series of individual user actions.</li>
@@ -3775,7 +4341,7 @@ phone numbers.</li>
 <li><a href="https://bitbucket.org/jerzyk/django-workflows/">django-workflows</a> - django-workflows provides a generic workflow engine for Django.</li>
 <li><a href="https://github.com/rbarrois/django_xworkflows/">django-xworkflows</a> - Library to plug xworkflows into django models.</li>
 </ul>
-<h2 id="_35">其它</h2>
+<h2 id="_35">其它<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h2>
 <p><em>Other awesome Django packages.</em></p>
 <ul>
 <li><a href="https://github.com/hellysmile/django-activeurl">django-activeurl</a> - Easy to use active URL highlighting for django</li>
@@ -3815,9 +4381,9 @@ phone numbers.</li>
 <li><a href="https://github.com/coleifer/micawber/">micawber</a> - A small library for extracting rich content from urls.</li>
 <li><a href="https://github.com/matthiask/towel/">towel</a> - a collection of tools which make your life easier if you are building a web application using Django.</li>
 </ul>
-<h1 id="_36">项目</h1>
+<h1 id="_36">项目<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h1>
 <p><em>Outstanding Django projects.</em></p>
-<h2 id="cms">CMS</h2>
+<h2 id="cms">CMS<a class="headerlink" href="#cms" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://github.com/divio/django-cms/">django-cms</a> - The easy-to-use and developer-friendly CMS.</li>
 <li><a href="https://github.com/django-fiber/django-fiber/">django-fiber</a> - Django Fiber, a simple, user-friendly CMS for all your Django projects</li>
@@ -3826,11 +4392,11 @@ phone numbers.</li>
 <li><a href="https://github.com/wagtail/wagtail/">wagtail</a> - A Django content management system focused on flexibility and user experience.</li>
 <li><a href="https://github.com/django-leonardo/django-leonardo/">leonardo</a> - A new Django content management system built on top of FeinCMS and OpenStack Horizon.</li>
 </ul>
-<h2 id="_37">文档管理</h2>
+<h2 id="_37">文档管理<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://gitlab.com/mayan-edms/mayan-edms">mayan-edms</a> - Open source, Django based DMS (document management system) with custom metadata indexing, file serving integration, OCR capabilities, document versioning and electronic signature verification.</li>
 </ul>
-<h2 id="e-commerce">e-Commerce</h2>
+<h2 id="e-commerce">e-Commerce<a class="headerlink" href="#e-commerce" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://github.com/stephenmcd/cartridge">Cartridge</a> - Ecommerce for Django/Mezzanine.</li>
 <li><a href="https://github.com/django-oscar/django-oscar">django-oscar</a> - Domain-driven e-commerce for Django.</li>
@@ -3840,7 +4406,7 @@ phone numbers.</li>
 <li><a href="https://bitbucket.org/chris1610/satchmo/src/">Satchmo</a> - Satchmo is an eCommerce framework created in Django which allows you to develop unique and robust online stores.</li>
 <li><a href="http://www.django-shop.org">Django-Shop</a> - A Django based shop system.</li>
 </ul>
-<h2 id="_38">其它</h2>
+<h2 id="_38">其它<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://github.com/djangopackages/djangopackages/">Django packages</a> - Django Packages is a directory of reusable apps, sites, tools, and more for your Django projects.</li>
 <li><a href="https://github.com/swappsco/django-qa/">Django-QA</a> - A simple Q&amp;A App.</li>
@@ -3849,14 +4415,14 @@ phone numbers.</li>
 <li><a href="https://github.com/tfroehlich82/koalixcrm">koalixcrm</a> - Beautiful CRM/ERP for small business.</li>
 <li><a href="https://github.com/OmniDB/OmniDB">OmniDB</a> - Web tool for database management and conversion, built with Django.</li>
 </ul>
-<h2 id="_39">项目管理</h2>
+<h2 id="_39">项目管理<a class="headerlink" href="#_39" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://github.com/yetkinozturk/ITSY/">ITSY</a> - Issue Tracking System <img alt="GitHub stars" src="https://img.shields.io/github/stars/yetkinozturk/ITSY.svg?style=social" /></li>
 <li><a href="https://github.com/taigaio/taiga-back">taiga</a> - Agile, Free and Open Source Project Management Tool <img alt="GitHub stars" src="https://img.shields.io/github/stars/taigaio/taiga-back.svg?style=social" /></li>
 </ul>
-<h1 id="_40">资源</h1>
+<h1 id="_40">资源<a class="headerlink" href="#_40" title="Permanent link">&para;</a></h1>
 <p><em>Where to discover new Django apps and projects.</em></p>
-<h2 id="_41">书籍</h2>
+<h2 id="_41">书籍<a class="headerlink" href="#_41" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://github.com/kevinlondon/django-by-example">Django by Example</a> (1.2)</li>
 <li><a href="http://agiliq.com/books/djenofdjango/">Djen of Django</a> (&lt; 1.7)</li>
@@ -3868,7 +4434,7 @@ phone numbers.</li>
 <li><a href="http://chimera.labs.oreilly.com/books/1234000000754/index.html">Test-Driven Web Development with Python</a> (1.7)</li>
 <li><a href="https://www.twoscoopspress.com/products/two-scoops-of-django-1-11/">Two Scoops of Django: Best Practices for Django 1.11</a> - A best practice book for making Python and Django as fun as ice cream.</li>
 </ul>
-<h2 id="_42">网站</h2>
+<h2 id="_42">网站<a class="headerlink" href="#_42" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://tutorial.djangogirls.org/">Django Girls Tutorial</a> - A fun and engaging tutorial showing how to build a blog using Django and deploy it to Heroku.</li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django">Mozilla Tutorial</a> - Tutorial that shows how to set up a development environment, and how to get started with using it to create your own web applications.</li>
@@ -3879,7 +4445,7 @@ phone numbers.</li>
 <li><a href="https://simpleisbetterthancomplex.com">Simple is Better Than Complex</a> - A blog about Django, Python and Web Development. Weekly updates containing tutorials, tips, featured packages, reference guides and code snippets.</li>
 <li><a href="http://www.marinamele.com/">Marina Mele's site</a> - A blog about Django and Python. Includes deployment to Heroku, a Django project boilerplate for best practices, testing and more.</li>
 </ul>
-<h2 id="_43">会议</h2>
+<h2 id="_43">会议<a class="headerlink" href="#_43" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://www.djangobeer.com/">Django Beer</a> - the new meeting of the Django community of Florence.</li>
 <li><a href="http://djangovillage.it/">Django Village</a> - the Italian Django community conference. An opportunity to meet djangonauts from all over Italy and abroad.</li>
@@ -3888,34 +4454,29 @@ phone numbers.</li>
 <li><a href="http://www.djangocon.eu/">DjangoCon Europe</a> - is the annual largest European-based Django conference that is usually held in late spring.</li>
 <li><a href="https://2016.djangocon.us/">DjangoCon US</a> - is the largest North American Django conference generally held the first week in September each year.</li>
 </ul>
-<h1 id="python">非 Python 包</h1>
+<h1 id="python">非 Python 包<a class="headerlink" href="#python" title="Permanent link">&para;</a></h1>
 <ul>
 <li><a href="https://github.com/pydanny/cookiecutter-django">cookiecutter-django</a> - A cookiecutter template for creating Django projects quickly.</li>
 </ul>
-<h2 id="_44">外部文档</h2>
+<h2 id="_44">外部文档<a class="headerlink" href="#_44" title="Permanent link">&para;</a></h2>
 <p><em>Additional sources of information about django features.</em></p>
 <ul>
 <li><a href="http://ccbv.co.uk/">Classy Class-Based Views</a> - Detailed descriptions, with full methods and attributes, for each of Django's class-based generic views.</li>
 <li><a href="http://www.cdrf.co/">Classy Django REST Framework</a> - Detailed descriptions, with full methods and attributes, for each of Django REST Framework's class-based views and serializers.</li>
 </ul>
-<h2 id="_45">视频</h2>
+<h2 id="_45">视频<a class="headerlink" href="#_45" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://www.codingforentrepreneurs.com/projects/">CodingforEntrepreneur</a> - One of the best collection of Django Videos and all the projects are written in Django.</li>
 <li><a href="https://www.codeschool.com/courses/try-django">Code School - Try Django</a> - An introduction to the basics of Django.</li>
 <li><a href="https://godjango.com">GoDjango</a> - Django videos from basics to advanced. Covering 3rd party apps to core Django compontents.</li>
 <li><a href="https://github.com/rosarior/django-must-watch/">Must Watch Django Videos</a> - Must-watch videos about Django (or about Python as applied to Django)</li>
 </ul>
-<h1 id="_46">实用程序</h1>
+<h1 id="_46">实用程序<a class="headerlink" href="#_46" title="Permanent link">&para;</a></h1>
 <p><em>Non Django projects that make it easier to work with Django.</em></p>
 <ul>
 <li><a href="https://github.com/timonweb/Django-manage.py-anywhere/">Django-manage.py-anywhere</a> - Run manage.py commands from anywhere. Finds closest to current path manage.py file and runs commands against it.</li>
 <li><a href="https://github.com/dcramer/logan">Logan</a> - A toolkit for running standalone Django applications. It provides you with tools to create a CLI runner, manage settings, and the ability to bootstrap the process.</li>
 </ul>
-                
-              
-              
-                
-
 
               
             </article>
@@ -3924,12 +4485,12 @@ phone numbers.</li>
         
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Django 简要学习文档" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -3944,7 +4505,8 @@ phone numbers.</li>
         </a>
       
       
-        <a href="../../flask/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="../../flask/" class="md-footer__link md-footer__link--next" aria-label="Next: flask 文档" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -3962,18 +4524,19 @@ phone numbers.</li>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            版权 &copy; 2017 - 2021 wohugb.github.io
-          </div>
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
-      </div>
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      版权 &copy; 2017 - 2022 wohugb.github.io
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
     </div>
   </div>
@@ -3983,10 +4546,10 @@ phone numbers.</li>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.7353b375.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e87a5f81.min.js"></script>
       
     
   </body>

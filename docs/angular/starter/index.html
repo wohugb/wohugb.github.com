@@ -9,12 +9,11 @@
         <meta name="description" content="大鼻子的日常学习记录">
       
       
-      
         <meta name="author" content="Nosy">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.7">
     
     
       
@@ -22,26 +21,28 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.9299cb39.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.9d5733d3.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
-    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+
     
     
   </head>
@@ -55,7 +56,6 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -72,7 +72,10 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+    
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="大鼻子" class="md-header__button md-logo" aria-label="大鼻子" data-md-component="logo">
       
@@ -105,19 +108,22 @@
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -134,11 +140,10 @@
     
     
       <div class="md-header__source">
-        
-<a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     wohugb/wohugb.github.com
@@ -147,11 +152,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -177,11 +185,10 @@
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     wohugb/wohugb.github.com
@@ -249,10 +256,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
-      <label class="md-nav__link" for="__nav_4">
-        Ai
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Ai
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ai" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
@@ -261,6 +272,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -271,8 +283,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -283,8 +297,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -295,8 +311,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -307,8 +325,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -319,8 +339,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -331,8 +353,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -343,8 +367,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -355,8 +381,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -367,8 +395,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -378,10 +408,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10" type="checkbox" id="__nav_4_10" >
       
-      <label class="md-nav__link" for="__nav_4_10">
-        Bot
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_10">
+          Bot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Bot" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_10">
           <span class="md-nav__icon md-icon"></span>
@@ -390,6 +424,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -400,8 +435,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -412,8 +449,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -424,8 +463,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -436,14 +477,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -453,10 +497,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
       
-      <label class="md-nav__link" for="__nav_4_11">
-        Iot
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_11">
+          Iot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Iot" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_11">
           <span class="md-nav__icon md-icon"></span>
@@ -465,6 +513,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -475,12 +524,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -501,10 +552,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
-      <label class="md-nav__link" for="__nav_5">
-        Aliyun
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Aliyun
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Aliyun" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
@@ -513,6 +568,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -523,8 +579,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -535,6 +593,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -557,10 +616,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
-      <label class="md-nav__link" for="__nav_6">
-        Angular
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Angular
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Angular" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
@@ -569,6 +632,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -579,8 +643,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -591,8 +657,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -603,8 +671,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -615,8 +685,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -627,8 +699,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -639,8 +713,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -651,8 +727,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -663,8 +741,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -675,8 +755,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -687,8 +769,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -699,8 +783,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -711,8 +797,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -723,8 +811,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -735,8 +825,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -747,8 +839,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -759,8 +853,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -771,8 +867,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -783,8 +881,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -795,8 +895,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -807,8 +909,10 @@
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -817,6 +921,7 @@
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
       
         
       
@@ -831,7 +936,9 @@
       </a>
       
         
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -1102,8 +1209,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1114,8 +1223,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1126,8 +1237,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1138,8 +1251,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1149,10 +1264,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_25" type="checkbox" id="__nav_6_25" >
       
-      <label class="md-nav__link" for="__nav_6_25">
-        Features
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_25">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Features" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_25">
           <span class="md-nav__icon md-icon"></span>
@@ -1161,6 +1280,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1171,12 +1291,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1197,10 +1319,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="__nav_7">
-        Apartment
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Apartment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Apartment" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
@@ -1209,6 +1335,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1219,8 +1346,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1231,8 +1360,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1243,8 +1374,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1255,8 +1388,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1267,8 +1402,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1279,8 +1416,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1291,8 +1430,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1303,6 +1444,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1323,10 +1465,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
-      <label class="md-nav__link" for="__nav_8">
-        Blockchain
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Blockchain
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Blockchain" data-md-level="1">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1335,6 +1481,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1345,8 +1492,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1357,8 +1506,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1369,8 +1520,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1381,8 +1534,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1393,8 +1548,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1404,10 +1561,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_6" type="checkbox" id="__nav_8_6" >
       
-      <label class="md-nav__link" for="__nav_8_6">
-        Bitcoin
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_6">
+          Bitcoin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Bitcoin" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_6">
           <span class="md-nav__icon md-icon"></span>
@@ -1416,6 +1577,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1426,14 +1588,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1443,10 +1608,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_7" type="checkbox" id="__nav_8_7" >
       
-      <label class="md-nav__link" for="__nav_8_7">
-        Ethereum
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_7">
+          Ethereum
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ethereum" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_7">
           <span class="md-nav__icon md-icon"></span>
@@ -1455,6 +1624,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1465,8 +1635,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1477,8 +1649,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1489,8 +1663,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1501,8 +1677,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1513,8 +1691,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1525,14 +1705,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1542,10 +1725,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_8" type="checkbox" id="__nav_8_8" >
       
-      <label class="md-nav__link" for="__nav_8_8">
-        Ipfs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_8">
+          Ipfs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ipfs" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1554,6 +1741,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1564,14 +1752,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1581,10 +1772,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_9" type="checkbox" id="__nav_8_9" >
       
-      <label class="md-nav__link" for="__nav_8_9">
-        Twister
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_9">
+          Twister
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Twister" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1593,6 +1788,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1603,8 +1799,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1615,8 +1813,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1627,8 +1827,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1639,8 +1841,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1651,12 +1855,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1677,10 +1883,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
       
-      <label class="md-nav__link" for="__nav_9">
-        Education
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Education
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Education" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1689,6 +1899,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1699,8 +1910,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1711,8 +1924,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1723,8 +1938,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1735,6 +1952,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1755,102 +1973,37 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
       
-      <label class="md-nav__link" for="__nav_10">
-        Nodejs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Nodejs" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Langs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Langs" data-md-level="1">
         <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
-          Nodejs
+          Langs
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../nodejs/" class="md-nav__link">
+      <a href="../../langs/" class="md-nav__link">
         Index
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../nodejs/awesome/" class="md-nav__link">
-        Awesome Node.js
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../nodejs/express/" class="md-nav__link">
-        Express
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../nodejs/koa/" class="md-nav__link">
-        Koa
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../nodejs/mongoose/" class="md-nav__link">
-        Mongoose
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../nodejs/nodejs/" class="md-nav__link">
-        Nodejs
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../nodejs/pm2/" class="md-nav__link">
-        Pm2
-      </a>
-    </li>
-  
-
-          
-            
+              
   
   
   
@@ -1858,138 +2011,43 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8" type="checkbox" id="__nav_10_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" >
       
-      <label class="md-nav__link" for="__nav_10_8">
-        Node modules
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Node modules" data-md-level="2">
-        <label class="md-nav__title" for="__nav_10_8">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_2">
+          Go
           <span class="md-nav__icon md-icon"></span>
-          Node modules
+        </label>
+      
+      <nav class="md-nav" aria-label="Go" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_2">
+          <span class="md-nav__icon md-icon"></span>
+          Go
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../nodejs/node_modules/gm/" class="md-nav__link">
-        概述
+      <a href="../../langs/go/" class="md-nav__link">
+        Index
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8_2" type="checkbox" id="__nav_10_8_2" >
-      
-      <label class="md-nav__link" for="__nav_10_8_2">
-        Node rsa
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Node rsa" data-md-level="3">
-        <label class="md-nav__title" for="__nav_10_8_2">
-          <span class="md-nav__icon md-icon"></span>
-          Node rsa
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../nodejs/node_modules/node-rsa/jsbn/" class="md-nav__link">
-        JavaScript中的RSA和ECC
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../nodejs/node_modules/node-rsa/readme/" class="md-nav__link">
-        Node-RSA
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8_3" type="checkbox" id="__nav_10_8_3" >
-      
-      <label class="md-nav__link" for="__nav_10_8_3">
-        Qrcode
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Qrcode" data-md-level="3">
-        <label class="md-nav__title" for="__nav_10_8_3">
-          <span class="md-nav__icon md-icon"></span>
-          Qrcode
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../nodejs/node_modules/qrcode/api/" class="md-nav__link">
-        Api
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../nodejs/node_modules/qrcode/readme/" class="md-nav__link">
-        node-qrcode
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -2010,54 +2068,121 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
       
-      <label class="md-nav__link" for="__nav_11">
-        Pin
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Pin" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11">
+          Nodejs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Nodejs" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
-          Pin
+          Nodejs
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../pin/cohesion/" class="md-nav__link">
-        Cohesion
+      <a href="../../nodejs/" class="md-nav__link">
+        Index
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../pin/group/" class="md-nav__link">
-        Group
+      <a href="../../nodejs/awesome/" class="md-nav__link">
+        Awesome Node.js
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../pin/ladder/" class="md-nav__link">
-        Ladder
+      <a href="../../nodejs/express/" class="md-nav__link">
+        Express
       </a>
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/koa/" class="md-nav__link">
+        Koa
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/mongoose/" class="md-nav__link">
+        Mongoose
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/nodejs/" class="md-nav__link">
+        Nodejs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/pm2/" class="md-nav__link">
+        Pm2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -2065,60 +2190,165 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_4" type="checkbox" id="__nav_11_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8" type="checkbox" id="__nav_11_8" >
       
-      <label class="md-nav__link" for="__nav_11_4">
-        Fresh
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Fresh" data-md-level="2">
-        <label class="md-nav__title" for="__nav_11_4">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8">
+          Node modules
           <span class="md-nav__icon md-icon"></span>
-          Fresh
+        </label>
+      
+      <nav class="md-nav" aria-label="Node modules" data-md-level="2">
+        <label class="md-nav__title" for="__nav_11_8">
+          <span class="md-nav__icon md-icon"></span>
+          Node modules
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../pin/fresh/education/" class="md-nav__link">
-        Education
+      <a href="../../nodejs/node_modules/gm/" class="md-nav__link">
+        概述
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
-    <li class="md-nav__item">
-      <a href="../../pin/fresh/platform/" class="md-nav__link">
-        Platform
-      </a>
-    </li>
-  
-
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8_2" type="checkbox" id="__nav_11_8_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8_2">
+          Node rsa
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Node rsa" data-md-level="3">
+        <label class="md-nav__title" for="__nav_11_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Node rsa
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../pin/fresh/repository/" class="md-nav__link">
-        Repository
+      <a href="../../nodejs/node_modules/node-rsa/jsbn/" class="md-nav__link">
+        JavaScript中的RSA和ECC
       </a>
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/node_modules/node-rsa/readme/" class="md-nav__link">
+        Node-RSA
+      </a>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8_3" type="checkbox" id="__nav_11_8_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8_3">
+          Qrcode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Qrcode" data-md-level="3">
+        <label class="md-nav__title" for="__nav_11_8_3">
+          <span class="md-nav__icon md-icon"></span>
+          Qrcode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/node_modules/qrcode/api/" class="md-nav__link">
+        Api
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodejs/node_modules/qrcode/readme/" class="md-nav__link">
+        node-qrcode
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
@@ -2139,105 +2369,93 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
       
-      <label class="md-nav__link" for="__nav_12">
-        Python
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Python" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12">
+          Pin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Pin" data-md-level="1">
         <label class="md-nav__title" for="__nav_12">
           <span class="md-nav__icon md-icon"></span>
-          Python
+          Pin
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../python/PyMongo/" class="md-nav__link">
-        关于 PyMongo 发布的一些注释
+      <a href="../../pin/" class="md-nav__link">
+        拼团开发
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../python/awesome/" class="md-nav__link">
-        Awesome Python
+      <a href="../../pin/cohesion/" class="md-nav__link">
+        Cohesion
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../python/framework/" class="md-nav__link">
-        2018 年排名前 11 的 Python 框架
+      <a href="../../pin/group/" class="md-nav__link">
+        Group
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../python/python/" class="md-nav__link">
-        Python
+      <a href="../../pin/ladder/" class="md-nav__link">
+        Ladder
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_5" type="checkbox" id="__nav_12_5" >
-      
-      <label class="md-nav__link" for="__nav_12_5">
-        Anaconda
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Anaconda" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_5">
-          <span class="md-nav__icon md-icon"></span>
-          Anaconda
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../python/Anaconda/QuickStart/" class="md-nav__link">
-        Anaconda 入门使用指南
+      <a href="../../pin/sku-spu/" class="md-nav__link">
+        sku spu
       </a>
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
+            
           
             
+              
   
   
   
@@ -2247,211 +2465,69 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_6" type="checkbox" id="__nav_12_6" >
       
-      <label class="md-nav__link" for="__nav_12_6">
-        FullStack
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="FullStack" data-md-level="2">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_6">
+          Fresh
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Fresh" data-md-level="2">
         <label class="md-nav__title" for="__nav_12_6">
           <span class="md-nav__icon md-icon"></span>
-          FullStack
+          Fresh
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../python/FullStack/mfap0/" class="md-nav__link">
-        [Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)
+      <a href="../../pin/fresh/education/" class="md-nav__link">
+        Education
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../python/FullStack/mfap1/" class="md-nav__link">
-        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分
+      <a href="../../pin/fresh/platform/" class="md-nav__link">
+        Platform
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../python/FullStack/mfap2/" class="md-nav__link">
-        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分
+      <a href="../../pin/fresh/repository/" class="md-nav__link">
+        Repository
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../python/FullStack/mfap3/" class="md-nav__link">
-        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_7" type="checkbox" id="__nav_12_7" >
-      
-      <label class="md-nav__link" for="__nav_12_7">
-        Django
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Django" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_7">
-          <span class="md-nav__icon md-icon"></span>
-          Django
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../python/django/" class="md-nav__link">
-        Django 简要学习文档
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../python/django/awesome/" class="md-nav__link">
-        <a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_8" type="checkbox" id="__nav_12_8" >
-      
-      <label class="md-nav__link" for="__nav_12_8">
-        Flask
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Flask" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_8">
-          <span class="md-nav__icon md-icon"></span>
-          Flask
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../python/flask/" class="md-nav__link">
-        flask 文档
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../python/flask/awesome/" class="md-nav__link">
-        Awesome Flask [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_9" type="checkbox" id="__nav_12_9" >
-      
-      <label class="md-nav__link" for="__nav_12_9">
-        Pip
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Pip" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_9">
-          <span class="md-nav__icon md-icon"></span>
-          Pip
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../python/pip/" class="md-nav__link">
-        Index
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -2472,52 +2548,381 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
       
-      <label class="md-nav__link" for="__nav_13">
-        Running
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Running" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13">
+          Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Python" data-md-level="1">
         <label class="md-nav__title" for="__nav_13">
           <span class="md-nav__icon md-icon"></span>
-          Running
+          Python
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../running/bicycle/" class="md-nav__link">
-        变速自行车
+      <a href="../../python/PyMongo/" class="md-nav__link">
+        关于 PyMongo 发布的一些注释
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../running/card/" class="md-nav__link">
-        自动驾驶
+      <a href="../../python/awesome/" class="md-nav__link">
+        Awesome Python
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../running/walk/" class="md-nav__link">
-        徒步健身
+      <a href="../../python/framework/" class="md-nav__link">
+        2018 年排名前 11 的 Python 框架
       </a>
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/python/" class="md-nav__link">
+        Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_5" type="checkbox" id="__nav_13_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_5">
+          Anaconda
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Anaconda" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_5">
+          <span class="md-nav__icon md-icon"></span>
+          Anaconda
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/Anaconda/QuickStart/" class="md-nav__link">
+        Anaconda 入门使用指南
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_6" type="checkbox" id="__nav_13_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_6">
+          FullStack
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="FullStack" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_6">
+          <span class="md-nav__icon md-icon"></span>
+          FullStack
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/FullStack/mfap0/" class="md-nav__link">
+        [Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/FullStack/mfap1/" class="md-nav__link">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/FullStack/mfap2/" class="md-nav__link">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/FullStack/mfap3/" class="md-nav__link">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_7" type="checkbox" id="__nav_13_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_7">
+          Django
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Django" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_7">
+          <span class="md-nav__icon md-icon"></span>
+          Django
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/django/" class="md-nav__link">
+        Django 简要学习文档
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/django/awesome/" class="md-nav__link">
+        <a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_8" type="checkbox" id="__nav_13_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_8">
+          Flask
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Flask" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_8">
+          <span class="md-nav__icon md-icon"></span>
+          Flask
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/flask/" class="md-nav__link">
+        flask 文档
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/flask/awesome/" class="md-nav__link">
+        Awesome Flask [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_9" type="checkbox" id="__nav_13_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_9">
+          Pip
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Pip" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_9">
+          <span class="md-nav__icon md-icon"></span>
+          Pip
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/pip/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
@@ -2538,118 +2943,62 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
       
-      <label class="md-nav__link" for="__nav_14">
-        Tools
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Tools" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_14">
+          Running
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Running" data-md-level="1">
         <label class="md-nav__title" for="__nav_14">
           <span class="md-nav__icon md-icon"></span>
-          Tools
+          Running
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../tools/" class="md-nav__link">
-        器
+      <a href="../../running/bicycle/" class="md-nav__link">
+        变速自行车
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_2" type="checkbox" id="__nav_14_2" >
-      
-      <label class="md-nav__link" for="__nav_14_2">
-        Eslint
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Eslint" data-md-level="2">
-        <label class="md-nav__title" for="__nav_14_2">
-          <span class="md-nav__icon md-icon"></span>
-          Eslint
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../tools/eslint/" class="md-nav__link">
-        Index
+      <a href="../../running/card/" class="md-nav__link">
+        自动驾驶
       </a>
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_3" type="checkbox" id="__nav_14_3" >
-      
-      <label class="md-nav__link" for="__nav_14_3">
-        Vscode
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Vscode" data-md-level="2">
-        <label class="md-nav__title" for="__nav_14_3">
-          <span class="md-nav__icon md-icon"></span>
-          Vscode
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../tools/vscode/" class="md-nav__link">
-        vscode 文档
+      <a href="../../running/walk/" class="md-nav__link">
+        徒步健身
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../tools/vscode/prettier/" class="md-nav__link">
-        Prettier
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -2670,18 +3019,179 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
       
-      <label class="md-nav__link" for="__nav_15">
-        Wechat
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Wechat" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15">
+          Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tools" data-md-level="1">
         <label class="md-nav__title" for="__nav_15">
+          <span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/" class="md-nav__link">
+        器
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_2" type="checkbox" id="__nav_15_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15_2">
+          Eslint
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Eslint" data-md-level="2">
+        <label class="md-nav__title" for="__nav_15_2">
+          <span class="md-nav__icon md-icon"></span>
+          Eslint
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/eslint/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_3" type="checkbox" id="__nav_15_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15_3">
+          Vscode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Vscode" data-md-level="2">
+        <label class="md-nav__title" for="__nav_15_3">
+          <span class="md-nav__icon md-icon"></span>
+          Vscode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/vscode/" class="md-nav__link">
+        vscode 文档
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/vscode/prettier/" class="md-nav__link">
+        Prettier
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16">
+          Wechat
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Wechat" data-md-level="1">
+        <label class="md-nav__title" for="__nav_16">
           <span class="md-nav__icon md-icon"></span>
           Wechat
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2692,8 +3202,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2704,8 +3216,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2716,8 +3230,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2725,20 +3241,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4" type="checkbox" id="__nav_15_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4" type="checkbox" id="__nav_16_4" >
       
-      <label class="md-nav__link" for="__nav_15_4">
-        Open
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4">
+          Open
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Open" data-md-level="2">
-        <label class="md-nav__title" for="__nav_15_4">
+        <label class="md-nav__title" for="__nav_16_4">
           <span class="md-nav__icon md-icon"></span>
           Open
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2749,8 +3270,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2758,20 +3281,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_2" type="checkbox" id="__nav_15_4_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_2" type="checkbox" id="__nav_16_4_2" >
       
-      <label class="md-nav__link" for="__nav_15_4_2">
-        App
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_2">
+          App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="App" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_2">
+        <label class="md-nav__title" for="__nav_16_4_2">
           <span class="md-nav__icon md-icon"></span>
           App
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2782,14 +3310,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2797,20 +3328,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_3" type="checkbox" id="__nav_15_4_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_3" type="checkbox" id="__nav_16_4_3" >
       
-      <label class="md-nav__link" for="__nav_15_4_3">
-        Code
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_3">
+          Code
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Code" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_3">
+        <label class="md-nav__title" for="__nav_16_4_3">
           <span class="md-nav__icon md-icon"></span>
           Code
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2821,14 +3357,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2836,20 +3375,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_4" type="checkbox" id="__nav_15_4_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_4" type="checkbox" id="__nav_16_4_4" >
       
-      <label class="md-nav__link" for="__nav_15_4_4">
-        D3f
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_4">
+          D3f
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="D3f" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_4">
+        <label class="md-nav__title" for="__nav_16_4_4">
           <span class="md-nav__icon md-icon"></span>
           D3f
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2860,14 +3404,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2875,20 +3422,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_5" type="checkbox" id="__nav_15_4_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_5" type="checkbox" id="__nav_16_4_5" >
       
-      <label class="md-nav__link" for="__nav_15_4_5">
-        Download
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_5">
+          Download
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Download" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_5">
+        <label class="md-nav__title" for="__nav_16_4_5">
           <span class="md-nav__icon md-icon"></span>
           Download
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2899,8 +3451,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2911,8 +3465,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2923,8 +3479,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2935,8 +3493,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2947,18 +3507,21 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -2978,7 +3541,9 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -3254,8 +3819,9 @@
             <article class="md-content__inner md-typeset">
               
                 
-                
-                <h1 id="angular-webpack">Angular 的 webpack 启动器</h1>
+
+
+<h1 id="angular-webpack">Angular 的 webpack 启动器<a class="headerlink" href="#angular-webpack" title="Permanent link">&para;</a></h1>
 <p>Angular Webpack Starter <a href="https://gitter.im/gdi2290/angular-starter?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img alt="Join the chat at https://gitter.im/gdi2290/angular-starter" src="https://badges.gitter.im/Join%20Chat.svg" /></a></p>
 <blockquote>
 <p>An Angular starter kit featuring <a href="https://angular.io">Angular 5</a>, <a href="https://angular.io/docs/ts/latest/cookbook/aot-compiler.html">Ahead of Time Compile</a>, <a href="https://angular.io/docs/ts/latest/guide/router.html">Router</a>, <a href="https://angular.io/docs/ts/latest/guide/forms.html">Forms</a>,
@@ -3283,37 +3849,37 @@ If you're looking for something easier to get started with then see the angular-
 <li>Hot Module Replacement with Webpack and <a href="https://github.com/angularclass/angular-hmr">@angularclass/hmr</a> and <a href="https://github.com/angularclass/angular-hmr-loader">@angularclass/hmr-loader</a></li>
 <li>Angular 4 support via changing package.json and any future Angular versions</li>
 </ul>
-<h4 id="_1">快速入门</h4>
+<h4 id="_1">快速入门<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <p><strong>Make sure you have Node version &gt;= 6.0 and NPM &gt;= 3</strong></p>
 <blockquote>
 <p>Clone/Download the repo then edit <code>app.component.ts</code> inside <a href="/src/app/app.component.ts"><code>/src/app/app.component.ts</code></a></p>
 </blockquote>
-<pre><code class="language-bash">## clone our repo
-## --depth 1 removes all but one .git commit history
-git clone --depth 1 https://github.com/AngularClass/angular-starter.git
+<div class="highlight"><pre><span></span><code><span class="c1">## clone our repo</span>
+<span class="c1">## --depth 1 removes all but one .git commit history</span>
+git clone --depth <span class="m">1</span> https://github.com/AngularClass/angular-starter.git
 
-## change directory to our repo
-cd angular-starter
+<span class="c1">## change directory to our repo</span>
+<span class="nb">cd</span> angular-starter
 
-## WINDOWS only. In terminal as administrator
+<span class="c1">## WINDOWS only. In terminal as administrator</span>
 npm install -g node-pre-gyp
 
-## install the repo with npm
+<span class="c1">## install the repo with npm</span>
 npm install
 
-## start the server
+<span class="c1">## start the server</span>
 npm start
 
-## use Hot Module Replacement
+<span class="c1">## use Hot Module Replacement</span>
 npm run server:dev:hmr
 
-## if you're in China use cnpm
-## https://github.com/cnpm/cnpm
-</code></pre>
+<span class="c1">## if you&#39;re in China use cnpm</span>
+<span class="c1">## https://github.com/cnpm/cnpm</span>
+</code></pre></div>
 <p>go to <a href="http://0.0.0.0:3000">http://0.0.0.0:3000</a> or <a href="http://localhost:3000">http://localhost:3000</a> in your browser</p>
-<h2 id="_2">文件结构</h2>
+<h2 id="_2">文件结构<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>We use the component approach in our starter. This is the new standard for developing Angular apps and a great way to ensure maintainable code by encapsulation of our behavior logic. A component is basically a self contained app usually in a single file or a folder with each concern as a file: style, template, specs, e2e, and component class. Here's how it looks:</p>
-<pre><code>angular-starter/
+<div class="highlight"><pre><span></span><code>angular-starter/
  ├──config/                        * 配置文件
  |   ├──helpers.js                 * 配置文件帮助函数
  |   ├──spec-bundle.js             * ignore this magic that sets up our Angular testing environment
@@ -3337,7 +3903,7 @@ npm run server:dev:hmr
  │   │
  │   └──assets/                    * 静态资源
  │       ├──icon/                  * our list of icons from www.favicon-generator.org
- │       ├──service-worker.js      * ignore this. Web App service worker that's not complete yet
+ │       ├──service-worker.js      * ignore this. Web App service worker that&#39;s not complete yet
  │       ├──robots.txt             * for search engines to crawl your website
  │       └──humans.txt             * for humans to know who the developers are
  │
@@ -3348,10 +3914,9 @@ npm run server:dev:hmr
  ├──tsconfig.webpack.json          * config that webpack uses for typescript
  ├──package.json                   * what npm uses to manage its dependencies
  └──webpack.config.js              * webpack 主配置文件
-
-</code></pre>
-<h2 id="_3">入门指南</h2>
-<h3 id="_4">依赖关系</h3>
+</code></pre></div>
+<h2 id="_3">入门指南<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">依赖关系<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>What you need to run this app:</p>
 <ul>
 <li><code>node</code> and <code>npm</code> (<code>brew install node</code>)</li>
@@ -3368,7 +3933,7 @@ npm run server:dev:hmr
 <li><code>protractor</code> (<code>npm install --global protractor</code>)</li>
 <li><code>typescript</code> (<code>npm install --global typescript</code>)</li>
 </ul>
-<h3 id="_5">安装</h3>
+<h3 id="_5">安装<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>fork</code> this repo</li>
 <li><code>clone</code> your fork</li>
@@ -3376,73 +3941,73 @@ npm run server:dev:hmr
 <li><code>npm install</code> to install all dependencies or <code>yarn</code></li>
 <li><code>npm run server</code> to start the dev server in another tab</li>
 </ul>
-<h3 id="_6">运行应用</h3>
+<h3 id="_6">运行应用<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p>After you have installed all dependencies you can now run the app. Run <code>npm run server</code> to start a local server using <code>webpack-dev-server</code> which will watch, build (in-memory), and reload for you. The port will be displayed to you as <code>http://0.0.0.0:3000</code> (or if you prefer IPv6, if you're using <code>express</code> server, then it's <code>http://[::1]:3000/</code>).</p>
-<h4 id="_7">服务</h4>
-<pre><code class="language-bash">## development
+<h4 id="_7">服务<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1">## development</span>
 npm run server
-## production
+<span class="c1">## production</span>
 npm run build:prod
 npm run server:prod
-</code></pre>
-<h3 id="_8">其它命令</h3>
-<p>??? info "构建文件"</p>
-<pre><code>```bash
-## development
+</code></pre></div>
+<h3 id="_8">其它命令<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<details class="info">
+<summary>构建文件</summary>
+<div class="highlight"><pre><span></span><code><span class="c1">## development</span>
 npm run build:dev
-## production (jit)
+<span class="c1">## production (jit)</span>
 npm run build:prod
-## AoT
+<span class="c1">## AoT</span>
 npm run build:aot
-```
-</code></pre>
-<p>??? info "热模块加载"</p>
-<pre><code>```bash
-npm run server:dev:hmr
-```
-</code></pre>
-<p>??? info "监控并构建文件"</p>
-<pre><code>```bash
-npm run watch
-```
-</code></pre>
-<p>??? info "运行单元测试"</p>
-<pre><code>```bash
-npm run test
-```
-</code></pre>
-<p>??? info "监控并运行测试"</p>
-<pre><code>```bash
-npm run watch:test
-```
-</code></pre>
-<p>??? info "运行 end-to-end 测试"</p>
-<pre><code>```bash
-## update Webdriver (optional, done automatically by postinstall script)
+</code></pre></div>
+</details>
+<details class="info">
+<summary>热模块加载</summary>
+<div class="highlight"><pre><span></span><code>npm run server:dev:hmr
+</code></pre></div>
+</details>
+<details class="info">
+<summary>监控并构建文件</summary>
+<div class="highlight"><pre><span></span><code>npm run watch
+</code></pre></div>
+</details>
+<details class="info">
+<summary>运行单元测试</summary>
+<div class="highlight"><pre><span></span><code>npm run <span class="nb">test</span>
+</code></pre></div>
+</details>
+<details class="info">
+<summary>监控并运行测试</summary>
+<div class="highlight"><pre><span></span><code>npm run watch:test
+</code></pre></div>
+</details>
+<details class="info">
+<summary>运行 end-to-end 测试</summary>
+<div class="highlight"><pre><span></span><code><span class="c1">## update Webdriver (optional, done automatically by postinstall script)</span>
 npm run webdriver:update
-## this will start a test server and launch Protractor
+<span class="c1">## this will start a test server and launch Protractor</span>
 npm run e2e
-```
-</code></pre>
-<p>??? info "持续集成 (run unit tests and e2e tests together)"</p>
-<pre><code>```bash
-## this will test both your JIT and AoT builds
+</code></pre></div>
+</details>
+<details class="info">
+<summary>持续集成 (run unit tests and e2e tests together)</summary>
+<div class="highlight"><pre><span></span><code><span class="c1">## this will test both your JIT and AoT builds</span>
 npm run ci
-```
-</code></pre>
-<p>??? info "run Protractor's elementExplorer (for end-to-end)"</p>
-<pre><code>```bash
-npm run e2e:live
-```
-</code></pre>
-<p>??? info "构建 Docker"</p>
-<pre><code>```bash
-npm run build:docker
-```
-</code></pre>
-<h2 id="_9">配置</h2>
+</code></pre></div>
+</details>
+<details class="info">
+<summary>run Protractor's elementExplorer (for end-to-end)</summary>
+<div class="highlight"><pre><span></span><code>npm run e2e:live
+</code></pre></div>
+</details>
+<details class="info">
+<summary>构建 Docker</summary>
+<div class="highlight"><pre><span></span><code>npm run build:docker
+</code></pre></div>
+</details>
+<h2 id="_9">配置<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
 <p>Configuration files live in <code>config/</code> we are currently using webpack, karma, and protractor for different stages of your application</p>
-<h2 id="aot-donts">AoT Don'ts</h2>
+<h2 id="aot-donts">AoT Don'ts<a class="headerlink" href="#aot-donts" title="Permanent link">&para;</a></h2>
 <p>The following are some things that will make AoT compile fail.</p>
 <ul>
 <li>Don’t use require statements for your templates or styles, use styleUrls and templateUrls, the angular2-template-loader plugin will change it to require at build time.</li>
@@ -3452,7 +4017,7 @@ npm run build:docker
 <li>Don’t use functions in your providers, routes or declarations, export a function and then reference that function name</li>
 <li>@Inputs, @Outputs, View or Content Child(ren), Hostbindings, and any field you use from the template or annotate for Angular should be public</li>
 </ul>
-<h2 id="_10">扩展样式</h2>
+<h2 id="_10">扩展样式<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
 <p>Any stylesheets (Sass or CSS) placed in the <code>src/styles</code> directory and imported into your project will automatically be compiled into an external <code>.css</code> and embedded in your production builds.</p>
 <p>For example to use Bootstrap as an external stylesheet:</p>
 <ol>
@@ -3461,17 +4026,17 @@ npm run build:docker
 <li>In <code>styles.scss</code> add <code>@import 'bootstrap/scss/bootstrap.scss';</code></li>
 <li>In <code>src/app/app.module.ts</code> add underneath the other import statements: <code>import '../styles/styles.scss';</code></li>
 </ol>
-<h2 id="_11">贡献</h2>
+<h2 id="_11">贡献<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
 <p>You can include more examples as components but they must introduce a new concept such as <code>Home</code> component (separate folders), and Todo (services). I'll accept pretty much everything so feel free to open a Pull-Request</p>
-<h2 id="typescript">TypeScript</h2>
+<h2 id="typescript">TypeScript<a class="headerlink" href="#typescript" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>To take full advantage of TypeScript with autocomplete you would have to install it globally and use an editor with the correct TypeScript plugins.</p>
 </blockquote>
-<h3 id="use-latest-typescript-compiler">Use latest TypeScript compiler</h3>
+<h3 id="use-latest-typescript-compiler">Use latest TypeScript compiler<a class="headerlink" href="#use-latest-typescript-compiler" title="Permanent link">&para;</a></h3>
 <p>TypeScript 2.1.x includes everything you need. Make sure to upgrade, even if you installed TypeScript previously.</p>
-<pre><code>npm install --global typescript
-</code></pre>
-<h3 id="use-a-typescript-aware-editor">Use a TypeScript-aware editor</h3>
+<div class="highlight"><pre><span></span><code>npm install --global typescript
+</code></pre></div>
+<h3 id="use-a-typescript-aware-editor">Use a TypeScript-aware editor<a class="headerlink" href="#use-a-typescript-aware-editor" title="Permanent link">&para;</a></h3>
 <p>We have good experience using these editors:</p>
 <ul>
 <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
@@ -3479,102 +4044,121 @@ npm run build:docker
 <li><a href="https://atom.io/">Atom</a> with <a href="https://atom.io/packages/atom-typescript">TypeScript plugin</a></li>
 <li><a href="http://www.sublimetext.com/3">Sublime Text</a> with <a href="https://github.com/Microsoft/Typescript-Sublime-plugin#installation">Typescript-Sublime-Plugin</a></li>
 </ul>
-<h4 id="visual-studio-code-debugger-for-chrome">Visual Studio Code + Debugger for Chrome</h4>
+<h4 id="visual-studio-code-debugger-for-chrome">Visual Studio Code + Debugger for Chrome<a class="headerlink" href="#visual-studio-code-debugger-for-chrome" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>Install <a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome">Debugger for Chrome</a> and see docs for instructions to launch Chrome</p>
 </blockquote>
 <p>The included <code>.vscode</code> automatically connects to the webpack development server on port <code>3000</code>.</p>
-<h2 id="types">Types</h2>
+<h2 id="types">Types<a class="headerlink" href="#types" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>When you include a module that doesn't include Type Definitions inside of the module you can include external Type Definitions with @types</p>
 </blockquote>
 <p>i.e, to have youtube api support, run this command in terminal:</p>
-<pre><code class="language-shell">npm i @types/youtube @types/gapi @types/gapi.youtube
-</code></pre>
+<div class="highlight"><pre><span></span><code>npm i @types/youtube @types/gapi @types/gapi.youtube
+</code></pre></div>
 <p>In some cases where your code editor doesn't support Typescript 2 yet or these types weren't listed in <code>tsconfig.json</code>, add these to <strong>"src/custom-typings.d.ts"</strong> to make peace with the compile check:</p>
-<pre><code class="language-es6">import &quot;@types/gapi.youtube&quot;;
+<div class="highlight"><pre><span></span><code>import &quot;@types/gapi.youtube&quot;;
 import &quot;@types/gapi&quot;;
 import &quot;@types/youtube&quot;;
-</code></pre>
-<h3 id="_12">自定义类型定义</h3>
+</code></pre></div>
+<h3 id="_12">自定义类型定义<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
 <p>When including 3rd party modules you also need to include the type definition for the module
 if they don't provide one within the module. You can try to install it with @types</p>
-<pre><code class="language-sh">&gt; npm install @types/node
+<div class="highlight"><pre><span></span><code>&gt; npm install @types/node
 &gt; npm install @types/lodash
-</code></pre>
+</code></pre></div>
 <p>If you can't find the type definition in the registry we can make an ambient definition in
 this file for now. For example</p>
-<pre><code class="language-typescript">declare module &quot;my-module&quot; {
-  export function doesSomething(value: string): string;
-}
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="kr">declare</span><span class="w"> </span><span class="nx">module</span><span class="w"> </span><span class="s2">&quot;my-module&quot;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">doesSomething</span><span class="p">(</span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>If you're prototyping and you will fix the types later you can also declare it as type any</p>
-<pre><code class="language-typescript">declare var assert: any;
-declare var _: any;
-declare var $: any;
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="kr">declare</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">assert</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">;</span><span class="w"></span>
+<span class="kr">declare</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">_</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">;</span><span class="w"></span>
+<span class="kr">declare</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">$</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
 <p>If you're importing a module that uses Node.js modules which are CommonJS you need to import as</p>
-<pre><code class="language-typescript">import * as _ from &quot;lodash&quot;;
-</code></pre>
-<h2 id="_13">常见问题</h2>
-<p>??? info "Angular 支持哪些浏览器?"</p>
-<pre><code>Please view the updated list of [browser support for Angular 2](https://github.com/angularclass/awesome-angular2#current-browser-support-for-angular-2)
-</code></pre>
-<p>??? info "Why is my service, aka provider, is not injecting parameter correctly?"</p>
-<pre><code>Please use `@Injectable()` for your service for typescript to correctly attach the metadata (this is a TypeScript problem)
-</code></pre>
-<p>??? info "我在哪里写测试?"</p>
-<pre><code> You can write your tests next to your component files. See [`/src/app/home/home.component.spec.ts`](/src/app/home/home.component.spec.ts)
-</code></pre>
-<p>??? info "How do I start the app when I get <code>EACCES</code> and <code>EADDRINUSE</code> errors?"</p>
-<pre><code> The `EADDRINUSE` error means the port `3000` is currently being used and `EACCES` is lack of permission for webpack to build files to `./dist/`
-</code></pre>
-<p>??? info "How to use <code>sass</code> for css?"</p>
-<pre><code> `loaders: ['raw-loader','sass-loader']` and `@Component({ styleUrls: ['./filename.scss'] })` see Wiki page [How to include SCSS in components](https://github.com/AngularClass/angular-starter/wiki/How-to-include-SCSS-in-components), or issue [#136](https://github.com/AngularClass/angular-starter/issues/136) for more information.
-</code></pre>
-<p>??? info "如何测试服务?"</p>
-<pre><code> See issue [#130](https://github.com/AngularClass/angular-starter/issues/130#issuecomment-158872648)
-</code></pre>
-<p>??? info "如何添加 <code>vscode-chrome-debug</code> 支持?"</p>
-<pre><code> The VS Code chrome debug extension support can be done via `launch.json` see issue [#144](https://github.com/AngularClass/angular-starter/issues/144#issuecomment-164063790)
-</code></pre>
-<p>??? info "How do I make the repo work in a virtual machine?"</p>
-<pre><code> You need to use `0.0.0.0` so revert these changes [#205](https://github.com/AngularClass/angular-starter/pull/205/files)
-</code></pre>
-<p>??? info "What are the naming conventions for Angular?"</p>
-<pre><code> please see issue [#185](https://github.com/AngularClass/angular-starter/issues/185) and PR [196](https://github.com/AngularClass/angular-starter/pull/196)
-</code></pre>
-<p>??? info "如何引入 bootstrap 或者 jQuery?"</p>
-<pre><code> please see issue [#215](https://github.com/AngularClass/angular-starter/issues/215) and [#214](https://github.com/AngularClass/angular-starter/issues/214#event-511768416)
-</code></pre>
-<p>??? info "如何异步加载模块?"</p>
-<pre><code> see wiki [How-do-I-async-load-a-component-with-AsyncRoute](https://github.com/AngularClass/angular-starter/wiki/How-do-I-async-load-a-component-with-AsyncRoute)
-</code></pre>
-<p>??? info "Error: Cannot find module 'tapable'"</p>
-<pre><code> Remove `node_modules/` and run `npm cache clean` then `npm install`
-</code></pre>
-<p>??? info "如何开启热模块加载？"</p>
-<pre><code> Run `npm run server:dev:hmr`
-</code></pre>
-<p>??? info "<code>RangeError: Maximum call stack size exceeded</code>"</p>
-<pre><code> This is a problem with minifying Angular and it's recent JIT templates. If you set `mangle` to `false` then you should be good.
-</code></pre>
-<p>??? info "开发环境为什么我的应用非常大?"</p>
-<pre><code> We are using inline source-maps and hot module replacement which will increase the bundle size.
-</code></pre>
-<p>??? info "如果你在中国"</p>
-<pre><code> check out https://github.com/cnpm/cnpm
-</code></pre>
-<p>??? info "node-pre-gyp ERR in npm install (Windows)"</p>
-<pre><code> install Python x86 version between 2.5 and 3.0 on windows see issue [#626](https://github.com/AngularClass/angular-starter/issues/626)
-</code></pre>
-<p>??? info "<code>Error:Error: Parse tsconfig error [{"messageText":"Unknown compiler option 'lib'.","category":1,"code":5023},{"messageText":"Unknown compiler option 'strictNullChecks'.","category":1,"code":5023},{"messageText":"Unknown compiler option 'baseUrl'.","category":1,"code":5023},{"messageText":"Unknown compiler option 'paths'.","category":1,"code":5023},{"messageText":"Unknown compiler option 'types'.","category":1,"code":5023}]</code>"</p>
-<pre><code> remove `node_modules/typescript` and run `npm install typescript@beta`. This repo now uses ts 2.0
-</code></pre>
-<p>??? info "There are multiple modules with names that only differ in casing"</p>
-<pre><code> change `c:\[path to angular-starter]` to `C:\[path to angular-starter]` see [926#issuecomment-245223547](https://github.com/AngularClass/angular-starter/issues/926#issuecomment-245223547)
-</code></pre>
-<h2 id="_14">支持、问题或反馈</h2>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">_</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;lodash&quot;</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+<h2 id="_13">常见问题<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<details class="info">
+<summary>Angular 支持哪些浏览器?</summary>
+<p>Please view the updated list of <a href="https://github.com/angularclass/awesome-angular2#current-browser-support-for-angular-2">browser support for Angular 2</a></p>
+</details>
+<details class="info">
+<summary>Why is my service, aka provider, is not injecting parameter correctly?</summary>
+<p>Please use <code>@Injectable()</code> for your service for typescript to correctly attach the metadata (this is a TypeScript problem)</p>
+</details>
+<details class="info">
+<summary>我在哪里写测试?</summary>
+<p>You can write your tests next to your component files. See <a href="/src/app/home/home.component.spec.ts"><code>/src/app/home/home.component.spec.ts</code></a></p>
+</details>
+<details class="info">
+<summary>How do I start the app when I get <code>EACCES</code> and <code>EADDRINUSE</code> errors?</summary>
+<p>The <code>EADDRINUSE</code> error means the port <code>3000</code> is currently being used and <code>EACCES</code> is lack of permission for webpack to build files to <code>./dist/</code></p>
+</details>
+<details class="info">
+<summary>How to use <code>sass</code> for css?</summary>
+<p><code>loaders: ['raw-loader','sass-loader']</code> and <code>@Component({ styleUrls: ['./filename.scss'] })</code> see Wiki page <a href="https://github.com/AngularClass/angular-starter/wiki/How-to-include-SCSS-in-components">How to include SCSS in components</a>, or issue <a href="https://github.com/AngularClass/angular-starter/issues/136">#136</a> for more information.</p>
+</details>
+<details class="info">
+<summary>如何测试服务?</summary>
+<p>See issue <a href="https://github.com/AngularClass/angular-starter/issues/130#issuecomment-158872648">#130</a></p>
+</details>
+<details class="info">
+<summary>如何添加 <code>vscode-chrome-debug</code> 支持?</summary>
+<p>The VS Code chrome debug extension support can be done via <code>launch.json</code> see issue <a href="https://github.com/AngularClass/angular-starter/issues/144#issuecomment-164063790">#144</a></p>
+</details>
+<details class="info">
+<summary>How do I make the repo work in a virtual machine?</summary>
+<p>You need to use <code>0.0.0.0</code> so revert these changes <a href="https://github.com/AngularClass/angular-starter/pull/205/files">#205</a></p>
+</details>
+<details class="info">
+<summary>What are the naming conventions for Angular?</summary>
+<p>please see issue <a href="https://github.com/AngularClass/angular-starter/issues/185">#185</a> and PR <a href="https://github.com/AngularClass/angular-starter/pull/196">196</a></p>
+</details>
+<details class="info">
+<summary>如何引入 bootstrap 或者 jQuery?</summary>
+<p>please see issue <a href="https://github.com/AngularClass/angular-starter/issues/215">#215</a> and <a href="https://github.com/AngularClass/angular-starter/issues/214#event-511768416">#214</a></p>
+</details>
+<details class="info">
+<summary>如何异步加载模块?</summary>
+<p>see wiki <a href="https://github.com/AngularClass/angular-starter/wiki/How-do-I-async-load-a-component-with-AsyncRoute">How-do-I-async-load-a-component-with-AsyncRoute</a></p>
+</details>
+<details class="info">
+<summary>Error: Cannot find module 'tapable'</summary>
+<p>Remove <code>node_modules/</code> and run <code>npm cache clean</code> then <code>npm install</code></p>
+</details>
+<details class="info">
+<summary>如何开启热模块加载？</summary>
+<p>Run <code>npm run server:dev:hmr</code></p>
+</details>
+<details class="info">
+<summary><code>RangeError: Maximum call stack size exceeded</code></summary>
+<p>This is a problem with minifying Angular and it's recent JIT templates. If you set <code>mangle</code> to <code>false</code> then you should be good.</p>
+</details>
+<details class="info">
+<summary>开发环境为什么我的应用非常大?</summary>
+<p>We are using inline source-maps and hot module replacement which will increase the bundle size.</p>
+</details>
+<details class="info">
+<summary>如果你在中国</summary>
+<p>check out https://github.com/cnpm/cnpm</p>
+</details>
+<details class="info">
+<summary>node-pre-gyp ERR in npm install (Windows)</summary>
+<p>install Python x86 version between 2.5 and 3.0 on windows see issue <a href="https://github.com/AngularClass/angular-starter/issues/626">#626</a></p>
+</details>
+<details class="info">
+<summary><code>Error:Error: Parse tsconfig error [{"messageText":"Unknown compiler option 'lib'.","category":1,"code":5023},{"messageText":"Unknown compiler option 'strictNullChecks'.","category":1,"code":5023},{"messageText":"Unknown compiler option 'baseUrl'.","category":1,"code":5023},{"messageText":"Unknown compiler option 'paths'.","category":1,"code":5023},{"messageText":"Unknown compiler option 'types'.","category":1,"code":5023}]</code></summary>
+<p>remove <code>node_modules/typescript</code> and run <code>npm install typescript@beta</code>. This repo now uses ts 2.0</p>
+</details>
+<details class="info">
+<summary>There are multiple modules with names that only differ in casing</summary>
+<p>change <code>c:\[path to angular-starter]</code> to <code>C:\[path to angular-starter]</code> see <a href="https://github.com/AngularClass/angular-starter/issues/926#issuecomment-245223547">926#issuecomment-245223547</a></p>
+</details>
+<h2 id="_14">支持、问题或反馈<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Contact us anytime for anything about this repo or Angular</p>
 </blockquote>
@@ -3583,29 +4167,29 @@ declare var $: any;
 <li><a href="https://twitter.com/AngularClass">Twitter: @AngularClass</a></li>
 <li><a href="https://gitter.im/angularclass/angular2-webpack-starter">Gitter: AngularClass/angular2-webpack-starter</a></li>
 </ul>
-<h2 id="_15">部署</h2>
-<h3 id="docker">Docker</h3>
+<h2 id="_15">部署<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<h3 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h3>
 <p>To run project you only need host machine with <strong>operating system</strong> with installed <strong>git</strong> (to clone this repo)
 and <a href="https://www.docker.com/">docker</a> and thats all - any other software is not needed
 (other software like node.js etc. will be automatically downloaded and installed inside docker container during build step based on dockerfile).</p>
-<h4 id="docker_1">安装 docker</h4>
+<h4 id="docker_1">安装 docker<a class="headerlink" href="#docker_1" title="Permanent link">&para;</a></h4>
 <p><strong>MacOS:</strong></p>
 <p><code>brew cask install docker</code></p>
 <p>And run docker by Mac bottom menu&gt; launchpad &gt; docker (on first run docker will ask you about password)</p>
 <p><strong>Ubuntu:</strong></p>
-<pre><code class="language-sh">sudo apt-get update
+<div class="highlight"><pre><span></span><code>sudo apt-get update
 sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
-sudo apt-add-repository 'deb https://apt.dockerproject.org/repo ubuntu-xenial main'
+sudo apt-add-repository <span class="s1">&#39;deb https://apt.dockerproject.org/repo ubuntu-xenial main&#39;</span>
 sudo apt-get update
 apt-cache policy docker-engine
 sudo apt-get install -y docker-engine
-sudo systemctl status docker  ## test:  shoud be ‘active’
-</code></pre>
+sudo systemctl status docker  <span class="c1">## test:  shoud be ‘active’</span>
+</code></pre></div>
 <p>And add your user to docker group (to avoid <code>sudo</code> before using <code>docker</code> command in future):</p>
-<pre><code class="language-sh">sudo usermod -aG docker $(whoami)
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo usermod -aG docker <span class="k">$(</span>whoami<span class="k">)</span>
+</code></pre></div>
 <p>and logout and login again.</p>
-<h4 id="_16">构建镜像</h4>
+<h4 id="_16">构建镜像<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h4>
 <p>Because <em>node.js</em> is big memory consumer you need 1-2GB RAM or virtual memory to build docker image
 (it was successfully tested on machine with 512MB RAM + 2GB virtual memory - building process take 7min)</p>
 <p>Go to main project folder. To build big (~280MB) image which has cached data and is able to <strong>FAST</strong> rebuild
@@ -3617,45 +4201,40 @@ sudo systemctl status docker  ## test:  shoud be ‘active’
 <p>The <strong>angular-starter</strong> name used in above commands is only example image name.
 To remove intermediate images created by docker on build process, type:</p>
 <p><code>docker rmi -f $(docker images -f "dangling=true" -q)</code></p>
-<h4 id="_17">运行镜像</h4>
+<h4 id="_17">运行镜像<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
 <p>To run created docker image on <a href="localhost:8080">localhost:8080</a> type (parameter <code>-p 8080:80</code> is host:container port mapping)</p>
 <p><code>docker run --name angular-starter -p 8080:80 angular-starter &amp;</code></p>
 <p>And that's all, you can open browser and go to <a href="localhost:8080">localhost:8080</a>.</p>
-<h4 id="build-and-run-image-using-docker-compose">Build and Run image using docker-compose</h4>
+<h4 id="build-and-run-image-using-docker-compose">Build and Run image using docker-compose<a class="headerlink" href="#build-and-run-image-using-docker-compose" title="Permanent link">&para;</a></h4>
 <p>To create and run docker image on <a href="localhost:8080">localhost:8080</a> as part of large project you may use <strong>docker-compose</strong>. Type</p>
 <p><code>docker-compose up &amp;</code></p>
 <p>And that's all, you can open browser and go to <a href="localhost:8080">localhost:8080</a>.</p>
-<h4 id="run-image-on-sub-domain">Run image on sub-domain</h4>
+<h4 id="run-image-on-sub-domain">Run image on sub-domain<a class="headerlink" href="#run-image-on-sub-domain" title="Permanent link">&para;</a></h4>
 <p>If you want to run image as virtual-host on sub-domain you must setup <a href="https://github.com/jwilder/nginx-proxy">proxy</a>
 . You should install proxy and set sub-domain in this way:</p>
-<pre><code class="language-sh">docker pull jwilder/nginx-proxy:alpine
-docker run -d -p 80:80 --name nginx-proxy -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy:alpine
-</code></pre>
+<div class="highlight"><pre><span></span><code>docker pull jwilder/nginx-proxy:alpine
+docker run -d -p <span class="m">80</span>:80 --name nginx-proxy -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy:alpine
+</code></pre></div>
 <p>And in your <code>/etc/hosts</code> file (linux) add line: <code>127.0.0.1 angular-starter.your-domain.com</code> or in yor hosting add folowing DNS record (wildchar <code>*</code> is handy because when you add new sub-domain in future, you don't need to touch/add any DNS record)</p>
-<pre><code class="language-config">Type: CNAME
+<div class="highlight"><pre><span></span><code>Type: CNAME
 Hostname: *.your-domain.com
 Direct to: your-domain.com
 TTL(sec): 43200
-</code></pre>
+</code></pre></div>
 <p>And now you are ready to run image on subdomain by:</p>
-<pre><code class="language-sh">docker run -e VIRTUAL_HOST=angular-starter.your-domain.com --name angular-starter angular-starter &amp;
-</code></pre>
-<h4 id="login-into-docker-container">Login into docker container</h4>
+<div class="highlight"><pre><span></span><code>docker run -e <span class="nv">VIRTUAL_HOST</span><span class="o">=</span>angular-starter.your-domain.com --name angular-starter angular-starter <span class="p">&amp;</span>
+</code></pre></div>
+<h4 id="login-into-docker-container">Login into docker container<a class="headerlink" href="#login-into-docker-container" title="Permanent link">&para;</a></h4>
 <p><code>docker exec -t -i angular-starter /bin/bash</code></p>
-<h3 id="netlify">Netlify</h3>
+<h3 id="netlify">Netlify<a class="headerlink" href="#netlify" title="Permanent link">&para;</a></h3>
 <p>You can quickly create a free site to get started using this
 starter kit in production on <a href="https://www.netlify.com/">Netlify</a>:</p>
 <p><a href="https://app.netlify.com/start/deploy?repository=https://github.com/AngularClass/angular-starter"><img alt="Deploy to Netlify" src="https://www.netlify.com/img/deploy/button.svg" /></a></p>
 <hr />
 <p>enjoy — <a href="https://twitter.com/gdi2290"><strong>PatrickJS</strong></a></p>
 <hr />
-<h2 id="_18">证书</h2>
+<h2 id="_18">证书<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
 <p><a href="/LICENSE">MIT</a></p>
-                
-              
-              
-                
-
 
               
             </article>
@@ -3664,12 +4243,12 @@ starter kit in production on <a href="https://www.netlify.com/">Netlify</a>:</p>
         
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../sockets/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../sockets/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 使用TypeScript的实时应用程序：集成Web套接字，Node和Angular" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -3684,7 +4263,8 @@ starter kit in production on <a href="https://www.netlify.com/">Netlify</a>:</p>
         </a>
       
       
-        <a href="../traceur/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="../traceur/" class="md-footer__link md-footer__link--next" aria-label="Next: Traceur" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -3702,18 +4282,19 @@ starter kit in production on <a href="https://www.netlify.com/">Netlify</a>:</p>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            版权 &copy; 2017 - 2021 wohugb.github.io
-          </div>
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
-      </div>
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      版权 &copy; 2017 - 2022 wohugb.github.io
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
     </div>
   </div>
@@ -3723,10 +4304,10 @@ starter kit in production on <a href="https://www.netlify.com/">Netlify</a>:</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.7353b375.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e87a5f81.min.js"></script>
       
     
   </body>

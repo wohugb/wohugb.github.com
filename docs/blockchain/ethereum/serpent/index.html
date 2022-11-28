@@ -9,12 +9,11 @@
         <meta name="description" content="大鼻子的日常学习记录">
       
       
-      
         <meta name="author" content="Nosy">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.7">
     
     
       
@@ -22,26 +21,28 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.9299cb39.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9d5733d3.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
-    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+
     
     
   </head>
@@ -55,7 +56,6 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -72,7 +72,10 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+    
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="大鼻子" class="md-header__button md-logo" aria-label="大鼻子" data-md-component="logo">
       
@@ -105,19 +108,22 @@
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -134,11 +140,10 @@
     
     
       <div class="md-header__source">
-        
-<a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     wohugb/wohugb.github.com
@@ -147,11 +152,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -177,11 +185,10 @@
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     wohugb/wohugb.github.com
@@ -249,10 +256,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
-      <label class="md-nav__link" for="__nav_4">
-        Ai
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Ai
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ai" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
@@ -261,6 +272,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -271,8 +283,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -283,8 +297,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -295,8 +311,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -307,8 +325,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -319,8 +339,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -331,8 +353,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -343,8 +367,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -355,8 +381,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -367,8 +395,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -378,10 +408,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10" type="checkbox" id="__nav_4_10" >
       
-      <label class="md-nav__link" for="__nav_4_10">
-        Bot
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_10">
+          Bot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Bot" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_10">
           <span class="md-nav__icon md-icon"></span>
@@ -390,6 +424,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -400,8 +435,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -412,8 +449,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -424,8 +463,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -436,14 +477,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -453,10 +497,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
       
-      <label class="md-nav__link" for="__nav_4_11">
-        Iot
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_11">
+          Iot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Iot" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_11">
           <span class="md-nav__icon md-icon"></span>
@@ -465,6 +513,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -475,12 +524,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -501,10 +552,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
-      <label class="md-nav__link" for="__nav_5">
-        Aliyun
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Aliyun
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Aliyun" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
@@ -513,6 +568,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -523,8 +579,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -535,6 +593,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -555,10 +614,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
-      <label class="md-nav__link" for="__nav_6">
-        Angular
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Angular
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Angular" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
@@ -567,6 +630,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -577,8 +641,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -589,8 +655,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -601,8 +669,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -613,8 +683,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -625,8 +697,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -637,8 +711,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -649,8 +725,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -661,8 +739,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -673,8 +753,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -685,8 +767,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -697,8 +781,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -709,8 +795,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -721,8 +809,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -733,8 +823,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -745,8 +837,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -757,8 +851,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -769,8 +865,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -781,8 +879,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -793,8 +893,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -805,8 +907,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -817,8 +921,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -829,8 +935,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -841,8 +949,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -853,8 +963,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -864,10 +976,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_25" type="checkbox" id="__nav_6_25" >
       
-      <label class="md-nav__link" for="__nav_6_25">
-        Features
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_25">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Features" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_25">
           <span class="md-nav__icon md-icon"></span>
@@ -876,6 +992,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -886,12 +1003,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -912,10 +1031,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="__nav_7">
-        Apartment
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Apartment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Apartment" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
@@ -924,6 +1047,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -934,8 +1058,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -946,8 +1072,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -958,8 +1086,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -970,8 +1100,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -982,8 +1114,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -994,8 +1128,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1006,8 +1142,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1018,6 +1156,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1040,10 +1179,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
       
-      <label class="md-nav__link" for="__nav_8">
-        Blockchain
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Blockchain
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Blockchain" data-md-level="1">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1052,6 +1195,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1062,8 +1206,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1074,8 +1220,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1086,8 +1234,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1098,8 +1248,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1110,8 +1262,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1121,10 +1275,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_6" type="checkbox" id="__nav_8_6" >
       
-      <label class="md-nav__link" for="__nav_8_6">
-        Bitcoin
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_6">
+          Bitcoin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Bitcoin" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_6">
           <span class="md-nav__icon md-icon"></span>
@@ -1133,6 +1291,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1143,14 +1302,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -1162,10 +1324,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_7" type="checkbox" id="__nav_8_7" checked>
       
-      <label class="md-nav__link" for="__nav_8_7">
-        Ethereum
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_7">
+          Ethereum
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ethereum" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_7">
           <span class="md-nav__icon md-icon"></span>
@@ -1174,6 +1340,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1184,8 +1351,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1196,8 +1365,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1208,8 +1379,10 @@
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -1218,6 +1391,7 @@
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
       
         
       
@@ -1232,7 +1406,9 @@
       </a>
       
         
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -1342,8 +1518,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1354,8 +1532,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1366,14 +1546,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1383,10 +1566,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_8" type="checkbox" id="__nav_8_8" >
       
-      <label class="md-nav__link" for="__nav_8_8">
-        Ipfs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_8">
+          Ipfs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ipfs" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1395,6 +1582,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1405,14 +1593,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1422,10 +1613,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_9" type="checkbox" id="__nav_8_9" >
       
-      <label class="md-nav__link" for="__nav_8_9">
-        Twister
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_9">
+          Twister
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Twister" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1434,6 +1629,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1444,8 +1640,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1456,8 +1654,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1468,8 +1668,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1480,8 +1682,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1492,12 +1696,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1518,10 +1724,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
       
-      <label class="md-nav__link" for="__nav_9">
-        Education
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Education
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Education" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1530,6 +1740,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1540,8 +1751,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1552,8 +1765,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1564,8 +1779,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1576,6 +1793,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1596,102 +1814,37 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
       
-      <label class="md-nav__link" for="__nav_10">
-        Nodejs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Nodejs" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Langs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Langs" data-md-level="1">
         <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
-          Nodejs
+          Langs
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../nodejs/" class="md-nav__link">
+      <a href="../../../langs/" class="md-nav__link">
         Index
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/awesome/" class="md-nav__link">
-        Awesome Node.js
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/express/" class="md-nav__link">
-        Express
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/koa/" class="md-nav__link">
-        Koa
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/mongoose/" class="md-nav__link">
-        Mongoose
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/nodejs/" class="md-nav__link">
-        Nodejs
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/pm2/" class="md-nav__link">
-        Pm2
-      </a>
-    </li>
-  
-
-          
-            
+              
   
   
   
@@ -1699,138 +1852,43 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8" type="checkbox" id="__nav_10_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" >
       
-      <label class="md-nav__link" for="__nav_10_8">
-        Node modules
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Node modules" data-md-level="2">
-        <label class="md-nav__title" for="__nav_10_8">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_2">
+          Go
           <span class="md-nav__icon md-icon"></span>
-          Node modules
+        </label>
+      
+      <nav class="md-nav" aria-label="Go" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_2">
+          <span class="md-nav__icon md-icon"></span>
+          Go
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/gm/" class="md-nav__link">
-        概述
+      <a href="../../../langs/go/" class="md-nav__link">
+        Index
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8_2" type="checkbox" id="__nav_10_8_2" >
-      
-      <label class="md-nav__link" for="__nav_10_8_2">
-        Node rsa
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Node rsa" data-md-level="3">
-        <label class="md-nav__title" for="__nav_10_8_2">
-          <span class="md-nav__icon md-icon"></span>
-          Node rsa
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/node-rsa/jsbn/" class="md-nav__link">
-        JavaScript中的RSA和ECC
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/node-rsa/readme/" class="md-nav__link">
-        Node-RSA
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8_3" type="checkbox" id="__nav_10_8_3" >
-      
-      <label class="md-nav__link" for="__nav_10_8_3">
-        Qrcode
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Qrcode" data-md-level="3">
-        <label class="md-nav__title" for="__nav_10_8_3">
-          <span class="md-nav__icon md-icon"></span>
-          Qrcode
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/qrcode/api/" class="md-nav__link">
-        Api
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/qrcode/readme/" class="md-nav__link">
-        node-qrcode
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -1851,54 +1909,121 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
       
-      <label class="md-nav__link" for="__nav_11">
-        Pin
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Pin" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11">
+          Nodejs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Nodejs" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
-          Pin
+          Nodejs
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../pin/cohesion/" class="md-nav__link">
-        Cohesion
+      <a href="../../../nodejs/" class="md-nav__link">
+        Index
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../pin/group/" class="md-nav__link">
-        Group
+      <a href="../../../nodejs/awesome/" class="md-nav__link">
+        Awesome Node.js
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../pin/ladder/" class="md-nav__link">
-        Ladder
+      <a href="../../../nodejs/express/" class="md-nav__link">
+        Express
       </a>
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/koa/" class="md-nav__link">
+        Koa
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/mongoose/" class="md-nav__link">
+        Mongoose
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/nodejs/" class="md-nav__link">
+        Nodejs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/pm2/" class="md-nav__link">
+        Pm2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1906,60 +2031,165 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_4" type="checkbox" id="__nav_11_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8" type="checkbox" id="__nav_11_8" >
       
-      <label class="md-nav__link" for="__nav_11_4">
-        Fresh
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Fresh" data-md-level="2">
-        <label class="md-nav__title" for="__nav_11_4">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8">
+          Node modules
           <span class="md-nav__icon md-icon"></span>
-          Fresh
+        </label>
+      
+      <nav class="md-nav" aria-label="Node modules" data-md-level="2">
+        <label class="md-nav__title" for="__nav_11_8">
+          <span class="md-nav__icon md-icon"></span>
+          Node modules
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../pin/fresh/education/" class="md-nav__link">
-        Education
+      <a href="../../../nodejs/node_modules/gm/" class="md-nav__link">
+        概述
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../pin/fresh/platform/" class="md-nav__link">
-        Platform
-      </a>
-    </li>
-  
-
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8_2" type="checkbox" id="__nav_11_8_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8_2">
+          Node rsa
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Node rsa" data-md-level="3">
+        <label class="md-nav__title" for="__nav_11_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Node rsa
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../pin/fresh/repository/" class="md-nav__link">
-        Repository
+      <a href="../../../nodejs/node_modules/node-rsa/jsbn/" class="md-nav__link">
+        JavaScript中的RSA和ECC
       </a>
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/node-rsa/readme/" class="md-nav__link">
+        Node-RSA
+      </a>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8_3" type="checkbox" id="__nav_11_8_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8_3">
+          Qrcode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Qrcode" data-md-level="3">
+        <label class="md-nav__title" for="__nav_11_8_3">
+          <span class="md-nav__icon md-icon"></span>
+          Qrcode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/qrcode/api/" class="md-nav__link">
+        Api
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/qrcode/readme/" class="md-nav__link">
+        node-qrcode
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
@@ -1980,105 +2210,93 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
       
-      <label class="md-nav__link" for="__nav_12">
-        Python
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Python" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12">
+          Pin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Pin" data-md-level="1">
         <label class="md-nav__title" for="__nav_12">
           <span class="md-nav__icon md-icon"></span>
-          Python
+          Pin
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../python/PyMongo/" class="md-nav__link">
-        关于 PyMongo 发布的一些注释
+      <a href="../../../pin/" class="md-nav__link">
+        拼团开发
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../python/awesome/" class="md-nav__link">
-        Awesome Python
+      <a href="../../../pin/cohesion/" class="md-nav__link">
+        Cohesion
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../python/framework/" class="md-nav__link">
-        2018 年排名前 11 的 Python 框架
+      <a href="../../../pin/group/" class="md-nav__link">
+        Group
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python/" class="md-nav__link">
-        Python
+      <a href="../../../pin/ladder/" class="md-nav__link">
+        Ladder
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_5" type="checkbox" id="__nav_12_5" >
-      
-      <label class="md-nav__link" for="__nav_12_5">
-        Anaconda
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Anaconda" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_5">
-          <span class="md-nav__icon md-icon"></span>
-          Anaconda
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../python/Anaconda/QuickStart/" class="md-nav__link">
-        Anaconda 入门使用指南
+      <a href="../../../pin/sku-spu/" class="md-nav__link">
+        sku spu
       </a>
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
+            
           
             
+              
   
   
   
@@ -2088,211 +2306,69 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_6" type="checkbox" id="__nav_12_6" >
       
-      <label class="md-nav__link" for="__nav_12_6">
-        FullStack
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="FullStack" data-md-level="2">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_6">
+          Fresh
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Fresh" data-md-level="2">
         <label class="md-nav__title" for="__nav_12_6">
           <span class="md-nav__icon md-icon"></span>
-          FullStack
+          Fresh
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../python/FullStack/mfap0/" class="md-nav__link">
-        [Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)
+      <a href="../../../pin/fresh/education/" class="md-nav__link">
+        Education
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../python/FullStack/mfap1/" class="md-nav__link">
-        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分
+      <a href="../../../pin/fresh/platform/" class="md-nav__link">
+        Platform
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../python/FullStack/mfap2/" class="md-nav__link">
-        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分
+      <a href="../../../pin/fresh/repository/" class="md-nav__link">
+        Repository
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../python/FullStack/mfap3/" class="md-nav__link">
-        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_7" type="checkbox" id="__nav_12_7" >
-      
-      <label class="md-nav__link" for="__nav_12_7">
-        Django
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Django" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_7">
-          <span class="md-nav__icon md-icon"></span>
-          Django
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../python/django/" class="md-nav__link">
-        Django 简要学习文档
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../python/django/awesome/" class="md-nav__link">
-        <a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_8" type="checkbox" id="__nav_12_8" >
-      
-      <label class="md-nav__link" for="__nav_12_8">
-        Flask
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Flask" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_8">
-          <span class="md-nav__icon md-icon"></span>
-          Flask
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../python/flask/" class="md-nav__link">
-        flask 文档
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../python/flask/awesome/" class="md-nav__link">
-        Awesome Flask [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_9" type="checkbox" id="__nav_12_9" >
-      
-      <label class="md-nav__link" for="__nav_12_9">
-        Pip
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Pip" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_9">
-          <span class="md-nav__icon md-icon"></span>
-          Pip
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../python/pip/" class="md-nav__link">
-        Index
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -2313,52 +2389,381 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
       
-      <label class="md-nav__link" for="__nav_13">
-        Running
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Running" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13">
+          Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Python" data-md-level="1">
         <label class="md-nav__title" for="__nav_13">
           <span class="md-nav__icon md-icon"></span>
-          Running
+          Python
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../running/bicycle/" class="md-nav__link">
-        变速自行车
+      <a href="../../../python/PyMongo/" class="md-nav__link">
+        关于 PyMongo 发布的一些注释
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../running/card/" class="md-nav__link">
-        自动驾驶
+      <a href="../../../python/awesome/" class="md-nav__link">
+        Awesome Python
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../running/walk/" class="md-nav__link">
-        徒步健身
+      <a href="../../../python/framework/" class="md-nav__link">
+        2018 年排名前 11 的 Python 框架
       </a>
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/python/" class="md-nav__link">
+        Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_5" type="checkbox" id="__nav_13_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_5">
+          Anaconda
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Anaconda" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_5">
+          <span class="md-nav__icon md-icon"></span>
+          Anaconda
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/Anaconda/QuickStart/" class="md-nav__link">
+        Anaconda 入门使用指南
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_6" type="checkbox" id="__nav_13_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_6">
+          FullStack
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="FullStack" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_6">
+          <span class="md-nav__icon md-icon"></span>
+          FullStack
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/FullStack/mfap0/" class="md-nav__link">
+        [Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/FullStack/mfap1/" class="md-nav__link">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/FullStack/mfap2/" class="md-nav__link">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/FullStack/mfap3/" class="md-nav__link">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_7" type="checkbox" id="__nav_13_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_7">
+          Django
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Django" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_7">
+          <span class="md-nav__icon md-icon"></span>
+          Django
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/django/" class="md-nav__link">
+        Django 简要学习文档
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/django/awesome/" class="md-nav__link">
+        <a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_8" type="checkbox" id="__nav_13_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_8">
+          Flask
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Flask" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_8">
+          <span class="md-nav__icon md-icon"></span>
+          Flask
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/flask/" class="md-nav__link">
+        flask 文档
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/flask/awesome/" class="md-nav__link">
+        Awesome Flask [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_9" type="checkbox" id="__nav_13_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_9">
+          Pip
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Pip" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_9">
+          <span class="md-nav__icon md-icon"></span>
+          Pip
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/pip/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
@@ -2379,118 +2784,62 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
       
-      <label class="md-nav__link" for="__nav_14">
-        Tools
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Tools" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_14">
+          Running
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Running" data-md-level="1">
         <label class="md-nav__title" for="__nav_14">
           <span class="md-nav__icon md-icon"></span>
-          Tools
+          Running
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/" class="md-nav__link">
-        器
+      <a href="../../../running/bicycle/" class="md-nav__link">
+        变速自行车
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_2" type="checkbox" id="__nav_14_2" >
-      
-      <label class="md-nav__link" for="__nav_14_2">
-        Eslint
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Eslint" data-md-level="2">
-        <label class="md-nav__title" for="__nav_14_2">
-          <span class="md-nav__icon md-icon"></span>
-          Eslint
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/eslint/" class="md-nav__link">
-        Index
+      <a href="../../../running/card/" class="md-nav__link">
+        自动驾驶
       </a>
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_3" type="checkbox" id="__nav_14_3" >
-      
-      <label class="md-nav__link" for="__nav_14_3">
-        Vscode
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Vscode" data-md-level="2">
-        <label class="md-nav__title" for="__nav_14_3">
-          <span class="md-nav__icon md-icon"></span>
-          Vscode
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/vscode/" class="md-nav__link">
-        vscode 文档
+      <a href="../../../running/walk/" class="md-nav__link">
+        徒步健身
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../tools/vscode/prettier/" class="md-nav__link">
-        Prettier
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -2511,18 +2860,179 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
       
-      <label class="md-nav__link" for="__nav_15">
-        Wechat
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Wechat" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15">
+          Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tools" data-md-level="1">
         <label class="md-nav__title" for="__nav_15">
+          <span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/" class="md-nav__link">
+        器
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_2" type="checkbox" id="__nav_15_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15_2">
+          Eslint
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Eslint" data-md-level="2">
+        <label class="md-nav__title" for="__nav_15_2">
+          <span class="md-nav__icon md-icon"></span>
+          Eslint
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/eslint/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_3" type="checkbox" id="__nav_15_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15_3">
+          Vscode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Vscode" data-md-level="2">
+        <label class="md-nav__title" for="__nav_15_3">
+          <span class="md-nav__icon md-icon"></span>
+          Vscode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/vscode/" class="md-nav__link">
+        vscode 文档
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/vscode/prettier/" class="md-nav__link">
+        Prettier
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16">
+          Wechat
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Wechat" data-md-level="1">
+        <label class="md-nav__title" for="__nav_16">
           <span class="md-nav__icon md-icon"></span>
           Wechat
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2533,8 +3043,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2545,8 +3057,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2557,8 +3071,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2566,20 +3082,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4" type="checkbox" id="__nav_15_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4" type="checkbox" id="__nav_16_4" >
       
-      <label class="md-nav__link" for="__nav_15_4">
-        Open
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4">
+          Open
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Open" data-md-level="2">
-        <label class="md-nav__title" for="__nav_15_4">
+        <label class="md-nav__title" for="__nav_16_4">
           <span class="md-nav__icon md-icon"></span>
           Open
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2590,8 +3111,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2599,20 +3122,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_2" type="checkbox" id="__nav_15_4_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_2" type="checkbox" id="__nav_16_4_2" >
       
-      <label class="md-nav__link" for="__nav_15_4_2">
-        App
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_2">
+          App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="App" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_2">
+        <label class="md-nav__title" for="__nav_16_4_2">
           <span class="md-nav__icon md-icon"></span>
           App
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2623,14 +3151,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2638,20 +3169,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_3" type="checkbox" id="__nav_15_4_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_3" type="checkbox" id="__nav_16_4_3" >
       
-      <label class="md-nav__link" for="__nav_15_4_3">
-        Code
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_3">
+          Code
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Code" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_3">
+        <label class="md-nav__title" for="__nav_16_4_3">
           <span class="md-nav__icon md-icon"></span>
           Code
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2662,14 +3198,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2677,20 +3216,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_4" type="checkbox" id="__nav_15_4_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_4" type="checkbox" id="__nav_16_4_4" >
       
-      <label class="md-nav__link" for="__nav_15_4_4">
-        D3f
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_4">
+          D3f
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="D3f" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_4">
+        <label class="md-nav__title" for="__nav_16_4_4">
           <span class="md-nav__icon md-icon"></span>
           D3f
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2701,14 +3245,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2716,20 +3263,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_5" type="checkbox" id="__nav_15_4_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_5" type="checkbox" id="__nav_16_4_5" >
       
-      <label class="md-nav__link" for="__nav_15_4_5">
-        Download
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_5">
+          Download
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Download" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_5">
+        <label class="md-nav__title" for="__nav_16_4_5">
           <span class="md-nav__icon md-icon"></span>
           Download
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2740,8 +3292,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2752,8 +3306,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2764,8 +3320,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2776,8 +3334,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2788,18 +3348,21 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -2819,7 +3382,9 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -2934,14 +3499,15 @@
             <article class="md-content__inner md-typeset">
               
                 
-                
-                <h1 id="serpent-">Serpent - 大蛇 编写以太坊合约高级编程语言</h1>
+
+
+<h1 id="serpent-">Serpent - 大蛇 编写以太坊合约高级编程语言<a class="headerlink" href="#serpent-" title="Permanent link">&para;</a></h1>
 <p>译者: jan</p>
 <p><strong>更多以太坊信息请访问<a href="http://ethfans.org">EthFans.org</a></strong></p>
 <p>有关Serpent 1.0的信息请查阅: https://github.com/ethereum/wiki/wiki/Serpent-1.0-(old)</p>
 <p>Serpent是一种用来编写以太坊合约(Ethereum Contract)的高级编程语言。Serpent翻译成中文意思是"大蛇"，如这个名字所示，这是一种与Python类似的编程语言。Serpent在兼顾底层语言效率与良好编程风格的同时尽可能的追求简洁，还加入了一些针对合约编程的特性。Serpent编译器由C++实现，因此可以被轻松打包进任何客户端，最新版本可以在<a href="http://github.com/ethereum/serpent">Github</a>上找到。</p>
 <p>以下内容需要读者对以太坊的工作原理有一个基本认识，包括区块，交易，合约和消息的概念，以及合约是如何通过读入字节数组和输出字节数组工作的。读者可以通过阅读<a href="https://github.com/ethereum/wiki/wiki/Ethereum-Development-Tutorial">以太坊开发指南</a>得到这些知识。</p>
-<h2 id="serpentpython">Serpent与Python的区别</h2>
+<h2 id="serpentpython">Serpent与Python的区别<a class="headerlink" href="#serpentpython" title="Permanent link">&para;</a></h2>
 <p>Serpent与Python之间的主要区别有:</p>
 <ul>
 <li>Python中的数字类型没有大小限制，Serpent的数字类型则会在2<sup>256</sup>溢出。例如，在Serpent中计算<code>3^(2^254)</code>的结果是1,虽然事实上这是一个天文数字。</li>
@@ -2951,112 +3517,115 @@
 <li>Serpent有一个被称作”持久变量“(persistent storage variables)的概念。</li>
 <li>在Serpent中可以使用<code>extern</code>语句来调用其他合约中定义的函数。</li>
 </ul>
-<h2 id="_1">安装</h2>
+<h2 id="_1">安装<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>我们可以通过pip来安装Serpent的python库和可执行文件 (注：译者使用的Python版本为2.7):</p>
-<pre><code>sudo pip install ethereum-serpent
-</code></pre>
+<div class="codehilite"><pre><span></span><code>sudo pip install ethereum-serpent
+</code></pre></div>
+
 <p>如果想要一个在C++中可以直接调用的库，可以自行编译Serpent:</p>
-<pre><code>git clone http://github.com/ethereum/serpent
+<div class="codehilite"><pre><span></span><code>git clone http://github.com/ethereum/serpent
 cd serpent
 make
 sudo make install
-</code></pre>
-<h2 id="_2">指南</h2>
+</code></pre></div>
+
+<h2 id="_2">指南<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>现在开始编写我们的第一个合约吧！</p>
 <p>首先创建一个叫做"mul2.se"的文件，内容如下:</p>
-<pre><code>def double(x):
-     return(x * 2)
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nv">def</span> <span class="nv">double</span><span class="ss">(</span><span class="nv">x</span><span class="ss">)</span>:
+     <span class="k">return</span><span class="ss">(</span><span class="nv">x</span> <span class="o">*</span> <span class="mi">2</span><span class="ss">)</span>
+</code></pre></div>
+
 <p>这是一个非常简单的只有两行代码的合约，它定义了一个函数。一份Serpent合约通过函数向其他合约或者交易(transaction)提供”接口“(interface)，合约定义的函数即可以被交易也可以被其他合约调用。例如一份定义货币的合约可能会定义类似<code>send(to,value)</code>和<code>check_balance(address)</code>的函数。</p>
 <p>现在让我们来编译这份代码。在命令行中输入:</p>
-<pre><code class="language-sh">&gt; serpent compile mul2.se
+<div class="highlight"><pre><span></span><code>&gt; serpent compile mul2.se
 604380600b600039604e567c01000000000000000000000000000000000000000000000000000000006000350463eee9720681141560415760043560405260026040510260605260206060f35b505b6000f3
-</code></pre>
+</code></pre></div>
 <p>执行成功后就得到了一串可以放入交易执行的16进制编码的字符串。如果你想要的是机器指令(opcodes)，可以使用<code>pretty_compile</code>来编译：</p>
-<pre><code class="language-sh">    &gt; serpent pretty_compile mul2.se
-    [PUSH1, 67, DUP1, PUSH1, 11, PUSH1, 0, CODECOPY, PUSH1, 78, JUMP, PUSH29, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, PUSH1, 0, CALLDATALOAD, DIV, PUSH4, 238, 233, 114, 6, DUP2, EQ, ISZERO, PUSH1, 65, JUMPI, PUSH1, 4, CALLDATALOAD, PUSH1, 64, MSTORE, PUSH1, 2, PUSH1, 64, MLOAD, MUL, PUSH1, 96, MSTORE, PUSH1, 32, PUSH1, 96, RETURN, JUMPDEST, POP, JUMPDEST, PUSH1, 0, RETURN]
-</code></pre>
+<div class="highlight"><pre><span></span><code>    &gt; serpent pretty_compile mul2.se
+    <span class="o">[</span>PUSH1, <span class="m">67</span>, DUP1, PUSH1, <span class="m">11</span>, PUSH1, <span class="m">0</span>, CODECOPY, PUSH1, <span class="m">78</span>, JUMP, PUSH29, <span class="m">1</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, PUSH1, <span class="m">0</span>, CALLDATALOAD, DIV, PUSH4, <span class="m">238</span>, <span class="m">233</span>, <span class="m">114</span>, <span class="m">6</span>, DUP2, EQ, ISZERO, PUSH1, <span class="m">65</span>, JUMPI, PUSH1, <span class="m">4</span>, CALLDATALOAD, PUSH1, <span class="m">64</span>, MSTORE, PUSH1, <span class="m">2</span>, PUSH1, <span class="m">64</span>, MLOAD, MUL, PUSH1, <span class="m">96</span>, MSTORE, PUSH1, <span class="m">32</span>, PUSH1, <span class="m">96</span>, RETURN, JUMPDEST, POP, JUMPDEST, PUSH1, <span class="m">0</span>, RETURN<span class="o">]</span>
+</code></pre></div>
 <p>使用<code>compile_to_lll</code>可以查看LLL形式的中间编译结果：</p>
-<pre><code class="language-sh">&gt; serpent compile_to_lll mul2.se
-(return 0
-  (lll
-    (with '__funid
-      (div (calldataload 0)
-        26959946667150639794667015087019630673637144422540572481103610249216
-      )
-      (unless (iszero (eq (get '__funid) 4008276486))
-        (seq
-          (set 'x (calldataload 4))
-          (seq
-            (set '_temp_521 (mul (get 'x) 2))
-            (return (ref '_temp_521) 32)
-          )
-        )
-      )
-    )
-    0
-  )
-)
-</code></pre>
+<div class="highlight"><pre><span></span><code>&gt; serpent compile_to_lll mul2.se
+<span class="o">(</span><span class="k">return</span> <span class="m">0</span>
+  <span class="o">(</span>lll
+    <span class="o">(</span>with <span class="s1">&#39;__funid</span>
+<span class="s1">      (div (calldataload 0)</span>
+<span class="s1">        26959946667150639794667015087019630673637144422540572481103610249216</span>
+<span class="s1">      )</span>
+<span class="s1">      (unless (iszero (eq (get &#39;</span>__funid<span class="o">)</span> <span class="m">4008276486</span><span class="o">))</span>
+        <span class="o">(</span>seq
+          <span class="o">(</span><span class="nb">set</span> <span class="s1">&#39;x (calldataload 4))</span>
+<span class="s1">          (seq</span>
+<span class="s1">            (set &#39;</span>_temp_521 <span class="o">(</span>mul <span class="o">(</span>get <span class="s1">&#39;x) 2))</span>
+<span class="s1">            (return (ref &#39;</span>_temp_521<span class="o">)</span> <span class="m">32</span><span class="o">)</span>
+          <span class="o">)</span>
+        <span class="o">)</span>
+      <span class="o">)</span>
+    <span class="o">)</span>
+    <span class="m">0</span>
+  <span class="o">)</span>
+<span class="o">)</span>
+</code></pre></div>
 <p>让我们来理解一下上面编译结果的含义。与大多数合约一样，代码最外一层的目的仅仅是在合约初始化阶段将合约内部的代码复制并作为运算结果返回。初始化阶段返回的代码将会在每次调用合约的时候被执行。因此在EVM (Ethereum Virtual Machine)执行的代码中你可以看到<code>CODECOPY</code>指令, 在LLL表达式中对应的则是<code>lll</code>元操作。在<code>lll</code>元操作内部，首先是一段获取保存在合约数据头四个字节的函数ID(function ID)的代码（也就是<code>(div (calldataload 0) 26959946667150639794667015087019630673637144422540572481103610249216)</code>这一段，我们通过先读入32个字节，再将其除以2^224得到头四个字节）。再往下，则会将获得的函数ID与该合约支持的所有函数ID逐一比较。在我们的例子中，如果函数ID是4008276486，则会将消息数据中的4到35字节的数据赋值给一个名为<code>'x</code>的变量（对应的代码是<code>(calldataload 4)</code>），然后将<code>2 * x</code>的结果赋值给一个临时变量<code>'_temp_521</code>，最后将这个临时变量对应的内存地址中存放的32字节长的数据作为结果返回。</p>
 <p>函数ID通过计算函数名字和参数的哈希值(Hash)的头四个字节得到。在我们的例子中，定义了一个名字为”double“，接受一个整型数作为参数的函数，因此可以通过如下命令得到其对应的函数ID:</p>
-<pre><code class="language-sh">    &gt; serpent get_prefix double i
-    4008276486
-</code></pre>
+<div class="highlight"><pre><span></span><code>    &gt; serpent get_prefix double i
+    <span class="m">4008276486</span>
+</code></pre></div>
 <p>定义接受不同参数列表的同名函数是允许的。例如，我们可以定义一个接受三个整型数为参数的”double“函数，它会将每一个参数翻倍然后以数组形式返回。这个函数会有一个不同的函数ID (或者说前缀，prefix）：</p>
-<pre><code class="language-sh">    &gt; serpent get_prefix double iii
-    1142360101
-</code></pre>
+<div class="highlight"><pre><span></span><code>    &gt; serpent get_prefix double iii
+    <span class="m">1142360101</span>
+</code></pre></div>
 <p>字母<code>i</code>代表整型或者定长字符串（32字节，在Serpern和EVM中与整型等价）参数，字母<code>s</code>代表变长字符串参数，而字母<code>a</code>代表数组参数。后文会对此做更详细的介绍。</p>
 <p>那么如何运行这份合约呢？这时候我们需要使用<a href="https://github.com/ethereum/pyethereum">pyethereum</a>。先通过pip(环境是python 2.7)安装pyethereum:</p>
-<pre><code class="language-sh">    &gt; sudo pip install pyethereum
-</code></pre>
+<div class="highlight"><pre><span></span><code>    &gt; sudo pip install pyethereum
+</code></pre></div>
 <p>在合约代码所在目录中打开Python控制台，输入：</p>
-<pre><code class="language-sh">    &gt; from pyethereum import tester as t
-    &gt; s = t.state()
-    &gt; c = s.abi_contract('mul2.se')
-    &gt; c.double(42)
-    [84]
-</code></pre>
+<div class="highlight"><pre><span></span><code>    &gt; from pyethereum import tester as t
+    &gt; <span class="nv">s</span> <span class="o">=</span> t.state<span class="o">()</span>
+    &gt; <span class="nv">c</span> <span class="o">=</span> s.abi_contract<span class="o">(</span><span class="s1">&#39;mul2.se&#39;</span><span class="o">)</span>
+    &gt; c.double<span class="o">(</span><span class="m">42</span><span class="o">)</span>
+    <span class="o">[</span><span class="m">84</span><span class="o">]</span>
+</code></pre></div>
 <p>第二行创建了一个初始化的状态(类似于创世块, genesis block)。第三行创建了一个Python对象，代表mul2.se这个合约。你可以用<code>c.address</code>来查看这份合约存放的地址。第四行调用这个合约，传入参数42,然后我们看到这份合约返回给我们结果84。</p>
 <p>如果要在testnet或者livenet上调用这样一份合约，你需要打包一个内容为”以整型参数42作为输入调用函数double“的消息发送给这份合约。使用下面的命令可以得到消息对应的字节码：</p>
-<pre><code class="language-sh">    &gt; serpent encode_abi double i 42
+<div class="highlight"><pre><span></span><code>    &gt; serpent encode_abi double i <span class="m">42</span>
     eee97206000000000000000000000000000000000000000000000000000000000000002a
-</code></pre>
-<h2 id="name-registry">另一个实例：名称注册合约 (Name Registry)</h2>
+</code></pre></div>
+<h2 id="name-registry">另一个实例：名称注册合约 (Name Registry)<a class="headerlink" href="#name-registry" title="Permanent link">&para;</a></h2>
 <p>读者一定觉得在区块链上跑一个”乘以2“的函数略显无聊吧... 接下来让我们来实现一个更有趣的合约：名称注册。这个合约的主要接口是一个<code>register(key, value)</code>函数。通过这个接口可以检查给定的key是否已经被使用/注册了；如果没有，则将这个key注册为指定的键值然后返回1；如果已经被使用则直接返回0。这个合约还提供另外一个接口用来获取指定key对应的键值。下面就是合约代码：</p>
-<pre><code class="language-py">    def register(key, value):
-        # Key not yet claimed
-        if not self.storage[key]:
-            self.storage[key] = value
-            return(1)
-        else:
-            return(0)  # Key already claimed
+<div class="highlight"><pre><span></span><code>    <span class="k">def</span> <span class="nf">register</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="c1"># Key not yet claimed</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">storage</span><span class="p">[</span><span class="n">key</span><span class="p">]:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">storage</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+            <span class="k">return</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># Key already claimed</span>
 
-    def ask(key):
-        return(self.storage[key])
-</code></pre>
+    <span class="k">def</span> <span class="nf">ask</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+        <span class="k">return</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">storage</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+</code></pre></div>
 <p>这份合约首先定义了<code>register</code>函数，这个函数接受<code>key</code>和<code>value</code>变量作为参数。第二行是注释，以<code>#</code>开头，注释会被编译器忽略，仅仅用来帮助程序员更好的理解程序。然后是一个标准的if/else条件语句：先检查<code>self.storage[key]</code>是否为0(即表明这个key没有被使用)，如果是0则执行赋值<code>self.storage[key] = value</code>然后返回1,否则直接返回0。<code>self.storage</code>是一个伪数组，有和数组类似的行为但是实际上没有一块内存与之对应。</p>
 <p>让我们把这段代码放入一个名为"namecoin.se"的文件，然后在pyethereum中试试：</p>
-<pre><code class="language-sh">    &gt; from pyethereum import tester as t
-    &gt; s = t.state()
-    &gt; c = s.abi_contract('namecoin.se')
-    &gt; c.register(0x67656f726765, 45)
-    [1]
-    &gt; c.register(0x67656f726765, 20)
-    [0]
-    &gt; c.register(0x6861727279, 65)
-    [1]
-    &gt; c.ask(0x6861727279)
-    [65]
-</code></pre>
+<div class="highlight"><pre><span></span><code>    &gt; from pyethereum import tester as t
+    &gt; <span class="nv">s</span> <span class="o">=</span> t.state<span class="o">()</span>
+    &gt; <span class="nv">c</span> <span class="o">=</span> s.abi_contract<span class="o">(</span><span class="s1">&#39;namecoin.se&#39;</span><span class="o">)</span>
+    &gt; c.register<span class="o">(</span>0x67656f726765, <span class="m">45</span><span class="o">)</span>
+    <span class="o">[</span><span class="m">1</span><span class="o">]</span>
+    &gt; c.register<span class="o">(</span>0x67656f726765, <span class="m">20</span><span class="o">)</span>
+    <span class="o">[</span><span class="m">0</span><span class="o">]</span>
+    &gt; c.register<span class="o">(</span>0x6861727279, <span class="m">65</span><span class="o">)</span>
+    <span class="o">[</span><span class="m">1</span><span class="o">]</span>
+    &gt; c.ask<span class="o">(</span>0x6861727279<span class="o">)</span>
+    <span class="o">[</span><span class="m">65</span><span class="o">]</span>
+</code></pre></div>
 <p>如果我们想要把上面的第一次调用写成消息的形式：</p>
-<pre><code class="language-sh">&gt; serpent encode_abi register ii 0x67656f726765 45
+<div class="highlight"><pre><span></span><code>&gt; serpent encode_abi register ii 0x67656f726765 <span class="m">45</span>
 d66d6c10000000000000000000000000000000000000000000000000000067656f726765000000000000000000000000000000000000000000000000000000000000002d
-</code></pre>
-<h2 id="_3">引用代码和调用其他合约</h2>
+</code></pre></div>
+<h2 id="_3">引用代码和调用其他合约<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>当你的项目越来越大时把所有代码放在一个文件里面就很不科学了，所幸的是把合约代码分开保存在多个文件中是一件很容易的事情。假设我们创建了如下两个文件：</p>
-<pre><code class="language-serpent">mul2.se:
+<div class="highlight"><pre><span></span><code>mul2.se:
 
     def double(x):
         return(x * 2)
@@ -3065,17 +3634,17 @@ returnten.se:
 
     extern mul2: [double]
 
-    MUL2 = create('mul2.se')
+    MUL2 = create(&#39;mul2.se&#39;)
     def returnten():
         return(MUL2.double(5, as=mul2))
-</code></pre>
+</code></pre></div>
 <p>现在打开Python，执行以下代码：</p>
-<pre><code class="language-serpent">    &gt; from pyethereum import tester as t
+<div class="highlight"><pre><span></span><code>    &gt; from pyethereum import tester as t
     &gt; s = t.state()
-    &gt; c = s.abi_contract('returnten.se')
+    &gt; c = s.abi_contract(&#39;returnten.se&#39;)
     &gt; c.returnten()
     [10]
-</code></pre>
+</code></pre></div>
 <p>通过这个例子我们可以看到一些新特性：</p>
 <ul>
 <li>使用<code>create</code>方法可以从文件中读入代码创建合约</li>
@@ -3090,14 +3659,14 @@ returnten.se:
 <li><code>outsz=7</code> - Serpent在默认情况下取运算结果的头32字节作为函数返回值，通过<code>outsz</code>可以要求函数通过数组返回更多的值。例如执行<code>y = x.fun(arg1, outsz=7)</code>之后你可以通过<code>y[0]</code>, <code>y[1]</code>等等操作返回值。</li>
 </ul>
 <p>和<code>create</code>类似的一个操作是<code>inset('filename')</code>，它的作用是用文件中的代码替换调用的那一行，而不是创建一个合约。</p>
-<h2 id="_4">持久化保存结构化数据</h2>
+<h2 id="_4">持久化保存结构化数据<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>（注：原文用词是data structure，直译应为数据结构，但例子中定义的更像是数据而不是数据结构，因此翻译为结构化数据。）</p>
 <p>在更复杂的场景中，我们经常需要将结构化数据持久的保存。例如一份去中心话的交易所合约，既需要保存用户各种资金的余额，也需要保存待成交的包含了价格和数量信息的买单和卖单。因此Serpent内建支持自定义数据结构。以去中心化交易所合约为例，其中可能需要定义这样的结构化数据：</p>
-<pre><code class="language-serpent">    data user_balances[][]
+<div class="highlight"><pre><span></span><code>    data user_balances[][]
     data orders[](buys[](user, price, quantity), sells[](user, price, quantity))
-</code></pre>
+</code></pre></div>
 <p>接下来可以使用这些定义好的数据：</p>
-<pre><code class="language-serpent">    def fill_buy_order(currency, order_id):
+<div class="highlight"><pre><span></span><code>    def fill_buy_order(currency, order_id):
         # Available amount buyer is willing to buy
         q = self.orders[currency].buys[order_id].quantity
         # My balance in the currency
@@ -3114,44 +3683,44 @@ returnten.se:
             self.user_balances[buyer][0] -= amount * self.orders[currency].buys[order_id].price
             # Reduce the remaining quantity on the order
             self.orders[currency].buys[order_id].quantity -= amount
-</code></pre>
+</code></pre></div>
 <p>请注意我们是如何先在顶部定义结构化数据，然后在合约中使用它们的。对这些结构化数据的读和写都会被转化成在持久化存储上的读写，因此这些结构化数据是持久保存的。</p>
 <p>定义结构化数据的语法很简单。首先可以定义最简单的变量：</p>
-<pre><code class="language-serpent">    data blah
+<div class="highlight"><pre><span></span><code>    data blah
 
     x = self.blah
     self.blah = x + 1
-</code></pre>
+</code></pre></div>
 <p>还可以定义定长数组和不定长数组：</p>
-<pre><code class="language-serpent">    data blah[1243]
+<div class="highlight"><pre><span></span><code>    data blah[1243]
     data blaz[]
 
     x = self.blah[505]
     y = self.blaz[3**160]
     self.blah[125] = x + y
-</code></pre>
+</code></pre></div>
 <p>我们应该优先考虑使用定长数组，因为在计算数组元素(array index)对应的存储位置(storage index)的时候，定长数组消耗的gas更少。</p>
 <p>也可以定义元组(tuple)，元组的元素也可以是结构化数据：</p>
-<pre><code class="language-serpent">    data body(head(eyes[2], nose, mouth), arms[2], legs[2])
+<div class="highlight"><pre><span></span><code>    data body(head(eyes[2], nose, mouth), arms[2], legs[2])
 
     x = self.body.head.nose
     y = self.body.arms[1]
-</code></pre>
+</code></pre></div>
 <p>然后是元组数组(array of tuples)：</p>
-<pre><code class="language-serpent">    data bodies[100](head(eyes[2], nose, mouth), arms[2](fingers[5], elbow), legs[2])
+<div class="highlight"><pre><span></span><code>    data bodies[100](head(eyes[2], nose, mouth), arms[2](fingers[5], elbow), legs[2])
 
     x = self.bodies[45].head.eyes[1]
     y = self.bodies[x].arms[1].fingers[3]
-</code></pre>
+</code></pre></div>
 <p>注意下面这样的写法是不行的：</p>
-<pre><code class="language-serpent">    data body(head(eyes[2], nose, mouth), arms[2], legs[2])
+<div class="highlight"><pre><span></span><code>    data body(head(eyes[2], nose, mouth), arms[2], legs[2])
 
     x = self.body.head
     y = x.eyes[0]
-</code></pre>
+</code></pre></div>
 <p>也就是说对结构化数据内部元素的存取必须在一行语句中完成。</p>
 <p>还是以名称注册表（name registry）为例，让我们来看看具体如何使用结构化数据。我们要实现一个增强版的名称注册表，当用户注册key成功时他会成为key的所有者，key的所有者可以 (1) 转移所有权，以及(2) 改变key对应的键值(value)。为了简洁函数不再返回1或者0。</p>
-<pre><code class="language-serpent">    data registry[](owner, value)
+<div class="highlight"><pre><span></span><code>    data registry[](owner, value)
 
     def register(key):
         # Key not yet claimed
@@ -3168,54 +3737,53 @@ returnten.se:
 
     def ask(key):
         return([self.registry[key].owner, self.registry[key].value], items=2)
-</code></pre>
+</code></pre></div>
 <p>最后定义的ask函数返回一个长度为2的数组。通过调用ask函数，例如<code>o = registry.ask(key, outsz=2)</code>，我们可以通过返回值<code>o[1]</code>和<code>o[1]</code>获取key对应的所有者和键值。</p>
-<h2 id="_5">内存中的数组</h2>
+<h2 id="_5">内存中的数组<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>使用内存中的数组有一套不同的语法。内存数组只能是定长数组，也不能有元组(tuple)或者更复杂的数组元素。例如：</p>
-<pre><code class="language-serpent">    def bitwise_or(x, y):
+<div class="highlight"><pre><span></span><code>    def bitwise_or(x, y):
         blah = array(1243)
         blah[567] = x
         blah[568] = y
         blah[569] = blah[567] | blah[568]
         return(blah[569])
-</code></pre>
+</code></pre></div>
 <p>Serpent还定义了两个常用的数组操作：</p>
-<pre><code class="language-serpent">    len(x)
-
-</code></pre>
+<div class="highlight"><pre><span></span><code>    len(x)
+</code></pre></div>
 <p>用于查询数组的长度。</p>
-<pre><code class="language-serpent">    slice(x, start, end)
-</code></pre>
+<div class="highlight"><pre><span></span><code>    slice(x, start, end)
+</code></pre></div>
 <p>用于截取从start开始到end结束范围内数组元素，注意end必须大于等于start，否则执行是会出错。</p>
-<h2 id="_6">数组与函数</h2>
+<h2 id="_6">数组与函数<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <p>函数可以接受数组作为参数，也可以返回一个数组：</p>
-<pre><code class="language-serpent">    def compose(inputs:arr):
+<div class="highlight"><pre><span></span><code>    def compose(inputs:arr):
         return(inputs[0] + inputs[1] * 10 + inputs[2] * 100)
 
     def decompose(x):
         return([x % 10, (x % 100) / 10, x / 100]:arr)
-
-</code></pre>
+</code></pre></div>
 <p>在参数定义后面加<code>:arr</code>表示这个参数是一个数组；而在返回值后面加<code>:arr</code>表示返回一个数组（如果不加<code>:arr</code>只写<code>return([x,y,z])</code>，函数的返回值将会是这个数组的内存地址）。</p>
 <p>当合约调用自己定义的函数的时候，数组参数会被自动识别出来正确处理，例如：</p>
-<pre><code class="language-serpent">    def compose(inputs:arr, radix):
+<div class="highlight"><pre><span></span><code>    def compose(inputs:arr, radix):
         return(inputs[0] + inputs[1] * radix + inputs[1] * radix ** 2)
 
     def main():
         return self.compose([1,2,3,4,5], 100)
-</code></pre>
+</code></pre></div>
 <p>但是当合约需要调用另一份接受数组参数的合约时，你需要通过<code>extern</code>声明这一点，加入数组签名到函数签名中：</p>
-<pre><code>extern composer: [compose:ai, main]
-</code></pre>
+<div class="codehilite"><pre><span></span><code>extern composer: [compose:ai, main]
+</code></pre></div>
+
 <p>这里<code>ai</code>的意思是“一个数组参数后面跟着一个整型参数”。同理，如果签名是<code>iiaa</code>，则代表“两个整型参数后面跟着两个数组参数”，而<code>iss</code>表示“一个整型参数，后面是两个字符串做参数”。如果函数名后面没有跟冒号(:)，如本例中<code>main</code> 所示，则表示这个函数不接受参数。如果你想知道一个文件中定义了哪些函数签名，执行下面的命令即可：</p>
-<pre><code class="language-serpent">    &gt; serpent mk_signature compose_test.se
+<div class="highlight"><pre><span></span><code>    &gt; serpent mk_signature compose_test.se
     extern compose_test: [compose:ai, main]
-</code></pre>
-<h2 id="_7">字符串</h2>
+</code></pre></div>
+<h2 id="_7">字符串<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <p>Serpent中有两种字符串：短字符串(short strings)，例如<code>"george"</code>，以及长字符串(long strings)，例如<code>text("afjqwhruqwhurhqkwrhguqwhrkuqwrkqwhwhrugquwrguwegtwetwet")</code>.用双引号括起来的短字符串和数字类型是等价的；用<code>text</code>关键字定义的长字符串则是类似与数组的对象。我们可以使用<code>getch(str, index)</code>和<code>setch(str, index)</code>方法来操作字符串中的字符。<code>str[0]</code>这样的写法则会将字符串当作数组处理，将字符当作数字返回。</p>
 <p>将字符串用作函数参数或者返回值时，需要在函数签名中使用字符串标记<code>str</code>，类似使用<code>arr</code>来标记数组。使用<code>len(s)</code>方法可以得到字符串的长度，而<code>slice(s)</code>方法可以用来裁剪字符串。</p>
 <p>下面是一个用字符串做参数和返回值的例子：</p>
-<pre><code class="language-serpent">data str
+<div class="highlight"><pre><span></span><code>data str
 
 def t2():
     self.str = text(&quot;01&quot;)
@@ -3225,18 +3793,18 @@ def t2():
 def runThis():
     s = self.t2(outsz=2)
     log(data=s)
-</code></pre>
-<h2 id="macros">Macros (宏)</h2>
+</code></pre></div>
+<h2 id="macros">Macros (宏)<a class="headerlink" href="#macros" title="Permanent link">&para;</a></h2>
 <p><strong>警告：这是新加入的未经测试的特性，大蛇出没注意！</strong></p>
 <p>通过macro我们可以创造重写规则，极大的增强程序的表达能力。例如，假设我们想写一条计算三个数字的中位数的命令：</p>
-<pre><code class="language-serpent">    macro median($a, $b, $c):
+<div class="highlight"><pre><span></span><code>    macro median($a, $b, $c):
         min(min(max($a, $b), max($a, $c)), max($b, $c))
-</code></pre>
+</code></pre></div>
 <p>现在我们可以使用这个新定义的macro：</p>
-<pre><code class="language-serpent">    x = median(5, 9, 7)
-</code></pre>
+<div class="highlight"><pre><span></span><code>    x = median(5, 9, 7)
+</code></pre></div>
 <p>接下来看另一个例子，一个查找数组中最大元素的macro:</p>
-<pre><code class="language-serpent">    macro maxarray($a:$asz): # search pattern. below is substitution pattern
+<div class="highlight"><pre><span></span><code>    macro maxarray($a:$asz): # search pattern. below is substitution pattern
         $m = 0
         $i = 0
         while i &lt; $asz:
@@ -3245,14 +3813,14 @@ def runThis():
         $m
 
     x = maxarray([1, 9, 5, 6, 2, 4]:6)
-</code></pre>
+</code></pre></div>
 <p>点击下面的链接可以看到更多展示macros牛逼用法的例子：</p>
 <p>https://github.com/ethereum/serpent/blob/poc7/examples/peano.se</p>
 <p>这里要提醒读者注意的是：macros不是函数(functions)。每次调用macro的时候，macro的定义都会被文本复制到调用的地方（宏展开）。因此当macro的定义变得很长时，请考虑定义一个函数替代它。还要注意的是占位符前面的$符号非常重要：如果$a前少了$符号，实际上是在使用名字为a的变量。我们也可以在替换模式(substitution pattern, 指宏的定义体)而不是搜索模式(search pattern，指宏定义的第一行)中使用$占位符，这样在每一次宏展开时会产生一个名字为随机前缀的变量。在替换模式中也可以使用普通变量(变量名前面没有$)，结果就是所有宏展开使用的是同一个变量，而且该变量可能在宏展开之外的地方也会用到。</p>
-<h2 id="_8">类型</h2>
+<h2 id="_8">类型<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
 <p><strong>警告：这是新加入的未经测试的特性，大蛇出没注意！</strong></p>
 <p>Serpent中的穷人版类型系统是体现macros威力的绝佳例子，和macros一起使用时能产生非常有趣的结果。直接上例子：</p>
-<pre><code class="language-serpent">    type float: [a, b, c]
+<div class="highlight"><pre><span></span><code>    type float: [a, b, c]
 
     macro float($x) + float($y):
         float($x + $y)
@@ -3282,9 +3850,9 @@ def runThis():
     b = a / floatfy(2)
     c = b * b
     return(unfloat(c))
-</code></pre>
+</code></pre></div>
 <p>这段代码的返回值是156,即12.5^2的整数部分。如果只用整型计算，结果将是144。这个技巧可以用来重写<a href="https://github.com/ethereum/serpent/blob/df0aa0e1285d7667d4a0cc81b1e11e0abb31fff3/examples/ecc/jacobian_add.se">椭圆曲线签名的公钥复原代码</a>，类型系统可以让里面的加法和乘法隐式的做模运算(modulo P)，从而是代码更精巧；我们也可以利用<a href="https://github.com/ethereum/serpent/blob/poc7/examples/long_integer_macros.se">长整形</a>来处理RSA以及其他基于大数的加密算法中的计算。</p>
-<h2 id="_9">其他</h2>
+<h2 id="_9">其他<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
 <p>更多的Serpent代码示例请参阅：https://github.com/ethereum/serpent/tree/master/examples</p>
 <p>pyethereum tester的一些有用技巧：</p>
 <ul>
@@ -3323,7 +3891,7 @@ def runThis():
 <li><code>x = ripemd160(a, items=4)</code> - same as above but for ripemd160</li>
 <li>使用字符语法(chars syntax)可以计算任意数量字节的hash。例如：<code>x = sha256([0xf1fc122bc7f5d74df2b9441a42a1469500000000000000000000000000000000], chars=16)</code> - 返回的是头16个字节的hash。注意最后用0对齐，否则头16个字节会是0（因为一个word是32字节）,计算的是16个0字节的hash。</li>
 </ul>
-<h2 id="_10">小提示</h2>
+<h2 id="_10">小提示<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>如果函数的返回值和你预计的不同，仔细检查所有的变量名 - 使用没有声明过的变量是不会产生错误信息的。</p>
@@ -3344,11 +3912,6 @@ def runThis():
 <p>如果在调用abi_contract()的时候遇到core dump，确认你没有定义同名函数。</p>
 </li>
 </ul>
-                
-              
-              
-                
-
 
               
             </article>
@@ -3357,12 +3920,12 @@ def runThis():
         
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../network-status/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../network-status/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 网络状态监控" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -3377,7 +3940,8 @@ def runThis():
         </a>
       
       
-        <a href="../term/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="../term/" class="md-footer__link md-footer__link--next" aria-label="Next: 以太坊术语表" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -3395,18 +3959,19 @@ def runThis():
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            版权 &copy; 2017 - 2021 wohugb.github.io
-          </div>
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
-      </div>
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      版权 &copy; 2017 - 2022 wohugb.github.io
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
     </div>
   </div>
@@ -3416,10 +3981,10 @@ def runThis():
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.7353b375.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e87a5f81.min.js"></script>
       
     
   </body>

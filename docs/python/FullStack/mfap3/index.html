@@ -9,12 +9,11 @@
         <meta name="description" content="大鼻子的日常学习记录">
       
       
-      
         <meta name="author" content="Nosy">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.7">
     
     
       
@@ -22,26 +21,28 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.9299cb39.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9d5733d3.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
-    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+
     
     
   </head>
@@ -55,7 +56,6 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -72,7 +72,10 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+    
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="大鼻子" class="md-header__button md-logo" aria-label="大鼻子" data-md-component="logo">
       
@@ -105,19 +108,22 @@
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -134,11 +140,10 @@
     
     
       <div class="md-header__source">
-        
-<a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     wohugb/wohugb.github.com
@@ -147,11 +152,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -177,11 +185,10 @@
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     wohugb/wohugb.github.com
@@ -249,10 +256,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
-      <label class="md-nav__link" for="__nav_4">
-        Ai
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Ai
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ai" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
@@ -261,6 +272,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -271,8 +283,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -283,8 +297,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -295,8 +311,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -307,8 +325,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -319,8 +339,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -331,8 +353,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -343,8 +367,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -355,8 +381,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -367,8 +395,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -378,10 +408,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10" type="checkbox" id="__nav_4_10" >
       
-      <label class="md-nav__link" for="__nav_4_10">
-        Bot
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_10">
+          Bot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Bot" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_10">
           <span class="md-nav__icon md-icon"></span>
@@ -390,6 +424,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -400,8 +435,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -412,8 +449,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -424,8 +463,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -436,14 +477,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -453,10 +497,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
       
-      <label class="md-nav__link" for="__nav_4_11">
-        Iot
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_11">
+          Iot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Iot" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_11">
           <span class="md-nav__icon md-icon"></span>
@@ -465,6 +513,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -475,12 +524,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -501,10 +552,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
-      <label class="md-nav__link" for="__nav_5">
-        Aliyun
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Aliyun
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Aliyun" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
@@ -513,6 +568,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -523,8 +579,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -535,6 +593,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -555,10 +614,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
-      <label class="md-nav__link" for="__nav_6">
-        Angular
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Angular
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Angular" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
@@ -567,6 +630,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -577,8 +641,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -589,8 +655,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -601,8 +669,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -613,8 +683,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -625,8 +697,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -637,8 +711,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -649,8 +725,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -661,8 +739,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -673,8 +753,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -685,8 +767,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -697,8 +781,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -709,8 +795,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -721,8 +809,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -733,8 +823,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -745,8 +837,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -757,8 +851,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -769,8 +865,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -781,8 +879,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -793,8 +893,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -805,8 +907,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -817,8 +921,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -829,8 +935,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -841,8 +949,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -853,8 +963,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -864,10 +976,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_25" type="checkbox" id="__nav_6_25" >
       
-      <label class="md-nav__link" for="__nav_6_25">
-        Features
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_25">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Features" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_25">
           <span class="md-nav__icon md-icon"></span>
@@ -876,6 +992,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -886,12 +1003,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -912,10 +1031,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="__nav_7">
-        Apartment
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Apartment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Apartment" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
@@ -924,6 +1047,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -934,8 +1058,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -946,8 +1072,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -958,8 +1086,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -970,8 +1100,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -982,8 +1114,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -994,8 +1128,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1006,8 +1142,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1018,6 +1156,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1038,10 +1177,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
-      <label class="md-nav__link" for="__nav_8">
-        Blockchain
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Blockchain
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Blockchain" data-md-level="1">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1050,6 +1193,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1060,8 +1204,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1072,8 +1218,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1084,8 +1232,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1096,8 +1246,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1108,8 +1260,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1119,10 +1273,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_6" type="checkbox" id="__nav_8_6" >
       
-      <label class="md-nav__link" for="__nav_8_6">
-        Bitcoin
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_6">
+          Bitcoin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Bitcoin" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_6">
           <span class="md-nav__icon md-icon"></span>
@@ -1131,6 +1289,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1141,14 +1300,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1158,10 +1320,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_7" type="checkbox" id="__nav_8_7" >
       
-      <label class="md-nav__link" for="__nav_8_7">
-        Ethereum
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_7">
+          Ethereum
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ethereum" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_7">
           <span class="md-nav__icon md-icon"></span>
@@ -1170,6 +1336,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1180,8 +1347,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1192,8 +1361,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1204,8 +1375,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1216,8 +1389,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1228,8 +1403,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1240,14 +1417,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1257,10 +1437,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_8" type="checkbox" id="__nav_8_8" >
       
-      <label class="md-nav__link" for="__nav_8_8">
-        Ipfs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_8">
+          Ipfs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ipfs" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1269,6 +1453,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1279,14 +1464,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1296,10 +1484,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_9" type="checkbox" id="__nav_8_9" >
       
-      <label class="md-nav__link" for="__nav_8_9">
-        Twister
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_9">
+          Twister
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Twister" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1308,6 +1500,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1318,8 +1511,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1330,8 +1525,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1342,8 +1539,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1354,8 +1553,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1366,12 +1567,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1392,10 +1595,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
       
-      <label class="md-nav__link" for="__nav_9">
-        Education
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Education
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Education" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1404,6 +1611,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1414,8 +1622,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1426,8 +1636,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1438,8 +1650,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1450,6 +1664,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1470,102 +1685,37 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
       
-      <label class="md-nav__link" for="__nav_10">
-        Nodejs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Nodejs" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Langs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Langs" data-md-level="1">
         <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
-          Nodejs
+          Langs
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../nodejs/" class="md-nav__link">
+      <a href="../../../langs/" class="md-nav__link">
         Index
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/awesome/" class="md-nav__link">
-        Awesome Node.js
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/express/" class="md-nav__link">
-        Express
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/koa/" class="md-nav__link">
-        Koa
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/mongoose/" class="md-nav__link">
-        Mongoose
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/nodejs/" class="md-nav__link">
-        Nodejs
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/pm2/" class="md-nav__link">
-        Pm2
-      </a>
-    </li>
-  
-
-          
-            
+              
   
   
   
@@ -1573,138 +1723,43 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8" type="checkbox" id="__nav_10_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" >
       
-      <label class="md-nav__link" for="__nav_10_8">
-        Node modules
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Node modules" data-md-level="2">
-        <label class="md-nav__title" for="__nav_10_8">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_2">
+          Go
           <span class="md-nav__icon md-icon"></span>
-          Node modules
+        </label>
+      
+      <nav class="md-nav" aria-label="Go" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_2">
+          <span class="md-nav__icon md-icon"></span>
+          Go
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/gm/" class="md-nav__link">
-        概述
+      <a href="../../../langs/go/" class="md-nav__link">
+        Index
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8_2" type="checkbox" id="__nav_10_8_2" >
-      
-      <label class="md-nav__link" for="__nav_10_8_2">
-        Node rsa
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Node rsa" data-md-level="3">
-        <label class="md-nav__title" for="__nav_10_8_2">
-          <span class="md-nav__icon md-icon"></span>
-          Node rsa
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/node-rsa/jsbn/" class="md-nav__link">
-        JavaScript中的RSA和ECC
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/node-rsa/readme/" class="md-nav__link">
-        Node-RSA
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8_3" type="checkbox" id="__nav_10_8_3" >
-      
-      <label class="md-nav__link" for="__nav_10_8_3">
-        Qrcode
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Qrcode" data-md-level="3">
-        <label class="md-nav__title" for="__nav_10_8_3">
-          <span class="md-nav__icon md-icon"></span>
-          Qrcode
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/qrcode/api/" class="md-nav__link">
-        Api
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/qrcode/readme/" class="md-nav__link">
-        node-qrcode
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -1725,18 +1780,338 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
       
-      <label class="md-nav__link" for="__nav_11">
-        Pin
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Pin" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11">
+          Nodejs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Nodejs" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          Nodejs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/awesome/" class="md-nav__link">
+        Awesome Node.js
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/express/" class="md-nav__link">
+        Express
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/koa/" class="md-nav__link">
+        Koa
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/mongoose/" class="md-nav__link">
+        Mongoose
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/nodejs/" class="md-nav__link">
+        Nodejs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/pm2/" class="md-nav__link">
+        Pm2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8" type="checkbox" id="__nav_11_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8">
+          Node modules
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Node modules" data-md-level="2">
+        <label class="md-nav__title" for="__nav_11_8">
+          <span class="md-nav__icon md-icon"></span>
+          Node modules
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/gm/" class="md-nav__link">
+        概述
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8_2" type="checkbox" id="__nav_11_8_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8_2">
+          Node rsa
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Node rsa" data-md-level="3">
+        <label class="md-nav__title" for="__nav_11_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Node rsa
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/node-rsa/jsbn/" class="md-nav__link">
+        JavaScript中的RSA和ECC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/node-rsa/readme/" class="md-nav__link">
+        Node-RSA
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8_3" type="checkbox" id="__nav_11_8_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8_3">
+          Qrcode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Qrcode" data-md-level="3">
+        <label class="md-nav__title" for="__nav_11_8_3">
+          <span class="md-nav__icon md-icon"></span>
+          Qrcode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/qrcode/api/" class="md-nav__link">
+        Api
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/qrcode/readme/" class="md-nav__link">
+        node-qrcode
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12">
+          Pin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Pin" data-md-level="1">
+        <label class="md-nav__title" for="__nav_12">
           <span class="md-nav__icon md-icon"></span>
           Pin
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pin/" class="md-nav__link">
+        拼团开发
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1747,8 +2122,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1759,8 +2136,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1771,8 +2150,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pin/sku-spu/" class="md-nav__link">
+        sku spu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1780,20 +2175,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_4" type="checkbox" id="__nav_11_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_6" type="checkbox" id="__nav_12_6" >
       
-      <label class="md-nav__link" for="__nav_11_4">
-        Fresh
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_6">
+          Fresh
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Fresh" data-md-level="2">
-        <label class="md-nav__title" for="__nav_11_4">
+        <label class="md-nav__title" for="__nav_12_6">
           <span class="md-nav__icon md-icon"></span>
           Fresh
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1804,8 +2204,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1816,8 +2218,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1828,12 +2232,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1854,20 +2260,25 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" checked>
       
-      <label class="md-nav__link" for="__nav_12">
-        Python
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13">
+          Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Python" data-md-level="1">
-        <label class="md-nav__title" for="__nav_12">
+        <label class="md-nav__title" for="__nav_13">
           <span class="md-nav__icon md-icon"></span>
           Python
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1878,8 +2289,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1890,8 +2303,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1902,8 +2317,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1914,8 +2331,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1923,20 +2342,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_5" type="checkbox" id="__nav_12_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_5" type="checkbox" id="__nav_13_5" >
       
-      <label class="md-nav__link" for="__nav_12_5">
-        Anaconda
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_5">
+          Anaconda
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Anaconda" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_5">
+        <label class="md-nav__title" for="__nav_13_5">
           <span class="md-nav__icon md-icon"></span>
           Anaconda
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1947,14 +2371,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -1964,20 +2391,25 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_6" type="checkbox" id="__nav_12_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_6" type="checkbox" id="__nav_13_6" checked>
       
-      <label class="md-nav__link" for="__nav_12_6">
-        FullStack
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_6">
+          FullStack
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="FullStack" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_6">
+        <label class="md-nav__title" for="__nav_13_6">
           <span class="md-nav__icon md-icon"></span>
           FullStack
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1988,8 +2420,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2000,8 +2434,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2012,8 +2448,10 @@
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -2022,6 +2460,7 @@
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
       
         
       
@@ -2036,7 +2475,9 @@
       </a>
       
         
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -2104,14 +2545,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2119,20 +2563,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_7" type="checkbox" id="__nav_12_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_7" type="checkbox" id="__nav_13_7" >
       
-      <label class="md-nav__link" for="__nav_12_7">
-        Django
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_7">
+          Django
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Django" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_7">
+        <label class="md-nav__title" for="__nav_13_7">
           <span class="md-nav__icon md-icon"></span>
           Django
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2143,8 +2592,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2155,14 +2606,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2170,20 +2624,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_8" type="checkbox" id="__nav_12_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_8" type="checkbox" id="__nav_13_8" >
       
-      <label class="md-nav__link" for="__nav_12_8">
-        Flask
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_8">
+          Flask
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Flask" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_8">
+        <label class="md-nav__title" for="__nav_13_8">
           <span class="md-nav__icon md-icon"></span>
           Flask
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2194,8 +2653,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2206,14 +2667,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2221,20 +2685,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_9" type="checkbox" id="__nav_12_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_9" type="checkbox" id="__nav_13_9" >
       
-      <label class="md-nav__link" for="__nav_12_9">
-        Pip
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_9">
+          Pip
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Pip" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_9">
+        <label class="md-nav__title" for="__nav_13_9">
           <span class="md-nav__icon md-icon"></span>
           Pip
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2245,78 +2714,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
-      
-      <label class="md-nav__link" for="__nav_13">
-        Running
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Running" data-md-level="1">
-        <label class="md-nav__title" for="__nav_13">
-          <span class="md-nav__icon md-icon"></span>
-          Running
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../running/bicycle/" class="md-nav__link">
-        变速自行车
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../running/card/" class="md-nav__link">
-        自动驾驶
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../running/walk/" class="md-nav__link">
-        徒步健身
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -2337,118 +2742,62 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
       
-      <label class="md-nav__link" for="__nav_14">
-        Tools
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Tools" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_14">
+          Running
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Running" data-md-level="1">
         <label class="md-nav__title" for="__nav_14">
           <span class="md-nav__icon md-icon"></span>
-          Tools
+          Running
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/" class="md-nav__link">
-        器
+      <a href="../../../running/bicycle/" class="md-nav__link">
+        变速自行车
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_2" type="checkbox" id="__nav_14_2" >
-      
-      <label class="md-nav__link" for="__nav_14_2">
-        Eslint
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Eslint" data-md-level="2">
-        <label class="md-nav__title" for="__nav_14_2">
-          <span class="md-nav__icon md-icon"></span>
-          Eslint
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/eslint/" class="md-nav__link">
-        Index
+      <a href="../../../running/card/" class="md-nav__link">
+        自动驾驶
       </a>
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_3" type="checkbox" id="__nav_14_3" >
-      
-      <label class="md-nav__link" for="__nav_14_3">
-        Vscode
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Vscode" data-md-level="2">
-        <label class="md-nav__title" for="__nav_14_3">
-          <span class="md-nav__icon md-icon"></span>
-          Vscode
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/vscode/" class="md-nav__link">
-        vscode 文档
+      <a href="../../../running/walk/" class="md-nav__link">
+        徒步健身
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../tools/vscode/prettier/" class="md-nav__link">
-        Prettier
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -2469,18 +2818,179 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
       
-      <label class="md-nav__link" for="__nav_15">
-        Wechat
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Wechat" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15">
+          Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tools" data-md-level="1">
         <label class="md-nav__title" for="__nav_15">
+          <span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/" class="md-nav__link">
+        器
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_2" type="checkbox" id="__nav_15_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15_2">
+          Eslint
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Eslint" data-md-level="2">
+        <label class="md-nav__title" for="__nav_15_2">
+          <span class="md-nav__icon md-icon"></span>
+          Eslint
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/eslint/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_3" type="checkbox" id="__nav_15_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15_3">
+          Vscode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Vscode" data-md-level="2">
+        <label class="md-nav__title" for="__nav_15_3">
+          <span class="md-nav__icon md-icon"></span>
+          Vscode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/vscode/" class="md-nav__link">
+        vscode 文档
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/vscode/prettier/" class="md-nav__link">
+        Prettier
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16">
+          Wechat
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Wechat" data-md-level="1">
+        <label class="md-nav__title" for="__nav_16">
           <span class="md-nav__icon md-icon"></span>
           Wechat
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2491,8 +3001,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2503,8 +3015,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2515,8 +3029,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2524,20 +3040,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4" type="checkbox" id="__nav_15_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4" type="checkbox" id="__nav_16_4" >
       
-      <label class="md-nav__link" for="__nav_15_4">
-        Open
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4">
+          Open
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Open" data-md-level="2">
-        <label class="md-nav__title" for="__nav_15_4">
+        <label class="md-nav__title" for="__nav_16_4">
           <span class="md-nav__icon md-icon"></span>
           Open
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2548,8 +3069,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2557,20 +3080,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_2" type="checkbox" id="__nav_15_4_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_2" type="checkbox" id="__nav_16_4_2" >
       
-      <label class="md-nav__link" for="__nav_15_4_2">
-        App
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_2">
+          App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="App" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_2">
+        <label class="md-nav__title" for="__nav_16_4_2">
           <span class="md-nav__icon md-icon"></span>
           App
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2581,14 +3109,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2596,20 +3127,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_3" type="checkbox" id="__nav_15_4_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_3" type="checkbox" id="__nav_16_4_3" >
       
-      <label class="md-nav__link" for="__nav_15_4_3">
-        Code
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_3">
+          Code
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Code" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_3">
+        <label class="md-nav__title" for="__nav_16_4_3">
           <span class="md-nav__icon md-icon"></span>
           Code
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2620,14 +3156,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2635,20 +3174,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_4" type="checkbox" id="__nav_15_4_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_4" type="checkbox" id="__nav_16_4_4" >
       
-      <label class="md-nav__link" for="__nav_15_4_4">
-        D3f
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_4">
+          D3f
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="D3f" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_4">
+        <label class="md-nav__title" for="__nav_16_4_4">
           <span class="md-nav__icon md-icon"></span>
           D3f
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2659,14 +3203,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2674,20 +3221,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_5" type="checkbox" id="__nav_15_4_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_5" type="checkbox" id="__nav_16_4_5" >
       
-      <label class="md-nav__link" for="__nav_15_4_5">
-        Download
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_5">
+          Download
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Download" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_5">
+        <label class="md-nav__title" for="__nav_16_4_5">
           <span class="md-nav__icon md-icon"></span>
           Download
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2698,8 +3250,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2710,8 +3264,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2722,8 +3278,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2734,8 +3292,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2746,18 +3306,21 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -2777,7 +3340,9 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -2850,8 +3415,9 @@
             <article class="md-content__inner md-typeset">
               
                 
-                
-                <h1 id="pythonflask-angular-web-3">使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分</h1>
+
+
+<h1 id="pythonflask-angular-web-3">使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分<a class="headerlink" href="#pythonflask-angular-web-3" title="Permanent link">&para;</a></h1>
 <p>In this series, you will learn how to create modern web applications with Python, Flask, and Angular.</p>
 <p>TL;DR: In this series, you will learn how to create modern web applications with Python, Flask, and Angular. You will use this stack to build a SPA and a backend API to expose exams and questions so users can test their knowledge regarding different technologies. In this GitHub repository, you can find the final code created throughout the third part of the series (this one).</p>
 <p>So far, this series contains three parts:</p>
@@ -2860,121 +3426,121 @@
 <li>Part 2 includes topics like securing Flask Apps, handling Angular forms, and securing Angular Apps.</li>
 <li>Part 3 (this one) includes topics like configuring Angular Material, handling Authorization, and migrating Databases with Alembic.</li>
 </ul>
-<h2 id="_1">你将要建立什么</h2>
+<h2 id="_1">你将要建立什么<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>在本系列中，您将使用 Python，Flask 和 Angular 构建基于现代架构的 Web 应用程序。
 使用 Angular，您将构建一个 SPA（单页应用程序），允许用户浏览考试和问题。这些用户在通过身份验证后，将能够通过选择问题所揭示的多个选项之一来测试他们关于特定主题的知识。
 然后，当您的用户提交他们的答案时，您的后端将检查他们是对还是错，记录结果，并将此结果发回给用户。</p>
 <p>在本系列的这一部分中，您将首先安装和配置 Angular Material，以便轻松地为您的应用添加一个漂亮的界面。然后，您将使用 Angular Material 组件（如 Button，Card，Dialog 和 Toolbar）来增强应用程序的外观。</p>
 <p>之后，您将重构前端和后端应用程序，以支持更多功能，如问题管理。在整个过程中，您将学习如何利用角色来限制某些类型的用户可以执行的操作。
 例如，虽然让社区帮助添加新的考试和问题可能是个好主意，但您需要限制哪些用户可以更新和删除现有的考试。</p>
-<h2 id="_2">安装和配置角度材料</h2>
+<h2 id="_2">安装和配置角度材料<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>The official website contains some good documentation on how to install, configure, and use Angular Material on Angular applications. However, for newcomers, the information might look a little scattered. So, in this article, you are going to focus on what is needed to get up and running with this UI (User Interface) component framework as fast as possible.</p>
 <p>So, the first thing you will need to do is to install some dependencies:</p>
-<pre><code class="language-sh"># make sure you move the cursor to the frontend directory
-cd frontend
-# install dependencies with NPM
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1"># make sure you move the cursor to the frontend directory</span>
+<span class="nb">cd</span> frontend
+<span class="c1"># install dependencies with NPM</span>
+</code></pre></div>
 <p>npm i @angular/material @angular/cdk hammerjs
 You will need the first two libraries in the command above, @angular/material and @angular/cdk, to use Angular Material in any application. You will also install the third library, hammerjs, to add gesture support to your app.</p>
 <p>After installing these dependencies, you will need to update the index.html file. The new version of this file will add two other external dependencies (the Roboto font and Material Icons) and will make Angular Material default style apply to all native elements on your app:</p>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot; /&gt;
-    &lt;title&gt;Online Exams&lt;/title&gt;
-    &lt;base href=&quot;/&quot; /&gt;
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Online Exams<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">base</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/&quot;</span> <span class="p">/&gt;</span>
 
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
-    &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;favicon.ico&quot; /&gt;
-    &lt;link
-      href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;
-      rel=&quot;stylesheet&quot;
-    /&gt;
-    &lt;link
-      href=&quot;https://fonts.googleapis.com/css?family=Roboto:300,400,500&quot;
-      rel=&quot;stylesheet&quot;
-    /&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;section class=&quot;mat-typography&quot;&gt;
-      &lt;app-root&gt;&lt;/app-root&gt;
-    &lt;/section&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;icon&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;image/x-icon&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;favicon.ico&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span>
+      <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;</span>
+      <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span>
+    <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span>
+      <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://fonts.googleapis.com/css?family=Roboto:300,400,500&quot;</span>
+      <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span>
+    <span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mat-typography&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">app-root</span><span class="p">&gt;&lt;/</span><span class="nt">app-root</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
 <p>Then, you will want to update the styles.css file to apply an Angular Material theme (in this case Indigo Pink) and to remove the margin applied by browsers on the body element:</p>
-<pre><code class="language-scss">@import &quot;~@angular/material/prebuilt-themes/indigo-pink.css&quot;;
+<div class="highlight"><pre><span></span><code><span class="k">@import</span><span class="w"> </span><span class="s2">&quot;~@angular/material/prebuilt-themes/indigo-pink.css&quot;</span><span class="p">;</span><span class="w"></span>
 
-body {
-  margin: 0;
-}
-</code></pre>
+<span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">margin</span><span class="nd">:</span><span class="w"> </span><span class="nt">0</span><span class="o">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>Also, before moving into the process of adding Angular Material components, you will need to update the main.ts file to apply hammer.js:</p>
-<pre><code class="language-ts">import &quot;hammerjs&quot;;
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="s2">&quot;hammerjs&quot;</span><span class="p">;</span><span class="w"></span>
 
-// ... everything else ...
-</code></pre>
+<span class="c1">// ... everything else ...</span><span class="w"></span>
+</code></pre></div>
 <p>With these changes in place, you have properly installed and configured Angular Material in your application. So, it’s a good time to save your work:</p>
-<pre><code class="language-sh">git add . &amp;&amp; git commit -m &quot;installing and configuring Angular Material&quot;
-</code></pre>
-<h2 id="_3">使用角度材质组件</h2>
+<div class="highlight"><pre><span></span><code>git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;installing and configuring Angular Material&quot;</span>
+</code></pre></div>
+<h2 id="_3">使用角度材质组件<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>Now that you finished configuring Angular Material, you can move forward and make use of the first components to build an appealing UI. More precisely, you will start by using the Toolbar and Button components to add a navigation bar to the top of your application.</p>
 <p>To use these components, you will need to add them to your AppModule. So, open the app.module.ts file and update it as follows:</p>
-<pre><code class="language-ts">import {NoopAnimationsModule} from '@angular/platform-browser/animations';
-import {MatToolbarModule, MatButtonModule} from '@angular/material';
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">NoopAnimationsModule</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/platform-browser/animations&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">MatToolbarModule</span><span class="p">,</span><span class="w"> </span><span class="nx">MatButtonModule</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/material&#39;</span><span class="p">;</span><span class="w"></span>
 
-// ... other imports ...
+<span class="c1">// ... other imports ...</span><span class="w"></span>
 
-// ... const appRoutes
+<span class="c1">// ... const appRoutes</span><span class="w"></span>
 
-@NgModule({
-// ... declarations ...
-imports: [
-// ... other imports ...
-NoopAnimationsModule,
-MatToolbarModule,
-MatButtonModule,
-],
-// ... providers and boostrap ...
-})
-// ... export class AppModule ...
-</code></pre>
+<span class="kd">@NgModule</span><span class="p">({</span><span class="w"></span>
+<span class="c1">// ... declarations ...</span><span class="w"></span>
+<span class="nx">imports</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="c1">// ... other imports ...</span><span class="w"></span>
+<span class="nx">NoopAnimationsModule</span><span class="p">,</span><span class="w"></span>
+<span class="nx">MatToolbarModule</span><span class="p">,</span><span class="w"></span>
+<span class="nx">MatButtonModule</span><span class="p">,</span><span class="w"></span>
+<span class="p">],</span><span class="w"></span>
+<span class="c1">// ... providers and boostrap ...</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="c1">// ... export class AppModule ...</span><span class="w"></span>
+</code></pre></div>
 <p>Note: In the code snippet above, you are using NoopAnimationsModule to avoid adding another dependency to your project. If you are interested in using animations, check this URL.</p>
 <p>Then, you can refactor the AppComponent class to use these components. So, open the app.component.ts file and replace its code with the following one:</p>
-<pre><code class="language-ts">import {Component, OnInit} from '@angular/core';
-import \* as Auth0 from 'auth0-web';
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">OnInit</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="err">\</span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">Auth0</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;auth0-web&#39;</span><span class="p">;</span><span class="w"></span>
 
-@Component({
-selector: 'app-root',
-template: `
-&lt;mat-toolbar color=&quot;primary&quot; class=&quot;mat-elevation-z10&quot;&gt;
-&lt;button mat-button&gt;Online Exams&lt;/button&gt;
-&lt;button mat-button&gt;About&lt;/button&gt;
+<span class="kd">@Component</span><span class="p">({</span><span class="w"></span>
+<span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;app-root&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<span class="sb">&lt;mat-toolbar color=&quot;primary&quot; class=&quot;mat-elevation-z10&quot;&gt;</span>
+<span class="sb">&lt;button mat-button&gt;Online Exams&lt;/button&gt;</span>
+<span class="sb">&lt;button mat-button&gt;About&lt;/button&gt;</span>
 
-      &lt;!-- This fills the remaining space of the current row --&gt;
-      &lt;span class=&quot;fill-remaining-space&quot;&gt;&lt;/span&gt;
+<span class="sb">      &lt;!-- This fills the remaining space of the current row --&gt;</span>
+<span class="sb">      &lt;span class=&quot;fill-remaining-space&quot;&gt;&lt;/span&gt;</span>
 
-      &lt;button mat-button (click)=&quot;signIn()&quot; *ngIf=&quot;!authenticated&quot;&gt;Sign In&lt;/button&gt;
-      &lt;button mat-button (click)=&quot;signOut()&quot; *ngIf=&quot;authenticated&quot;&gt;Sign Out&lt;/button&gt;
-    &lt;/mat-toolbar&gt;
+<span class="sb">      &lt;button mat-button (click)=&quot;signIn()&quot; *ngIf=&quot;!authenticated&quot;&gt;Sign In&lt;/button&gt;</span>
+<span class="sb">      &lt;button mat-button (click)=&quot;signOut()&quot; *ngIf=&quot;authenticated&quot;&gt;Sign Out&lt;/button&gt;</span>
+<span class="sb">    &lt;/mat-toolbar&gt;</span>
 
-    &lt;router-outlet&gt;&lt;/router-outlet&gt;
+<span class="sb">    &lt;router-outlet&gt;&lt;/router-outlet&gt;</span>
 
-`,
-styleUrls: ['./app.component.css']
-})
-export class AppComponent implements OnInit {
-authenticated = false;
+<span class="sb">`</span><span class="p">,</span><span class="w"></span>
+<span class="nx">styleUrls</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;./app.component.css&#39;</span><span class="p">]</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">AppComponent</span><span class="w"> </span><span class="k">implements</span><span class="w"> </span><span class="nx">OnInit</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="nx">authenticated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"></span>
 
-signIn = Auth0.signIn;
-signOut = Auth0.signOut;
+<span class="nx">signIn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Auth0</span><span class="p">.</span><span class="nx">signIn</span><span class="p">;</span><span class="w"></span>
+<span class="nx">signOut</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Auth0</span><span class="p">.</span><span class="nx">signOut</span><span class="p">;</span><span class="w"></span>
 
-ngOnInit() {
-const self = this;
-Auth0.subscribe((authenticated) =&gt; (self.authenticated = authenticated));
-}
-}
-</code></pre>
+<span class="nx">ngOnInit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="nx">Auth0</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">((</span><span class="nx">authenticated</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span><span class="nx">self</span><span class="p">.</span><span class="nx">authenticated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">authenticated</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>The new version of this file adds the mat-toolbar element to the top of the page with four buttons:</p>
 <p>Online Exams: You will make this button redirect users to the home page.
 About: You will create a view called About and make this button redirect users there.
@@ -2982,127 +3548,127 @@ Sign In: You added this button to allow visitors to sign in to your application.
 Sign Out: You added this button to allow users to close their current session.
 What is interesting about these changes is that, since the AppComponent also defines where other views will appear (through the router-outlet element), the mat-toolbar element will be visible to all your views.</p>
 <p>Note that you also made use of the Button component provided by the Angular Material framework by adding the mat-button directive to button elements. Besides that, you have added a span element to your toolbar that uses a class called fill-remaining-space. The goal of this class is to make this element fill all the unused space in the navbar. As you haven’t defined the rules of this class yet, open the app.component.css file and add the following code to it:</p>
-<pre><code class="language-css">.fill-remaining-space {
-  /_thisfillstheremainingspace,by using flexbox.
-Every toolbar row uses a flexbox row layout. _/
-flex: 1 1 auto;
-}
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">fill-remaining-space</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="err">/_thisfillstheremainingspace,by</span><span class="w"> </span><span class="err">using</span><span class="w"> </span><span class="err">flexbox.</span><span class="w"></span>
+<span class="err">Every</span><span class="w"> </span><span class="err">toolbar</span><span class="w"> </span><span class="err">row</span><span class="w"> </span><span class="err">uses</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">flexbox</span><span class="w"> </span><span class="err">row</span><span class="w"> </span><span class="err">layout.</span><span class="w"> </span><span class="err">_/</span><span class="w"></span>
+<span class="k">flex</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>Now, as you have moved the Sign In and Sign Out buttons to the AppComponent, you can remove them and the related code from the ExamsComponent. So, open the exams.component.ts file and replace its code with this:</p>
-<pre><code class="language-ts">import \* as Auth0 from 'auth0-web';
-import {Component, OnDestroy, OnInit} from '@angular/core';
-import {Subscription} from 'rxjs/Subscription';
-import {Exam} from './exam.model';
-import {ExamsApiService} from './exams-api.service';
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="err">\</span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">Auth0</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;auth0-web&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">OnDestroy</span><span class="p">,</span><span class="w"> </span><span class="nx">OnInit</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">Subscription</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;rxjs/Subscription&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">Exam</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./exam.model&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">ExamsApiService</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./exams-api.service&#39;</span><span class="p">;</span><span class="w"></span>
 
-@Component({
-selector: 'exams',
-template: `&lt;div&gt; &lt;button routerLink=&quot;/new-exam&quot;&gt;New Exam&lt;/button&gt; &lt;ul&gt; &lt;li *ngFor=&quot;let exam of examsList&quot;&gt; {{exam.title}} &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt;`
-})
-export class ExamsComponent implements OnInit, OnDestroy {
-examsListSubs: Subscription;
-examsList: Exam[];
-authenticated = false;
+<span class="kd">@Component</span><span class="p">({</span><span class="w"></span>
+<span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;exams&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="sb">`&lt;div&gt; &lt;button routerLink=&quot;/new-exam&quot;&gt;New Exam&lt;/button&gt; &lt;ul&gt; &lt;li *ngFor=&quot;let exam of examsList&quot;&gt; {{exam.title}} &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt;`</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ExamsComponent</span><span class="w"> </span><span class="k">implements</span><span class="w"> </span><span class="nx">OnInit</span><span class="p">,</span><span class="w"> </span><span class="nx">OnDestroy</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="nx">examsListSubs</span><span class="o">:</span><span class="w"> </span><span class="kt">Subscription</span><span class="p">;</span><span class="w"></span>
+<span class="nx">examsList</span><span class="o">:</span><span class="w"> </span><span class="kt">Exam</span><span class="p">[];</span><span class="w"></span>
+<span class="nx">authenticated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"></span>
 
-constructor(private examsApi: ExamsApiService) { }
+<span class="kr">constructor</span><span class="p">(</span><span class="k">private</span><span class="w"> </span><span class="nx">examsApi</span><span class="o">:</span><span class="w"> </span><span class="kt">ExamsApiService</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
 
-ngOnInit() {
-this.examsListSubs = this.examsApi
-.getExams()
-.subscribe(res =&gt; {
-this.examsList = res;
-},
-console.error
-);
-const self = this;
-Auth0.subscribe((authenticated) =&gt; (self.authenticated = authenticated));
-}
+<span class="nx">ngOnInit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="k">this</span><span class="p">.</span><span class="nx">examsListSubs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">examsApi</span><span class="w"></span>
+<span class="p">.</span><span class="nx">getExams</span><span class="p">()</span><span class="w"></span>
+<span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">res</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="k">this</span><span class="p">.</span><span class="nx">examsList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">res</span><span class="p">;</span><span class="w"></span>
+<span class="p">},</span><span class="w"></span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="w"></span>
+<span class="p">);</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="nx">Auth0</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">((</span><span class="nx">authenticated</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span><span class="nx">self</span><span class="p">.</span><span class="nx">authenticated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">authenticated</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-ngOnDestroy() {
-this.examsListSubs.unsubscribe();
-}
-}
-</code></pre>
+<span class="nx">ngOnDestroy</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="k">this</span><span class="p">.</span><span class="nx">examsListSubs</span><span class="p">.</span><span class="nx">unsubscribe</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>That’s it! If you run your application now, you will see a nice blueish navigation bar.</p>
-<pre><code class="language-sh"># not really needed, but if you want to see exams run the Flask app
+<div class="highlight"><pre><span></span><code><span class="c1"># not really needed, but if you want to see exams run the Flask app</span>
 
-cd ../backend
-./bootstrap.sh &amp;
-cd ../frontend
+<span class="nb">cd</span> ../backend
+./bootstrap.sh <span class="p">&amp;</span>
+<span class="nb">cd</span> ../frontend
 
-# start the local development server
+<span class="c1"># start the local development server</span>
 
 npm start
-</code></pre>
+</code></pre></div>
 <p>Using Angular Material Navbar on Python, Flask, and Angular app.</p>
 <p>Before proceeding to the next section, save your work!</p>
-<pre><code class="language-sh">git add . &amp;&amp; git commit -m &quot;adding navbar to the Angular app&quot;
-</code></pre>
+<div class="highlight"><pre><span></span><code>git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;adding navbar to the Angular app&quot;</span>
+</code></pre></div>
 <p>"Using Angular Material is easy and straightforward."</p>
 <p>Tweet This</p>
-<h2 id="_4">使用角度材料卡</h2>
+<h2 id="_4">使用角度材料卡<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>After adding a nice navigation bar to your Angular application, you can enhance the look and feel of the view that shows existing exams. In this view, you can use the Card component to show each exam in separately and some nice action buttons to enable users to add new exams and to start practicing their knowledge.</p>
 <p>To make these changes in your app, you will need to update the app.module.ts file as follows:</p>
-<pre><code class="language-ts">import {
-MatToolbarModule, MatButtonModule, MatCardModule
-} from '@angular/material';
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="nx">MatToolbarModule</span><span class="p">,</span><span class="w"> </span><span class="nx">MatButtonModule</span><span class="p">,</span><span class="w"> </span><span class="nx">MatCardModule</span><span class="w"></span>
+<span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/material&#39;</span><span class="p">;</span><span class="w"></span>
 
-// ... other imports and appRoutes definition ...
+<span class="c1">// ... other imports and appRoutes definition ...</span><span class="w"></span>
 
-@NgModule({
-// ... declarations ...
-imports: [
-// ... other imports ...
-MatCardModule,
-],
-// ... providers and bootstrap ...
-})
-// ... export class AppModule ...
-</code></pre>
+<span class="kd">@NgModule</span><span class="p">({</span><span class="w"></span>
+<span class="c1">// ... declarations ...</span><span class="w"></span>
+<span class="nx">imports</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="c1">// ... other imports ...</span><span class="w"></span>
+<span class="nx">MatCardModule</span><span class="p">,</span><span class="w"></span>
+<span class="p">],</span><span class="w"></span>
+<span class="c1">// ... providers and bootstrap ...</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="c1">// ... export class AppModule ...</span><span class="w"></span>
+</code></pre></div>
 <p>After that, you will have to change the template property of the ExamsComponent and add a style sheet (styleUrls) to it. So, open the exams.component.ts file and update it as follows:</p>
-<pre><code class="language-ts">// ... import statements ...
+<div class="highlight"><pre><span></span><code><span class="c1">// ... import statements ...</span><span class="w"></span>
 
-@Component({
-selector: 'exams',
-template: `&lt;h2&gt;Exams&lt;/h2&gt; &lt;p&gt;Choose an exam and start studying.&lt;/p&gt; &lt;div class=&quot;exams&quot;&gt; &lt;mat-card class=&quot;example-card&quot; *ngFor=&quot;let exam of examsList&quot; class=&quot;mat-elevation-z5&quot;&gt; &lt;mat-card-content&gt; &lt;mat-card-title&gt;{{exam.title}}&lt;/mat-card-title&gt; &lt;mat-card-subtitle&gt;{{exam.description}}&lt;/mat-card-subtitle&gt; &lt;p&gt; Etiam enim purus, vehicula nec dapibus quis, egestas eu quam. Nullam eleifend auctor leo, vitae rhoncus mi sodales vel. Aenean fermentum laoreet volutpat. Integer quam orci, molestie non nibh suscipit, faucibus euismod sapien. &lt;/p&gt; &lt;button mat-raised-button color=&quot;accent&quot;&gt;Start Exam&lt;/button&gt; &lt;/mat-card-content&gt; &lt;/mat-card&gt; &lt;/div&gt; &lt;button mat-fab color=&quot;primary&quot; *ngIf=&quot;authenticated&quot; class=&quot;new-exam&quot; routerLink=&quot;/new-exam&quot;&gt; &lt;i class=&quot;material-icons&quot;&gt;note_add&lt;/i&gt; &lt;/button&gt;`,
-styleUrls: ['exams.component.css'],
-})
-// ... export class ExamsComponent ...
-</code></pre>
+<span class="kd">@Component</span><span class="p">({</span><span class="w"></span>
+<span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;exams&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="sb">`&lt;h2&gt;Exams&lt;/h2&gt; &lt;p&gt;Choose an exam and start studying.&lt;/p&gt; &lt;div class=&quot;exams&quot;&gt; &lt;mat-card class=&quot;example-card&quot; *ngFor=&quot;let exam of examsList&quot; class=&quot;mat-elevation-z5&quot;&gt; &lt;mat-card-content&gt; &lt;mat-card-title&gt;{{exam.title}}&lt;/mat-card-title&gt; &lt;mat-card-subtitle&gt;{{exam.description}}&lt;/mat-card-subtitle&gt; &lt;p&gt; Etiam enim purus, vehicula nec dapibus quis, egestas eu quam. Nullam eleifend auctor leo, vitae rhoncus mi sodales vel. Aenean fermentum laoreet volutpat. Integer quam orci, molestie non nibh suscipit, faucibus euismod sapien. &lt;/p&gt; &lt;button mat-raised-button color=&quot;accent&quot;&gt;Start Exam&lt;/button&gt; &lt;/mat-card-content&gt; &lt;/mat-card&gt; &lt;/div&gt; &lt;button mat-fab color=&quot;primary&quot; *ngIf=&quot;authenticated&quot; class=&quot;new-exam&quot; routerLink=&quot;/new-exam&quot;&gt; &lt;i class=&quot;material-icons&quot;&gt;note_add&lt;/i&gt; &lt;/button&gt;`</span><span class="p">,</span><span class="w"></span>
+<span class="nx">styleUrls</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;exams.component.css&#39;</span><span class="p">],</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="c1">// ... export class ExamsComponent ...</span><span class="w"></span>
+</code></pre></div>
 <p>In this version of the ExamsComponent, you are iterating over the examsListretrieved from the Flask application to create mat-card elements. Each of these elements is composed of a mat-card-title to show the exams titles and a mat-card-subtitle to show its descriptions. Also, you added a p element with some placeholder text to simulate the long description property of the exams. Soon, you will replace this placeholder with real data retrieved from the backend. Still on the mat-card elements, you are adding a pink action button (&lt;button mat-raised-button color="accent") that will enable users to start taking the exam in question.</p>
 <p>Lastly, you are adding another action button, this time blue (&lt;button mat-fab color="primary" ...), to enable authenticated users (*ngIf="authenticated") to access the form where users can add new exams.</p>
 <p>Now, to make your UI more appealing, you will need to create the exams.component.css file in the same directory of exams.component.ts and add the following code to it:</p>
-<pre><code class="language-css">div.exams {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 15px;
-}
+<div class="highlight"><pre><span></span><code><span class="nt">div</span><span class="p">.</span><span class="nc">exams</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">grid-gap</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-button.new-exam {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-}
+<span class="nt">button</span><span class="p">.</span><span class="nc">new-exam</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">fixed</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">right</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-@media (max-width: 720px) {
-  div.exams {
-    grid-template-columns: 1fr;
-  }
-}
-</code></pre>
+<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">720px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">div</span><span class="p">.</span><span class="nc">exams</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>These CSS rules take advantage of the Grid layout system to show two columns of exams on large devices and a single column on smaller ones (max-width: 720px). It also defines that the button to add new exams will stay fixed on the screen on the bottom right corner.</p>
 <p>After refactoring the ExamsComponent, you will need to make a small change to the AppComponent to set a maximum width to your views and to make them appear in the middle of the screen on large devices. So, open the app.component.ts file and encapsulate the <router-outlet></router-outlet> element inside a new div:</p>
-<pre><code class="language-html">&lt;div class=&quot;view-container&quot;&gt;
-  &lt;router-outlet&gt;&lt;/router-outlet&gt;
-&lt;/div&gt;
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;view-container&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">router-outlet</span><span class="p">&gt;&lt;/</span><span class="nt">router-outlet</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
 <p>Then, in the app.component.css file, add the following rule:</p>
-<pre><code class="language-css">/_ ... other rules ... _/ div.view-container {
-  padding: 15px;
-  margin: 0 auto;
-  max-width: 940px;
-}
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="nt">_</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="nt">other</span><span class="w"> </span><span class="nt">rules</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="nt">_</span><span class="o">/</span><span class="w"> </span><span class="nt">div</span><span class="p">.</span><span class="nc">view-container</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">max-width</span><span class="p">:</span><span class="w"> </span><span class="mi">940</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>Now, if you check your Angular application again (remember, you can always start it by simply issuing npm start in the frontend directory), you will see a screen similar to the following one:</p>
 <p>Using Angular Material Cards and CSS Grid layout to make beautiful and modern applications.</p>
 <p>In the screen, the user is signed in (hence, the Sign Out button and the action button to add new exams) and there are three exams persisted on the backend.</p>
@@ -3113,70 +3679,70 @@ Now that you enhanced the UI of your application, it’s time to enable users to
 <p>“Rules are functions written in JavaScript that are executed when a user authenticates to your application. They run once the authentication process is complete and you can use them to customize and extend Auth0’s capabilities. They can be chained together for modular coding and can be turned on and off individually.” - Auth0</p>
 <p>So, open the Rules section on your Auth0 dashboard and hit the Create Rule button. Then, in the Pick a rule template page, click on the empty rule option. After that, Auth0 will redirect you to a form with two fields, one to input the name of the rule (you can call it Online Exams Roles) and one to input its source code.</p>
 <p>After defining a name for your new rule, paste the following code into it:</p>
-<pre><code class="language-py">// Set 'admin' role for bruno.krebs@auth0.com and 'user' for everyone else
-// Save app_metadata to ID and access tokens
-function (user, context, callback) {
+<div class="highlight"><pre><span></span><code><span class="o">//</span> <span class="n">Set</span> <span class="s1">&#39;admin&#39;</span> <span class="n">role</span> <span class="k">for</span> <span class="n">bruno</span><span class="o">.</span><span class="n">krebs</span><span class="nd">@auth0</span><span class="o">.</span><span class="n">com</span> <span class="ow">and</span> <span class="s1">&#39;user&#39;</span> <span class="k">for</span> <span class="n">everyone</span> <span class="k">else</span>
+<span class="o">//</span> <span class="n">Save</span> <span class="n">app_metadata</span> <span class="n">to</span> <span class="n">ID</span> <span class="ow">and</span> <span class="n">access</span> <span class="n">tokens</span>
+<span class="n">function</span> <span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">callback</span><span class="p">)</span> <span class="p">{</span>
 
-// Roles should only be set to verified users.
-if (!user.email || !user.email_verified) {
-return callback(null, user, context);
-}
+<span class="o">//</span> <span class="n">Roles</span> <span class="n">should</span> <span class="n">only</span> <span class="n">be</span> <span class="nb">set</span> <span class="n">to</span> <span class="n">verified</span> <span class="n">users</span><span class="o">.</span>
+<span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="o">||</span> <span class="err">!</span><span class="n">user</span><span class="o">.</span><span class="n">email_verified</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">return</span> <span class="n">callback</span><span class="p">(</span><span class="n">null</span><span class="p">,</span> <span class="n">user</span><span class="p">,</span> <span class="n">context</span><span class="p">);</span>
+<span class="p">}</span>
 
-user.app_metadata = user.app_metadata || {};
+<span class="n">user</span><span class="o">.</span><span class="n">app_metadata</span> <span class="o">=</span> <span class="n">user</span><span class="o">.</span><span class="n">app_metadata</span> <span class="o">||</span> <span class="p">{};</span>
 
-var addRolesToUser = (user, cb) =&gt; {
-if (user.email === 'bruno.krebs@auth0.com') {
-cb(null, ['admin']);
-} else {
-cb(null, ['user']);
-}
-};
+<span class="n">var</span> <span class="n">addRolesToUser</span> <span class="o">=</span> <span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">cb</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="o">===</span> <span class="s1">&#39;bruno.krebs@auth0.com&#39;</span><span class="p">)</span> <span class="p">{</span>
+<span class="n">cb</span><span class="p">(</span><span class="n">null</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;admin&#39;</span><span class="p">]);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<span class="n">cb</span><span class="p">(</span><span class="n">null</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;user&#39;</span><span class="p">]);</span>
+<span class="p">}</span>
+<span class="p">};</span>
 
-addRolesToUser(user, (err, roles) =&gt; {
-if (err) return callback(err);
+<span class="n">addRolesToUser</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="p">(</span><span class="n">err</span><span class="p">,</span> <span class="n">roles</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">err</span><span class="p">)</span> <span class="k">return</span> <span class="n">callback</span><span class="p">(</span><span class="n">err</span><span class="p">);</span>
 
-    user.app_metadata.roles = roles;
-    auth0.users.updateAppMetadata(user.user_id, user.app_metadata).then(() =&gt; {
-      const namespace = 'https://online-exams.com/roles';
-      const userRoles = user.app_metadata.roles;
-      context.idToken[namespace] = userRoles;
-      context.accessToken[namespace] = userRoles;
-      callback(null, user, context);
-    }).catch(callback);
+    <span class="n">user</span><span class="o">.</span><span class="n">app_metadata</span><span class="o">.</span><span class="n">roles</span> <span class="o">=</span> <span class="n">roles</span><span class="p">;</span>
+    <span class="n">auth0</span><span class="o">.</span><span class="n">users</span><span class="o">.</span><span class="n">updateAppMetadata</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">user_id</span><span class="p">,</span> <span class="n">user</span><span class="o">.</span><span class="n">app_metadata</span><span class="p">)</span><span class="o">.</span><span class="n">then</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="n">const</span> <span class="n">namespace</span> <span class="o">=</span> <span class="s1">&#39;https://online-exams.com/roles&#39;</span><span class="p">;</span>
+      <span class="n">const</span> <span class="n">userRoles</span> <span class="o">=</span> <span class="n">user</span><span class="o">.</span><span class="n">app_metadata</span><span class="o">.</span><span class="n">roles</span><span class="p">;</span>
+      <span class="n">context</span><span class="o">.</span><span class="n">idToken</span><span class="p">[</span><span class="n">namespace</span><span class="p">]</span> <span class="o">=</span> <span class="n">userRoles</span><span class="p">;</span>
+      <span class="n">context</span><span class="o">.</span><span class="n">accessToken</span><span class="p">[</span><span class="n">namespace</span><span class="p">]</span> <span class="o">=</span> <span class="n">userRoles</span><span class="p">;</span>
+      <span class="n">callback</span><span class="p">(</span><span class="n">null</span><span class="p">,</span> <span class="n">user</span><span class="p">,</span> <span class="n">context</span><span class="p">);</span>
+    <span class="p">})</span><span class="o">.</span><span class="n">catch</span><span class="p">(</span><span class="n">callback</span><span class="p">);</span>
 
-});
-}
-</code></pre>
+<span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div>
 <p>This rule is quite simple. It just checks the email address of the user that is authenticating and, if it is bruno.krebs@auth0.com, it sets the admin role to them. If it is not this email address, it sets user as the user’s role. You will want to replace the email address used in the code snippet above with your own one.</p>
 <p>Note: The namespace identifier used above can be any non-Auth0 HTTP or HTTPS URL and does not have to point to an actual resource. Auth0 enforces this recommendation from OIDC regarding additional claims and will silently exclude any claims that do not have a namespace. You can read more about implementing custom claims with Auth0 here.</p>
 <p>With this rule in place, you can focus on your source code again. In your backend, the first thing you will do is to create a decorator to facilitate defining which endpoints need which roles. So, open the auth.py file (it in the ./backend/src/ directory) and add the following code to it:</p>
-<pre><code>def requires_role(required_role):
+<div class="highlight"><pre><span></span><code>def requires_role(required_role):
 def decorator(f):
 def wrapper(\*\*args):
 token = get_token_auth_header()
 unverified_claims = jwt.get_unverified_claims(token)
 
             # search current token for the expected role
-            if unverified_claims.get('https://online-exams.com/roles'):
-                roles = unverified_claims['https://online-exams.com/roles']
+            if unverified_claims.get(&#39;https://online-exams.com/roles&#39;):
+                roles = unverified_claims[&#39;https://online-exams.com/roles&#39;]
                 for role in roles:
                     if role == required_role:
                         return f(**args)
 
             raise AuthError({
-                'code': 'insuficient_roles',
-                'description': 'You do not have the roles needed to perform this operation.'
+                &#39;code&#39;: &#39;insuficient_roles&#39;,
+                &#39;description&#39;: &#39;You do not have the roles needed to perform this operation.&#39;
             }, 401)
 
         return wrapper
 
     return decorator
-</code></pre>
+</code></pre></div>
 <p>What this code does is to define a decorator called requires_role role that takes one argument: required_role. Then, with this argument, it creates a wrapper around the annotated function that checks if any request reaching it contains a valid token with the required_role.</p>
 <p>Note: It is important that you use the same namespace (e.g. https://online-exams.com/roles) used while creating your Auth0 rule.</p>
 <p>If the token in question contains the expected role, the wrapper calls the original function (the endpoint). Otherwise, it raises an AuthError stating that the user lacks privilege.</p>
 <p>To use this decorator, you will create a new endpoint that allows administrators (i.e. users with the admin role) to delete existing exams. So, open the file that contains your endpoint definitions (./backend/src/main.py) and adds the following code to it:</p>
-<pre><code># coding=utf-8
+<div class="highlight"><pre><span></span><code># coding=utf-8
 
 # ... other import statements ...
 
@@ -3184,21 +3750,21 @@ from auth import requires_auth, requires_role
 
 # ... app definition and other endpoints ...
 
-@app.route('/exams/&lt;examId&gt;', methods=['DELETE'])
-@requires_role('admin')
+@app.route(&#39;/exams/&lt;examId&gt;&#39;, methods=[&#39;DELETE&#39;])
+@requires_role(&#39;admin&#39;)
 def delete_exam(examId):
 session = Session()
 exam = session.query(Exam).filter_by(id=examId).first()
 session.delete(exam)
 session.commit()
 session.close()
-return '', 201
+return &#39;&#39;, 201
 
 # ... error handler ...
-</code></pre>
+</code></pre></div>
 <p>Here, you are simply defining a new endpoint that accepts DELETE requests to remove exams. These requests must contain the exam id (<examId>) and must be issued by a user with the admin role (@requires_role('admin')). If these premises are fulfilled, the endpoint fetches an instance from the database and use it on the session.delete call.</p>
 <p>From the backend perspective, that’s it. Now, you can refactor your frontend code to support the new feature. To do this, you can start by opening the exams-api.service.ts file (it resides in the ./frontend/src/app/exams/ directory) and add the following method to the service:</p>
-<pre><code>// ... import statements ...
+<div class="highlight"><pre><span></span><code>// ... import statements ...
 
 @Injectable()
 export class ExamsApiService {
@@ -3207,22 +3773,22 @@ export class ExamsApiService {
 deleteExam(examId: number) {
 const httpOptions = {
 headers: new HttpHeaders({
-'Authorization': `Bearer ${Auth0.getAccessToken()}`
+&#39;Authorization&#39;: `Bearer ${Auth0.getAccessToken()}`
 })
 };
 return this.http
 .delete(`${API_URL}/exams/${examId}`, httpOptions);
 }
 }
-</code></pre>
+</code></pre></div>
 <p>The code in this new method is trivial, right? It just calls the delete method, on the HttpClient instance, pointing to the endpoint that you created in your backend. As you were probably expecting, you need to add the access_token to this call so your backend can validate it and its roles.</p>
 <p>Now, to use this new method, open the exams.component.ts file and update it as follows:</p>
-<pre><code>// ... import statements
+<div class="highlight"><pre><span></span><code>// ... import statements
 
 @Component({
-selector: 'exams',
+selector: &#39;exams&#39;,
 template: `&lt;h2&gt;Exams&lt;/h2&gt; &lt;p&gt;Choose an exam and start studying.&lt;/p&gt; &lt;div class=&quot;exams&quot;&gt; &lt;mat-card class=&quot;example-card&quot; *ngFor=&quot;let exam of examsList&quot; class=&quot;mat-elevation-z5&quot;&gt; &lt;mat-card-content&gt; &lt;mat-card-title&gt;{{exam.title}}&lt;/mat-card-title&gt; &lt;mat-card-subtitle&gt;{{exam.description}}&lt;/mat-card-subtitle&gt; &lt;p&gt; Etiam enim purus, vehicula nec dapibus quis, egestas eu quam. Nullam eleifend auctor leo, vitae rhoncus mi sodales vel. Aenean fermentum laoreet volutpat. Integer quam orci, molestie non nibh suscipit, faucibus euismod sapien. &lt;/p&gt; &lt;button mat-raised-button color=&quot;accent&quot;&gt;Start Exam&lt;/button&gt; &lt;button mat-button color=&quot;warn&quot; *ngIf=&quot;isAdmin()&quot; (click)=&quot;delete(exam.id)&quot;&gt; Delete &lt;/button&gt; &lt;/mat-card-content&gt; &lt;/mat-card&gt; &lt;/div&gt; &lt;button mat-fab color=&quot;primary&quot; *ngIf=&quot;authenticated&quot; class=&quot;new-exam&quot; routerLink=&quot;/new-exam&quot;&gt; &lt;i class=&quot;material-icons&quot;&gt;note_add&lt;/i&gt; &lt;/button&gt;`,
-styleUrls: ['exams.component.css'],
+styleUrls: [&#39;exams.component.css&#39;],
 })
 export class ExamsComponent implements OnInit, OnDestroy {
 // ... class properties, constructor, and other methods ...
@@ -3244,189 +3810,189 @@ console.error
 isAdmin() {
 if (!Auth0.isAuthenticated()) return false;
 
-    const roles = Auth0.getProfile()['https://online-exams.com/roles'];
-    return roles.includes('admin');
+    const roles = Auth0.getProfile()[&#39;https://online-exams.com/roles&#39;];
+    return roles.includes(&#39;admin&#39;);
 
 }
 }
-</code></pre>
+</code></pre></div>
 <p>The only difference on the template of this component is that, now, it includes a Delete button that is showed to admins only (*ngIf="isAdmin()"). When clicked, this button calls the delete method to issue the DELETE request to the backend. Then, when the request finishes, this method calls the getExams method on examsApi to update the list of exams.</p>
 <p>That’s it! It was easy to use roles to control who can delete exams and who cannot, right?</p>
 <p>Hey! Don’t forget to save your progress:</p>
 <p>git add . &amp;&amp; git commit -m "enabling admins to delete exams"</p>
-<h2 id="alembic">使用 Alembic 迁移数据库</h2>
+<h2 id="alembic">使用 Alembic 迁移数据库<a class="headerlink" href="#alembic" title="Permanent link">&para;</a></h2>
 <p>After dealing with authorization and roles, you will want to improve your application adding new features. As adding new features usually means making changes to your database (so it can support these new features), you will need a database migration tool to upgrade the database schema. Why? Mainly because you don’t want to lose your data when upgrading and because you want to keep track of the changes in the long run.</p>
 <p>So, in this section, you are going to learn about Alembic, a migration tool developed by the author of SQLAlchemy. As you will see, its usage is quite simple. First, you will need to install the alembic package in your Python application:</p>
-<pre><code class="language-sh"># move to the backend directory
-cd ./backend
-# make sure pipenv is activated
+<div class="highlight"><pre><span></span><code><span class="c1"># move to the backend directory</span>
+<span class="nb">cd</span> ./backend
+<span class="c1"># make sure pipenv is activated</span>
 pipenv shell
-# install alembic
+<span class="c1"># install alembic</span>
 pipenv install alembic
-</code></pre>
+</code></pre></div>
 <p>After installing alembic, you can use issue the following command to make it auto-configure itself:</p>
-<pre><code class="language-sh"># run it in the backend directory
+<div class="highlight"><pre><span></span><code><span class="c1"># run it in the backend directory</span>
 alembic init migrations
-</code></pre>
+</code></pre></div>
 <p>This command will create most of the files in the migrations directory. You won’t need to touch the files in this directory now. Actually, the one file you will need to change is the alembic.ini file that resides outside it (you will find it in the backend directory itself).</p>
 <p>Opening this file, you will see a property called sqlalchemy.url. Replace the value of this property so Alembic can connect to your database. If you followed the instructions to the letter, you can replace it as follows:</p>
 <p>sqlalchemy.url = postgresql://postgres:0NLIN3-ex4m@localhost:5432/online-exam
 Now, Alembic is able to connect itself to your database, so it’s time to create your first migration. To illustrate the process, you will create a simple migration to add the long_description column to the exams table. So, in your terminal, issue the following code:</p>
 <p>alembic revision -m "add long_description to exams"
 This will make Alembic create a new file (under ./backend/migrations/versions) called something similar to 28bab18a07f0_add_long_description_to_exams.py. Opening this file you will see that it contains an import section, some variable, and two functions: upgrade and downgrade. For now, you are just interested in the first function, upgrade. In this function, you will write a one-liner code to make Alembic and SQLAlchemy add the long_description column to the exams table:</p>
-<pre><code class="language-py"># ... imports and other variables ...
+<div class="highlight"><pre><span></span><code><span class="c1"># ... imports and other variables ...</span>
 
-def upgrade():
-op.add_column('exams', sa.Column('long_description',sa.Text,nullable=False,server_default='Default exam description'))
+<span class="k">def</span> <span class="nf">upgrade</span><span class="p">():</span>
+<span class="n">op</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s1">&#39;exams&#39;</span><span class="p">,</span> <span class="n">sa</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="s1">&#39;long_description&#39;</span><span class="p">,</span><span class="n">sa</span><span class="o">.</span><span class="n">Text</span><span class="p">,</span><span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">server_default</span><span class="o">=</span><span class="s1">&#39;Default exam description&#39;</span><span class="p">))</span>
 
-# ... downgrade ...
-</code></pre>
+<span class="c1"># ... downgrade ...</span>
+</code></pre></div>
 <p>Note: This migration defines that the long_description column does not accept null values and that its default value is “Default exam description”. So, any exam previously persisted in your database will have this value in the long_description column.</p>
 <p>Now, to run this migration, issue the following command in your terminal:</p>
-<pre><code class="language-sh">alembic upgrade head
-</code></pre>
+<div class="highlight"><pre><span></span><code>alembic upgrade head
+</code></pre></div>
 <p>After running it, you will need to update the Exam entity in your Python application. So, open the exam.py file and update it as follows:</p>
-<pre><code class="language-py"># ... import statements ...
+<div class="highlight"><pre><span></span><code><span class="c1"># ... import statements ...</span>
 
-class Exam(Entity, Base): # ... **tablename** and other properties ...
+<span class="k">class</span> <span class="nc">Exam</span><span class="p">(</span><span class="n">Entity</span><span class="p">,</span> <span class="n">Base</span><span class="p">):</span> <span class="c1"># ... **tablename** and other properties ...</span>
 
-    def __init__(self, title, description, long_description, created_by):
-        # ... __init__ and other properties ...
-        self.long_description = long_description
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">long_description</span><span class="p">,</span> <span class="n">created_by</span><span class="p">):</span>
+        <span class="c1"># ... __init__ and other properties ...</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">long_description</span> <span class="o">=</span> <span class="n">long_description</span>
 
-class ExamSchema(Schema): # ... other fields ...
-long_description = fields.Str()
-Lastly, you will need to make a small change to the main.py file to make your endpoint aware of the new property:
+<span class="k">class</span> <span class="nc">ExamSchema</span><span class="p">(</span><span class="n">Schema</span><span class="p">):</span> <span class="c1"># ... other fields ...</span>
+<span class="n">long_description</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Str</span><span class="p">()</span>
+<span class="n">Lastly</span><span class="p">,</span> <span class="n">you</span> <span class="n">will</span> <span class="n">need</span> <span class="n">to</span> <span class="n">make</span> <span class="n">a</span> <span class="n">small</span> <span class="n">change</span> <span class="n">to</span> <span class="n">the</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span> <span class="n">file</span> <span class="n">to</span> <span class="n">make</span> <span class="n">your</span> <span class="n">endpoint</span> <span class="n">aware</span> <span class="n">of</span> <span class="n">the</span> <span class="n">new</span> <span class="nb">property</span><span class="p">:</span>
 
-# ... imports, definitions, and other endpoints ...
+<span class="c1"># ... imports, definitions, and other endpoints ...</span>
 
-@app.route('/exams', methods=['POST'])
-@requires_auth
-def add_exam(): # mount exam object
-posted_exam = ExamSchema(only=('title', 'description', 'long_description')) \
- .load(request.get_json())
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/exams&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;POST&#39;</span><span class="p">])</span>
+<span class="nd">@requires_auth</span>
+<span class="k">def</span> <span class="nf">add_exam</span><span class="p">():</span> <span class="c1"># mount exam object</span>
+<span class="n">posted_exam</span> <span class="o">=</span> <span class="n">ExamSchema</span><span class="p">(</span><span class="n">only</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;description&#39;</span><span class="p">,</span> <span class="s1">&#39;long_description&#39;</span><span class="p">))</span> \
+ <span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">get_json</span><span class="p">())</span>
 
-    # ... the rest of the function ...
+    <span class="c1"># ... the rest of the function ...</span>
 
-# ... imports, definitions, and other endpoints ...
-</code></pre>
+<span class="c1"># ... imports, definitions, and other endpoints ...</span>
+</code></pre></div>
 <p>With these changes in place, your Python backend application is now ready to persist long descriptions of exams. So, in the next section, you will refactor the frontend app to support it as well.</p>
 <p>Note: Here, you learned just the basics about Alembic. For a much more complete explanation of how it works and what you can do with this tool, check the official Alembic documentation.</p>
 <p>Time to save your progress!</p>
-<pre><code class="language-sh">git add . &amp;&amp; git commit -m &quot;configuring alembic and adding the long_description column&quot;
-</code></pre>
-<h2 id="_5">重构考试表格</h2>
+<div class="highlight"><pre><span></span><code>git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;configuring alembic and adding the long_description column&quot;</span>
+</code></pre></div>
+<h2 id="_5">重构考试表格<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>In this section, you will make your frontend application support the long_description property. Also, you will Angular Material components to make the exam’s form look better. So, for starters, you will need to import the MatInputModule into your AppModule. To do this, open the app.module.ts file and update it as follows:</p>
-<pre><code class="language-ts">import {
-MatToolbarModule, MatButtonModule, MatCardModule, MatInputModule
-} from '@angular/material';
-// ... other imports ...
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="nx">MatToolbarModule</span><span class="p">,</span><span class="w"> </span><span class="nx">MatButtonModule</span><span class="p">,</span><span class="w"> </span><span class="nx">MatCardModule</span><span class="p">,</span><span class="w"> </span><span class="nx">MatInputModule</span><span class="w"></span>
+<span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/material&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="c1">// ... other imports ...</span><span class="w"></span>
 
-@NgModule({
-// ... declarations ...
-imports: [
-// ... other imports ...
-MatInputModule,
-],
-// ... providers and bootstrap ...
-})
-// ... export class AppModule ...
-</code></pre>
+<span class="kd">@NgModule</span><span class="p">({</span><span class="w"></span>
+<span class="c1">// ... declarations ...</span><span class="w"></span>
+<span class="nx">imports</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="c1">// ... other imports ...</span><span class="w"></span>
+<span class="nx">MatInputModule</span><span class="p">,</span><span class="w"></span>
+<span class="p">],</span><span class="w"></span>
+<span class="c1">// ... providers and bootstrap ...</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="c1">// ... export class AppModule ...</span><span class="w"></span>
+</code></pre></div>
 <p>After that, you will refactor the ExamFormComponent. So, open the exam-form.component.ts file and replace its content with this:</p>
-<pre><code class="language-ts">import { Component } from &quot;@angular/core&quot;;
-import { ExamsApiService } from &quot;./exams-api.service&quot;;
-import { Router } from &quot;@angular/router&quot;;
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@angular/core&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ExamsApiService</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./exams-api.service&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Router</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@angular/router&quot;</span><span class="p">;</span><span class="w"></span>
 
-@Component({
-  selector: &quot;exam-form&quot;,
-  template: `
-    &lt;mat-card&gt;
-      &lt;h2&gt;New Exam&lt;/h2&gt;
-      &lt;mat-form-field class=&quot;full-width&quot;&gt;
-        &lt;input matInput placeholder=&quot;Title&quot; (keyup)=&quot;updateTitle(\$event)&quot; /&gt;
-      &lt;/mat-form-field&gt;
+<span class="kd">@Component</span><span class="p">({</span><span class="w"></span>
+<span class="w">  </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;exam-form&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<span class="sb">    &lt;mat-card&gt;</span>
+<span class="sb">      &lt;h2&gt;New Exam&lt;/h2&gt;</span>
+<span class="sb">      &lt;mat-form-field class=&quot;full-width&quot;&gt;</span>
+<span class="sb">        &lt;input matInput placeholder=&quot;Title&quot; (keyup)=&quot;updateTitle(\$event)&quot; /&gt;</span>
+<span class="sb">      &lt;/mat-form-field&gt;</span>
 
-      &lt;mat-form-field class=&quot;full-width&quot;&gt;
-        &lt;input
-          matInput
-          placeholder=&quot;Description&quot;
-          (keyup)=&quot;updateDescription($event)&quot;
-        /&gt;
-      &lt;/mat-form-field&gt;
+<span class="sb">      &lt;mat-form-field class=&quot;full-width&quot;&gt;</span>
+<span class="sb">        &lt;input</span>
+<span class="sb">          matInput</span>
+<span class="sb">          placeholder=&quot;Description&quot;</span>
+<span class="sb">          (keyup)=&quot;updateDescription($event)&quot;</span>
+<span class="sb">        /&gt;</span>
+<span class="sb">      &lt;/mat-form-field&gt;</span>
 
-      &lt;mat-form-field class=&quot;full-width&quot;&gt;
-        &lt;textarea
-          rows=&quot;5&quot;
-          matInput
-          placeholder=&quot;Long Description&quot;
-          (keyup)=&quot;updateLongDescription($event)&quot;
-        &gt;&lt;/textarea&gt;
-      &lt;/mat-form-field&gt;
+<span class="sb">      &lt;mat-form-field class=&quot;full-width&quot;&gt;</span>
+<span class="sb">        &lt;textarea</span>
+<span class="sb">          rows=&quot;5&quot;</span>
+<span class="sb">          matInput</span>
+<span class="sb">          placeholder=&quot;Long Description&quot;</span>
+<span class="sb">          (keyup)=&quot;updateLongDescription($event)&quot;</span>
+<span class="sb">        &gt;&lt;/textarea&gt;</span>
+<span class="sb">      &lt;/mat-form-field&gt;</span>
 
-      &lt;button mat-raised-button color=&quot;primary&quot; (click)=&quot;saveExam()&quot;&gt;
-        Save Exam
-      &lt;/button&gt;
-    &lt;/mat-card&gt;
-  `,
-  styles: [
-    `
-      .exams-form {
-        min-width: 150px;
-        max-width: 500px;
-        width: 100%;
-      }
+<span class="sb">      &lt;button mat-raised-button color=&quot;primary&quot; (click)=&quot;saveExam()&quot;&gt;</span>
+<span class="sb">        Save Exam</span>
+<span class="sb">      &lt;/button&gt;</span>
+<span class="sb">    &lt;/mat-card&gt;</span>
+<span class="sb">  `</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nx">styles</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="sb">`</span>
+<span class="sb">      .exams-form {</span>
+<span class="sb">        min-width: 150px;</span>
+<span class="sb">        max-width: 500px;</span>
+<span class="sb">        width: 100%;</span>
+<span class="sb">      }</span>
 
-      .full-width {
-        width: 100%;
-      }
-    `
-  ]
-})
-export class ExamFormComponent {
-  exam = {
-    title: &quot;&quot;,
-    description: &quot;&quot;,
-    long_description: &quot;&quot;
-  };
+<span class="sb">      .full-width {</span>
+<span class="sb">        width: 100%;</span>
+<span class="sb">      }</span>
+<span class="sb">    `</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ExamFormComponent</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nx">exam</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">long_description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">};</span><span class="w"></span>
 
-  constructor(private examsApi: ExamsApiService, private router: Router) {}
+<span class="w">  </span><span class="kr">constructor</span><span class="p">(</span><span class="k">private</span><span class="w"> </span><span class="nx">examsApi</span><span class="o">:</span><span class="w"> </span><span class="kt">ExamsApiService</span><span class="p">,</span><span class="w"> </span><span class="k">private</span><span class="w"> </span><span class="nx">router</span><span class="o">:</span><span class="w"> </span><span class="kt">Router</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
 
-  updateTitle(event: any) {
-    this.exam.title = event.target.value;
-  }
+<span class="w">  </span><span class="nx">updateTitle</span><span class="p">(</span><span class="nx">event</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">exam</span><span class="p">.</span><span class="nx">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  updateDescription(event: any) {
-    this.exam.description = event.target.value;
-  }
+<span class="w">  </span><span class="nx">updateDescription</span><span class="p">(</span><span class="nx">event</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">exam</span><span class="p">.</span><span class="nx">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  updateLongDescription(event: any) {
-    this.exam.long_description = event.target.value;
-  }
+<span class="w">  </span><span class="nx">updateLongDescription</span><span class="p">(</span><span class="nx">event</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">exam</span><span class="p">.</span><span class="nx">long_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  saveExam() {
-    this.examsApi
-      .saveExam(this.exam)
-      .subscribe(
-        () =&gt; this.router.navigate([&quot;/&quot;]),
-        error =&gt; alert(error.message)
-      );
-  }
-}
-</code></pre>
+<span class="w">  </span><span class="nx">saveExam</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">examsApi</span><span class="w"></span>
+<span class="w">      </span><span class="p">.</span><span class="nx">saveExam</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">exam</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">router</span><span class="p">.</span><span class="nx">navigate</span><span class="p">([</span><span class="s2">&quot;/&quot;</span><span class="p">]),</span><span class="w"></span>
+<span class="w">        </span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>The new version of this component includes a whole new template where you are using three Angular Material components: Card (mat-card), Button (mat-raised-button), and Form Field (mat-form-field). It also includes a CSS rule to make form fields (mat-form-field) fill all the horizontal space (width: 100%;). Lastly, it includes the long_description field in the exam variable and a method called updateLongDescription to update this field.</p>
 <p>If you run your application now and head to this form, you will see a screen like the following:</p>
 <p>Angular form with Angular Material components.</p>
 <p>So, to wrap up this new property, open the exams.component.ts file and replace the long description placeholder (the “Etiam enim purus, vehicula …” text inside <code>&lt;p&gt;&lt;/p&gt;</code>) with this:</p>
-<pre><code class="language-ts">{
-  {
-    exam.long_description;
-  }
-}
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">exam</span><span class="p">.</span><span class="nx">long_description</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>在 Angular 应用程序中显示考试的长描述完成！现在，你的后端和你的前端都支持考试的长描述属性。所以是时候保存你的进步了:</p>
-<pre><code class="language-sh">git add . &amp;&amp; git commit -m &quot;supporting long_description on the frontend&quot;
-</code></pre>
-<h2 id="_6">结论和后续步骤</h2>
+<div class="highlight"><pre><span></span><code>git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;supporting long_description on the frontend&quot;</span>
+</code></pre></div>
+<h2 id="_6">结论和后续步骤<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <p>在本系列的第 3 部分中，您学习了如何安装和配置 Angular Material 组件。
 然后，您使用这些组件为 Angular 应用程序添加了一个很好的界面。
 之后，您学习了如何使用 Auth0 规则向用户添加角色，并使后端和前端项目了解这些角色。
@@ -3434,11 +4000,6 @@ export class ExamFormComponent {
 <p>在即将发表的文章中，您将允许用户在考试中添加问题，您也可以让他们开始参加这些考试。
 此外，您将开始准备 CI / CD（持续集成和持续交付）工具的代码。这些工具将帮助您自动化开发和发布管道。</p>
 <p>敬请关注！</p>
-                
-              
-              
-                
-
 
               
             </article>
@@ -3447,12 +4008,12 @@ export class ExamFormComponent {
         
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../mfap2/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../mfap2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -3467,7 +4028,8 @@ export class ExamFormComponent {
         </a>
       
       
-        <a href="../../django/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="../../django/" class="md-footer__link md-footer__link--next" aria-label="Next: Django 简要学习文档" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -3485,18 +4047,19 @@ export class ExamFormComponent {
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            版权 &copy; 2017 - 2021 wohugb.github.io
-          </div>
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
-      </div>
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      版权 &copy; 2017 - 2022 wohugb.github.io
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
     </div>
   </div>
@@ -3506,10 +4069,10 @@ export class ExamFormComponent {
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.7353b375.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e87a5f81.min.js"></script>
       
     
   </body>

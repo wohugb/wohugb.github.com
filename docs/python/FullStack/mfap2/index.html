@@ -9,12 +9,11 @@
         <meta name="description" content="大鼻子的日常学习记录">
       
       
-      
         <meta name="author" content="Nosy">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.7">
     
     
       
@@ -22,26 +21,28 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.9299cb39.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9d5733d3.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
-    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+
     
     
   </head>
@@ -55,7 +56,6 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -72,7 +72,10 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+    
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="大鼻子" class="md-header__button md-logo" aria-label="大鼻子" data-md-component="logo">
       
@@ -105,19 +108,22 @@
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -134,11 +140,10 @@
     
     
       <div class="md-header__source">
-        
-<a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     wohugb/wohugb.github.com
@@ -147,11 +152,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -177,11 +185,10 @@
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     wohugb/wohugb.github.com
@@ -249,10 +256,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
-      <label class="md-nav__link" for="__nav_4">
-        Ai
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Ai
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ai" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
@@ -261,6 +272,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -271,8 +283,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -283,8 +297,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -295,8 +311,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -307,8 +325,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -319,8 +339,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -331,8 +353,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -343,8 +367,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -355,8 +381,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -367,8 +395,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -378,10 +408,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10" type="checkbox" id="__nav_4_10" >
       
-      <label class="md-nav__link" for="__nav_4_10">
-        Bot
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_10">
+          Bot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Bot" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_10">
           <span class="md-nav__icon md-icon"></span>
@@ -390,6 +424,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -400,8 +435,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -412,8 +449,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -424,8 +463,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -436,14 +477,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -453,10 +497,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
       
-      <label class="md-nav__link" for="__nav_4_11">
-        Iot
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_11">
+          Iot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Iot" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_11">
           <span class="md-nav__icon md-icon"></span>
@@ -465,6 +513,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -475,12 +524,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -501,10 +552,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
-      <label class="md-nav__link" for="__nav_5">
-        Aliyun
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Aliyun
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Aliyun" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
@@ -513,6 +568,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -523,8 +579,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -535,6 +593,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -555,10 +614,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
-      <label class="md-nav__link" for="__nav_6">
-        Angular
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Angular
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Angular" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
@@ -567,6 +630,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -577,8 +641,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -589,8 +655,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -601,8 +669,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -613,8 +683,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -625,8 +697,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -637,8 +711,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -649,8 +725,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -661,8 +739,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -673,8 +753,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -685,8 +767,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -697,8 +781,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -709,8 +795,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -721,8 +809,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -733,8 +823,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -745,8 +837,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -757,8 +851,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -769,8 +865,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -781,8 +879,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -793,8 +893,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -805,8 +907,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -817,8 +921,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -829,8 +935,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -841,8 +949,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -853,8 +963,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -864,10 +976,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_25" type="checkbox" id="__nav_6_25" >
       
-      <label class="md-nav__link" for="__nav_6_25">
-        Features
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_25">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Features" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_25">
           <span class="md-nav__icon md-icon"></span>
@@ -876,6 +992,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -886,12 +1003,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -912,10 +1031,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="__nav_7">
-        Apartment
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Apartment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Apartment" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
@@ -924,6 +1047,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -934,8 +1058,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -946,8 +1072,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -958,8 +1086,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -970,8 +1100,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -982,8 +1114,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -994,8 +1128,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1006,8 +1142,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1018,6 +1156,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1038,10 +1177,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
-      <label class="md-nav__link" for="__nav_8">
-        Blockchain
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Blockchain
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Blockchain" data-md-level="1">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1050,6 +1193,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1060,8 +1204,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1072,8 +1218,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1084,8 +1232,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1096,8 +1246,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1108,8 +1260,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1119,10 +1273,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_6" type="checkbox" id="__nav_8_6" >
       
-      <label class="md-nav__link" for="__nav_8_6">
-        Bitcoin
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_6">
+          Bitcoin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Bitcoin" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_6">
           <span class="md-nav__icon md-icon"></span>
@@ -1131,6 +1289,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1141,14 +1300,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1158,10 +1320,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_7" type="checkbox" id="__nav_8_7" >
       
-      <label class="md-nav__link" for="__nav_8_7">
-        Ethereum
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_7">
+          Ethereum
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ethereum" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_7">
           <span class="md-nav__icon md-icon"></span>
@@ -1170,6 +1336,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1180,8 +1347,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1192,8 +1361,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1204,8 +1375,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1216,8 +1389,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1228,8 +1403,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1240,14 +1417,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1257,10 +1437,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_8" type="checkbox" id="__nav_8_8" >
       
-      <label class="md-nav__link" for="__nav_8_8">
-        Ipfs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_8">
+          Ipfs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ipfs" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1269,6 +1453,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1279,14 +1464,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1296,10 +1484,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_9" type="checkbox" id="__nav_8_9" >
       
-      <label class="md-nav__link" for="__nav_8_9">
-        Twister
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_9">
+          Twister
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Twister" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1308,6 +1500,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1318,8 +1511,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1330,8 +1525,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1342,8 +1539,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1354,8 +1553,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1366,12 +1567,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1392,10 +1595,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
       
-      <label class="md-nav__link" for="__nav_9">
-        Education
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Education
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Education" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1404,6 +1611,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1414,8 +1622,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1426,8 +1636,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1438,8 +1650,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1450,6 +1664,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1470,102 +1685,37 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
       
-      <label class="md-nav__link" for="__nav_10">
-        Nodejs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Nodejs" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Langs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Langs" data-md-level="1">
         <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
-          Nodejs
+          Langs
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../nodejs/" class="md-nav__link">
+      <a href="../../../langs/" class="md-nav__link">
         Index
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/awesome/" class="md-nav__link">
-        Awesome Node.js
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/express/" class="md-nav__link">
-        Express
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/koa/" class="md-nav__link">
-        Koa
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/mongoose/" class="md-nav__link">
-        Mongoose
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/nodejs/" class="md-nav__link">
-        Nodejs
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/pm2/" class="md-nav__link">
-        Pm2
-      </a>
-    </li>
-  
-
-          
-            
+              
   
   
   
@@ -1573,138 +1723,43 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8" type="checkbox" id="__nav_10_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" >
       
-      <label class="md-nav__link" for="__nav_10_8">
-        Node modules
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Node modules" data-md-level="2">
-        <label class="md-nav__title" for="__nav_10_8">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_2">
+          Go
           <span class="md-nav__icon md-icon"></span>
-          Node modules
+        </label>
+      
+      <nav class="md-nav" aria-label="Go" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_2">
+          <span class="md-nav__icon md-icon"></span>
+          Go
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/gm/" class="md-nav__link">
-        概述
+      <a href="../../../langs/go/" class="md-nav__link">
+        Index
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8_2" type="checkbox" id="__nav_10_8_2" >
-      
-      <label class="md-nav__link" for="__nav_10_8_2">
-        Node rsa
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Node rsa" data-md-level="3">
-        <label class="md-nav__title" for="__nav_10_8_2">
-          <span class="md-nav__icon md-icon"></span>
-          Node rsa
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/node-rsa/jsbn/" class="md-nav__link">
-        JavaScript中的RSA和ECC
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/node-rsa/readme/" class="md-nav__link">
-        Node-RSA
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8_3" type="checkbox" id="__nav_10_8_3" >
-      
-      <label class="md-nav__link" for="__nav_10_8_3">
-        Qrcode
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Qrcode" data-md-level="3">
-        <label class="md-nav__title" for="__nav_10_8_3">
-          <span class="md-nav__icon md-icon"></span>
-          Qrcode
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/qrcode/api/" class="md-nav__link">
-        Api
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/qrcode/readme/" class="md-nav__link">
-        node-qrcode
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -1725,18 +1780,338 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
       
-      <label class="md-nav__link" for="__nav_11">
-        Pin
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Pin" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11">
+          Nodejs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Nodejs" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          Nodejs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/awesome/" class="md-nav__link">
+        Awesome Node.js
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/express/" class="md-nav__link">
+        Express
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/koa/" class="md-nav__link">
+        Koa
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/mongoose/" class="md-nav__link">
+        Mongoose
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/nodejs/" class="md-nav__link">
+        Nodejs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/pm2/" class="md-nav__link">
+        Pm2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8" type="checkbox" id="__nav_11_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8">
+          Node modules
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Node modules" data-md-level="2">
+        <label class="md-nav__title" for="__nav_11_8">
+          <span class="md-nav__icon md-icon"></span>
+          Node modules
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/gm/" class="md-nav__link">
+        概述
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8_2" type="checkbox" id="__nav_11_8_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8_2">
+          Node rsa
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Node rsa" data-md-level="3">
+        <label class="md-nav__title" for="__nav_11_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Node rsa
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/node-rsa/jsbn/" class="md-nav__link">
+        JavaScript中的RSA和ECC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/node-rsa/readme/" class="md-nav__link">
+        Node-RSA
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8_3" type="checkbox" id="__nav_11_8_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8_3">
+          Qrcode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Qrcode" data-md-level="3">
+        <label class="md-nav__title" for="__nav_11_8_3">
+          <span class="md-nav__icon md-icon"></span>
+          Qrcode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/qrcode/api/" class="md-nav__link">
+        Api
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/qrcode/readme/" class="md-nav__link">
+        node-qrcode
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12">
+          Pin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Pin" data-md-level="1">
+        <label class="md-nav__title" for="__nav_12">
           <span class="md-nav__icon md-icon"></span>
           Pin
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pin/" class="md-nav__link">
+        拼团开发
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1747,8 +2122,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1759,8 +2136,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1771,8 +2150,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pin/sku-spu/" class="md-nav__link">
+        sku spu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1780,20 +2175,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_4" type="checkbox" id="__nav_11_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_6" type="checkbox" id="__nav_12_6" >
       
-      <label class="md-nav__link" for="__nav_11_4">
-        Fresh
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_6">
+          Fresh
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Fresh" data-md-level="2">
-        <label class="md-nav__title" for="__nav_11_4">
+        <label class="md-nav__title" for="__nav_12_6">
           <span class="md-nav__icon md-icon"></span>
           Fresh
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1804,8 +2204,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1816,8 +2218,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1828,12 +2232,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1854,20 +2260,25 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" checked>
       
-      <label class="md-nav__link" for="__nav_12">
-        Python
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13">
+          Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Python" data-md-level="1">
-        <label class="md-nav__title" for="__nav_12">
+        <label class="md-nav__title" for="__nav_13">
           <span class="md-nav__icon md-icon"></span>
           Python
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1878,8 +2289,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1890,8 +2303,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1902,8 +2317,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1914,8 +2331,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1923,20 +2342,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_5" type="checkbox" id="__nav_12_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_5" type="checkbox" id="__nav_13_5" >
       
-      <label class="md-nav__link" for="__nav_12_5">
-        Anaconda
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_5">
+          Anaconda
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Anaconda" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_5">
+        <label class="md-nav__title" for="__nav_13_5">
           <span class="md-nav__icon md-icon"></span>
           Anaconda
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1947,14 +2371,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -1964,20 +2391,25 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_6" type="checkbox" id="__nav_12_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_6" type="checkbox" id="__nav_13_6" checked>
       
-      <label class="md-nav__link" for="__nav_12_6">
-        FullStack
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_6">
+          FullStack
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="FullStack" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_6">
+        <label class="md-nav__title" for="__nav_13_6">
           <span class="md-nav__icon md-icon"></span>
           FullStack
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1988,8 +2420,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2000,8 +2434,10 @@
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -2010,6 +2446,7 @@
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
       
         
       
@@ -2024,7 +2461,9 @@
       </a>
       
         
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -2085,8 +2524,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2097,14 +2538,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2112,20 +2556,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_7" type="checkbox" id="__nav_12_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_7" type="checkbox" id="__nav_13_7" >
       
-      <label class="md-nav__link" for="__nav_12_7">
-        Django
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_7">
+          Django
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Django" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_7">
+        <label class="md-nav__title" for="__nav_13_7">
           <span class="md-nav__icon md-icon"></span>
           Django
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2136,8 +2585,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2148,14 +2599,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2163,20 +2617,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_8" type="checkbox" id="__nav_12_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_8" type="checkbox" id="__nav_13_8" >
       
-      <label class="md-nav__link" for="__nav_12_8">
-        Flask
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_8">
+          Flask
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Flask" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_8">
+        <label class="md-nav__title" for="__nav_13_8">
           <span class="md-nav__icon md-icon"></span>
           Flask
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2187,8 +2646,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2199,14 +2660,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2214,20 +2678,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_9" type="checkbox" id="__nav_12_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_9" type="checkbox" id="__nav_13_9" >
       
-      <label class="md-nav__link" for="__nav_12_9">
-        Pip
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_9">
+          Pip
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Pip" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_9">
+        <label class="md-nav__title" for="__nav_13_9">
           <span class="md-nav__icon md-icon"></span>
           Pip
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2238,78 +2707,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
-      
-      <label class="md-nav__link" for="__nav_13">
-        Running
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Running" data-md-level="1">
-        <label class="md-nav__title" for="__nav_13">
-          <span class="md-nav__icon md-icon"></span>
-          Running
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../running/bicycle/" class="md-nav__link">
-        变速自行车
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../running/card/" class="md-nav__link">
-        自动驾驶
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../running/walk/" class="md-nav__link">
-        徒步健身
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -2330,118 +2735,62 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
       
-      <label class="md-nav__link" for="__nav_14">
-        Tools
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Tools" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_14">
+          Running
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Running" data-md-level="1">
         <label class="md-nav__title" for="__nav_14">
           <span class="md-nav__icon md-icon"></span>
-          Tools
+          Running
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/" class="md-nav__link">
-        器
+      <a href="../../../running/bicycle/" class="md-nav__link">
+        变速自行车
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_2" type="checkbox" id="__nav_14_2" >
-      
-      <label class="md-nav__link" for="__nav_14_2">
-        Eslint
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Eslint" data-md-level="2">
-        <label class="md-nav__title" for="__nav_14_2">
-          <span class="md-nav__icon md-icon"></span>
-          Eslint
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/eslint/" class="md-nav__link">
-        Index
+      <a href="../../../running/card/" class="md-nav__link">
+        自动驾驶
       </a>
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_3" type="checkbox" id="__nav_14_3" >
-      
-      <label class="md-nav__link" for="__nav_14_3">
-        Vscode
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Vscode" data-md-level="2">
-        <label class="md-nav__title" for="__nav_14_3">
-          <span class="md-nav__icon md-icon"></span>
-          Vscode
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/vscode/" class="md-nav__link">
-        vscode 文档
+      <a href="../../../running/walk/" class="md-nav__link">
+        徒步健身
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../tools/vscode/prettier/" class="md-nav__link">
-        Prettier
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -2462,18 +2811,179 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
       
-      <label class="md-nav__link" for="__nav_15">
-        Wechat
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Wechat" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15">
+          Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tools" data-md-level="1">
         <label class="md-nav__title" for="__nav_15">
+          <span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/" class="md-nav__link">
+        器
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_2" type="checkbox" id="__nav_15_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15_2">
+          Eslint
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Eslint" data-md-level="2">
+        <label class="md-nav__title" for="__nav_15_2">
+          <span class="md-nav__icon md-icon"></span>
+          Eslint
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/eslint/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_3" type="checkbox" id="__nav_15_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15_3">
+          Vscode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Vscode" data-md-level="2">
+        <label class="md-nav__title" for="__nav_15_3">
+          <span class="md-nav__icon md-icon"></span>
+          Vscode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/vscode/" class="md-nav__link">
+        vscode 文档
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/vscode/prettier/" class="md-nav__link">
+        Prettier
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16">
+          Wechat
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Wechat" data-md-level="1">
+        <label class="md-nav__title" for="__nav_16">
           <span class="md-nav__icon md-icon"></span>
           Wechat
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2484,8 +2994,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2496,8 +3008,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2508,8 +3022,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2517,20 +3033,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4" type="checkbox" id="__nav_15_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4" type="checkbox" id="__nav_16_4" >
       
-      <label class="md-nav__link" for="__nav_15_4">
-        Open
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4">
+          Open
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Open" data-md-level="2">
-        <label class="md-nav__title" for="__nav_15_4">
+        <label class="md-nav__title" for="__nav_16_4">
           <span class="md-nav__icon md-icon"></span>
           Open
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2541,8 +3062,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2550,20 +3073,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_2" type="checkbox" id="__nav_15_4_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_2" type="checkbox" id="__nav_16_4_2" >
       
-      <label class="md-nav__link" for="__nav_15_4_2">
-        App
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_2">
+          App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="App" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_2">
+        <label class="md-nav__title" for="__nav_16_4_2">
           <span class="md-nav__icon md-icon"></span>
           App
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2574,14 +3102,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2589,20 +3120,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_3" type="checkbox" id="__nav_15_4_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_3" type="checkbox" id="__nav_16_4_3" >
       
-      <label class="md-nav__link" for="__nav_15_4_3">
-        Code
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_3">
+          Code
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Code" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_3">
+        <label class="md-nav__title" for="__nav_16_4_3">
           <span class="md-nav__icon md-icon"></span>
           Code
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2613,14 +3149,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2628,20 +3167,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_4" type="checkbox" id="__nav_15_4_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_4" type="checkbox" id="__nav_16_4_4" >
       
-      <label class="md-nav__link" for="__nav_15_4_4">
-        D3f
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_4">
+          D3f
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="D3f" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_4">
+        <label class="md-nav__title" for="__nav_16_4_4">
           <span class="md-nav__icon md-icon"></span>
           D3f
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2652,14 +3196,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2667,20 +3214,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_5" type="checkbox" id="__nav_15_4_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_5" type="checkbox" id="__nav_16_4_5" >
       
-      <label class="md-nav__link" for="__nav_15_4_5">
-        Download
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_5">
+          Download
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Download" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_5">
+        <label class="md-nav__title" for="__nav_16_4_5">
           <span class="md-nav__icon md-icon"></span>
           Download
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2691,8 +3243,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2703,8 +3257,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2715,8 +3271,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2727,8 +3285,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2739,18 +3299,21 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -2770,7 +3333,9 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -2836,8 +3401,9 @@
             <article class="md-content__inner md-typeset">
               
                 
-                
-                <h1 id="pythonflask-angular-web-2">使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分</h1>
+
+
+<h1 id="pythonflask-angular-web-2">使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分<a class="headerlink" href="#pythonflask-angular-web-2" title="Permanent link">&para;</a></h1>
 <p>In this series, you will learn how to create modern web applications with Python, Flask, and Angular.</p>
 <p>TL;DR: In this series, you will learn how to create modern web applications with Python, Flask, and Angular.
 You will use this stack to build a SPA and a backend API to expose exams and questions so users can test their knowledge regarding different technologies.
@@ -2848,7 +3414,7 @@ In this GitHub repository, you can find the final code created throughout the se
 <li>Part 2 (this one) includes topics like securing Flask Apps, handling Angular forms, and securing Angular Apps.</li>
 <li>Part 3 includes topics like configuring Angular Material, handling Authorization, and migrating Databases with Alembic.</li>
 </ul>
-<h2 id="_1">你将要建立什么</h2>
+<h2 id="_1">你将要建立什么<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>在本系列中，您将使用 Python，Flask 和 Angular 构建基于现代架构的 Web 应用程序。
 使用 Angular，您将构建一个 SPA（单页应用程序），允许用户浏览考试和问题。
 这些用户在通过身份验证后，将能够通过选择问题所揭示的多个选项之一来测试他们关于特定主题的知识。
@@ -2856,7 +3422,7 @@ In this GitHub repository, you can find the final code created throughout the se
 <p>在本系列的这一部分中，您将首先将 Auth0 配置为应用程序的身份管理系统。
 您将配置 Auth0 API 来表示和保护您的 Flask 应用程序，您将配置 Auth0 应用程序来表示和保护您的 Angular SPA。
 使用 Auth0 保护您的应用程序后，您将增强应用程序以允许用户测试他们的知识。</p>
-<h2 id="auth0">使用 Auth0 管理身份</h2>
+<h2 id="auth0">使用 Auth0 管理身份<a class="headerlink" href="#auth0" title="Permanent link">&para;</a></h2>
 <p>Instead of investing time to develop rudimentary authentication mechanisms to manage the identity of your users, you are going to use Auth0.
 For startup projects like this one, the free tier provided by Auth0 is more than enough.
 Besides being free, by choosing Auth0, you will get a modern, easy to use, and reliable service capable of integrating with tons of different social identity providers (e.g.
@@ -2864,7 +3430,7 @@ Facebook, Google, Twitter, etc).
 Also, if you ever need to integrate with enterprise identity providers using protocols like OpenID Connect, SAML, and WS-Federation, don’t worry, Auth0’s got you covered.</p>
 <p>That is, Auth0 can help you focus on what matters the most to you, the special features of your product.
 In addition, Auth0 can improve your product’s security with state-of-the-art features like passwordless, breached password surveillance, and multifactor authentication.</p>
-<h2 id="auth0-flask">使用 Auth0 保护 Flask 应用程序</h2>
+<h2 id="auth0-flask">使用 Auth0 保护 Flask 应用程序<a class="headerlink" href="#auth0-flask" title="Permanent link">&para;</a></h2>
 <p>To integrate Auth0 into your Flask application, you will need to create an Auth0 API.
 If you haven’t done so yet, you can sign up for a free Auth0 account now.
 After creating your account, head to the APIs page on your Auth0 dashboard and click on the Create API button.
@@ -2889,116 +3455,116 @@ to the backend directory inside the project root).</p>
 <p>Back in your project, you will need to create a Python decorator to wrap the endpoints that must be secured.
 To define this decorator, create a new file called auth.py inside the ./backend/src/ directory.
 Then, inside this file, paste the following code:</p>
-<pre><code class="language-py">import json
-from flask import request, _request_ctx_stack
-from functools import wraps
-from jose import jwt
-from urllib.request import urlopen
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">request</span><span class="p">,</span> <span class="n">_request_ctx_stack</span>
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
+<span class="kn">from</span> <span class="nn">jose</span> <span class="kn">import</span> <span class="n">jwt</span>
+<span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
 
 
-AUTH0_DOMAIN = 'bk-samples.auth0.com'
-ALGORITHMS = ['RS256']
-API_AUDIENCE = 'https://online-exam.digituz.com.br'
+<span class="n">AUTH0_DOMAIN</span> <span class="o">=</span> <span class="s1">&#39;bk-samples.auth0.com&#39;</span>
+<span class="n">ALGORITHMS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;RS256&#39;</span><span class="p">]</span>
+<span class="n">API_AUDIENCE</span> <span class="o">=</span> <span class="s1">&#39;https://online-exam.digituz.com.br&#39;</span>
 
 
-class AuthError(Exception):
-    def __init__(self, error, status_code):
-        self.error = error
-        self.status_code = status_code
+<span class="k">class</span> <span class="nc">AuthError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">error</span><span class="p">,</span> <span class="n">status_code</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">error</span> <span class="o">=</span> <span class="n">error</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">status_code</span> <span class="o">=</span> <span class="n">status_code</span>
 
 
-def get_token_auth_header():
-    &quot;&quot;&quot;Obtains the Access Token from the Authorization Header
-    &quot;&quot;&quot;
-    auth = request.headers.get('Authorization', None)
-    if not auth:
-        raise AuthError({
-            'code': 'authorization_header_missing',
-            'description': 'Authorization header is expected.'
-        }, 401)
+<span class="k">def</span> <span class="nf">get_token_auth_header</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Obtains the Access Token from the Authorization Header</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">auth</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;Authorization&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">auth</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">AuthError</span><span class="p">({</span>
+            <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="s1">&#39;authorization_header_missing&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Authorization header is expected.&#39;</span>
+        <span class="p">},</span> <span class="mi">401</span><span class="p">)</span>
 
-    parts = auth.split()
+    <span class="n">parts</span> <span class="o">=</span> <span class="n">auth</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
 
-    if parts[0].lower() != 'bearer':
-        raise AuthError({
-            'code': 'invalid_header',
-            'description': 'Authorization header must start with &quot;Bearer&quot;.'
-        }, 401)
+    <span class="k">if</span> <span class="n">parts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">!=</span> <span class="s1">&#39;bearer&#39;</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">AuthError</span><span class="p">({</span>
+            <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="s1">&#39;invalid_header&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Authorization header must start with &quot;Bearer&quot;.&#39;</span>
+        <span class="p">},</span> <span class="mi">401</span><span class="p">)</span>
 
-    elif len(parts) == 1:
-        raise AuthError({
-            'code': 'invalid_header',
-            'description': 'Token not found.'
-        }, 401)
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">AuthError</span><span class="p">({</span>
+            <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="s1">&#39;invalid_header&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Token not found.&#39;</span>
+        <span class="p">},</span> <span class="mi">401</span><span class="p">)</span>
 
-    elif len(parts) &gt; 2:
-        raise AuthError({
-            'code': 'invalid_header',
-            'description': 'Authorization header must be bearer token.'
-        }, 401)
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">AuthError</span><span class="p">({</span>
+            <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="s1">&#39;invalid_header&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Authorization header must be bearer token.&#39;</span>
+        <span class="p">},</span> <span class="mi">401</span><span class="p">)</span>
 
-    token = parts[1]
-    return token
+    <span class="n">token</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">token</span>
 
 
-def requires_auth(f):
-    &quot;&quot;&quot;Determines if the Access Token is valid
-    &quot;&quot;&quot;
+<span class="k">def</span> <span class="nf">requires_auth</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Determines if the Access Token is valid</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 
-    @wraps(f)
-    def decorated(*args, **kwargs):
-        token = get_token_auth_header()
-        jsonurl = urlopen(f'https://{AUTH0_DOMAIN}/.well-known/jwks.json')
-        jwks = json.loads(jsonurl.read())
-        unverified_header = jwt.get_unverified_header(token)
-        rsa_key = {}
-        for key in jwks['keys']:
-            if key['kid'] == unverified_header['kid']:
-                rsa_key = {
-                    'kty': key['kty'],
-                    'kid': key['kid'],
-                    'use': key['use'],
-                    'n': key['n'],
-                    'e': key['e']
-                }
-        if rsa_key:
-            try:
-                payload = jwt.decode(
-                    token,
-                    rsa_key,
-                    algorithms=ALGORITHMS,
-                    audience=API_AUDIENCE,
-                    issuer='https://' + AUTH0_DOMAIN + '/'
-                )
+    <span class="nd">@wraps</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">decorated</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">token</span> <span class="o">=</span> <span class="n">get_token_auth_header</span><span class="p">()</span>
+        <span class="n">jsonurl</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;https://</span><span class="si">{</span><span class="n">AUTH0_DOMAIN</span><span class="si">}</span><span class="s1">/.well-known/jwks.json&#39;</span><span class="p">)</span>
+        <span class="n">jwks</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">jsonurl</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+        <span class="n">unverified_header</span> <span class="o">=</span> <span class="n">jwt</span><span class="o">.</span><span class="n">get_unverified_header</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+        <span class="n">rsa_key</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">jwks</span><span class="p">[</span><span class="s1">&#39;keys&#39;</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="n">key</span><span class="p">[</span><span class="s1">&#39;kid&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">unverified_header</span><span class="p">[</span><span class="s1">&#39;kid&#39;</span><span class="p">]:</span>
+                <span class="n">rsa_key</span> <span class="o">=</span> <span class="p">{</span>
+                    <span class="s1">&#39;kty&#39;</span><span class="p">:</span> <span class="n">key</span><span class="p">[</span><span class="s1">&#39;kty&#39;</span><span class="p">],</span>
+                    <span class="s1">&#39;kid&#39;</span><span class="p">:</span> <span class="n">key</span><span class="p">[</span><span class="s1">&#39;kid&#39;</span><span class="p">],</span>
+                    <span class="s1">&#39;use&#39;</span><span class="p">:</span> <span class="n">key</span><span class="p">[</span><span class="s1">&#39;use&#39;</span><span class="p">],</span>
+                    <span class="s1">&#39;n&#39;</span><span class="p">:</span> <span class="n">key</span><span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">],</span>
+                    <span class="s1">&#39;e&#39;</span><span class="p">:</span> <span class="n">key</span><span class="p">[</span><span class="s1">&#39;e&#39;</span><span class="p">]</span>
+                <span class="p">}</span>
+        <span class="k">if</span> <span class="n">rsa_key</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">payload</span> <span class="o">=</span> <span class="n">jwt</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span>
+                    <span class="n">token</span><span class="p">,</span>
+                    <span class="n">rsa_key</span><span class="p">,</span>
+                    <span class="n">algorithms</span><span class="o">=</span><span class="n">ALGORITHMS</span><span class="p">,</span>
+                    <span class="n">audience</span><span class="o">=</span><span class="n">API_AUDIENCE</span><span class="p">,</span>
+                    <span class="n">issuer</span><span class="o">=</span><span class="s1">&#39;https://&#39;</span> <span class="o">+</span> <span class="n">AUTH0_DOMAIN</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span>
+                <span class="p">)</span>
 
-            except jwt.ExpiredSignatureError:
-                raise AuthError({
-                    'code': 'token_expired',
-                    'description': 'Token expired.'
-                }, 401)
+            <span class="k">except</span> <span class="n">jwt</span><span class="o">.</span><span class="n">ExpiredSignatureError</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">AuthError</span><span class="p">({</span>
+                    <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="s1">&#39;token_expired&#39;</span><span class="p">,</span>
+                    <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Token expired.&#39;</span>
+                <span class="p">},</span> <span class="mi">401</span><span class="p">)</span>
 
-            except jwt.JWTClaimsError:
-                raise AuthError({
-                    'code': 'invalid_claims',
-                    'description': 'Incorrect claims.
-Please, check the audience and issuer.'
-                }, 401)
-            except Exception:
-                raise AuthError({
-                    'code': 'invalid_header',
-                    'description': 'Unable to parse authentication token.'
-                }, 400)
+            <span class="k">except</span> <span class="n">jwt</span><span class="o">.</span><span class="n">JWTClaimsError</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">AuthError</span><span class="p">({</span>
+                    <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="s1">&#39;invalid_claims&#39;</span><span class="p">,</span>
+                    <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Incorrect claims.</span>
+<span class="n">Please</span><span class="p">,</span> <span class="n">check</span> <span class="n">the</span> <span class="n">audience</span> <span class="ow">and</span> <span class="n">issuer</span><span class="o">.</span><span class="s1">&#39;</span>
+                <span class="p">},</span> <span class="mi">401</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">AuthError</span><span class="p">({</span>
+                    <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="s1">&#39;invalid_header&#39;</span><span class="p">,</span>
+                    <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Unable to parse authentication token.&#39;</span>
+                <span class="p">},</span> <span class="mi">400</span><span class="p">)</span>
 
-            _request_ctx_stack.top.current_user = payload
-            return f(*args, **kwargs)
+            <span class="n">_request_ctx_stack</span><span class="o">.</span><span class="n">top</span><span class="o">.</span><span class="n">current_user</span> <span class="o">=</span> <span class="n">payload</span>
+            <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 
-        raise AuthError({
-            'code': 'invalid_header',
-            'description': 'Unable to find the appropriate key.'
-        }, 400)
+        <span class="k">raise</span> <span class="n">AuthError</span><span class="p">({</span>
+            <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="s1">&#39;invalid_header&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Unable to find the appropriate key.&#39;</span>
+        <span class="p">},</span> <span class="mi">400</span><span class="p">)</span>
 
-    return decorated
-</code></pre>
+    <span class="k">return</span> <span class="n">decorated</span>
+</code></pre></div>
 <p>Although lengthy, this code is quite simple.
 Here is a list to explain what this new module does:</p>
 <p>First, it defines three constants: AUTH0_DOMAIN, ALGORITHMS, and API_AUDIENCE.
@@ -3016,30 +3582,30 @@ You probably noticed that the decorator that your created is using a module call
 To install this dependency, issue the following command inside the backend directory:</p>
 <p>pipenv install python-jose-cryptodome
 Now, to use this decorator, you can update the main.py file as follows:</p>
-<pre><code class="language-py"># coding=utf-8
+<div class="highlight"><pre><span></span><code><span class="c1"># coding=utf-8</span>
 
-# ...
-other import statements ...
-from .auth import AuthError, requires_auth
+<span class="c1"># ...</span>
+<span class="n">other</span> <span class="kn">import</span> <span class="nn">statements</span> <span class="o">...</span>
+<span class="kn">from</span> <span class="nn">.auth</span> <span class="kn">import</span> <span class="n">AuthError</span><span class="p">,</span> <span class="n">requires_auth</span>
 
-# ...
-create Flask app, schema generation ...
+<span class="c1"># ...</span>
+<span class="n">create</span> <span class="n">Flask</span> <span class="n">app</span><span class="p">,</span> <span class="n">schema</span> <span class="n">generation</span> <span class="o">...</span>
 
-# ...
-get_exams implementation ...
+<span class="c1"># ...</span>
+<span class="n">get_exams</span> <span class="n">implementation</span> <span class="o">...</span>
 
-@app.route('/exams', methods=['POST'])
-@requires_auth
-def add_exam():
-    # ...
-implementation ...
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/exams&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;POST&#39;</span><span class="p">])</span>
+<span class="nd">@requires_auth</span>
+<span class="k">def</span> <span class="nf">add_exam</span><span class="p">():</span>
+    <span class="c1"># ...</span>
+<span class="n">implementation</span> <span class="o">...</span>
 
-@app.errorhandler(AuthError)
-def handle_auth_error(ex):
-    response = jsonify(ex.error)
-    response.status_code = ex.status_code
-    return response
-</code></pre>
+<span class="nd">@app</span><span class="o">.</span><span class="n">errorhandler</span><span class="p">(</span><span class="n">AuthError</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">handle_auth_error</span><span class="p">(</span><span class="n">ex</span><span class="p">):</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">ex</span><span class="o">.</span><span class="n">error</span><span class="p">)</span>
+    <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">=</span> <span class="n">ex</span><span class="o">.</span><span class="n">status_code</span>
+    <span class="k">return</span> <span class="n">response</span>
+</code></pre></div>
 <p>Note that you are securing only the add_exam function (i.e.
 the endpoint that accepts POST requests).
 The endpoint that retrieves exams will remain public so visitors can see what exams your application contains.
@@ -3048,202 +3614,202 @@ By using the @app.errorhandler decorator, you are configuring your Flask applica
 This error handler makes errors look nice and easier to fix as they simply return a JSON object with the details.</p>
 <p>That’s it! You Flask application is now secured with Auth0.
 To test it, you can issue the following commands:</p>
-<pre><code class="language-ts"># run the app in the background
-./bootstrap.sh &amp;
+<div class="highlight"><pre><span></span><code><span class="err">#</span><span class="w"> </span><span class="nx">run</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">app</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">background</span><span class="w"></span>
+<span class="p">.</span><span class="o">/</span><span class="nx">bootstrap</span><span class="p">.</span><span class="nx">sh</span><span class="w"> </span><span class="o">&amp;</span><span class="w"></span>
 
-# good to go, endpoint not secured
-curl http://0.0.0.0:5000/exams
+<span class="err">#</span><span class="w"> </span><span class="nx">good</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">go</span><span class="p">,</span><span class="w"> </span><span class="nx">endpoint</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">secured</span><span class="w"></span>
+<span class="nx">curl</span><span class="w"> </span><span class="nx">http</span><span class="o">:</span><span class="c1">//0.0.0.0:5000/exams</span><span class="w"></span>
 
-# unauthorized, endpoint secured and no bearer
-curl -X POST -H 'Content-Type: application/json' -d '{
-  &quot;title&quot;: &quot;TypeScript Advanced Exam&quot;,
-  &quot;description&quot;: &quot;Tricky questions about TypeScript.&quot;
-}' http://0.0.0.0:5000/exams
-</code></pre>
+<span class="err">#</span><span class="w"> </span><span class="nx">unauthorized</span><span class="p">,</span><span class="w"> </span><span class="nx">endpoint</span><span class="w"> </span><span class="nx">secured</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">no</span><span class="w"> </span><span class="nx">bearer</span><span class="w"></span>
+<span class="nx">curl</span><span class="w"> </span><span class="o">-</span><span class="nx">X</span><span class="w"> </span><span class="nx">POST</span><span class="w"> </span><span class="o">-</span><span class="nx">H</span><span class="w"> </span><span class="s1">&#39;Content-Type: application/json&#39;</span><span class="w"> </span><span class="o">-</span><span class="nx">d</span><span class="w"> </span><span class="s1">&#39;{</span>
+<span class="s1">  &quot;title&quot;: &quot;TypeScript Advanced Exam&quot;,</span>
+<span class="s1">  &quot;description&quot;: &quot;Tricky questions about TypeScript.&quot;</span>
+<span class="s1">}&#39;</span><span class="w"> </span><span class="nx">http</span><span class="o">:</span><span class="c1">//0.0.0.0:5000/exams</span><span class="w"></span>
+</code></pre></div>
 <p>Now, to get an access token to test the secured endpoint, you will need to copy a command from your Auth0 API.
 So, head back to the page that you left open, then click on the Test tab, and copy the first curl command shown there.
 The code snippet below shows how to use this command to fetch the access token and how to send it to your Flask application (replace the first command with the one you copied from your Auth0 API):</p>
-<pre><code class="language-sh"># retrieve token from Auth0
-curl -X POST -H 'Content-Type: application/json' -d '{
-    &quot;client_id&quot;:&quot;Rp4He7RGWAnMfY34SxwnWHpw7gjdOOPI&quot;,&quot;client_secret&quot;:&quot;2cCS521K7k2Btc434VMBmIBTeLbRfw1tvEKw6l8DYt9OvIEYHUqgdZPioM_rBKsx&quot;,&quot;audience&quot;:&quot;https://online-exam.digituz.com.br&quot;,&quot;grant_type&quot;:&quot;client_credentials&quot;
-}' https://bk-samples.auth0.com/oauth/token
+<div class="highlight"><pre><span></span><code><span class="c1"># retrieve token from Auth0</span>
+curl -X POST -H <span class="s1">&#39;Content-Type: application/json&#39;</span> -d <span class="s1">&#39;{</span>
+<span class="s1">    &quot;client_id&quot;:&quot;Rp4He7RGWAnMfY34SxwnWHpw7gjdOOPI&quot;,&quot;client_secret&quot;:&quot;2cCS521K7k2Btc434VMBmIBTeLbRfw1tvEKw6l8DYt9OvIEYHUqgdZPioM_rBKsx&quot;,&quot;audience&quot;:&quot;https://online-exam.digituz.com.br&quot;,&quot;grant_type&quot;:&quot;client_credentials&quot;</span>
+<span class="s1">}&#39;</span> https://bk-samples.auth0.com/oauth/token
 
-# copy token into env variable
-JWT=&quot;aaa.bbb.ccc&quot;
+<span class="c1"># copy token into env variable</span>
+<span class="nv">JWT</span><span class="o">=</span><span class="s2">&quot;aaa.bbb.ccc&quot;</span>
 
-# create new exam
-curl -X POST -H 'Content-Type: application/json' -H 'Authorization: Bearer '$JWT -d '{
-  &quot;title&quot;: &quot;TypeScript Advanced Exam&quot;,
-  &quot;description&quot;: &quot;Tricky questions about TypeScript.&quot;
-}' http://0.0.0.0:5000/exams
-</code></pre>
+<span class="c1"># create new exam</span>
+curl -X POST -H <span class="s1">&#39;Content-Type: application/json&#39;</span> -H <span class="s1">&#39;Authorization: Bearer &#39;</span><span class="nv">$JWT</span> -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;title&quot;: &quot;TypeScript Advanced Exam&quot;,</span>
+<span class="s1">  &quot;description&quot;: &quot;Tricky questions about TypeScript.&quot;</span>
+<span class="s1">}&#39;</span> http://0.0.0.0:5000/exams
+</code></pre></div>
 <p>Hurray! You have a Flask application secured with a modern identity management solution.
 Time to save your progress:</p>
-<pre><code class="language-sh">git add . &amp;&amp; git commit -m &quot;securing Flask with Auth0&quot;
-</code></pre>
-<h2 id="_2">添加表单以创建考试</h2>
+<div class="highlight"><pre><span></span><code>git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;securing Flask with Auth0&quot;</span>
+</code></pre></div>
+<h2 id="_2">添加表单以创建考试<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>Next, you can go back to your code.
 Before integrating Auth0 into your Angular app, you will add two new components to it: ExamsComponent and ExamFormComponent.
 The first one will render the list of exams (i.e.
 you will remove this functionality from the AppComponent) and the second one will allow authenticated users to create exams.</p>
 <p>As such, open the app.component.ts file and replace all its content with this:</p>
-<pre><code class="language-ts">import { Component } from &quot;@angular/core&quot;;
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@angular/core&quot;</span><span class="p">;</span><span class="w"></span>
 
-@Component({
-  selector: &quot;app-root&quot;,
-  template: `
-    &lt;div style=&quot;text-align:center&quot;&gt;
-      &lt;h1&gt;Exams&lt;/h1&gt;
-    &lt;/div&gt;
-    &lt;h2&gt;Here are the exams created so far:&lt;/h2&gt;
-    &lt;router-outlet&gt;&lt;/router-outlet&gt;
-  `,
-  styleUrls: [&quot;./app.component.css&quot;]
-})
-export class AppComponent {}
-</code></pre>
+<span class="kd">@Component</span><span class="p">({</span><span class="w"></span>
+<span class="w">  </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;app-root&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<span class="sb">    &lt;div style=&quot;text-align:center&quot;&gt;</span>
+<span class="sb">      &lt;h1&gt;Exams&lt;/h1&gt;</span>
+<span class="sb">    &lt;/div&gt;</span>
+<span class="sb">    &lt;h2&gt;Here are the exams created so far:&lt;/h2&gt;</span>
+<span class="sb">    &lt;router-outlet&gt;&lt;/router-outlet&gt;</span>
+<span class="sb">  `</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nx">styleUrls</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;./app.component.css&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">AppComponent</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
+</code></pre></div>
 <p>As you can see, this component exists only to show a title and to define where other components will be rendered (<code>&lt;router-outlet&gt;&lt;/router-outlet&gt;</code>).
 As you have moved this component’s template to this file, you can remove the app.component.html file.</p>
 <p>Now, to show the exams list again, you are going to create the ExamsComponent.
 To do so, create a new file called exams.component.ts inside the src/app/exams directory with the following code:</p>
-<pre><code class="language-ts">import { Component, OnDestroy, OnInit } from &quot;@angular/core&quot;;
-import { Subscription } from &quot;rxjs/Subscription&quot;;
-import { Exam } from &quot;./exam.model&quot;;
-import { ExamsApiService } from &quot;./exams-api.service&quot;;
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">OnDestroy</span><span class="p">,</span><span class="w"> </span><span class="nx">OnInit</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@angular/core&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Subscription</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;rxjs/Subscription&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Exam</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./exam.model&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ExamsApiService</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./exams-api.service&quot;</span><span class="p">;</span><span class="w"></span>
 
-@Component({
-  selector: &quot;exams&quot;,
-  template: `
-    &lt;div&gt;
-      &lt;button routerLink=&quot;/new-exam&quot;&gt;New Exam&lt;/button&gt;
-      &lt;ul&gt;
-        &lt;li *ngFor=&quot;let exam of examsList&quot;&gt;
-          {{ exam.title }}
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  `
-})
-export class ExamsComponent implements OnInit, OnDestroy {
-  examsListSubs: Subscription;
-  examsList: Exam[];
+<span class="kd">@Component</span><span class="p">({</span><span class="w"></span>
+<span class="w">  </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;exams&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<span class="sb">    &lt;div&gt;</span>
+<span class="sb">      &lt;button routerLink=&quot;/new-exam&quot;&gt;New Exam&lt;/button&gt;</span>
+<span class="sb">      &lt;ul&gt;</span>
+<span class="sb">        &lt;li *ngFor=&quot;let exam of examsList&quot;&gt;</span>
+<span class="sb">          {{ exam.title }}</span>
+<span class="sb">        &lt;/li&gt;</span>
+<span class="sb">      &lt;/ul&gt;</span>
+<span class="sb">    &lt;/div&gt;</span>
+<span class="sb">  `</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ExamsComponent</span><span class="w"> </span><span class="k">implements</span><span class="w"> </span><span class="nx">OnInit</span><span class="p">,</span><span class="w"> </span><span class="nx">OnDestroy</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nx">examsListSubs</span><span class="o">:</span><span class="w"> </span><span class="kt">Subscription</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nx">examsList</span><span class="o">:</span><span class="w"> </span><span class="kt">Exam</span><span class="p">[];</span><span class="w"></span>
 
-  constructor(private examsApi: ExamsApiService) {}
+<span class="w">  </span><span class="kr">constructor</span><span class="p">(</span><span class="k">private</span><span class="w"> </span><span class="nx">examsApi</span><span class="o">:</span><span class="w"> </span><span class="kt">ExamsApiService</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
 
-  ngOnInit() {
-    this.examsListSubs = this.examsApi.getExams().subscribe(res =&gt; {
-      this.examsList = res;
-    }, console.error);
-  }
+<span class="w">  </span><span class="nx">ngOnInit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">examsListSubs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">examsApi</span><span class="p">.</span><span class="nx">getExams</span><span class="p">().</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">res</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">this</span><span class="p">.</span><span class="nx">examsList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">res</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  ngOnDestroy() {
-    this.examsListSubs.unsubscribe();
-  }
-}
-</code></pre>
+<span class="w">  </span><span class="nx">ngOnDestroy</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">examsListSubs</span><span class="p">.</span><span class="nx">unsubscribe</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>There is nothing fancy about this component, you are simply moving the code that renders the list of exams from the AppComponent to this one and adding a button to enable users to navigate to the /new-exam page.</p>
 <p>Speaking of which, you have to create the component that will be responsible for this URI.
 Therefore, create a new file called exam-form.component.ts inside the src/app/exams directory and add the following code to it:</p>
-<pre><code class="language-ts">import { Component } from &quot;@angular/core&quot;;
-import { HttpClient } from &quot;@angular/common/http&quot;;
-import { ExamsApiService } from &quot;./exams-api.service&quot;;
-import { Router } from &quot;@angular/router&quot;;
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@angular/core&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">HttpClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@angular/common/http&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ExamsApiService</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./exams-api.service&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Router</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@angular/router&quot;</span><span class="p">;</span><span class="w"></span>
 
-@Component({
-  selector: &quot;exam-form&quot;,
-  template: `
-    &lt;div&gt;
-      &lt;h2&gt;New Exam&lt;/h2&gt;
-      &lt;label for=&quot;exam-title&quot;&gt;Title&lt;/label&gt;
-      &lt;input id=&quot;exam-title&quot; (keyup)=&quot;updateTitle($event)&quot; /&gt;
-      &lt;label for=&quot;exam-description&quot;&gt;Description&lt;/label&gt;
-      &lt;input id=&quot;exam-description&quot; (keyup)=&quot;updateDescription($event)&quot; /&gt;
-      &lt;button (click)=&quot;saveExam()&quot;&gt;Save Exam&lt;/button&gt;
-    &lt;/div&gt;
-  `
-})
-export class ExamFormComponent {
-  exam = {
-    title: &quot;&quot;,
-    description: &quot;&quot;
-  };
+<span class="kd">@Component</span><span class="p">({</span><span class="w"></span>
+<span class="w">  </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;exam-form&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<span class="sb">    &lt;div&gt;</span>
+<span class="sb">      &lt;h2&gt;New Exam&lt;/h2&gt;</span>
+<span class="sb">      &lt;label for=&quot;exam-title&quot;&gt;Title&lt;/label&gt;</span>
+<span class="sb">      &lt;input id=&quot;exam-title&quot; (keyup)=&quot;updateTitle($event)&quot; /&gt;</span>
+<span class="sb">      &lt;label for=&quot;exam-description&quot;&gt;Description&lt;/label&gt;</span>
+<span class="sb">      &lt;input id=&quot;exam-description&quot; (keyup)=&quot;updateDescription($event)&quot; /&gt;</span>
+<span class="sb">      &lt;button (click)=&quot;saveExam()&quot;&gt;Save Exam&lt;/button&gt;</span>
+<span class="sb">    &lt;/div&gt;</span>
+<span class="sb">  `</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ExamFormComponent</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nx">exam</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">};</span><span class="w"></span>
 
-  constructor(private examsApi: ExamsApiService, private router: Router) {}
+<span class="w">  </span><span class="kr">constructor</span><span class="p">(</span><span class="k">private</span><span class="w"> </span><span class="nx">examsApi</span><span class="o">:</span><span class="w"> </span><span class="kt">ExamsApiService</span><span class="p">,</span><span class="w"> </span><span class="k">private</span><span class="w"> </span><span class="nx">router</span><span class="o">:</span><span class="w"> </span><span class="kt">Router</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
 
-  updateTitle(event: any) {
-    this.exam.title = event.target.value;
-  }
+<span class="w">  </span><span class="nx">updateTitle</span><span class="p">(</span><span class="nx">event</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">exam</span><span class="p">.</span><span class="nx">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  updateDescription(event: any) {
-    this.exam.description = event.target.value;
-  }
+<span class="w">  </span><span class="nx">updateDescription</span><span class="p">(</span><span class="nx">event</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">exam</span><span class="p">.</span><span class="nx">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  saveExam() {
-    this.examsApi
-      .saveExam(this.exam)
-      .subscribe(
-        () =&gt; this.router.navigate([&quot;/&quot;]),
-        error =&gt; alert(error.message)
-      );
-  }
-}
-</code></pre>
+<span class="w">  </span><span class="nx">saveExam</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">examsApi</span><span class="w"></span>
+<span class="w">      </span><span class="p">.</span><span class="nx">saveExam</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">exam</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">router</span><span class="p">.</span><span class="nx">navigate</span><span class="p">([</span><span class="s2">&quot;/&quot;</span><span class="p">]),</span><span class="w"></span>
+<span class="w">        </span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>In this component, you are defining two input elements where users will be able to inform the title and description of the exam that they are creating and a button that triggers the saveExam method.
 This method calls another (homonymous) method that you will define in the examsApi service.
 Then, if the call to this method is successful, users are redirected to the home page (/) and, if the call is unsuccessful, an alert is shown by the browser.</p>
 <p>Now, to define the saveExam method on the ExamsApiService, open the exams-api.service.ts file and update it as follows:</p>
-<pre><code class="language-ts">// ...
-import statements ...
+<div class="highlight"><pre><span></span><code><span class="c1">// ...</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="nx">statements</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
 
-@Injectable()
-export class ExamsApiService {
-  // ...
-constructor, _handleError, getExams ...
+<span class="kd">@Injectable</span><span class="p">()</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ExamsApiService</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// ...</span><span class="w"></span>
+<span class="kr">constructor</span><span class="p">,</span><span class="w"> </span><span class="nx">_handleError</span><span class="p">,</span><span class="w"> </span><span class="nx">getExams</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
 
-  saveExam(exam: Exam): Observable&lt;any&gt; {
-    return this.http
-      .post(`${API_URL}/exams`, exam);
-  }
-}
-Lastly, you will have to update the app.module.ts file as follows:
+<span class="w">  </span><span class="nx">saveExam</span><span class="p">(</span><span class="nx">exam</span><span class="o">:</span><span class="w"> </span><span class="kt">Exam</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">http</span><span class="w"></span>
+<span class="w">      </span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">API_URL</span><span class="si">}</span><span class="sb">/exams`</span><span class="p">,</span><span class="w"> </span><span class="nx">exam</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="nx">Lastly</span><span class="p">,</span><span class="w"> </span><span class="nx">you</span><span class="w"> </span><span class="nx">will</span><span class="w"> </span><span class="nx">have</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">update</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">app</span><span class="p">.</span><span class="kr">module</span><span class="nx">.ts</span><span class="w"> </span><span class="nx">file</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">follows</span><span class="o">:</span><span class="w"></span>
 
-// ...
-other imports ...
+<span class="c1">// ...</span><span class="w"></span>
+<span class="nx">other</span><span class="w"> </span><span class="nx">imports</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
 
-import {ExamFormComponent} from './exams/exam-form.component';
-import {RouterModule, Routes} from '@angular/router';
-import {ExamsComponent} from './exams/exams.component';
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">ExamFormComponent</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./exams/exam-form.component&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">RouterModule</span><span class="p">,</span><span class="w"> </span><span class="nx">Routes</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/router&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">ExamsComponent</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./exams/exams.component&#39;</span><span class="p">;</span><span class="w"></span>
 
-const appRoutes: Routes = [
-  { path: 'new-exam', component: ExamFormComponent },
-  { path: '', component: ExamsComponent },
-];
+<span class="kd">const</span><span class="w"> </span><span class="nx">appRoutes</span><span class="o">:</span><span class="w"> </span><span class="kt">Routes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;new-exam&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">component</span><span class="o">:</span><span class="w"> </span><span class="kt">ExamFormComponent</span><span class="w"> </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">component</span><span class="o">:</span><span class="w"> </span><span class="kt">ExamsComponent</span><span class="w"> </span><span class="p">},</span><span class="w"></span>
+<span class="p">];</span><span class="w"></span>
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    ExamFormComponent,
-    ExamsComponent,
-  ],
-  imports: [
-    // ...
-BrowserModule and HttpClientModule ...
-    RouterModule.forRoot(
-      appRoutes,
-    ),
-  ],
-  // ...
-providers and bootstrap ...
-})
-// ...
-AppModule class definition
-</code></pre>
+<span class="kd">@NgModule</span><span class="p">({</span><span class="w"></span>
+<span class="w">  </span><span class="nx">declarations</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="nx">AppComponent</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">ExamFormComponent</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">ExamsComponent</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="p">],</span><span class="w"></span>
+<span class="w">  </span><span class="nx">imports</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// ...</span><span class="w"></span>
+<span class="nx">BrowserModule</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">HttpClientModule</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
+<span class="w">    </span><span class="nx">RouterModule</span><span class="p">.</span><span class="nx">forRoot</span><span class="p">(</span><span class="w"></span>
+<span class="w">      </span><span class="nx">appRoutes</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="p">),</span><span class="w"></span>
+<span class="w">  </span><span class="p">],</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// ...</span><span class="w"></span>
+<span class="nx">providers</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">bootstrap</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="c1">// ...</span><span class="w"></span>
+<span class="nx">AppModule</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">definition</span><span class="w"></span>
+</code></pre></div>
 <p>With these changes in place, you can open a terminal, move to the frontend directory, and run the ng serve command.
 Then, if you open http://localhost:4200/ in a browser, you will see the list of exams and a button labeled New Exam.
 Clicking on this button, you will be redirected to your new form.
 The problem now is that you will get an error saying “Http failure response for http://localhost:5000/exams: 401 UNAUTHORIZED” when clicking on the Save Exam button.
 The reason for that is simple, you haven’t configured Auth0 in your Angular app yet.</p>
-<h2 id="auth0-angular">使用 Auth0 保护 Angular 应用程序</h2>
+<h2 id="auth0-angular">使用 Auth0 保护 Angular 应用程序<a class="headerlink" href="#auth0-angular" title="Permanent link">&para;</a></h2>
 <p>To solve the 401 UNAUTHORIZED issue, the first thing you will have to do is to create an Auth0 Application to represent your Angular app.
 To do so, browse to the Applications page on the Auth0 dashboard and click on the Create Application button.
 This time, you will have to provide only two things to Auth0:</p>
@@ -3264,78 +3830,78 @@ So, open a terminal, move to the frontend directory, and issue the following com
 Note: You have to use version 1.7.0 of this library as the latest version (2.X) includes breaking changes.</p>
 <p>After installing this package, you will have to create the component responsible for handling the callback URL called by Auth0.
 As such, create a new file called callback.component.ts in the src/app/ directory and add the following code to it:</p>
-<pre><code class="language-ts">import * as Auth0 from &quot;auth0-web&quot;;
-import { Component, OnInit } from &quot;@angular/core&quot;;
-import { Router } from &quot;@angular/router&quot;;
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">Auth0</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;auth0-web&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">OnInit</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@angular/core&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Router</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@angular/router&quot;</span><span class="p">;</span><span class="w"></span>
 
-@Component({
-  selector: &quot;callback&quot;,
-  template: `
-    &lt;div&gt;Loading authentication details...&lt;/div&gt;
-  `
-})
-export class CallbackComponent implements OnInit {
-  constructor(private router: Router) {}
+<span class="kd">@Component</span><span class="p">({</span><span class="w"></span>
+<span class="w">  </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;callback&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<span class="sb">    &lt;div&gt;Loading authentication details...&lt;/div&gt;</span>
+<span class="sb">  `</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">CallbackComponent</span><span class="w"> </span><span class="k">implements</span><span class="w"> </span><span class="nx">OnInit</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kr">constructor</span><span class="p">(</span><span class="k">private</span><span class="w"> </span><span class="nx">router</span><span class="o">:</span><span class="w"> </span><span class="kt">Router</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
 
-  ngOnInit(): void {
-    const self = this;
-    Auth0.handleAuthCallback(err =&gt; {
-      if (err) alert(err);
-      self.router.navigate([&quot;/&quot;]);
-    });
-  }
-}
-</code></pre>
+<span class="w">  </span><span class="nx">ngOnInit</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="ow">void</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nx">Auth0</span><span class="p">.</span><span class="nx">handleAuthCallback</span><span class="p">(</span><span class="nx">err</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">err</span><span class="p">)</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="nx">self</span><span class="p">.</span><span class="nx">router</span><span class="p">.</span><span class="nx">navigate</span><span class="p">([</span><span class="s2">&quot;/&quot;</span><span class="p">]);</span><span class="w"></span>
+<span class="w">    </span><span class="p">});</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>As you can see, this component simply shows a message saying “Loading authentication details…” to users and delegates to auth0-web the process of parsing the callback URL.
 Then, when auth0-web finishes its job, users are redirected to the home page (self.router.navigate(['/'])).</p>
 <p>Next, you will have to refactor the exams.component.ts file to allow users to sign in and sign out.
 So, open this file and replace its code with the following:</p>
-<pre><code class="language-ts">import * as Auth0 from &quot;auth0-web&quot;;
-import { Component, OnDestroy, OnInit } from &quot;@angular/core&quot;;
-import { Subscription } from &quot;rxjs/Subscription&quot;;
-import { Exam } from &quot;./exam.model&quot;;
-import { ExamsApiService } from &quot;./exams-api.service&quot;;
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">Auth0</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;auth0-web&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">OnDestroy</span><span class="p">,</span><span class="w"> </span><span class="nx">OnInit</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@angular/core&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Subscription</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;rxjs/Subscription&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Exam</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./exam.model&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ExamsApiService</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./exams-api.service&quot;</span><span class="p">;</span><span class="w"></span>
 
-@Component({
-  selector: &quot;exams&quot;,
-  template: `
-    &lt;div&gt;
-      &lt;button routerLink=&quot;/new-exam&quot;&gt;New Exam&lt;/button&gt;
-      &lt;button (click)=&quot;signIn()&quot; *ngIf=&quot;!authenticated&quot;&gt;Sign In&lt;/button&gt;
-      &lt;button (click)=&quot;signOut()&quot; *ngIf=&quot;authenticated&quot;&gt;Sign Out&lt;/button&gt;
-      &lt;p *ngIf=&quot;authenticated&quot;&gt;Hello, {{ getProfile().name }}&lt;/p&gt;
-      &lt;ul&gt;
-        &lt;li *ngFor=&quot;let exam of examsList&quot;&gt;
-          {{ exam.title }}
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  `
-})
-export class ExamsComponent implements OnInit, OnDestroy {
-  examsListSubs: Subscription;
-  examsList: Exam[];
-  authenticated = false;
+<span class="kd">@Component</span><span class="p">({</span><span class="w"></span>
+<span class="w">  </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;exams&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<span class="sb">    &lt;div&gt;</span>
+<span class="sb">      &lt;button routerLink=&quot;/new-exam&quot;&gt;New Exam&lt;/button&gt;</span>
+<span class="sb">      &lt;button (click)=&quot;signIn()&quot; *ngIf=&quot;!authenticated&quot;&gt;Sign In&lt;/button&gt;</span>
+<span class="sb">      &lt;button (click)=&quot;signOut()&quot; *ngIf=&quot;authenticated&quot;&gt;Sign Out&lt;/button&gt;</span>
+<span class="sb">      &lt;p *ngIf=&quot;authenticated&quot;&gt;Hello, {{ getProfile().name }}&lt;/p&gt;</span>
+<span class="sb">      &lt;ul&gt;</span>
+<span class="sb">        &lt;li *ngFor=&quot;let exam of examsList&quot;&gt;</span>
+<span class="sb">          {{ exam.title }}</span>
+<span class="sb">        &lt;/li&gt;</span>
+<span class="sb">      &lt;/ul&gt;</span>
+<span class="sb">    &lt;/div&gt;</span>
+<span class="sb">  `</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ExamsComponent</span><span class="w"> </span><span class="k">implements</span><span class="w"> </span><span class="nx">OnInit</span><span class="p">,</span><span class="w"> </span><span class="nx">OnDestroy</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nx">examsListSubs</span><span class="o">:</span><span class="w"> </span><span class="kt">Subscription</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nx">examsList</span><span class="o">:</span><span class="w"> </span><span class="kt">Exam</span><span class="p">[];</span><span class="w"></span>
+<span class="w">  </span><span class="nx">authenticated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"></span>
 
-  constructor(private examsApi: ExamsApiService) {}
+<span class="w">  </span><span class="kr">constructor</span><span class="p">(</span><span class="k">private</span><span class="w"> </span><span class="nx">examsApi</span><span class="o">:</span><span class="w"> </span><span class="kt">ExamsApiService</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
 
-  signIn = Auth0.signIn;
-  signOut = Auth0.signOut;
-  getProfile = Auth0.getProfile;
+<span class="w">  </span><span class="nx">signIn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Auth0</span><span class="p">.</span><span class="nx">signIn</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nx">signOut</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Auth0</span><span class="p">.</span><span class="nx">signOut</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nx">getProfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Auth0</span><span class="p">.</span><span class="nx">getProfile</span><span class="p">;</span><span class="w"></span>
 
-  ngOnInit() {
-    this.examsListSubs = this.examsApi.getExams().subscribe(res =&gt; {
-      this.examsList = res;
-    }, console.error);
-    const self = this;
-    Auth0.subscribe(authenticated =&gt; (self.authenticated = authenticated));
-  }
+<span class="w">  </span><span class="nx">ngOnInit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">examsListSubs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">examsApi</span><span class="p">.</span><span class="nx">getExams</span><span class="p">().</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">res</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">this</span><span class="p">.</span><span class="nx">examsList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">res</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nx">Auth0</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">authenticated</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span><span class="nx">self</span><span class="p">.</span><span class="nx">authenticated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">authenticated</span><span class="p">));</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  ngOnDestroy() {
-    this.examsListSubs.unsubscribe();
-  }
-}
-</code></pre>
+<span class="w">  </span><span class="nx">ngOnDestroy</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">examsListSubs</span><span class="p">.</span><span class="nx">unsubscribe</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>In the new version of this component, you are adding two new buttons (Sign In and Sign Out) and a paragraph that shows names of authenticated users.
 All these new elements are conditionally showed according to the authenticated flag.
 The Sign Out and New Exam buttons are visible when this flag is set, otherwise you’ll see the Sign In button.</p>
@@ -3343,86 +3909,81 @@ The Sign Out and New Exam buttons are visible when this flag is set, otherwise y
 Besides these methods, this component also subscribes an anonymous function to change the value of the authenticated flag whenever the authentication status changes.</p>
 <p>After updating the ExamsComponent, you will have to update the ExamsApiService to make use of the access_token retrieved from Auth0.
 So, open the exams-api.service.ts file and update it as follows:</p>
-<pre><code class="language-ts">// ...
-other imports ...
-import {HttpClient, HttpErrorResponse, HttpHeaders} from '@angular/common/http';
-// ...
-other imports ...
-import * as Auth0 from 'auth0-web';
+<div class="highlight"><pre><span></span><code><span class="c1">// ...</span><span class="w"></span>
+<span class="nx">other</span><span class="w"> </span><span class="nx">imports</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">HttpClient</span><span class="p">,</span><span class="w"> </span><span class="nx">HttpErrorResponse</span><span class="p">,</span><span class="w"> </span><span class="nx">HttpHeaders</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/common/http&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="c1">// ...</span><span class="w"></span>
+<span class="nx">other</span><span class="w"> </span><span class="nx">imports</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">Auth0</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;auth0-web&#39;</span><span class="p">;</span><span class="w"></span>
 
-@Injectable()
-export class ExamsApiService {
+<span class="kd">@Injectable</span><span class="p">()</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ExamsApiService</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 
-  // ...
-constructor, _handleError, and getExams
+<span class="w">  </span><span class="c1">// ...</span><span class="w"></span>
+<span class="kr">constructor</span><span class="p">,</span><span class="w"> </span><span class="nx">_handleError</span><span class="p">,</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">getExams</span><span class="w"></span>
 
-  saveExam(exam: Exam): Observable&lt;any&gt; {
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Authorization': `Bearer ${Auth0.getAccessToken()}`
-      })
-    };
-    return this.http
-      .post(`${API_URL}/exams`, exam, httpOptions);
-  }
-}
-</code></pre>
+<span class="w">  </span><span class="nx">saveExam</span><span class="p">(</span><span class="nx">exam</span><span class="o">:</span><span class="w"> </span><span class="kt">Exam</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">httpOptions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nx">headers</span><span class="o">:</span><span class="w"> </span><span class="kt">new</span><span class="w"> </span><span class="nx">HttpHeaders</span><span class="p">({</span><span class="w"></span>
+<span class="w">        </span><span class="s1">&#39;Authorization&#39;</span><span class="o">:</span><span class="w"> </span><span class="sb">`Bearer </span><span class="si">${</span><span class="nx">Auth0</span><span class="p">.</span><span class="nx">getAccessToken</span><span class="p">()</span><span class="si">}</span><span class="sb">`</span><span class="w"></span>
+<span class="w">      </span><span class="p">})</span><span class="w"></span>
+<span class="w">    </span><span class="p">};</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">http</span><span class="w"></span>
+<span class="w">      </span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">API_URL</span><span class="si">}</span><span class="sb">/exams`</span><span class="p">,</span><span class="w"> </span><span class="nx">exam</span><span class="p">,</span><span class="w"> </span><span class="nx">httpOptions</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>The difference to the previous version is that now you are adding the Authorization header to the POST request that is sent when users try to save a new exam.
 This header is the missing piece to make your Angular and your Flask apps communicate properly.</p>
 <p>So, to wrap up everything, you will have to update your AppModule to declare the CallbackComponent, register the /callback route, and to configure the auth0-web package.
 As such, open the app.module.ts and change it as follows:</p>
-<pre><code class="language-ts">import * as Auth0 from 'auth0-web';
-import {CallbackComponent} from './callback.component';
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">Auth0</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;auth0-web&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">CallbackComponent</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./callback.component&#39;</span><span class="p">;</span><span class="w"></span>
 
-// ...
-other import statements ...
-const appRoutes: Routes = [
-  { path: 'callback', component: CallbackComponent },
-  // ...
-other routes ...
-];
+<span class="c1">// ...</span><span class="w"></span>
+<span class="nx">other</span><span class="w"> </span><span class="k">import</span><span class="w"> </span><span class="nx">statements</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">appRoutes</span><span class="o">:</span><span class="w"> </span><span class="kt">Routes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;callback&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">component</span><span class="o">:</span><span class="w"> </span><span class="kt">CallbackComponent</span><span class="w"> </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// ...</span><span class="w"></span>
+<span class="nx">other</span><span class="w"> </span><span class="nx">routes</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
+<span class="p">];</span><span class="w"></span>
 
-@NgModule({
-  declarations: [
-    // ...
-other components ...
-    CallbackComponent,
-  ],
-  // ...
-imports, providers, and bootstrap ...
-})
-export class AppModule {
-  constructor() {
-    Auth0.configure({
-      domain: 'bk-samples.auth0.com',
-      audience: 'https://online-exam.digituz.com.br',
-      clientID: 'oxiIp4EX1diCft0rOjzTc9PnHRvtuh9a',
-      redirectUri: 'http://localhost:4200/callback',
-      scope: 'openid profile manage:exams'
-    });
-  }
-}
-</code></pre>
+<span class="kd">@NgModule</span><span class="p">({</span><span class="w"></span>
+<span class="w">  </span><span class="nx">declarations</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// ...</span><span class="w"></span>
+<span class="nx">other</span><span class="w"> </span><span class="nx">components</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
+<span class="w">    </span><span class="nx">CallbackComponent</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="p">],</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// ...</span><span class="w"></span>
+<span class="nx">imports</span><span class="p">,</span><span class="w"> </span><span class="nx">providers</span><span class="p">,</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">bootstrap</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">AppModule</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kr">constructor</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">Auth0</span><span class="p">.</span><span class="nx">configure</span><span class="p">({</span><span class="w"></span>
+<span class="w">      </span><span class="nx">domain</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;bk-samples.auth0.com&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nx">audience</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;https://online-exam.digituz.com.br&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nx">clientID</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;oxiIp4EX1diCft0rOjzTc9PnHRvtuh9a&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nx">redirectUri</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;http://localhost:4200/callback&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nx">scope</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;openid profile manage:exams&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="p">});</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>Note that you will have to replace the domain, audience, and clientID properties on this code with values from your Auth0 account.
 So, head back to your Auth0 management dashboard and copy the domain and clientID from the Auth0 Application created before and audience from the Auth0 API (that is, copy the API identifier and paste it here).</p>
 <p>That’s it! If you run your Angular application now, you will be able to create new exams.</p>
 <p>Developing modern applications with Python, Flask, and Angular.</p>
 <p>Wait! Don’t forget to save your progress!!</p>
-<pre><code class="language-sh">git add .
-git commit -m &quot;Integrating Angular with Auth0&quot;
-</code></pre>
+<div class="highlight"><pre><span></span><code>git add .
+git commit -m <span class="s2">&quot;Integrating Angular with Auth0&quot;</span>
+</code></pre></div>
 <p>"Securing applications with Auth0 is easy and allows me to focus on my apps features."</p>
 <p>Tweet This</p>
-<h2 id="_3">结论和后续步骤</h2>
+<h2 id="_3">结论和后续步骤<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>在本系列的第二部分中，您将重点放在添加 Auth0 以充当 Flask 和 Angular 应用程序的身份管理服务。
 您首先定义了一个代表 Flask 后端应用程序的 Auth0 API，然后在项目中添加了一个新功能（允许用户添加检查的表单），最后，您将 Auth0 集成到 Angular 应用程序中。</p>
 <p>在下一篇文章中，您将学习如何安装和配置 Angular Material 组件，如何使用 Auth0 角色来控制用户可以执行的操作，以及如何使用 Alembic（数据库迁移工具）来管理数据库模式。</p>
 <p>敬请关注！</p>
-                
-              
-              
-                
-
 
               
             </article>
@@ -3431,12 +3992,12 @@ git commit -m &quot;Integrating Angular with Auth0&quot;
         
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../mfap1/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../mfap1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -3451,7 +4012,8 @@ git commit -m &quot;Integrating Angular with Auth0&quot;
         </a>
       
       
-        <a href="../mfap3/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="../mfap3/" class="md-footer__link md-footer__link--next" aria-label="Next: 使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -3469,18 +4031,19 @@ git commit -m &quot;Integrating Angular with Auth0&quot;
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            版权 &copy; 2017 - 2021 wohugb.github.io
-          </div>
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
-      </div>
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      版权 &copy; 2017 - 2022 wohugb.github.io
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
     </div>
   </div>
@@ -3490,10 +4053,10 @@ git commit -m &quot;Integrating Angular with Auth0&quot;
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.7353b375.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e87a5f81.min.js"></script>
       
     
   </body>

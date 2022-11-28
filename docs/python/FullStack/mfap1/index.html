@@ -9,12 +9,11 @@
         <meta name="description" content="大鼻子的日常学习记录">
       
       
-      
         <meta name="author" content="Nosy">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.7">
     
     
       
@@ -22,26 +21,28 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.9299cb39.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9d5733d3.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
-    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+
     
     
   </head>
@@ -55,7 +56,6 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -72,7 +72,10 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+    
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="大鼻子" class="md-header__button md-logo" aria-label="大鼻子" data-md-component="logo">
       
@@ -105,19 +108,22 @@
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -134,11 +140,10 @@
     
     
       <div class="md-header__source">
-        
-<a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     wohugb/wohugb.github.com
@@ -147,11 +152,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -177,11 +185,10 @@
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/wohugb/wohugb.github.com" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     wohugb/wohugb.github.com
@@ -249,10 +256,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
-      <label class="md-nav__link" for="__nav_4">
-        Ai
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Ai
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ai" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
@@ -261,6 +272,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -271,8 +283,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -283,8 +297,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -295,8 +311,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -307,8 +325,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -319,8 +339,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -331,8 +353,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -343,8 +367,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -355,8 +381,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -367,8 +395,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -378,10 +408,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10" type="checkbox" id="__nav_4_10" >
       
-      <label class="md-nav__link" for="__nav_4_10">
-        Bot
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_10">
+          Bot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Bot" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_10">
           <span class="md-nav__icon md-icon"></span>
@@ -390,6 +424,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -400,8 +435,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -412,8 +449,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -424,8 +463,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -436,14 +477,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -453,10 +497,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
       
-      <label class="md-nav__link" for="__nav_4_11">
-        Iot
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_11">
+          Iot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Iot" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_11">
           <span class="md-nav__icon md-icon"></span>
@@ -465,6 +513,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -475,12 +524,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -501,10 +552,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
-      <label class="md-nav__link" for="__nav_5">
-        Aliyun
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Aliyun
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Aliyun" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
@@ -513,6 +568,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -523,8 +579,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -535,6 +593,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -555,10 +614,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
-      <label class="md-nav__link" for="__nav_6">
-        Angular
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Angular
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Angular" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
@@ -567,6 +630,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -577,8 +641,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -589,8 +655,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -601,8 +669,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -613,8 +683,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -625,8 +697,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -637,8 +711,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -649,8 +725,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -661,8 +739,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -673,8 +753,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -685,8 +767,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -697,8 +781,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -709,8 +795,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -721,8 +809,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -733,8 +823,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -745,8 +837,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -757,8 +851,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -769,8 +865,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -781,8 +879,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -793,8 +893,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -805,8 +907,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -817,8 +921,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -829,8 +935,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -841,8 +949,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -853,8 +963,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -864,10 +976,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_25" type="checkbox" id="__nav_6_25" >
       
-      <label class="md-nav__link" for="__nav_6_25">
-        Features
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_25">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Features" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_25">
           <span class="md-nav__icon md-icon"></span>
@@ -876,6 +992,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -886,12 +1003,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -912,10 +1031,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="__nav_7">
-        Apartment
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Apartment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Apartment" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
@@ -924,6 +1047,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -934,8 +1058,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -946,8 +1072,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -958,8 +1086,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -970,8 +1100,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -982,8 +1114,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -994,8 +1128,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1006,8 +1142,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1018,6 +1156,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1038,10 +1177,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
-      <label class="md-nav__link" for="__nav_8">
-        Blockchain
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Blockchain
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Blockchain" data-md-level="1">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1050,6 +1193,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1060,8 +1204,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1072,8 +1218,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1084,8 +1232,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1096,8 +1246,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1108,8 +1260,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1119,10 +1273,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_6" type="checkbox" id="__nav_8_6" >
       
-      <label class="md-nav__link" for="__nav_8_6">
-        Bitcoin
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_6">
+          Bitcoin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Bitcoin" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_6">
           <span class="md-nav__icon md-icon"></span>
@@ -1131,6 +1289,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1141,14 +1300,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1158,10 +1320,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_7" type="checkbox" id="__nav_8_7" >
       
-      <label class="md-nav__link" for="__nav_8_7">
-        Ethereum
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_7">
+          Ethereum
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ethereum" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_7">
           <span class="md-nav__icon md-icon"></span>
@@ -1170,6 +1336,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1180,8 +1347,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1192,8 +1361,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1204,8 +1375,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1216,8 +1389,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1228,8 +1403,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1240,14 +1417,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1257,10 +1437,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_8" type="checkbox" id="__nav_8_8" >
       
-      <label class="md-nav__link" for="__nav_8_8">
-        Ipfs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_8">
+          Ipfs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ipfs" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1269,6 +1453,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1279,14 +1464,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1296,10 +1484,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_9" type="checkbox" id="__nav_8_9" >
       
-      <label class="md-nav__link" for="__nav_8_9">
-        Twister
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_9">
+          Twister
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Twister" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1308,6 +1500,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1318,8 +1511,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1330,8 +1525,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1342,8 +1539,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1354,8 +1553,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1366,12 +1567,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1392,10 +1595,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
       
-      <label class="md-nav__link" for="__nav_9">
-        Education
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Education
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Education" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1404,6 +1611,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1414,8 +1622,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1426,8 +1636,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1438,8 +1650,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1450,6 +1664,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1470,102 +1685,37 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
       
-      <label class="md-nav__link" for="__nav_10">
-        Nodejs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Nodejs" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Langs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Langs" data-md-level="1">
         <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
-          Nodejs
+          Langs
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../nodejs/" class="md-nav__link">
+      <a href="../../../langs/" class="md-nav__link">
         Index
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/awesome/" class="md-nav__link">
-        Awesome Node.js
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/express/" class="md-nav__link">
-        Express
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/koa/" class="md-nav__link">
-        Koa
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/mongoose/" class="md-nav__link">
-        Mongoose
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/nodejs/" class="md-nav__link">
-        Nodejs
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/pm2/" class="md-nav__link">
-        Pm2
-      </a>
-    </li>
-  
-
-          
-            
+              
   
   
   
@@ -1573,138 +1723,43 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8" type="checkbox" id="__nav_10_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" >
       
-      <label class="md-nav__link" for="__nav_10_8">
-        Node modules
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Node modules" data-md-level="2">
-        <label class="md-nav__title" for="__nav_10_8">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_2">
+          Go
           <span class="md-nav__icon md-icon"></span>
-          Node modules
+        </label>
+      
+      <nav class="md-nav" aria-label="Go" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_2">
+          <span class="md-nav__icon md-icon"></span>
+          Go
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/gm/" class="md-nav__link">
-        概述
+      <a href="../../../langs/go/" class="md-nav__link">
+        Index
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8_2" type="checkbox" id="__nav_10_8_2" >
-      
-      <label class="md-nav__link" for="__nav_10_8_2">
-        Node rsa
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Node rsa" data-md-level="3">
-        <label class="md-nav__title" for="__nav_10_8_2">
-          <span class="md-nav__icon md-icon"></span>
-          Node rsa
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/node-rsa/jsbn/" class="md-nav__link">
-        JavaScript中的RSA和ECC
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/node-rsa/readme/" class="md-nav__link">
-        Node-RSA
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8_3" type="checkbox" id="__nav_10_8_3" >
-      
-      <label class="md-nav__link" for="__nav_10_8_3">
-        Qrcode
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Qrcode" data-md-level="3">
-        <label class="md-nav__title" for="__nav_10_8_3">
-          <span class="md-nav__icon md-icon"></span>
-          Qrcode
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/qrcode/api/" class="md-nav__link">
-        Api
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nodejs/node_modules/qrcode/readme/" class="md-nav__link">
-        node-qrcode
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -1725,18 +1780,338 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
       
-      <label class="md-nav__link" for="__nav_11">
-        Pin
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Pin" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11">
+          Nodejs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Nodejs" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          Nodejs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/awesome/" class="md-nav__link">
+        Awesome Node.js
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/express/" class="md-nav__link">
+        Express
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/koa/" class="md-nav__link">
+        Koa
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/mongoose/" class="md-nav__link">
+        Mongoose
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/nodejs/" class="md-nav__link">
+        Nodejs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/pm2/" class="md-nav__link">
+        Pm2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8" type="checkbox" id="__nav_11_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8">
+          Node modules
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Node modules" data-md-level="2">
+        <label class="md-nav__title" for="__nav_11_8">
+          <span class="md-nav__icon md-icon"></span>
+          Node modules
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/gm/" class="md-nav__link">
+        概述
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8_2" type="checkbox" id="__nav_11_8_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8_2">
+          Node rsa
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Node rsa" data-md-level="3">
+        <label class="md-nav__title" for="__nav_11_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Node rsa
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/node-rsa/jsbn/" class="md-nav__link">
+        JavaScript中的RSA和ECC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/node-rsa/readme/" class="md-nav__link">
+        Node-RSA
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_8_3" type="checkbox" id="__nav_11_8_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_8_3">
+          Qrcode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Qrcode" data-md-level="3">
+        <label class="md-nav__title" for="__nav_11_8_3">
+          <span class="md-nav__icon md-icon"></span>
+          Qrcode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/qrcode/api/" class="md-nav__link">
+        Api
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/node_modules/qrcode/readme/" class="md-nav__link">
+        node-qrcode
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12">
+          Pin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Pin" data-md-level="1">
+        <label class="md-nav__title" for="__nav_12">
           <span class="md-nav__icon md-icon"></span>
           Pin
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pin/" class="md-nav__link">
+        拼团开发
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1747,8 +2122,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1759,8 +2136,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1771,8 +2150,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pin/sku-spu/" class="md-nav__link">
+        sku spu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1780,20 +2175,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_4" type="checkbox" id="__nav_11_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_6" type="checkbox" id="__nav_12_6" >
       
-      <label class="md-nav__link" for="__nav_11_4">
-        Fresh
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_6">
+          Fresh
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Fresh" data-md-level="2">
-        <label class="md-nav__title" for="__nav_11_4">
+        <label class="md-nav__title" for="__nav_12_6">
           <span class="md-nav__icon md-icon"></span>
           Fresh
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1804,8 +2204,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1816,8 +2218,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1828,12 +2232,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1854,20 +2260,25 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" checked>
       
-      <label class="md-nav__link" for="__nav_12">
-        Python
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13">
+          Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Python" data-md-level="1">
-        <label class="md-nav__title" for="__nav_12">
+        <label class="md-nav__title" for="__nav_13">
           <span class="md-nav__icon md-icon"></span>
           Python
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1878,8 +2289,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1890,8 +2303,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1902,8 +2317,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1914,8 +2331,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1923,20 +2342,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_5" type="checkbox" id="__nav_12_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_5" type="checkbox" id="__nav_13_5" >
       
-      <label class="md-nav__link" for="__nav_12_5">
-        Anaconda
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_5">
+          Anaconda
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Anaconda" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_5">
+        <label class="md-nav__title" for="__nav_13_5">
           <span class="md-nav__icon md-icon"></span>
           Anaconda
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1947,14 +2371,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -1964,20 +2391,25 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_6" type="checkbox" id="__nav_12_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_6" type="checkbox" id="__nav_13_6" checked>
       
-      <label class="md-nav__link" for="__nav_12_6">
-        FullStack
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_6">
+          FullStack
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="FullStack" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_6">
+        <label class="md-nav__title" for="__nav_13_6">
           <span class="md-nav__icon md-icon"></span>
           FullStack
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1988,8 +2420,10 @@
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -1998,6 +2432,7 @@
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
       
         
       
@@ -2012,7 +2447,9 @@
       </a>
       
         
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -2121,8 +2558,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2133,8 +2572,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2145,14 +2586,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2160,20 +2604,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_7" type="checkbox" id="__nav_12_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_7" type="checkbox" id="__nav_13_7" >
       
-      <label class="md-nav__link" for="__nav_12_7">
-        Django
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_7">
+          Django
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Django" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_7">
+        <label class="md-nav__title" for="__nav_13_7">
           <span class="md-nav__icon md-icon"></span>
           Django
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2184,8 +2633,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2196,14 +2647,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2211,20 +2665,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_8" type="checkbox" id="__nav_12_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_8" type="checkbox" id="__nav_13_8" >
       
-      <label class="md-nav__link" for="__nav_12_8">
-        Flask
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_8">
+          Flask
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Flask" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_8">
+        <label class="md-nav__title" for="__nav_13_8">
           <span class="md-nav__icon md-icon"></span>
           Flask
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2235,8 +2694,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2247,14 +2708,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2262,20 +2726,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_9" type="checkbox" id="__nav_12_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_9" type="checkbox" id="__nav_13_9" >
       
-      <label class="md-nav__link" for="__nav_12_9">
-        Pip
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_9">
+          Pip
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Pip" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_9">
+        <label class="md-nav__title" for="__nav_13_9">
           <span class="md-nav__icon md-icon"></span>
           Pip
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2286,78 +2755,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
-      
-      <label class="md-nav__link" for="__nav_13">
-        Running
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Running" data-md-level="1">
-        <label class="md-nav__title" for="__nav_13">
-          <span class="md-nav__icon md-icon"></span>
-          Running
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../running/bicycle/" class="md-nav__link">
-        变速自行车
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../running/card/" class="md-nav__link">
-        自动驾驶
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../running/walk/" class="md-nav__link">
-        徒步健身
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -2378,118 +2783,62 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
       
-      <label class="md-nav__link" for="__nav_14">
-        Tools
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Tools" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_14">
+          Running
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Running" data-md-level="1">
         <label class="md-nav__title" for="__nav_14">
           <span class="md-nav__icon md-icon"></span>
-          Tools
+          Running
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/" class="md-nav__link">
-        器
+      <a href="../../../running/bicycle/" class="md-nav__link">
+        变速自行车
       </a>
     </li>
   
 
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_2" type="checkbox" id="__nav_14_2" >
-      
-      <label class="md-nav__link" for="__nav_14_2">
-        Eslint
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Eslint" data-md-level="2">
-        <label class="md-nav__title" for="__nav_14_2">
-          <span class="md-nav__icon md-icon"></span>
-          Eslint
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/eslint/" class="md-nav__link">
-        Index
+      <a href="../../../running/card/" class="md-nav__link">
+        自动驾驶
       </a>
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
+            
           
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_3" type="checkbox" id="__nav_14_3" >
-      
-      <label class="md-nav__link" for="__nav_14_3">
-        Vscode
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Vscode" data-md-level="2">
-        <label class="md-nav__title" for="__nav_14_3">
-          <span class="md-nav__icon md-icon"></span>
-          Vscode
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/vscode/" class="md-nav__link">
-        vscode 文档
+      <a href="../../../running/walk/" class="md-nav__link">
+        徒步健身
       </a>
     </li>
   
 
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../tools/vscode/prettier/" class="md-nav__link">
-        Prettier
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -2510,18 +2859,179 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
       
-      <label class="md-nav__link" for="__nav_15">
-        Wechat
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Wechat" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15">
+          Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tools" data-md-level="1">
         <label class="md-nav__title" for="__nav_15">
+          <span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/" class="md-nav__link">
+        器
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_2" type="checkbox" id="__nav_15_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15_2">
+          Eslint
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Eslint" data-md-level="2">
+        <label class="md-nav__title" for="__nav_15_2">
+          <span class="md-nav__icon md-icon"></span>
+          Eslint
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/eslint/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_3" type="checkbox" id="__nav_15_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15_3">
+          Vscode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Vscode" data-md-level="2">
+        <label class="md-nav__title" for="__nav_15_3">
+          <span class="md-nav__icon md-icon"></span>
+          Vscode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/vscode/" class="md-nav__link">
+        vscode 文档
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/vscode/prettier/" class="md-nav__link">
+        Prettier
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16">
+          Wechat
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Wechat" data-md-level="1">
+        <label class="md-nav__title" for="__nav_16">
           <span class="md-nav__icon md-icon"></span>
           Wechat
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2532,8 +3042,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2544,8 +3056,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2556,8 +3070,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2565,20 +3081,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4" type="checkbox" id="__nav_15_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4" type="checkbox" id="__nav_16_4" >
       
-      <label class="md-nav__link" for="__nav_15_4">
-        Open
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4">
+          Open
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Open" data-md-level="2">
-        <label class="md-nav__title" for="__nav_15_4">
+        <label class="md-nav__title" for="__nav_16_4">
           <span class="md-nav__icon md-icon"></span>
           Open
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2589,8 +3110,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2598,20 +3121,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_2" type="checkbox" id="__nav_15_4_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_2" type="checkbox" id="__nav_16_4_2" >
       
-      <label class="md-nav__link" for="__nav_15_4_2">
-        App
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_2">
+          App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="App" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_2">
+        <label class="md-nav__title" for="__nav_16_4_2">
           <span class="md-nav__icon md-icon"></span>
           App
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2622,14 +3150,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2637,20 +3168,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_3" type="checkbox" id="__nav_15_4_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_3" type="checkbox" id="__nav_16_4_3" >
       
-      <label class="md-nav__link" for="__nav_15_4_3">
-        Code
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_3">
+          Code
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Code" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_3">
+        <label class="md-nav__title" for="__nav_16_4_3">
           <span class="md-nav__icon md-icon"></span>
           Code
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2661,14 +3197,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2676,20 +3215,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_4" type="checkbox" id="__nav_15_4_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_4" type="checkbox" id="__nav_16_4_4" >
       
-      <label class="md-nav__link" for="__nav_15_4_4">
-        D3f
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_4">
+          D3f
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="D3f" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_4">
+        <label class="md-nav__title" for="__nav_16_4_4">
           <span class="md-nav__icon md-icon"></span>
           D3f
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2700,14 +3244,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2715,20 +3262,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4_5" type="checkbox" id="__nav_15_4_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4_5" type="checkbox" id="__nav_16_4_5" >
       
-      <label class="md-nav__link" for="__nav_15_4_5">
-        Download
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16_4_5">
+          Download
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Download" data-md-level="3">
-        <label class="md-nav__title" for="__nav_15_4_5">
+        <label class="md-nav__title" for="__nav_16_4_5">
           <span class="md-nav__icon md-icon"></span>
           Download
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2739,8 +3291,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2751,8 +3305,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2763,8 +3319,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2775,8 +3333,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2787,18 +3347,21 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -2818,7 +3381,9 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -2932,8 +3497,9 @@
             <article class="md-content__inner md-typeset">
               
                 
-                
-                <h1 id="pythonflask-angular-web-1">使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分</h1>
+
+
+<h1 id="pythonflask-angular-web-1">使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分<a class="headerlink" href="#pythonflask-angular-web-1" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>https://auth0.com/blog/using-python-flask-and-angular-to-build-modern-apps-part-1/</p>
 <p>在本系列中，您将学习如何使用 Python，Flask 和 Angular 创建现代 Web 应用程序。</p>
@@ -2946,14 +3512,14 @@
 <li>第 2 部分包括保护 Flask 应用程序，处理 Angular 表单和保护 Angular Apps 等主题。</li>
 <li>第 3 部分包括配置 Angular Material，处理授权和使用 Alembic 迁移数据库等主题。</li>
 </ul>
-<h2 id="_1">你将要建立什么</h2>
+<h2 id="_1">你将要建立什么<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>在本系列中，您将使用 Python，Flask 和 Angular 构建基于现代架构的 Web 应用程序。
 使用 Angular，您将构建一个 SPA（单页应用程序），允许用户浏览考试和问题。
 这些用户在通过身份验证后，将能够通过选择问题所揭示的多个选项之一来测试他们关于特定主题的知识。
 然后，当您的用户提交他们的答案时，您的后端将检查他们是对还是错，记录结果，并将此结果发回给用户。</p>
 <p>当您期待构建现代 Web 应用程序时，您将使用 Auth0 作为应用程序的身份管理系统。
 您还将在数据库中保留所有考试，问题，替代方案和结果。</p>
-<h2 id="pythonflask-angular">为何选择 Python，Flask 和 Angular</h2>
+<h2 id="pythonflask-angular">为何选择 Python，Flask 和 Angular<a class="headerlink" href="#pythonflask-angular" title="Permanent link">&para;</a></h2>
 <p>正如 StackOverflow 最近分析的那样，Python 是增长最快的编程语言之一，在平台上提出的问题数量上甚至超过了 Java。
 除此之外，该语言也在 GitHub 上大量采用。
 在这个平台上，Python 在 2017 年开放的拉动请求数量上占据第二的位置。</p>
@@ -2970,10 +3536,10 @@ Django 比 Flask 更成熟，更受欢迎。
 例如，Angular 由 Google 工程师构建和支持。
 除了这些工程师之外，还有一个庞大的社区随时准备帮助您解决问题。</p>
 <p>正如您所看到的，通过选择 Python，Flask 和 Angular 来构建 Web 应用程序，您可以放心，您将始终能够依靠优秀且蓬勃发展的社区来为您提供支持。</p>
-<h2 id="_2">依赖</h2>
+<h2 id="_2">依赖<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>既然您已经了解了为什么 Python，Flask 和 Angular 构建了一个很好的堆栈来构建现代 Web 应用程序，那么您就可以安装本地依赖项了。
 本节分为两个小节，以突出显示后端和前端视图中的环境依赖性。</p>
-<h3 id="_3">后端依赖</h3>
+<h3 id="_3">后端依赖<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>首先，您需要一个最新版本的 Python 3。
 如果您的开发计算机上没有可用的 Python 3，请浏览 Python 下载页面并进行安装。</p>
 <p>安装 Python 后，您必须安装 pipenv 工具。
@@ -2981,24 +3547,24 @@ Django 比 Flask 更成熟，更受欢迎。
 此外，该工具是 Windows 上的一流公民。
 因此，如果您仍然停留在此操作系统上，请不要担心，您将受到保护。</p>
 <p>要安装 pipenv，只需打开终端并键入以下命令：</p>
-<pre><code class="language-sh"># depending on the environment, you will have to use
-# pip3 instead of pip (just once)
+<div class="highlight"><pre><span></span><code><span class="c1"># depending on the environment, you will have to use</span>
+<span class="c1"># pip3 instead of pip (just once)</span>
 pip install pipenv
-</code></pre>
+</code></pre></div>
 <p>Python 和 pipenv 一起就足以开始开发 Flask 应用程序了。
 但是，由于您希望保留事务数据，因此仍需要选择和配置数据库引擎。
 为了让您的生活更轻松，您将使用 SQLAlchemy 来持久化并从所选引擎中检索数据。
 如果您没有 SQLAlchemy 的经验，请查看关于该主题的这篇精彩的介绍性文章。
 在那里，您将了解到通过使用 SQLAlchemy ORM（对象关系映射）扩展，您将能够轻松连接和使用任何主要的 SQL 数据库引擎（例如，</p>
 <p>如果您的计算机上没有可用的数据库，一个很好的方法是使用 Docker 创建一个新数据库:</p>
-<pre><code class="language-sh">docker run --name online-exam-db \
- -p 5432:5432 \
- -e POSTGRES_DB=online-exam \
- -e POSTGRES_PASSWORD=0NLIN3-ex4m \
+<div class="highlight"><pre><span></span><code>docker run --name online-exam-db <span class="se">\</span>
+ -p <span class="m">5432</span>:5432 <span class="se">\</span>
+ -e <span class="nv">POSTGRES_DB</span><span class="o">=</span>online-exam <span class="se">\</span>
+ -e <span class="nv">POSTGRES_PASSWORD</span><span class="o">=</span>0NLIN3-ex4m <span class="se">\</span>
  -d postgres
-</code></pre>
+</code></pre></div>
 <p>当然，要运行上面的命令，您需要在本地安装 Docker。</p>
-<h3 id="_4">前端依赖</h3>
+<h3 id="_4">前端依赖<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>当您打算使用 Angular 创建前端应用程序时，您需要在计算机上安装 Node.js 和 NPM。
 您可以通过从 Node.js 下载页面下载并执行安装程序（根据您的操作系统选择一个）来同时安装这两个工具。
 另一种方法是使用 NVM 之类的工具来管理多个主动节点版本。
@@ -3007,130 +3573,130 @@ pip install pipenv
 <p>正确安装 Node.js 和 NPM 后，可以使用 npm 命令安装 Angular CLI 工具。
 您将使用此 CLI（命令行界面）来引导前端应用程序，启动开发服务器以及创建 Angular 组件，服务等。</p>
 <p>使用以下命令安装 Angular CLI:</p>
-<pre><code class="language-sh">nstall -g @angular/cli
-</code></pre>
-<h2 id="python">自举 Python 应用程序</h2>
+<div class="highlight"><pre><span></span><code>nstall -g @angular/cli
+</code></pre></div>
+<h2 id="python">自举 Python 应用程序<a class="headerlink" href="#python" title="Permanent link">&para;</a></h2>
 <p>现在您已经处理了环境依赖关系，您可以专注于开发应用程序。
 对于初学者，您可以创建一个目录来保存应用程序的所有前端和后端源代码。
 此外，您可能希望将所有内容提交到 Git 存储库以保证您的进度得以保存。
 因此，请使用以下命令开始构建应用程序:</p>
-<pre><code class="language-sh"># create the project root directory
+<div class="highlight"><pre><span></span><code><span class="c1"># create the project root directory</span>
 mkdir online-exam
-# move into it
-cd online-exam
-# initialize it as a Git repository
+<span class="c1"># move into it</span>
+<span class="nb">cd</span> online-exam
+<span class="c1"># initialize it as a Git repository</span>
 git init
-</code></pre>
+</code></pre></div>
 <p>之后，您将需要专门为 Flask 后端应用程序创建的目录:</p>
-<pre><code class="language-sh"># create directory to hold backend source code
+<div class="highlight"><pre><span></span><code><span class="c1"># create directory to hold backend source code</span>
 mkdir backend
-# move into it
-cd backend
-</code></pre>
+<span class="c1"># move into it</span>
+<span class="nb">cd</span> backend
+</code></pre></div>
 <p>然后，您将需要使用 pipenv 来创建虚拟环境。
 如果您不知道为什么需要虚拟环境，请查看 pipenv 作者撰写的这篇精彩文章。</p>
-<pre><code class="language-sh"># initialize the virtual environment
+<div class="highlight"><pre><span></span><code><span class="c1"># initialize the virtual environment</span>
 pipenv --three
-</code></pre>
+</code></pre></div>
 <p>当您使用 Git 备份代码时，您可能希望忽略某些文件。
 为此，请在项目根目录中创建名为.gitignore 的文件，并将此 URL 中的规则复制到其中。</p>
-<h2 id="sqlalchemy-orm">使用 SQLAlchemy ORM 管理实体</h2>
+<h2 id="sqlalchemy-orm">使用 SQLAlchemy ORM 管理实体<a class="headerlink" href="#sqlalchemy-orm" title="Permanent link">&para;</a></h2>
 <p>在设置虚拟环境后，您可以开始开发应用程序的功能。
 一个好的起点是定义实体并配置 SQLAlchemy 以持久化并检索这些实体的实例。
 因此，您将使用 pipenv 安装 sqlalchemy 软件包和驱动程序以连接到您的数据库。
 如果您使用的是 PostgreSQL，则可以将 SQLycopg2-binary 驱动程序与 SQLAlchemy 一起使用。
 如果您正在使用其他数据库引擎，请检查此页面以选择一个好的驱动程序。</p>
 <p>以下命令显示如何使用 pipenv 安装 sqlalchemy 和 psycopg2-binary 驱动程序:</p>
-<pre><code class="language-sh"># install sqlalchemy and psycopg2 on the venv
+<div class="highlight"><pre><span></span><code><span class="c1"># install sqlalchemy and psycopg2 on the venv</span>
 pipenv install sqlalchemy psycopg2-binary
-</code></pre>
+</code></pre></div>
 <p>安装 SQLAlchemy 和驱动程序以连接到数据库后，您可以开始创建实体.
 为此，请使用以下命令在另一个名为 src 的模块中创建名为 entities 的模块:</p>
-<pre><code class="language-sh"># create directories
+<div class="highlight"><pre><span></span><code><span class="c1"># create directories</span>
 mkdir -p src/entities
-# create file to mark src as a module
+<span class="c1"># create file to mark src as a module</span>
 touch src/**init**.py
-# create file to mark entities as a module
+<span class="c1"># create file to mark entities as a module</span>
 touch src/entities/**init**.py
-# create file to hold some boilerplate code
+<span class="c1"># create file to hold some boilerplate code</span>
 touch src/entities/entity.py
-</code></pre>
+</code></pre></div>
 <p>上面的前两个<code>touch</code>命令只是创建空的<code>** init **.py</code>文件，将两个目录标记为 Python 模块。
 最后一个 <code>touch</code> 命令创建将保存名为 <code>Entity</code> 的类的文件。
 您将使用此类作为所有实体的超类。
 这将有助于避免重复某些样板代码连接到数据库并定义一些常见属性（例如 id 和 created_at）：</p>
-<pre><code class="language-python"># coding=utf-8
-from datetime import datetime
-from sqlalchemy import create_engine, Column, String, Integer, DateTime
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+<div class="highlight"><pre><span></span><code><span class="c1"># coding=utf-8</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span><span class="p">,</span> <span class="n">Column</span><span class="p">,</span> <span class="n">String</span><span class="p">,</span> <span class="n">Integer</span><span class="p">,</span> <span class="n">DateTime</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.ext.declarative</span> <span class="kn">import</span> <span class="n">declarative_base</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">sessionmaker</span>
 
-db_url = 'localhost:5432'
-db_name = 'online-exam'
-db_user = 'postgres'
-db_password = '0NLIN3-ex4m'
-engine = create_engine(f'postgresql://{db_user}:{db_password}@{db_url}/{db_name}')
-Session = sessionmaker(bind=engine)
+<span class="n">db_url</span> <span class="o">=</span> <span class="s1">&#39;localhost:5432&#39;</span>
+<span class="n">db_name</span> <span class="o">=</span> <span class="s1">&#39;online-exam&#39;</span>
+<span class="n">db_user</span> <span class="o">=</span> <span class="s1">&#39;postgres&#39;</span>
+<span class="n">db_password</span> <span class="o">=</span> <span class="s1">&#39;0NLIN3-ex4m&#39;</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;postgresql://</span><span class="si">{</span><span class="n">db_user</span><span class="si">}</span><span class="s1">:</span><span class="si">{</span><span class="n">db_password</span><span class="si">}</span><span class="s1">@</span><span class="si">{</span><span class="n">db_url</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="n">db_name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">Session</span> <span class="o">=</span> <span class="n">sessionmaker</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
 
-Base = declarative_base()
+<span class="n">Base</span> <span class="o">=</span> <span class="n">declarative_base</span><span class="p">()</span>
 
-class Entity():
-id = Column(Integer, primary_key=True)
-created_at = Column(DateTime)
-updated_at = Column(DateTime)
-last_updated_by = Column(String)
+<span class="k">class</span> <span class="nc">Entity</span><span class="p">():</span>
+<span class="nb">id</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">created_at</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">DateTime</span><span class="p">)</span>
+<span class="n">updated_at</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">DateTime</span><span class="p">)</span>
+<span class="n">last_updated_by</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">String</span><span class="p">)</span>
 
-    def __init__(self, created_by):
-        self.created_at = datetime.now()
-        self.updated_at = datetime.now()
-        self.last_updated_by = created_by
-</code></pre>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">created_by</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">created_at</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">updated_at</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">last_updated_by</span> <span class="o">=</span> <span class="n">created_by</span>
+</code></pre></div>
 <p>然后，在定义 Entity 类之后，您可以创建一个名为 exam.py 的文件来表示您的第一个实体:</p>
-<pre><code class="language-sh">touch src/entities/exam.py
-</code></pre>
+<div class="highlight"><pre><span></span><code>touch src/entities/exam.py
+</code></pre></div>
 <p>On this file, insert the following code:</p>
-<pre><code class="language-python"># coding=utf-8
-from sqlalchemy import Column, String
-from .entity import Entity, Base
-class Exam(Entity, Base):
-**tablename** = 'exams'
+<div class="highlight"><pre><span></span><code><span class="c1"># coding=utf-8</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">Column</span><span class="p">,</span> <span class="n">String</span>
+<span class="kn">from</span> <span class="nn">.entity</span> <span class="kn">import</span> <span class="n">Entity</span><span class="p">,</span> <span class="n">Base</span>
+<span class="k">class</span> <span class="nc">Exam</span><span class="p">(</span><span class="n">Entity</span><span class="p">,</span> <span class="n">Base</span><span class="p">):</span>
+<span class="o">**</span><span class="n">tablename</span><span class="o">**</span> <span class="o">=</span> <span class="s1">&#39;exams&#39;</span>
 
-    title = Column(String)
-    description = Column(String)
+    <span class="n">title</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">String</span><span class="p">)</span>
+    <span class="n">description</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">String</span><span class="p">)</span>
 
-    def __init__(self, title, description, created_by):
-        Entity.__init__(self, created_by)
-        self.title = title
-        self.description = description
-</code></pre>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">created_by</span><span class="p">):</span>
+        <span class="n">Entity</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">created_by</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">title</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">description</span> <span class="o">=</span> <span class="n">description</span>
+</code></pre></div>
 <p>Here, you are defining a class called Exam that inherits from Entity and from Base.
 This entity contains, besides the properties defined by its superclasses, two properties: title and description.
 Besides that, this class also defines that instances of it must be persisted to and retrieved from a table called exams.</p>
 <p>Having the Exam and Entity classes properly defined, you can create a script called main.py in the src directory to test if they are really connecting to the database:</p>
-<pre><code class="language-sh">touch src/main.py
-</code></pre>
+<div class="highlight"><pre><span></span><code>touch src/main.py
+</code></pre></div>
 <p>Inside this script, you can add the following code:</p>
-<pre><code class="language-python"># coding=utf-8
-from .entities.entity import Session, engine, Base
-from .entities.exam import Exam
-# generate database schema
-Base.metadata.create_all(engine)
-# start session
-session = Session()
-# check for existing data
-exams = session.query(Exam).all()
-if len(exams) == 0: # create and persist dummy exam
-python_exam = Exam(&quot;SQLAlchemy Exam&quot;, &quot;Test your knowledge about SQLAlchemy.&quot;, &quot;script&quot;)
-session.add(python_exam)
-session.commit()
-session.close()
-    # reload exams
-    exams = session.query(Exam).all()
-# show existing exams
-print('### Exams:')
-for exam in exams:
-print(f'({exam.id}) {exam.title} - {exam.description}')
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1"># coding=utf-8</span>
+<span class="kn">from</span> <span class="nn">.entities.entity</span> <span class="kn">import</span> <span class="n">Session</span><span class="p">,</span> <span class="n">engine</span><span class="p">,</span> <span class="n">Base</span>
+<span class="kn">from</span> <span class="nn">.entities.exam</span> <span class="kn">import</span> <span class="n">Exam</span>
+<span class="c1"># generate database schema</span>
+<span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span>
+<span class="c1"># start session</span>
+<span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<span class="c1"># check for existing data</span>
+<span class="n">exams</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">Exam</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">exams</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># create and persist dummy exam</span>
+<span class="n">python_exam</span> <span class="o">=</span> <span class="n">Exam</span><span class="p">(</span><span class="s2">&quot;SQLAlchemy Exam&quot;</span><span class="p">,</span> <span class="s2">&quot;Test your knowledge about SQLAlchemy.&quot;</span><span class="p">,</span> <span class="s2">&quot;script&quot;</span><span class="p">)</span>
+<span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">python_exam</span><span class="p">)</span>
+<span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="n">session</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="c1"># reload exams</span>
+    <span class="n">exams</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">Exam</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+<span class="c1"># show existing exams</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;### Exams:&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">exam</span> <span class="ow">in</span> <span class="n">exams</span><span class="p">:</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;(</span><span class="si">{</span><span class="n">exam</span><span class="o">.</span><span class="n">id</span><span class="si">}</span><span class="s1">) </span><span class="si">{</span><span class="n">exam</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s1"> - </span><span class="si">{</span><span class="n">exam</span><span class="o">.</span><span class="n">description</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></div>
 <p>As you can see, the code in this script is quite simple.
 Here is a list that summarizes what it does:</p>
 <p>It starts by importing Session, engine, and Base from the .entities.entity module.
@@ -3140,103 +3706,103 @@ After generating the schema, it queries all instances of Exam.
 Then, if there are no exams on the database, it creates a new one and queries all instances of the Exam class again.
 Lastly, it prints the exams retrieved from the database.
 To run this script, you will have to activate the virtual environment (created by pipenv) then use python to trigger the src.main module:</p>
-<pre><code class="language-sh"># activate virtual environment
+<div class="highlight"><pre><span></span><code><span class="c1"># activate virtual environment</span>
 pipenv shell
-# run main module
+<span class="c1"># run main module</span>
 python -m src.main
-</code></pre>
+</code></pre></div>
 <p>If everything works as expected, your module will create an instance of Exam, persist to the database, and print its details on the terminal.</p>
 <p>SQLAlchemy ORM querying a PostgreSQL database</p>
 <p>By the way, this might be a good time to save your progress:</p>
-<pre><code class="language-sh">git add . &amp;&amp; git commit -m &quot;adding SQLAlchemy and some entities&quot;
-</code></pre>
-<h2 id="flask-http">使用 Flask 管理 HTTP 请求</h2>
+<div class="highlight"><pre><span></span><code>git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;adding SQLAlchemy and some entities&quot;</span>
+</code></pre></div>
+<h2 id="flask-http">使用 Flask 管理 HTTP 请求<a class="headerlink" href="#flask-http" title="Permanent link">&para;</a></h2>
 <p>Now that your app is connected to a database, it's time to transform it into a Flask web application.
 To do so, the first thing you will need is to install Flask.
 Besides Flask, you will also need to install marshmallow to handle serialization and deserialization of JSON objects.
 To install both dependencies, issue the following command in the backend directory:</p>
 <p>pipenv install flask marshmallow
 After that, you will need to update the ./src/entities/exam.py file as follows:</p>
-<pre><code class="language-python"># coding=utf-8
-from marshmallow import Schema, fields
-# ...
-other import statements ...
-# ...
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1"># coding=utf-8</span>
+<span class="kn">from</span> <span class="nn">marshmallow</span> <span class="kn">import</span> <span class="n">Schema</span><span class="p">,</span> <span class="n">fields</span>
+<span class="c1"># ...</span>
+<span class="n">other</span> <span class="kn">import</span> <span class="nn">statements</span> <span class="o">...</span>
+<span class="c1"># ...</span>
+</code></pre></div>
 <p>Exam class definition ...</p>
-<pre><code class="language-python">class ExamSchema(Schema):
-id = fields.Number()
-title = fields.Str()
-description = fields.Str()
-created_at = fields.DateTime()
-updated_at = fields.DateTime()
-last_updated_by = fields.Str()
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">ExamSchema</span><span class="p">(</span><span class="n">Schema</span><span class="p">):</span>
+<span class="nb">id</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Number</span><span class="p">()</span>
+<span class="n">title</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Str</span><span class="p">()</span>
+<span class="n">description</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Str</span><span class="p">()</span>
+<span class="n">created_at</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">DateTime</span><span class="p">()</span>
+<span class="n">updated_at</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">DateTime</span><span class="p">()</span>
+<span class="n">last_updated_by</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Str</span><span class="p">()</span>
+</code></pre></div>
 <p>In the new version of this file, you are using the Schema class of marshmallow to define a new class called ExamSchema.
 You will use this class to transform instances of Exam into JSON objects.</p>
 <p>After defining ExamSchema, you can refactor the ./src/main.py file to expose two endpoints:</p>
-<pre><code class="language-python"># coding=utf-8
-from flask import Flask, jsonify, request
-from .entities.entity import Session, engine, Base
-from .entities.exam import Exam, ExamSchema
-# creating the Flask application
-app = Flask(**name**)
-# if needed, generate database schema
-Base.metadata.create_all(engine)
-@app.route('/exams')
-def get_exams(): # fetching from the database
-session = Session()
-exam_objects = session.query(Exam).all()
+<div class="highlight"><pre><span></span><code><span class="c1"># coding=utf-8</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">jsonify</span><span class="p">,</span> <span class="n">request</span>
+<span class="kn">from</span> <span class="nn">.entities.entity</span> <span class="kn">import</span> <span class="n">Session</span><span class="p">,</span> <span class="n">engine</span><span class="p">,</span> <span class="n">Base</span>
+<span class="kn">from</span> <span class="nn">.entities.exam</span> <span class="kn">import</span> <span class="n">Exam</span><span class="p">,</span> <span class="n">ExamSchema</span>
+<span class="c1"># creating the Flask application</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="o">**</span><span class="n">name</span><span class="o">**</span><span class="p">)</span>
+<span class="c1"># if needed, generate database schema</span>
+<span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span>
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/exams&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">get_exams</span><span class="p">():</span> <span class="c1"># fetching from the database</span>
+<span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<span class="n">exam_objects</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">Exam</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
 
-    # transforming into JSON-serializable objects
-    schema = ExamSchema(many=True)
-    exams = schema.dump(exam_objects)
+    <span class="c1"># transforming into JSON-serializable objects</span>
+    <span class="n">schema</span> <span class="o">=</span> <span class="n">ExamSchema</span><span class="p">(</span><span class="n">many</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">exams</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">exam_objects</span><span class="p">)</span>
 
-    # serializing as JSON
-    session.close()
-    return jsonify(exams.data)
+    <span class="c1"># serializing as JSON</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">exams</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
 
-@app.route('/exams', methods=['POST'])
-def add_exam(): # mount exam object
-posted_exam = ExamSchema(only=('title', 'description'))\
- .load(request.get_json())
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/exams&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;POST&#39;</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">add_exam</span><span class="p">():</span> <span class="c1"># mount exam object</span>
+<span class="n">posted_exam</span> <span class="o">=</span> <span class="n">ExamSchema</span><span class="p">(</span><span class="n">only</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;description&#39;</span><span class="p">))</span>\
+ <span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">get_json</span><span class="p">())</span>
 
-    exam = Exam(**posted_exam.data, created_by=&quot;HTTP post request&quot;)
+    <span class="n">exam</span> <span class="o">=</span> <span class="n">Exam</span><span class="p">(</span><span class="o">**</span><span class="n">posted_exam</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">created_by</span><span class="o">=</span><span class="s2">&quot;HTTP post request&quot;</span><span class="p">)</span>
 
-    # persist exam
-    session = Session()
-    session.add(exam)
-    session.commit()
+    <span class="c1"># persist exam</span>
+    <span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">exam</span><span class="p">)</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
 
-    # return created exam
-    new_exam = ExamSchema().dump(exam).data
-    session.close()
-    return jsonify(new_exam), 201
-</code></pre>
+    <span class="c1"># return created exam</span>
+    <span class="n">new_exam</span> <span class="o">=</span> <span class="n">ExamSchema</span><span class="p">()</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">exam</span><span class="p">)</span><span class="o">.</span><span class="n">data</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">new_exam</span><span class="p">),</span> <span class="mi">201</span>
+</code></pre></div>
 <p>This file now creates a Flask application, based on SQLAlchemy and PostgreSQL, that is capable of accepting POST requests to create new instances of exam and capable of accepting GET requests to serialize these instances as a JSON array.</p>
 <p>Now, to facilitate running this application, you can create a script called bootstrap.sh in the backend directory with the following code:</p>
-<pre><code class="language-sh">#!/bin/bash
-export FLASK_APP=./src/main.py
-source \$(pipenv --venv)/bin/activate
-flask run -h 0.0.0.0
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="nb">export</span> <span class="nv">FLASK_APP</span><span class="o">=</span>./src/main.py
+<span class="nb">source</span> <span class="se">\$</span><span class="o">(</span>pipenv --venv<span class="o">)</span>/bin/activate
+flask run -h <span class="m">0</span>.0.0.0
+</code></pre></div>
 <p>This script does three things:</p>
 <p>it sets ./src/main.py as the value of the FLASK_APP environment variable (this is needed by the last command);
 it activates the virtual environment;
 and it runs flask listening on all interfaces (-h 0.0.0.0).
 Then, to test everything, you can use the following commands:</p>
-<pre><code class="language-sh"># make script executable
+<div class="highlight"><pre><span></span><code><span class="c1"># make script executable</span>
 chmod u+x bootstrap.sh
-# execute script in the background
-./bootstrap.sh &amp;
-# create a new exam
-curl -X POST -H 'Content-Type: application/json' -d '{
-&quot;title&quot;: &quot;TypeScript Advanced Exam&quot;,
-&quot;description&quot;: &quot;Tricky questions about TypeScript.&quot;
-}' http://0.0.0.0:5000/exams
-# retrieve exams
+<span class="c1"># execute script in the background</span>
+./bootstrap.sh <span class="p">&amp;</span>
+<span class="c1"># create a new exam</span>
+curl -X POST -H <span class="s1">&#39;Content-Type: application/json&#39;</span> -d <span class="s1">&#39;{</span>
+<span class="s1">&quot;title&quot;: &quot;TypeScript Advanced Exam&quot;,</span>
+<span class="s1">&quot;description&quot;: &quot;Tricky questions about TypeScript.&quot;</span>
+<span class="s1">}&#39;</span> http://0.0.0.0:5000/exams
+<span class="c1"># retrieve exams</span>
 curl http://0.0.0.0:5000/exams
-</code></pre>
+</code></pre></div>
 <p>The first command on the snippet above transforms the bootstrap.sh script into an executable file.
 After that, it runs this script in the backend so you can keep using the same terminal.
 When the Flask application is up and running, you can use the two curl commands to interact with it.
@@ -3245,170 +3811,170 @@ The first one issues POST requests to create new exams and the second one lists 
 <p>Besides using curl, you can also fetch exams by browsing to http://0.0.0.0:5000/exams.</p>
 <p>You have made some good progress.
 So, it's better to save everything:</p>
-<pre><code class="language-sh">git add . &amp;&amp; git commit -m &quot;integrating Flask RESTful endpoints and SQLAlchemy&quot;
-</code></pre>
-<h2 id="flask-cors">在 Flask 应用程序上处理 CORS</h2>
+<div class="highlight"><pre><span></span><code>git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;integrating Flask RESTful endpoints and SQLAlchemy&quot;</span>
+</code></pre></div>
+<h2 id="flask-cors">在 Flask 应用程序上处理 CORS<a class="headerlink" href="#flask-cors" title="Permanent link">&para;</a></h2>
 <p>As your Flask app will receive requests from a SPA, you will need to allow CORS on it.
 If you don't do so, most browsers will block requests to your API because the backend does not explicitly allow Cross-Origin Resource Sharing (CORS).</p>
 <p>Luckily, there is a Flask module called flask-cors that is easy to configure.
 So, to install this module, issue the following command in your backend directory:</p>
-<pre><code class="language-sh">pipenv install flask-cors
-</code></pre>
+<div class="highlight"><pre><span></span><code>pipenv install flask-cors
+</code></pre></div>
 <p>Then, update the main.py file to take advantage of this module:</p>
-<pre><code class="language-python"># coding=utf-8
-from flask_cors import CORS
-# ...
-other import statements ...
-# creating the Flask application
-app = Flask(**name**)
-CORS(app)
-# ...
-create_all(engine) and endpoint definitions ...
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1"># coding=utf-8</span>
+<span class="kn">from</span> <span class="nn">flask_cors</span> <span class="kn">import</span> <span class="n">CORS</span>
+<span class="c1"># ...</span>
+<span class="n">other</span> <span class="kn">import</span> <span class="nn">statements</span> <span class="o">...</span>
+<span class="c1"># creating the Flask application</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="o">**</span><span class="n">name</span><span class="o">**</span><span class="p">)</span>
+<span class="n">CORS</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+<span class="c1"># ...</span>
+<span class="n">create_all</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span> <span class="ow">and</span> <span class="n">endpoint</span> <span class="n">definitions</span> <span class="o">...</span>
+</code></pre></div>
 <p>Without any further configuration, flask-cors allows CORS for all domains on all routes.
 During the development process, this configuration will be enough.
 However, in the future, you will probably want to be more restrictive.
 When the day comes, check the official documentation of the flask-cors module to learn how to tweak these settings.</p>
 <p>Now, before switching to Angular, you can save your progress and leave your Flask application up and running:</p>
-<pre><code class="language-sh"># commit your progress
-git add . &amp;&amp; git commit -m &quot;enabling CORS&quot;
-# run the Flask app in the background
-./bootstrap.sh &amp;
-</code></pre>
-<h2 id="angular">引导 Angular 应用程序</h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># commit your progress</span>
+git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;enabling CORS&quot;</span>
+<span class="c1"># run the Flask app in the background</span>
+./bootstrap.sh <span class="p">&amp;</span>
+</code></pre></div>
+<h2 id="angular">引导 Angular 应用程序<a class="headerlink" href="#angular" title="Permanent link">&para;</a></h2>
 <p>To create your Angular application, you will use the ng tool that Angular CLI made available.
 So, move back to the project root directory and issue ng new frontend.
 This will create the basic structure of an Angular app.
 The following snippet summarizes the commands to create your app and to commit it untouched to your Git repository:</p>
-<pre><code class="language-sh"># change working directory to project root
-cd ..
-# run @angular/cli to bootstrap the Angular app
+<div class="highlight"><pre><span></span><code><span class="c1"># change working directory to project root</span>
+<span class="nb">cd</span> ..
+<span class="c1"># run @angular/cli to bootstrap the Angular app</span>
 ng new frontend
-# move working directory to your frontend app
-cd frontend
-# commit template Angular project
-git add . &amp;&amp; git commit -m &quot;bootstrapping an Angular project&quot;
-</code></pre>
-<h2 id="angular-flask-endpoints">使用 Angular 消耗 Flask Endpoints</h2>
+<span class="c1"># move working directory to your frontend app</span>
+<span class="nb">cd</span> frontend
+<span class="c1"># commit template Angular project</span>
+git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;bootstrapping an Angular project&quot;</span>
+</code></pre></div>
+<h2 id="angular-flask-endpoints">使用 Angular 消耗 Flask Endpoints<a class="headerlink" href="#angular-flask-endpoints" title="Permanent link">&para;</a></h2>
 <p>After creating your Angular app, the next thing you will need is to create a file called env.ts inside the ./frontend/src/app directory with the following code:</p>
-<pre><code class="language-sh">export const API_URL = 'http://localhost:5000';
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> const <span class="nv">API_URL</span> <span class="o">=</span> <span class="s1">&#39;http://localhost:5000&#39;</span><span class="p">;</span>
+</code></pre></div>
 <p>For now, this TypeScript module simply exports a single constant (API_URL) that references your Flask backend application running locally.
 In the third part of this series, you will enhance this module to define different API_URL values depending on the environment.</p>
 <p>Now, you can create a new directory called exams inside ./frontend/src/app to hold files related to this entity.
 In this directory, you will create two files: exam.model.ts and exams-api.service.ts.
 The first file (exam.model.ts) will have a TypeScript class to represent exams:</p>
-<pre><code class="language-js">export class Exam {
-constructor(
-public title: string,
-public description: string,
-public \_id?: number,
-public updatedAt?: Date,
-public createdAt?: Date,
-public lastUpdatedBy?: string,
-) { }
-}
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">Exam</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="kr">constructor</span><span class="p">(</span><span class="w"></span>
+<span class="kr">public</span><span class="w"> </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="p">,</span><span class="w"></span>
+<span class="kr">public</span><span class="w"> </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="p">,</span><span class="w"></span>
+<span class="kr">public</span><span class="w"> </span><span class="err">\</span><span class="nx">_id</span><span class="o">?:</span><span class="w"> </span><span class="nx">number</span><span class="p">,</span><span class="w"></span>
+<span class="kr">public</span><span class="w"> </span><span class="nx">updatedAt</span><span class="o">?:</span><span class="w"> </span><span class="nb">Date</span><span class="p">,</span><span class="w"></span>
+<span class="kr">public</span><span class="w"> </span><span class="nx">createdAt</span><span class="o">?:</span><span class="w"> </span><span class="nb">Date</span><span class="p">,</span><span class="w"></span>
+<span class="kr">public</span><span class="w"> </span><span class="nx">lastUpdatedBy</span><span class="o">?:</span><span class="w"> </span><span class="nx">string</span><span class="p">,</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>The second file, exams-api.service.ts, will create a service that uses HttpClient to fetch exams from your Flask backend application:</p>
-<pre><code class="language-js">import {Injectable} from '@angular/core';
-import {HttpClient, HttpErrorResponse} from '@angular/common/http';
-import {Observable} from 'rxjs/Observable';
-import 'rxjs/add/operator/catch';
-import {API_URL} from '../env';
-import {Exam} from './exam.model';
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">Injectable</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">HttpClient</span><span class="p">,</span><span class="w"> </span><span class="nx">HttpErrorResponse</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/common/http&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">Observable</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;rxjs/Observable&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="s1">&#39;rxjs/add/operator/catch&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">API_URL</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;../env&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">Exam</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./exam.model&#39;</span><span class="p">;</span><span class="w"></span>
 
-@Injectable()
-export class ExamsApiService {
+<span class="err">@</span><span class="nx">Injectable</span><span class="p">()</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ExamsApiService</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 
-constructor(private http: HttpClient) {
-}
+<span class="kr">constructor</span><span class="p">(</span><span class="kr">private</span><span class="w"> </span><span class="nx">http</span><span class="o">:</span><span class="w"> </span><span class="nx">HttpClient</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-private static \_handleError(err: HttpErrorResponse | any) {
-return Observable.throw(err.message || 'Error: Unable to complete request.');
-}
+<span class="kr">private</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="err">\</span><span class="nx">_handleError</span><span class="p">(</span><span class="nx">err</span><span class="o">:</span><span class="w"> </span><span class="nx">HttpErrorResponse</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">any</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="k">return</span><span class="w"> </span><span class="nx">Observable</span><span class="p">.</span><span class="k">throw</span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">message</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;Error: Unable to complete request.&#39;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-// GET list of public, future events
-getExams(): Observable&lt;Exam[]&gt; {
-return this.http
-.get(`${API_URL}/exams`)
-.catch(ExamsApiService.\_handleError);
-}
-}
-</code></pre>
+<span class="c1">// GET list of public, future events</span><span class="w"></span>
+<span class="nx">getExams</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">Exam</span><span class="p">[]</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">http</span><span class="w"></span>
+<span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">API_URL</span><span class="si">}</span><span class="sb">/exams`</span><span class="p">)</span><span class="w"></span>
+<span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">ExamsApiService</span><span class="p">.</span><span class="err">\</span><span class="nx">_handleError</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>As this service depends on HttpClient, you will need to import HttpClientModule from Angular in your AppModule declaration.
 Besides that, you will have to register ExamsApiService as a provider.
 So, open the ./frontend/src/app/app.module.ts file and replace its contents with this:</p>
-<pre><code class="language-js">import { BrowserModule } from &quot;@angular/platform-browser&quot;;
-import { NgModule } from &quot;@angular/core&quot;;
-import { HttpClientModule } from &quot;@angular/common/http&quot;;
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">BrowserModule</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@angular/platform-browser&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">NgModule</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@angular/core&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">HttpClientModule</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@angular/common/http&quot;</span><span class="p">;</span><span class="w"></span>
 
-import { AppComponent } from &quot;./app.component&quot;;
-import { ExamsApiService } from &quot;./exams/exams-api.service&quot;;
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">AppComponent</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./app.component&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ExamsApiService</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./exams/exams-api.service&quot;</span><span class="p">;</span><span class="w"></span>
 
-@NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, HttpClientModule],
-  providers: [ExamsApiService],
-  bootstrap: [AppComponent]
-})
-export class AppModule {}
-</code></pre>
+<span class="err">@</span><span class="nx">NgModule</span><span class="p">({</span><span class="w"></span>
+<span class="w">  </span><span class="nx">declarations</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">AppComponent</span><span class="p">],</span><span class="w"></span>
+<span class="w">  </span><span class="nx">imports</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">BrowserModule</span><span class="p">,</span><span class="w"> </span><span class="nx">HttpClientModule</span><span class="p">],</span><span class="w"></span>
+<span class="w">  </span><span class="nx">providers</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">ExamsApiService</span><span class="p">],</span><span class="w"></span>
+<span class="w">  </span><span class="nx">bootstrap</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">AppComponent</span><span class="p">]</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">AppModule</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
+</code></pre></div>
 <p>Now, you will have to update the ./frontend/src/app/app.component.ts file to use your new service to fetch data from your Flask app:</p>
-<pre><code class="language-js">import {Component, OnInit, OnDestroy} from '@angular/core';
-import {Subscription} from 'rxjs/Subscription';
-import {ExamsApiService} from './exams/exams-api.service';
-import {Exam} from './exams/exam.model';
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">OnInit</span><span class="p">,</span><span class="w"> </span><span class="nx">OnDestroy</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">Subscription</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;rxjs/Subscription&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">ExamsApiService</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./exams/exams-api.service&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">Exam</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./exams/exam.model&#39;</span><span class="p">;</span><span class="w"></span>
 
-@Component({
-selector: 'app-root',
-templateUrl: './app.component.html',
-styleUrls: ['./app.component.css']
-})
-export class AppComponent implements OnInit, OnDestroy {
-title = 'app';
-examsListSubs: Subscription;
-examsList: Exam[];
+<span class="err">@</span><span class="nx">Component</span><span class="p">({</span><span class="w"></span>
+<span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;app-root&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="nx">templateUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./app.component.html&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="nx">styleUrls</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;./app.component.css&#39;</span><span class="p">]</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">AppComponent</span><span class="w"> </span><span class="kr">implements</span><span class="w"> </span><span class="nx">OnInit</span><span class="p">,</span><span class="w"> </span><span class="nx">OnDestroy</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="nx">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;app&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="nx">examsListSubs</span><span class="o">:</span><span class="w"> </span><span class="nx">Subscription</span><span class="p">;</span><span class="w"></span>
+<span class="nx">examsList</span><span class="o">:</span><span class="w"> </span><span class="nx">Exam</span><span class="p">[];</span><span class="w"></span>
 
-constructor(private examsApi: ExamsApiService) {
-}
+<span class="kr">constructor</span><span class="p">(</span><span class="kr">private</span><span class="w"> </span><span class="nx">examsApi</span><span class="o">:</span><span class="w"> </span><span class="nx">ExamsApiService</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-ngOnInit() {
-this.examsListSubs = this.examsApi
-.getExams()
-.subscribe(res =&gt; {
-this.examsList = res;
-},
-console.error
-);
-}
+<span class="nx">ngOnInit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="k">this</span><span class="p">.</span><span class="nx">examsListSubs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">examsApi</span><span class="w"></span>
+<span class="p">.</span><span class="nx">getExams</span><span class="p">()</span><span class="w"></span>
+<span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">res</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="k">this</span><span class="p">.</span><span class="nx">examsList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">res</span><span class="p">;</span><span class="w"></span>
+<span class="p">},</span><span class="w"></span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="w"></span>
+<span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-ngOnDestroy() {
-this.examsListSubs.unsubscribe();
-}
-}
-</code></pre>
+<span class="nx">ngOnDestroy</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="k">this</span><span class="p">.</span><span class="nx">examsListSubs</span><span class="p">.</span><span class="nx">unsubscribe</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>Lastly, you will have to update its template (app.component.html) to show the exams fetched:</p>
-<pre><code class="language-html">&lt;div style=&quot;text-align:center&quot;&gt;
-  &lt;h1&gt;Exams&lt;/h1&gt;
-&lt;/div&gt;
-&lt;h2&gt;Here are the exams created so far:&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li *ngFor=&quot;let exam of examsList&quot;&gt;
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;text-align:center&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Exams<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Here are the exams created so far:<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&quot;let exam of examsList&quot;</span><span class="p">&gt;</span>
     {{exam.title}}
-  &lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
+  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></div>
 <p>With all these changes in place, you can run your Angular application (run ng serve on the frontend directory) to check if everything is working as expected.
 After Angular finishes compiling your app, you can browse to http://localhost:4200.
 On this URL, you will see a page similar to this:</p>
 <p>使用 Angular 从 Flask 应用程序中获取数据</p>
 <p>这包含了系列的第一部分。
 因此，在继续下一部分之前，不要忘记保存进度:</p>
-<pre><code class="language-sh">git add .
-git commit -m &quot;integrating Flask and Angular&quot;
-</code></pre>
+<div class="highlight"><pre><span></span><code>git add .
+git commit -m <span class="s2">&quot;integrating Flask and Angular&quot;</span>
+</code></pre></div>
 <p>"使用 Angular 和 Flask 开发 Web 应用程序非常简单！"</p>
-<h2 id="_5">结论和后续步骤</h2>
+<h2 id="_5">结论和后续步骤<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>在本系列的第一部分中，您使用 pipenv 来引导 Flask 后端 API。
 之后，您使用 SQLAlchemy ORM 将 Flask 应用程序与数据库集成。
 然后，您安装并运行了 Angular CLI 以创建新的 Angular SPA。
@@ -3416,11 +3982,6 @@ git commit -m &quot;integrating Flask and Angular&quot;
 这些功能共同为创建依赖于 Flask 和 Angular 的应用程序铺平了道路，以提供现代用户体验。</p>
 <p>在下一篇文章中，您将了解现代 Web 应用程序如何管理身份，您将增强后端和前端应用程序以包含更多功能。
 敬请关注！</p>
-                
-              
-              
-                
-
 
               
             </article>
@@ -3429,12 +3990,12 @@ git commit -m &quot;integrating Flask and Angular&quot;
         
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../mfap0/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../mfap0/" class="md-footer__link md-footer__link--prev" aria-label="Previous: [Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -3449,7 +4010,8 @@ git commit -m &quot;integrating Flask and Angular&quot;
         </a>
       
       
-        <a href="../mfap2/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="../mfap2/" class="md-footer__link md-footer__link--next" aria-label="Next: 使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -3467,18 +4029,19 @@ git commit -m &quot;integrating Flask and Angular&quot;
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            版权 &copy; 2017 - 2021 wohugb.github.io
-          </div>
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
-      </div>
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      版权 &copy; 2017 - 2022 wohugb.github.io
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
     </div>
   </div>
@@ -3488,10 +4051,10 @@ git commit -m &quot;integrating Flask and Angular&quot;
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.7353b375.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e87a5f81.min.js"></script>
       
     
   </body>
