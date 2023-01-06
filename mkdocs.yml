@@ -1,56 +1,128 @@
 site_name: 大鼻子
 site_description: 大鼻子的日常学习记录
 site_author: Nosy
-copyright: "版权 &copy; 2017 - 2022 wohugb.github.io"
+copyright: "版权 &copy; 2017 - 2023 BandCap"
+dev_addr: 127.0.0.1:8888
 
+site_url: https://wohugb.github.io
 repo_name: wohugb/wohugb.github.com
 repo_url: https://github.com/wohugb/wohugb.github.com
-edit_uri: ""
+edit_uri: "edit/master/source"
 docs_dir: source
 site_dir: docs
 
 theme:
   name: material
-
-#   include_search_page: false
-#   search_index_only: true
-
-#   language: zh
-#   feature:
-#     tabs: true
-#   palette:
-#     primary: indigo
-#     accent: indigo
-#   font:
-#     text: Roboto
-#     code: Roboto Mono
-#   favicon: assets/images/favicon.png
-#   logo:
-#     icon: "\uE80C"
-#   extra_css: [assets/stylesheets/extra.css]
-# extra:
-#   search:
-#     language: "jp"
-#   social:
-#     - type: globe
-#       link: http://wohugb.github.io
-#     - type: github-alt
-#       link: https://github.com/wohugb
-#     - type: twitter
-#       link: https://twitter.com/wohugb
-#     - type: linkedin
-#       link: https://linkedin.com/in/wohugb
-#     - icon: fontawesome/brands/github-alt
-#       link: https://github.com/squidfunk
+  logo: images/icon.jpeg
+  # favicon: assets/favicons/favicon.ico
+  language: zh
+  # custom_dir: overrides
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.top
+    - navigation.indexes # 父菜单索引
+    # - navigation.sections # 全部展开
+    # - navigation.expand # 打开收缩
+    - content.code.annotate
+    - navigation.top # 返回头部
 
 markdown_extensions:
+  - abbr
   - admonition
-  - codehilite:
-      linenums: false
+  - attr_list
+  - def_list
   - footnotes
-  - meta
+  - md_in_html
   - toc:
       permalink: true
-  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.magiclink
 
+plugins:
+  search:
+    # Spaces, dashes, periods and forward-slash (so serving.knative.dev/blibble can be searched as blibble).
+    separator: '[\/\s\-\.]+'
+  # macros:
+  #   module_name: hack/macros
+  #   include_dir: source/snippets
+  exclude:
+    glob:
+      # Exclude files that contain hugo specific shortcodes
+      # (either the include shortcode or not-converted-yet tabs).
+      - snippets/*
+      - smoketest.md
+  awesome-pages:
+    filename: ".index"
+    collapse_single_pages: true
+    strict: false
+  blogging:
+    # locale: zh-CN
+    # {{ blog_content }}
+    dirs: # The directories to be included
+      - blog
+    features:
+      tags: {}
+    # {{ blog_content review }}
+    categories:
+      - name: review
+        dirs:
+          - review
+  tags:
+    tags_file: tags.md
+
+extra:
+  # social:
+  #   - icon: fontawesome/brands/twitter
+  #     link: https://twitter.com/kammysliwiec
+  #     name: Kamil Mysliwiec Twitter
+  #   - icon: fontawesome/brands/github
+  #     link: https://github.com/kamilmysliwiec
+  #     name: Kamil Mysliwiec Github
+  #   - icon: fontawesome/brands/facebook
+  #     link: https://www.facebook.com/kammysliwiec/
+  #     name: Kamil Mysliwiec Facebook
+  #   - icon: fontawesome/brands/blogger
+  #     link: https://kamilmysliwiec.com
+  #     name: Kamil Mysliwiec Blog | Full-Stack Software Engineer
+  version_warning: !!python/object/apply:os.getenv ["VERSION_WARNING"]
+  knative_version: !!python/object/apply:os.getenv ["KNATIVE_VERSION"]
+  branch: !!python/object/apply:os.getenv ["SAMPLES_BRANCH", "main"]
+  # analytics:
+  #   provider: google
+  #   property: G-YRMNFYE32R
+  # version:
+  #   provider: mike
+
+INHERIT: config/nav.yml

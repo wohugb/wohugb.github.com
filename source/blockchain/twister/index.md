@@ -6,7 +6,7 @@ Bitcoin Copyright (c) 2009 - 2013 Bitcoin Core developers
 libtorrent Copyright (c) 2003 - 2007, Arvid Norberg
 twister Copyright (c) 2013 - 2018 Miguel Freitas
 
-## 什么twister?
+## 什么 twister?
 
 twister is an experimental peer-to-peer microblogging software.
 
@@ -82,7 +82,7 @@ make twister network incompatible. This avoids the so called
 - Torrent/DHT query changed from "y" to "z"
 - Torrent/DHT answer changed from "a" to "x"
 
-## 快速JSON命令示例
+## 快速 JSON 命令示例
 
 In order to use JSON-RPC you must set user/password/port by either command
 line or configuration file. This is the same as in [bitcoin](https://en.bitcoin.it/wiki/Running_Bitcoin)
@@ -125,7 +125,7 @@ To send a new (private) direct message:
 Notes for `newdirectmsg`:
 
 - The post number (2) follows the same numbering as `newpostmsg`, make
-sure they don't clash.
+  sure they don't clash.
 
 - The recipient must be your follower.
 
@@ -136,12 +136,12 @@ To get the last 10 direct messages to/from remote user:
 Notes for `getdirectmsgs`:
 
 - These direct message IDs (max_id, since_id etc) are not related to post
-numbers. The numbering is local and specific to this thread.
+  numbers. The numbering is local and specific to this thread.
 
 - This function will return messages which have been successfully decrypted
-upon receiving or that have been sent by this same computer. A different
-computer, sharing the same account, will see the same received, but not the
-same sent messages.
+  upon receiving or that have been sent by this same computer. A different
+  computer, sharing the same account, will see the same received, but not the
+  same sent messages.
 
 To setup your profile:
 
@@ -158,7 +158,7 @@ To obtain the full list of commands
 
     ./twisterd help
 
-## 运行web接口
+## 运行 web 接口
 
 First you'll need to grab the latest version of the web UI code and put it
 in your twister data dir:
@@ -188,11 +188,3 @@ But be careful, it is in beta stage.
 
     cd ~/.twister/
     git clone https://github.com/iHedgehog/twister-calm.git ./html
-
-## 贡献
-
-See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## 许可证
-
-See [COPYING](COPYING)

@@ -1,4 +1,4 @@
-# 大鼻子的巴别塔
+# 巴别塔
 
 [互联网精神的百度词条](https://baike.baidu.com/item/%E4%BA%92%E8%81%94%E7%BD%91%E7%B2%BE%E7%A5%9E)是这么定义的，`“互联网精神”即：开放、平等、协作、快速、分享 。它是互联网生命力之所在，也是新经济能否发展的命脉，是其发展的关键。`,可纵观现在的互联网现状，开放和平等将逐渐失去意义，而封闭集权将逐渐盛行，如果这些越来越强大，那所谓的互联网还是互联网吗？
 
@@ -23,10 +23,10 @@
     - 为了确保人类未来 必须放弃一些自由
     - 机器人会保证人类永世长存
 
-- [MkDocs 文档](https://wohugb.github.io/mkdocs/)
+- [MkDocs 文档](https://wdk-docs.github.io/mkdocs/)
 - [MkDocs 物料主题](https://github.com/wohugb/mkdocs-material)
-- [Python Markdown 扩展](https://wohugb.github.io/pymdown-extensions)
-- [Mongoose 文档](https://wohugb.github.io/mongoose-docs)
+- [Python Markdown 扩展](https://wdk-docs.github.io/pymdown-extensions)
+- [Mongoose 文档](https://wdk-docs.github.io/mongoose-docs)
 
 - [django-docs-zh](https://django-docs-zh.readthedocs.org)
 - [Git 中文手册](https://git-reference.readthedocs.org)
