@@ -1,0 +1,4520 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="大鼻子的日常学习记录">
+      
+      
+        <meta name="author" content="Nosy">
+      
+      
+        <link rel="canonical" href="https://wohugb.github.io/nodejs/modules/node-rsa/readme/">
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Node-RSA - 大鼻子</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#node-rsa" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../../.." title="大鼻子" class="md-header__button md-logo" aria-label="大鼻子" data-md-component="logo">
+      
+  <img src="../../../../images/icon.jpeg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            大鼻子
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Node-RSA
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wohugb/wohugb.github.com" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wohugb/wohugb.github.com
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        首页
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../tcm/" class="md-tabs__link">
+        中医
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../dev/" class="md-tabs__link">
+        开发
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../langs/" class="md-tabs__link md-tabs__link--active">
+        语言
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../ai/" class="md-tabs__link">
+        智能
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../blockchain/" class="md-tabs__link">
+        区块链
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../education/kindergarten/" class="md-tabs__link">
+        教育
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../fitness/" class="md-tabs__link">
+        运动
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../apartment/" class="md-tabs__link">
+        公寓
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../pin/" class="md-tabs__link">
+        拼
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="大鼻子" class="md-nav__button md-logo" aria-label="大鼻子" data-md-component="logo">
+      
+  <img src="../../../../images/icon.jpeg" alt="logo">
+
+    </a>
+    大鼻子
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/wohugb/wohugb.github.com" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wohugb/wohugb.github.com
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../..">首页</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="首页" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          首页
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../awesome/" class="md-nav__link">
+        Awesome
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../github/" class="md-nav__link">
+        GitHub 集合
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tags/" class="md-nav__link">
+        tags
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../tcm/">中医</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="中医" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          中医
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../dev/">开发</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="开发" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          开发
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../wechat/">wechat</a>
+          
+            <label for="__nav_3_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="wechat" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          wechat
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../wechat/oa/" class="md-nav__link">
+        oa
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../wechat/weapp-awesome/" class="md-nav__link">
+        微信小程序开发资源汇总
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../wechat/open/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../wechat/open/app/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../wechat/open/code/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../wechat/open/d3f/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../wechat/open/download/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../wechat/open/download/android/" class="md-nav__link">
+        Android 资源下载
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../wechat/open/download/design/" class="md-nav__link">
+        设计资源下载
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../wechat/open/download/ios/" class="md-nav__link">
+        iOS 资源下载
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../wechat/open/download/wp8/" class="md-nav__link">
+        WP8 资源下载
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../aliyun/">aliyun</a>
+          
+            <label for="__nav_3_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="aliyun" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          aliyun
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../aliyun/video/" class="md-nav__link">
+        阿里云点播
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../tools/">开发工具</a>
+          
+            <label for="__nav_3_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="开发工具" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          开发工具
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tools/git/faq/" class="md-nav__link">
+        faq
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tools/eslint/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tools/vscode/" class="md-nav__link">
+        vscode 文档
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tools/vscode/prettier/" class="md-nav__link">
+        Prettier
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../langs/">语言</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="语言" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          语言
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../">Node.js</a>
+          
+            <label for="__nav_4_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Node.js" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Node.js
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../awesome/" class="md-nav__link">
+        Awesome Node.js
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../express/" class="md-nav__link">
+        Express
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../koa/" class="md-nav__link">
+        Koa
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mongoose/" class="md-nav__link">
+        Mongoose
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nodejs/" class="md-nav__link">
+        Nodejs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pm2/" class="md-nav__link">
+        Pm2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gm/" class="md-nav__link">
+        GM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jsbn/" class="md-nav__link">
+        JavaScript中的RSA和ECC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Node-RSA
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Node-RSA
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    例
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    安装
+  </a>
+  
+    <nav class="md-nav" aria-label="安装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    测试
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    工作环境
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    用法
+  </a>
+  
+    <nav class="md-nav" aria-label="用法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    创建实例
+  </a>
+  
+    <nav class="md-nav" aria-label="创建实例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    选项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    高级选项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    创建 "空" 键
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512" class="md-nav__link">
+    生成新的512位长度密钥
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pem" class="md-nav__link">
+    从PEM字符串加载密钥
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    导入/导出密钥
+  </a>
+  
+    <nav class="md-nav" aria-label="导入/导出密钥">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    格式字符串语法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    属性
+  </a>
+  
+    <nav class="md-nav" aria-label="属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    键测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    键信息
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    加密/解密
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    签名/验证
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    特约
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    更新日志
+  </a>
+  
+    <nav class="md-nav" aria-label="更新日志">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#100" class="md-nav__link">
+    1.0.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#042" class="md-nav__link">
+    0.4.2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#041" class="md-nav__link">
+    0.4.1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#040" class="md-nav__link">
+    0.4.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#033" class="md-nav__link">
+    0.3.3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#032" class="md-nav__link">
+    0.3.2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#030" class="md-nav__link">
+    0.3.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0230" class="md-nav__link">
+    0.2.30
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0224" class="md-nav__link">
+    0.2.24
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0222" class="md-nav__link">
+    0.2.22
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0220" class="md-nav__link">
+    0.2.20
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0210" class="md-nav__link">
+    0.2.10
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#020" class="md-nav__link">
+    0.2.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0154" class="md-nav__link">
+    0.1.54
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0152" class="md-nav__link">
+    0.1.52
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0150" class="md-nav__link">
+    0.1.50
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0140" class="md-nav__link">
+    0.1.40
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0130" class="md-nav__link">
+    0.1.30
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    许可
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rsajsjsbnjs" class="md-nav__link">
+    用于rsa.js和jsbn.js中代码的许可
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qrcode/api/" class="md-nav__link">
+        Api
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qrcode/readme/" class="md-nav__link">
+        node-qrcode
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3">
+          前端
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="前端" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          前端
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_1" type="checkbox" id="__nav_4_3_1" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../react/">React</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="React" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          React
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_2" type="checkbox" id="__nav_4_3_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../angular/">Angular</a>
+          
+            <label for="__nav_4_3_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Angular" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Angular
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/angular/" class="md-nav__link">
+        Angular
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/awesome/" class="md-nav__link">
+        Awesome Angular
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/babel/" class="md-nav__link">
+        Babel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/bit/" class="md-nav__link">
+        Bit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/cli/" class="md-nav__link">
+        Cli
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/dart/" class="md-nav__link">
+        Dart
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/es5/" class="md-nav__link">
+        Es5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/haxe/" class="md-nav__link">
+        Haxe
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/ionic/" class="md-nav__link">
+        Ionic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/meteor/" class="md-nav__link">
+        Meteor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/migrate/" class="md-nav__link">
+        如何从Angular4迁移到5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/migrate6/" class="md-nav__link">
+        Migrate6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/nativescript/" class="md-nav__link">
+        Nativescript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/ngrx/" class="md-nav__link">
+        Ngrx
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/ngx-markdown/" class="md-nav__link">
+        ngx-markdown
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/react/" class="md-nav__link">
+        React
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/scala/" class="md-nav__link">
+        Scala
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/security/" class="md-nav__link">
+        Security
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/sockets/" class="md-nav__link">
+        使用TypeScript的实时应用程序：集成Web套接字，Node和Angular
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/starter/" class="md-nav__link">
+        Angular 的 webpack 启动器
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/traceur/" class="md-nav__link">
+        Traceur
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/typescript/" class="md-nav__link">
+        Typescript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/universal/" class="md-nav__link">
+        Universal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../angular/features/Test/" class="md-nav__link">
+        Test
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_3" type="checkbox" id="__nav_4_3_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../vue/">Vue</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Vue" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Vue
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_4" type="checkbox" id="__nav_4_3_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../jQuery/">jQuery</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="jQuery" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          jQuery
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../python/django/">python</a>
+          
+            <label for="__nav_4_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="python" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/PyMongo/" class="md-nav__link">
+        关于 PyMongo 发布的一些注释
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/awesome/" class="md-nav__link">
+        Awesome Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/framework/" class="md-nav__link">
+        2018 年排名前 11 的 Python 框架
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/python/" class="md-nav__link">
+        Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/Anaconda/QuickStart/" class="md-nav__link">
+        Anaconda 入门使用指南
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/FullStack/mfap0/" class="md-nav__link">
+        [Angular + Python + Flask — Full stack demo](https://medium.com/@balramchavan/angular-python-flask-full-stack-demo-27192b8de1a3)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/FullStack/mfap1/" class="md-nav__link">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 1 部分
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/FullStack/mfap2/" class="md-nav__link">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 2 部分
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/FullStack/mfap3/" class="md-nav__link">
+        使用 Python，Flask 和 Angular 构建现代 Web 应用程序 - 第 3 部分
+      </a>
+    </li>
+  
+
+            
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/django/awesome/" class="md-nav__link">
+        <a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/flask/" class="md-nav__link">
+        flask 文档
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/flask/awesome/" class="md-nav__link">
+        Awesome Flask [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/pip/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../langs/go/">Go</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Go" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          Go
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../ai/">智能</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="智能" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          智能
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ai/2017/" class="md-nav__link">
+        2017 开源机器学习项目
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ai/2018/" class="md-nav__link">
+        过去一年 30 个惊人的 Python 项目 (v.2018)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ai/PhosphorJS/" class="md-nav__link">
+        PhosphorJS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ai/awesome/" class="md-nav__link">
+        深度学习赞表
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ai/deeplearning/" class="md-nav__link">
+        Deeplearning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ai/jupyterlab/" class="md-nav__link">
+        jupyterlab
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ai/nlp/" class="md-nav__link">
+        自然语言处理
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ai/top/" class="md-nav__link">
+        TOP25
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ai/bot/" class="md-nav__link">
+        机器人
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ai/bot/arduino/" class="md-nav__link">
+        Arduino
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ai/bot/framework/" class="md-nav__link">
+        机器人开发框架项目汇总
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ai/bot/ros/" class="md-nav__link">
+        ROS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ai/iot/InternetOfThings/" class="md-nav__link">
+        物联网
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../blockchain/">区块链</a>
+          
+            <label for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="区块链" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          区块链
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/altcoins/" class="md-nav__link">
+        山寨币
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/awesome/" class="md-nav__link">
+        Awesome Blockchain
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/term/" class="md-nav__link">
+        术语表
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/tree/" class="md-nav__link">
+        区块链技术树
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/bitcoin/" class="md-nav__link">
+        比特币
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/ethereum/ProofOfStake/" class="md-nav__link">
+        Proof of Stake - 权益证明机制
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/ethereum/development/" class="md-nav__link">
+        以太坊开发计划
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/ethereum/network-status/" class="md-nav__link">
+        网络状态监控
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/ethereum/serpent/" class="md-nav__link">
+        Serpent - 大蛇 编写以太坊合约高级编程语言
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/ethereum/term/" class="md-nav__link">
+        以太坊术语表
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/ethereum/whitepaper/" class="md-nav__link">
+        以太坊（Ethereum ）:下一代智能合约和去中心化应用平台
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/ipfs/" class="md-nav__link">
+        星际文件系统（InterPlanetary File System，缩写IPFS）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/twister/" class="md-nav__link">
+        twister - p2p 微博客
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/twister/build-osx/" class="md-nav__link">
+        OS X 构建说明和注释
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/twister/build-unix/" class="md-nav__link">
+        Build unix
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/twister/building-on-ubuntu-debian/" class="md-nav__link">
+        Ubuntu / Debian building instructions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blockchain/twister/compiling-for-windows/" class="md-nav__link">
+        Compiling for windows
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          教育
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="教育" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          教育
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../education/kindergarten/" class="md-nav__link">
+        幼儿园
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../education/primary-school/" class="md-nav__link">
+        小学
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../education/junior-middle-school/" class="md-nav__link">
+        初中
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../education/senior-middle-school/" class="md-nav__link">
+        高中
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../education/university/" class="md-nav__link">
+        大学
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../fitness/">运动</a>
+          
+            <label for="__nav_8">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="运动" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          运动
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../fitness/walk/" class="md-nav__link">
+        徒步健身
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../fitness/running/" class="md-nav__link">
+        跑步
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../fitness/bicycle/" class="md-nav__link">
+        变速自行车
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../fitness/card/" class="md-nav__link">
+        自动驾驶
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../apartment/">公寓</a>
+          
+            <label for="__nav_9">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="公寓" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          公寓
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../apartment/1zu/" class="md-nav__link">
+        相寓
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../apartment/boonself/" class="md-nav__link">
+        邦舍公寓
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../apartment/danke/" class="md-nav__link">
+        蛋壳公寓
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../apartment/guanyu/" class="md-nav__link">
+        冠寓
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../apartment/inboyu/" class="md-nav__link">
+        泊寓
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../apartment/youranke/" class="md-nav__link">
+        悠然客公寓
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../apartment/ziroom/" class="md-nav__link">
+        自如寓
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../pin/">拼</a>
+          
+            <label for="__nav_10">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="拼" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          拼
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../pin/cohesion/" class="md-nav__link">
+        Cohesion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../pin/group/" class="md-nav__link">
+        Group
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../pin/ladder/" class="md-nav__link">
+        Ladder
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../pin/sku-spu/" class="md-nav__link">
+        sku spu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../pin/fresh/education/" class="md-nav__link">
+        Education
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../pin/fresh/platform/" class="md-nav__link">
+        Platform
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../pin/fresh/repository/" class="md-nav__link">
+        Repository
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    例
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    安装
+  </a>
+  
+    <nav class="md-nav" aria-label="安装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    测试
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    工作环境
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    用法
+  </a>
+  
+    <nav class="md-nav" aria-label="用法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    创建实例
+  </a>
+  
+    <nav class="md-nav" aria-label="创建实例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    选项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    高级选项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    创建 "空" 键
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512" class="md-nav__link">
+    生成新的512位长度密钥
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pem" class="md-nav__link">
+    从PEM字符串加载密钥
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    导入/导出密钥
+  </a>
+  
+    <nav class="md-nav" aria-label="导入/导出密钥">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    格式字符串语法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    属性
+  </a>
+  
+    <nav class="md-nav" aria-label="属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    键测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    键信息
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    加密/解密
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    签名/验证
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    特约
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    更新日志
+  </a>
+  
+    <nav class="md-nav" aria-label="更新日志">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#100" class="md-nav__link">
+    1.0.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#042" class="md-nav__link">
+    0.4.2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#041" class="md-nav__link">
+    0.4.1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#040" class="md-nav__link">
+    0.4.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#033" class="md-nav__link">
+    0.3.3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#032" class="md-nav__link">
+    0.3.2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#030" class="md-nav__link">
+    0.3.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0230" class="md-nav__link">
+    0.2.30
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0224" class="md-nav__link">
+    0.2.24
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0222" class="md-nav__link">
+    0.2.22
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0220" class="md-nav__link">
+    0.2.20
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0210" class="md-nav__link">
+    0.2.10
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#020" class="md-nav__link">
+    0.2.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0154" class="md-nav__link">
+    0.1.54
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0152" class="md-nav__link">
+    0.1.52
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0150" class="md-nav__link">
+    0.1.50
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0140" class="md-nav__link">
+    0.1.40
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0130" class="md-nav__link">
+    0.1.30
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    许可
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rsajsjsbnjs" class="md-nav__link">
+    用于rsa.js和jsbn.js中代码的许可
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+  <a href="https://github.com/wohugb/wohugb.github.com/edit/master/source/nodejs/modules/node-rsa/readme.md" title="编辑此页" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="node-rsa">Node-RSA<a class="headerlink" href="#node-rsa" title="Permanent link">&para;</a></h1>
+<p>Node.js RSA库</p>
+<p>基于Tom Wu的jsbn库 <a href="http://www-cs-students.stanford.edu/~tjw/jsbn/">http://www-cs-students.stanford.edu/~tjw/jsbn/</a></p>
+<ul>
+<li>纯JavaScript</li>
+<li>不需要OpenSSL</li>
+<li>生成密钥</li>
+<li>支持加密/解密的长消息</li>
+<li>签署和验证</li>
+</ul>
+<h2 id="_1">例<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span>
+<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">NodeRSA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;node-rsa&#39;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">NodeRSA</span><span class="p">({</span><span class="nx">b</span><span class="o">:</span><span class="w"> </span><span class="mf">512</span><span class="p">});</span><span class="w"></span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Hello RSA!&#39;</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">encrypted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">key</span><span class="p">.</span><span class="nx">encrypt</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;base64&#39;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;encrypted: &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">encrypted</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">decrypted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">key</span><span class="p">.</span><span class="nx">decrypt</span><span class="p">(</span><span class="nx">encrypted</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;utf8&#39;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;decrypted: &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">decrypted</span><span class="p">);</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_2">安装<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>npm install node-rsa
+</code></pre></div></td></tr></table></div>
+<blockquote>
+<p><sub>Requires nodejs &gt;= 8.11.1</sub></p>
+</blockquote>
+<h3 id="_3">测试<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>npm <span class="nb">test</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_4">工作环境<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>该库主要为Node.js开发并测试了， 但它仍然可以在浏览器中使用<a href="http://browserify.org/">browserify</a>.</p>
+<h2 id="_5">用法<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="_6">创建实例<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">NodeRSA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;node-rsa&#39;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">NodeRSA</span><span class="p">([</span><span class="nx">keyData</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nx">format</span><span class="p">]],</span><span class="w"> </span><span class="p">[</span><span class="nx">options</span><span class="p">]);</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>keyData — <code>{string|buffer|object}</code> — 以支持的格式之一生成密钥或密钥的参数。</li>
+<li>format — <code>{string}</code> — 导入密钥格式。 在<a href="#importexport-keys">导出/导入</a>部分查看有关格式的更多详细信息。</li>
+<li>options — <code>{object}</code> — 其他设置.</li>
+</ul>
+<h4 id="_7">选项<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<p>您可以通过第二个/第三个构造函数参数或<code>key.setOptions()</code>方法指定一些选项。</p>
+<ul>
+<li>environment — 工作环境（默认自动检测）:</li>
+<li><code>'browser'</code> — 将运行RSA算法的纯js实现.</li>
+<li><code>'node'</code> 对于<code>nodejs&gt; = 0.10.x或io.js&gt; = 1.x</code> — 提供一些本地方法，如签名/验证和加密/解密.</li>
+<li>encryptionScheme — 用于加密/解密的填充方案. 可以是<code>'pkcs1_oaep'</code> 或 <code>'pkcs1'</code>. 默认 <code>'pkcs1_oaep'</code>.</li>
+<li>signingScheme — 用于签名和验证的方案。 可以使<code>'pkcs1'</code> 或 <code>'pss'</code> 或 'scheme-hash' 格式字符串 (例如 <code>'pss-sha1'</code>). 默认 <code>'pkcs1-sha256'</code>, 或者, 如果选择pss: <code>'pss-sha1'</code>.</li>
+</ul>
+<blockquote>
+<p><em>注意:</em> 这个lib支持下一个哈希算法: <code>'md5'</code>, <code>'ripemd160'</code>, <code>'sha1'</code>, <code>'sha256'</code>, <code>'sha512'</code> in browser and node environment and additional <code>'md4'</code>, <code>'sha'</code>, <code>'sha224'</code>, <code>'sha384'</code> in node only.</p>
+</blockquote>
+<h4 id="_8">高级选项<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<p>您也可以为这样的一些方案指定高级选项:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span>
+<span class="normal"><a href="#__codelineno-4-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nx">options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">  </span><span class="nx">encryptionScheme</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">    </span><span class="nx">scheme</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;pkcs1_oaep&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">//scheme</span><span class="w"></span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">    </span><span class="nx">hash</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;md5&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">//hash using for scheme</span><span class="w"></span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">    </span><span class="nx">mgf</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(...)</span><span class="w"> </span><span class="p">{...}</span><span class="w"> </span><span class="c1">//mask generation function</span><span class="w"></span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">  </span><span class="p">},</span><span class="w"></span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">  </span><span class="nx">signingScheme</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">    </span><span class="nx">scheme</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;pss&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">//scheme</span><span class="w"></span>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="w">    </span><span class="nx">hash</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;sha1&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">//hash using for scheme</span><span class="w"></span>
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="w">    </span><span class="nx">saltLength</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="w"> </span><span class="c1">//salt length for pss sign</span><span class="w"></span>
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="w">  </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span>
+<span class="normal"><a href="#__codelineno-5-5">5</a></span>
+<span class="normal"><a href="#__codelineno-5-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nx">options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="w">  </span><span class="nx">encryptionScheme</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">    </span><span class="nx">scheme</span><span class="o">:</span><span class="s1">&#39;pkcs1&#39;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">    </span><span class="nx">padding</span><span class="o">:</span><span class="w"> </span><span class="nx">constants</span><span class="p">.</span><span class="nx">RSA_NO_PADDING</span><span class="w"></span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">  </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<blockquote>
+<p><em>NOTICE:</em> encryptionScheme.hash, encryptionScheme.mfg and signingScheme.saltLength don't work in <code>node</code> environment</p>
+</blockquote>
+<h4 id="_9">创建 "空" 键<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">NodeRSA</span><span class="p">();</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<h4 id="512">生成新的512位长度密钥<a class="headerlink" href="#512" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">NodeRSA</span><span class="p">({</span><span class="nx">b</span><span class="o">:</span><span class="w"> </span><span class="mf">512</span><span class="p">});</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>你也可以使用下一个方法:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="nx">key</span><span class="p">.</span><span class="nx">generateKeyPair</span><span class="p">([</span><span class="nx">bits</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="nx">exp</span><span class="p">]);</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>bits — <code>{int}</code> — 密钥大小以位为单位。 2048默认。</li>
+<li>exp — <code>{int}</code> — 公开指数。 默认情况下为65537。</li>
+</ul>
+<h4 id="pem">从PEM字符串加载密钥<a class="headerlink" href="#pem" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span>
+<span class="normal"><a href="#__codelineno-9-4">4</a></span>
+<span class="normal"><a href="#__codelineno-9-5">5</a></span>
+<span class="normal"><a href="#__codelineno-9-6">6</a></span>
+<span class="normal"><a href="#__codelineno-9-7">7</a></span>
+<span class="normal"><a href="#__codelineno-9-8">8</a></span>
+<span class="normal"><a href="#__codelineno-9-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">NodeRSA</span><span class="p">(</span><span class="s1">&#39;-----BEGIN RSA PRIVATE KEY-----\n&#39;</span><span class="o">+</span><span class="w"></span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="w">                      </span><span class="s1">&#39;MIIBOQIBAAJAVY6quuzCwyOWzymJ7C4zXjeV/232wt2ZgJZ1kHzjI73wnhQ3WQcL\n&#39;</span><span class="o">+</span><span class="w"></span>
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">                      </span><span class="s1">&#39;DFCSoi2lPUW8/zspk0qWvPdtp6Jg5Lu7hwIDAQABAkBEws9mQahZ6r1mq2zEm3D/\n&#39;</span><span class="o">+</span><span class="w"></span>
+<a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="w">                      </span><span class="s1">&#39;VM9BpV//xtd6p/G+eRCYBT2qshGx42ucdgZCYJptFoW+HEx/jtzWe74yK6jGIkWJ\n&#39;</span><span class="o">+</span><span class="w"></span>
+<a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="w">                      </span><span class="s1">&#39;AiEAoNAMsPqwWwTyjDZCo9iKvfIQvd3MWnmtFmjiHoPtjx0CIQCIMypAEEkZuQUi\n&#39;</span><span class="o">+</span><span class="w"></span>
+<a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="w">                      </span><span class="s1">&#39;pMoreJrOlLJWdc0bfhzNAJjxsTv/8wIgQG0ZqI3GubBxu9rBOAM5EoA4VNjXVigJ\n&#39;</span><span class="o">+</span><span class="w"></span>
+<a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="w">                      </span><span class="s1">&#39;QEEk1jTkp8ECIQCHhsoq90mWM/p9L5cQzLDWkTYoPI49Ji+Iemi2T5MRqwIgQl07\n&#39;</span><span class="o">+</span><span class="w"></span>
+<a id="__codelineno-9-8" name="__codelineno-9-8"></a><span class="w">                      </span><span class="s1">&#39;Es+KCn25OKXR/FJ5fu6A6A+MptABL3r8SEjlpLc=\n&#39;</span><span class="o">+</span><span class="w"></span>
+<a id="__codelineno-9-9" name="__codelineno-9-9"></a><span class="w">                      </span><span class="s1">&#39;-----END RSA PRIVATE KEY-----&#39;</span><span class="p">);</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<h3 id="_10">导入/导出密钥<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="nx">key</span><span class="p">.</span><span class="nx">importKey</span><span class="p">(</span><span class="nx">keyData</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nx">format</span><span class="p">]);</span><span class="w"></span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="nx">key</span><span class="p">.</span><span class="nx">exportKey</span><span class="p">([</span><span class="nx">format</span><span class="p">]);</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>keyData — <code>{string|buffer}</code> — may be:<ul>
+<li>key in PEM string</li>
+<li>Buffer containing PEM string</li>
+<li>Buffer containing DER encoded data</li>
+<li>Object contains key components</li>
+</ul>
+</li>
+<li>format  — <code>{string}</code> — format id for export/import.</li>
+</ul>
+<h4 id="_11">格式字符串语法<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<p>格式化字符串由几部分组成: <code>scheme-[key_type]-[output_type]</code></p>
+<p>Scheme — NodeRSA支持导入/导出密钥的多种格式方案:</p>
+<ul>
+<li><code>'pkcs1'</code> — 公钥从 <code>'-----BEGIN RSA PUBLIC KEY-----'</code> 头 和 私钥从 <code>'-----BEGIN RSA PRIVATE KEY-----'</code> 头</li>
+<li><code>'pkcs8'</code> — 公钥从 <code>'-----BEGIN PUBLIC KEY-----'</code> 头 和 私钥从 <code>'-----BEGIN PRIVATE KEY-----'</code> 头</li>
+<li><code>'components'</code> — 将它用于从/到原始组件的导入/导出密钥（请参见下面的示例）. 对于私钥， 导入数据应该包含所有私钥组件， 为公钥: only public exponent (<code>e</code>) and modulus (<code>n</code>). All components (except <code>e</code>) should be Buffer, <code>e</code> could be Buffer or just normal Number.</li>
+</ul>
+<p>Key type — can be <code>'private'</code> or <code>'public'</code>. Default <code>'private'</code>
+Output type — can be:</p>
+<ul>
+<li><code>'pem'</code> — Base64 encoded string with header and footer. Used by default.</li>
+<li><code>'der'</code> — Binary encoded key data.</li>
+</ul>
+<blockquote>
+<p><em>注意:</em> For import, if <em>keyData</em> is PEM string or buffer containing string, you can do not specify format, but if you provide <em>keyData</em> as DER you must specify it in format string.</p>
+</blockquote>
+<p><strong>快捷键和例子</strong></p>
+<ul>
+<li><code>'private'</code> or <code>'pkcs1'</code> or <code>'pkcs1-private'</code> == <code>'pkcs1-private-pem'</code> — private key encoded in pcks1 scheme as pem string.</li>
+<li><code>'public'</code> or <code>'pkcs8-public'</code> == <code>'pkcs8-public-pem'</code> — public key encoded in pcks8 scheme as pem string.</li>
+<li><code>'pkcs8'</code> or <code>'pkcs8-private'</code> == <code>'pkcs8-private-pem'</code> — private key encoded in pcks8 scheme as pem string.</li>
+<li><code>'pkcs1-der'</code> == <code>'pkcs1-private-der'</code> — private key encoded in pcks1 scheme as binary buffer.</li>
+<li><code>'pkcs8-public-der'</code> — public key encoded in pcks8 scheme as binary buffer.</li>
+</ul>
+<p><strong>代码示例</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span>
+<span class="normal"><a href="#__codelineno-11-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">keyData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;-----BEGIN PUBLIC KEY----- ... -----END PUBLIC KEY-----&#39;</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="nx">key</span><span class="p">.</span><span class="nx">importKey</span><span class="p">(</span><span class="nx">keyData</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;pkcs8&#39;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">publicDer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">key</span><span class="p">.</span><span class="nx">exportKey</span><span class="p">(</span><span class="s1">&#39;pkcs8-public-der&#39;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">privateDer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">key</span><span class="p">.</span><span class="nx">exportKey</span><span class="p">(</span><span class="s1">&#39;pkcs1-der&#39;</span><span class="p">);</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-12-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-12-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-12-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-12-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-12-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-12-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-12-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-12-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-12-10">10</a></span>
+<span class="normal"><a href="#__codelineno-12-11">11</a></span>
+<span class="normal"><a href="#__codelineno-12-12">12</a></span>
+<span class="normal"><a href="#__codelineno-12-13">13</a></span>
+<span class="normal"><a href="#__codelineno-12-14">14</a></span>
+<span class="normal"><a href="#__codelineno-12-15">15</a></span>
+<span class="normal"><a href="#__codelineno-12-16">16</a></span>
+<span class="normal"><a href="#__codelineno-12-17">17</a></span>
+<span class="normal"><a href="#__codelineno-12-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="nx">key</span><span class="p">.</span><span class="nx">importKey</span><span class="p">({</span><span class="w"></span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="w">    </span><span class="nx">n</span><span class="o">:</span><span class="w"> </span><span class="nx">Buffer</span><span class="p">.</span><span class="kr">from</span><span class="p">(</span><span class="s1">&#39;0086fa9ba066685845fc03833a9699c8baefb53cfbf19052a7f10f1eaa30488cec1ceb752bdff2df9fad6c64b3498956e7dbab4035b4823c99a44cc57088a23783&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;hex&#39;</span><span class="p">),</span><span class="w"></span>
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="w">    </span><span class="nx">e</span><span class="o">:</span><span class="w"> </span><span class="mf">65537</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="w">    </span><span class="nx">d</span><span class="o">:</span><span class="w"> </span><span class="nx">Buffer</span><span class="p">.</span><span class="kr">from</span><span class="p">(</span><span class="s1">&#39;5d2f0dd982596ef781affb1cab73a77c46985c6da2aafc252cea3f4546e80f40c0e247d7d9467750ea1321cc5aa638871b3ed96d19dcc124916b0bcb296f35e1&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;hex&#39;</span><span class="p">),</span><span class="w"></span>
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="w">    </span><span class="nx">p</span><span class="o">:</span><span class="w"> </span><span class="nx">Buffer</span><span class="p">.</span><span class="kr">from</span><span class="p">(</span><span class="s1">&#39;00c59419db615e56b9805cc45673a32d278917534804171edcf925ab1df203927f&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;hex&#39;</span><span class="p">),</span><span class="w"></span>
+<a id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="w">    </span><span class="nx">q</span><span class="o">:</span><span class="w"> </span><span class="nx">Buffer</span><span class="p">.</span><span class="kr">from</span><span class="p">(</span><span class="s1">&#39;00aee3f86b66087abc069b8b1736e38ad6af624f7ea80e70b95f4ff2bf77cd90fd&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;hex&#39;</span><span class="p">),</span><span class="w"></span>
+<a id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="w">    </span><span class="nx">dmp1</span><span class="o">:</span><span class="w"> </span><span class="nx">Buffer</span><span class="p">.</span><span class="kr">from</span><span class="p">(</span><span class="s1">&#39;008112f5a969fcb56f4e3a4c51a60dcdebec157ee4a7376b843487b53844e8ac85&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;hex&#39;</span><span class="p">),</span><span class="w"></span>
+<a id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="w">    </span><span class="nx">dmq1</span><span class="o">:</span><span class="w"> </span><span class="nx">Buffer</span><span class="p">.</span><span class="kr">from</span><span class="p">(</span><span class="s1">&#39;1a7370470e0f8a4095df40922a430fe498720e03e1f70d257c3ce34202249d21&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;hex&#39;</span><span class="p">),</span><span class="w"></span>
+<a id="__codelineno-12-9" name="__codelineno-12-9"></a><span class="w">    </span><span class="nx">coeff</span><span class="o">:</span><span class="w"> </span><span class="nx">Buffer</span><span class="p">.</span><span class="kr">from</span><span class="p">(</span><span class="s1">&#39;00b399675e5e81506b729a777cc03026f0b2119853dfc5eb124610c0ab82999e45&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;hex&#39;</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-12-10" name="__codelineno-12-10"></a><span class="p">},</span><span class="w"> </span><span class="s1">&#39;components&#39;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-12-11" name="__codelineno-12-11"></a><span class="kd">const</span><span class="w"> </span><span class="nx">publicComponents</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">key</span><span class="p">.</span><span class="nx">exportKey</span><span class="p">(</span><span class="s1">&#39;components-public&#39;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-12-12" name="__codelineno-12-12"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">publicComponents</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-12-13" name="__codelineno-12-13"></a>
+<a id="__codelineno-12-14" name="__codelineno-12-14"></a><span class="cm">/*</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15"></a><span class="cm">{ n: &lt;Buffer 00 86 fa 9b a0 66 68 58 45 fc 03 83 3a 96 99 c8 ba ef b5 3c fb f1 90 52 a7 f1 0f 1e aa 30 48 8c ec 1c eb 75 2b df f2 df 9f ad 6c 64 b3 49 89 56 e7 db ... &gt;,</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16"></a><span class="cm">  e: 65537</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17"></a><span class="cm">}</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18"></a><span class="cm">*/</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>如果你只想输入公共密钥<code>`components-public'</code>作为选项:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span>
+<span class="normal"><a href="#__codelineno-13-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="nx">key</span><span class="p">.</span><span class="nx">importKey</span><span class="p">({</span><span class="w"></span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="w">    </span><span class="nx">n</span><span class="o">:</span><span class="w"> </span><span class="nx">Buffer</span><span class="p">.</span><span class="kr">from</span><span class="p">(</span><span class="s1">&#39;0086fa9ba066685845fc03833a9699c8baefb53cfbf19052a7f10f1eaa30488cec1ceb752bdff2df9fad6c64b3498956e7dbab4035b4823c99a44cc57088a23783&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;hex&#39;</span><span class="p">),</span><span class="w"></span>
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="w">    </span><span class="nx">e</span><span class="o">:</span><span class="w"> </span><span class="mf">65537</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="p">},</span><span class="w"> </span><span class="s1">&#39;components-public&#39;</span><span class="p">);</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<h3 id="_12">属性<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<h4 id="_13">键测试<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="nx">key</span><span class="p">.</span><span class="nx">isPrivate</span><span class="p">();</span><span class="w"></span>
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="nx">key</span><span class="p">.</span><span class="nx">isPublic</span><span class="p">([</span><span class="nx">strict</span><span class="p">]);</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>strict — <code>{boolean}</code> — if true method will return false if key pair have private exponent. Default <code>false</code>.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="nx">key</span><span class="p">.</span><span class="nx">isEmpty</span><span class="p">();</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>如果密钥对没有任何数据，则返回“true”。</p>
+<h4 id="_14">键信息<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="nx">key</span><span class="p">.</span><span class="nx">getKeySize</span><span class="p">();</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>Return key size in bits.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="nx">key</span><span class="p">.</span><span class="nx">getMaxMessageSize</span><span class="p">();</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>Return max data size for encrypt in bytes.</p>
+<h3 id="_15">加密/解密<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span>
+<span class="normal"><a href="#__codelineno-18-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="nx">key</span><span class="p">.</span><span class="nx">encrypt</span><span class="p">(</span><span class="nx">buffer</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nx">encoding</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="nx">source_encoding</span><span class="p">]);</span><span class="w"></span>
+<a id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="nx">key</span><span class="p">.</span><span class="nx">encryptPrivate</span><span class="p">(</span><span class="nx">buffer</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nx">encoding</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="nx">source_encoding</span><span class="p">]);</span><span class="w"> </span><span class="c1">// use private key for encryption</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>Return encrypted data.</p>
+<ul>
+<li>buffer — <code>{buffer}</code> —  data for encrypting, may be string, Buffer, or any object/array. Arrays and objects will encoded to JSON string first.</li>
+<li>encoding — <code>{string}</code> — encoding for output result, may be <code>'buffer'</code>, <code>'binary'</code>, <code>'hex'</code> or <code>'base64'</code>. Default <code>'buffer'</code>.</li>
+<li>source_encoding — <code>{string}</code> —  source encoding, works only with string buffer. Can take standard Node.js Buffer encodings (hex, utf8, base64, etc). <code>'utf8'</code> by default.</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
+<span class="normal"><a href="#__codelineno-19-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="nx">key</span><span class="p">.</span><span class="nx">decrypt</span><span class="p">(</span><span class="nx">buffer</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nx">encoding</span><span class="p">]);</span><span class="w"></span>
+<a id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="nx">key</span><span class="p">.</span><span class="nx">decryptPublic</span><span class="p">(</span><span class="nx">buffer</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nx">encoding</span><span class="p">]);</span><span class="w"> </span><span class="c1">// use public key for decryption</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>Return decrypted data.</p>
+<ul>
+<li>buffer — <code>{buffer}</code> — data for decrypting. Takes Buffer object or base64 encoded string.</li>
+<li>encoding — <code>{string}</code> — encoding for result string. Can also take <code>'buffer'</code> for raw Buffer object, or <code>'json'</code> for automatic JSON.parse result. Default <code>'buffer'</code>.</li>
+</ul>
+<blockquote>
+<p><em>Notice:</em> <code>encryptPrivate</code> and <code>decryptPublic</code> using only pkcs1 padding type 1 (not random)</p>
+</blockquote>
+<h3 id="_16">签名/验证<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="nx">key</span><span class="p">.</span><span class="nx">sign</span><span class="p">(</span><span class="nx">buffer</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nx">encoding</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="nx">source_encoding</span><span class="p">]);</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>Return signature for buffer. All the arguments are the same as for <code>encrypt</code> method.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="nx">key</span><span class="p">.</span><span class="nx">verify</span><span class="p">(</span><span class="nx">buffer</span><span class="p">,</span><span class="w"> </span><span class="nx">signature</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nx">source_encoding</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="nx">signature_encoding</span><span class="p">])</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>Return result of check, <code>true</code> or <code>false</code>.</p>
+<ul>
+<li>buffer — <code>{buffer}</code> — data for check, same as <code>encrypt</code> method.</li>
+<li>signature — <code>{string}</code> — signature for check, result of <code>sign</code> method.</li>
+<li>source_encoding — <code>{string}</code> — same as for <code>encrypt</code> method.</li>
+<li>signature_encoding — <code>{string}</code> — encoding of given signature. May be <code>'buffer'</code>, <code>'binary'</code>, <code>'hex'</code> or <code>'base64'</code>. Default <code>'buffer'</code>.</li>
+</ul>
+<h2 id="_17">特约<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<p>Questions, comments, bug reports, and pull requests are all welcome.</p>
+<h2 id="_18">更新日志<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<h3 id="100">1.0.0<a class="headerlink" href="#100" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Using semver now 🎉</li>
+<li><strong>Breaking change</strong>: Drop support nodejs &lt; 8.11.1</li>
+<li><strong>Possible breaking change</strong>: <code>new Buffer()</code> call as deprecated was replaced by <code>Buffer.from</code> &amp; <code>Buffer.alloc</code>.</li>
+<li><strong>Possible breaking change</strong>: Drop support for hash scheme <code>sha</code> (was removed in node ~10). <code>sha1</code>, <code>sha256</code> and others still works.</li>
+<li><strong>Possible breaking change</strong>: Little change in environment detect algorithm.</li>
+</ul>
+<h3 id="042">0.4.2<a class="headerlink" href="#042" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>no padding</code> scheme will padded data with zeros on all environments.</li>
+</ul>
+<h3 id="041">0.4.1<a class="headerlink" href="#041" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>PKCS1 no padding</code> scheme support.</li>
+</ul>
+<h3 id="040">0.4.0<a class="headerlink" href="#040" title="Permanent link">&para;</a></h3>
+<ul>
+<li>License changed from BSD to MIT.</li>
+<li>Some changes in internal api.</li>
+</ul>
+<h3 id="033">0.3.3<a class="headerlink" href="#033" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed PSS encode/verify methods with max salt length.</li>
+</ul>
+<h3 id="032">0.3.2<a class="headerlink" href="#032" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed environment detection in web worker.</li>
+</ul>
+<h3 id="030">0.3.0<a class="headerlink" href="#030" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added import/export from/to raw key components.</li>
+<li>Removed lodash from dependencies.</li>
+</ul>
+<h3 id="0230">0.2.30<a class="headerlink" href="#0230" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed a issue when the key was generated by 1 bit smaller than specified. It may slow down the generation of large keys.</li>
+</ul>
+<h3 id="0224">0.2.24<a class="headerlink" href="#0224" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Now used old hash APIs for webpack compatible.</li>
+</ul>
+<h3 id="0222">0.2.22<a class="headerlink" href="#0222" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>encryptPrivate</code> and <code>decryptPublic</code> now using only pkcs1 (type 1) padding.</li>
+</ul>
+<h3 id="0220">0.2.20<a class="headerlink" href="#0220" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added <code>.encryptPrivate()</code> and <code>.decryptPublic()</code> methods.</li>
+<li>Encrypt/decrypt methods in nodejs 0.12.x and io.js using native implementation (&gt; 40x speed boost).</li>
+<li>Fixed some regex issue causing catastrophic backtracking.</li>
+</ul>
+<h3 id="0210">0.2.10<a class="headerlink" href="#0210" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Methods <code>.exportPrivate()</code> and <code>.exportPublic()</code> was replaced by <code>.exportKey([format])</code>.</strong></li>
+<li>By default <code>.exportKey()</code> returns private key as <code>.exportPrivate()</code>, if you need public key from <code>.exportPublic()</code> you must specify format as <code>'public'</code> or <code>'pkcs8-public-pem'</code>.</li>
+<li>Method <code>.importKey(key, [format])</code> now has second argument.</li>
+</ul>
+<h3 id="020">0.2.0<a class="headerlink" href="#020" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><code>.getPublicPEM()</code> method was renamed to <code>.exportPublic()</code></strong></li>
+<li><strong><code>.getPrivatePEM()</code> method was renamed to <code>.exportPrivate()</code></strong></li>
+<li><strong><code>.loadFromPEM()</code> method was renamed to <code>.importKey()</code></strong></li>
+<li>Added PKCS1_OAEP encrypting/decrypting support.</li>
+<li><strong>PKCS1_OAEP now default scheme, you need to specify 'encryptingScheme' option to 'pkcs1' for compatibility with 0.1.x version of NodeRSA.</strong></li>
+<li>Added PSS signing/verifying support.</li>
+<li>Signing now supports <code>'md5'</code>, <code>'ripemd160'</code>, <code>'sha1'</code>, <code>'sha256'</code>, <code>'sha512'</code> hash algorithms in both environments
+and additional <code>'md4'</code>, <code>'sha'</code>, <code>'sha224'</code>, <code>'sha384'</code> for nodejs env.</li>
+<li><strong><code>options.signingAlgorithm</code> was renamed to <code>options.signingScheme</code></strong></li>
+<li>Added <code>encryptingScheme</code> option.</li>
+<li>Property <code>key.options</code> now mark as private. Added <code>key.setOptions(options)</code> method.</li>
+</ul>
+<h3 id="0154">0.1.54<a class="headerlink" href="#0154" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added support for loading PEM key from Buffer (<code>fs.readFileSync()</code> output).</li>
+<li>Added <code>isEmpty()</code> method.</li>
+</ul>
+<h3 id="0152">0.1.52<a class="headerlink" href="#0152" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Improve work with not properly trimming PEM strings.</li>
+</ul>
+<h3 id="0150">0.1.50<a class="headerlink" href="#0150" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Implemented native js signing and verifying for browsers.</li>
+<li><code>options.signingAlgorithm</code> now takes only hash-algorithm name.</li>
+<li>Added <code>.getKeySize()</code> and <code>.getMaxMessageSize()</code> methods.</li>
+<li><code>.loadFromPublicPEM</code> and <code>.loadFromPrivatePEM</code> methods marked as private.</li>
+</ul>
+<h3 id="0140">0.1.40<a class="headerlink" href="#0140" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added signing/verifying.</li>
+</ul>
+<h3 id="0130">0.1.30<a class="headerlink" href="#0130" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added long message support.</li>
+</ul>
+<h2 id="_19">许可<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
+<p>Copyright &copy; 2014  rzcoder</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+<h2 id="rsajsjsbnjs">用于rsa.js和jsbn.js中代码的许可<a class="headerlink" href="#rsajsjsbnjs" title="Permanent link">&para;</a></h2>
+<p>Copyright &copy; 2003-2005  Tom Wu</p>
+<p>All Rights Reserved.</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS-IS" AND WITHOUT WARRANTY OF ANY KIND,
+EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY
+WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.</p>
+<p>IN NO EVENT SHALL TOM WU BE LIABLE FOR ANY SPECIAL, INCIDENTAL,
+INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER
+RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT ADVISED OF
+THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING OUT
+OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</p>
+<p>In addition, the following condition applies:</p>
+<p>All redistributions must retain an intact copy of this copyright notice
+and disclaimer.</p>
+<p><a href="https://travis-ci.org/rzcoder/node-rsa"><img alt="Build Status" src="https://travis-ci.org/rzcoder/node-rsa.svg?branch=master" /></a></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            回到页面顶部
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="页脚" >
+      
+        
+        <a href="../jsbn/" class="md-footer__link md-footer__link--prev" aria-label="上一页: JavaScript中的RSA和ECC" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              JavaScript中的RSA和ECC
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../qrcode/api/" class="md-footer__link md-footer__link--next" aria-label="下一页: Api" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              Api
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      版权 &copy; 2017 - 2023 BandCap
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "navigation.indexes", "content.code.annotate", "navigation.top"], "search": "../../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>
