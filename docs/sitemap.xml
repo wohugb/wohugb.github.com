@@ -26,17 +26,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://wohugb.github.io/ai/2017-top-30/</loc>
+         <lastmod>2023-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://wohugb.github.io/ai/2017/</loc>
          <lastmod>2023-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wohugb.github.io/ai/2018/</loc>
-         <lastmod>2023-01-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://wohugb.github.io/ai/PhosphorJS/</loc>
          <lastmod>2023-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -607,6 +607,11 @@
     </url>
     <url>
          <loc>https://wohugb.github.io/tools/</loc>
+         <lastmod>2023-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/tools/chrome/</loc>
          <lastmod>2023-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
