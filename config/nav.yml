@@ -84,20 +84,26 @@ nav:
           - jQuery:
               - jQuery/README.md
       - python:
+          - python/README.md
+          - pip:
+              - python/pip/index.md
           - python/PyMongo.md
           - python/awesome.md
           - python/framework.md
-          - python/python.md
-          - python/Anaconda/QuickStart.md
-          - python/FullStack/mfap0.md
-          - python/FullStack/mfap1.md
-          - python/FullStack/mfap2.md
-          - python/FullStack/mfap3.md
-          - python/django/index.md
-          - python/django/awesome.md
-          - python/flask/index.md
-          - python/flask/awesome.md
-          - python/pip/index.md
+          - Anaconda:
+              - python/Anaconda/QuickStart.md
+          - FullStack:
+              - python/FullStack/mfap0.md
+              - python/FullStack/mfap1.md
+              - python/FullStack/mfap2.md
+              - python/FullStack/mfap3.md
+          - django:
+              - python/django/index.md
+              - python/django/awesome.md
+          - flask:
+              - python/flask/index.md
+              - python/flask/awesome.md
+
       - Go:
           - langs/go/index.md
   - 智能:
