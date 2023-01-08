@@ -54,3 +54,9 @@
 - [sphinx-doc 中文文档](https://sphinx-doc.readthedocs.org)
 - [Zend Framework 2 中文文档](https://zf2-documentation-zh.readthedocs.org)
 - [Read The Docs 中文文档](https://readthedocs.readthedocs.org)
+
+## 胡思乱想
+
+如何快速理解我的意图
+
+mkdocs 快速整理 git stars
