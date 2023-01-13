@@ -426,6 +426,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://wohugb.github.io/media/</loc>
+         <lastmod>2023-01-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://wohugb.github.io/nodejs/</loc>
          <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>

@@ -1,9 +1,13 @@
+INHERIT: plugins.yml
+
 nav:
   - 首页:
       - README.md
       - awesome.md
       - github.md
       - tags.md
+  - 新媒体:
+      - media/README.md
   - 中医:
       - tcm/index.md
   - 开发:
@@ -145,6 +149,7 @@ nav:
       - blockchain/twister/building-on-ubuntu-debian.md
       - blockchain/twister/compiling-for-windows.md
   - 教育:
+      - education/README.md
       - education/kindergarten.md
       - education/primary-school.md
       - education/junior-middle-school.md
@@ -174,3 +179,5 @@ nav:
       - pin/fresh/education.md
       - pin/fresh/platform.md
       - pin/fresh/repository.md
+  - 博客:
+      - blog/README.md
