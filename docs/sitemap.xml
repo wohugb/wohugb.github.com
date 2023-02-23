@@ -476,7 +476,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wohugb.github.io/nodejs/esm/</loc>
+         <loc>https://wohugb.github.io/nodejs/esm_chatgpt/</loc>
          <lastmod>2023-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -502,6 +502,86 @@
     </url>
     <url>
          <loc>https://wohugb.github.io/nodejs/pm2/</loc>
+         <lastmod>2023-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/nodejs/esm/</loc>
+         <lastmod>2023-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/nodejs/esm/builtin-modules/</loc>
+         <lastmod>2023-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/nodejs/esm/enabling/</loc>
+         <lastmod>2023-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/nodejs/esm/https-and-http-imports/</loc>
+         <lastmod>2023-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/nodejs/esm/import-assertions/</loc>
+         <lastmod>2023-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/nodejs/esm/import-expressions/</loc>
+         <lastmod>2023-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/nodejs/esm/import-specifiers/</loc>
+         <lastmod>2023-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/nodejs/esm/importmeta/</loc>
+         <lastmod>2023-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/nodejs/esm/interoperability-with-commonjs/</loc>
+         <lastmod>2023-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/nodejs/esm/introduction/</loc>
+         <lastmod>2023-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/nodejs/esm/json-modules/</loc>
+         <lastmod>2023-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/nodejs/esm/loaders/</loc>
+         <lastmod>2023-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/nodejs/esm/packages/</loc>
+         <lastmod>2023-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/nodejs/esm/resolution-algorithm/</loc>
+         <lastmod>2023-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/nodejs/esm/top-level-await/</loc>
+         <lastmod>2023-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wohugb.github.io/nodejs/esm/wasm-modules/</loc>
          <lastmod>2023-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>

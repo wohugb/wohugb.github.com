@@ -19,7 +19,7 @@
     
     
       
-        <title>Node.js ESM - 大鼻子</title>
+        <title>模块: ECMAScript 模块 - 大鼻子</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nodejs-esm" class="md-skip">
+        <a href="#ecmascript" class="md-skip">
           跳转至
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Node.js ESM
+              模块: ECMAScript 模块
             
           </span>
         </div>
@@ -1288,6 +1288,10 @@
           
         
           
+            
+          
+        
+          
         
           
         
@@ -1335,6 +1339,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../esm_chatgpt/" class="md-nav__link">
+        Node.js ESM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -1347,12 +1365,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Node.js ESM
+          模块: ECMAScript 模块
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Node.js ESM
+        模块: ECMAScript 模块
       </a>
       
         
@@ -1378,50 +1396,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#esm" class="md-nav__link">
-    ESM 的启用
+  <a href="#_2" class="md-nav__link">
+    历史
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#esm-await" class="md-nav__link">
-    ESM 中的顶级 await
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commonjs-esm" class="md-nav__link">
-    从 CommonJS 迁移到 ESM
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#importing-an-ecmascript-module" class="md-nav__link">
-    Importing an ECMAScript Module
-  </a>
-  
-    <nav class="md-nav" aria-label="Importing an ECMAScript Module">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#loading-commonjs-modules-from-es-modules" class="md-nav__link">
-    Loading CommonJS modules from ES Modules
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -4079,50 +4056,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#esm" class="md-nav__link">
-    ESM 的启用
+  <a href="#_2" class="md-nav__link">
+    历史
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#esm-await" class="md-nav__link">
-    ESM 中的顶级 await
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commonjs-esm" class="md-nav__link">
-    从 CommonJS 迁移到 ESM
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#importing-an-ecmascript-module" class="md-nav__link">
-    Importing an ECMAScript Module
-  </a>
-  
-    <nav class="md-nav" aria-label="Importing an ECMAScript Module">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#loading-commonjs-modules-from-es-modules" class="md-nav__link">
-    Loading CommonJS modules from ES Modules
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -4143,178 +4079,54 @@
 
 
 
-  <a href="https://github.com/wohugb/wohugb.github.com/edit/master/source/nodejs/esm.md" title="编辑此页" class="md-content__button md-icon">
+  <a href="https://github.com/wohugb/wohugb.github.com/edit/master/source/nodejs/esm/index.md" title="编辑此页" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="nodejs-esm">Node.js ESM<a class="headerlink" href="#nodejs-esm" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>用 chatgpt 翻译并转成 html，但是页面是直接转成 html,我直接开发工具查看的 http 返回，取得的</p>
-</blockquote>
-<p>Node.js 的 ECMAScript 模块 (ESM) 功能为 Node.js 提供了一种原生的模块系统，这个模块系统与 Node.js 的 require 模块系统不同。 这个模块系统与其他的 ESM 模块系统相似，例如 TypeScript、Babel 等等。</p>
-<p>Node.js 的 ESM 通过支持原生的 ES6 <code>import</code> 和 <code>export</code> 语法，允许您在应用程序中使用类似于浏览器中使用的 JavaScript 模块。 ESM 提供了一种在开发人员之间分享和重用代码的方式，同时也使应用程序更加可维护和可扩展。</p>
+<h1 id="ecmascript">模块: ECMAScript 模块<a class="headerlink" href="#ecmascript" title="Permanent link">&para;</a></h1>
 <h2 id="_1">目录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="#esm-的启用">ESM 的启用</a></li>
-<li><a href="#esm-中的顶级-await">ESM 中的顶级 <code>await</code></a></li>
-<li><a href="#从-commonjs-迁移到-esm">从 CommonJS 迁移到 ESM</a></li>
-<li><a href="#esm-中的奇怪事情">ESM 中的奇怪事情</a></li>
-<li><a href="#如何使用-esm">如何使用 ESM</a></li>
-<li><a href="#命令行标志">命令行标志</a></li>
-<li><a href="#加载器钩子">加载器钩子</a></li>
-<li><a href="#mjs-文件扩展名"><code>.mjs</code> 文件扩展名</a></li>
-<li><a href="#关于-nodejs-esm-的一些限制">关于 Node.js ESM 的一些限制</a></li>
+<li><a href="introduction/">介绍</a></li>
+<li><a href="enabling/">启用</a></li>
+<li><a href="packages/">软件包</a></li>
+<li><a href="import-specifiers/"><code>import</code> 指定器</a></li>
+<li><a href="import-assertions/">进口断言</a></li>
+<li><a href="builtin-modules/">内置模块</a></li>
+<li><a href="import-expressions/"><code>import()</code> 表达</a></li>
+<li><a href="importmeta/"><code>import.meta</code></a></li>
+<li><a href="interoperability-with-commonjs/">与 commonjs 的互操作性</a></li>
+<li><a href="json-modules/">JSON 模块</a></li>
+<li><a href="wasm-modules/">Wasm 模块</a></li>
+<li><a href="top-level-await/">顶层 <code>await</code></a></li>
+<li><a href="https-and-http-imports/">HTTPS 和 HTTP imports</a></li>
+<li><a href="loaders/">装载机</a></li>
+<li><a href="resolution-algorithm/">分辨率算法</a></li>
 </ul>
-<h2 id="esm">ESM 的启用<a class="headerlink" href="#esm" title="Permanent link">&para;</a></h2>
-<p>要启用 ESM 功能，您必须在使用 <code>import</code> 和 <code>export</code> 语法的文件中将文件扩展名更改为 <code>.mjs</code>。 Node.js 不会试图解析以 <code>.mjs</code> 结尾的文件作为 CommonJS 文件。</p>
-<p>为了使用 ESM，您可以通过以下任何一种方式启用它：</p>
-<ul>
-<li>在命令行中使用 <code>--experimental-modules</code> 标志</li>
-<li>在 <code>package.json</code> 文件中设置 <code>"type": "module"</code> 属性</li>
-<li>将 Node.js 环境变量 <code>NODE_OPTIONS</code> 设置为 <code>--experimental-modules</code></li>
-</ul>
-<h2 id="esm-await">ESM 中的顶级 <code>await</code><a class="headerlink" href="#esm-await" title="Permanent link">&para;</a></h2>
-<p>ESM 支持在模块顶层使用 <code>await</code>。当在模块顶层使用 <code>await</code> 时，Node.js 将在模块被加载时执行整个模块，并等待 <code>await</code> 表达式的解析。请注意，这可能会导致应用程序的延迟启动。</p>
-<p>以下示例显示了如何在 ESM 模块中使用顶级 <code>await</code>：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span>
-<span class="normal"><a href="#__codelineno-0-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1">// test.mjs</span><span class="w"></span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">fetch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s2">&quot;node-fetch&quot;</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s2">&quot;https://jsonplaceholder.typicode.com/todos/1&quot;</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">json</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span><span class="w"></span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">json</span><span class="p">);</span><span class="w"></span>
-</code></pre></div></td></tr></table></div>
-<h2 id="commonjs-esm">从 CommonJS 迁移到 ESM<a class="headerlink" href="#commonjs-esm" title="Permanent link">&para;</a></h2>
-<p>要从 CommonJS 模块迁移到 ESM 模块，您需要执行以下步骤：</p>
-<ol>
-<li>将文件扩展名从 <code>.js</code> 更改为 <code>.mjs</code>。</li>
-</ol>
-<p>我不需要你转成 html,我只要 markdown 格式的源内容</p>
-<p>以下是 Node.js 官方文档 <code>esm</code> 模块的英文部分的 Markdown 格式：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span>
-<span class="normal"><a href="#__codelineno-1-11">11</a></span>
-<span class="normal"><a href="#__codelineno-1-12">12</a></span>
-<span class="normal"><a href="#__codelineno-1-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a># ES Modules
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a>Node.js has experimental support for ECMAScript modules (ES modules).
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a>
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a>&gt; Note: This feature is experimental and behaviour may change. It is also subject to change without notice.
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a>
-<a id="__codelineno-1-7" name="__codelineno-1-7"></a>## Creating an ECMAScript Module
-<a id="__codelineno-1-8" name="__codelineno-1-8"></a>
-<a id="__codelineno-1-9" name="__codelineno-1-9"></a>An ECMAScript module is created like this:
-<a id="__codelineno-1-10" name="__codelineno-1-10"></a>
-<a id="__codelineno-1-11" name="__codelineno-1-11"></a>```js
-<a id="__codelineno-1-12" name="__codelineno-1-12"></a>// ./lib.mjs
-<a id="__codelineno-1-13" name="__codelineno-1-13"></a>export const foo = &#39;bar&#39;;
-</code></pre></div></td></tr></table></div>
-<h2 id="importing-an-ecmascript-module">Importing an ECMAScript Module<a class="headerlink" href="#importing-an-ecmascript-module" title="Permanent link">&para;</a></h2>
-<p>ECMAScript modules are loaded asynchronously.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./lib.mjs&quot;</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">foo</span><span class="p">);</span><span class="w"></span>
-</code></pre></div></td></tr></table></div>
-<p>You can also import the default export:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span>
-<span class="normal"><a href="#__codelineno-3-5">5</a></span>
-<span class="normal"><a href="#__codelineno-3-6">6</a></span>
-<span class="normal"><a href="#__codelineno-3-7">7</a></span>
-<span class="normal"><a href="#__codelineno-3-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1">// ./lib.mjs</span><span class="w"></span>
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="p">}</span><span class="w"></span>
-<a id="__codelineno-3-5" name="__codelineno-3-5"></a>
-<a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="c1">// ./main.mjs</span><span class="w"></span>
-<a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="k">import</span><span class="w"> </span><span class="nx">logHelloWorld</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./lib.mjs&quot;</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="nx">logHelloWorld</span><span class="p">();</span><span class="w"></span>
-</code></pre></div></td></tr></table></div>
-<p>You can import all of the exports from a module as a namespace object:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">someModule</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./some-module.mjs&quot;</span><span class="p">;</span><span class="w"></span>
-</code></pre></div></td></tr></table></div>
-<h3 id="loading-commonjs-modules-from-es-modules">Loading CommonJS modules from ES Modules<a class="headerlink" href="#loading-commonjs-modules-from-es-modules" title="Permanent link">&para;</a></h3>
-<p>CommonJS modules are loaded synchronously, which may lead to problems when you try to load a CommonJS module from an ECMAScript module. In such cases, you can use the <code>--experimental-vm-modules</code> command-line flag to load CommonJS modules in the same way as ECMAScript modules.</p>
-<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span>
-<span class="normal"><a href="#__codelineno-5-3">3</a></span>
-<span class="normal"><a href="#__codelineno-5-4">4</a></span>
-<span class="normal"><a href="#__codelineno-5-5">5</a></span>
-<span class="normal"><a href="#__codelineno-5-6">6</a></span>
-<span class="normal"><a href="#__codelineno-5-7">7</a></span>
-<span class="normal"><a href="#__codelineno-5-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="c1">// lib.mjs</span><span class="w"></span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">hello</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="sb">`Hello, </span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">!`</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="p">}</span><span class="w"></span>
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a>
-<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="c1">// main.mjs</span><span class="w"></span>
-<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">hello</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./lib.mjs&quot;</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hello</span><span class="p">(</span><span class="s2">&quot;world&quot;</span><span class="p">));</span><span class="w"></span>
-</code></pre></div></td></tr></table></div>
-<p>See the full API documentation for more details.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>以下是 Node.js 官方文档 `esm` 模块的中文部分的 Markdown 格式：
-</code></pre></div></td></tr></table></div>
-<h1 id="es">ES 模块<a class="headerlink" href="#es" title="Permanent link">&para;</a></h1>
-<p>Node.js 对 ECMAScript 模块（ES 模块）进行了实验性支持。</p>
-<blockquote>
-<p>注意：此功能尚处于实验阶段，行为可能会发生变化。它也可能在不事先通知的情况下发生更改。</p>
-</blockquote>
-<h2 id="ecmascript">创建 ECMAScript 模块<a class="headerlink" href="#ecmascript" title="Permanent link">&para;</a></h2>
-<p>可以按如下方式创建 ECMAScript 模块：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
-<span class="normal"><a href="#__codelineno-7-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1">// ./lib.mjs</span><span class="w"></span>
-<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">foo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;bar&quot;</span><span class="p">;</span><span class="w"></span>
-</code></pre></div></td></tr></table></div>
-<h2 id="ecmascript_1">导入 ECMAScript 模块<a class="headerlink" href="#ecmascript_1" title="Permanent link">&para;</a></h2>
-<p>ECMAScript 模块是异步加载的。</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
-<span class="normal"><a href="#__codelineno-8-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./lib.mjs&quot;</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">foo</span><span class="p">);</span><span class="w"></span>
-</code></pre></div></td></tr></table></div>
-<p>您还可以导入默认导出：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
-<span class="normal"><a href="#__codelineno-9-2">2</a></span>
-<span class="normal"><a href="#__codelineno-9-3">3</a></span>
-<span class="normal"><a href="#__codelineno-9-4">4</a></span>
-<span class="normal"><a href="#__codelineno-9-5">5</a></span>
-<span class="normal"><a href="#__codelineno-9-6">6</a></span>
-<span class="normal"><a href="#__codelineno-9-7">7</a></span>
-<span class="normal"><a href="#__codelineno-9-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="c1">// ./lib.mjs</span><span class="w"></span>
-<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="p">}</span><span class="w"></span>
-<a id="__codelineno-9-5" name="__codelineno-9-5"></a>
-<a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="c1">// ./main.mjs</span><span class="w"></span>
-<a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="k">import</span><span class="w"> </span><span class="nx">logHelloWorld</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./lib.mjs&quot;</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-9-8" name="__codelineno-9-8"></a><span class="nx">logHelloWorld</span><span class="p">();</span><span class="w"></span>
-</code></pre></div></td></tr></table></div>
-<p>您可以将模块的所有导出作为命名空间对象导入：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">someModule</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./some-module.mjs&quot;</span><span class="p">;</span><span class="w"></span>
-</code></pre></div></td></tr></table></div>
-<h3 id="es-commonjs">从 ES 模块加载 CommonJS 模块<a class="headerlink" href="#es-commonjs" title="Permanent link">&para;</a></h3>
-<p>CommonJS 模块是同步加载的，这可能会导致在尝试从 ECMAScript 模块加载 CommonJS 模块时出现问题。在这种情况下，可以使用 <code>--experimental-vm-modules</code> 命令行标志以与 ECMAScript 模块相同的方式加载 CommonJS 模块。</p>
-<h3 id="_2">示例<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
-<span class="normal"><a href="#__codelineno-11-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="c1">// lib.mjs</span><span class="w"></span>
-<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">hello</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-</code></pre></div></td></tr></table></div>
+<h2 id="_2">历史<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Version</p>
+<p>Changes</p>
+<p>v18.6.0, v16.17.0</p>
+<p>Add support for chaining loaders.</p>
+<p>v17.1.0, v16.14.0</p>
+<p>Add support for import assertions.</p>
+<p>v17.0.0, v16.12.0</p>
+<p>Consolidate loader hooks, removed <code>getFormat</code>, <code>getSource</code>, <code>transformSource</code>, and <code>getGlobalPreloadCode</code> hooks added <code>load</code> and <code>globalPreload</code> hooks allowed returning <code>format</code> from either <code>resolve</code> or <code>load</code> hooks.</p>
+<p>v14.8.0</p>
+<p>Unflag Top-Level Await.</p>
+<p>v15.3.0, v14.17.0, v12.22.0</p>
+<p>Stabilize modules implementation.</p>
+<p>v14.13.0, v12.20.0</p>
+<p>Support for detection of CommonJS named exports.</p>
+<p>v14.0.0, v13.14.0, v12.20.0</p>
+<p>Remove experimental modules warning.</p>
+<p>v13.2.0, v12.17.0</p>
+<p>Loading ECMAScript modules no longer requires a command-line flag.</p>
+<p>v12.0.0</p>
+<p>Add support for ES modules using <code>.js</code> file extension via <code>package.json</code> <code>"type"</code> field.</p>
+<p>v8.5.0</p>
+<p>Added in: v8.5.0</p>
 
 
 
@@ -4340,7 +4152,7 @@
     <nav class="md-footer__inner md-grid" aria-label="页脚" >
       
         
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="上一页: Node.js" rel="prev">
+        <a href="../esm_chatgpt/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Node.js ESM" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -4349,7 +4161,7 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              Node.js
+              Node.js ESM
             </div>
           </div>
         </a>

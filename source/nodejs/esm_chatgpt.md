@@ -1,6 +1,6 @@
 # Node.js ESM
 
-> 用 chatgpt 翻译并转成 html，但是页面是直接转成 html,我直接开发工具查看的 http 返回，取得的
+> 用 chatgpt 翻译并转成 markdown，但是页面是直接转成 html,我直接开发工具查看的 http 返回，取得的
 
 Node.js 的 ECMAScript 模块 (ESM) 功能为 Node.js 提供了一种原生的模块系统，这个模块系统与 Node.js 的 require 模块系统不同。 这个模块系统与其他的 ESM 模块系统相似，例如 TypeScript、Babel 等等。
 

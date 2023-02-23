@@ -43,7 +43,8 @@ nav:
       - langs/index.md
       - Node.js:
           - nodejs/index.md
-          - nodejs/esm.md
+          - nodejs/esm_chatgpt.md
+          - nodejs/esm/index.md
           - nodejs/awesome.md
           - nodejs/express.md
           - nodejs/koa.md
