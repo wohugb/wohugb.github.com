@@ -148,6 +148,8 @@ nav:
       - blockchain/twister/build-unix.md
       - blockchain/twister/building-on-ubuntu-debian.md
       - blockchain/twister/compiling-for-windows.md
+  - 农业:
+      - agriculture/index.md
   - 教育:
       - education/README.md
       - education/kindergarten.md
